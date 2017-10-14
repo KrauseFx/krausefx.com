@@ -5,6 +5,7 @@
 @import "minima";
 
 $font-color: #444;
+$title-color: #111;
 
 /* Added by Felix */
 #sidebar {
@@ -66,6 +67,14 @@ article {
 }
 
 .post-title {
+  a {
+    color: $title-color !important;
+    text-decoration: none;
+    &:hover {
+      color: #0037F5 !important;
+    }
+  }
+
   @include relative-font-size(1.7);
   letter-spacing: -1px;
   line-height: 1;
@@ -81,7 +90,7 @@ article {
   height: 150px;
 
   .site-title {
-    color: #222;
+    color: $title-color;
     font-weight: 700;
     line-height: 1.2em;
     font-size: 32px;
