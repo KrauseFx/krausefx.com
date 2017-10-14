@@ -31,36 +31,23 @@ Even more exciting times start when your project becomes the de-facto standard f
 
 Examples:
 
-* Accessing SQLite in your iOS app: 
-[fmdb](https://github.com/ccgus/fmdb)
-
-
+* Accessing SQLite in your iOS app: [fmdb](https://github.com/ccgus/fmdb)
 * Authentication for your Rails app:[devise](https://github.com/plataformatec/devise)
 
 ### Stage 4: Hyper-scale open source projects
 
-
-If you finally are able to grow your user base wide enough, you might hit a new set of problems. Stage 4 is where the fun begins: you will get hundreds of notifications every day, there will be blog posts that 
-[attack your project](http://drekka.ghost.io/cocoapods-vs-carthage/) and there will be commercial versions of your project, maybe even (partly) using your source code. Some of those projects slowly evolved to being in this category (e.g. 
-[rails](https://github.com/rails/rails)), however more and more projects have a kick-start by being launched as a solid, finished open source project by one of the big companies like Facebook or GitHub.
+If you finally are able to grow your user base wide enough, you might hit a new set of problems. Stage 4 is where the fun begins: you will get hundreds of notifications every day, there will be blog posts that [attack your project](http://drekka.ghost.io/cocoapods-vs-carthage/) and there will be commercial versions of your project, maybe even (partly) using your source code. Some of those projects slowly evolved to being in this category (e.g. [rails](https://github.com/rails/rails)), however more and more projects have a kick-start by being launched as a solid, finished open source project by one of the big companies like Facebook or GitHub.
 
 Examples:
 
 * [react-native](https://github.com/facebook/react-native)
-
-
 * [atom](https://github.com/atom/atom)
 
 ## Scaling open source projects is hard
-
-  
-       
+     
 ![My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900fabe3df281428d8cca5_1485836247300__img.png_) My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more 
-  
-
 
 ### Keeping the momentum
-
 
 The bigger your project becomes, the harder it is to keep the innovation you had in the beginning of your project. Suddenly you have to consider hundreds of different use-cases, thousands of production setups and can’t just remove an option, or change a default value.
 
@@ -74,40 +61,29 @@ Receiving feature requests
 How you handle feature requests is up to you, there are various ways projects handle them:
 
 * Let people submit features as issues, and label them as feature request. This way other users can easily find them using the search, and upvote them
-
-
 * Have a separate page where users can submit and upvote feature requests
-
-
 * Don’t accept new features, and feature freeze your project
 
 There are very interesting conversations when you close feature requests:  
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900efa3a04116aa6e7b999_1485836029092__img.png_)
-  
 
 
 Being in the public spotlight
 
 As a maintainer you are under big pressure when dealing with those kinds of situations. Depending on the conversation, people can tweet screenshots,[you might land on HackerNews](https://news.ycombinator.com/item?id=11245652)or cause a shitstorm, causing hundreds of comments by random people on the internet. This distraction leads to many maintainers leaving feature requests open and unanswered, and not dealing with them altogether.
 
-Due to the pressure of having 100% of your activities (both code and conversations) in public, lots of open source maintainers burn out. You can find hundreds of blog articles about software developers sharing their story (most recently “[Dear JavaScript](https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c#.imt9j3rxi)”).
+Due to the pressure of having 100% of your activities (both code and conversations) in public, lots of open source maintainers burn out. You can find hundreds of blog articles about software developers sharing their story (most recently "[Dear JavaScript](https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c#.imt9j3rxi)").
 
 Reviewing external PRs
 
 As a maintainer you often have the responsibility to decide what you merge into your project’s code base, and what to reject. Very often these are very difficult decisions, which might hurt other people. When merging code changes that introduce new features or options, the maintainers have to consider the long-term effect of this change:
 
 * The feature has to be supported in future releases.
-
-
 * The feature has to be tested with all future changes.
-
-
 * When the feature breaks, very often the project maintainer has to fix it, unless the original author is still available.
-
-
-* Many users aren’t aware of this, and sometimes people get offended on GitHub when you say “No” to a new flag or option.
+* Many users aren’t aware of this, and sometimes people get offended on GitHub when you say "No" to a new flag or option.
 
 In general, reviewing and testing a pull request, takes almost as much time as writing the code for it. As a maintainer you have goals for your project, and work towards them. By receiving external pull requests without any prior discussion on a GitHub issue or mailing list, you have to pause what you currently worked on, to review and test this change without the same context or motivation that the PR author has.
 
@@ -122,8 +98,7 @@ The challenge is to still somehow use the product to feel the user’s pain poin
 
 ### Information imbalance with your users
 
-
-Due to the nature of scaling software, there is a big information imbalance between the project maintainers and the users. For you as a maintainer, an issue is “just another issue” (one of hundreds), but for the user, this one issue is everything. This issue is 100% of the interaction with your product, and it’s something they will remember for a long time.
+Due to the nature of scaling software, there is a big information imbalance between the project maintainers and the users. For you as a maintainer, an issue is "just another issue" (one of hundreds), but for the user, this one issue is everything. This issue is 100% of the interaction with your product, and it’s something they will remember for a long time.
 
 This first hit me when I attended my first WWDC in 2016, and iOS developers came up to me to talk about the GitHub issue they submitted a while back, assume I’d remember the whole conversation. This is not only the case for online interactions, but also when talking with users of your software.
 
@@ -140,56 +115,46 @@ How you handle failures has a big impact on how easy it is for the user to resol
        
 ![Before changing fastlane to highlight the actual error message and still showing the stack trace by default](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014e86b8f5ba2ed9c2751_1485837553599__img.png_) Before changing fastlane to highlight the actual error message and still showing the stack trace by default 
   
-
-
-  
-       
 ![After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014db6a496349b23a05f1_1485837535364__img.png_) After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash 
-  
 
-
-The left screenshot shows an early version offastlane, compared to howfastlaneshows error messages today. Not only how you present the error message, but its content is really important: Make sure the message explains the error well enough and ideally even include instructions on how to fix it.
+The left screenshot shows an early version of _fastlane_, compared to how _fastlane_ shows error messages today. Not only how you present the error message, but its content is really important: Make sure the message explains the error well enough and ideally even include instructions on how to fix it.
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58901058ff7c50a0160df707_1485836406181_Screenshot+2017-01-10+10.46.36.png.36.png_)
-  
 
 
-Infastlanewe even link to StackOverflow replies and make sure to include all necessary information to debug an issue. In this example we show the certificate ID and team name.
+In fastlane we even link to StackOverflow replies and make sure to include all necessary information to debug an issue. In this example we show the certificate ID and team name.
 
 ### Make it easy to find existing issues
 
 
-When you receive a cryptic error message, what’s the first thing you do? Usually you search on the GitHub repo page, or google for the message. You as a project maintainer should make it easy as possible for the user to do so. That’s why[@orta](https://github.com/orta/gh_inspector)started[gh_inspector](https://github.com/orta/gh_inspector), a Ruby gem to show related GitHub issues right in the user’s terminal. Wheneverfastlaneruns into an unexpected situation, it will not only show similar GitHub issues, but also print out the GitHub search URL. The long-term plan is to also support StackOverflow questions (see[#13](https://github.com/orta/gh_inspector/issues/13))
+When you receive a cryptic error message, what’s the first thing you do? Usually you search on the GitHub repo page, or google for the message. You as a project maintainer should make it easy as possible for the user to do so. That’s why[@orta](https://github.com/orta/gh_inspector)started[gh_inspector](https://github.com/orta/gh_inspector), a Ruby gem to show related GitHub issues right in the user’s terminal. Whenever _fastlane_ runs into an unexpected situation, it will not only show similar GitHub issues, but also print out the GitHub search URL. The long-term plan is to also support StackOverflow questions (see[#13](https://github.com/orta/gh_inspector/issues/13))
   
        
 ![Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010b0d1758e5ffee5719f_1485836468314__img.png_) Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub 
   
 
 
-Use of bots
+### Use of bots
 
 I’m not a big fan of bots and automated messages, however as soon as you reach a certain scale you need to have some automated systems to reduce the support load.
 
-Ensuring all required information is available
+#### Ensuring all required information is available
 
-Providing all information when submitting a bug report is hard, even as a software engineer. GitHub recently introduced[ISSUE_TEMPLATE.MD](https://github.com/fastlane/fastlane/blob/master/.github/ISSUE_TEMPLATE.md), that auto-fills the “New Issue” form with instructions on how to file an issue. However most people ignore the instructions.
+Providing all information when submitting a bug report is hard, even as a software engineer. GitHub recently introduced[ISSUE_TEMPLATE.MD](https://github.com/fastlane/fastlane/blob/master/.github/ISSUE_TEMPLATE.md), that auto-fills the "New Issue" form with instructions on how to file an issue. However most people ignore the instructions.
 
-Using thefastlane-botwe ensure all required information is available, and if not, tell the user how to provide them.
+Using the fastlane-bot we ensure all required information is available, and if not, tell the user how to provide them.
   
-      
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010f1579fb3e4efb8de86_1485836537367__img.png_)
   
 
 
-With that,fastlanealso supports the  fastlane envcommand that prints out all relevant information:
+With that, fastlane also supports the `fastlane env` command that prints out all relevant information:
   
-      
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589011091b631bae058125db_1485836558502__img.png_)
   
 
-
-Thefastlane envcollects all relevant system information, like your Ruby environment, OpenSSL version and used fastlane plugins, ready to be posted on GitHub.
+The `fastlane env` command collects all relevant system information, like your Ruby environment, OpenSSL version and used fastlane plugins, ready to be posted on GitHub.
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58901125bf629a5f22eba2da_1485836585201__img.png_)
@@ -214,11 +179,7 @@ Stale issues
 The key to handle support for large-scale open source projects is to keep issues moving. Try to avoid having issues stall. If you’re an iOS developer you know how frustrating it can be to submit radars. You might hear back 2 years later, and are told to try again with the latest version of iOS. Chances are high you have no way to reproduce the issue again for multiple reasons:
 
 * The user tried your software, submitted the issue, and went with a different solution in the meantime
-
-
 * The user already found a workaround, and doesn’t care about spending more time on this issue
-
-
 * Many engineers switch companies and projects frequently
 
 Having a bot can ensure that issues are still relevant and reproducible. Thefastlane-botautomatically asks if an issue is still relevant with the most recent fastlane release after just 2 months.
@@ -244,30 +205,18 @@ About a month after closing the issue, the bot locks the conversation to reposit
 
 Locking resolved and inactive issues
 
-Locking conversations of resolved, inactive issues is a great way to avoid re-surfacing GitHub issues from old releases. In the case offastlanethe following happened a lot in the past:
+Locking conversations of resolved, inactive issues is a great way to avoid re-surfacing GitHub issues from old releases. In the case of _fastlane_ the following happened a lot in the past:
 
 * Users would comment on issues that are not related to their problem, however sound similar
-
-
 * Users would comment on issues with a lot of subscribers from a long time ago, triggering unwanted email notifications for people who already found a solution
-
-
 * Thefastlane-botdoesn’t ensure if all required information is provided for single comments, but only for new issues
-
-
-* Users would add “me too” commented without providing any details of the current problem they’re having
+* Users would add "me too" commented without providing any details of the current problem they’re having
 
 By telling users to submit a new issue, you properly go through the complete lifecycle of an issue:
 
 * User submits issue
-
-
 * fastlane-bot ensures all required information was provided
-
-
 * Actual discussion around the issue
-
-
 * Issue gets resolved or auto-closed due to inactivity
   
       
@@ -284,19 +233,13 @@ The sections above mostly covered issues, but a very essential part is also resp
 However tests don’t ensure the way how changes are introduced (= the delta). That’s why[@orta](https://twitter.com/orta)and I set out to build[danger](http://danger.systems), a tool that allows you to define rules for code changes. Some examples:
 
 * Post test failures right on GitHub so that contributors don’t have to scroll through the CI output
-
-
 * Show a warning when certain files get modified
-
-
 * Require new tests when more than 20 lines were modified
-
-
 * And many[more](http://danger.systems/)
 
 PR and Run
 
-This is something you can see in many open source projects, someone takes the time to submit a pull request, the build is failing but the author doesn’t update the PR. The reason for that is that there is no GitHub notification when their build fails, so you as a project maintainer now have to be the “bad person” to tell the developer to fix the tests. That’s time you spend on something, that should be completely automated. By using danger, you can have the CI post the test results right on GitHub triggering a GitHub email notification.
+This is something you can see in many open source projects, someone takes the time to submit a pull request, the build is failing but the author doesn’t update the PR. The reason for that is that there is no GitHub notification when their build fails, so you as a project maintainer now have to be the "bad person" to tell the developer to fix the tests. That’s time you spend on something, that should be completely automated. By using danger, you can have the CI post the test results right on GitHub triggering a GitHub email notification.
 
 ### Steering the direction
 
@@ -305,7 +248,7 @@ It’s 🔑 to work into the same direction and have a shared vision. For open s
 
 Many bigger open source projects introduced a VISION.md (e.g.[fastlane](https://github.com/fastlane/fastlane/blob/master/VISION.md),[danger](https://github.com/danger/danger/blob/master/VISION.md)) that describes the bigger-picture goal of a project and the overall philosophy.
 
-This enables contributors of the project to say “No” to feature requests or PRs by referencing the written agreement in the repository. The beauty of this approach is also that everyone has the opportunity to submit PRs for the VISION.md document to propose changes in the policies.
+This enables contributors of the project to say "No" to feature requests or PRs by referencing the written agreement in the repository. The beauty of this approach is also that everyone has the opportunity to submit PRs for the VISION.md document to propose changes in the policies.
 
 ### Scaling contribution
 
@@ -331,7 +274,7 @@ This has been top priority for me since startingfastlane. Always be as friendly 
 ### Enabling your users to extend your project
 
 
-When scaling your project you have to say “No” to many new features and ideas. Instead you need to focus on what your software is best at. However most software would be very limited if there was no way to extend it. Depending on the size of your community, there are two good way to achieve that.
+When scaling your project you have to say "No" to many new features and ideas. Instead you need to focus on what your software is best at. However most software would be very limited if there was no way to extend it. Depending on the size of your community, there are two good way to achieve that.
 
 Offer dynamic configuration files (ala DSL)
 
@@ -344,7 +287,7 @@ Many Ruby-based open source projects, including fastlane, CocoaPods and Bundler,
 
 Allow local extensions
 
-This is how we started out withfastlane: when a user needed an integration for a third party or internal service that isn’t available yet, they can easily build and use a local action without having to touch the actualfastlanecode base. Most of the times, the developers would store their local actions in their git repository.
+This is how we started out withfastlane: when a user needed an integration for a third party or internal service that isn’t available yet, they can easily build and use a local action without having to touch the actual _fastlane_ code base. Most of the times, the developers would store their local actions in their git repository.
 
 Allow the community to extend and build on your project using plugins
 
@@ -354,7 +297,7 @@ While it’s not possible for all kinds of projects, building a plugin architect
 
 Of course you can build your own dependency resolving, however think twice before doing so. There might be a great dependency manager available you can use to implement your plugins.
 
-Atfastlanewe use RubyGems and bundler to make it easy for people to distribute and use plugins. As a result there are already[120 third party plugins](https://rubygems.org/search?utf8=%E2%9C%93&query=fastlane-plugin-)available within just a few months.
+At _fastlane_ we use RubyGems and bundler to make it easy for people to distribute and use plugins. As a result there are already[120 third party plugins](https://rubygems.org/search?utf8=%E2%9C%93&query=fastlane-plugin-)available within just a few months.
 
 ## Wrapping up
 
@@ -362,4 +305,4 @@ Atfastlanewe use RubyGems and bundler to make it easy for people to distribute a
 Scaling open source projects is hard. Really hard. There are lots of challenges you’ll solve while scaling up. Ideally you’re not the person having to solve all problems that are caused by a growing project, but have core contributors helping you. Good open source projects stay alive for a really long time and you can have an enormous impact on developers and companies around the world with it. If you face challenges, don’t give up, ask the community for help. I personally have never worked on a project with such a great impact, and I feel extremely lucky to work on the right thing at the right time.
  
 
->I described the above with the assumption that you would use GitHub for your open source projects. There are many alternatives out there, however to simplify the above text I decided to use GitHub with the terms “Issues” and “Pull Requests”.
+> I described the above with the assumption that you would use GitHub for your open source projects. There are many alternatives out there, however to simplify the above text I decided to use GitHub with the terms "Issues" and "Pull Requests".

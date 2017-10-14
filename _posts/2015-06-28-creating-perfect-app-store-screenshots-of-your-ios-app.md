@@ -59,18 +59,13 @@ Do you see the difference between the font sizes in the screenshots?
   
 
 
-A different example which now uses the correct device frame for each screen size. Do you see how very small the font on the iPhone 4 is? All 4 frames use the exact same screenshot. 
-   On smaller devices this results in very small fonts which are difficult to read for the end-user.
-  
-  On larger devices the screenshot is scaled up, which causes blurry images and fonts.
+A different example which now uses the correct device frame for each screen size. Do you see how very small the font on the iPhone 4 is? All 4 frames use the exact same screenshot. On smaller devices this results in very small fonts which are difficult to read for the end-user. On larger devices the screenshot is scaled up, which causes blurry images and fonts.
 
 Don't get me wrong, using a web service that does these kind of frames for you is a great and easy way to get beautiful screenshots for the App Store. It's also the best solution if you don't want to invest more time automating taking better screenshots.
 
 # Update August 2016: Use just one set of screenshots
 
-
-With the 
-[iTunes Connect screenshot update](https://developer.apple.com/news/?id=08082016a) on August 8th, 2016, you can now use one set of screenshots for all available devices and screenshots. iTunes Connect will automatically scale the images for you, so that each device renders the same exact image. 
+With the [iTunes Connect screenshot update](https://developer.apple.com/news/?id=08082016a) on August 8th, 2016, you can now use one set of screenshots for all available devices and screenshots. iTunes Connect will automatically scale the images for you, so that each device renders the same exact image. 
 
 While this is convenient, this approach has the same problems as the device frame approach: The screenshots don't actually show how the app looks on the user's device. It's a valid way to start though, since you can gradually overwrite screenshots for specific languages and devices. 
 
@@ -78,17 +73,9 @@ While this is convenient, this approach has the same problems as the device fram
 
 
 * Wrongly scaled screenshots resulting in blurry font
-
-
 * Not using the correct device frames for the various screen sizes
-
-
 * Screenshot doesn't show the screen the user will actually see (iPhone 6 Plus user interface should look differently than iPhone 4)
-
-
 * Most screenshot builder don't have landscape support
-
-
 * No Mac App Support
 
 ****
@@ -99,35 +86,15 @@ While this is convenient, this approach has the same problems as the device fram
 
 Checklist for really great screenshots:
 
-* Screenshots localised in 
-**all**
- languages your app supports
-
-
+* Screenshots localised in **all** languages your app supports
 * Different screenshots for different device types to have the correct font in your screenshots
-
-
 * Same content in all languages and device types (means same screens visible with the same items)
-
-
 * No loading indicators should be visible, not even in the status bar
-
-
 * No scrolling indicators should be visible
-
-
 * A clean status bar: Full battery, full Wifi and of course 9:41
-
-
 * Localised titles above your screenshots
-
-
 * Device in screenshots actually matches the device of the user (except for the color)
-
-
 * A nice looking background behind the frames
-
-
 * Optionally a coloured title around the device frame
 
 ## Clean Statusbar
@@ -141,14 +108,8 @@ Checklist for really great screenshots:
 Notice the following things:
 
 * 9:41 AM (or just 9:41)
-
-
 * All 5 dots (formerly known as bars)
-
-
 * Full WiFi Signal
-
-
 * Full battery
 
 To achieve such a nice looking status bar, I can really recommend 
@@ -327,25 +288,12 @@ could already upload the screenshots to iTunes Connect, but this wouldn't be so 
 [frameit 2.0](https://github.com/fastlane/frameit/releases/tag/2.0.0) you can now add device frames, a custom background and a title to your screenshots.
 
 * Custom backgrounds
-
-
 * Use a keyword + title to make the screen look more colorful
-
-
 * Use your own fonts
-
-
 * Customise the text colors
-
-
 * Support for both portrait and landscape screenshots
-
-
 * Support for iPhone, iPad and Mac screenshots
-
-
-* Use 
-.strings files to provide translated titles
+* Use .strings files to provide translated titles
 
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce8b1e4b0a540712636a8_1432152242991_en-US-iPhone4-01Brainstorming-landscaperight_framed.png_)
   
@@ -401,8 +349,6 @@ To make things easier for you, I prepared an
 The interesting parts are:
 
 * [Framefile.json](https://github.com/fastlane/examples/blob/master/MindNode/screenshots/Framefile.json): Contains information about the font family, font color and background image
-
-
 * [Each language folder](https://github.com/fastlane/examples/tree/master/MindNode/screenshots/en-US): Contains a 
 [keyword.strings](https://github.com/fastlane/examples/blob/master/MindNode/screenshots/en-US/keyword.strings) and 
 [title.strings](https://github.com/fastlane/examples/blob/master/MindNode/screenshots/en-US/title.strings), containing the localised text for the title
@@ -423,16 +369,13 @@ Take a look at the fastlane configuration of MindNode:
 
 To generate new screenshots, frame them and upload them to iTunes Connect you only have to run 
 
-    $ fastlane ios screenshots
+```
+fastlane ios screenshots
+```
 
 ## More Information
 
 
-[snapshot](https://fastlane.tools/snapshot), 
-[frameit](https://fastlane.tools/frameit) and 
-[deliver](https://fastlane.tools/deliver) are part of 
-[fastlane](https://fastlane.tools).
+[snapshot](https://fastlane.tools/snapshot), [frameit](https://fastlane.tools/frameit) and [deliver](https:/fastlane.tools/deliver) are part of [fastlane](https://fastlane.tools).
 
-Special thanks to 
-[MindNode](http://mindnode.com) for sponsoring 
-[frameit 2.0](https://github.com/fastlane/frameit/releases/tag/2.0.0) and providing the screenshots for this blog post. 
+Special thanks to [MindNode](http://mindnode.com) for sponsoring [frameit 2.0](https://github.com/fastlane/frameit/releases/tag/2.0.0) and providing the screenshots for this blog post. 

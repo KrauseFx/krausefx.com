@@ -42,19 +42,10 @@ You have to manually create 20 (languages) x 4 (devices) x 5 (screenshots) = 
 It's hard to get everything right!
 
 * New screenshots with every (design) update
-
-
 * No loading indicators
-
-
 * Same content / screens
-
-
 * A clean status bar
-
-
-* Uploading screenshots (
-[deliver](https://github.com/KrauseFx/deliver) is your friend)
+* Uploading screenshots ([deliver](https://github.com/KrauseFx/deliver) is your friend)
 
 This script helps you solve all those problems: Automatically switch languages and device types, properly export the resulting screenshots, etc.
 

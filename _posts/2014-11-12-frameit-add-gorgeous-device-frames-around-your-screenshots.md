@@ -15,15 +15,10 @@ meta:
 
 
 Put a gorgeous device frame around your iOS screenshots just by running 
-**one simple command**
-. Support for:
+**one simple command**. Support for:
 
 * iPhone 6 Plus, iPhone 6, iPhone 5s and iPad Air
-
-
 * Portrait and Landscape
-
-
 * Black and Silver devices
 
 This tool will take care of everything, from finding your screenshots to detecting their screen sizes and orientation. 

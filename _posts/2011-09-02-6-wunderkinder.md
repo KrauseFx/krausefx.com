@@ -26,22 +26,12 @@ Some quick facts:
 
 * I scored second place with this app in the 
 [U19 freestyle computing](http://new.aec.at/prix/de/gewinner/2011/#u19) competition and was chosen from over 650 participants
-
-
 * I was in the 
 [Futurezone.at](http://futurezone.at/produkte/2453-bikemap-die-radrouten-app.php), one of the most famous IT-blogs from Austria
-
-
 * The Austrian Kurier wrote about this app in the printed version
-
-
 * Bikemap was the most downloaded sports app in Austria, Czechia and Qatar
-
-
 * Sebastian Kreutzberger, the CTO of 
-[6Wunderkinder](http://6wunderkinder.com/), noticed this app and offered me an iOS developer position.
-
-[Wunderlist](http://wunderlist.com/) and Bikemap were both developed in Titanium and one day I decided to tweet to Appcelerator announcing my recent number of downloads. Sebastian noticed my tweet and quickly got into contact with, we chatted and then he offered me a job. 6Wunderkinder is a totally cool company, and you can see this by the people who work 
+[6Wunderkinder](http://6wunderkinder.com/), noticed this app and offered me an iOS developer position. [Wunderlist](http://wunderlist.com/) and Bikemap were both developed in Titanium and one day I decided to tweet to Appcelerator announcing my recent number of downloads. Sebastian noticed my tweet and quickly got into contact with, we chatted and then he offered me a job. 6Wunderkinder is a totally cool company, and you can see this by the people who work 
 [here](http://www.6wunderkinder.com/about/).
   
       

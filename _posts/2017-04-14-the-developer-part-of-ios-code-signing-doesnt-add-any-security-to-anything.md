@@ -27,11 +27,7 @@ All those hours you spend on getting code signing to work properly on your machi
 Code signing is one of the most crucial security components of the iOS ecosystem:
 
 * Code signing allows Apple to control what software can be installed on iOS devices. 
-
-
 * Code signing ensures your app doesn’t get modified by a third party on the way from your Mac to the end-users iPhone.
-
-
 * You sign your app with your signature, it ensures that the app is from you.
   
       

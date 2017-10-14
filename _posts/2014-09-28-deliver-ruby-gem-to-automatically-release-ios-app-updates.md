@@ -39,19 +39,10 @@ Deliver 
 
 
 * Upload hundreds of screenshots with different languages from different devices
-
-
 * Upload a new ipa file to iTunesConnect without Xcode from any computer
-
-
 * Update app metadata
-
-
 * Easily implement a real Continuous Deployment process
-
-
-* Store the configuration in git to easily deploy from 
-**any**
+* Store the configuration in git to easily deploy from  **any**
  computer, including your Continuous Integration server (e.g. Jenkins)
 
 The project is fully open source, well documented and has a high test coverage. 

@@ -29,14 +29,8 @@ pem files for your server?
 What it does:
 
 * Check if push is correctly enabled and a certificate is active
-
-
 * Renews the push certificate in case it's necessary
-
-
 * Download the latest certificate
-
-
 * Generate all necessary files, so you can send push notifications from your server
 
 ### [Open on GitHub](https://github.com/KrauseFx/pem)

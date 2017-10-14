@@ -18,51 +18,28 @@ During my[internship at 6Wunderkinder](https://krausefx.com/blog/6-wunderkinder)
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56fcaf45f699bbd57404856a_1459400594906__img.jpg_)
-  
-
 
 I’m super proud to announce, that within the last 8 months,fastlanehas saved developers around the world over 
-**1,000,000 developer hours**
-. This equals:
+**1,000,000 developer hours**. This equals:
 
 * 41,000 days
-
-
 * 1,300 months
+* **114 years**
 
-
-***114 years**
-
-Putting that into perspective,**every minute**
-that passes,fastlanecurrently runs for**12 hours**
-, which is more than a full work day.
+Putting that into perspective,**every minute** that passes,fastlanecurrently runs for**12 hours**, which is more than a full work day.
 
 Think about all the things you could do with the extra time:
 
 * Watch 660,000 soccer games
-
-
 * Get 38 different bachelor degrees
-
-
 * Circle the globe 15,000 times in an airplane
-
-
 * Watch all Star Wars movies 75,000 times
-
-
 * Build 10 Berlin Brandenburg airports
 
-As developers, we know it’s incredibly motivating to see how users are using what you create at an exact moment at this exact moment. That's why we built[fasttrack](https://github.com/krausefx/fasttrack), a simple web-app that visualisesfastlanelaunches in real-time. Every time someone launchesfastlane, a rocket is being launched in the color of the corresponding tool. This is super motivating for me and the Fabric team to continue to deliver value to our users:
+As developers, we know it’s incredibly motivating to see how users are using what you create at an exact moment at this exact moment. That's why we built[fasttrack](https://github.com/krausefx/fasttrack), a simple web-app that visualises fastlane launches in real-time. Every time someone launchesfastlane, a rocket is being launched in the color of the corresponding tool. This is super motivating for me and the Fabric team to continue to deliver value to our users:
 
->Every time I catch myself doing something that doesn't add any direct value to users, I look at the rockets and regain my focus.
+> Every time I catch myself doing something that doesn't add any direct value to users, I look at the rockets and regain my focus.
 
+Once fastlane is set up you can do something else while your computer works on the tedious tasks for you. This is huge: You can work on your app, or you can play Super Smash Brothers with some friends (which is what I usually do).
 
-[View the rocket page here](https://fastlane.github.io/fasttrack/)
-
-Once 
-fastlane is set up you can do something else while your computer works on the tedious tasks for you. This is huge: You can work on your app, or you can play Super Smash Brothers with some friends (which is what I usually do).
-
-I want to thank all 
-fastlane users and contributors for making 
-fastlane such a proud community success. I’m looking forward to the next 1,000,000 hours and can’t wait for what’s next!
+I want to thank all fastlane users and contributors for making  fastlane such a proud community success. I’m looking forward to the next 1,000,000 hours and can’t wait for what’s next!

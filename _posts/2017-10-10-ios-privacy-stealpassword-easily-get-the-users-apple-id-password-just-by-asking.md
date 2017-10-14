@@ -19,17 +19,11 @@ Do you want the user's Apple ID password, to get access to their Apple account, 
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dc97a83e00bed1b42c0096_1507631710330__img.png_)
-  
 
-
-  
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca223197aeaa9a5932f2e_1507631701259__img.png_)
-  
-
 
 ## Disclaimer
-
 
 This is just a proof of concept, phishing attacks are illegal! Don't use this in any of your apps. The goal of this blog post is to close the loophole that has been there for many years, and hasn't been addressed yet. For moral reasons, I decided not to include the actual source code of the popup, however it was shockingly easy to replicate the system dialog.
 
@@ -70,16 +64,12 @@ Modern web browsers already do an excellent job protecting users from phishing a
   
       
 <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca405c534a5f23644c180_1507632212491__img.jpg_" align="right" width="250" class="inline-img" />
-  
 
-
-I've reported this as a radar, which you can dupe: 
-[rdar://34885659](https://openradar.appspot.com/radar?id=4952345645416448) 👍
+I've reported this as a radar, which you can dupe: [rdar://34885659](https://openradar.appspot.com/radar?id=4952345645416448) 👍
 
 Sometimes iOS shows the following notification on the lock screen, which opens up the iCloud Settings screen, this is a much better approach than to ask for the password directly: 
 
 ## Complexity
-
 
 Showing a dialog that looks just like a system popup is super easy, there is no magic or secret code involved, it's literally the examples provided in the Apple docs, with a custom text.
 
@@ -106,10 +96,7 @@ Apple is doing a great job protecting users from dangerous third party apps, tha
 However, it's rather easy to run certain code only after the app is approved, those are not new ideas, but just to give you some ideas:
 
 * Use remote code (which is not allowed by itself, except for JavaScript), React Native or a custom JS bridge is your friend
-
-
-* Use the iTunes search API to compare the current version number with the App Store version number (
-[example request](https://itunes.apple.com/lookup?bundleId=com.Facebook.Facebook)), this way the app can automatically enable malicious code after it got approved.
+* Use the iTunes search API to compare the current version number with the App Store version number ([example request](https://itunes.apple.com/lookup?bundleId=com.Facebook.Facebook)), this way the app can automatically enable malicious code after it got approved.
 * Use a remote configuration tool to enable a feature only after an app is approved by Apple
 * Use a time-based trigger: just skip running certain code for the first week after submitting the binary, meaning the code will only run once the app is either approved or rejected.
 * [Pull an Uber and don't run certain code when the location is near Cupertino](https://www.theverge.com/2017/4/23/15399438/apple-uber-app-store-fingerprint-program-tim-cook-travis-kalanick) (it's probably fixed by Apple by now)
@@ -127,7 +114,6 @@ This area will become more and more relevant, with users being uninformed, and t
 
 iOS should very clearly distinguish between system UI and app UI elements, so that ideally it's even obvious for the average smartphone user that something seems off. This is a tricky problem to solve, and web browser are still tackling it, you still have websites that make popups look like macOS / iOS popups, so that many users think it's a system message.
   
-
 <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca2ebf14aa1f26de959f6_1507631870942__img.jpg_" align="right" width="250" class="inline-img" />
 
 ### But, but, but, why is the . symbol within the ", is this all fake?
@@ -135,7 +121,6 @@ iOS should very clearly distinguish between system UI and app UI elements, so th
 Nope, actually, that's how the system dialog looks like, the . is within the "string notation, so I designed the phishing dialog to also include the same style.
 
 ## Similar projects I worked on 
-
 
 * [what's the user doing](https://github.com/KrauseFx/whats-the-user-doing): Raising awareness of what you can do with a smartphones gyro sensors in web browsers
 * [detect.location](https://github.com/krausefx/detect.location): An easy way to access the user's iOS location data without actually having access

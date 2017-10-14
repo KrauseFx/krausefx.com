@@ -30,28 +30,10 @@ sigh, which creates all necessary certificates for App Store, Ad Hoc and Devel
 
 What it does:
 
-***Download**
- the latest provisioning profile for your app
-
-
-***Renew**
- a provisioning profile, when it has expired
-
-
-***Repair**
- a provisioning profile, when it is broken
-
-
-***Create**
- a new provisioning profile, if it doesn't exist already
-
-
-* Supports 
-**App Store**
-, 
-**Ad Hoc**
- and 
-**Development**
- profiles
+* **Download** the latest provisioning profile for your app
+* **Renew** a provisioning profile, when it has expired
+* **Repair** a provisioning profile, when it is broken
+* **Create** a new provisioning profile, if it doesn't exist already
+* Supports **App Store**, **Ad Hoc** and **Development** profiles
 
 ### [Open on GitHub](https://github.com/KrauseFx/sigh)
