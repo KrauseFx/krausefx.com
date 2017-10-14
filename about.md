@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Felix Krause
 categories: []
 tags: []
 status: publish
@@ -9,12 +9,14 @@ published: true
 meta: {}
 ---
 
+<h1 style="text-align: center; margin-bottom: 40px; margin-top: -50px">About Felix Krause</h1>
+
 <div style="width: 40%; float: left">
   <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_t_578691ffebbd1a5ae283b29a_1468437013330__" width="400" />
   <p style="margin-left: 90px; margin-top: 30px;">Felix Krause, creator of <a href="http://fastlane.tools" target="_blank">fastlane</a></p>
 </div>
 
-<div style="width: 59%; float: right">
+<div style="width: 55%; float: right">
   <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier</p>
 
   <p>Just the last year, fastlane has saved over 9,000,000 <a href="https://krausefx.com/blog/fastlane-has-saved-over-1-million-developer-hours">developer hours</a> and is used by tens of thousands of companies around the world</p>
@@ -42,7 +44,7 @@ meta: {}
 </div>
 
 
-<div style="width: 100%; float: left;">
+<div style="width: 100%; float: left; margin-top: 20px">
   <hr />
 
   <form id="contactform" method="POST" action="https://formspree.io/contact@krausefx.com">
