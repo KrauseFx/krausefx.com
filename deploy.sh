@@ -35,7 +35,7 @@ echo "test:
 
 # Commit all the changes and push it to the remote
 git add -A
-git commit -m "Deployed with $(bundle exec jekyll -v)"
+git commit -m "Deployed with $(jekyll -v)"
 git push origin gh-pages
 
 # Post a Slack message
