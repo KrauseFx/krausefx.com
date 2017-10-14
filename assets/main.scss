@@ -1,0 +1,125 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+$font-color: #444;
+
+/* Added by Felix */
+#sidebar {
+  float: right;
+  top: 75px;
+  right: 0;
+  width: 269px;
+  height: 1000px;
+  padding: 20px;
+  margin-left: 60px;
+  padding-top: 0px;
+  border-left: 1px solid #CCC;
+}
+
+blockquote {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-left-width: 3px;
+
+  * {
+    font-style: normal !important;
+    letter-spacing: 0;
+  }
+}
+
+article {
+  max-width: calc(100% - 360px);
+}
+
+.post-content {
+  img {
+    max-width: calc(100% - 10px);
+  }
+  img.inline-img {
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+
+.home {
+  article {
+    margin-bottom: 60px;
+  }
+}
+
+.wrapper {
+  max-width: -webkit-calc(340px + #{$content-width} - (#{$spacing-unit} * 2)) !important;
+  max-width:         calc(340px + #{$content-width} - (#{$spacing-unit} * 2)) !important;
+}
+
+.post-title {
+  @include relative-font-size(1.7);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.7);
+  }
+}
+
+.site-header {
+  border-top: none;
+  border-bottom: none;
+  height: 150px;
+
+  .site-title {
+    color: #222;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-size: 32px;
+    margin-top: 30px;
+  }
+}
+
+p {
+  line-height: 1.6em;
+  font-weight: 400;
+  font-size: 15px;
+  color: #444;
+}
+li {
+  color: #444;
+}
+
+* {
+  font-family: "Helvetica Neue";
+  color: $font-color;
+}
+
+a {
+  color: #0085bd !important; 
+}
+
+a:visited {
+  color: #0085bd;
+}
+
+h1, h2, h3 {
+  color: #111; /* Darker */
+}
+
+.site-title {
+  color: $font-color !important;
+}
+
+.post-meta > * {
+  color: #aaa;
+}
