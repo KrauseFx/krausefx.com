@@ -138,10 +138,13 @@ p {
   line-height: 1.6em;
   font-weight: 400;
   font-size: 15px;
-  color: #444;
+  color: $font-color;
 }
 li {
-  color: #444;
+  color: $font-color;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6em;
 }
 
 * {
