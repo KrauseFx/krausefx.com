@@ -59,7 +59,6 @@ DEPENDENCIES
   jekyll-twitter-plugin
   jekyll-youtube
   minima (~> 2.0)
-  tzinfo-data
 
 BUNDLED WITH
    1.14.6
