@@ -15,7 +15,6 @@ Not too long ago I started an open source project called [fastlane](https://fast
 
 ### Stage 1: Putting source code on GitHub
 
-
 About [40%](https://github.com/search?utf8=%E2%9C%93&q=stars%3A0&type=Repositories&ref=advsearch&l=&l=) of all repositories on GitHub have 0 stars and don’t gain a lot of traction. Most of those repositories don’t have a single GitHub issue or Pull Request. For example, a very early version of fastlane snapshot was called [rScreenshooter](https://github.com/KrauseFx/rScreenshooter) and has almost no engagement on GitHub.
 
 ### Stage 2: Developers start using your software
@@ -43,8 +42,11 @@ Examples:
 * [atom](https://github.com/atom/atom)
 
 ## Scaling open source projects is hard
-     
-![My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900fabe3df281428d8cca5_1485836247300__img.png_)<small>My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more</small>
+
+<div style="width: 270px; float: right;">
+  <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900fabe3df281428d8cca5_1485836247300__img.png_" />
+  <small>My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more</small>
+</div>
 
 ### Keeping the momentum
 
@@ -55,7 +57,7 @@ The bigger your project becomes, the harder it is to keep the innovation you had
 
 Once you pass a few thousand active users, you’ll notice that helping your users takes more time than actually working on your project. People submit all kinds of issues, most of them aren’t actually issues, but feature requests or questions.
 
-Receiving feature requests
+#### Receiving feature requests
 
 How you handle feature requests is up to you, there are various ways projects handle them:
 
@@ -69,13 +71,13 @@ There are very interesting conversations when you close feature requests:  
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900efa3a04116aa6e7b999_1485836029092__img.png_)
 
 
-Being in the public spotlight
+#### Being in the public spotlight
 
-As a maintainer you are under big pressure when dealing with those kinds of situations. Depending on the conversation, people can tweet screenshots,[you might land on HackerNews](https://news.ycombinator.com/item?id=11245652)or cause a shitstorm, causing hundreds of comments by random people on the internet. This distraction leads to many maintainers leaving feature requests open and unanswered, and not dealing with them altogether.
+As a maintainer you are under big pressure when dealing with those kinds of situations. Depending on the conversation, people can tweet screenshots,[you might land on HackerNews](https://news.ycombinator.com/item?id=11245652) or cause a shitstorm, causing hundreds of comments by random people on the internet. This distraction leads to many maintainers leaving feature requests open and unanswered, and not dealing with them altogether.
 
 Due to the pressure of having 100% of your activities (both code and conversations) in public, lots of open source maintainers burn out. You can find hundreds of blog articles about software developers sharing their story (most recently "[Dear JavaScript](https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c#.imt9j3rxi)").
 
-Reviewing external PRs
+#### Reviewing external PRs
 
 As a maintainer you often have the responsibility to decide what you merge into your project’s code base, and what to reject. Very often these are very difficult decisions, which might hurt other people. When merging code changes that introduce new features or options, the maintainers have to consider the long-term effect of this change:
 
@@ -161,18 +163,17 @@ The `fastlane env` command collects all relevant system information, like your R
 
 Helping users is so much easier if you have all the information right there, including all configuration files, other dependencies and version numbers.
 
-Answers based on keywords
+#### Answers based on keywords
 
 If you receive similar issues very often, you should step back and work on fixing the underlying issue or making usage more clear. If 10 users submit a specific kind of issue, hundreds of other users felt the same way but didn’t take the time to submit an issue.
 
-In the case offastlane, many issues are related to code signing (yeah), however there is no ultimate solution to fix all issues as of now ([codesigning.guide](https://codesigning.guide/)is the easiest one so far). We wrote an extensive guide on how to setup code signing and how to troubleshoot problems. As with most things, users don’t like reading manuals, unless you link them to the right spot, which is exactly what thefastlane-botdoes in that case.
+In the case offastlane, many issues are related to code signing (yeah), however there is no ultimate solution to fix all issues as of now ([codesigning.guide](https://codesigning.guide/) is the easiest one so far). We wrote an extensive guide on how to setup code signing and how to troubleshoot problems. As with most things, users don’t like reading manuals, unless you link them to the right spot, which is exactly what thefastlane-botdoes in that case.
   
        
 ![Many times just linking people to the right docs already helps](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890115eb8a79b243d8396cb_1485836642761__img.png_)<small>Many times just linking people to the right docs already helps</small>
   
 
-
-Stale issues
+#### Stale issues
 
 The key to handle support for large-scale open source projects is to keep issues moving. Try to avoid having issues stall. If you’re an iOS developer you know how frustrating it can be to submit radars. You might hear back 2 years later, and are told to try again with the latest version of iOS. Chances are high you have no way to reproduce the issue again for multiple reasons:
 
@@ -201,7 +202,7 @@ About a month after closing the issue, the bot locks the conversation to reposit
   
 
 
-Locking resolved and inactive issues
+#### Locking resolved and inactive issues
 
 Locking conversations of resolved, inactive issues is a great way to avoid re-surfacing GitHub issues from old releases. In the case of _fastlane_ the following happened a lot in the past:
 
@@ -221,21 +222,18 @@ By telling users to submit a new issue, you properly go through the complete lif
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890128ee58c62b50ea5bd89_1485836947308__img.png_)
   
 
-
- 
-
-Responding to pull requests
+#### Responding to pull requests
 
 The sections above mostly covered issues, but a very essential part is also responding to pull request. You have certain rules for your projects, like automated tests, code style and architecture. Many of those things are already checked by regular CI systems, and the build for the PR fails if the requirements aren’t met.
 
-However tests don’t ensure the way how changes are introduced (= the delta). That’s why [@orta](https://twitter.com/orta)and I set out to build [danger](http://danger.systems), a tool that allows you to define rules for code changes. Some examples:
+However tests don’t ensure the way how changes are introduced (= the delta). That’s why [@orta](https://twitter.com/orta) and I set out to build [danger](http://danger.systems), a tool that allows you to define rules for code changes. Some examples:
 
 * Post test failures right on GitHub so that contributors don’t have to scroll through the CI output
 * Show a warning when certain files get modified
 * Require new tests when more than 20 lines were modified
 * And many [more](http://danger.systems/)
 
-PR and Run
+#### PR and Run
 
 This is something you can see in many open source projects, someone takes the time to submit a pull request, the build is failing but the author doesn’t update the PR. The reason for that is that there is no GitHub notification when their build fails, so you as a project maintainer now have to be the "bad person" to tell the developer to fix the tests. That’s time you spend on something, that should be completely automated. By using danger, you can have the CI post the test results right on GitHub triggering a GitHub email notification.
 
@@ -251,21 +249,21 @@ This enables contributors of the project to say "No" to feature requests or PRs 
 ### Scaling contribution
 
 
-As your project grows you need more people joining you on maintaining the project and pushing it forward. You want to increase the [bus factor](https://en.wikipedia.org/wiki/Bus_factor)as your project grows, meaning more and more people know how the project works and can commit code. There are some great approaches out there, like the [moya contributing guidelines](https://github.com/Moya/contributors)by [Ash Furrow](https://ashfurrow.com). Ideally the project operates without any help from you.
+As your project grows you need more people joining you on maintaining the project and pushing it forward. You want to increase the [bus factor](https://en.wikipedia.org/wiki/Bus_factor) as your project grows, meaning more and more people know how the project works and can commit code. There are some great approaches out there, like the [moya contributing guidelines](https://github.com/Moya/contributors) by [Ash Furrow](https://ashfurrow.com). Ideally the project operates without any help from you.
 
-Code of Conduct
+#### Code of Conduct
 
 With a growing community, you also need to ensure developers are in a safe environment. One action you should take very early in your project is to add a Code of Conduct ([more information by Ash](https://ashfurrow.com/blog/building-popular-projects/#code-of-conduct))
 
-Onboarding instructions
+#### Onboarding instructions
 
 Make it very easy for engineers interested in submitting code changes to set up their development environment. If you’re not a mono-repo yet (:trollface:), you might need a repo to quickly set up all the other repos, e.g. CocoaPod’s [Rainforest](https://github.com/CocoaPods/Rainforest), fastlane’s [countdown](https://github.com/fastlane-old/countdown/blob/c0209981cdc66d9a2c1d2be9708d52346b60dced/Rakefile)(now deprecated)
 
-Keeping your code base simple
+#### Keeping your code base simple
 
 This is something not many open source projects consider: the more complex the software architecture is, the more difficult it is to get started coding and less people are able to contribute. Instead of using the latest Ruby magic to save 4 lines of code, use the easiest to understand technique to solve a problem, making it easier for people to spot issues and contribute fixes and improvements.
 
-Be welcoming and friendly
+#### Be welcoming and friendly
 
 This has been top priority for me since startingfastlane. Always be as friendly as you can. Thank people for submitting issues and PRs. Ask people for help or clarification if needed.
 
@@ -274,20 +272,18 @@ This has been top priority for me since startingfastlane. Always be as friendly 
 
 When scaling your project you have to say "No" to many new features and ideas. Instead you need to focus on what your software is best at. However most software would be very limited if there was no way to extend it. Depending on the size of your community, there are two good way to achieve that.
 
-Offer dynamic configuration files (ala DSL)
+#### Offer dynamic configuration files (ala DSL)
 
 Many Ruby-based open source projects, including fastlane, CocoaPods and Bundler, offer a DSL that allows developers to implement a very dynamic configuration. Instead of having static values like it is the case in JSON or yml files, you can execute code in a Fastfile, Podfile and Gemfile. This is extremely useful to fetch or generate values on demand, like accessing an internal server for the latest app description.
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589012cf3e00beee625cda6b_1485837010186__img.png_)
   
-
-
-Allow local extensions
+#### Allow local extensions
 
 This is how we started out withfastlane: when a user needed an integration for a third party or internal service that isn’t available yet, they can easily build and use a local action without having to touch the actual _fastlane_ code base. Most of the times, the developers would store their local actions in their git repository.
 
-Allow the community to extend and build on your project using plugins
+#### Allow the community to extend and build on your project using plugins
 
 Allowing local changes works great for a while, until users want to share their integrations with the rest of the community. Once that’s the case you need to provide an ecosystem (kind of like a marketplace) for developers to share their integrations.
 
@@ -295,7 +291,7 @@ While it’s not possible for all kinds of projects, building a plugin architect
 
 Of course you can build your own dependency resolving, however think twice before doing so. There might be a great dependency manager available you can use to implement your plugins.
 
-At _fastlane_ we use RubyGems and bundler to make it easy for people to distribute and use plugins. As a result there are already [120 third party plugins](https://rubygems.org/search?utf8=%E2%9C%93&query=fastlane-plugin-)available within just a few months.
+At _fastlane_ we use RubyGems and bundler to make it easy for people to distribute and use plugins. As a result there are already [120 third party plugins](https://rubygems.org/search?utf8=%E2%9C%93&query=fastlane-plugin-) available within just a few months.
 
 ## Wrapping up
 

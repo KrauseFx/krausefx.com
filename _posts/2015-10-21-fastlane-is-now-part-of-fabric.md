@@ -25,7 +25,7 @@ That’s why today, I'm happy to announce that fastlane is now part of
 ## What the future holds
 
 
-[fastlane](https://fastlane.tools)will stay an open source project, and I will continue to work on new features.The Fabric team is committed helping fastlane grow for both existing fastlane users and new ones.
+[fastlane](https://fastlane.tools) will stay an open source project, and I will continue to work on new features.The Fabric team is committed helping fastlane grow for both existing fastlane users and new ones.
 
 And for the last two months, while I've been working from Twitter HQ in San Francisco, I was able to prepare a few big things:
   
