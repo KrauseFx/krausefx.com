@@ -33,7 +33,7 @@ echo "krausefx.com" > "CNAME"
 # Commit all the changes and push it to the remote
 git add -A
 git commit -m "Deployed with $(jekyll -v)"
-git push origin gh-pages --force # force needed, as travis somehow can't re-use branches
+git push upstream gh-pages --force # force needed, as travis somehow can't re-use branches
 
 # Post a Slack message
 git checkout master
