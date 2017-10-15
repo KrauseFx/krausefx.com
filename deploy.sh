@@ -29,10 +29,9 @@ cp -R /tmp/krausefx.com/* .
 # We need a CNAME file for GitHub
 echo "krausefx.com" > "CNAME"
 
-# We also need a circle.yml file on the gh-pages branch, otherwise the build fails
-echo "test:
-  override:
-  - echo 'Running on gh-pages branch'" > "circle.yml"
+# We also need a .travis.yml file on the gh-pages branch, otherwise the build fails
+echo "script:
+  - echo 'Running on gh-pages branch'" > ".travis.yml"
 
 # Commit all the changes and push it to the remote
 git add -A
