@@ -7,6 +7,7 @@
 $font-color: #444;
 $title-color: #111;
 $header-inactive-color: #9c9c9c;
+$no-sidebar: "800px";
 
 /* Added by Felix */
 #sidebar {
@@ -21,6 +22,14 @@ $header-inactive-color: #9c9c9c;
 
   a {
     text-decoration: none;
+  }
+
+  display: none;
+}
+
+@media screen and (min-width: $no-sidebar) {
+  #sidebar {
+    display: inline;
   }
 }
 
@@ -65,7 +74,12 @@ blockquote {
 }
 
 article {
-  max-width: calc(100% - 360px);
+  max-width: calc(100%);
+}
+@media screen and (min-width: $no-sidebar) {
+  article {
+    max-width: calc(100% - 360px);
+  }
 }
 
 .post-content {
@@ -89,6 +103,10 @@ article {
     font-size: 15px;
     font-weight: 500;
   }
+}
+
+body, html{
+    overflow-x: hidden;
 }
 
 .home {
@@ -212,6 +230,10 @@ h1, h2, h3 {
   * {
     color: #aaa;
   }
+}
+
+.page-content {
+  padding-top: 0px;
 }
 
 code {
