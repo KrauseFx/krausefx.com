@@ -18,11 +18,24 @@ $header-inactive-color: #9c9c9c;
   margin-left: 60px;
   padding-top: 0px;
   border-left: 1px solid #EEE;
+
+  a {
+    text-decoration: none;
+  }
 }
 
-p.tags {
+p.extra-info {
   color: #aaa;
   font-size: 15px;
+}
+
+a.forkButton {
+  text-decoration: none;
+  svg {
+    path {
+      
+    }
+  }
 }
 
 hr {
@@ -135,6 +148,7 @@ article {
     a {
       margin-right: 20px;
       padding-left: 10px;
+      text-decoration: none;
       color: $header-inactive-color;
 
       &:visited {
@@ -172,6 +186,12 @@ li {
 
 a {
   color: #0085bd !important; 
+}
+
+footer {
+  a {
+    text-decoration: none;
+  }
 }
 
 a:visited {
@@ -219,7 +239,7 @@ $code-default-color: #333;
   color: $code-default-color !important;
   border: none !important;
   padding-left: 10px !important;
-  padding-top: 5px !important;
+  padding-top: 8px !important;
   padding-bottom: 1px !important;
 
   * {

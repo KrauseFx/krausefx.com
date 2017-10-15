@@ -21,9 +21,12 @@ layout: default
         {{ page.content }}
       </div>
 
-      {% if page.tags.size > 0 %}
-        <p class="tags">Tags: {{ page.tags | join: ', ' }}</p>
-      {% endif %}
+      <p class="extra-info">
+        {% if page.tags.size > 0 %}
+          Tags: {{ page.tags | join: ', ' }} &nbsp; | &nbsp; 
+        {% endif %}
+        {% include fork.html %}
+      </p>
     </article>
   {% endfor %}
 

@@ -8,16 +8,18 @@ layout: default
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
+      </time> &nbsp; | &nbsp; 
+      {% include fork.html %}
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  {% if page.tags.size > 0 %}
-    <p class="tags">Tags: {{ page.tags | join: ', ' }}</p>
-  {% endif %}
+
+  <p class="extra-info">
+    {% if page.tags.size > 0 %}
+      Tags: {{ page.tags | join: ', ' }} &nbsp; | &nbsp; 
+    {% endif %}
+    {% include fork.html %}
+  </p>
 </article>
