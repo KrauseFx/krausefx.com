@@ -17,5 +17,7 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  <p class="tags">Tags: {{ page.tags | join: ', ' }}</p>
+  {% if page.tags.size > 0 %}
+    <p class="tags">Tags: {{ page.tags | join: ', ' }}</p>
+  {% endif %}
 </article>

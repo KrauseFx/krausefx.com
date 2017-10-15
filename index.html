@@ -21,7 +21,9 @@ layout: default
         {{ page.content }}
       </div>
 
-      <p class="tags">Tags: {{ page.tags | join: ', ' }}</p>
+      {% if page.tags.size > 0 %}
+        <p class="tags">Tags: {{ page.tags | join: ', ' }}</p>
+      {% endif %}
     </article>
   {% endfor %}
 
