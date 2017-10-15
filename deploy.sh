@@ -20,10 +20,7 @@ cp -R "_site/" "/tmp/krausefx.com"
 
 # Check out gh-pages and clear all files
 git reset --hard HEAD # we don't want the `git checkout` to cause issues (e.g. https://circleci.com/gh/fastlane/docs/730)
-git remote update # needed for CI
-git fetch --all # needed for CI
-git pull --all # needed for CI
-git checkout gh-pages
+git checkout -b gh-pages
 git pull
 rm -rf *
 # Copy the finished HTML pages to the current directory
@@ -40,7 +37,7 @@ echo "test:
 # Commit all the changes and push it to the remote
 git add -A
 git commit -m "Deployed with $(jekyll -v)"
-git push origin gh-pages
+git push origin gh-pages --force # force needed, as travis somehow can't re-use branches
 
 # Post a Slack message
 git checkout master
