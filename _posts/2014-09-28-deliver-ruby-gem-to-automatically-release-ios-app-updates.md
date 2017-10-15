@@ -47,4 +47,8 @@ Deliver 
 
 The project is fully open source, well documented and has a high test coverage. 
 
-### [Open on GitHub](https://github.com/KrauseFx/deliver)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/KrauseFx/deliver" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>

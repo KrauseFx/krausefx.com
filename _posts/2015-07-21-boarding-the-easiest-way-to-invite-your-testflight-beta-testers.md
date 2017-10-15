@@ -22,4 +22,8 @@ Because that's what you do right now as an app developer when you want to add a 
 
 Why don't you have a simple web site you can share with potential testers (e.g. email newsletter, Facebook, Twitter) on which people interested in trying out your new app can just board on their own?
 
-### [Open on GitHub](https://github.com/fastlane/boarding)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/fastlane/boarding" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>

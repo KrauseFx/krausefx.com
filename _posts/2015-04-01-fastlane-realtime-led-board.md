@@ -15,4 +15,8 @@ meta: {}
 
 Every time one of the fastlane tools is launched, a rocket will be launched from the bottom of the LED board in the color of the corresponding tool
 
-### [Open on GitHub](https://github.com/fastlane/fastrockets)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/fastlane/fastrockets" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>

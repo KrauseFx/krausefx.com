@@ -23,4 +23,8 @@ Put a gorgeous device frame around your iOS screenshots just by running
 
 This tool will take care of everything, from finding your screenshots to detecting their screen sizes and orientation. 
 
-### [Open on GitHub](https://github.com/KrauseFx/frameit)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/KrauseFx/frameit" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>

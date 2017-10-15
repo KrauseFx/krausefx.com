@@ -125,4 +125,8 @@ Nope, actually, that's how the system dialog looks like, the . is within the "s
 * [what's the user doing](https://github.com/KrauseFx/whats-the-user-doing): Raising awareness of what you can do with a smartphones gyro sensors in web browsers
 * [detect.location](https://github.com/krausefx/detect.location): An easy way to access the user's iOS location data without actually having access
 
-### [Open on GitHub](https://github.com/KrauseFx/steal.password)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/KrauseFx/steal.password" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>

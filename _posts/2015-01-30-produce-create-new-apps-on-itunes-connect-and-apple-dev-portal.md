@@ -21,4 +21,8 @@ This is the sixth module of the
 [fastlane](http://fastlane.tools) toolchain. It integrates nicely with 
 [deliver](https://github.com/KrauseFx/deliver) and allows you to setup new apps without manually interacting with the Apple Portal.
 
-### [Open on GitHub](https://github.com/KrauseFx/produce)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/KrauseFx/produce" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>

@@ -33,4 +33,8 @@ What it does:
 * Download the latest certificate
 * Generate all necessary files, so you can send push notifications from your server
 
-### [Open on GitHub](https://github.com/KrauseFx/pem)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/KrauseFx/pem" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>

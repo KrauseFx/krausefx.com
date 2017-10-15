@@ -48,7 +48,11 @@ Using that data, any website can determine if the user is using their phone whil
 
 and probably more, including guesses if the user is actively using their phone at this moment, or even if they're impaired by alcohol.
 
-### [Open on GitHub](https://github.com/KrauseFx/whats-the-user-doing)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/KrauseFx/whats-the-user-doing" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>
 
 
 ### [Live demo](https://krausefx.github.io/whats-the-user-doing/)

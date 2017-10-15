@@ -21,4 +21,8 @@ Only if a new certificate needs to be created, cert will
 * Generate, downloads and installs the certificate
 * Import all the generated files into your Keychain
 
-### [Open on GitHub](https://github.com/KrauseFx/cert)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/KrauseFx/cert" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>

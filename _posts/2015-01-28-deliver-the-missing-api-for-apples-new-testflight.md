@@ -36,4 +36,8 @@ deliver.](https://github.com/KrauseFx/deliver)
 If you want a more advanced setup, including a fully working Continuous Deployment solution, which takes screenshots, updates provisioning profiles and creates your push certificate for you, checkout 
 [fastlane](http://fastlane.tools).
 
-### [Open on GitHub](https://github.com/KrauseFx/deliver)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://github.com/KrauseFx/deliver" target="_blank" style="color: #0037F5; text-decoration: underline;">
+    Open on GitHub
+  </a>
+</h3>
