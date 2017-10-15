@@ -167,7 +167,7 @@ Helping users is so much easier if you have all the information right there, inc
 
 If you receive similar issues very often, you should step back and work on fixing the underlying issue or making usage more clear. If 10 users submit a specific kind of issue, hundreds of other users felt the same way but didn’t take the time to submit an issue.
 
-In the case offastlane, many issues are related to code signing (yeah), however there is no ultimate solution to fix all issues as of now ([codesigning.guide](https://codesigning.guide/) is the easiest one so far). We wrote an extensive guide on how to setup code signing and how to troubleshoot problems. As with most things, users don’t like reading manuals, unless you link them to the right spot, which is exactly what thefastlane-botdoes in that case.
+In the case of fastlane, many issues are related to code signing (yeah), however there is no ultimate solution to fix all issues as of now ([codesigning.guide](https://codesigning.guide/) is the easiest one so far). We wrote an extensive guide on how to setup code signing and how to troubleshoot problems. As with most things, users don’t like reading manuals, unless you link them to the right spot, which is exactly what the `fastlane-bot` does in that case.
   
        
 ![Many times just linking people to the right docs already helps](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890115eb8a79b243d8396cb_1485836642761__img.png_)<small>Many times just linking people to the right docs already helps</small>
@@ -181,7 +181,7 @@ The key to handle support for large-scale open source projects is to keep issues
 * The user already found a workaround, and doesn’t care about spending more time on this issue
 * Many engineers switch companies and projects frequently
 
-Having a bot can ensure that issues are still relevant and reproducible. Thefastlane-botautomatically asks if an issue is still relevant with the most recent fastlane release after just 2 months.
+Having a bot can ensure that issues are still relevant and reproducible. The `fastlane-bot` automatically asks if an issue is still relevant with the most recent fastlane release after just 2 months.
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890119203596e99bbde85b4_1485836693702__img.png_)
@@ -208,13 +208,13 @@ Locking conversations of resolved, inactive issues is a great way to avoid re-su
 
 * Users would comment on issues that are not related to their problem, however sound similar
 * Users would comment on issues with a lot of subscribers from a long time ago, triggering unwanted email notifications for people who already found a solution
-* Thefastlane-botdoesn’t ensure if all required information is provided for single comments, but only for new issues
+* The `fastlane-bot` doesn’t ensure if all required information is provided for single comments, but only for new issues
 * Users would add "me too" commented without providing any details of the current problem they’re having
 
 By telling users to submit a new issue, you properly go through the complete lifecycle of an issue:
 
 * User submits issue
-* fastlane-bot ensures all required information was provided
+* The `fastlane-bot` ensures all required information was provided
 * Actual discussion around the issue
 * Issue gets resolved or auto-closed due to inactivity
   
@@ -265,7 +265,7 @@ This is something not many open source projects consider: the more complex the s
 
 #### Be welcoming and friendly
 
-This has been top priority for me since startingfastlane. Always be as friendly as you can. Thank people for submitting issues and PRs. Ask people for help or clarification if needed.
+This has been top priority for me since starting fastlane. Always be as friendly as you can. Thank people for submitting issues and PRs. Ask people for help or clarification if needed.
 
 ### Enabling your users to extend your project
 
@@ -281,7 +281,7 @@ Many Ruby-based open source projects, including fastlane, CocoaPods and Bundler,
   
 #### Allow local extensions
 
-This is how we started out withfastlane: when a user needed an integration for a third party or internal service that isn’t available yet, they can easily build and use a local action without having to touch the actual _fastlane_ code base. Most of the times, the developers would store their local actions in their git repository.
+This is how we started out with fastlane: when a user needed an integration for a third party or internal service that isn’t available yet, they can easily build and use a local action without having to touch the actual _fastlane_ code base. Most of the times, the developers would store their local actions in their git repository.
 
 #### Allow the community to extend and build on your project using plugins
 
