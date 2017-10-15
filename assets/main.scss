@@ -27,10 +27,16 @@ $no-sidebar: "800px";
   display: none;
 }
 
+/* Hide sidebar on mobile device s */
 @media screen and (min-width: $no-sidebar) {
   #sidebar {
     display: inline;
   }
+}
+
+.pagination {
+  text-align: center;
+  margin-right: 40px;
 }
 
 p.extra-info {
