@@ -24,24 +24,12 @@ Here are some examples of how to use the API (for the most up to date docs, plea
 ### Access the summary of Bitcoin:
 
 
-***1 line summary**
-: 
-[https://krausefx.github.io/crypto-summaries/coins/btc-1.txt](https://krausefx.github.io/crypto-summaries/coins/btc-1.txt)
-
-
-***3 lines summary**
-: 
-[https://krausefx.github.io/crypto-summaries/coins/btc-3.txt](https://krausefx.github.io/crypto-summaries/coins/btc-3.txt)
-
-
-***5 lines summary**
-: 
-[https://krausefx.github.io/crypto-summaries/coins/btc-5.txt](https://krausefx.github.io/crypto-summaries/coins/btc-5.txt)
+* **1 line summary**: [https://krausefx.github.io/crypto-summaries/coins/btc-1.txt](https://krausefx.github.io/crypto-summaries/coins/btc-1.txt)
+* **3 lines summary**: [https://krausefx.github.io/crypto-summaries/coins/btc-3.txt](https://krausefx.github.io/crypto-summaries/coins/btc-3.txt)
+* **5 lines summary**: [https://krausefx.github.io/crypto-summaries/coins/btc-5.txt](https://krausefx.github.io/crypto-summaries/coins/btc-5.txt)
 
 Alternatively you can also use the name of the coin instead of symbol
 
-***3 lines summary**
-: 
-[https://krausefx.github.io/crypto-summaries/coins/bitcoin-3.txt](https://krausefx.github.io/crypto-summaries/coins/bitcoin-3.txt)
+* **3 lines summary**: [https://krausefx.github.io/crypto-summaries/coins/bitcoin-3.txt](https://krausefx.github.io/crypto-summaries/coins/bitcoin-3.txt)
 
 The goal is to have a community maintained description of crypto currencies, maybe one day even support for tags, so you could filter for e.g. gaming coins. 
