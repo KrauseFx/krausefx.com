@@ -9,20 +9,19 @@ published: true
 meta: {}
 ---
 
-Not too long ago I started an open source project called[fastlane](https://fastlane.tools). Just a month after publishing, it had 1000+ stars on GitHub and was beginning to get used by lots of serious tech companies around the world. Soon I was the sole maintainer of a project getting 10+ PRs/day, and spending 8+hrs/day reviewing PRs and replying to questions on GitHub. This is the story of some of the challenges I faced when scaling the project to where it is today: a OSS project stewarded by Twitter and now Google, with over 12k commits, 13k stars, 500+ contributors, and one of the top 25 most active open source projects on GitHub (spoiler alert: I didn't do it alone).
+Not too long ago I started an open source project called [fastlane](https://fastlane.tools). Just a month after publishing, it had 1000+ stars on GitHub and was beginning to get used by lots of serious tech companies around the world. Soon I was the sole maintainer of a project getting 10+ PRs/day, and spending 8+hrs/day reviewing PRs and replying to questions on GitHub. This is the story of some of the challenges I faced when scaling the project to where it is today: a OSS project stewarded by Twitter and now Google, with over 12k commits, 13k stars, 500+ contributors, and one of the top 25 most active open source projects on GitHub (spoiler alert: I didn't do it alone).
 
-Different stages of open source projects
+## Different stages of open source projects
 
 ### Stage 1: Putting source code on GitHub
 
 
-About 
-[40%](https://github.com/search?utf8=%E2%9C%93&q=stars%3A0&type=Repositories&ref=advsearch&l=&l=) of all repositories on GitHub have 0 stars and don’t gain a lot of traction. Most of those repositories don’t have a single GitHub issue or Pull Request. For example, a very early version of fastlane snapshot was called[rScreenshooter](https://github.com/KrauseFx/rScreenshooter)and has almost no engagement on GitHub.
+About [40%](https://github.com/search?utf8=%E2%9C%93&q=stars%3A0&type=Repositories&ref=advsearch&l=&l=) of all repositories on GitHub have 0 stars and don’t gain a lot of traction. Most of those repositories don’t have a single GitHub issue or Pull Request. For example, a very early version of fastlane snapshot was called [rScreenshooter](https://github.com/KrauseFx/rScreenshooter) and has almost no engagement on GitHub.
 
 ### Stage 2: Developers start using your software
 
 
-It’s tough to know how many people use your code until you get your first Issue or PR. Receiving your first PR is an amazing feeling: Complete strangers care enough about your project that they gave it a try, and even dived into the code to work on an improvement, and send it back to you. However, simple PRs like a doc changes aren't signals that a developer is using your code. Only when a pull request changes the software’s behavior you know it’s being used, and it’s a great feeling. For fastlane this was the case[a PR from foozmeat](https://github.com/fastlane-old/deliver/pull/17)that improves the design of the app’s summary. Not only was that a great change, but also was it from someone at[Panic](https://panic.com/).
+It’s tough to know how many people use your code until you get your first Issue or PR. Receiving your first PR is an amazing feeling: Complete strangers care enough about your project that they gave it a try, and even dived into the code to work on an improvement, and send it back to you. However, simple PRs like a doc changes aren't signals that a developer is using your code. Only when a pull request changes the software’s behavior you know it’s being used, and it’s a great feeling. For fastlane this was the case [a PR from foozmeat](https://github.com/fastlane-old/deliver/pull/17) that improves the design of the app’s summary. Not only was that a great change, but also was it from someone at [Panic](https://panic.com/).
 
 ### Stage 3: Project is popular and the go-to solution in its field
 
@@ -92,9 +91,9 @@ It’s very hard to balance reaching your current goals, and investing time revi
 ### Maintainers stop being users of the project as it grows
 
 
-This is an interesting phenomenon with many big open source project, including[fastlane](https://fastlane.tools)and[CocoaPods](https://cocoapods.org): The project was started because the author needed the software for themselves. Suddenly they work on the open source project full-time, stopping the activity they’ve been doing before. With that they stop being a user of their own project. They are not in their own product’s target group any more.
+This is an interesting phenomenon with many big open source project, including [fastlane](https://fastlane.tools) and [CocoaPods](https://cocoapods.org): The project was started because the author needed the software for themselves. Suddenly they work on the open source project full-time, stopping the activity they’ve been doing before. With that they stop being a user of their own project. They are not in their own product’s target group any more.
 
-The challenge is to still somehow use the product to feel the user’s pain points, and realize what to focus their time on. For example,[fastlane is deployed using fastlane](https://github.com/fastlane/fastlane/blob/master/fastlane/Fastfile), therefore everyone working on fastlane also uses the product. If that’s not possible for your project, force yourself to onboard your own project from time to time, and go through the whole process.
+The challenge is to still somehow use the product to feel the user’s pain points, and realize what to focus their time on. For example, [fastlane is deployed using fastlane](https://github.com/fastlane/fastlane/blob/master/fastlane/Fastfile), therefore everyone working on fastlane also uses the product. If that’s not possible for your project, force yourself to onboard your own project from time to time, and go through the whole process.
 
 ### Information imbalance with your users
 
@@ -128,7 +127,7 @@ In fastlane we even link to StackOverflow replies and make sure to include all n
 ### Make it easy to find existing issues
 
 
-When you receive a cryptic error message, what’s the first thing you do? Usually you search on the GitHub repo page, or google for the message. You as a project maintainer should make it easy as possible for the user to do so. That’s why[@orta](https://github.com/orta/gh_inspector)started[gh_inspector](https://github.com/orta/gh_inspector), a Ruby gem to show related GitHub issues right in the user’s terminal. Whenever _fastlane_ runs into an unexpected situation, it will not only show similar GitHub issues, but also print out the GitHub search URL. The long-term plan is to also support StackOverflow questions (see[#13](https://github.com/orta/gh_inspector/issues/13))
+When you receive a cryptic error message, what’s the first thing you do? Usually you search on the GitHub repo page, or google for the message. You as a project maintainer should make it easy as possible for the user to do so. That’s why [@orta](https://github.com/orta/gh_inspector) started [gh_inspector](https://github.com/orta/gh_inspector), a Ruby gem to show related GitHub issues right in the user’s terminal. Whenever _fastlane_ runs into an unexpected situation, it will not only show similar GitHub issues, but also print out the GitHub search URL. The long-term plan is to also support StackOverflow questions (see [#13](https://github.com/orta/gh_inspector/issues/13))
   
        
 ![Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010b0d1758e5ffee5719f_1485836468314__img.png_) Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub 
@@ -141,7 +140,7 @@ I’m not a big fan of bots and automated messages, however as soon as you reach
 
 #### Ensuring all required information is available
 
-Providing all information when submitting a bug report is hard, even as a software engineer. GitHub recently introduced[ISSUE_TEMPLATE.MD](https://github.com/fastlane/fastlane/blob/master/.github/ISSUE_TEMPLATE.md), that auto-fills the "New Issue" form with instructions on how to file an issue. However most people ignore the instructions.
+Providing all information when submitting a bug report is hard, even as a software engineer. GitHub recently introduced [ISSUE_TEMPLATE.MD](https://github.com/fastlane/fastlane/blob/master/.github/ISSUE_TEMPLATE.md), that auto-fills the "New Issue" form with instructions on how to file an issue. However most people ignore the instructions.
 
 Using the fastlane-bot we ensure all required information is available, and if not, tell the user how to provide them.
   
@@ -230,12 +229,12 @@ Responding to pull requests
 
 The sections above mostly covered issues, but a very essential part is also responding to pull request. You have certain rules for your projects, like automated tests, code style and architecture. Many of those things are already checked by regular CI systems, and the build for the PR fails if the requirements aren’t met.
 
-However tests don’t ensure the way how changes are introduced (= the delta). That’s why[@orta](https://twitter.com/orta)and I set out to build[danger](http://danger.systems), a tool that allows you to define rules for code changes. Some examples:
+However tests don’t ensure the way how changes are introduced (= the delta). That’s why [@orta](https://twitter.com/orta)and I set out to build [danger](http://danger.systems), a tool that allows you to define rules for code changes. Some examples:
 
 * Post test failures right on GitHub so that contributors don’t have to scroll through the CI output
 * Show a warning when certain files get modified
 * Require new tests when more than 20 lines were modified
-* And many[more](http://danger.systems/)
+* And many [more](http://danger.systems/)
 
 PR and Run
 
@@ -253,7 +252,7 @@ This enables contributors of the project to say "No" to feature requests or PRs 
 ### Scaling contribution
 
 
-As your project grows you need more people joining you on maintaining the project and pushing it forward. You want to increase the[bus factor](https://en.wikipedia.org/wiki/Bus_factor)as your project grows, meaning more and more people know how the project works and can commit code. There are some great approaches out there, like the[moya contributing guidelines](https://github.com/Moya/contributors)by[Ash Furrow](https://ashfurrow.com). Ideally the project operates without any help from you.
+As your project grows you need more people joining you on maintaining the project and pushing it forward. You want to increase the [bus factor](https://en.wikipedia.org/wiki/Bus_factor)as your project grows, meaning more and more people know how the project works and can commit code. There are some great approaches out there, like the [moya contributing guidelines](https://github.com/Moya/contributors)by [Ash Furrow](https://ashfurrow.com). Ideally the project operates without any help from you.
 
 Code of Conduct
 
@@ -261,7 +260,7 @@ With a growing community, you also need to ensure developers are in a safe envir
 
 Onboarding instructions
 
-Make it very easy for engineers interested in submitting code changes to set up their development environment. If you’re not a mono-repo yet (:trollface:), you might need a repo to quickly set up all the other repos, e.g. CocoaPod’s[Rainforest](https://github.com/CocoaPods/Rainforest), fastlane’s[countdown](https://github.com/fastlane-old/countdown/blob/c0209981cdc66d9a2c1d2be9708d52346b60dced/Rakefile)(now deprecated)
+Make it very easy for engineers interested in submitting code changes to set up their development environment. If you’re not a mono-repo yet (:trollface:), you might need a repo to quickly set up all the other repos, e.g. CocoaPod’s [Rainforest](https://github.com/CocoaPods/Rainforest), fastlane’s [countdown](https://github.com/fastlane-old/countdown/blob/c0209981cdc66d9a2c1d2be9708d52346b60dced/Rakefile)(now deprecated)
 
 Keeping your code base simple
 
@@ -297,7 +296,7 @@ While it’s not possible for all kinds of projects, building a plugin architect
 
 Of course you can build your own dependency resolving, however think twice before doing so. There might be a great dependency manager available you can use to implement your plugins.
 
-At _fastlane_ we use RubyGems and bundler to make it easy for people to distribute and use plugins. As a result there are already[120 third party plugins](https://rubygems.org/search?utf8=%E2%9C%93&query=fastlane-plugin-)available within just a few months.
+At _fastlane_ we use RubyGems and bundler to make it easy for people to distribute and use plugins. As a result there are already [120 third party plugins](https://rubygems.org/search?utf8=%E2%9C%93&query=fastlane-plugin-)available within just a few months.
 
 ## Wrapping up
 

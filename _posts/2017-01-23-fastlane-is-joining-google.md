@@ -24,6 +24,6 @@ It's only been a bit over year that [fastlane joined Fabric](https://krausefx.co
 * Upgraded fastlane to be a mono-repo
 * Launched the new [docs.fastlane.tools](https://docs.fastlane.tools) page
 
-Today it's time for the next big step for fastlane: fastlane - along with the[Fabric](https://fabric.io/blog/fabric-joins-google)platform - is joining Google, working together with the Firebase team. The two teams are committed to building the best tools to help developers build better apps. fastlane will stay an open source project as part of that mission.
+Today it's time for the next big step for fastlane: fastlane - along with the [Fabric](https://fabric.io/blog/fabric-joins-google) platform - is joining Google, working together with the Firebase team. The two teams are committed to building the best tools to help developers build better apps. fastlane will stay an open source project as part of that mission.
 
 I'm super excited about this opportunity, and can't wait for what we can all build together.

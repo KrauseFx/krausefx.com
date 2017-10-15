@@ -17,7 +17,7 @@ meta: {}
  
 [fastlane got acquired by Google](https://krausefx.com/blog/fastlane-is-joining-google)
 
-I started[fastlane](https://fastlane.tools)as a side project about a year ago. In just a short time, fastlane became the most popular iOS automation toolset, used by thousands of developers around the world. I never imagined that so many people would use it or how much time it would require to maintain it. It became a full time job!
+I started [fastlane](https://fastlane.tools) as a side project about a year ago. In just a short time, fastlane became the most popular iOS automation toolset, used by thousands of developers around the world. I never imagined that so many people would use it or how much time it would require to maintain it. It became a full time job!
 
 That’s why today, I'm happy to announce that fastlane is now part of 
 [Fabric](https://fabric.io), where I will get to focus on fastlane full time and work on building the best developer tools available.
@@ -37,7 +37,7 @@ And for the last two months, while I've been working from Twitter HQ in San Fran
 ### 1.0 Releases for all tools
 
 
-In the last few weeks, I’ve been focusing a lot on quality. All fastlane tools now use[spaceship](https://github.com/fastlane/spaceship)to communicate with Apple. I’m very excited that all fastlane tools are now available as 1.0 releases, and I’m really looking forward to the things we’re building next.
+In the last few weeks, I’ve been focusing a lot on quality. All fastlane tools now use [spaceship](https://github.com/fastlane/spaceship) to communicate with Apple. I’m very excited that all fastlane tools are now available as 1.0 releases, and I’m really looking forward to the things we’re building next.
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a100e4b05fed1255d17b_1445372162952__img.jpg_)
