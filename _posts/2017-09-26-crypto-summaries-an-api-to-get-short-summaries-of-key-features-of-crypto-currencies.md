@@ -19,7 +19,7 @@ I'm not sure how many developers face this issue, but I decided to build and pub
 [GitHub](https://github.com/KrauseFx/crypto-summaries).
 
 Here are some examples of how to use the API (for the most up to date docs, please 
-[open the GitHub repo](https://github.com/KrauseFx/crypto-summaries))
+[open the GitHub repo](https://github.com/KrauseFx/crypto-summaries).
 
 ### Access the summary of Bitcoin:
 
