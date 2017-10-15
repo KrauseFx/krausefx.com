@@ -66,3 +66,24 @@ There has been quite some discussion around the GitHub graph (e.g. [isaacs/gith
 Special thanks to [@sebmasterkde](https://twitter.com/sebmasterkde) for coming up with the initial queries.
 
 Note: The data shown above is from May, as that’s when I wrote this blog post, but was kind of distracted with more important things (life and such) and finally found the time to publish this post.
+
+```sql
+/* GitHub query to get the number of comments, PR, releases, etc. for a given GH org */
+
+WITH 
+  ProjectData AS (SELECT * FROM `githubarchive.day.2017*` WHERE repo.name LIKE 'fastlane/%'),
+  Actors AS (SELECT DISTINCT(actor.login) AS login FROM ProjectData)
+
+SELECT * FROM (
+  SELECT 
+    actors.login,
+    (SELECT COUNT(*) FROM ProjectData WHERE type = 'IssueCommentEvent' AND actor.login = actors.login) AS Comments,
+    (SELECT COUNT(*) FROM ProjectData WHERE type = 'PullRequestEvent' AND actor.login = actors.login) AS PRs,
+    (SELECT COUNT(*) FROM ProjectData WHERE type = 'PullRequestReviewCommentEvent' AND actor.login = actors.login) AS ReviewComments,
+    (SELECT COUNT(*) FROM ProjectData WHERE type = 'ReleaseEvent' AND actor.login = actors.login) AS Releases,
+    (SELECT COUNT(*) FROM ProjectData WHERE type = 'IssuesEvent' AND actor.login = actors.login) AS ClosedRenamedAndLabeledIssues
+  FROM Actors as actors
+)
+WHERE PRs > 0 OR Comments > 0
+ORDER BY PRs DESC, Comments DESC;
+```
