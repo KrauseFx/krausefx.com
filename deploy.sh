@@ -20,6 +20,8 @@ cp -R "_site/" "/tmp/krausefx.com"
 
 # Check out gh-pages and clear all files
 git reset --hard HEAD # we don't want the `git checkout` to cause issues (e.g. https://circleci.com/gh/fastlane/docs/730)
+git fetch --all # needed for CI
+git pull --all # needed for CI
 git checkout gh-pages
 git pull
 rm -rf *
