@@ -78,10 +78,18 @@ meta: {}
     border: 1px solid #ccc;
     background-color: #fafafa;
     padding: 15px;
-    /*box-sizing: border-box;*/
     resize: vertical;
   }
   #contactform input[type="submit"] {
-
+    display: inline-block;
+    width: 127px;
+    height: 42px;
+    background-color: #272727;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    border: none;
+    margin-top: 10px;
   }
 </style>
