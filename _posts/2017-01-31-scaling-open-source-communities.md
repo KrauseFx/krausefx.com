@@ -31,7 +31,7 @@ Even more exciting times start when your project becomes the de-facto standard f
 Examples:
 
 * Accessing SQLite in your iOS app: [fmdb](https://github.com/ccgus/fmdb)
-* Authentication for your Rails app:[devise](https://github.com/plataformatec/devise)
+* Authentication for your Rails app: [devise](https://github.com/plataformatec/devise)
 
 ### Stage 4: Hyper-scale open source projects
 
@@ -44,7 +44,7 @@ Examples:
 
 ## Scaling open source projects is hard
      
-![My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900fabe3df281428d8cca5_1485836247300__img.png_) My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more 
+![My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900fabe3df281428d8cca5_1485836247300__img.png_)<small>My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more</small>
 
 ### Keeping the momentum
 
@@ -112,12 +112,11 @@ For the maintainer it's an issue that has to be prioritized and it might not be 
 How you handle failures has a big impact on how easy it is for the user to resolve the issue. So many developer tools get that wrong ([Thoughts on iOS build tools](https://krausefx.com/blog/ios-tools)) and make it incredibly hard for people to use their software.
   
        
-![Before changing fastlane to highlight the actual error message and still showing the stack trace by default](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014e86b8f5ba2ed9c2751_1485837553599__img.png_) Before changing fastlane to highlight the actual error message and still showing the stack trace by default 
+![Before changing fastlane to highlight the actual error message and still showing the stack trace by default](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014e86b8f5ba2ed9c2751_1485837553599__img.png_)<small>Before changing fastlane to highlight the actual error message and still showing the stack trace by default</small>
   
-![After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014db6a496349b23a05f1_1485837535364__img.png_) After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash 
+![After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014db6a496349b23a05f1_1485837535364__img.png_)<small>After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash</small>
 
 The left screenshot shows an early version of _fastlane_, compared to how _fastlane_ shows error messages today. Not only how you present the error message, but its content is really important: Make sure the message explains the error well enough and ideally even include instructions on how to fix it.
-  
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58901058ff7c50a0160df707_1485836406181_Screenshot+2017-01-10+10.46.36.png.36.png_)
 
@@ -130,7 +129,7 @@ In fastlane we even link to StackOverflow replies and make sure to include all n
 When you receive a cryptic error message, what’s the first thing you do? Usually you search on the GitHub repo page, or google for the message. You as a project maintainer should make it easy as possible for the user to do so. That’s why [@orta](https://github.com/orta/gh_inspector) started [gh_inspector](https://github.com/orta/gh_inspector), a Ruby gem to show related GitHub issues right in the user’s terminal. Whenever _fastlane_ runs into an unexpected situation, it will not only show similar GitHub issues, but also print out the GitHub search URL. The long-term plan is to also support StackOverflow questions (see [#13](https://github.com/orta/gh_inspector/issues/13))
   
        
-![Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010b0d1758e5ffee5719f_1485836468314__img.png_) Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub 
+![Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010b0d1758e5ffee5719f_1485836468314__img.png_) <small>Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub</small>
   
 
 
@@ -169,7 +168,7 @@ If you receive similar issues very often, you should step back and work on fixin
 In the case offastlane, many issues are related to code signing (yeah), however there is no ultimate solution to fix all issues as of now ([codesigning.guide](https://codesigning.guide/)is the easiest one so far). We wrote an extensive guide on how to setup code signing and how to troubleshoot problems. As with most things, users don’t like reading manuals, unless you link them to the right spot, which is exactly what thefastlane-botdoes in that case.
   
        
-![Many times just linking people to the right docs already helps](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890115eb8a79b243d8396cb_1485836642761__img.png_) Many times just linking people to the right docs already helps 
+![Many times just linking people to the right docs already helps](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890115eb8a79b243d8396cb_1485836642761__img.png_)<small>Many times just linking people to the right docs already helps</small>
   
 
 
