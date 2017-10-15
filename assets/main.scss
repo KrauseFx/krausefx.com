@@ -20,6 +20,11 @@ $header-inactive-color: #9c9c9c;
   border-left: 1px solid #EEE;
 }
 
+p.tags {
+  color: #aaa;
+  font-size: 15px;
+}
+
 hr {
   color: #bbb;
   background-color: #bbb;
@@ -67,7 +72,7 @@ article {
 
 .home {
   article {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 }
 
