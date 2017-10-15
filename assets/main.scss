@@ -180,6 +180,13 @@ body, html{
   }
 }
 
+/* Mobile view, the header buttons were misaligned without this */
+@media screen and (max-width: 600px) {
+  .site-nav .page-link {
+    margin-right: 0 !important;
+  }
+}
+
 a {
   text-decoration: underline;
 }
