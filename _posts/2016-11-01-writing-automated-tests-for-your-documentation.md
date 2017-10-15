@@ -111,33 +111,29 @@ For [fastlane](https://fastlane.tools) we found 28 errors just in the [actions d
 
 For all the checks mentioned below, the source is on the [fastlane docs repo](https://github.com/fastlane/docs/blob/master/fastlane/actions/test_sample_code.rb).
       
+### Catch syntax errors in code samples
+
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c1e42994ca082108fc0d_1477951976150__img.png_)
 
-### Catch syntax errors in code samples
 
 Nothing is more frustrating than copying a code sample and having to fix the syntax to make it work. Most users won't spend the time to look into how they can contribute to your docs to fix the error.
 
-      
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c285197aea1a94bcc18f_1477952138871__img.png_)
-
 ### Catch unavailable actions or methods
 
-For fastlane most code samples call certain actions or integrations. Using tests we ensure that this action is available and correctly spelled.
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c285197aea1a94bcc18f_1477952138871__img.png_)
 
-      
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c33b893fc0c77e1ed440_1477952319091__img.png_)
-
+For fastlane most code samples call certain actions or integrations. Using tests we ensure that this action is available and correctly spelled.      
 
 ### Verify action parameters
 
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c33b893fc0c77e1ed440_1477952319091__img.png_)
+
 Most fastlane actions allow passing of named parameters. We now automatically verify that all parameters are available to use.
-  
-      
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c493b8a79b7befea0fdf_1477952663470__img.png_)
 
 
 ### Verify parameter types
 
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c493b8a79b7befea0fdf_1477952663470__img.png_)
 
 Every fastlane parameter has a type defined, which fastlane validates on run-time. It's easy to get a type wrong in the documentation, so we now validate those too.
  
@@ -147,10 +143,8 @@ Every fastlane parameter has a type defined, which fastlane validates on run-tim
 
 There are 2 points where you want to verify your docs are valid and up to date:
 
-* When you push a new release of your software (
-[deploy script of your software](https://github.com/fastlane/fastlane/blob/07baac7d27aab54a622d6d01942066b008e40c5f/fastlane/fastlane/Fastfile#L231-L232))
-* When you update your documentation (
-[CI test script of your docs](https://github.com/fastlane/docs/blob/a1b3792d7bbc8a38524790b1f2e3e18bf7de6dc2/fastlane/Fastfile#L10))
+* When you push a new release of your software ([deploy script of your software](https://github.com/fastlane/fastlane/blob/07baac7d27aab54a622d6d01942066b008e40c5f/fastlane/fastlane/Fastfile#L231-L232))
+* When you update your documentation ([CI test script of your docs](https://github.com/fastlane/docs/blob/a1b3792d7bbc8a38524790b1f2e3e18bf7de6dc2/fastlane/Fastfile#L10))
 
 So whatever introduced a regression, the build will be failing and you can't merge the change into master.
 

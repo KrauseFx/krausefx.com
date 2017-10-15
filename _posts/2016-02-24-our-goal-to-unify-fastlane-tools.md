@@ -30,7 +30,7 @@ In its current setup, we ran into these problems:
 
 * It’s hard to decide when to release an update for each of the tools, so we built a script to show which tool has the highest number of outstanding changes to be released. Switching to a mono repo allows us to switch to a more regular release cycle
 
-##**Our goal to unify fastlane tools**
+## Our goal to unify fastlane tools
 
 
 To solve a lot of these problems, our team decided to move all fastlane tools into one main repository. Each tool will be in a subfolder enabling you easy access to its source code.

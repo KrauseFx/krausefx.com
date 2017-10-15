@@ -10,7 +10,7 @@ meta:
   _thumbnail_id: '15'
 ---
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5453ace5e4b025f7beacfc10_1414769893822__img.png_)
+<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5453ace5e4b025f7beacfc10_1414769893822__img.png_" align="right" width="128">
   
 
 

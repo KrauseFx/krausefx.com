@@ -24,8 +24,7 @@ With fastlane you define how your app needs to get released to the App Store (or
 * Define different deployment lanes for App Store deployment, beta builds or testing
 * Deploy from any computer
 * [Jenkins Integration](https://github.com/krausefx/fastlane#jenkins-integration): Show the output directly in the Jenkins test results
-* Write your 
-[own actions](https://github.com/krausefx/fastlane#extensions) (extensions) to extend the functionality of fastlane
+* Write your [own actions](https://github.com/krausefx/fastlane#extensions) (extensions) to extend the functionality of fastlane
 * Store data like the Bundle Identifier or your Apple ID once and use it across all tools
 * Never remember any difficult commands, just fastlane
 * Easy setup, which helps you getting up and running very fast
@@ -35,4 +34,8 @@ With fastlane you define how your app needs to get released to the App Store (or
 * Very flexible configuration using a fully customizable Fastfile
 * Once up and running, you have a fully working **Continuous Deployment** process. Just trigger fastlane and you're good to go.
 
-### [Open fastlane.tools](http://fastlane.tools)
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://fastlane.tools" target="_blank" style="text-decoration: underline;">
+    Open fastlane.tools
+  </a>
+</h3>

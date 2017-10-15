@@ -41,10 +41,6 @@ Some quick facts:
 
 Before I started working, I participated at a Appcelerator Titanium Training to become a 
 Certified Titanium Application Developer. It was a huge milestone in my young career and I hope to gain more training in the future.
-  
-      
-[![tcad-badge](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cc88_1414699596319_tcad-badge.png_)](http://static.squarespace.com/static/545299aae4b0e9514fe30c95/54529a29e4b025a90f45cc50/54529a29e4b025a90f45cc88/1346657871000/tcad-badge.png?format=original)
-  
 
 
 6Wunderkinder is a Berlin based startup founded in August of 2010 and creates multi-platform productivity solutions for individuals, groups and businesses. Currently I am working on a productivity platform named 

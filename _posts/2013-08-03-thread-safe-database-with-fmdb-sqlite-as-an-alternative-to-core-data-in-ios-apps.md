@@ -43,16 +43,47 @@ After trying different approaches of multithreading, this turns out to be the be
 First of all you need a database queue (provided by 
 [FMDB](https://github.com/ccgus/fmdb)), an NSOperationQueue to queue your queries and a lock for the database.
 
+
+```objective-c
+static FMDatabaseQueue *_queue; 
+static NSOperationQueue *_writeQueue; 
+static NSRecursiveLock *_writeQueueLock;
+```
+
 If you use a singleton for your database, set up your static variables.
+
+```objective-c
+ _queue = [FMDatabaseQueue databaseQueueWithPath:...]; 
+ _writeQueue = [NSOperationQueue new]; 
+ [_writeQueue setMaxConcurrentOperationCount:1]; 
+ _writeQueueLock = [NSRecursiveLock new];
+```
 
 Basically there are 2 use cases now: Read from database and Write to database
 
-To 
-**read**
-, all you have to is:
+To **read**, all you have to is:
+```objective-c
+[_writeQueueLock lock];
+[_queue inDatabase:^(FMDatabase *db) {
+    FMResultSet *res = [db executeQuery:@"..."];
+    if ([res next]) {
+        ...
+    }
+    [res close];
+}];
+[_writeQueueLock unlock];
+```
 
-To**write**
-into the database, you have to use the writeQueue:
+To **write** into the database, you have to use the writeQueue:
+```objective-c
+[_writeQueue addOperationWithBlock:^{
+    [_writeQueueLock lock];
+    [_queue inDatabase:^(FMDatabase *db) {
+        if (![db executeUpdate:@"..." withArgumentsInArray:...]) { ... }
+    }];
+    [_writeQueueLock unlock];
+}];
+```
 
 That's all you need to really easily save/read data using 
 [FMDB](https://github.com/ccgus/fmdb). I use a little wrapper that matches properties with the according columns inside the database.

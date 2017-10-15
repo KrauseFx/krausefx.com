@@ -13,9 +13,7 @@ meta: {}
   
 
 
-**Update 2017:**
- 
-[fastlane got acquired by Google](https://krausefx.com/blog/fastlane-is-joining-google)
+**Update 2017:** [fastlane got acquired by Google](https://krausefx.com/blog/fastlane-is-joining-google)
 
 I started [fastlane](https://fastlane.tools) as a side project about a year ago. In just a short time, fastlane became the most popular iOS automation toolset, used by thousands of developers around the world. I never imagined that so many people would use it or how much time it would require to maintain it. It became a full time job!
 
@@ -67,8 +65,7 @@ Earlier this year Apple announced Xcode 7 with support for UI Tests. This techno
   
 
  
-### New tool: 
-[scan](https://github.com/fastlane/scan)
+### New tool: [scan](https://github.com/fastlane/scan)
 
 
 A lot of developers use fastlane to run tests on their project. Up until now, fastlane used third party test runners to run and monitor tests. As of today, there is a new tool called 
@@ -76,6 +73,4 @@ A lot of developers use fastlane to run tests on their project. Up until now, fa
 
 If you're an existing fastlane user, you can be excited about the next few weeks and what I have in the pipeline. If you're new to fastlane, now is the best time to get started
 
-**Update 2017:**
- 
-[fastlane got acquired by Google](https://krausefx.com/blog/fastlane-is-joining-google)
+**Update 2017:** [fastlane got acquired by Google](https://krausefx.com/blog/fastlane-is-joining-google)

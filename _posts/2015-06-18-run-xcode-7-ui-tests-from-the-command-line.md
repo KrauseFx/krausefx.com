@@ -81,19 +81,70 @@ Manage Schemes to open the dialog.
 
 ## Launch the tests from the CLI
 
+```sh
+
+xcodebuild -workspace App.xcworkspace \
+           -scheme "SchemeName" \
+           -sdk iphonesimulator \
+           -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0'
+           test
+```
+
 
 It's important to also define the version of Xcode to use, in our case that's the latest beta:
 
-
+```
 export DEVELOPER_DIR="/Applications/Xcode-beta.app"
+```
 
 
 You can even make the beta version your new default by running
 
-
-sudo xcode-select --switch "/Applications/Xcode-beta.app"
+```
+sudo xcode-select --switch "/Applications/Xcode.app"
+```
 
 Example output when running UI Tests from the terminal:
+```
+Test Suite 'All tests' started at 2015-06-18 14:48:42.601
+Test Suite 'TempCam UI Tests.xctest' started at 2015-06-18 14:48:42.602
+Test Suite 'TempCam_UI_Tests' started at 2015-06-18 14:48:42.602
+Test Case '-[TempCam_UI_Tests.TempCam_UI_Tests testExample]' started.
+2015-06-18 14:48:43.676 XCTRunner[39404:602329] Continuing to run tests in the background with task ID 1
+    t =     1.99s     Wait for app to idle
+    t =     2.63s     Find the "toggleButton" Switch
+    t =     2.65s     Tap the "toggleButton" Switch
+    t =     2.65s         Wait for app to idle
+    t =     2.66s         Find the "toggleButton" Switch
+    t =     2.66s         Dispatch the event
+    t =     2.90s         Wait for app to idle
+    t =     3.10s     Find the "toggleButton" Switch
+    t =     3.10s     Tap the "toggleButton" Switch
+    t =     3.10s         Wait for app to idle
+    t =     3.11s         Find the "toggleButton" Switch
+    t =     3.11s         Dispatch the event
+    t =     3.34s         Wait for app to idle
+    t =     3.54s     Find the "toggleButton" Switch
+    t =     3.54s     Tap the "MyButton" Button
+    t =     3.54s         Wait for app to idle
+    t =     3.54s         Find the "MyButton" Button
+    t =     3.55s         Dispatch the event
+    t =     3.77s         Wait for app to idle
+    t =     4.25s     Tap the "Okay" Button
+    t =     4.25s         Wait for app to idle
+    t =     4.26s         Find the "Okay" Button
+    t =     4.28s         Dispatch the event
+    t =     4.51s         Wait for app to idle
+    t =     4.51s     Find the "toggleButton" Switch
+Test Case '-[TempCam_UI_Tests.TempCam_UI_Tests testExample]' passed (4.526 seconds).
+Test Suite 'TempCam_UI_Tests' passed at 2015-06-18 14:48:47.129.
+   Executed 1 test, with 0 failures (0 unexpected) in 4.526 (4.527) seconds
+Test Suite 'TempCam UI Tests.xctest' passed at 2015-06-18 14:48:47.129.
+   Executed 1 test, with 0 failures (0 unexpected) in 4.526 (4.528) seconds
+Test Suite 'All tests' passed at 2015-06-18 14:48:47.130.
+   Executed 1 test, with 0 failures (0 unexpected) in 4.526 (4.529) seconds
+** TEST SUCCEEDED **
+```
 
 # Generating Screenshots
 
@@ -101,6 +152,14 @@ Example output when running UI Tests from the terminal:
 No extra work needed, you get screenshots for free. By appending the 
 derivedDataPath option to your command, you tell Xcode where to store the test results including the generated screenshots.
 
+```sh
+xcodebuild -workspace App.xcworkspace \
+           -scheme "SchemeName" \
+           -sdk iphonesimulator \
+           -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' \
+           -derivedDataPath './output' \
+           test
+```
 
   
       
@@ -121,5 +180,4 @@ To create screenshots in all languages and in all device types, you need a tool 
 I'm currently working on a new version of 
 [snapshot](https://fastlane.tools/snapshot) to make use of the new UI Tests features. This enables snapshot to show even more detailed results and error messages if something goes wrong. I'm really excited about this change 👍
 
-**Update: **
-[snapshot](https://fastlane.tools/snapshot) now uses UI Tests to generate screenshots and the HTML summary for all languages and devices.
+**Update:** [snapshot](https://fastlane.tools/snapshot) now uses UI Tests to generate screenshots and the HTML summary for all languages and devices.

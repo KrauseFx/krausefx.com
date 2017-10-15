@@ -12,7 +12,7 @@ meta:
   _thumbnail_id: '32'
 ---
 
-![knallgraulogo](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cc9f_1414699595284_knallgraulogo.jpg_) knallgraulogo 
+![knallgraulogo](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cc9f_1414699595284_knallgraulogo.jpg_)
   
 
 

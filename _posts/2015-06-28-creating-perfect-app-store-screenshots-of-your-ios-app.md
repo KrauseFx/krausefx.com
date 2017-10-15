@@ -31,9 +31,7 @@ Please click on the pictures to enlarge them for more details.
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e726ce4b01c6273e8053f_1435398811173__img.png_)
   
-
-
-Notice how the size of the font of the first 3 screenshots (iPhone 4, iPhone 5, iPhone 6) are exactly the same. Only the last screenshot (iPhone 6 Plus) the text seems larger as it's a @3x display.
+<small>Notice how the size of the font of the first 3 screenshots (iPhone 4, iPhone 5, iPhone 6) are exactly the same. Only the last screenshot (iPhone 6 Plus) the text seems larger as it's a @3x display.</small>
 
 # Create screenshots on one device type, put it into frames and resize them
 
@@ -41,25 +39,16 @@ Notice how the size of the font of the first 3 screenshots (iPhone 4, iPhone 5, 
 This way, you only create 5 screenshots per language on only one device type and put them into frames. By putting the one screenshot into different frames, the tool you use can resize the resulting image to match the iTunes Connect requirements. 
 
 Below some example applications that use this technique. I only had to upload one screenshot and got the result shown below. (left: iPhone 4, right: iPhone 6 Plus)
-  
+
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e7382e4b04a7d140e4a1d_1435399073648__img.png_)
   
-
-
-Do you see the difference between the font sizes in the screenshots? 
- is easily readable on the iPhone 6 Plus and maybe the iPhone 6, but not on the other devices. 
-  
-
-
-  Another problem with this service is the wrong device types: The iPhone 6 should not look the same as the other devices.
+<small>Do you see the difference between the font sizes in the screenshots? Carrier is easily readable on the iPhone 6 Plus and maybe the iPhone 6, but not on the other devices. Another problem with this service is the wrong device types: The iPhone 6 should not look the same as the other devices.</small>
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e71eee4b00c1a5668bd54_1435398684990__img.png_)
   
-
-
-A different example which now uses the correct device frame for each screen size. Do you see how very small the font on the iPhone 4 is? All 4 frames use the exact same screenshot. On smaller devices this results in very small fonts which are difficult to read for the end-user. On larger devices the screenshot is scaled up, which causes blurry images and fonts.
+<small>A different example which now uses the correct device frame for each screen size. Do you see how very small the font on the iPhone 4 is? All 4 frames use the exact same screenshot. On smaller devices this results in very small fonts which are difficult to read for the end-user. On larger devices the screenshot is scaled up, which causes blurry images and fonts.</small>
 
 Don't get me wrong, using a web service that does these kind of frames for you is a great and easy way to get beautiful screenshots for the App Store. It's also the best solution if you don't want to invest more time automating taking better screenshots.
 
@@ -127,132 +116,32 @@ I worked on screenshot automation for a really long time, but haven't found the 
 
 Okay, back to what you can actually do today :) Below are the results of nice screenshots, which were all generated completely automatically.
 
-What's wrong with those screenshots? The time isn't 9:41.
-  
+<small>What's wrong with those screenshots? The time isn't 9:41.</small>
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e7637e4b0ddd6318e3617_1435399772443__img.png_)
   
-
-
-On the iPhone 4, iPhone 5 and iPhone 6 the font size is exactly the same. The iPhone 6 Plus, again, has a @3x display which is why the text appears larger.
+<small>On the iPhone 4, iPhone 5 and iPhone 6 the font size is exactly the same. The iPhone 6 Plus, again, has a @3x display which is why the text appears larger.</small>
 
 ### How does this look like for landscape screenshots?
-
-  
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e77a6e4b0b3c98bba3c56_1435400117041__img.png_)
-  
 
 
 Since the above screenshot collection looks a bit messy I decided to automatically resize the screenshots in the following examples. Instead of leaving all screenshots 1:1 they now appear properly aligned next to each other.
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555cdf66e4b06c8a6b97551f_1432149863284_en-US-iPhone4-02Organizing-landscaperight_framed.png_)
-  
+![](/assets/posts/perfect-screenshots-1.png)
 
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555cdf66e4b06c8a6b975522_1432149863121_en-US-iPhone5-02Organizing-landscaperight_framed.png_)
-  
+<small>Landscape screenshots of MindNode: The iPhone 6 Plus shows a split screen when the app is in landscape mode. The smaller screen sizes show the list only. The users can see how the app looks like on their device before even installing the app.</small>
 
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555cdf66e4b06c8a6b975525_1432149863893_en-US-iPhone6-02Organizing-landscaperight_framed.png_)
-  
+<small>Another interesting detail: Take a look at the lock button on the different devices, on the 2 screenshots on the top the lock button is on the top of the iPhone, while the lock button is on the right side on the latest generation.</small>
 
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555cdf67e4b01f5228214bc7_1432149871400_en-US-iPhone6Plus-02Organizing-landscaperight_framed.png_)
+<small>The screenshots don't have a status bar, since MindNode doesn't show it in landscape mode.</small>
 
-Landscape screenshots of MindNode: The iPhone 6 Plus shows a split screen when the app is in landscape mode. The smaller screen sizes show the list only. The users can see how the app looks like on their device before even installing the app.
-
-
-Another interesting detail: Take a look at the lock button on the different devices, on the 2 screenshots on the top the lock button is on the top of the iPhone, while the lock button is on the right side on the latest generation.
-
-
-The screenshots don't have a status bar, since MindNode doesn't show it in landscape mode.
-
-Special thanks to 
-[Harald Eckmüller](https://dribbble.com/heckmueller) for designing the MindNode screenshots.
+Special thanks to [Harald Eckmüller](https://dribbble.com/heckmueller) for designing the MindNode screenshots.
 
 ### How does this look like for multiple screenshots?
 
-
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b4e4b0aaa8c4d37b46_1432150453469_en-US-iPhone4-01Brainstorming-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b4e4b046d9bfd53457_1432150452928_en-US-iPhone4-02Organizing-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b4e4b0aaa8c4d37b48_1432150453195_en-US-iPhone4-03Sharing-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b5e4b0aaa8c4d37b4d_1432150454849_en-US-iPhone4-04Styling-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b5e4b046d9bfd5345a_1432150499616_en-US-iPhone5-01Brainstorming-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b5e4b0aaa8c4d37b7b_1432150454620_en-US-iPhone5-02Organizing-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b6e4b0aaa8c4d37b7e_1432150455990_en-US-iPhone5-03Sharing-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b7e4b046d9bfd5345d_1432150460252_en-US-iPhone5-04Styling-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b7e4b03cefa62ba716_1432150456633_en-US-iPhone6-01Brainstorming-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b7e4b046d9bfd53461_1432150457001_en-US-iPhone6-02Organizing-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b8e4b018a550c6feeb_1432150457080_en-US-iPhone6-03Sharing-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b8e4b046d9bfd53488_1432150500595_en-US-iPhone6-04Styling-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1b9e4b09aabe777af0d_1432150459605_en-US-iPhone6Plus-01Brainstorming-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1bae4b09aabe777af13_1432150459848_en-US-iPhone6Plus-02Organizing-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1bae4b018a550c6ff19_1432150460834_en-US-iPhone6Plus-03Sharing-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce1bbe4b046d9bfd5348e_1432150463853_en-US-iPhone6Plus-04Styling-landscaperight_framed.png_)
+![](/assets/posts/perfect-screenshots-2.png)
 
 ### How does this look like when you support multiple languages? 
 
@@ -260,26 +149,18 @@ Special thanks to
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce3b1e4b0dac8b9037fbd_1432150968317__img.png_)
   
-
-
-Generating this amount of screenshots takes hours, even when it is completely automated. The nice thing: You can do something else on your Mac while the screenshots are generated, as long as you don't need the simulator. Instead of working while the screenshots are generated, you can also take a nap or tweet about 
-[fastlane](https://fastlane.tools).
+<small>Generating this amount of screenshots takes hours, even when it is completely automated. The nice thing: You can do something else on your Mac while the screenshots are generated, as long as you don't need the simulator. Instead of working while the screenshots are generated, you can also take a nap or tweet about [fastlane](https://fastlane.tools).</small>
 
 ## How does this magic work?
 
 
-All 
-[MindNode](http://mindnode.com) screenshots shown above are created completely automatically using 2 steps:
+All [MindNode](http://mindnode.com) screenshots shown above are created completely automatically using 2 steps:
 
 ### Creating the Screenshots
 
+Using [snapshot](https://fastlane.tools/snapshot) you can take localized screenshots on all device types completely automatic. All you have to do is provide a JavaScript UI Automation file to tell snapshot how to navigate in your app and where to take the screenshots. More information can be found on the [project page](https://fastlane.tools/snapshot). This project will soon be updated to use UI Tests instead of UI Automation to write screenshot code in Swift or Objective C instead.
 
-Using 
-[snapshot](https://fastlane.tools/snapshot) you can take localized screenshots on all device types completely automatic. All you have to do is provide a JavaScript UI Automation file to tell snapshot how to navigate in your app and where to take the screenshots. More information can be found on the 
-[project page](https://fastlane.tools/snapshot). This project will soon be updated to use UI Tests instead of UI Automation to write screenshot code in Swift or Objective C instead.
-
-This step will create the raw screenshots for all devices in all languages. At this point you 
-could already upload the screenshots to iTunes Connect, but this wouldn't be so much fun.
+This step will create the raw screenshots for all devices in all languages. At this point you could already upload the screenshots to iTunes Connect, but this wouldn't be so much fun.
 
 ### Adding the device frame, background and title
 
@@ -295,49 +176,21 @@ could already upload the screenshots to iTunes Connect, but this wouldn't be so 
 * Support for iPhone, iPad and Mac screenshots
 * Use .strings files to provide translated titles
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce8b1e4b0a540712636a8_1432152242991_en-US-iPhone4-01Brainstorming-landscaperight_framed.png_)
-  
+![](/assets/posts/perfect-screenshots-3.png)
 
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce8b2e4b0a540712636ad_1432152251258_en-US-iPhone5-01Brainstorming-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce8b2e4b024df8cb9c928_1432152289196_en-US-iPhone6-01Brainstorming-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce8b3e4b024df8cb9c92c_1432152244717_en-US-iPhone6Plus-01Brainstorming-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce8b2e4b024df8cb9c926_1432152270947_en-US-iPad-01Brainstorming-landscaperight_framed.png_)
-  
-
-  
-   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce8d6e4b039100195e0a9_1432152326604_1Brainstorming_framed.png_)
-
-The same screenshot on the iPhone, iPad and Mac.
+<small>The same screenshot on the iPhone, iPad and Mac.</small>
 
 Take a closer look at the screenshots above: The iPad's time is 9:41 and the carrier name is 
 MindNode. The other screenshots don't have a status bar, as MindNode doesn't show it on the iPhone in landscape mode.
- 
-   
 
+{% youtube https://www.youtube.com/watch?v=4DkuLiSA3rE %}
  
-
-A timelapse video of snapshot creating the MindNode screenshots.
+<small>A timelapse video of snapshot creating the MindNode screenshots.</small>
  
-   
-
+  
+{% youtube https://www.youtube.com/watch?v=l3LQpWC_sEk %}
  
-
-The generated HTML Summary to quickly get an overview of your app in all languages on all device types.
+<small>The generated HTML Summary to quickly get an overview of your app in all languages on all device types.</small>
 
 ## How can I get started?
 
@@ -364,8 +217,15 @@ Calling
 snapshot and 
 frameit after each after is far too much work, let's automate this.
 
-Take a look at the fastlane configuration of MindNode: 
-[Fastfile](https://github.com/fastlane/examples/blob/f697764d02a922cc988e1c2a4a907e7422a6681f/MindNode/Fastfile#L88-L93)
+Take a look at the fastlane configuration of MindNode: [Fastfile](https://github.com/fastlane/examples/blob/f697764d02a922cc988e1c2a4a907e7422a6681f/MindNode/Fastfile#L88-L93)
+
+```ruby
+lane :screenshots do
+  snapshot 
+  frameit(white: true)
+  deliver
+end
+```
 
 To generate new screenshots, frame them and upload them to iTunes Connect you only have to run 
 

@@ -17,10 +17,7 @@ A little over a month ago,
 [fastlane officially joined the Fabric team](https://krausefx.com/blog/fastlane-is-now-part-of-fabric) to help even more developers address pain points within mobile development. Since then, I’ve released several new tools to fastlane, including 
 [WatchBuild](https://github.com/fastlane/watchbuild). But one of the biggest pain points I’ve had for years (together with the developer community and my Fabric colleagues), is the headache of code signing when working with teams. This has been an issue since day one of iOS mobile development.
 
-Today, 
-**together with the Fabric team, **
-**I’m thrilled to introduce match**
- — a new tool that helps automate the code signing process.
+Today, **together with the Fabric team, I’m thrilled to introduce match** — a new tool that helps automate the code signing process.
 
 When deploying an app to the App Store, a beta testing service or even installing it on your own device, most development teams have separate code signing identities for every member. This results in dozens of profiles including a lot of duplicates.
   
@@ -53,8 +50,6 @@ If a profile is missing, fastlane will automatically generate one for you and up
 To use match, all you have to do is specify:
 
 * the type of the profile (App Store, Ad Hoc or Development)
-
-
 * your app’s bundle identifier
 
 Once you provide a separate, private git repo, match will store the iOS certificates provisioning profiles. Additionally, the files are encrypted using 

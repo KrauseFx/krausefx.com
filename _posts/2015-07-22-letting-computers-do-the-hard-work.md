@@ -13,10 +13,8 @@ published: true
 meta: {}
 ---
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55ab8f76e4b066c866a4ce12_1437306746701__img.jpg_)
+<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55ab8f76e4b066c866a4ce12_1437306746701__img.jpg_" width="200" align="right" style="margin-left: 10px">
   
-
-
 As iOS developers we're still used to doing many manual tasks. It's an issue that exists because everything is still new. Just ask your back-end developer about the last time they manually deployed a new version directly to the production server. The answer should be: 
 Oh, I was still in high school back then. Why? Because there are many mechanisms before the actual release to avoid broken releases that don't pass the tests.
 
