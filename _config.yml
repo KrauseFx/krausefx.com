@@ -30,7 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-twitter-plugin
-permalink: /blog/:title.html
+permalink: /blog/:title
 paginate: 10
 paginate_path: "/blog/page:num/"
 
