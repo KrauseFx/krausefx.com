@@ -20,39 +20,28 @@ Using that data, any website can determine if the user is using their phone whil
   
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db442dcf81e005db7a1f0b_1507542072340_photo.jpg_)
-  
 
 
 * sitting
-
-
 * standing
-
-
 * walking
-
-
 * running
-
-
 * driving
-
-
 * taking a picture
-
-
 * lying in bed
-
-
 * laying the phone on a table
 
 and probably more, including guesses if the user is actively using their phone at this moment, or even if they're impaired by alcohol.
 
 <h3 style="text-align: center; font-size: 40px;">
-  <a href="https://github.com/KrauseFx/whats-the-user-doing" target="_blank" style="color: #0037F5; text-decoration: underline;">
+  <a href="https://github.com/KrauseFx/whats-the-user-doing" target="_blank" style="text-decoration: underline;">
     Open on GitHub
   </a>
 </h3>
 
+<h3 style="text-align: center; font-size: 40px;">
+  <a href="https://krausefx.github.io/whats-the-user-doing" target="_blank" style="color: #60A74E !important; text-decoration: underline;">
+    Live demo
+  </a>
+</h3>
 
-### [Live demo](https://krausefx.github.io/whats-the-user-doing/)

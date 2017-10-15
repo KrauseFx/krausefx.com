@@ -69,7 +69,7 @@ To get access to the source code and more technical information, visit the
 [GitHub](https://github.com/fastlane/match) repo.
 
 <h3 style="text-align: center; font-size: 40px;">
-  <a href="https://github.com/fastlane/match" target="_blank" style="color: #0037F5; text-decoration: underline;">
+  <a href="https://github.com/fastlane/match" target="_blank" style="text-decoration: underline;">
     Open on GitHub
   </a>
 </h3>

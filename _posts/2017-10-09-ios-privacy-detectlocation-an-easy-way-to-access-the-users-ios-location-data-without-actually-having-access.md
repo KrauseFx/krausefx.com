@@ -55,7 +55,7 @@ contents of the image at all
 For more information about the proposal on how this could be fixed, how the code works and more, check out the GitHub link below.
 
 <h3 style="text-align: center; font-size: 40px;">
-  <a href="https://github.com/krausefx/detect.location" target="_blank" style="color: #0037F5; text-decoration: underline;">
+  <a href="https://github.com/krausefx/detect.location" target="_blank" style="text-decoration: underline;">
     Open on GitHub
   </a>
 </h3>

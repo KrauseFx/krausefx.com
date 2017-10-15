@@ -33,7 +33,7 @@ Read the full announcement on the
 [Fabric blog](https://fabric.io/blog/introducing-fastlane-precheck). 
 
 <h3 style="text-align: center; font-size: 40px;">
-  <a href="https://fastlane.tools/precheck" target="_blank" style="color: #0037F5; text-decoration: underline;">
+  <a href="https://fastlane.tools/precheck" target="_blank" style="text-decoration: underline;">
     Open on GitHub
   </a>
 </h3>

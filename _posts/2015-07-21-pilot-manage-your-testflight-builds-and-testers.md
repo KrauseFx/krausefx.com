@@ -20,7 +20,7 @@ Using pilot, you can now manage your TestFlight builds and testers using the com
 * Export and import all your testers
 
 <h3 style="text-align: center; font-size: 40px;">
-  <a href="https://github.com/fastlane/pilot" target="_blank" style="color: #0037F5; text-decoration: underline;">
+  <a href="https://github.com/fastlane/pilot" target="_blank" style="text-decoration: underline;">
     Open on GitHub
   </a>
 </h3>
