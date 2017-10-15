@@ -11,12 +11,13 @@ meta: {}
 
 <h1 style="text-align: center; margin-bottom: 40px; margin-top: -50px">About Felix Krause</h1>
 
-<div style="width: 40%; float: left">
-  <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_t_578691ffebbd1a5ae283b29a_1468437013330__" width="400" />
-  <p style="margin-left: 90px; margin-top: 30px;">Felix Krause, creator of <a href="http://fastlane.tools" target="_blank">fastlane</a></p>
+<div id="leftCol">
+  <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_t_578691ffebbd1a5ae283b29a_1468437013330__" width="400" style="margin-bottom: 10px" />
+  <br />
+  <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="http://fastlane.tools" target="_blank">fastlane</a></small></p>
 </div>
 
-<div style="width: 55%; float: right">
+<div id="rightCol">
   <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier</p>
 
   <p>Just the last year, fastlane has saved over 9,000,000 <a href="https://krausefx.com/blog/fastlane-has-saved-over-1-million-developer-hours">developer hours</a> and is used by tens of thousands of companies around the world</p>
@@ -65,14 +66,14 @@ meta: {}
   }
 
   #contactform input[type="email"] {
-    width: 100%;
+    width: calc(100% - 20px);
     height: 30px;
     font-size: 16px;
     padding: 10px;
     margin-bottom: 10px;
   }
   #contactform textarea {
-    width: calc(100% - 10px);
+    width: calc(100% - 30px);
     height: 100px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -91,5 +92,25 @@ meta: {}
     font-size: 14px;
     border: none;
     margin-top: 10px;
+  }
+  #leftCol {
+    margin-bottom: 40px;
+    margin-right: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and (min-width: 800px) {
+    #leftCol {
+        width: 40%; 
+        float: left;
+      }
+    }
+  }
+  @media screen and (min-width: 800px) {
+    #rightCol {
+      width: 55%; 
+      float: right;
+    }
+  }
   }
 </style>
