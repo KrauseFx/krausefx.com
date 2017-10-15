@@ -21,6 +21,7 @@ cp -R "_site/" "/tmp/krausefx.com"
 # Check out gh-pages and clear all files
 git reset --hard HEAD # we don't want the `git checkout` to cause issues (e.g. https://circleci.com/gh/fastlane/docs/730)
 git checkout -b gh-pages
+git remote add upstream "https://$GH_TOKEN@github.com/KrauseFx/krausefx.com.git"
 git pull
 rm -rf *
 # Copy the finished HTML pages to the current directory
@@ -28,10 +29,6 @@ cp -R /tmp/krausefx.com/* .
 
 # We need a CNAME file for GitHub
 echo "krausefx.com" > "CNAME"
-
-# We also need a .travis.yml file on the gh-pages branch, otherwise the build fails
-echo "script:
-  - echo 'Running on gh-pages branch'" > ".travis.yml"
 
 # Commit all the changes and push it to the remote
 git add -A
