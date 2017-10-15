@@ -10,8 +10,8 @@ echo "Starting deploy to https://krausefx.com"
 bundle exec jekyll build
 
 # Bots need names too
-# git config --global user.email "bot@krausefx.com"
-# git config --global user.name "FxBot"
+git config --global user.email "krausefx-bot@krausefx.com"
+git config --global user.name "KrauseFx-Bot"
 
 # Delete old directories (if any)
 rm -rf "/tmp/krausefx.com"
