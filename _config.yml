@@ -32,7 +32,7 @@ plugins:
   - jekyll-twitter-plugin
   - jekyll-youtube
 permalink: /blog/:title
-paginate: 10
+paginate: 4
 paginate_path: "/blog/page:num/"
 
 # Exclude from processing.
