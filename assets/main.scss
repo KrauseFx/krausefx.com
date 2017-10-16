@@ -4,7 +4,7 @@
 
 @import "minima";
 
-$font-color: #444;
+$font-color: #353535;
 $title-color: #111;
 $header-inactive-color: #9c9c9c;
 $no-sidebar: "800px";
@@ -96,18 +96,53 @@ article {
     margin: 20px;
   }
 
-  h2 {
-    font-size: 17px;
+  h1 {
+    border-bottom: rgb(234, 236, 239);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 32px;
+    color: rgb(36, 41, 46);
+    line-height: 40px;
     font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+    line-height: 1.25;
+    color: rgb(36, 41, 46) !important;
+    margin-top: 24px;
+    margin-bottom: 15px;
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
+    color: #24292e !important;
+    line-height: 25px;
+    margin-top: 24px;
+    margin-bottom: 16px;
   }
+
   h4 {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  h5 {
+    color: rgb(36, 41, 46);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.5px;
+    margin-top: 24px;
+    margin-bottom: 16px;
   }
 }
 
@@ -200,7 +235,7 @@ a {
 p {
   line-height: 1.6em;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: $font-color;
 }
 li {
@@ -211,7 +246,7 @@ li {
 }
 
 * {
-  font-family: "Helvetica Neue";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: $font-color;
 }
 
