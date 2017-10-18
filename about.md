@@ -92,6 +92,7 @@ meta: {}
     font-size: 14px;
     border: none;
     margin-top: 10px;
+    cursor: pointer;
   }
   #leftCol {
     margin-bottom: 40px;
