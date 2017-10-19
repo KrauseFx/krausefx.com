@@ -14,11 +14,18 @@ published: true
 meta: {}
 ---
 
-- Does your app already have access to the user's camera?
-- Do you want to take pictures of the user and their surrounding whenever they use your app? 
-- Do you want to use face recognition, upload the video material of both the front and the back camera to your server and understand how the user feels? 
+# Facts
 
-Then this project is for you 👌
+Once you granted an app access to your camera, an iOS app can
+
+- record you every time it runs in the foreground
+- take pictures and videos without telling you
+- have full access to both the front and the back camera
+- upload the pictures/videos it takes instantly anywhere
+- run real-time face recognition to detect facial features/expressions
+- Have you ever used a social media app while using the bathroom?
+
+{% youtube https://youtu.be/uLsnsU5fK-8 %}
 
 ## Disclaimer
 
