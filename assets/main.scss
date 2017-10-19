@@ -69,13 +69,17 @@ small {
 
 blockquote {
   margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
   border-left-width: 3px;
+  font-size: 14px;
+  padding: 0 1em;
 
   * {
     font-style: normal !important;
     letter-spacing: 0;
+
+    color: #6a737d !important;
   }
 }
 
@@ -233,16 +237,24 @@ a {
 }
 
 p {
-  line-height: 1.6em;
+  line-height: 24px;
   font-weight: 400;
   font-size: 16px;
   color: $font-color;
 }
+
+ul {
+  margin-top: 0;
+}
+
 li {
   color: $font-color;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.6em;
+  line-height: 1.5;
+}
+li+li {
+  margin-top: 0.25em;
 }
 
 * {
