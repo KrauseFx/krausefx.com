@@ -16,14 +16,15 @@ meta: {}
 
 # Facts
 
-Once you granted an app access to your camera, an iOS app can
+Once you grant an app access to your camera, it can
 
-- record you every time it runs in the foreground
-- take pictures and videos without telling you
-- have full access to both the front and the back camera
-- upload the pictures/videos it takes instantly anywhere
-- run real-time face recognition to detect facial features/expressions
-- Have you ever used a social media app while using the bathroom?
+- access both the front and the back camera
+- record you any time it's in the foreground
+- take pictures and videos without notifying you
+- upload the pictures/videos it takes immediately
+- run real-time face recognition to detect facial features or expressions
+
+Have you ever used a social media app while using the bathroom?
 
 {% youtube https://youtu.be/uLsnsU5fK-8 %}
 
@@ -33,14 +34,16 @@ This project is a proof of concept and should not be used in production. The goa
 
 ## What does `watch.user` demonstrate?
 
-iOS users often granted camera access to an app a while ago (e.g. a messaging app or any news-feed-based app). Those apps can easily track the users face, take pictures, or live stream their front and back camera, without the user's consent.
+iOS users often grant camera access to an app soon after they download it (e.g., to add an avatar or send a photos). These apps, like a messaging app or any news-feed-based app, can easily track the users face, take pictures, or live stream their front and back camera, without the user's consent.
 
-- Get full access to the front and back camera of an iPhone/iPad any time your app is running (app must be open)
+`watch.user` lets you, as a developer,
+
+- Get full access to the front and back camera of an iPhone/iPad any time your app is running in the foreground
 - Use the front and the back camera to know what your user is doing right now and where the user is located based on image data
 - Upload random frames of the video stream to your web service, and run a proper face recognition software, which enables you to
   - Find existing photos of the person on the internet
-  - Learn how the user looks like and create a 3d model of the user's face (literally)
-- With the recent innovation around faster internet connections, faster processors and more efficient video codecs, a user probably won't notice if you live stream their camera onto the internet (e.g. while they sit on the toilet)
+  - Learn how the user looks like and create a 3d model of the user's face
+- Live stream their camera onto the internet (e.g. while they sit on the toilet), with the recent innovation around faster internet connections, faster processors and more efficient video codecs
 - Estimate the mood of the user based on what you show in your app (e.g. news feed of your app)
 - Detect if the user is on their phone alone, or watching together with a second person
 - Recording stunning video material from bathrooms around the world, using both the front and the back camera, while the user scrolls through your feed
@@ -48,45 +51,41 @@ iOS users often granted camera access to an app a while ago (e.g. a messaging ap
 
 ## Proposal
 
-The MacBook has an elegant solution, where a small LED turns on whenever an app accesses the camera.
+There are a few different ways to fix this problem.
 
 - Offer a way to grant temporary access to the camera (e.g. to take and share one picture with a friend on a messaging app)
 - Show an icon in the status bar that the camera is active, and force the status bar to be visible whenever an app accesses the camera
-- Add an LED to the iPhone's camera (both sides) that can't be worked around by sandboxed apps
+- Add an LED to the iPhone's camera (both sides) that can't be worked around by sandboxed apps, which is the elegant solution that the MacBook uses
 
 TODO: insert Radar here
 
 ## About the demo
 
-I didn't submit the demo to the App Store, however you can very easily clone the repo and run it on your own device.
+I didn't submit the demo to the App Store; however, you can very easily clone the repo and run it on your own device.
 
-- You first have to take a picture that gets "posted" on a "social network"
-  - At this point you already granted full access to both of your cameras every time the app is running
+- You first have to take a picture that gets "posted" on the fake "social network" in the app
+  - At this point, you've granted full access to both of your cameras every time the app is running
 - You browse through a regular news feed that shows you pictures
-- After a while you suddenly see pictures of yourself, taken a few seconds ago while you scrolled through the feed
+- After a bit of scrolling, you'll suddenly see pictures of yourself, taken a few seconds ago while you scrolled through the feed
 - You realize you've been recorded the whole time, and with it, the app ran a face recognition algorithm to detect facial features.
 
-Chances are, you say:
-
-> Oh, obviously, I never grant camera permission
-
-However, the point is, that if you use a messaging service, like Messenger, WhatsApp, Telegram or anything else, chances are high you already granted permission to access both your image library ([detect.location](https://github.com/KrauseFx/detect.location)), and your camera.
+You might say "Oh, obviously, I never grant camera permission". However, if you're using a messaging service, like Messenger, WhatsApp, Telegram or anything else, chances are high you already granted permission to access both your image library ([detect.location](https://github.com/KrauseFx/detect.location)) and your camera. You can check which apps have access to your cameras and photo library by going to Settings > Privacy.
 
 ### How can I protect myself?
 
-There is not a lot you can, except to revoke camera access for all apps, always use your built-in camera, and use the image picker of each app to select the photo (which will cause you running into a problem I described with [detect.location](https://github.com/krausefx/detect.location)). To avoid this also, the only good way is to use Copy & Paste to paste the screenshot into your messaging application. If an app has no copy & paste support, you'll have to either expose your image library, or your camera. 
+There are only a few things you can do. First, you can revoke camera access for all apps, always use the built-in camera app, and use the image picker of each app to select the photo (which will cause you to run into a problem I described with [detect.location](https://github.com/krausefx/detect.location)). To avoid this as well, the best way is to use Copy & Paste to paste the screenshot into your messaging application. If an app has no copy & paste support, you'll have to either expose your image library, or your camera.
 
 For example, [Soroush](https://twitter.com/khanlou) always removes camera access after using apps like Instagram.
 
-Even better is to protect yourself using hardware, there is a lot of accessories available for both smartphones and laptops that solve the problem by covering the camera ([example](https://www.amazon.com/Original-Webcam-Cover-directly-Manufacturer/dp/B01LWS2X8I)).
+Lastly, you can protect yourself using hardware.There are a lot of accessories available for both smartphones and laptops that solve the problem by covering the camera ([for example](https://www.amazon.com/Original-Webcam-Cover-directly-Manufacturer/dp/B01LWS2X8I)).
 
 ## FAQs
 
 ### How does the demo app get access to the camera?
 
-Once you take and post one picture or video via a social network app, you often grant full access to the camera, any time the camera is running. Meaning, whenever you start the app, the app can use the camera again.
+Once you take and post one picture or video via a social network app, you grant full access to the camera, and any time the app is running, the app can use the camera.
 
-## Similar projects I worked on 
+## Similar projects I've worked on 
 
 * [what's the user doing](https://github.com/KrauseFx/whats-the-user-doing): Raising awareness of what you can do with a smartphones gyro sensors in web browsers
 * [detect.location](https://github.com/krausefx/detect.location): An easy way to access the user's iOS location data without actually having access
