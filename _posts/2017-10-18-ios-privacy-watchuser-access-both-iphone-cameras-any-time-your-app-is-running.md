@@ -26,7 +26,11 @@ Once you grant an app access to your camera, it can
 
 Have you ever used a social media app while using the bathroom?
 
-{% youtube https://youtu.be/GqWUaflPMh0 %}
+<div class="video">
+  <figure>
+    <iframe width="640" height="480" src="//www.youtube.com/embed/GqWUaflPMh0" frameborder="0" allowfullscreen></iframe>
+  </figure>
+</div>
 
 ## Disclaimer
 
