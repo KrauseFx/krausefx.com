@@ -6,7 +6,7 @@ GEM
     colorator (1.1.0)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
-    jekyll (3.6.0)
+    jekyll (3.6.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -25,8 +25,6 @@ GEM
     jekyll-twitter-plugin (2.0.0)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    jekyll-youtube (1.0.0)
-      jekyll
     kramdown (1.15.0)
     liquid (4.0.0)
     listen (3.0.8)
@@ -57,7 +55,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-paginate
   jekyll-twitter-plugin
-  jekyll-youtube
   minima (~> 2.0)
 
 BUNDLED WITH
