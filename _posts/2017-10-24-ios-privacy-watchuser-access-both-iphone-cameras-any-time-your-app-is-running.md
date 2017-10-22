@@ -87,6 +87,8 @@ You might say
 
 > Oh, obviously, I never grant camera permissions!
 
+<img src="/assets/posts/watch-user-screenshot.jpg" style="width: 250px; float: right; border: 2px solid #BBB; margin: 10px" />
+
 However, if you're using a messaging service, like Messenger, WhatsApp, Telegram or anything else, chances are high you already granted permission to access both your image library (see [detect.location](https://github.com/KrauseFx/detect.location)) and your camera. You can check which apps have access to your cameras and photo library by going to Settings > Privacy.
 
 The full source code is available [on GitHub](https://github.com/KrauseFx/watch.user).
@@ -94,6 +96,10 @@ The full source code is available [on GitHub](https://github.com/KrauseFx/watch.
 ### How does the demo app get access to the camera?
 
 Once you take and post one picture or video via a social network app, you grant full access to the camera, and any time the app is running, the app can use the camera.
+
+### What's the screenshot on the right
+
+As part of iOS 11, there is now an easy to use Vision framework, that allows developers to easily track faces. The screenshot shows that it's possible to get some basic emotions right, so I wrote a very basic mapping of a user's face to the corresponding emoji as a proof of concept. You can see the highlighted facial features, and the detected emoji at the bottom.
 
 ## Similar projects I've worked on 
 
