@@ -77,7 +77,7 @@ There are only a few things you can do. First, you can revoke camera access for 
 
 For example, [Soroush](https://twitter.com/khanlou) always removes camera access after using apps like Instagram.
 
-Lastly, you can protect yourself using hardware.There are a lot of accessories available for both smartphones and laptops that solve the problem by covering the camera ([for example](https://www.amazon.com/Original-Webcam-Cover-directly-Manufacturer/dp/B01LWS2X8I)).
+Lastly, you can protect yourself using hardware. There are a lot of accessories available for both smartphones and laptops that solve the problem by covering the camera ([for example](https://www.amazon.com/Original-Webcam-Cover-directly-Manufacturer/dp/B01LWS2X8I)).
 
 ## FAQs
 
