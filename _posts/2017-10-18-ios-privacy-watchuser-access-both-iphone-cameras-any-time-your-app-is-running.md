@@ -26,6 +26,8 @@ Once you grant an app access to your camera, it can
 
 Have you ever used a social media app while using the bathroom? 🚽
 
+All without indicating that your phone is recording you and your surrounding, no LEDs, no light or any other kind of indication.
+
 ## Disclaimer
 
 This project is a proof of concept and should not be used in production. The goal is to highlight a privacy loophole that can be abused by iOS apps.
@@ -83,7 +85,7 @@ I didn't submit the demo to the App Store; however, you can very easily [clone t
 
 You might say 
 
-> Oh, obviously, I never grant camera permission. 
+> Oh, obviously, I never grant camera permissions!
 
 However, if you're using a messaging service, like Messenger, WhatsApp, Telegram or anything else, chances are high you already granted permission to access both your image library (see [detect.location](https://github.com/KrauseFx/detect.location)) and your camera. You can check which apps have access to your cameras and photo library by going to Settings > Privacy.
 
@@ -106,3 +108,5 @@ Special thanks to [Soroush](https://twitter.com/khanlou), who came up with the i
     Open on GitHub
   </a>
 </h3>
+
+<p style="margin-top: 30px"><small>This project is in no way affiliated with my work and employer, it's a hobby of mine I work on during weekends</small></p>
