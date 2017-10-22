@@ -87,6 +87,8 @@ You might say
 
 However, if you're using a messaging service, like Messenger, WhatsApp, Telegram or anything else, chances are high you already granted permission to access both your image library (see [detect.location](https://github.com/KrauseFx/detect.location)) and your camera. You can check which apps have access to your cameras and photo library by going to Settings > Privacy.
 
+The full source code is available [on GitHub](https://github.com/KrauseFx/watch.user).
+
 ### How does the demo app get access to the camera?
 
 Once you take and post one picture or video via a social network app, you grant full access to the camera, and any time the app is running, the app can use the camera.
