@@ -183,12 +183,19 @@ This step will create the raw screenshots for all devices in all languages. At t
 Take a closer look at the screenshots above: The iPad's time is 9:41 and the carrier name is 
 MindNode. The other screenshots don't have a status bar, as MindNode doesn't show it on the iPhone in landscape mode.
 
-{% youtube https://www.youtube.com/watch?v=4DkuLiSA3rE %}
+<div class="video">
+  <figure>
+    <iframe width="640" height="480" src="//www.youtube.com/embed/4DkuLiSA3rE" frameborder="0" allowfullscreen></iframe>
+  </figure>
+</div>
  
 <small>A timelapse video of snapshot creating the MindNode screenshots.</small>
- 
-  
-{% youtube https://www.youtube.com/watch?v=l3LQpWC_sEk %}
+
+<div class="video">
+  <figure>
+    <iframe width="640" height="480" src="//www.youtube.com/embed/l3LQpWC_sEk" frameborder="0" allowfullscreen></iframe>
+  </figure>
+</div>
  
 <small>The generated HTML Summary to quickly get an overview of your app in all languages on all device types.</small>
 
