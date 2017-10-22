@@ -63,7 +63,7 @@ How can the root of the problem be fixed, so we don't have to use camera covers?
 - Show an icon in the status bar that the camera is active, and force the status bar to be visible whenever an app accesses the camera
 - Add an LED to the iPhone's camera (both sides) that can't be worked around by sandboxed apps, which is the elegant solution that the MacBook uses
 
-TODO: insert Radar here
+I reported the issue to Apple with [rdar://35116272](https://openradar.appspot.com/radar?id=5007947352506368).
 
 <div class="video" style="width: 250px; float: right;margin: 20px">
   <figure>
