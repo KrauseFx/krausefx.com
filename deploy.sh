@@ -7,6 +7,7 @@ set -e
 echo "Starting deploy to https://krausefx.com"
 
 # Build the docs page locally
+export JEKYLL_ENV="production"
 bundle exec jekyll build
 
 # Bots need names too
