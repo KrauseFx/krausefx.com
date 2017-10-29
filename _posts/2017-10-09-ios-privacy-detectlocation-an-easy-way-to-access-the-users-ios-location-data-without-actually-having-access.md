@@ -11,7 +11,7 @@ tags:
 - library
 status: publish
 type: post
-published: false
+published: true
 meta: {}
 ---
 
