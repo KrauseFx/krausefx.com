@@ -18,7 +18,7 @@ email: website@krausefx.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website and blog of Felix Krause
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://TOONERD.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://TOONERD.github.io/pongchaihantapong.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: KrauseFx
 github_username:  KrauseFx
 google_analytics: UA-18658848-6
