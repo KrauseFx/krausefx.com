@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Felix Krause
+title: About Pongchai Hantapong
 categories: []
 tags: []
 status: publish
@@ -9,12 +9,12 @@ published: true
 meta: {}
 ---
 
-<h1 style="text-align: center; margin-bottom: 40px; margin-top: -50px">About Felix Krause</h1>
+<h1 style="text-align: center; margin-bottom: 40px; margin-top: -50px">About TOONERD</h1>
 
 <div id="leftCol">
   <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_t_578691ffebbd1a5ae283b29a_1468437013330__" width="400" style="margin-bottom: 10px" />
   <br />
-  <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="http://fastlane.tools" target="_blank">fastlane</a></small></p>
+  <p style="text-align: center;"><small style="">Pongchai Hantapong, creator of <a href="http://fastlane.tools" target="_blank">fastlane</a></small></p>
 </div>
 
 <div id="rightCol">
