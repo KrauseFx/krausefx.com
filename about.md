@@ -9,7 +9,7 @@ published: true
 meta: {}
 ---
 
-<h1 style="text-align: center; margin-bottom: 40px; margin-top: -50px">About Pongchai Hantapog</h1>
+<h1 style="text-align: center; margin-bottom: 40px; margin-top: -50px">About Pongchai Hantapong</h1>
 
 <div id="leftCol">
   <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_t_578691ffebbd1a5ae283b29a_1468437013330__" width="400" style="margin-bottom: 10px" />
