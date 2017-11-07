@@ -72,6 +72,8 @@ Do you want the user’s Apple ID password, to get access to their Apple account
 
 <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dc97a83e00bed1b42c0096_1507631710330__img.png_" width="500" />
 
+One of these is Apple asking you for your password and the other one is a phishing popup that steals your password.
+
 ### [Read the full blog post](/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
 
 <div class="press">
