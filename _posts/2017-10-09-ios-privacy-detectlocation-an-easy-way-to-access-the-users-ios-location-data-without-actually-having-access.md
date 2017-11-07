@@ -32,9 +32,9 @@ To see all the above with **your** data, download the [DetectLocations app](htt
 * Get a complete list of the user's cameras and photography devices (which iPhones, Android phones, cameras) and how long they used each device
 * Use facial recognization to find out who the user hangs out with and who their partner is. Is the user single?
 * Understand the user's background:
-* Did the user attend college? If so, which one?
-* Did the user recently move from the suburbs to the city?
-* Does the user spend a lot of time with their family?
+  * Did the user attend college? If so, which one?
+  * Did the user recently move from the suburbs to the city?
+  * Does the user spend a lot of time with their family?
 
 ## What's detect.location?
 
