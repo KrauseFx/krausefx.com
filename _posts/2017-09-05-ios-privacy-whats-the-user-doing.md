@@ -15,12 +15,11 @@ meta: {}
 Modern web browsers give the user more control over what data they're sharing with websites, for example location services and access to the camera.
 
 However I recently noticed a gap of how websites can determine the activity of the user based on the acceleration and gyro sensor built into modern smartphones, including the iPhone and Android phones.
-
-Using that data, any website can determine if the user is using their phone while
-  
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db442dcf81e005db7a1f0b_1507542072340_photo.jpg_)
 
+
+Using that data, any website can determine if the user is using their phone while
 
 * sitting
 * standing
@@ -28,6 +27,7 @@ Using that data, any website can determine if the user is using their phone whil
 * running
 * driving
 * taking a picture
+* taking a selfie
 * lying in bed
 * laying the phone on a table
 
