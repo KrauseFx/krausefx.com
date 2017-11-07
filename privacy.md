@@ -93,6 +93,9 @@ Do you want the user’s Apple ID password, to get access to their Apple account
   <a href="http://fortune.com/2017/10/10/apple-iphone-password-phishing-scam/?iid=sr-link2">
     <img src="/assets/privacy/Fortune.jpg">
   </a>
+  <a href="https://news.ycombinator.com/item?id=15441537">
+    <img src="/assets/privacy/hackernews.ico">
+  </a>
   <a href="https://motherboard.vice.com/en_us/article/ne7gxz/ios-iphone-password-phishing-app-popups">
     <img src="/assets/privacy/Motherboard.svg">
   </a>
