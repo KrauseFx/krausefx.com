@@ -50,11 +50,14 @@ All without indicating that your phone is recording you and your surrounding, no
   <a href="https://gizmodo.com/developer-shows-how-iphone-apps-can-theoretically-spy-o-1819874714">
     <img src="/assets/privacy/Gizmodo.png">
   </a>
-  <a href="https://www.macrumors.com/2017/10/26/developer-warns-iphone-camera/">
-    <img src="/assets/privacy/MacRumors.png">
+  <a href="http://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">
+    <img src="/assets/privacy/Telegraph.png">
   </a>
   <a href="https://thenextweb.com/apple/2017/10/26/iphone-camera-permissions-google-ios/">
     <img src="/assets/privacy/TheNextWeb.png">
+  </a>
+  <a href="https://www.macrumors.com/2017/10/26/developer-warns-iphone-camera/">
+    <img src="/assets/privacy/MacRumors.png">
   </a>
   <a href="https://motherboard.vice.com/en_us/article/mb3ezy/iphone-apps-camera-permission-pictures-videos-without-you-noticing">
     <img src="/assets/privacy/Motherboard.svg">
