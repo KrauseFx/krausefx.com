@@ -26,6 +26,10 @@ meta: {}
 
   <p>I work on <a href="http://fastlane.tools" target="_blank">fastlane</a> at Google and previously Twitter in San Francisco</p>
 
+  <p><b>Privacy research</b></p>
+
+  <p>I've published various privacy related essays on the iOS permission system. As a result my posts reached #1 on HackerNews and got covered by major media outlets - <a href="/privacy">Read more about my privacy publications</a>.</p>
+
   <p><b>Open Source</b></p>
 
   <p>Additionally to <a href="http://fastlane.tools" target="_blank">fastlane</a>, I'm involved in other open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a>.</p>
@@ -99,6 +103,7 @@ meta: {}
     margin-right: 30px;
     width: 100%;
     text-align: center;
+    height: 700px;
   }
   @media screen and (min-width: 800px) {
     #leftCol {
