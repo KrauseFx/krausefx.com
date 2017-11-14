@@ -65,6 +65,9 @@ All without indicating that your phone is recording you and your surrounding, no
   <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">
     <img src="/assets/privacy/Unilad.jpg">
   </a>
+  <a href="https://www.theregister.co.uk/2017/10/25/ios_apps_camera_spying/">
+    <img src="/assets/privacy/TheRegister.jpg">
+  </a>
 </div>
 
 ----
@@ -116,6 +119,9 @@ One of these is Apple asking you for your password and the other one is a phishi
   <a href="http://www.dailymail.co.uk/sciencetech/article-5020769/iPhone-apps-silently-turn-camera.html">
     <img src="/assets/privacy/DailyMail.jpg">
   </a>
+  <a href="https://www.theregister.co.uk/2017/10/10/apple_ios_password_prompts_phishing/">
+    <img src="/assets/privacy/TheRegister.jpg">
+  </a>
 </div>
 
 ----
@@ -146,6 +152,9 @@ Once the user grants access to the image library (e.g. to upload a single photo 
   </a>
   <a href="https://derstandard.at/2000064949062/Oesterreichischer-Entwickler-zeigt-wie-Foto-Apps-am-iPhone-schnueffeln">
     <img src="/assets/privacy/derStandard.gif">
+  </a>
+  <a href="https://www.theregister.co.uk/2017/09/28/ios_image_metadata_location_leaks/">
+    <img src="/assets/privacy/TheRegister.jpg">
   </a>
 </div>
 
