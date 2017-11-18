@@ -27,6 +27,37 @@ $no-sidebar: "800px";
   display: none;
 }
 
+.subscribe-form {
+  button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: #272727;
+    color: white;
+    font-style: normal;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+.site-footer {
+  input[type="text"] {
+    width: calc(100% - 140px);
+  }
+}
+
+.subscribe-newsletter {
+  color: rgba(68, 68, 68, 0.7);
+  font-size: 13px;
+  line-height: 20px;
+}
+
 /* Hide sidebar on mobile device s */
 @media screen and (min-width: $no-sidebar) {
   #sidebar {
