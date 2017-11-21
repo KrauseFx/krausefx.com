@@ -40,7 +40,7 @@ and probably more, including guesses if the user is actively using their phone a
 </h3>
 
 <h3 style="text-align: center; font-size: 40px;">
-  <a href="https://krausefx.github.io/whats-the-user-doing" target="_blank" style="color: #60A74E !important; text-decoration: underline;">
+  <a href="https://krausefx.github.io/user.activity" target="_blank" style="color: #60A74E !important; text-decoration: underline;">
     Live demo
   </a>
 </h3>
