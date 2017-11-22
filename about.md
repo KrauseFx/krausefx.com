@@ -20,7 +20,7 @@ meta: {}
 <div id="rightCol">
   <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier</p>
 
-  <p>Just the last year, fastlane has saved over 9,000,000 <a href="https://krausefx.com/blog/fastlane-has-saved-over-1-million-developer-hours">developer hours</a> and is used by tens of thousands of companies around the world</p>
+  <p>Just the last year, fastlane has saved over 10,000,000 <a href="https://krausefx.com/blog/fastlane-has-saved-over-1-million-developer-hours">developer hours</a> and is used by tens of thousands of companies around the world</p>
 
   <p><b>fastlane</b></p>
 
