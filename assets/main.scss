@@ -58,7 +58,7 @@ $no-sidebar: "800px";
   line-height: 20px;
 }
 
-/* Hide sidebar on mobile device s */
+/* Hide sidebar on mobile devices */
 @media screen and (min-width: $no-sidebar) {
   #sidebar {
     display: inline;
