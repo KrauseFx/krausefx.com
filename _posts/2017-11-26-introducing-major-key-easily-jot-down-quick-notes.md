@@ -26,7 +26,7 @@ With far less than 100 lines of Swift code, this simple app does all you need:
 - Type the note
 - Confirm
 
-Within a second you'll have the note in your email inbox. Extremely useful if you follow the inbox zero appraoch. All with no waiting times or animations.
+Within a second you'll have the note in your email inbox. Extremely useful if you follow the inbox zero approach. All with no waiting times or animations.
 
 Launch the app, write down a note, hit the 🔑 button and immediately have the note in your inbox. 
 
