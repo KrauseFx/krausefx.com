@@ -15,38 +15,38 @@ I slowly worked my way up, from submitting smaller contributions to random open 
 
 I want to encourage more people to get started contributing to open source projects, this blog post will show you how important open source software is in today's world, and how it can help you grow as an engineer.
 
-# Why developers and companies use open source software
+## Why developers and companies use open source software
 
 
-## 👴 Project stays alive much longer
+### 👴 Project stays alive much longer
 
 
 How often did you use a proprietary software solution, only to discover that the service is discontinued a few months after you’re fully ramped up?
 
 Open source projects can be more robust in regards of maintenance, because there isn’t a single company that can decide to stop working on the project. Instead you have a group of maintainers that invest time and resources into a given software. Even if nobody has access to the code repository, developers can fork the project, and push it forward. This is something that I’ve done myself multiple times for dependencies we have in fastlane.
 
-## 🔧 Independence: you can fix problems yourself
+### 🔧 Independence: you can fix problems yourself
 
 
 What happens if you use a commercial software and you run into a blocking issue with it? You’ll have to reach out to the support team, and hope they take your problem seriously and provide a fix for you. If the product was shut down, you’ll probably have no chance of getting any help at all.
 
 With open source projects you are in full control over the software you run: You can dive into the source code, make changes and run those changes in your code base directly, without the original author’s approval. Even if a project is not being maintained any more, you can still not only use the open source software, but also fix issues and extend its feature sets.
 
-## 🤝 Trust
+### 🤝 Trust
 
 
 What closed source binaries do you include in your mobile app? Each of them adds a risk for your app and your users, as it adds multiple attack surfaces. You cannot tell what the binary does, it could be malicious, it could collect data you don’t want to track, it could call home without you knowing, it might have bugs causing other areas of the app to be slowed down or even crash, a [man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) might modify the binary while you download it, or the download server gets hacked as it happened with [XcodeGhost](https://en.wikipedia.org/wiki/XcodeGhost) just last year. A closed source binary as part of your build phase might even go as far as uploading your app’s source code, secret keys and other data from your local machine. Some of these problems also apply to open source projects, however you do have more control over them. You can fork the project, audit the code, and then periodically merge it with the upstream repository after auditing the changes.
 
 There are multiple approaches to fix man-in-the-middle attacks and future XcodeGhosts, like checking the code signing of the app and comparing the hashes, however you’ll never be able to tell what the binary does under the hood.
 
-## 📖 Knowledge sharing
+### 📖 Knowledge sharing
 
 
 Open source code enables every person on the planet with access to a computer and internet to read your code and learn from it. This is extremely powerful and isn’t done in a lot of areas. For example when studying physics, you’ll soon notice how many papers and critical information are hidden behind paywalls or kept secret by the author.
 
 Artsy is a great example: [their apps are open source](https://github.com/artsy), so when someone asks one of the engineers how they do X, they can just link to the source code.
 
-## 🛠 Open source build tools
+### 🛠 Open source build tools
 
 
 Since I’m working on developer tooling most of the time, I’m thinking a lot about how essential they are for a team to be productive. If they don’t work, you can’t ship to your users. Being in control of your most important infrastructure pieces is crucial to making sure you’re not dependent on third parties when :poo: hits the fan.
@@ -55,18 +55,18 @@ No matter if you work on mobile apps or something else, very often there are ser
 
 With your business critical infrastructure pieces (which includes build and deploy tools) you’ll want to have the knowledge of how they work, and ideally the opportunity to fix problems and customize the setup to fit your needs. If something doesn’t work you can dive into the code base, analyze the error, and fix the problem. This might not be as relevant for indie developers, but for bigger companies with dozens or hundred of engineers depending on the build and release process, it is important to be able to fix systems as soon as they break.
 
-# Why contribute to open source projects?
+## Why contribute to open source projects?
 
 Using open source software is awesome, but why would you care about working on one? 
 
-## 📈 Scale of impact
+### 📈 Scale of impact
 
 
 It’s hard to imagine the impact you can have on developers all around the world when working on open source projects. 
 
 You can have this kind of impact, either by working on an existing open source project, or also by open sourcing some code you wrote. Who knows, it might be the next big thing :)
 
-### 🤔 How did I get started with open source?
+#### 🤔 How did I get started with open source?
 
 
 The first time I got into open source, is actually when I open sourced my first project called "TSMessages". When I was showing my little app to [Matthias](https://twitter.com/myell0w) at CocoaHeads in Vienna, he asked me if I can open source the custom notification bars I built. I didn’t know a lot about open source back then, but Matthias was kind enough to help me with the process.
@@ -75,14 +75,14 @@ At the time of release [TSMessages](https://cocoapods.org/pods/TSMessages) had 2
 
 Without me having to put in extra work, I didn’t only use TSMessages for all my personal apps, but helped 13,000 other companies to show better notifications in their apps.
 
-### Impact with fastlane
+#### Impact with fastlane
 
 
 [fastlane](https://fastlane.tools) started as my [Bachelor project](https://github.com/krausefx/evaluation_report), where I put the code on GitHub after completing the first tool deliver. One tool led to another, resulting in the fastlane umbrella tool, containing 17 standalone tools, 170 built-in actions, and 180 third party plugins. Today fastlane has saved over 9,000,000 developer hours and is used by tens of thousands of companies around the world.
 
 I never expected the project to grow this big. It started by only solving the problems I had as an iOS developer. No matter how small you think a script or tool is, it will probably help other developers out there who face the same challenges. Only 9 months after releasing the first version, fastlane joined Twitter, and I helped build a team around fastlane. Today, fastlane is a 6 person team based in San Francisco and Boston and is moving faster than ever.
 
-## 👩‍💻 Career & Jobs
+### 👩‍💻 Career & Jobs
 
 
 2 years ago, I didn’t know a single person working at one of the big tech companies. All the tech giants were a closed bubble for me coming from Europe, I couldn’t ask someone how it is to work there, I didn’t have anyone to refer me, I didn’t know how the companies are structured. After moving to San Francisco, working for Twitter, and now Google I have a much better sense of how things work. 
@@ -91,11 +91,11 @@ If you’re in the same position I was 2 years ago, and you’re thinking about 
 
 Larger companies that own open source projects, not always have the necessary resources to maintain all aspects of them. The organizations are happy about external maintainers, and depending on the team behind it, you might receive an email sooner or later :) 
 
-## 📃 Resume
+### 📃 Resume
 
 Listing open source contributions in your CV is powerful. It shows engagement in the developer community, and that you’re potentially familiar with established tooling and frameworks in your field. Depending on your contribution, it demonstrates that you can navigate around in an existing code base, identify an issue, debug and fix problems, or extend the project’s feature set. The majority of engineers use open source software for their projects, however only a small percentage also contribute. It’s definitely a great plus point for every resume.
 
-## 👍 To sum up
+### 👍 To sum up
 
 * Learn new technology
 * Improve a project you use
@@ -105,15 +105,15 @@ Listing open source contributions in your CV is powerful. It shows engagement in
 * Internet points: the maintainers might tweet about your contributions
 * Many projects attribute their contributors on their website, or changelog - this has the nice side effect of boosting your personal search engine visibility also, especially if your name is common
 
-# How to get started with open source
+## How to get started with open source
 
 Hopefully I got you interested in contributing to open source software, so the next question is, how do you best get started?
 
-## 📢 Subscribe to a repo you’re interested in
+### 📢 Subscribe to a repo you’re interested in
 
 By subscribing to notifications of an open source repo, you’ll get a good sense of what the community is like, what problems the contributors are facing, and where you can jump in to help. After a few weeks of being active, you’ll get a good sense of what the community is working on and how you can help.
 
-## 🤠 Don't be discouraged, try contributing, people will help you
+### 🤠 Don't be discouraged, try contributing, people will help you
 
 
 It’s scary submitting your first pull request to a new project. Some projects might not be looking for new contributors, so it’s a good idea to subscribe to a project before starting to contribute, so you get a feel on what the community is like. 
@@ -123,7 +123,7 @@ With
 [in the release notes](https://github.com/fastlane/fastlane/releases/tag/2.54.1) by name, and after successfully getting multiple PRs merged and helping other people, we promote them to 
 [core contributors](https://github.com/fastlane/fastlane/blob/master/CORE_CONTRIBUTOR.md). 
 
-## 🚌 Contribute to projects that are widely used, but have a low bus factor
+### 🚌 Contribute to projects that are widely used, but have a low bus factor
 
 
 There is a lot of open source software that’s being used by hundreds of thousands of projects, but only have a single maintainer. Often those projects are so foundational of everything in an ecosystem, that people forget it exists. This is your chance to go through the 
@@ -136,7 +136,7 @@ There is a lot of open source software that’s being used by hundreds of thousa
 One example of where things went really wrong was the left-pad project, a tiny JavaScript library that was maintained by a single person, that 
 [broke thousands of projects](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/).
 
-## 👪 How to join the development team of open source projects
+### 👪 How to join the development team of open source projects
 
 
 Becoming a core contributor of a project very much depends on the size of the project:
@@ -147,7 +147,7 @@ Becoming a core contributor of a project very much depends on the size of the pr
 
 For many developers, the most interesting category is the second one: You can have a lot of impact within a short amount of time, get visibility and you have the chance to join a welcoming community and it’s a great opportunity to learn from fellow developers.
 
-## 🚀 Getting started
+### 🚀 Getting started
 
 
 Sometimes it’s not so clear on how to get started, so here are some tips on what you can do in no specific order
@@ -169,7 +169,7 @@ Sometimes it’s not so clear on how to get started, so here are some tips on wh
 
 The most important piece is to get out there and submit pull requests, the rest will happen automatically.
 
-# 🎁 Wrapping up
+## 🎁 Wrapping up
 
 Developers and companies become more and more aware of how important it is for their dependencies to be in open source, not only to see what’s happening under the hood, but also to be able to fix problems themselves or even run their own fork if needed. This is especially relevant for build and deployment tools, but also third party SDKs you ship with your app. 
 
