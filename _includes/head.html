@@ -9,4 +9,8 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include analytics.html %}
   {% endif %}
+
+  {% if jekyll.environment == 'production' %}
+    <meta http-equiv="Content-Security-Policy" content="default-src https:">
+  {% endif %}
 </head>
