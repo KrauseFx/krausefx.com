@@ -45,5 +45,3 @@ and probably more, including guesses if the user is actively using their phone a
   </a>
 </h3>
 
-<p style="margin-top: 30px"><small>This project is in no way affiliated with my work and employer, it's a hobby of mine I work on during weekends</small></p>
-

@@ -59,5 +59,3 @@ For more information about the proposal on how this could be fixed, how the code
     Open on GitHub
   </a>
 </h3>
-
-<p style="margin-top: 30px"><small>This project is in no way affiliated with my work and employer, it's a hobby of mine I work on during weekends</small></p>
