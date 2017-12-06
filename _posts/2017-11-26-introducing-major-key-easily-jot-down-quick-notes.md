@@ -54,8 +54,6 @@ Launch the app, write down a note, hit the 🔑 button and immediately have the 
   </a>
 </h3>
 
-<p style="margin-top: 30px"><small>This project is in no way affiliated with my work and employer, it's a hobby of mine I work on during weekends</small></p>
-
 <style type="text/css">
   @media screen and (max-width: 600px) {
     #majorkeyscreenshot {

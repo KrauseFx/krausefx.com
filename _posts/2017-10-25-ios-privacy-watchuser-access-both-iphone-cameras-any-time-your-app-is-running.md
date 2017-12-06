@@ -114,5 +114,3 @@ Special thanks to [Soroush](https://twitter.com/khanlou), who came up with the i
     Open on GitHub
   </a>
 </h3>
-
-<p style="margin-top: 30px"><small>This project is in no way affiliated with my work and employer, it's a hobby of mine I work on during weekends</small></p>

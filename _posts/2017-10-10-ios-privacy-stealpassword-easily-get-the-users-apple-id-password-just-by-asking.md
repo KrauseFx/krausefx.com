@@ -131,5 +131,3 @@ Nope, actually, that's how the system dialog looks like, the . is within the "s
   </a>
 </h3>
 
-<p style="margin-top: 30px"><small>This project is in no way affiliated with my work and employer, it's a hobby of mine I work on during weekends</small></p>
-
