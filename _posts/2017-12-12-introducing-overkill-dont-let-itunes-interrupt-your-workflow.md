@@ -78,7 +78,7 @@ Unfortunately I couldn't submit Overkill to the Mac App Store, as the sandboxing
 Additionally, as most of the project I work on, Overkill is 100% open source under the MIT license:
 
 <h3 style="text-align: center; font-size: 30px; margin-top: 0px">
-  <a href="https://github.com/KrauseFx/overkill-overkill-for-mac" target="_blank" style="text-decoration: underline;">
+  <a href="https://github.com/KrauseFx/overkill-for-mac" target="_blank" style="text-decoration: underline;">
     Open on GitHub
   </a>
 </h3>
