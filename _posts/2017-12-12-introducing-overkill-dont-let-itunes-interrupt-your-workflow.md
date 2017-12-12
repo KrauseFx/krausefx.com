@@ -21,7 +21,7 @@ Yes, that is correct, but connecting a device to your Mac is only one of the man
 
 - You click the play/pause key while listening to a web-based music player (e.g. SoundCloud, YouTube)
 - Someone sent you a link to an iOS app
-- You click on a link on the web, and didn't expect it to be an Music link
+- You click on a link on the web, and didn't expect it to be a Music link
 - You updated iTunes
 - You launch iTunes iby clicking on the icon by mistake
 - You open a video/music file in Finder, and forgot to change the default app to VLC
