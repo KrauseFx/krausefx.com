@@ -23,7 +23,7 @@ Yes, that is correct, but connecting a device to your Mac is only one of the man
 - Someone sent you a link to an iOS app
 - You click on a link on the web, and didn't expect it to be a Music link
 - You updated iTunes
-- You launch iTunes iby clicking on the icon by mistake
+- You launch iTunes by clicking on the icon by mistake
 - You open a video/music file in Finder, and forgot to change the default app to VLC
 - You connect Bluetooth headphones
 
