@@ -34,7 +34,7 @@ This project is a proof of concept and should not be used in production. The goa
 
 ## What can an iOS app do?
 
-iOS users often grant camera access to an app soon after they download it (e.g., to add an avatar or send a photo). These apps, like a messaging app or any news-feed-based app, can easily track the users face, take pictures, or live stream the front and back camera, without the user's consent.
+iOS users often grant camera access to an app soon after they download it (e.g. to add an avatar or send a photo). These apps, like a messaging app or any news-feed-based app, can easily track the users face, take pictures, or live stream the front and back camera, without the user's consent.
 
 - Get full access to the front and back camera of an iPhone/iPad any time your app is running in the foreground
 - Use the front and the back camera to know what your user is doing right now and where the user is located based on image data
