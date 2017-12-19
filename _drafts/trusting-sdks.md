@@ -42,13 +42,13 @@ There is so much more an attacker can do. The scary piece is that it’s **your 
 
 The information below is vastly simplified, as I try to describe things in a way that a mobile developer without too much network knowledge can get a sense of how things work and how they can protect themselves.
 
-#### HTTPs vs HTTP
+### HTTPs vs HTTP
 
 **HTTP**: Unencrypted traffic, anybody in the same network (WiFi or Ethernet) can easily listen to the packets. It’s very straight-forward to do on unencrypted WiFi networks, but it’s actually almost as easy to do so on a protected WiFi or Ethernet network. There is no way for your computer to verify the packets came from the host you requested data from; Other computers can receive packets before you, open and modify them and send the modified version to you.
 
 **HTTPs**: With HTTPs traffic other hosts in the network can still listen to your packets, but can’t open them. They still get some basic metadata like the host name, but no details (like the body, full URL, …). Additionally your client also verifies that the packets came from the original host and that no one on the way there modified the content. HTTPs is based on SSL.
 
-#### How a browser switches from HTTP to HTTPS
+### How a browser switches from HTTP to HTTPS
 
 Enter "[http://google.com](http://google.com)" in your web browser (make sure to use “http”, not “https”). You’ll see how the browser automatically switches from the unsafe “http” protocol to “https”. 
 
@@ -60,7 +60,7 @@ The initial request happens via "http", so the server has no choice but to respo
 
 You probably already see the problem here: since the response is being sent in clear text also, an attacker can modify that particular packet and replace the redirect destination URL to stay unencrypted "http". This is called SSL Stripping, and we’ll talk more about this later.
 
-#### How network requests work
+### How network requests work
 
 Very simplified, network requests work on multiple layers. Depending on the layer, different information is available on how to route a packet:
 
@@ -72,7 +72,7 @@ If you’re really interested, you can learn how the OSI model works, in particu
 
 So if your computer now sends a packet to the router, how does the router know where to route the packet based on the first layer (MAC addresses)? To solve this problem, the router uses a protocol called ARP (Address Resolution Protocol).
 
-#### How ARP works and how it can be abused
+### How ARP works and how it can be abused
 
 Simplified, the devices in a network use ARP mapping to remember where to send packets of a certain MAC address. The way ARP works is simple: if a device wants to know where to send a packet for a certain IP address, it asks everyone in the network: "What MAC address belongs to this IP?". The device with that IP then replies to this message ✋
 
@@ -88,29 +88,29 @@ As soon as the packets go through the attacker's machine there is some risk. It�
 
 If there are web packets that are unencrypted (say HTTP) the attacker can not only look inside and read their content, but can also modify anything in there with no way of detecting the attack.
 
-**Note**: the technique described above is different from what you might have read about the security issues with public WiFi networks. Public WiFi networks are a problem because everybody can just read whatever packets are flying through the air, and if they’re unencrypted HTTP, it’s easy to read what’s happening. ARP pollution works on any network, no matter if public or not, or if WiFi or ethernet. 
+**Note**: the technique described above is different from what you might have read about the security issues with public WiFi networks. Public WiFis are a problem because everybody can just read whatever packets are flying through the air, and if they’re unencrypted HTTP, it’s easy to read what’s happening. ARP pollution works on any network, no matter if public or not, or if WiFi or ethernet. 
 
 ## Let’s see this in action
 
 Let's look into some SDKs and how they distribute their files, and see if we can find something.
 
-#### CocoaPods
+### CocoaPods
 
 **Open source pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The git:// protocol uses ssh://, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
 
-**Closed source pods**: When preparing this blog post, I noticed that Pods can define a *http* URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods 1.4.0 to show warnings when a Pod uses unencrypted http.
+**Closed source pods**: When preparing this blog post, I noticed that Pods can define a HTTP URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods 1.4.0 to show warnings when a Pod uses unencrypted http.
 
-#### Crashlytics SDK
+### Crashlytics SDK
 
 Crashlytics uses CocoaPods as the default distribution, but has 2 alternative installation methods: the Fabric Mac app and manual installation, which are both https encrypted, so not much we can do here.
 
-#### [Localytics](http://docs.localytics.com/dev/ios.html)
+### [Localytics](http://docs.localytics.com/dev/ios.html)
 
 Let’s look at a sample SDK, the docs page is unencrypted via http (see the address bar)
 
 ![image alt text](/assets/posts/trusting-sdks/image_3.png)
 
-So you might think: "Ah, I’m just reading the docs here, I don’t care if it’s unencrypted". The problem here is that the download link (in blue) is also transferred as part of the website, meaning an attacker can easily replace the *https://* link with *http://*, making the actual file download unsafe.
+So you might think: "Ah, I’m just reading the docs here, I don’t care if it’s unencrypted". The problem here is that the download link (in blue) is also transferred as part of the website, meaning an attacker can easily replace the `https://` link with `http://`, making the actual file download unsafe.
 
 Alternatively an attacker could just switch the https:// link to the attacker’s URL that looks similar
 
@@ -155,7 +155,7 @@ For this attack to work, the requirements are:
 
 Localytics resolved the issue after disclosing it, so both the docs page, and the actual download is now HTTPs encrypted.
 
-#### [AskingPoint](https://www.askingpoint.com/documentation-ios-sdk/)
+### [AskingPoint](https://www.askingpoint.com/documentation-ios-sdk/)
 
 Looking at the next SDK, we have a HTTPs encrypted docs page, looking at the screenshot, this looks secure:
 
@@ -163,7 +163,7 @@ Looking at the next SDK, we have a HTTPs encrypted docs page, looking at the scr
 
 Turns out, the HTTPs based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome and Safari to warn the user of unencrypted file downloads on HTTPs sites.
 
-#### [AWS SDK](https://aws.amazon.com/mobile/sdk/)
+### [AWS SDK](https://aws.amazon.com/mobile/sdk/)
 
 ![image alt text](/assets/posts/trusting-sdks/image_9.png)
 
@@ -171,7 +171,7 @@ At the time I was conducting this research, the AWS iOS SDK download page was HT
 
 ## Putting it all together
 
-Looking back at the [iOS privacy vulnerarbilities mentioned before](https://krausefx.com/privacy), what if we’re not talking about evil developers trying to trick their users…. What if we talk about attackers that **target you, the iOS developer**, to reach millions of users within a short amount of time?
+Thinking back about the iOS privacy vulnerarbilities mentioned before (iCloud phishing, location access through pictures, accessing camera in background), what if we’re not talking about evil developers trying to trick their users…. What if we talk about attackers that **target you, the iOS developer**, to reach millions of users within a short amount of time?
 
 ### Attacking the developer
 
@@ -298,3 +298,9 @@ As a developer, it’s our responsibility to make sure we only ship code we trus
 If you bundled a malicious SDK in your app, it can have catastrophic consequences, from stealing sensitive user data, to doing phishing attacks. 
 
 Today’s hackers are smart: they will try their best to hide under the radar and stay unnoticed, so it’s impossible to tell if this kind of attack is actively being used.
+
+## Thank you
+
+Special thanks to [Manuel Wallner](https://twitter.com/acrooow) for doing the voice recordings for the video.
+
+Special thanks to my friends for providing feedback on this post: [Dave Schukin](https://twitter.com/schukin), [Manuel Wallner](https://twitter.com/acrooow), [Dominik Weber](https://twitter.com/domysee) and Neel Rao
