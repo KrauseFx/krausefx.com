@@ -54,7 +54,7 @@ Enter "[http://google.com](http://google.com)" in your web browser (make sure to
 
 This switch doesn’t happen in your browser but comes from the remote server (google.com), as your client (in this case the browser) can’t know what kind of protocol is supported by the host. (Exception for hosts that make use of [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security))
 
-![image alt text](/assets/posts/trusting-sdks/image_0.png)
+![](/assets/posts/trusting-sdks/image_0.png)
 
 The initial request happens via "http", so the server has no choice but to respond in clear text “http” to tell the client to switch over to the secure “https” protocol with a “301 Moved Permanently” response code.
 
@@ -76,11 +76,11 @@ So if your computer now sends a packet to the router, how does the router know w
 
 Simplified, the devices in a network use ARP mapping to remember where to send packets of a certain MAC address. The way ARP works is simple: if a device wants to know where to send a packet for a certain IP address, it asks everyone in the network: "What MAC address belongs to this IP?". The device with that IP then replies to this message ✋
 
-![image alt text](/assets/posts/trusting-sdks/image_1.png)
+![](/assets/posts/trusting-sdks/image_1.png)
 
 Unfortunately, there is no way for a device to authenticate the sender of an ARP message. Therefore an attacker can be fast in responding to ARP announcements sent by another device, basically saying: "Hey, please send all packets that should go to IP address X to this MAC address". The router will remember that and use that information for all future requests. This is called “ARP poisoning”.
 
-![image alt text](/assets/posts/trusting-sdks/image_2.png)
+![](/assets/posts/trusting-sdks/image_2.png)
 
 See how all packets are now routed through the attacker instead of going directly from the remote host to you?
 
@@ -108,7 +108,7 @@ Crashlytics uses CocoaPods as the default distribution, but has 2 alternative in
 
 Let’s look at a sample SDK, the docs page is unencrypted via http (see the address bar)
 
-![image alt text](/assets/posts/trusting-sdks/image_3.png)
+![](/assets/posts/trusting-sdks/image_3.png)
 
 So you might think: "Ah, I’m just reading the docs here, I don’t care if it’s unencrypted". The problem here is that the download link (in blue) is also transferred as part of the website, meaning an attacker can easily replace the `https://` link with `http://`, making the actual file download unsafe.
 
@@ -121,11 +121,11 @@ And there is no good way for the user to verify that the specific host, URL or S
 
 To prove this, I’ve set up my Raspberry PI to intercept the traffic and do various SSL Stripping (downgrading of HTTPS connections to HTTP) across the board, from JavaScript files, to image resources and of course download links.
 
-![image alt text](/assets/posts/trusting-sdks/image_4.png)
+![](/assets/posts/trusting-sdks/image_4.png)
 
 Once the download link was downgraded to HTTP, it’s easy to replace the content of the zip file as well:
 
-![image alt text](/assets/posts/trusting-sdks/image_5.png)
+![](/assets/posts/trusting-sdks/image_5.png)
 
 Replacing HTML text on the fly is pretty easy, but how can an attacker replace the content of a zip file or binary?
 
@@ -138,14 +138,14 @@ Replacing HTML text on the fly is pretty easy, but how can an attacker replace t
 
 As a result, the downloaded SDK might include additional files or code that was modified:
 
-![image alt text](/assets/posts/trusting-sdks/image_6.png)
+![](/assets/posts/trusting-sdks/image_6.png)
 
 For this attack to work, the requirements are:
 
 * The attacker is in the same network as you
 * The docs page is unencrypted and allows SSL Stripping on all links
 
-![image alt text](/assets/posts/trusting-sdks/image_7.png)
+![](/assets/posts/trusting-sdks/image_7.png)
 
 <div class="video">
   <figure>
@@ -159,13 +159,13 @@ Localytics resolved the issue after disclosing it, so both the docs page, and th
 
 Looking at the next SDK, we have a HTTPs encrypted docs page, looking at the screenshot, this looks secure:
 
-![image alt text](/assets/posts/trusting-sdks/image_8.png)
+![](/assets/posts/trusting-sdks/image_8.png)
 
 Turns out, the HTTPs based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome and Safari to warn the user of unencrypted file downloads on HTTPs sites.
 
 ### [AWS SDK](https://aws.amazon.com/mobile/sdk/)
 
-![image alt text](/assets/posts/trusting-sdks/image_9.png)
+![](/assets/posts/trusting-sdks/image_9.png)
 
 At the time I was conducting this research, the AWS iOS SDK download page was HTTPs encrypted, however linked to a non-encrypted zip download, similarly to the SDKs mentioned before. The issue has been resolved after disclosing it to Amazon.
 
@@ -189,7 +189,7 @@ The only requirement for this particular attack to work, is that the attacker is
 
 Setting up an attack like this is surprisingly easy using publicly available tools that are designed to do automatic SSL Stripping, ARP pollution and replacing of content of various requests. If you’ve done it before, it will take less than an hour to set everything up on any computer, including a Raspberry PI, which I used for my research. The total costs for the whole attack is therefore less than $50.
 
-![image alt text](/assets/posts/trusting-sdks/image_10.jpg)
+![](/assets/posts/trusting-sdks/image_10.jpg)
 
 I decided not to publish the names of the tools I used, nor the code I wrote.
 
