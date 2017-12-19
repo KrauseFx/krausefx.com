@@ -52,7 +52,9 @@ The information below is vastly simplified, as I try to describe things in a way
 
 Enter "[http://google.com](http://google.com)" in your web browser (make sure to use “http”, not “https”). You’ll see how the browser automatically switches from the unsafe “http” protocol to “https”. 
 
-This switch doesn’t happen in your browser but comes from the remote server (google.com), as your client (in this case the browser) can’t know what kind of protocol is supported by the host.![image alt text](/assets/posts/trusting-sdks/image_0.png)
+This switch doesn’t happen in your browser but comes from the remote server (google.com), as your client (in this case the browser) can’t know what kind of protocol is supported by the host. (Exception for hosts that make use of [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security))
+
+![image alt text](/assets/posts/trusting-sdks/image_0.png)
 
 The initial request happens via "http", so the server has no choice but to respond in clear text “http” to tell the client to switch over to the secure “https” protocol with a “301 Moved Permanently” response code.
 
@@ -90,11 +92,13 @@ If there are web packets that are unencrypted (say HTTP) the attacker can not on
 
 ## Let’s see this in action
 
+Let's look into some SDKs and how they distribute their files, and see if we can find something.
+
 #### CocoaPods
 
 **Open source pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The git:// protocol uses ssh://, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
 
-**Closed source pods**: When preparing this blog post, I noticed that Pods can define a *http* URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods x.x.x to show warnings when a Pod uses unencrypted http.
+**Closed source pods**: When preparing this blog post, I noticed that Pods can define a *http* URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods 1.4.0 to show warnings when a Pod uses unencrypted http.
 
 #### Crashlytics SDK
 
@@ -111,12 +115,11 @@ So you might think: "Ah, I’m just reading the docs here, I don’t care if it�
 Alternatively an attacker could just switch the https:// link to the attacker’s URL that looks similar
 
 * [https://s3.amazonaws.com/localytics-sdk/sdk.zip](https://s3.amazonaws.com/localytics-sdk-docs/sdk.zip)
-
 * [https://s3.amazonaws.com/localytics-sdk-binaries/sdk.zip](https://s3.amazonaws.com/localytics-sdk-docs/sdk.zip)
 
 And there is no good way for the user to verify that the specific host, URL or S3 bucket belongs to the author of the SDK.
 
-To prove this, I’ve set up my Raspberry PI to intercept the traffic and do various SSL Stripping (downgrading of HTTPS connections to HTTP) across the board, from JavaScript files, to image resources and of course HTTPs links.
+To prove this, I’ve set up my Raspberry PI to intercept the traffic and do various SSL Stripping (downgrading of HTTPS connections to HTTP) across the board, from JavaScript files, to image resources and of course download links.
 
 ![image alt text](/assets/posts/trusting-sdks/image_4.png)
 
@@ -126,10 +129,10 @@ Once the download link was downgraded to HTTP, it’s easy to replace the conten
 
 Replacing HTML text on the fly is pretty easy, but how can an attacker replace the content of a zip file or binary?
 
-* The attacker downloads the original SDK
-* The attacker inserts malicious code into the SDK
-* The attacker compresses the modified SDK
-* The attacker looks at packets coming by, and jumps in to replace any zip file matching a certain pattern with the file the attacker prepared
+1. The attacker downloads the original SDK
+1. The attacker inserts malicious code into the SDK
+1. The attacker compresses the modified SDK
+1. The attacker looks at packets coming by, and jumps in to replace any zip file matching a certain pattern with the file the attacker prepared
 
 (This is the same approach used by the [image replacement trick](https://charlesreid1.com/wiki/MITM_Labs/Bettercap_to_Replace_Images): Every image that’s transferred via HTTP gets replaced by a meme)
 
@@ -144,7 +147,13 @@ For this attack to work, the requirements are:
 
 ![image alt text](/assets/posts/trusting-sdks/image_7.png)
 
-[video: [https://youtu.be/P_P1T9LZcD8](https://youtu.be/P_P1T9LZcD8) 0.5 min]
+<div class="video">
+  <figure>
+    <iframe width="100%" height="400" src="//www.youtube.com/embed/P_P1T9LZcD8" frameborder="0" allowfullscreen></iframe>
+  </figure>
+</div>
+
+Localytics resolved the issue after disclosing it, so both the docs page, and the actual download is now HTTPs encrypted.
 
 #### [AskingPoint](https://www.askingpoint.com/documentation-ios-sdk/)
 
@@ -166,9 +175,9 @@ Looking back at the [iOS privacy vulnerarbilities mentioned before](https://krau
 
 ### Attacking the developer
 
-What if an SDK gets modified as you download it using the person-in-the-middle attack, and inserts malicious code that breaks the user’s trust? Let’s take the iCloud popup as an example, how hard would it be to use apps from other app developers to steal passwords from the user for you, and send them to your remote server?
+What if an SDK gets modified as you download it using the person-in-the-middle attack, and inserts malicious code that breaks the user’s trust? Let’s take the iCloud phishing popup as an example, how hard would it be to use apps from other app developers to steal passwords from the user for you, and send them to your remote server?
 
-In the video below you can see a sample iOS app that shows a mapview. After downloading and adding the AWS SDK, you can see how malicious code is being executed, in this case an iCloud phishing popup is shown and the cleartext iCloud password can be accessed and send to any remote server.
+In the video below you can see a sample iOS app that shows a mapview. After downloading and adding the AWS SDK to the project, you can see how malicious code is being executed, in this case an iCloud phishing popup is shown and the cleartext iCloud password can be accessed and send to any remote server.
 
 <div class="video">
   <figure>
@@ -206,11 +215,15 @@ To prove that this is working, I looked into how to inject malicious code in a s
     * Enable SSH remote access for the current account
     * Install & setup a keylogger that auto-starts when you login
 
+Once the attacker has the root password and SSH access, they can do anything.
+
 <div class="video">
   <figure>
     <iframe width="100%" height="400" src="//www.youtube.com/embed/LYs3SFHileU" frameborder="0" allowfullscreen></iframe>
   </figure>
 </div>
+
+BuddyBuild resolved the issue after reporting it.
 
 ### How realistic is such an attack?
 
@@ -218,11 +231,11 @@ Very! Open your Network settings on the Mac, and take a look at the list of WiFi
 
 SDKs and developer tools become more and more a target for attackers. Some examples from the past years:
 
-* [Xcode Ghost](https://en.wikipedia.org/wiki/XcodeGhost) affected about 4,000 iOS apps, including WeChat, that could do things like
-    * Attacker has remote access to any phone running the app
+* [Xcode Ghost](https://en.wikipedia.org/wiki/XcodeGhost) affected about 4,000 iOS apps, including WeChat:
+    * Attacker gains remote access to any phone running the app
     * Show phishing popups
     * Access & modify the clipboard (dangerous when using password managers)
-* [The NSA works on finding iOS exploits](https://9to5mac.com/2017/03/07/cia-ios-malware-wikileaks/)
+* [The NSA worked on finding iOS exploits](https://9to5mac.com/2017/03/07/cia-ios-malware-wikileaks/)
 * [Pegasus](https://www.kaspersky.com/blog/pegasus-spyware/14604/): malware for non-jailbroken iPhones, used by governments
 * [KeyRaider](https://en.wikipedia.org/wiki/KeyRaider): Only affected jailbroken iPhones, but still stole user-credentials from over 200,000 end-users
 
@@ -238,9 +251,22 @@ This would go out of scope for this blog post. Mozilla offers a really good [sec
 
 ### How many of the most popular SDKs are affected by this vulnerability?
 
+<div style="float: right; width: 340px;">
+  <img src="/assets/posts/trusting-sdks/image_11.png" width="100%" />
+  <br />
+  <br />
+  <br />
+  <img src="/assets/posts/trusting-sdks/image_12.png" width="100%" />
+  <br />
+  <br />
+  <br />
+  <img src="/assets/posts/trusting-sdks/image_13.png" width="100%" />
+</div>
+
 While doing this research starting on 23rd November 2017 I investigated 41 of the most popular mobile SDKs according to [AppSight](https://www.appsight.io/?asot=2&o=top&os=ios) (counting all Facebook and Google SDKs as one, as they share the same installation method)
 
 * **41** SDKs checked
+
     * **23** are closed source and you can only download binary files
     * **18** of those are open source (all of them on GitHub)
 * **13** are an easy target of person-in-the-middle attacks without any indication to the user
@@ -250,11 +276,11 @@ While doing this research starting on 23rd November 2017 I investigated 41 of th
 * **31%** of the top used SDKs are easy targets for this attack
 * **5** additional SDKs required an account to download the SDK (do they have something to hide?)
 
-I notified all affected in November & December 2017, giving them enough time to resolve the issue before publicly blogging about it. Out of the **13** affected SDKs, **1** (AWS) resolved the issue within 3 business days, 1 resolved the issue within a month (Localytics), and 12 SDKs are still vulnerable to this attack at the time of publishing this post.
+I notified all affected in November & December 2017, giving them enough time to resolve the issue before publicly blogging about it. Out of the **13** affected SDKs, **2** (AWS, BuddyBuild) resolved the issue within 3 business days, 1 resolved the issue within a month (Localytics), and 11 SDKs are still vulnerable to this attack at the time of publishing this post.
 
 ### Open Source vs Closed Source
 
-Looking the number above, you are much likely to be affected by attacks if you use closed source SDKs. More importantly: When an SDK is closed source, it’s much harder for you to verify the integrity of the dependency. As you probably know, you should always [check the Pods directory into version control](https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control), to easily detect changes and be able to audit your dependency updates. 100% of the open source SDKs can be used directly from GitHub, meaning even the 3 SDKs affected are not actually affected if you make sure to use the version on GitHub instead of taking it from the provider’s website.
+Looking the number above, you are much likely to be affected by attacks if you use closed source SDKs. More importantly: When an SDK is closed source, it’s much harder for you to verify the integrity of the dependency. As you probably know, you should always [check the Pods directory into version control](https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control), to easily detect changes and be able to audit your dependency updates. 100% of the open source SDKs I investigated can be used directly from GitHub, meaning even the 3 SDKs affected are not actually affected if you make sure to use the version on GitHub instead of taking it from the provider’s website.
 
 Based on the numbers above it is clear that in addition to not being able to dive into the source code for closed source SDKs you also have a much higher risk of being attacked. Not only person-in-the-middle attacks, but also:
 
@@ -263,11 +289,11 @@ Based on the numbers above it is clear that in addition to not being able to div
 * The government forces the company to include back-doors
 * The company providing the SDK is evil and includes code & tracking you don’t want
 
-**You are responsible for what binaries you ship!** You have to make sure you don’t break your user’s trust, European Union data protection laws ([GDPR](https://www.eugdpr.org/)) or steal the user’s credentials via a malicious SDK.
+**You are responsible for the binaries you ship!** You have to make sure you don’t break your user’s trust, European Union data protection laws ([GDPR](https://www.eugdpr.org/)) or steal the user’s credentials via a malicious SDK.
 
 ## Wrapping up
 
-As a developer, it’s our responsibility to make sure we only ship code we trust. One of the easiest attack vectors right now is via malicious SDKs. If an SDK is open source, hosted on GitHub, you’re pretty safe. Be extra careful with bundling closed-source binaries or SDKs you don’t fully trust.
+As a developer, it’s our responsibility to make sure we only ship code we trust. One of the easiest attack vectors right now is via malicious SDKs. If an SDK is open source, hosted on GitHub, and is installed via CocoaPods, you’re pretty safe. Be extra careful with bundling closed-source binaries or SDKs you don’t fully trust.
 
 If you bundled a malicious SDK in your app, it can have catastrophic consequences, from stealing sensitive user data, to doing phishing attacks. 
 
