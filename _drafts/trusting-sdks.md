@@ -1,0 +1,274 @@
+---
+layout: post
+title: "Trusting third party SDKs"
+categories: []
+tags:
+- security
+- privacy
+- sdks
+status: publish
+type: draft
+published: true
+meta: {}
+---
+
+What if I told you that many of the third-party SDKs you use can be **modified** while you download them? Using a simple [person-in-the-middle attack](https://en.wikipedia.org/wiki/Man_in_the_middle_attack), anyone in the same network can insert malicious code into the SDK, and with that into your application.
+
+## What are the potential consequences of a modified SDK?
+
+It’s extremely dangerous if someone modifies an SDK before you install it. You are shipping your app with that code/binary. It will run on thousands or millions of devices within a few days, and everything you ship within your app runs with the **exact** same privileges as your app. 
+
+That means any SDK you include in your app has access to:
+
+* The same keychain your app has access to
+* Any folders/files your app has access to
+* Any app permissions your app has, e.g. location data, photo library access
+* iCloud containers of your app
+* All data your app exchanges with a web server, e.g. user logins, personal information
+
+iOS apps are sandboxed for a lot of good reasons, so don’t forget that **any SDK you include in your app runs inside your app’s sandbox**, and has access to everything your app has access to. 
+
+What’s the worst that a malicious SDK could do?
+
+* Steal sensitive user data, basically add a keylogger for your app, and record every tap and gesture
+* Steal keys and user’s credentials
+* [Access the user’s historic location data and sell it to third parties](https://krausefx.com/blog/ios-privacy-detectlocation-an-easy-way-to-access-the-users-ios-location-data-without-actually-having-access)
+* [Show phishing popups for iCloud, or other login credentials](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
+* [Take pictures in the background without telling the user](https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running)
+
+There is so much more an attacker can do. The scary piece is that it’s **your own app** that steals sensitive user data and sends it some remote server if you get affected by such an attack.
+
+## Web Security 101
+
+The information below is vastly simplified, as I try to describe things in a way that a mobile developer without too much network knowledge can get a sense of how things work and how they can protect themselves.
+
+#### HTTPs vs HTTP
+
+**HTTP**: Unencrypted traffic, anybody in the same network (WiFi or Ethernet) can easily listen to the packets. It’s very straight-forward to do on unencrypted WiFi networks, but it’s actually almost as easy to do so on a protected WiFi or Ethernet network. There is no way for your computer to verify the packets came from the host you requested data from; Other computers can receive packets before you, open and modify them and send the modified version to you.
+
+**HTTPs**: With HTTPs traffic other hosts in the network can still listen to your packets, but can’t open them. They still get some basic metadata like the host name, but no details (like the body, full URL, …). Additionally your client also verifies that the packets came from the original host and that no one on the way there modified the content. HTTPs is based on SSL.
+
+#### How a browser switches from HTTP to HTTPS
+
+Enter "[http://google.com](http://google.com)" in your web browser (make sure to use “http”, not “https”). You’ll see how the browser automatically switches from the unsafe “http” protocol to “https”. 
+
+This switch doesn’t happen in your browser but comes from the remote server (google.com), as your client (in this case the browser) can’t know what kind of protocol is supported by the host.![image alt text](/assets/posts/trusting-sdks/image_0.png)
+
+The initial request happens via "http", so the server has no choice but to respond in clear text “http” to tell the client to switch over to the secure “https” protocol with a “301 Moved Permanently” response code.
+
+You probably already see the problem here: since the response is being sent in clear text also, an attacker can modify that particular packet and replace the redirect destination URL to stay unencrypted "http". This is called SSL Stripping, and we’ll talk more about this later.
+
+#### How network requests work
+
+Very simplified, network requests work on multiple layers. Depending on the layer, different information is available on how to route a packet:
+
+* The lowest layer (Data Link Layer) uses MAC addresses to identify hosts in a network
+* The layer above (Network Layer) uses IP addresses to identify hosts in the network
+* The layers above add port information and the actual message content
+
+If you’re really interested, you can learn how the OSI model works, in particular the implementation TCP/IP (e.g. [http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model](http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model)).
+
+So if your computer now sends a packet to the router, how does the router know where to route the packet based on the first layer (MAC addresses)? To solve this problem, the router uses a protocol called ARP (Address Resolution Protocol).
+
+#### How ARP works and how it can be abused
+
+Simplified, the devices in a network use ARP mapping to remember where to send packets of a certain MAC address. The way ARP works is simple: if a device wants to know where to send a packet for a certain IP address, it asks everyone in the network: "What MAC address belongs to this IP?". The device with that IP then replies to this message ✋
+
+![image alt text](/assets/posts/trusting-sdks/image_1.png)
+
+Unfortunately, there is no way for a device to authenticate the sender of an ARP message. Therefore an attacker can be fast in responding to ARP announcements sent by another device, basically saying: "Hey, please send all packets that should go to IP address X to this MAC address". The router will remember that and use that information for all future requests. This is called “ARP poisoning”.
+
+![image alt text](/assets/posts/trusting-sdks/image_2.png)
+
+See how all packets are now routed through the attacker instead of going directly from the remote host to you?
+
+As soon as the packets go through the attacker's machine there is some risk. It’s the same risk you have when trusting your ISP or a VPN service: if the services you use are properly encrypted, they can’t really know details about what you’re doing or modify packets without your client (e.g. browser) noticing. As mentioned before there is still basic information that will always be visible such as certain metadata (e.g. the host name).
+
+If there are web packets that are unencrypted (say HTTP) the attacker can not only look inside and read their content, but can also modify anything in there with no way of detecting the attack.
+
+**Note**: the technique described above is different from what you might have read about the security issues with public WiFi networks. Public WiFi networks are a problem because everybody can just read whatever packets are flying through the air, and if they’re unencrypted HTTP, it’s easy to read what’s happening. ARP pollution works on any network, no matter if public or not, or if WiFi or ethernet. 
+
+## Let’s see this in action
+
+#### CocoaPods
+
+**Open source pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The git:// protocol uses ssh://, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
+
+**Closed source pods**: When preparing this blog post, I noticed that Pods can define a *http* URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods x.x.x to show warnings when a Pod uses unencrypted http.
+
+#### Crashlytics SDK
+
+Crashlytics uses CocoaPods as the default distribution, but has 2 alternative installation methods: the Fabric Mac app and manual installation, which are both https encrypted, so not much we can do here.
+
+#### [Localytics](http://docs.localytics.com/dev/ios.html)
+
+Let’s look at a sample SDK, the docs page is unencrypted via http (see the address bar)
+
+![image alt text](/assets/posts/trusting-sdks/image_3.png)
+
+So you might think: "Ah, I’m just reading the docs here, I don’t care if it’s unencrypted". The problem here is that the download link (in blue) is also transferred as part of the website, meaning an attacker can easily replace the *https://* link with *http://*, making the actual file download unsafe.
+
+Alternatively an attacker could just switch the https:// link to the attacker’s URL that looks similar
+
+* [https://s3.amazonaws.com/localytics-sdk/sdk.zip](https://s3.amazonaws.com/localytics-sdk-docs/sdk.zip)
+
+* [https://s3.amazonaws.com/localytics-sdk-binaries/sdk.zip](https://s3.amazonaws.com/localytics-sdk-docs/sdk.zip)
+
+And there is no good way for the user to verify that the specific host, URL or S3 bucket belongs to the author of the SDK.
+
+To prove this, I’ve set up my Raspberry PI to intercept the traffic and do various SSL Stripping (downgrading of HTTPS connections to HTTP) across the board, from JavaScript files, to image resources and of course HTTPs links.
+
+![image alt text](/assets/posts/trusting-sdks/image_4.png)
+
+Once the download link was downgraded to HTTP, it’s easy to replace the content of the zip file as well:
+
+![image alt text](/assets/posts/trusting-sdks/image_5.png)
+
+Replacing HTML text on the fly is pretty easy, but how can an attacker replace the content of a zip file or binary?
+
+* The attacker downloads the original SDK
+* The attacker inserts malicious code into the SDK
+* The attacker compresses the modified SDK
+* The attacker looks at packets coming by, and jumps in to replace any zip file matching a certain pattern with the file the attacker prepared
+
+(This is the same approach used by the [image replacement trick](https://charlesreid1.com/wiki/MITM_Labs/Bettercap_to_Replace_Images): Every image that’s transferred via HTTP gets replaced by a meme)
+
+As a result, the downloaded SDK might include additional files or code that was modified:
+
+![image alt text](/assets/posts/trusting-sdks/image_6.png)
+
+For this attack to work, the requirements are:
+
+* The attacker is in the same network as you
+* The docs page is unencrypted and allows SSL Stripping on all links
+
+![image alt text](/assets/posts/trusting-sdks/image_7.png)
+
+[video: [https://youtu.be/P_P1T9LZcD8](https://youtu.be/P_P1T9LZcD8) 0.5 min]
+
+#### [AskingPoint](https://www.askingpoint.com/documentation-ios-sdk/)
+
+Looking at the next SDK, we have a HTTPs encrypted docs page, looking at the screenshot, this looks secure:
+
+![image alt text](/assets/posts/trusting-sdks/image_8.png)
+
+Turns out, the HTTPs based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome and Safari to warn the user of unencrypted file downloads on HTTPs sites.
+
+#### [AWS SDK](https://aws.amazon.com/mobile/sdk/)
+
+![image alt text](/assets/posts/trusting-sdks/image_9.png)
+
+At the time I was conducting this research, the AWS iOS SDK download page was HTTPs encrypted, however linked to a non-encrypted zip download, similarly to the SDKs mentioned before. The issue has been resolved after disclosing it to Amazon.
+
+## Putting it all together
+
+Looking back at the [iOS privacy vulnerarbilities mentioned before](https://krausefx.com/privacy), what if we’re not talking about evil developers trying to trick their users…. What if we talk about attackers that **target you, the iOS developer**, to reach millions of users within a short amount of time?
+
+### Attacking the developer
+
+What if an SDK gets modified as you download it using the person-in-the-middle attack, and inserts malicious code that breaks the user’s trust? Let’s take the iCloud popup as an example, how hard would it be to use apps from other app developers to steal passwords from the user for you, and send them to your remote server?
+
+In the video below you can see a sample iOS app that shows a mapview. After downloading and adding the AWS SDK, you can see how malicious code is being executed, in this case an iCloud phishing popup is shown and the cleartext iCloud password can be accessed and send to any remote server.
+
+<div class="video">
+  <figure>
+    <iframe width="100%" height="400" src="//www.youtube.com/embed/Mx2oFCyWg2A" frameborder="0" allowfullscreen></iframe>
+  </figure>
+</div>
+
+The only requirement for this particular attack to work, is that the attacker is in the same network as you (e.g. stays in the same conference hotel). My Mac runs the default macOS configuration, meaning there is no proxy, custom DNS or VPN set up. 
+
+Setting up an attack like this is surprisingly easy using publicly available tools that are designed to do automatic SSL Stripping, ARP pollution and replacing of content of various requests. If you’ve done it before, it will take less than an hour to set everything up on any computer, including a Raspberry PI, which I used for my research. The total costs for the whole attack is therefore less than $50.
+
+![image alt text](/assets/posts/trusting-sdks/image_10.jpg)
+
+I decided not to publish the names of the tools I used, nor the code I wrote.
+
+### Running arbitrary code on the developer’s machine
+
+The previous example injected malicious code into the iOS app using a hijacked SDK. Another attack vector is the developer’s Mac. Once an attacker can run code on your machine, and maybe even has remote SSH access, the damage could be insane:
+
+* Activate remote SSH access for the admin account
+* Install keylogger to get admin password
+* Decrypt the keychain using the password, and send all credentials to remote server
+* Access local secrets, like AWS credentials, CocoaPods & RubyGems push tokens and more
+    * If a developer now has a popular CocoaPod, you can spread more malicious code through their SDKs
+* Access literally any file and database on your Mac, including iMessage conversations, emails and source code
+* Record the user’s screen without them knowing
+* Install a new root SSL certificate, allowing the attacker to intercept most of your encrypted network requests
+
+To prove that this is working, I looked into how to inject malicious code in a shell script developers run locally, in this case BuddyBuild:
+
+* Same requirements as in the previous example, attacker needs to be in the same network
+* BuddyBuild docs tell users to `curl` an unencrypted URL piping the content over to `sh`, meaning any code the `curl` command returns will be executed
+* The modified `UpdateSDK` is provided by the attacker (Raspberry PI), and asks for the admin password (normally BuddyBuild’s update script doesn’t ask for this)
+* Within under a second, the malicious script does the following
+    * Enable SSH remote access for the current account
+    * Install & setup a keylogger that auto-starts when you login
+
+<div class="video">
+  <figure>
+    <iframe width="100%" height="400" src="//www.youtube.com/embed/LYs3SFHileU" frameborder="0" allowfullscreen></iframe>
+  </figure>
+</div>
+
+### How realistic is such an attack?
+
+Very! Open your Network settings on the Mac, and take a look at the list of WiFi networks your Mac was connected to. In my case, my MacBook was connected to over 200 hotspots. How many of them can you fully trust? Even in a trustworthy network, there could still be other machines that got hacked previously which are doing remote controlled attacks (see section above)
+
+SDKs and developer tools become more and more a target for attackers. Some examples from the past years:
+
+* [Xcode Ghost](https://en.wikipedia.org/wiki/XcodeGhost) affected about 4,000 iOS apps, including WeChat, that could do things like
+    * Attacker has remote access to any phone running the app
+    * Show phishing popups
+    * Access & modify the clipboard (dangerous when using password managers)
+* [The NSA works on finding iOS exploits](https://9to5mac.com/2017/03/07/cia-ios-malware-wikileaks/)
+* [Pegasus](https://www.kaspersky.com/blog/pegasus-spyware/14604/): malware for non-jailbroken iPhones, used by governments
+* [KeyRaider](https://en.wikipedia.org/wiki/KeyRaider): Only affected jailbroken iPhones, but still stole user-credentials from over 200,000 end-users
+
+[and many, many more](https://www.theiphonewiki.com/wiki/Malware_for_iOS). Another approach is getting access to the download server (e.g. S3 bucket using access keys) and replacing the binary. This happened multiple times in the past few years, for example [Transmission Mac app incident](https://www.macrumors.com/2016/03/07/transmission-malware-downloaded-6500-times/). This opens a whole new level of area of attack, which I didn’t cover in this blog post.
+
+### Conferences, hotels, coffee shops
+
+Every time you connect to the WiFi or a conference, hotel or coffee shop, you become an easy target. Attackers know that there is a high number of developers during conferences and can easily make use of the situation.
+
+### How can SDK providers protect their users?
+
+This would go out of scope for this blog post. Mozilla offers a really good [security guide](https://developer.mozilla.org/en-US/docs/Web/Security) that’s a good starting point. Mozilla provides a tool called [observatory]([https://observatory.mozilla.org](https://observatory.mozilla.org)) that will do some automatic checks of the server settings and certificates.
+
+### How many of the most popular SDKs are affected by this vulnerability?
+
+While doing this research starting on 23rd November 2017 I investigated 41 of the most popular mobile SDKs according to [AppSight](https://www.appsight.io/?asot=2&o=top&os=ios) (counting all Facebook and Google SDKs as one, as they share the same installation method)
+
+* **41** SDKs checked
+    * **23** are closed source and you can only download binary files
+    * **18** of those are open source (all of them on GitHub)
+* **13** are an easy target of person-in-the-middle attacks without any indication to the user
+    * **10** of them are closed source SDKs
+    * **3** of them are open source SDKs, meaning the user can either download the SDK via unencrypted HTTP from the official website, or securely clone the source code from GitHub
+* **5** of the 41 SDKs offer no way to download the SDK securely, meaning they don’t support any HTTPs at all, nor use a service that does (e.g. GitHub)
+* **31%** of the top used SDKs are easy targets for this attack
+* **5** additional SDKs required an account to download the SDK (do they have something to hide?)
+
+I notified all affected in November & December 2017, giving them enough time to resolve the issue before publicly blogging about it. Out of the **13** affected SDKs, **1** (AWS) resolved the issue within 3 business days, 1 resolved the issue within a month (Localytics), and 12 SDKs are still vulnerable to this attack at the time of publishing this post.
+
+### Open Source vs Closed Source
+
+Looking the number above, you are much likely to be affected by attacks if you use closed source SDKs. More importantly: When an SDK is closed source, it’s much harder for you to verify the integrity of the dependency. As you probably know, you should always [check the Pods directory into version control](https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control), to easily detect changes and be able to audit your dependency updates. 100% of the open source SDKs can be used directly from GitHub, meaning even the 3 SDKs affected are not actually affected if you make sure to use the version on GitHub instead of taking it from the provider’s website.
+
+Based on the numbers above it is clear that in addition to not being able to dive into the source code for closed source SDKs you also have a much higher risk of being attacked. Not only person-in-the-middle attacks, but also:
+
+* The attacker gains access to the SDK download server
+* The company providing the SDK gets compromised
+* The government forces the company to include back-doors
+* The company providing the SDK is evil and includes code & tracking you don’t want
+
+**You are responsible for what binaries you ship!** You have to make sure you don’t break your user’s trust, European Union data protection laws ([GDPR](https://www.eugdpr.org/)) or steal the user’s credentials via a malicious SDK.
+
+## Wrapping up
+
+As a developer, it’s our responsibility to make sure we only ship code we trust. One of the easiest attack vectors right now is via malicious SDKs. If an SDK is open source, hosted on GitHub, you’re pretty safe. Be extra careful with bundling closed-source binaries or SDKs you don’t fully trust.
+
+If you bundled a malicious SDK in your app, it can have catastrophic consequences, from stealing sensitive user data, to doing phishing attacks. 
+
+Today’s hackers are smart: they will try their best to hide under the radar and stay unnoticed, so it’s impossible to tell if this kind of attack is actively being used.
