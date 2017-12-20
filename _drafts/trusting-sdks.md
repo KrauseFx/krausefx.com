@@ -301,6 +301,6 @@ Today’s hackers are smart: they will try their best to hide under the radar an
 
 ## Thank you
 
-Special thanks to [Manuel Wallner](https://twitter.com/acrooow) for doing the voice recordings for the video.
+Special thanks to [Manu Wallner](https://twitter.com/acrooow) for doing the voice recordings for the video.
 
-Special thanks to my friends for providing feedback on this post: [Dave Schukin](https://twitter.com/schukin), [Manuel Wallner](https://twitter.com/acrooow), [Dominik Weber](https://twitter.com/domysee) and Neel Rao
+Special thanks to my friends for providing feedback on this post: [Dave Schukin](https://twitter.com/schukin), [Manu Wallner](https://twitter.com/acrooow), [Dominik Weber](https://twitter.com/domysee) and Neel Rao
