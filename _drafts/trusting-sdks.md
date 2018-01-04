@@ -46,7 +46,7 @@ The information below is vastly simplified, as I try to describe things in a way
 
 **HTTP**: Unencrypted traffic, anybody in the same network (WiFi or Ethernet) can easily listen to the packets. It’s very straight-forward to do on unencrypted WiFi networks, but it’s actually almost as easy to do so on a protected WiFi or Ethernet network. There is no way for your computer to verify the packets came from the host you requested data from; Other computers can receive packets before you, open and modify them and send the modified version to you.
 
-**HTTPs**: With HTTPs traffic other hosts in the network can still listen to your packets, but can’t open them. They still get some basic metadata like the host name, but no details (like the body, full URL, …). Additionally your client also verifies that the packets came from the original host and that no one on the way there modified the content. HTTPs is based on SSL.
+**HTTPs**: With HTTPs traffic other hosts in the network can still listen to your packets, but can’t open them. They still get some basic metadata like the host name, but no details (like the body, full URL, …). Additionally your client also verifies that the packets came from the original host and that no one on the way there modified the content. HTTPs is based on TLS.
 
 ### How a browser switches from HTTP to HTTPS
 
@@ -68,7 +68,7 @@ Very simplified, network requests work on multiple layers. Depending on the laye
 * The layer above (Network Layer) uses IP addresses to identify hosts in the network
 * The layers above add port information and the actual message content
 
-If you’re really interested, you can learn how the OSI model works, in particular the implementation TCP/IP (e.g. [http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model](http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model)).
+> If you’re really interested, you can learn how the OSI model works, in particular the implementation TCP/IP (e.g. [http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model](http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model)).
 
 So if your computer now sends a packet to the router, how does the router know where to route the packet based on the first layer (MAC addresses)? To solve this problem, the router uses a protocol called ARP (Address Resolution Protocol).
 
@@ -175,7 +175,7 @@ Thinking back about the iOS privacy vulnerarbilities mentioned before (iCloud ph
 
 ### Attacking the developer
 
-What if an SDK gets modified as you download it using the person-in-the-middle attack, and inserts malicious code that breaks the user’s trust? Let’s take the iCloud phishing popup as an example, how hard would it be to use apps from other app developers to steal passwords from the user for you, and send them to your remote server?
+What if an SDK gets modified as you download it using a person-in-the-middle attack, and inserts malicious code that breaks the user’s trust? Let’s take the iCloud phishing popup as an example, how hard would it be to use apps from other app developers to steal passwords from the user for you, and send them to your remote server?
 
 In the video below you can see a sample iOS app that shows a mapview. After downloading and adding the AWS SDK to the project, you can see how malicious code is being executed, in this case an iCloud phishing popup is shown and the cleartext iCloud password can be accessed and send to any remote server.
 
@@ -185,7 +185,7 @@ In the video below you can see a sample iOS app that shows a mapview. After down
   </figure>
 </div>
 
-The only requirement for this particular attack to work, is that the attacker is in the same network as you (e.g. stays in the same conference hotel). My Mac runs the default macOS configuration, meaning there is no proxy, custom DNS or VPN set up. 
+The only requirement for this particular attack to work, is that the attacker is in the same network as you (e.g. stays in the same conference hotel). Alternatively this attack can also be done by your ISP or the VPN service you use. My Mac runs the default macOS configuration, meaning there is no proxy, custom DNS or VPN set up. 
 
 Setting up an attack like this is surprisingly easy using publicly available tools that are designed to do automatic SSL Stripping, ARP pollution and replacing of content of various requests. If you’ve done it before, it will take less than an hour to set everything up on any computer, including a Raspberry PI, which I used for my research. The total costs for the whole attack is therefore less than $50.
 
