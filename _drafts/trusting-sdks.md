@@ -33,7 +33,7 @@ What’s the worst that a malicious SDK could do?
 * Steal sensitive user data, basically add a keylogger for your app, and record every tap and gesture
 * Steal keys and user’s credentials
 * [Access the user’s historic location data and sell it to third parties](https://krausefx.com/blog/ios-privacy-detectlocation-an-easy-way-to-access-the-users-ios-location-data-without-actually-having-access)
-* [Show phishing popups for iCloud, or other login credentials](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
+* [Show phishing pop-ups for iCloud, or other login credentials](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
 * [Take pictures in the background without telling the user](https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running)
 
 There is so much more an attacker can do. The scary piece is that it’s **your own app** that steals sensitive user data and sends it some remote server if you get affected by such an attack.
@@ -44,7 +44,7 @@ The information below is vastly simplified, as I try to describe things in a way
 
 ### HTTPs vs HTTP
 
-**HTTP**: Unencrypted traffic, anybody in the same network (WiFi or Ethernet) can easily listen to the packets. It’s very straight-forward to do on unencrypted WiFi networks, but it’s actually almost as easy to do so on a protected WiFi or Ethernet network. There is no way for your computer to verify the packets came from the host you requested data from; Other computers can receive packets before you, open and modify them and send the modified version to you.
+**HTTP**: Unencrypted traffic, anybody in the same network (WiFi or Ethernet) can easily listen to the packets. It’s very straightforward to do on unencrypted WiFi networks, but it’s actually almost as easy to do so on a protected WiFi or Ethernet network. There is no way for your computer to verify the packets came from the host you requested data from; Other computers can receive packets before you, open and modify them and send the modified version to you.
 
 **HTTPs**: With HTTPs traffic other hosts in the network can still listen to your packets, but can’t open them. They still get some basic metadata like the host name, but no details (like the body, full URL, …). Additionally your client also verifies that the packets came from the original host and that no one on the way there modified the content. HTTPs is based on TLS.
 
@@ -68,17 +68,17 @@ Very simplified, network requests work on multiple layers. Depending on the laye
 * The layer above (Network Layer) uses IP addresses to identify hosts in the network
 * The layers above add port information and the actual message content
 
-> If you’re really interested, you can learn how the OSI model works, in particular the implementation TCP/IP (e.g. [http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model](http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model)).
+> If you’re interested, you can learn how the OSI (Open Systems Interconnection) model works, in particular the implementation TCP/IP (e.g. [http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model](http://microchipdeveloper.com/tcpip:tcp-ip-five-layer-model)).
 
-So if your computer now sends a packet to the router, how does the router know where to route the packet based on the first layer (MAC addresses)? To solve this problem, the router uses a protocol called ARP (Address Resolution Protocol).
+So, if your computer now sends a packet to the router, how does the router know where to route the packet based on the first layer (MAC addresses)? To solve this problem, the router uses a protocol called ARP (Address Resolution Protocol).
 
 ### How ARP works and how it can be abused
 
-Simplified, the devices in a network use ARP mapping to remember where to send packets of a certain MAC address. The way ARP works is simple: if a device wants to know where to send a packet for a certain IP address, it asks everyone in the network: "What MAC address belongs to this IP?". The device with that IP then replies to this message ✋
+Simplified, the devices in a network use ARP mapping to remember where to send packets of a certain MAC address. The way ARP works is simple: if a device wants to know where to send a packet for a certain IP address, it asks everyone in the network: "Which MAC address belongs to this IP?". The device with that IP then replies to this message ✋
 
 ![](/assets/posts/trusting-sdks/image_1.png)
 
-Unfortunately, there is no way for a device to authenticate the sender of an ARP message. Therefore an attacker can be fast in responding to ARP announcements sent by another device, basically saying: "Hey, please send all packets that should go to IP address X to this MAC address". The router will remember that and use that information for all future requests. This is called “ARP poisoning”.
+Unfortunately, there is no way for a device to authenticate the sender of an ARP message. Therefore an attacker can be fast in responding to ARP announcements sent by another device, basically saying: "Hey, please send all packets that should go to IP address X to this MAC address". The router will remember that and use that information for all future requests. This is called “ARP poisoning.”
 
 ![](/assets/posts/trusting-sdks/image_2.png)
 
@@ -96,9 +96,9 @@ Let's look into some SDKs and how they distribute their files, and see if we can
 
 ### CocoaPods
 
-**Open source pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The git:// protocol uses ssh://, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
+**Open source Pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The git:// protocol uses ssh://, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
 
-**Closed source pods**: When preparing this blog post, I noticed that Pods can define a HTTP URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods 1.4.0 to show warnings when a Pod uses unencrypted http.
+**Closed source Pods**: When preparing this blog post, I noticed that Pods can define a HTTP URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods 1.4.0 to show warnings when a Pod uses unencrypted http.
 
 ### Crashlytics SDK
 
@@ -171,13 +171,13 @@ At the time I was conducting this research, the AWS iOS SDK download page was HT
 
 ## Putting it all together
 
-Thinking back about the iOS privacy vulnerarbilities mentioned before (iCloud phishing, location access through pictures, accessing camera in background), what if we’re not talking about evil developers trying to trick their users…. What if we talk about attackers that **target you, the iOS developer**, to reach millions of users within a short amount of time?
+Thinking back about the iOS privacy vulnerabilities mentioned before (iCloud phishing, location access through pictures, accessing camera in background), what if we’re not talking about evil developers trying to trick their users… What if we talk about attackers that **target you, the iOS developer**, to reach millions of users within a short amount of time?
 
 ### Attacking the developer
 
 What if an SDK gets modified as you download it using a person-in-the-middle attack, and inserts malicious code that breaks the user’s trust? Let’s take the iCloud phishing popup as an example, how hard would it be to use apps from other app developers to steal passwords from the user for you, and send them to your remote server?
 
-In the video below you can see a sample iOS app that shows a mapview. After downloading and adding the AWS SDK to the project, you can see how malicious code is being executed, in this case an iCloud phishing popup is shown and the cleartext iCloud password can be accessed and send to any remote server.
+In the video below you can see a sample iOS app that shows a mapview. After downloading and adding the AWS SDK to the project, you can see how malicious code is being executed, in this case an iCloud phishing popup is shown and the cleartext iCloud password can be accessed and sent to any remote server.
 
 <div class="video">
   <figure>
@@ -185,7 +185,7 @@ In the video below you can see a sample iOS app that shows a mapview. After down
   </figure>
 </div>
 
-The only requirement for this particular attack to work, is that the attacker is in the same network as you (e.g. stays in the same conference hotel). Alternatively this attack can also be done by your ISP or the VPN service you use. My Mac runs the default macOS configuration, meaning there is no proxy, custom DNS or VPN set up. 
+The only requirement for this particular attack to work is that the attacker is in the same network as you (e.g. stays in the same conference hotel). Alternatively this attack can also be done by your ISP or the VPN service you use. My Mac runs the default macOS configuration, meaning there is no proxy, custom DNS or VPN set up. 
 
 Setting up an attack like this is surprisingly easy using publicly available tools that are designed to do automatic SSL Stripping, ARP pollution and replacing of content of various requests. If you’ve done it before, it will take less than an hour to set everything up on any computer, including a Raspberry PI, which I used for my research. The total costs for the whole attack is therefore less than $50.
 
@@ -195,7 +195,7 @@ I decided not to publish the names of the tools I used, nor the code I wrote.
 
 ### Running arbitrary code on the developer’s machine
 
-The previous example injected malicious code into the iOS app using a hijacked SDK. Another attack vector is the developer’s Mac. Once an attacker can run code on your machine, and maybe even has remote SSH access, the damage could be insane:
+The previous example injected malicious code into the iOS app using a hijacked SDK. Another attack vector is the developer’s Mac. Once an attacker can run code on your machine, and maybe even has remote SSH access, the damage could be significant:
 
 * Activate remote SSH access for the admin account
 * Install keylogger to get admin password
@@ -234,7 +234,7 @@ SDKs and developer tools become more and more a target for attackers. Some examp
 * [Xcode Ghost](https://en.wikipedia.org/wiki/XcodeGhost) affected about 4,000 iOS apps, including WeChat:
     * Attacker gains remote access to any phone running the app
     * Show phishing popups
-    * Access & modify the clipboard (dangerous when using password managers)
+    * Access and modify the clipboard (dangerous when using password managers)
 * [The NSA worked on finding iOS exploits](https://9to5mac.com/2017/03/07/cia-ios-malware-wikileaks/)
 * [Pegasus](https://www.kaspersky.com/blog/pegasus-spyware/14604/): malware for non-jailbroken iPhones, used by governments
 * [KeyRaider](https://en.wikipedia.org/wiki/KeyRaider): Only affected jailbroken iPhones, but still stole user-credentials from over 200,000 end-users
@@ -247,7 +247,7 @@ Every time you connect to the WiFi or a conference, hotel or coffee shop, you be
 
 ### How can SDK providers protect their users?
 
-This would go out of scope for this blog post. Mozilla offers a really good [security guide](https://developer.mozilla.org/en-US/docs/Web/Security) that’s a good starting point. Mozilla provides a tool called [observatory]([https://observatory.mozilla.org](https://observatory.mozilla.org)) that will do some automatic checks of the server settings and certificates.
+This would go out of scope for this blog post. Mozilla offers a [security guide](https://developer.mozilla.org/en-US/docs/Web/Security) that’s a good starting point. Mozilla provides a tool called [observatory]([https://observatory.mozilla.org](https://observatory.mozilla.org)) that will do some automatic checks of the server settings and certificates.
 
 ### How many of the most popular SDKs are affected by this vulnerability?
 
@@ -276,7 +276,7 @@ While doing this research starting on 23rd November 2017 I investigated 41 of th
 * **31%** of the top used SDKs are easy targets for this attack
 * **5** additional SDKs required an account to download the SDK (do they have something to hide?)
 
-I notified all affected in November & December 2017, giving them enough time to resolve the issue before publicly blogging about it. Out of the **13** affected SDKs, **2** (AWS, BuddyBuild) resolved the issue within 3 business days, 1 resolved the issue within a month (Localytics), and 11 SDKs are still vulnerable to this attack at the time of publishing this post.
+I notified the affected parties ahead of time, giving them enough time to resolve the issue before publicly blogging about it. Out of the **13** affected SDKs, **2** (AWS, BuddyBuild) resolved the issue within 3 business days, 1 resolved the issue within a month (Localytics), and 11 SDKs are still vulnerable to this attack at the time of publishing this post.
 
 ### Open Source vs Closed Source
 
@@ -297,7 +297,7 @@ As a developer, it’s our responsibility to make sure we only ship code we trus
 
 If you bundled a malicious SDK in your app, it can have catastrophic consequences, from stealing sensitive user data, to doing phishing attacks. 
 
-Today’s hackers are smart: they will try their best to hide under the radar and stay unnoticed, so it’s impossible to tell if this kind of attack is actively being used.
+Today’s hackers are smart: they will try their best to hide under the radar, so it’s impossible to tell if this kind of attack is actively being used.
 
 ## Thank you
 
