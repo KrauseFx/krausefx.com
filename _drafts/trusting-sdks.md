@@ -266,7 +266,6 @@ This would go out of scope for this blog post. Mozilla offers a [security guide]
 While doing this research starting on 23rd November 2017 I investigated 41 of the most popular mobile SDKs according to [AppSight](https://www.appsight.io/?asot=2&o=top&os=ios) (counting all Facebook and Google SDKs as one, as they share the same installation method)
 
 * **41** SDKs checked
-
     * **23** are closed source and you can only download binary files
     * **18** of those are open source (all of them on GitHub)
 * **13** are an easy target of person-in-the-middle attacks without any indication to the user
@@ -277,6 +276,8 @@ While doing this research starting on 23rd November 2017 I investigated 41 of th
 * **5** additional SDKs required an account to download the SDK (do they have something to hide?)
 
 I notified the affected parties ahead of time, giving them enough time to resolve the issue before publicly blogging about it. Out of the **13** affected SDKs, **2** (AWS, BuddyBuild) resolved the issue within 3 business days, 1 resolved the issue within a month (Localytics), and 11 SDKs are still vulnerable to this attack at the time of publishing this post.
+
+Looking through the available CocoaPods, there are a total of **4,800** releases affected, from a total of **623** CocoaPods. Generated this data locally using the `Specs` repo with the command `grep -l -r '"http": "http://' *`.
 
 ### Open Source vs Closed Source
 
