@@ -12,7 +12,7 @@ published: true
 meta: {}
 ---
 
-What if I told you that many of the third-party SDKs you use can be **modified** while you download them? Using a simple [person-in-the-middle attack](https://en.wikipedia.org/wiki/Man_in_the_middle_attack), anyone in the same network can insert malicious code into the SDK, and with that into your application.
+Third-party SDKs can often easily be **modified** while you download them! Using a simple [person-in-the-middle attack](https://wikipedia.org/wiki/Man_in_the_middle_attack), anyone in the same network can insert malicious code into the SDK, and with that into your application, as a result running in your user's pockets. A person-in-the-middle attack in this context works by interfering network traffic and insert malicious code into the SDK.
 
 ## What are the potential consequences of a modified SDK?
 
@@ -26,7 +26,7 @@ That means any SDK you include in your app has access to:
 * iCloud containers of your app
 * All data your app exchanges with a web server, e.g. user logins, personal information
 
-iOS apps are sandboxed for a lot of good reasons, so don’t forget that **any SDK you include in your app runs inside your app’s sandbox**, and has access to everything your app has access to. 
+Apple enforces iOS app sandboxing for good reasons, so don't forget that **any SDK you include in your app runs inside your app’s sandbox**, and has access to everything your app has access to.
 
 What’s the worst that a malicious SDK could do?
 
@@ -36,9 +36,11 @@ What’s the worst that a malicious SDK could do?
 * [Show phishing pop-ups for iCloud, or other login credentials](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
 * [Take pictures in the background without telling the user](https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running)
 
-There is so much more an attacker can do. The scary piece is that it’s **your own app** that steals sensitive user data and sends it some remote server if you get affected by such an attack.
+This person-in-the-middle-attack will use **your own app** to steal sensitive user data and send it to some remote server.
 
 ## Web Security 101
+
+To understand how malicious code can be bundled into your app without your permission or awareness, I will provide necessary background to understanding how a MITM attack works and how to avoid it.
 
 The information below is vastly simplified, as I try to describe things in a way that a mobile developer without too much network knowledge can get a sense of how things work and how they can protect themselves.
 
@@ -119,7 +121,7 @@ Alternatively an attacker could just switch the https:// link to the attacker’
 
 And there is no good way for the user to verify that the specific host, URL or S3 bucket belongs to the author of the SDK.
 
-To prove this, I’ve set up my Raspberry PI to intercept the traffic and do various SSL Stripping (downgrading of HTTPS connections to HTTP) across the board, from JavaScript files, to image resources and of course download links.
+To verify this I’ve set up my [Raspberry PI](https://www.raspberrypi.org/) to intercept the traffic and do various SSL Stripping (downgrading of HTTPS connections to HTTP) across the board, from JavaScript files, to image resources and of course download links.
 
 ![](/assets/posts/trusting-sdks/image_4.png)
 
@@ -187,7 +189,7 @@ In the video below you can see a sample iOS app that shows a mapview. After down
 
 The only requirement for this particular attack to work is that the attacker is in the same network as you (e.g. stays in the same conference hotel). Alternatively this attack can also be done by your ISP or the VPN service you use. My Mac runs the default macOS configuration, meaning there is no proxy, custom DNS or VPN set up. 
 
-Setting up an attack like this is surprisingly easy using publicly available tools that are designed to do automatic SSL Stripping, ARP pollution and replacing of content of various requests. If you’ve done it before, it will take less than an hour to set everything up on any computer, including a Raspberry PI, which I used for my research. The total costs for the whole attack is therefore less than $50.
+Setting up an attack like this is surprisingly easy using publicly available tools that are designed to do automatic SSL Stripping, ARP pollution and replacing of content of various requests. If you’ve done it before, it will take less than an hour to set everything up on any computer, including a Raspberry Pi, which I used for my research. The total costs for the whole attack is therefore less than $50.
 
 ![](/assets/posts/trusting-sdks/image_10.jpg)
 
@@ -209,7 +211,7 @@ The previous example injected malicious code into the iOS app using a hijacked S
 To prove that this is working, I looked into how to inject malicious code in a shell script developers run locally, in this case BuddyBuild:
 
 * Same requirements as in the previous example, attacker needs to be in the same network
-* BuddyBuild docs tell users to `curl` an unencrypted URL piping the content over to `sh`, meaning any code the `curl` command returns will be executed
+* BuddyBuild docs told users to `curl` an unencrypted URL piping the content over to `sh`, meaning any code the `curl` command returns will be executed
 * The modified `UpdateSDK` is provided by the attacker (Raspberry PI), and asks for the admin password (normally BuddyBuild’s update script doesn’t ask for this)
 * Within under a second, the malicious script does the following
     * Enable SSH remote access for the current account
@@ -236,7 +238,7 @@ SDKs and developer tools become more and more a target for attackers. Some examp
     * Show phishing popups
     * Access and modify the clipboard (dangerous when using password managers)
 * [The NSA worked on finding iOS exploits](https://9to5mac.com/2017/03/07/cia-ios-malware-wikileaks/)
-* [Pegasus](https://www.kaspersky.com/blog/pegasus-spyware/14604/): malware for non-jailbroken iPhones, used by governments
+* [Pegasus](https://www.kaspersky.com/blog/pegasus-spyware/14604/): malware for non-jailbroken iPhones, [used by governments](https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/)
 * [KeyRaider](https://en.wikipedia.org/wiki/KeyRaider): Only affected jailbroken iPhones, but still stole user-credentials from over 200,000 end-users
 
 [and many, many more](https://www.theiphonewiki.com/wiki/Malware_for_iOS). Another approach is getting access to the download server (e.g. S3 bucket using access keys) and replacing the binary. This happened multiple times in the past few years, for example [Transmission Mac app incident](https://www.macrumors.com/2016/03/07/transmission-malware-downloaded-6500-times/). This opens a whole new level of area of attack, which I didn’t cover in this blog post.
@@ -296,12 +298,12 @@ Based on the numbers above it is clear that in addition to not being able to div
 
 As a developer, it’s our responsibility to make sure we only ship code we trust. One of the easiest attack vectors right now is via malicious SDKs. If an SDK is open source, hosted on GitHub, and is installed via CocoaPods, you’re pretty safe. Be extra careful with bundling closed-source binaries or SDKs you don’t fully trust.
 
-If you bundled a malicious SDK in your app, it can have catastrophic consequences, from stealing sensitive user data, to doing phishing attacks. 
+Bundling a malicious SDK in your app can lead to catastrophe, such as stealing of sensitive user data and phishing attacks.
 
-Today’s hackers are smart: they will try their best to hide under the radar, so it’s impossible to tell if this kind of attack is actively being used.
+Since this type of attack can be done with little trace, it's hard to tell if such attack is being used. By using open source code, we as developers can better protect ourselves, and with it, our customers.
 
 ## Thank you
 
 Special thanks to [Manu Wallner](https://twitter.com/acrooow) for doing the voice recordings for the video.
 
-Special thanks to my friends for providing feedback on this post: [Dave Schukin](https://twitter.com/schukin), [Manu Wallner](https://twitter.com/acrooow), [Dominik Weber](https://twitter.com/domysee) and Neel Rao
+Special thanks to my friends for providing feedback on this post: [Dave Schukin](https://twitter.com/schukin), [Manu Wallner](https://twitter.com/acrooow), [Dominik Weber](https://twitter.com/domysee), [Gilad](https://twitter.com/giladronat) and Neel Rao
