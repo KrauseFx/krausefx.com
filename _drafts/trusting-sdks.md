@@ -300,7 +300,7 @@ As a developer, it’s our responsibility to make sure we only ship code we trus
 
 Bundling a malicious SDK in your app can lead to catastrophe, such as stealing of sensitive user data and phishing attacks.
 
-Since this type of attack can be done with little trace, it's hard to tell if such attack is being used. By using open source code, we as developers can better protect ourselves, and with it, our customers.
+Since this type of attack can be done with little trace, you will not be able to easily find if your codebase is affected. By using open source code, we as developers can better protect ourselves, and with it, our customers.
 
 ## Thank you
 
