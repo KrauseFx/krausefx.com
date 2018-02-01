@@ -113,6 +113,8 @@ Hopefully I got you interested in contributing to open source software, so the n
 
 By subscribing to notifications of an open source repo, you’ll get a good sense of what the community is like, what problems the contributors are facing, and where you can jump in to help. After a few weeks of being active, you’ll get a good sense of what the community is working on and how you can help.
 
+If you don't want to be overwhelmed with issues, you can sign up for the [CodeTriage](https://www.codetriage.com). It's an open source app which lets you specify how many issues you want to receieve and automatically backs off on notifications when you get busy.
+
 ### 🤠 Don't be discouraged, try contributing, people will help you
 
 
@@ -160,7 +162,7 @@ Sometimes it’s not so clear on how to get started, so here are some tips on wh
 * There might be additional documentation on how the project is structured and where to get started
 * Many projects will have outdated documentation, it’s a great chance for you to get some "internet points" by improving those
 * Adding more tests to existing projects gives you great visibility on how the project works, while at the same time making the maintainers very happy. Unit tests are often self-contained, making it easy for you to add them.
-* Subscribe to the repo to see how the community members interact with each other, and get a sense of what problems the project is facing
+* Subscribe to the repo to see how the community members interact with each other, and get a sense of what problems the project is facing.  
 * Some projects have a "[you-can-do-this](https://github.com/fastlane/fastlane/labels/complexity%3A%20you%20can%20do%20this)", "help-wanted" or "beginner-friendly" GitHub labels, that are usually simpler fixes with some instructions provided by the maintainers.
 * There might be monthly video calls to align the whole development team
 * Onboard the project from a new user’s perspective, and see if there are any rough edges you could improve
