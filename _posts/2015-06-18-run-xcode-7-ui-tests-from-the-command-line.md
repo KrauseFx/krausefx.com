@@ -181,3 +181,12 @@ I'm currently working on a new version of
 [snapshot](https://fastlane.tools/snapshot) to make use of the new UI Tests features. This enables snapshot to show even more detailed results and error messages if something goes wrong. I'm really excited about this change 👍
 
 **Update:** [snapshot](https://fastlane.tools/snapshot) now uses UI Tests to generate screenshots and the HTML summary for all languages and devices.
+
+## 2018-02-02 Update
+Since this post still comes up for using fastlane and UI tests in Xcode, an update to the CLI commands:
+
+```xcodebuild -workspace "YOURAPPNAME.xcworkspace" \ 
+-scheme "YOURUITESTNAME" \
+-destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' \
+-derivedDataPath './output' \
+test```
