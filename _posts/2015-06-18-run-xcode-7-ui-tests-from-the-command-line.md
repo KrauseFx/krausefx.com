@@ -85,7 +85,6 @@ Manage Schemes to open the dialog.
 
 xcodebuild -workspace App.xcworkspace \
            -scheme "SchemeName" \
-           -sdk iphonesimulator \
            -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0'
            test
 ```
@@ -155,7 +154,6 @@ derivedDataPath option to your command, you tell Xcode where to store the test r
 ```sh
 xcodebuild -workspace App.xcworkspace \
            -scheme "SchemeName" \
-           -sdk iphonesimulator \
            -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' \
            -derivedDataPath './output' \
            test
@@ -182,11 +180,3 @@ I'm currently working on a new version of
 
 **Update:** [snapshot](https://fastlane.tools/snapshot) now uses UI Tests to generate screenshots and the HTML summary for all languages and devices.
 
-## 2018-02-02 Update
-Since this post still comes up for using fastlane and UI tests in Xcode, an update to the CLI commands:
-
-```xcodebuild -workspace "YOURAPPNAME.xcworkspace" \ 
--scheme "YOURUITESTNAME" \
--destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' \
--derivedDataPath './output' \
-test```
