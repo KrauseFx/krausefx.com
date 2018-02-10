@@ -38,7 +38,7 @@ Once you grant an app access to your camera, it can
 
 All without indicating that your phone is recording you and your surrounding, no LEDs, no light or any other kind of indication.
 
-### [Read the full blog post](/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running)
+## [Read the full blog post](/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running)
 
 <div class="press">
   <a href="https://lifehacker.com/how-to-stop-ios-apps-from-secretly-spying-through-your-1819877630">
@@ -80,7 +80,7 @@ Do you want the user’s Apple ID password, to get access to their Apple account
 
 One of these is Apple asking you for your password and the other one is a phishing popup that steals your password.
 
-### [Read the full blog post](/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
+## [Read the full blog post](/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
 
 <div class="press">
   <a href="https://daringfireball.net/linked/2017/10/10/ios-phishing">
@@ -141,7 +141,7 @@ Once the user grants access to the image library (e.g. to upload a single photo 
   * Did the user recently move from the suburbs to the city?
   * Does the user spend a lot of time with their family?
 
-### [Read the full blog post](/blog/ios-privacy-detectlocation-an-easy-way-to-access-the-users-ios-location-data-without-actually-having-access)
+## [Read the full blog post](/blog/ios-privacy-detectlocation-an-easy-way-to-access-the-users-ios-location-data-without-actually-having-access)
 
 <div class="press">
   <a href="https://lifehacker.com/how-apps-use-your-photos-to-track-your-location-1819802266">
@@ -157,6 +157,33 @@ Once the user grants access to the image library (e.g. to upload a single photo 
     <img src="/assets/privacy/TheRegister.jpg">
   </a>
 </div>
+
+----
+
+## [take.screenshots](/blog/mac-privacy-sandboxed-mac-apps-can-take-screenshots)
+
+<div style="float: right">
+  <a href="/assets/posts/mac-take-screenshots.png" target="_blank">
+    <img src="/assets/posts/mac-take-screenshots.png" width="600" />
+  </a>
+</div>
+
+Any Mac app, sandboxed or not sandboxed can:
+
+- Take screenshots of your Mac silently without you knowning
+- Access every pixel, even if the Mac app is in the background
+- Use basic [OCR software](https://en.wikipedia.org/wiki/Optical_character_recognition) to read the text on the screen
+- Access all connected monitors
+
+**What's the worst that could happen?**
+
+- Read password and keys from password managers
+- Detect what web services you use (e.g. email provider)
+- Read all emails and messages you open on your Mac
+- When a developer is targeted, this allows the attacker to potentially access sensitive source code, API keys or similar data
+- Learn personal information about the user, like their bank details, salary, address, etc.
+
+## [Read the full blog post](/blog/mac-privacy-sandboxed-mac-apps-can-take-screenshots)
 
 ----
 
@@ -177,7 +204,7 @@ As a result, any website you visit, can do a pretty precise guess on if you are:
 * taking a selfie
 * lying in bed, laying the phone on a table
 
-### [Read the full blog post](/blog/ios-privacy-whats-the-user-doing)
+## [Read the full blog post](/blog/ios-privacy-whats-the-user-doing)
 
 <style type="text/css">
   .press > a {
