@@ -49,7 +49,7 @@ There are lots of valid use-cases for Mac apps to record the screen, e.g. [1Pass
 - Put the user in charge with a permission dialog
 - Additionally the user should be notified whenever an app accesses the screen.
 
-Of course, I also [filed a radar](https://openradar.appspot.com/radar?id=5610698700750848) to notify Apple about this issue.
+Of course, I also [filed a radar](https://openradar.appspot.com/radar?id=5610698700750848) (rdar://37423927) to notify Apple about this issue.
 
 ## How does it work?
 
