@@ -30,17 +30,17 @@ Apple enforces iOS app sandboxing for good reasons, so don't forget that **any S
 
 What’s the worst that a malicious SDK could do?
 
-* Steal sensitive user data, basically add a keylogger for your app, and record every tap and gesture
+* Steal sensitive user data, basically add a keylogger for your app, and record every tap
 * Steal keys and user’s credentials
 * [Access the user’s historic location data and sell it to third parties](https://krausefx.com/blog/ios-privacy-detectlocation-an-easy-way-to-access-the-users-ios-location-data-without-actually-having-access)
 * [Show phishing pop-ups for iCloud, or other login credentials](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
 * [Take pictures in the background without telling the user](https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running)
 
-This person-in-the-middle-attack will use **your own app** to steal sensitive user data and send it to some remote server.
+The attack described here shows how an attacker can use **your mobile app** to steal sensitive user data.
 
 ## Web Security 101
 
-To understand how malicious code can be bundled into your app without your permission or awareness, I will provide necessary background to understanding how a MITM attack works and how to avoid it.
+To understand how malicious code can be bundled into your app without your permission or awareness, I will provide necessary background to understanding how a [MITM attack](https://wikipedia.org/wiki/Man_in_the_middle_attack) works and how to avoid it.
 
 The information below is vastly simplified, as I try to describe things in a way that a mobile developer without too much network knowledge can get a sense of how things work and how they can protect themselves.
 
@@ -98,7 +98,7 @@ Let's look into some SDKs and how they distribute their files, and see if we can
 
 ### CocoaPods
 
-**Open source Pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The git:// protocol uses ssh://, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
+**Open source Pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The `git://` protocol uses `ssh://`, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
 
 **Closed source Pods**: When preparing this blog post, I noticed that Pods can define a HTTP URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods 1.4.0 to show warnings when a Pod uses unencrypted http.
 
@@ -149,13 +149,7 @@ For this attack to work, the requirements are:
 
 ![](/assets/posts/trusting-sdks/image_7.png)
 
-<div class="video">
-  <figure>
-    <iframe width="100%" height="400" src="//www.youtube.com/embed/P_P1T9LZcD8" frameborder="0" allowfullscreen></iframe>
-  </figure>
-</div>
-
-Localytics resolved the issue after disclosing it, so both the docs page, and the actual download is now HTTPs encrypted.
+Localytics resolved the issue after disclosing it, so both the docs page, and the actual download are now HTTPs encrypted.
 
 ### [AskingPoint](https://www.askingpoint.com/documentation-ios-sdk/)
 
@@ -191,7 +185,7 @@ The only requirement for this particular attack to work is that the attacker is 
 
 Setting up an attack like this is surprisingly easy using publicly available tools that are designed to do automatic SSL Stripping, ARP pollution and replacing of content of various requests. If you’ve done it before, it will take less than an hour to set everything up on any computer, including a Raspberry Pi, which I used for my research. The total costs for the whole attack is therefore less than $50.
 
-![](/assets/posts/trusting-sdks/image_10.jpg)
+<img src="/assets/posts/trusting-sdks/image_10.jpg" width="420" />
 
 I decided not to publish the names of the tools I used, nor the code I wrote.
 
@@ -229,7 +223,7 @@ BuddyBuild resolved the issue after reporting it.
 
 ### How realistic is such an attack?
 
-Very! Open your Network settings on the Mac, and take a look at the list of WiFi networks your Mac was connected to. In my case, my MacBook was connected to over 200 hotspots. How many of them can you fully trust? Even in a trustworthy network, there could still be other machines that got hacked previously which are doing remote controlled attacks (see section above)
+**Very!** Open your Network settings on the Mac, and take a look at the list of WiFi networks your Mac was connected to. In my case, my MacBook was connected to over 200 hotspots. How many of them can you fully trust? Even in a trustworthy network, there could still be other machines that got hacked previously which are doing remote controlled attacks (see section above)
 
 SDKs and developer tools become more and more a target for attackers. Some examples from the past years:
 
@@ -265,7 +259,7 @@ This would go out of scope for this blog post. Mozilla offers a [security guide]
   <img src="/assets/posts/trusting-sdks/image_13.png" width="100%" />
 </div>
 
-While doing this research starting on 23rd November 2017 I investigated 41 of the most popular mobile SDKs according to [AppSight](https://www.appsight.io/?asot=2&o=top&os=ios) (counting all Facebook and Google SDKs as one, as they share the same installation method)
+While doing this research starting on 23rd November 2017, I investigated 41 of the most popular mobile SDKs according to [AppSight](https://www.appsight.io/?asot=2&o=top&os=ios) (counting all Facebook and Google SDKs as one, as they share the same installation method - skipping SDKs that are open source on GitHub)
 
 * **41** SDKs checked
     * **23** are closed source and you can only download binary files
@@ -277,13 +271,19 @@ While doing this research starting on 23rd November 2017 I investigated 41 of th
 * **31%** of the top used SDKs are easy targets for this attack
 * **5** additional SDKs required an account to download the SDK (do they have something to hide?)
 
-I notified the affected parties ahead of time, giving them enough time to resolve the issue before publicly blogging about it. Out of the **13** affected SDKs, **2** (AWS, BuddyBuild) resolved the issue within 3 business days, 1 resolved the issue within a month (Localytics), and 11 SDKs are still vulnerable to this attack at the time of publishing this post.
+I notified all affected in November/December 2017, giving them 2 months to resolve the issue before publicly talking about it. Out of the 13 affected SDKs
 
-Looking through the available CocoaPods, there are a total of **4,800** releases affected, from a total of **623** CocoaPods. Generated this data locally using the `Specs` repo with the command `grep -l -r '"http": "http://' *`.
+- **1** resolved the issue within three business days
+- **5** resolved the issue within a month
+- **7** SDKs are still vulnerable to this attack at the time of publishing this post.
+
+The SDK providers that are still affected haven't responded to my emails, or just replied with "We're gonna look into this" - all of them in the top 50 most most-used SDKs.
+
+Looking through the available CocoaPods, there are a total of **4,800** releases affected, from a total of **623** CocoaPods. I generated this data locally using the `Specs` repo with the command `grep -l -r '"http": "http://' *`.
 
 ### Open Source vs Closed Source
 
-Looking the number above, you are much likely to be affected by attacks if you use closed source SDKs. More importantly: When an SDK is closed source, it’s much harder for you to verify the integrity of the dependency. As you probably know, you should always [check the Pods directory into version control](https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control), to easily detect changes and be able to audit your dependency updates. 100% of the open source SDKs I investigated can be used directly from GitHub, meaning even the 3 SDKs affected are not actually affected if you make sure to use the version on GitHub instead of taking it from the provider’s website.
+Looking the number above, you are much likely to be affected by attacks if you use closed source SDKs. More importantly: When an SDK is closed source, it’s much harder for you to verify the integrity of the dependency. As you probably know, you should always [check the Pods directory into version control](https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control), to detect changes and be able to audit your dependency updates. 100% of the open source SDKs I investigated can be used directly from GitHub, meaning even the 3 SDKs affected are not actually affected if you make sure to use the version on GitHub instead of taking it from the provider’s website.
 
 Based on the numbers above it is clear that in addition to not being able to dive into the source code for closed source SDKs you also have a much higher risk of being attacked. Not only person-in-the-middle attacks, but also:
 
@@ -297,8 +297,6 @@ Based on the numbers above it is clear that in addition to not being able to div
 ## Wrapping up
 
 As a developer, it’s our responsibility to make sure we only ship code we trust. One of the easiest attack vectors right now is via malicious SDKs. If an SDK is open source, hosted on GitHub, and is installed via CocoaPods, you’re pretty safe. Be extra careful with bundling closed-source binaries or SDKs you don’t fully trust.
-
-Bundling a malicious SDK in your app can lead to catastrophe, such as stealing of sensitive user data and phishing attacks.
 
 Since this type of attack can be done with little trace, you will not be able to easily find if your codebase is affected. By using open source code, we as developers can better protect ourselves, and with it, our customers.
 
