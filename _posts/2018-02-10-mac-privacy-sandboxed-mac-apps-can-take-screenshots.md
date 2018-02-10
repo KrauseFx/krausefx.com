@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Mac Privacy: Sandboxed Mac apps can take screenshots at any time without you knowing'
+title: 'Mac Privacy: Sandboxed Mac apps can record your screen at any time without you knowing'
 categories: []
 tags:
 - mac
