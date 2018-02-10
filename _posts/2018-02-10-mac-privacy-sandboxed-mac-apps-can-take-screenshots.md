@@ -29,6 +29,10 @@ Any Mac app, sandboxed or not sandboxed can:
 - When a developer is targeted, this allows the attacker to potentially access sensitive source code, API keys or similar data
 - Learn personal information about the user, like their bank details, salary, address, etc.
 
+<a href="/assets/posts/mac-take-screenshots.png" target="_blank">
+  <img src="/assets/posts/mac-take-screenshots.png" />
+</a>
+
 ## Disclaimer
 
 This project is a proof of concept and should not be used in production. The goal is to highlight a privacy loophole that can be abused by Mac apps.
