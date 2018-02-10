@@ -14,7 +14,7 @@ meta: {}
 
 Third-party SDKs can often easily be **modified** while you download them! Using a simple [person-in-the-middle attack](https://wikipedia.org/wiki/Man_in_the_middle_attack), anyone in the same network can insert malicious code into the SDK, and with that into your application, as a result running in your user's pockets. A person-in-the-middle attack in this context works by interfering network traffic and insert malicious code into the SDK.
 
-**31%** of the most popular closed-source iOS SDKs are easy targets for this attack, as well as a total of **623 CocoaPods**. As part of this research I notified the affected parties, and submitted patches to CocoaPods to warn developers and SDK providers.
+**31%** of the most popular closed-source iOS SDKs are vulnerable to this attack, as well as a total of **623 CocoaPods**. As part of this research I notified the affected parties, and submitted patches to CocoaPods to warn developers and SDK providers.
 
 ## What are the potential consequences of a modified SDK?
 
@@ -102,7 +102,7 @@ Let's look into some SDKs and how they distribute their files, and see if we can
 
 **Open source Pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The `git://` protocol uses `ssh://`, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
 
-**Closed source Pods**: When preparing this blog post, I noticed that Pods can define a HTTP URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with CocoaPods 1.4.0 to show warnings when a Pod uses unencrypted http.
+**Closed source Pods**: When preparing this blog post, I noticed that Pods can define a HTTP URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with [CocoaPods 1.4.0](https://blog.cocoapods.org/CocoaPods-1.4.0/) to show warnings when a Pod uses unencrypted http.
 
 ### Crashlytics SDK
 
