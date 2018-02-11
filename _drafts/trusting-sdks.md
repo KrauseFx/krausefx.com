@@ -236,6 +236,7 @@ SDKs and developer tools become more and more a target for attackers. Some examp
 * [The NSA worked on finding iOS exploits](https://9to5mac.com/2017/03/07/cia-ios-malware-wikileaks/)
 * [Pegasus](https://www.kaspersky.com/blog/pegasus-spyware/14604/): malware for non-jailbroken iPhones, [used by governments](https://citizenlab.ca/2016/08/million-dollar-dissident-iphone-zero-day-nso-group-uae/)
 * [KeyRaider](https://en.wikipedia.org/wiki/KeyRaider): Only affected jailbroken iPhones, but still stole user-credentials from over 200,000 end-users
+* Just the last few weeks, there have been multiple posts about how this affects web projects also (e.g. [1](https://hackernoon.com/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5), [2](https://scotthelme.co.uk/protect-site-from-cyrptojacking-csp-sri/))
 
 [and many, many more](https://www.theiphonewiki.com/wiki/Malware_for_iOS). Another approach is getting access to the download server (e.g. S3 bucket using access keys) and replacing the binary. This happened multiple times in the past few years, for example [Transmission Mac app incident](https://www.macrumors.com/2016/03/07/transmission-malware-downloaded-6500-times/). This opens a whole new level of area of attack, which I didn’t cover in this blog post.
 
