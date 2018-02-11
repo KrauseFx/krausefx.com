@@ -43,7 +43,7 @@ To my knowledge there is no way to protect yourself as of now.
 
 ## Proposal
 
-There are lots of valid use-cases for Mac apps to record the screen, e.g. [1Password 2fA support](https://support.1password.com/one-time-passwords/) or screen recording software, however there must be some kind of control.
+There are lots of valid use-cases for Mac apps to record the screen, e.g. [1Password 2fA support](https://support.1password.com/one-time-passwords/), screen recording software or even simple screen sharing via your web browser or Skype. However there must be some kind of control:
 
 - The App Store review process could verify the Sandbox entitlements for accessing the screen
 - Put the user in charge with a permission dialog
