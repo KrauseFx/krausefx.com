@@ -16,7 +16,7 @@ meta: {}
 
 Any Mac app, sandboxed or not sandboxed can:
 
-- Take screenshots of your Mac silently without you knowning
+- Take screenshots of your Mac silently without you knowing
 - Access every pixel, even if the Mac app is in the background
 - Use basic [OCR software](https://en.wikipedia.org/wiki/Optical_character_recognition) to read the text on the screen
 - Access all connected monitors
