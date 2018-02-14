@@ -307,4 +307,4 @@ Since this type of attack can be done with little trace, you will not be able to
 
 Special thanks to [Manu Wallner](https://twitter.com/acrooow) for doing the voice recordings for the video.
 
-Special thanks to my friends for providing feedback on this post: [Dave Schukin](https://twitter.com/schukin), [Manu Wallner](https://twitter.com/acrooow), [Dominik Weber](https://twitter.com/domysee), [Gilad](https://twitter.com/giladronat) and Neel Rao
+Special thanks to my friends for providing feedback on this post: [Dave Schukin](https://twitter.com/schukin), [Manu Wallner](https://twitter.com/acrooow), [Dominik Weber](https://twitter.com/domysee), [Gilad](https://twitter.com/giladronat), [Nicolas Haunold](http://haunold.me/) and Neel Rao
