@@ -248,7 +248,7 @@ SDKs and developer tools become more and more a target for attackers. Some examp
 
 ### Conferences, hotels, coffee shops
 
-Every time you connect to the WiFi or a conference, hotel or coffee shop, you become an easy target. Attackers know that there is a high number of developers during conferences and can easily make use of the situation.
+Every time you connect to the WiFi at a conference, hotel or coffee shop, you become an easy target. Attackers know that there is a high number of developers during conferences and can easily make use of the situation.
 
 ### How can SDK providers protect their users?
 
