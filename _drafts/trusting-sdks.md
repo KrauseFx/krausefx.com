@@ -80,11 +80,15 @@ So, if your computer now sends a packet to the router, how does the router know 
 
 Simplified, the devices in a network use ARP mapping to remember where to send packets of a certain MAC address. The way ARP works is simple: if a device wants to know where to send a packet for a certain IP address, it asks everyone in the network: "Which MAC address belongs to this IP?". The device with that IP then replies to this message ✋
 
-![](/assets/posts/trusting-sdks/image_1.png)
+<p style="text-align: center">
+  <img src='/assets/posts/trusting-sdks/image_1.png' width="500" />
+</p>
 
 Unfortunately, there is no way for a device to authenticate the sender of an ARP message. Therefore an attacker can be fast in responding to ARP announcements sent by another device, basically saying: "Hey, please send all packets that should go to IP address X to this MAC address". The router will remember that and use that information for all future requests. This is called “ARP poisoning.”
 
-![](/assets/posts/trusting-sdks/image_2.png)
+<p style="text-align: center">
+  <img src='/assets/posts/trusting-sdks/image_2.png' width="650">
+</p>
 
 See how all packets are now routed through the attacker instead of going directly from the remote host to you?
 
@@ -149,7 +153,9 @@ For this attack to work, the requirements are:
 * The attacker is in the same network as you
 * The docs page is unencrypted and allows SSL Stripping on all links
 
-![](/assets/posts/trusting-sdks/image_7.png)
+<p style="text-align: center">
+  <img src="/assets/posts/trusting-sdks/image_7.png" width="600">
+</p>
 
 Localytics resolved the issue after disclosing it, so both the docs page, and the actual download are now HTTPs encrypted.
 
@@ -159,7 +165,7 @@ Looking at the next SDK, we have a HTTPs encrypted docs page, looking at the scr
 
 ![](/assets/posts/trusting-sdks/image_8.png)
 
-Turns out, the HTTPs based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome and Safari to warn the user of unencrypted file downloads on HTTPs sites.
+Turns out, the HTTPs based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome ([794830](https://bugs.chromium.org/p/chromium/issues/detail?id=794830)) and Safari ([rdar://36039748](https://openradar.appspot.com/radar?id=5000976083714048)) to warn the user of unencrypted file downloads on HTTPs sites.
 
 ### [AWS SDK](https://aws.amazon.com/mobile/sdk/)
 
@@ -213,7 +219,7 @@ To prove that this is working, I looked into how to inject malicious code in a s
     * Enable SSH remote access for the current account
     * Install & setup a keylogger that auto-starts when you login
 
-Once the attacker has the root password and SSH access, they can do anything.
+Once the attacker has the root password and SSH access, they can do anything listed above.
 
 <div class="video">
   <figure>
@@ -292,7 +298,7 @@ Based on the numbers above it is clear that in addition to not being able to div
 
 * The attacker gains access to the SDK download server
 * The company providing the SDK gets compromised
-* The government forces the company to include back-doors
+* The local government forces the company to include back-doors
 * The company providing the SDK is evil and includes code & tracking you don’t want
 
 **You are responsible for the binaries you ship!** You have to make sure you don’t break your user’s trust, European Union data protection laws ([GDPR](https://www.eugdpr.org/)) or steal the user’s credentials via a malicious SDK.
