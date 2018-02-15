@@ -7,7 +7,7 @@ tags:
 - privacy
 - sdks
 status: publish
-type: draft
+type: post
 published: true
 meta: {}
 ---
