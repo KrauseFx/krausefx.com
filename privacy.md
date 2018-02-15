@@ -210,6 +210,16 @@ Running the screen through simple OCR software, this allows the attacker to acce
 
 ----
 
+## [trusting-sdks](/blog/trusting-sdks)
+
+Third-party SDKs can often easily be **modified** while you download them! Using a simple [person-in-the-middle attack](https://wikipedia.org/wiki/Man_in_the_middle_attack), anyone in the same network can insert malicious code into the SDK, and with that into your application, as a result running in your user's pockets. A person-in-the-middle attack in this context works by interfering network traffic and insert malicious code into the SDK.
+
+**31%** of the most popular closed-source iOS SDKs are vulnerable to this attack, as well as a total of **623 CocoaPods**. As part of this research I notified the affected parties, and submitted patches to CocoaPods to warn developers and SDK providers.
+
+## [Read the full blog post](/blog/trusting-sdks)
+
+----
+
 ## [user.activity](/blog/ios-privacy-whats-the-user-doing)
 
 Any website you're visiting instantly gets access to your smartphone's acceleration and gyro sensor values in real-time without asking the user for permission.
