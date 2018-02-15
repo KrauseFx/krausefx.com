@@ -133,7 +133,7 @@ Once the download link was downgraded to HTTP, it’s easy to replace the conten
 
 Replacing HTML text on the fly is pretty easy, but how can an attacker replace the content of a zip file or binary?
 
-1. The attacker downloads the original SDK
+1. The developer downloads the original SDK
 1. The attacker inserts malicious code into the SDK
 1. The attacker compresses the modified SDK
 1. The attacker looks at packets coming by, and jumps in to replace any zip file matching a certain pattern with the file the attacker prepared
