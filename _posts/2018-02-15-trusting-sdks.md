@@ -252,7 +252,7 @@ Every time you connect to the WiFi at a conference, hotel or coffee shop, you be
 
 ### How can SDK providers protect their users?
 
-This would go out of scope for this blog post. Mozilla offers a [security guide](https://developer.mozilla.org/en-US/docs/Web/Security) that’s a good starting point. Mozilla provides a tool called [observatory]([https://observatory.mozilla.org](https://observatory.mozilla.org)) that will do some automatic checks of the server settings and certificates.
+This would go out of scope for this blog post. Mozilla offers a [security guide](https://developer.mozilla.org/en-US/docs/Web/Security) that’s a good starting point. Mozilla provides a tool called [observatory](https://observatory.mozilla.org) that will do some automatic checks of the server settings and certificates.
 
 ### How many of the most popular SDKs are affected by this vulnerability?
 
