@@ -108,7 +108,7 @@ This is basically the main reason why in-app browsers are still a thing: It allo
 *   Which links does the user open, and how long do they stay on each of them?
 *   Combined with [watch.user]([https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running](https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running)), the app can record you while you browse third party websites, or even use the iPhone X face sensor to parse your face
 *   Every single tap, swipe or any other gesture
-*   Device movements, GPS location (if granted) and any other granted iOS sensor, whilethe app is still in the foreground.
+*   Device movements, GPS location (if granted) and any other granted iOS sensor, while the app is still in the foreground.
 
 
 #### User credentials
