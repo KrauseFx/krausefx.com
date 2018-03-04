@@ -12,13 +12,13 @@ published: true
 meta: {}
 ---
 
+## Background
+
 <div class="video" style="float: right; margin-left: 20px">
   <figure>
-    <iframe src="//www.youtube.com/embed/ZIogd0kv80c" frameborder="0" allowfullscreen width="200" height="400"></iframe>
+    <iframe src="//www.youtube.com/embed/ZIogd0kv80c" frameborder="0" allowfullscreen width="170" height="350"></iframe>
   </figure>
 </div>
-
-## Background
 
 Most iOS apps need to show external web content at some point. Apple provided multiple ways for a developer to do so, the official ones are:
 
@@ -30,13 +30,13 @@ Check out the first video to see how this looks in action ➡️
 
 ### Use in-app [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller)
 
-<div class="video" style="float: right; margin-left: 20px">
+Many third party iOS apps use this approach (e.g. Tweetbot). 
+<div class="video" style="float: right; margin-left: 20px;">
   <figure>
-    <iframe src="//www.youtube.com/embed/EPH5XGbigJU" frameborder="0" allowfullscreen width="200" height="400"></iframe>
+    <iframe src="//www.youtube.com/embed/EPH5XGbigJU" frameborder="0" allowfullscreen width="170" height="350"></iframe>
   </figure>
 </div>
-
-Many third party iOS apps use this approach (e.g. Tweetbot). It allows an app developer to use the built-in Safari with all its features, without making the user leave your application. It features all the Safari features, but from within your application.
+It allows an app developer to use the built-in Safari with all its features, without making the user leave your application. It features all the Safari features, but from within your application.
 
 Check out the second video to see how this looks in action ➡️
 
