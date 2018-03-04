@@ -42,7 +42,7 @@ Check out the second video to see how this looks in action ➡️
 
 ### Current state with larger social network apps
 
-Many larger iOS apps re-implemented their own in-app web browser. While this was necessary many years ago, nowadays it's not only not required any more, it actually adds a risk and many other disadvantages for the user.
+Many larger iOS apps re-implemented their own in-app web browser. While this was necessary many years ago, nowadays it's not only not required any more, it actually adds a major risk to the end-user.
 
 Those custom in-app browsers usually use their own UI elements:
 
@@ -116,7 +116,8 @@ This is basically the main reason why in-app browsers are still a thing: It allo
 Any app with an in-app browser can easily steal the user's email address, passwords and two-factor authentication codes. They can do that by injecting JavaScript code that bridges the data over to the app, or directly to a remote host. This is simple, it's basically code like this:
 
 ```javascript
-var password = document.getElementById("password").value
+email = document.getElementById("email").value
+password = document.getElementById("password").value
 ```
 
 That's all that's needed: just inject the code above to every website, run it on every user's key stroke, and you'll get a nice list of email addresses and passwords.
@@ -154,4 +155,4 @@ These are just some of the things that immediately come to my mind, every time I
 *   Reject apps that don't use [SFSafariViewController]([https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller)) or launch Safari directly to show third party website content
 *   There should be exceptions, e.g. if a webview is used to show parts of the UI, or dynamic content, but it should be illegal to use webviews to show a linked or third party website
 
-I also [filed a radar for this issue](https://openradar.appspot.com/radar?id=4963695432040448)
+I also [filed a radar for this issue](https://openradar.appspot.com/radar?id=4963695432040448).
