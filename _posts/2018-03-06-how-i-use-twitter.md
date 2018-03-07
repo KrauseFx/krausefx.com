@@ -84,7 +84,7 @@ Muting certain clients has been amazing, very easy to set up and cleans up your 
 *   Foursquare (I follow friends on Swarm already, no need to see it twice)
 *   Facebook
 
-<img src="assets/posts/tweetbot_filters.png" width="220" style="float: right; margin-left: 20px"/>
+<img src="/assets/posts/tweetbot_filters.png" width="220" style="float: right; margin-left: 20px"/>
 
 
 ### Secret Lists
@@ -98,7 +98,7 @@ This has been a great change: As described above, I follow people for what they 
 
 ### Muting hashtags
 
-<img src="assets/posts/tweetbot_filters_2.png" width="220" style="float: right; margin-left: 20px; margin-top: 20px"/>
+<img src="/assets/posts/tweetbot_filters_2.png" width="220" style="float: right; margin-left: 20px; margin-top: 20px"/>
 
 
 I thank everyone for using hashtags for certain events, making it easy to hide them from my timeline :)
