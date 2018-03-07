@@ -106,7 +106,7 @@ This is basically the main reason why in-app browsers are still a thing: It allo
 *   How long does the user visit the linked website?
 *   How fast does the user scroll?
 *   Which links does the user open, and how long do they stay on each of them?
-*   Combined with [watch.user]([https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running](https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running)), the app can record you while you browse third party websites, or even use the iPhone X face sensor to parse your face
+*   Combined with [watch.user](https://krausefx.com/blog/ios-privacy-watchuser-access-both-iphone-cameras-any-time-your-app-is-running), the app can record you while you browse third party websites, or even use the iPhone X face sensor to parse your face
 *   Every single tap, swipe or any other gesture
 *   Device movements, GPS location (if granted) and any other granted iOS sensor, while the app is still in the foreground.
 
@@ -152,7 +152,7 @@ These are just some of the things that immediately come to my mind, every time I
 
 ### How can we solve this?
 
-*   Reject apps that don't use [SFSafariViewController]([https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller)) or launch Safari directly to show third party website content
+*   Reject apps that don't use [SFSafariViewController](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) or launch Safari directly to show third party website content
 *   There should be exceptions, e.g. if a webview is used to show parts of the UI, or dynamic content, but it should be illegal to use webviews to show a linked or third party website
 
 I also [filed a radar for this issue](https://openradar.appspot.com/radar?id=4963695432040448).
