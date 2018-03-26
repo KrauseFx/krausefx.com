@@ -168,7 +168,7 @@ That's something I've been thinking more about recently: Breaking into an Airbnb
 * You learn more about yourself, like what things are important to you when it comes to having a living space
 * When you own a home, you have to deal with maintenance, repairs and other things quite often. When renting an apartment building, at least some things are being taken care of by the owners. If you stay in Airbnb, there is literally nothing you have to worry about, if something doesn't work, you notify the host and that's it. 
 
-<img src="assets/posts/nomad/taipei.jpg" />
+<img src="/assets/posts/nomad/taipei.jpg" />
 
 I wrote this post in Taipei, Taiwan, where I work remotely from the Taipei Google office for 2 weeks before heading to San Francisco.
 
