@@ -66,7 +66,7 @@ While being a different city each month might sound like a dream to many people,
 *   Cities change with seasons, a summer is usually quite different than a winter
 *   It's stressful changing cities too often
 
-Last year I [spoke at conferences in 9 cities](https://github.com/krausefx/speaking) in different cities. I knew I wanted to fly less in 2018. 
+Last year I [spoke at conferences in 9 cities](https://github.com/krausefx/speaking). I knew I wanted to fly less in 2018. 
 
 In January 2018, we started the new [fastlane.ci project](https://github.com/fastlane/ci), which requires us to work closer with other Google teams, that are partially based in New York. I used that opportunity to "move" to NYC. So while I move to a different Airbnb every week, I do so within the same city. I grew up in a village with a population of less than 2,000, with not a single traffic light. Living in New York has been an amazing experience, with almost as many people living here, as in the whole country of Austria.
 
