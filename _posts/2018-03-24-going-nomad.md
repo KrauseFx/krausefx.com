@@ -43,13 +43,11 @@ Only in October 2017 I realized that combining those two things might actually j
 
 After living in San Francisco for 2.5 years, I wanted a change. With my lease ending in October, I decided to reduce my life to just
 
-
-
 *   1 suitcase
 *   1 carry-on luggage
 *   1 backpack
 
-and lived in an Airbnb in San Francisco until the winter holidays, for which I went back home to Austria.
+and lived in an Airbnb in San Francisco until the winter holidays, for which I went back home to Austria. I got really lucky with my SF Airbnb, as I got it from [Zeus Living](https://zeusliving.com/) a company that rents out apartments for people like me: rent a place per month, all utilities included, and enough space with a desk to get work done.
 
 For the last 6 months I've lived the nomad life, with just the things listed above. So far I've stayed in 6 different neighborhoods in NYC, 2 areas in SF and spent time with my family in Austria for New Year's. While I plan flights ahead of time due to costs, I don't book places longer than a month ahead, something that took some time getting used to.
 
