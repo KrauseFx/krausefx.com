@@ -9,6 +9,8 @@ published: true
 meta: {}
 ---
 
+{% include video-box.html url="https://www.youtube.com/watch?v=DiVQXn56MiM" %}
+
 Not too long ago I started an open source project called [fastlane](https://fastlane.tools). Just a month after publishing, it had 1000+ stars on GitHub and was beginning to get used by lots of serious tech companies around the world. Soon I was the sole maintainer of a project getting 10+ PRs/day, and spending 8+hrs/day reviewing PRs and replying to questions on GitHub. This is the story of some of the challenges I faced when scaling the project to where it is today: a OSS project stewarded by Twitter and now Google, with over 12k commits, 13k stars, 500+ contributors, and one of the top 25 most active open source projects on GitHub (spoiler alert: I didn't do it alone).
 
 ## Different stages of open source projects
@@ -300,3 +302,7 @@ Scaling open source projects is hard. Really hard. There are lots of challenges 
  
 
 > I described the above with the assumption that you would use GitHub for your open source projects. There are many alternatives out there, however to simplify the above text I decided to use GitHub with the terms "Issues" and "Pull Requests".
+
+<hr />
+
+{% include video-box.html url="https://www.youtube.com/watch?v=DiVQXn56MiM" %}
