@@ -9,6 +9,8 @@ published: true
 meta: {}
 ---
 
+{% include video-box.html url="https://vimeo.com/235309173" %}
+
 Submitting code to an open source project can be a very scary feeling. When I submitted my first pull request I was scared. Scared that I’m doing something wrong. Scared that my patch wasn’t useful. Scared that other developers would make fun of me. 
 
 I slowly worked my way up, from submitting smaller contributions to random open source projects, to then publishing my first open source library [TSMessages](https://github.com/krausefx/tsmessages), to finally building and releasing [fastlane](https://fastlane.tools), an open source project that is now being used by tens of thousands of companies.
@@ -181,3 +183,7 @@ If you’re still unsure, and need help getting started with your first contribu
 ****
 
 Shoutout to my friends who helped me with this blog post: [@orta](https://twitter.com/orta), [@hemal](https://twitter.com/hemal), [@schukin](https://twitter.com/schukin), [@_caro_n](https://twitter.com/_caro_n), [@acrooow](https://twitter.com/acrooow), [@sebmasterkde](https://twitter.com/sebmasterkde) and [@domysee](https://twitter.com/domysee).
+
+<hr />
+
+{% include video-box.html url="https://vimeo.com/235309173" %}
