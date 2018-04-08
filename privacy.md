@@ -220,6 +220,14 @@ Third-party SDKs can often easily be **modified** while you download them! Using
 
 ----
 
+## [follow.user](/blog/follow-user)
+
+Custom in-app browsers in iOS apps have full access to the web content, including any JavaScript variables, the full HTML DOM and more. This allows apps to steal the user's sessions, passwords, keys and more. 
+
+## [Read the full blog post](/blog/follow-user)
+
+----
+
 ## [user.activity](/blog/ios-privacy-whats-the-user-doing)
 
 Any website you're visiting instantly gets access to your smartphone's acceleration and gyro sensor values in real-time without asking the user for permission.
