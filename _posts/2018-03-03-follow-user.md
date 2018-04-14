@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "follow.user - track the user's website activities, steal their data & credentials and add your own ads to any website in your iOS app"
+title: "iOS Privacy: Track website activities, steal user data & credentials and add your own ads to any website in your iOS app"
 categories: []
 tags:
 - security
