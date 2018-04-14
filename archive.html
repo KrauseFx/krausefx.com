@@ -1,0 +1,49 @@
+---
+layout: page
+title: Archive
+permalink: /archive
+---
+
+<section class="archive-post-list">
+{% for post in site.posts %}
+   {% assign currentDate = post.date | date: "%Y" %}
+   {% if currentDate != myDate %}
+       {% unless forloop.first %}</ul>{% endunless %}
+       <h1>{{ currentDate }}</h1>
+       <ul>
+       {% assign myDate = currentDate %}
+   {% endif %}
+   
+   <li>
+    <a href="{{ post.url }}" class="archiveLink">
+      <span class="archiveSpan">{{ post.date | date: "%B %-d, %Y" }}</span> - <span class="archiveTitle">{{ post.title }}</span>
+    </a>
+  </li>
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}
+</section>
+
+<!-- Via http://chris.house/blog/building-a-simple-archive-page-with-jekyll/ -->
+
+<style type="text/css">
+  .archiveSpan {
+    font-size: 15.75px;
+    color: #8f8f8f;
+    overflow: hidden;
+    margin: 0;
+  }
+  .archiveTitle {
+    color: #2076e1;
+  }
+  .archiveLink {
+    text-decoration: none !important;
+  }
+  .archiveLink:hover * {
+    color: rgb(17, 17, 17);
+  }
+  .archive-post-list > ul {
+    list-style: none;
+  }
+  .archive-post-list > ul > li {
+  }
+</style>
