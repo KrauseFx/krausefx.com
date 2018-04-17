@@ -120,10 +120,9 @@ iOS should very clearly distinguish between system UI and app UI elements, so th
 
 Nope, actually, that's how the system dialog looks like, the . is within the "string notation, so I designed the phishing dialog to also include the same style.
 
-## Similar projects I worked on 
+## Similar projects I've worked on 
 
-* [what's the user doing](https://github.com/KrauseFx/whats-the-user-doing): Raising awareness of what you can do with a smartphones gyro sensors in web browsers
-* [detect.location](https://github.com/krausefx/detect.location): An easy way to access the user's iOS location data without actually having access
+I published more posts on how to access the camera, the user's location data, their Mac screen and their iCloud password, check out [krausefx.com/privacy](/privacy) for more.
 
 <h3 style="text-align: center; font-size: 40px;">
   <a href="https://github.com/KrauseFx/steal.password" target="_blank" style="text-decoration: underline;">

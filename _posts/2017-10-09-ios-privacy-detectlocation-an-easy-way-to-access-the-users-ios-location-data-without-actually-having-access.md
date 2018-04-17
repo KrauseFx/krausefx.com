@@ -59,3 +59,9 @@ For more information about the proposal on how this could be fixed, how the code
     Open on GitHub
   </a>
 </h3>
+
+<br />
+
+## Similar projects I've worked on 
+
+I published more posts on how to access the camera, the user's location data, their Mac screen and their iCloud password, check out [krausefx.com/privacy](/privacy) for more.

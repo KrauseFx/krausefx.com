@@ -156,3 +156,8 @@ These are just some of the things that immediately come to my mind, every time I
 *   There should be exceptions, e.g. if a webview is used to show parts of the UI, or dynamic content, but it should be illegal to use webviews to show a linked or third party website
 
 I also [filed a radar for this issue](https://openradar.appspot.com/radar?id=4963695432040448).
+
+## Similar projects I've worked on 
+
+I published more posts on how to access the camera, the user's location data, their Mac screen and their iCloud password, check out [krausefx.com/privacy](/privacy) for more.
+
