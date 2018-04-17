@@ -103,9 +103,9 @@ As part of iOS 11, there is now an easy to use Vision framework, that allows dev
 
 ## Similar projects I've worked on 
 
-* [what's the user doing](https://github.com/KrauseFx/whats-the-user-doing): Raising awareness of what you can do with a smartphones gyro sensors in web browsers
-* [detect.location](https://github.com/krausefx/detect.location): An easy way to access the user's iOS location data without actually having access
-* [steal.password](https://github.com/krausefx/steal.password): Easily get the user's Apple ID password, just by asking
+I published more posts on how to access the camera, the user's location data, their Mac screen and their iCloud password, check out [krausefx.com/privacy](/privacy) for more.
+
+---
 
 Special thanks to [Soroush](https://twitter.com/khanlou), who came up with the initial idea for this write-up.
 
