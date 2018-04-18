@@ -78,12 +78,12 @@ There is no built-in way to migrate or merge issues to another repo. GitHub prov
 You can check out the full source code on 
 [GitHub](https://github.com/fastlane/monorepo/blob/master/migrate_issues.rb). With this we worked on a lot of little tricks to make sure users are subscribed to the newly migrated issue and the original author is still visible. The GitHub API doesn’t allow us to post issues as the original author (for good reasons), so we solved this problem by posting the user’s information right inside the actual issue.
 
-###Ruby Gems
+### Ruby Gems
 
 There are no changes with the way you install fastlane, you can still install tools e.g. using 
 gem install deliver.
 
-###What happens to the other GitHub repositories
+### What happens to the other GitHub repositories
 
 
 For SEO reasons we will keep the other repositories around, however the long term plan is to remove them and have everything in the main repo. The old repos will link to the new mono repo, therefore all issues and pull requests will be closed and moved over to the fastlane main repo.
@@ -103,7 +103,7 @@ With that in mind, we have a lot of inactive issues and pull requests spanning t
 
 After the migration, we will be constantly looking at all issues to make sure the process is improving. We’ll also be commenting on those inactive issues to see if the problem is still happening for those of you who submitted pull requests. This enables us to be much more responsive to new issues and have a better overview on what to focus our time on. 
 
-##The Future
+## The Future
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf76f20c6473581b7985d_1456338809031__img.jpg_)
 
