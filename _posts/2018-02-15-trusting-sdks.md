@@ -46,11 +46,11 @@ To understand how malicious code can be bundled into your app without your permi
 
 The information below is vastly simplified, as I try to describe things in a way that a mobile developer without too much network knowledge can get a sense of how things work and how they can protect themselves.
 
-### HTTPs vs HTTP
+### HTTPS vs HTTP
 
 **HTTP**: Unencrypted traffic, anybody in the same network (WiFi or Ethernet) can easily listen to the packets. It’s very straightforward to do on unencrypted WiFi networks, but it’s actually almost as easy to do so on a protected WiFi or Ethernet network. There is no way for your computer to verify the packets came from the host you requested data from; Other computers can receive packets before you, open and modify them and send the modified version to you.
 
-**HTTPs**: With HTTPs traffic other hosts in the network can still listen to your packets, but can’t open them. They still get some basic metadata like the host name, but no details (like the body, full URL, …). Additionally your client also verifies that the packets came from the original host and that no one on the way there modified the content. HTTPs is based on TLS.
+**HTTPS**: With HTTPS traffic other hosts in the network can still listen to your packets, but can’t open them. They still get some basic metadata like the host name, but no details (like the body, full URL, …). Additionally your client also verifies that the packets came from the original host and that no one on the way there modified the content. HTTPS is based on TLS.
 
 ### How a browser switches from HTTP to HTTPS
 
@@ -104,7 +104,7 @@ Let's look into some SDKs and how they distribute their files, and see if we can
 
 ### CocoaPods
 
-**Open source Pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The `git://` protocol uses `ssh://`, which is similarly encrypted to HTTPs. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
+**Open source Pods**: CocoaPods uses git under the hood to download code from code hosting services like GitHub. The `git://` protocol uses `ssh://`, which is similarly encrypted to HTTPS. In general, if you use CocoaPods to install open source SDKs from GitHub, you’re pretty safe.
 
 **Closed source Pods**: When preparing this blog post, I noticed that Pods can define a HTTP URL to reference binary SDKs, so I submitted multiple pull requests ([1](https://github.com/CocoaPods/CocoaPods/pull/7249) and [2](https://github.com/CocoaPods/CocoaPods/pull/7250)) that got merged and released with [CocoaPods 1.4.0](https://blog.cocoapods.org/CocoaPods-1.4.0/) to show warnings when a Pod uses unencrypted http.
 
@@ -157,21 +157,21 @@ For this attack to work, the requirements are:
   <img src="/assets/posts/trusting-sdks/image_7.png" width="600">
 </p>
 
-Localytics resolved the issue after disclosing it, so both the docs page, and the actual download are now HTTPs encrypted.
+Localytics resolved the issue after disclosing it, so both the docs page, and the actual download are now HTTPS encrypted.
 
 ### [AskingPoint](https://www.askingpoint.com/documentation-ios-sdk/)
 
-Looking at the next SDK, we have a HTTPs encrypted docs page, looking at the screenshot, this looks secure:
+Looking at the next SDK, we have a HTTPS encrypted docs page, looking at the screenshot, this looks secure:
 
 ![](/assets/posts/trusting-sdks/image_8.png)
 
-Turns out, the HTTPs based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome ([794830](https://bugs.chromium.org/p/chromium/issues/detail?id=794830)) and Safari ([rdar://36039748](https://openradar.appspot.com/radar?id=5000976083714048)) to warn the user of unencrypted file downloads on HTTPs sites.
+Turns out, the HTTPS based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome ([794830](https://bugs.chromium.org/p/chromium/issues/detail?id=794830)) and Safari ([rdar://36039748](https://openradar.appspot.com/radar?id=5000976083714048)) to warn the user of unencrypted file downloads on HTTPS sites.
 
 ### [AWS SDK](https://aws.amazon.com/mobile/sdk/)
 
 ![](/assets/posts/trusting-sdks/image_9.png)
 
-At the time I was conducting this research, the AWS iOS SDK download page was HTTPs encrypted, however linked to a non-encrypted zip download, similarly to the SDKs mentioned before. The issue has been resolved after disclosing it to Amazon.
+At the time I was conducting this research, the AWS iOS SDK download page was HTTPS encrypted, however linked to a non-encrypted zip download, similarly to the SDKs mentioned before. The issue has been resolved after disclosing it to Amazon.
 
 ## Putting it all together
 
@@ -276,7 +276,7 @@ While doing this research starting on 23rd November 2017, I investigated 41 of t
 * **13** are an easy target of person-in-the-middle attacks without any indication to the user
     * **10** of them are closed source SDKs
     * **3** of them are open source SDKs, meaning the user can either download the SDK via unencrypted HTTP from the official website, or securely clone the source code from GitHub
-* **5** of the 41 SDKs offer no way to download the SDK securely, meaning they don’t support any HTTPs at all, nor use a service that does (e.g. GitHub)
+* **5** of the 41 SDKs offer no way to download the SDK securely, meaning they don’t support any HTTPS at all, nor use a service that does (e.g. GitHub)
 * **31%** of the top used SDKs are easy targets for this attack
 * **5** additional SDKs required an account to download the SDK (do they have something to hide?)
 
