@@ -39,6 +39,8 @@ meta: {}
   <p>I spoke at various conferences around the world, most recently Tokyo, Melbourne, Budapest, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below. Check out my 
   <a href="https://github.com/krausefx/speaking" target="_blank">speaking schedule</a>.</p>
 
+  <p>To find my current location, as well as more information about my current activities, check out <a href="https://whereisfelix.today" target="_blank">WhereIsFelix.today</a></p>
+
   <p><b>Previous Work</b></p>
 
   <p>I've been working in many startups, like <a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a> and <a href="https://www.bikemap.net/" target="_blank">Bikemap</a>.</p>
