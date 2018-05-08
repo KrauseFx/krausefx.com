@@ -311,6 +311,10 @@ Since this type of attack can be done with little trace, you will not be able to
 
 Check out my [other privacy and security related publications](/privacy).
 
+## Update: Crowdsourced list of SDKs
+
+Many people asked for a list of affected SDKs. Instead of publishing a static list, I decided to setup a repo where every developer can add and update SDKs, check it out on [trusting-sdks/https](https://github.com/trusting-sdks/https).
+
 ## Thank you
 
 Special thanks to [Manu Wallner](https://twitter.com/acrooow) for doing the voice recordings for the video.
