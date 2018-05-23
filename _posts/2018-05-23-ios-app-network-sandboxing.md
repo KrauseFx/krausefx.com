@@ -64,8 +64,6 @@ Introduce the concept of network sandboxes. Each app should define a list of hos
 
 Imagine a ride-sharing app having access to
 
-
-
 *   my-ride-sharing-app.com
 *   stripe.com
 *   google-analytics.com
@@ -73,11 +71,10 @@ Imagine a ride-sharing app having access to
 
 This list serves multiple purposes:
 
-
-
 *   The app can only access those hosts. Meaning if an SDK is malicious or your app got hijacked in some way, they can't access the scary internet and leak the user's data.
 *   The app review team will see a list as they approve the app. At the same time, they can see a diff of the hosts between app releases
 *   The user should have a way to see that list as part of the App Store page
+* In the future we could even put the user in control by distinguishing between primary hosts (e.g. twitter.com) that are needed to have the app running, and secondary hosts (e.g. random-analytics-service.com). This however would come with many implications when it comes to revenue models of the majority of mobile apps.
 
 As always, exceptions should be possible, third party browsers should exist, and some apps might have to support so many hosts that they can't follow those rules. And that's okay, those apps will be marked as "Can access any host" as a little warning in the App Store.
 
