@@ -79,6 +79,6 @@ This list serves multiple purposes:
 *   The app review team will see a list as they approve the app. At the same time, they can see a diff of the hosts between app releases
 *   The user should have a way to see that list as part of the App Store page
 
-As always, exceptions should be possible, third party browsers should exist, and some apps might have to support so many hosts (e.g. Reddit for thumbnail images) that they can't follow those rules. And that's okay, those apps will be marked as "Can access any host" as a little warning in the App Store.
+As always, exceptions should be possible, third party browsers should exist, and some apps might have to support so many hosts that they can't follow those rules. And that's okay, those apps will be marked as "Can access any host" as a little warning in the App Store.
 
 While the above doesn't solve all the problems, it is a good first step into the right direction. We'll run into problems, and we'll solve them. It's a necessary change for the mobile ecosystem, catching up with where we're already at with web browsers nowadays.
