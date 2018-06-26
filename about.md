@@ -18,17 +18,19 @@ meta: {}
 </div>
 
 <div id="rightCol">
-  <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier</p>
+  <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier.</p>
 
-  <p>Just the last year, fastlane has saved over 10,000,000 <a href="https://krausefx.com/blog/fastlane-has-saved-over-1-million-developer-hours">developer hours</a> and is used by tens of thousands of companies around the world</p>
+  <p>Just the last year, fastlane has saved over 10,000,000 <a href="https://krausefx.com/blog/fastlane-has-saved-over-1-million-developer-hours">developer hours</a> and is used by tens of thousands of companies around the world.</p>
+
+  <p>I move to a new place <a href="/blog/going-nomad">every month</a></p>
 
   <p><b>fastlane</b></p>
 
-  <p>I work on <a href="http://fastlane.tools" target="_blank">fastlane</a> at Google and previously Twitter in San Francisco</p>
+  <p>I work on <a href="http://fastlane.tools" target="_blank">fastlane</a> at Google and previously Twitter in San Francisco.</p>
 
   <p><b>Privacy research</b></p>
 
-  <p>I've published various privacy related essays on the iOS permission system. As a result my posts reached #1 on HackerNews and got covered by major media outlets - <a href="/privacy">Read more about my privacy publications</a>.</p>
+  <p>I've published various privacy related essays on the iOS permission system. As a result my posts reached #1 on HackerNews multiple times and got covered by major media outlets - <a href="/privacy">Read more about my privacy publications</a>.</p>
 
   <p><b>Open Source</b></p>
 
@@ -47,7 +49,7 @@ meta: {}
 
   <p><b>University</b></p>
 
-  <p>I graduated my Software Engineering degree at the University of Central Lancashire in the UK</p>
+  <p>I graduated Software Engineering at the University of Central Lancashire, UK.</p>
 </div>
 
 
@@ -105,12 +107,12 @@ meta: {}
     margin-right: 30px;
     width: 100%;
     text-align: center;
-    height: 700px;
   }
   @media screen and (min-width: 800px) {
     #leftCol {
         width: 40%; 
         float: left;
+        height: 740px;
       }
     }
   }
