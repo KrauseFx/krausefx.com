@@ -15,9 +15,7 @@ I work on privacy research projects for the iOS platform in my free time. Those 
 
 My privacy research posts and tweets had more than 10,000,000 impressions within just a few weeks. The goal is to raise awareness of what technology can do, and educate on how you, as a user, can protect yourself.
 
-I'm taking a short break on privacy related publications, and launch more projects in 2018.
-
-Feel free to write about any of the topics below, make sure to read the original blog post linked, and feel free to use any of the images and videos provided on [krausefx.com](https://krausefx.com), as long as you reference the original blog post, including my name.
+If you write a story about any of those posts, make sure to read the original blog post linked, and feel free to use any of the images and videos provided on [krausefx.com](https://krausefx.com), as long as you reference the original blog post, including my name.
 
 If you need any additional resources, or have any follow-up questions that are not covered by the blog post, feel free to reach out to me directly, either on [Twitter](https://twitter.com/KrauseFx) or via [email](/about).
 
