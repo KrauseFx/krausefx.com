@@ -15,7 +15,7 @@ Since there were [some difficulties](https://github.com/supermarin/xcpretty/issu
 
 [trainer](https://github.com/KrauseFx/trainer) is a simple standalone tool (that also contains a fastlane plugin), which does exactly that: Convert the plist files to JUnit reports.
 
->By using trainer, the Twitter iOS code base now generates JUnit reports 10 times faster.
+> By using trainer, the Twitter iOS code base now generates JUnit reports 10 times faster.
 
 
 To start using [trainer](https://github.com/KrauseFx/trainer), just add the following to your Fastfile:
@@ -30,7 +30,7 @@ lane :test do
 end
 ```
 
-By combining [trainer](http://https;//github.com/KrauseFx/trainer) with [danger](http://danger.systems), you can automatically show the failed tests right in your pull request, without having to open the actual output.
+By combining [trainer](http://github.com/KrauseFx/trainer) with [danger](http://danger.systems), you can automatically show the failed tests right in your pull request, without having to open the actual output.
   
       
 [![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57ac1cc98419c28d7983eba9_1470897374679__img.png_)](https://github.com/Themoji/ios/pull/26)
