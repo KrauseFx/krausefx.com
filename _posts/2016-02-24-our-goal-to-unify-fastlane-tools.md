@@ -107,6 +107,6 @@ After the migration, we will be constantly looking at all issues to make sure th
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf76f20c6473581b7985d_1456338809031__img.jpg_)
 
-This is one of the most impactful changes to fastlane yet. While there’s a lot of information, it’s very important to the entire team to communicate what we are up to. This migration shows our commitment to innovation and creating the future of fastlane .
+This is one of the most impactful changes to fastlane yet. While there’s a lot of information, it’s very important to the entire team to communicate what we are up to. This migration shows our commitment to innovation and creating the future of fastlane.
 
 I’m confident that this change will make yours and our lives much easier and will save us all a ton of time in the future. We’d love your feedback on this, Tweet at us at any time! :) 
