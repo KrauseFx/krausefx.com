@@ -13,6 +13,10 @@ meta: {}
 
 {% twitter https://twitter.com/krausefx/status/928718106876305408 %}
 
+---
+
+**Update**: Check out the [One Year Nomad post from 2018](/blog/one-year-nomad)
+
 ## Background
 
 I moved to San Francisco summer 2015 to join Twitter. I lived in a furnished apartment for my first year, which I really enjoyed, as I didn't have to buy all the essentials myself after moving across the globe into a new country.
@@ -172,4 +176,8 @@ That's something I've been thinking more about recently: Breaking into an Airbnb
 I wrote this post in Taipei, Taiwan, where I work remotely from the Taipei Google office for 2 weeks before heading to San Francisco.
 
 Being able to escape the cold winter feels amazing 😎
+
+---
+
+**Update**: Check out the [One Year Nomad post from 2018](/blog/one-year-nomad)
 
