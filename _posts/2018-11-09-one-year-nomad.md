@@ -69,13 +69,13 @@ My friends working at Airbnb are happy about the fees I pay on each booking :)
 One thing that has proven extremely useful is using the best travel credit card you can get: By receiving 4.5% cash-back for each travel-related purchase, I get over **$1,000 for free** every year by living in Airbnbs and using my credit card.
 
 <p style="text-align: center">
-  <img src="/assets/posts/nomad/boat.jpg" height="430" />
+  <img src="/assets/posts/nomad/boat.jpg" />
 </p>
 
 For a few nights I stayed on a boat in New York through Airbnb, costing the same as all my other Airbnbs per night (note: it's the small one in front).
 
 <p style="text-align: center">
-  <img src="/assets/posts/nomad/working-desk2.jpg" height="360" />
+  <img src="/assets/posts/nomad/working-desk2.jpg" />
 </p>
 
 One highlight was a 2 weeks trip to Taipei together with [@taquitos](https://twitter.com/taquitos) to work together, instead of meeting in San Francisco or New York.
@@ -87,7 +87,7 @@ When being invited to speak at conferences, the conference organizers cover the 
 ## Friends & Happiness
 
 <a href="https://instagram.com/krausefx" target="_blank">
-  <img src="/assets/posts/nomad/friends.jpg" align="right" width="290" style="margin-left: 20px;" />
+  <img src="/assets/posts/nomad/friends.jpg" align="right" width="310" style="margin-left: 20px;" />
 </a>
 
 This is something I talked about in the [original nomad blog post](/blog/going-nomad): If you travel to a new city every other week, it's going to be really difficult to build up close relationships with friends. That's why I've been a big fan of the current setup: I stay in the same city, but move within it, meaning I get to hang out with the same group of people and spend quality time with them, while still having the benefits of a nomad life.
