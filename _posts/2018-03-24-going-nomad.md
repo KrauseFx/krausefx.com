@@ -3,7 +3,8 @@ layout: post
 title: "Going nomad"
 categories: []
 tags:
-- twitter
+- digital
+- nomad
 status: publish
 type: post
 published: true
