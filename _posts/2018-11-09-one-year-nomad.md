@@ -84,13 +84,23 @@ One highlight was a 2 weeks trip to Taipei together with [@taquitos](https://twi
 
 When being invited to speak at conferences, the conference organizers cover the hotel during your stay. Every night they cover saves me about $100 (assuming the SF/NYC rent prices), as I don't have to pay my lease during that time. I usually combine multiple conferences on one multi-week trip and cover the hotel nights in-between instead of flying back and forth.
 
-## Friends
+## Friends & Happiness
 
 <a href="https://instagram.com/krausefx" target="_blank">
   <img src="/assets/posts/nomad/friends.jpg" align="right" width="290" style="margin-left: 20px;" />
 </a>
 
 This is something I talked about in the [original nomad blog post](/blog/going-nomad): If you travel to a new city every other week, it's going to be really difficult to build up close relationships with friends. That's why I've been a big fan of the current setup: I stay in the same city, but move within it, meaning I get to hang out with the same group of people and spend quality time with them, while still having the benefits of a nomad life.
+
+Since February 2018 I'm tracking my mood & happiness level 3 times a day, here is the result so far:
+
+<img src="/assets/posts/nomad/mood.png" />
+
+3 times a day I answer the question on how I'm feeling on a scale from 0 to 6 using my [open source Telegram bot](https://github.com/KrauseFx/mood)
+
+> If today were the last day of my life, would I want to do what I am about to do today?" And whenever the answer has been "No" for too many days in a row, I know I need to change something.
+
+As everything in life, things are an up and down. The overall trend is visible as the green line, which is clearly a wave going in cycles. I marked the `I'm feeling average` level as orange. Ideally I don't want any of the other colored lines to go below it. One-off values below it are common as seen as the light gray dots. Looking at the graph, every time the blue line dropped below the orange one, something happened that affected my overall mood. It's good to see the line usually recovering back to normal rather fast. 
 
 ## Fitness
 
