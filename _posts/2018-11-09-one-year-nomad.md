@@ -112,7 +112,7 @@ I've been spending a lot of time working on reaching my fitness goals in the yea
 - I managed to drop my body fat percentage by 6%, to a total of 8.9% according to the [DEXA scan](https://www.nhs.uk/conditions/dexa-scan/) (the only decent-precise way to measure body fat)
 - I travel my own [travel scale](https://www.amazon.com/gp/product/B00D5FGR2C/ref=oh_aui_search_detailpage?ie=UTF8&psc=1) to track my body weight every morning
 - I track everything I eat in MyFitnessPal. Tracking food is a game changer, no matter how well you think you eat, MyFitnessPal will most likely tell you otherwise if you haven't tracked macros in the past (very thankful my fitness trainer [@faronsalisbury](https://instagram.com/faronsalisbury) convinced me to do this) 
-- I usually stock up the fridge with a few essentials, being frozen chicken breast, frozen veggies, oatmeal and some diet sodas.
+- I usually stock up the fridge with a few essentials, being frozen chicken breast, frozen veggies, black beans, oatmeal and some diet sodas.
 - Having a routine, and your own place with your own kitchen would make reaching fitness goals easier
 
 ## whereisfelix.today
