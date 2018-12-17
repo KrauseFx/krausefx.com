@@ -127,6 +127,9 @@ All without indicating that your phone is recording you and your surrounding, no
   <a href="https://www.theregister.co.uk/2017/10/25/ios_apps_camera_spying/">
     <img src="/assets/privacy/TheRegister.jpg">
   </a>
+  <a href="https://www.foxnews.com/tech/iphone-apps-with-access-to-your-camera-can-secretly-spy-on-you">
+    <img src="/assets/privacy/FoxNews.png">
+  </a>
 </div>
 
 ----
