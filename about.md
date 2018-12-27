@@ -54,25 +54,23 @@ meta: {}
 
 <div class="felixkrauseSpeaking">
   <a href="/assets/speaking/FelixKrause1.jpg" target="_blank">
-    <img src="/assets/speaking/FelixKrause1.jpg" />
+    <img src="/assets/speaking/FelixKrause1.jpg" alt="Felix Krause (KrauseFx) speaking at conference at Facebook Mobile at Scale in Tel Aviv, Israel" />
   </a>
   <a href="/assets/speaking/FelixKrause4.jpg" target="_blank">
-    <img src="/assets/speaking/FelixKrause4.jpg" />
+    <img src="/assets/speaking/FelixKrause4.jpg" alt="Felix Krause (KrauseFx) speaking at conference at trySwift in New York" />
   </a>
   <a href="/assets/speaking/FelixKrause2.jpg" target="_blank">
-    <img src="/assets/speaking/FelixKrause2.jpg" />
-  </a>
-  <a href="/assets/speaking/FelixKrause3.jpg" target="_blank">
-    <img src="/assets/speaking/FelixKrause3.jpg" />
+    <img src="/assets/speaking/FelixKrause2.jpg" alt="Felix Krause (KrauseFx) speaking at conference at Facebook Mobile at Scale in Tel Aviv, Israel" />
   </a>
   <a href="/assets/speaking/FelixKrause5.jpg" target="_blank">
-    <img src="/assets/speaking/FelixKrause5.jpg" />
+    <img src="/assets/speaking/FelixKrause5.jpg" alt="Felix Krause (KrauseFx) speaking at conference at WeAreDevelopers in Vienna, Austria" />
+  </a>
+  <a href="/assets/speaking/FelixKrause3.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause3.jpg" alt="Felix Krause (KrauseFx) speaking at conference at Facebook Mobile at Scale in Tel Aviv, Israel" />
   </a>
   <a href="/assets/speaking/FelixKrause6.jpg" target="_blank">
-    <img src="/assets/speaking/FelixKrause6.jpg" />
+    <img src="/assets/speaking/FelixKrause6.jpg" alt="Felix Krause (KrauseFx) speaking at conference at trySwift in New York" />
   </a>
-  
-  <!-- TODO: Add alt text -->
 </div>
 
 <hr />
