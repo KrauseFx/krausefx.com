@@ -22,7 +22,7 @@ meta: {}
 
   <p>Just the last year, fastlane has saved over 15,000,000 developer hours and is used by tens of thousands of companies around the world.</p>
 
-  <p>I move to a new place <a href="/blog/going-nomad">every month</a></p>
+  <p>I move to a new place <a href="/blog/going-nomad">every month</a>.</p>
 
   <p><b>fastlane</b></p>
 
@@ -50,7 +50,7 @@ meta: {}
   <p>I've been working in many startups, like <a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a> and <a href="https://www.bikemap.net/" target="_blank">Bikemap</a>.</p>
 </div>
 
-<hr />
+<hr style="margin-top: 25px" />
 
 <div class="felixkrauseSpeaking">
   <a href="/assets/speaking/FelixKrause1.jpg" target="_blank">
