@@ -50,10 +50,34 @@ meta: {}
   <p>I've been working in many startups, like <a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a> and <a href="https://www.bikemap.net/" target="_blank">Bikemap</a>.</p>
 </div>
 
+<hr />
 
-<div style="width: 100%; float: left; margin-top: 20px">
-  <hr />
+<div class="felixkrauseSpeaking">
+  <a href="/assets/speaking/FelixKrause1.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause1.jpg" />
+  </a>
+  <a href="/assets/speaking/FelixKrause4.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause4.jpg" />
+  </a>
+  <a href="/assets/speaking/FelixKrause2.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause2.jpg" />
+  </a>
+  <a href="/assets/speaking/FelixKrause3.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause3.jpg" />
+  </a>
+  <a href="/assets/speaking/FelixKrause5.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause5.jpg" />
+  </a>
+  <a href="/assets/speaking/FelixKrause6.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause6.jpg" />
+  </a>
+  
+  <!-- TODO: Add alt text -->
+</div>
 
+<hr />
+
+<div style="width: 100%; float: left; margin-top: 20px; margin-bottom: 20px;">
   <form id="contactform" method="POST" action="https://formspree.io/contact@krausefx.com">
     <p><b>Email Address</b></p>
     <input type="email" name="_replyto" placeholder="Your email address">
@@ -66,11 +90,27 @@ meta: {}
   </form>
 </div>
 
-<p style="text-align: right; color: #777">
-  Photo by Tamás Künsztler
+<hr />
+<p style="text-align: right; color: #999">
+  WeAreDevelopers photos by Tamás Künsztler
 </p>
 
 <style type="text/css">
+  .felixkrauseSpeaking {
+    margin-top: 30px;
+    height: 310px;
+    width: 100%;
+    overflow-y: none;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .felixkrauseSpeaking > a > img {
+    height: 300px;
+    width: auto;
+    max-width: none; /* to override page wide attribute */
+    display: inline-block;
+  }
   #contactform {
     padding-top: 30px;
   }
@@ -109,6 +149,14 @@ meta: {}
     margin-right: 30px;
     width: 100%;
     text-align: center;
+  }
+  @media screen and (max-width: 800px) {
+    .felixkrauseSpeaking {
+      height: 190px;
+    }
+    .felixkrauseSpeaking > a > img {
+      height: 180px;
+    }
   }
   @media screen and (min-width: 800px) {
     #leftCol {
