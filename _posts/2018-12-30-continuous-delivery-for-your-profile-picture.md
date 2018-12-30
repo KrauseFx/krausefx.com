@@ -48,3 +48,7 @@ Following the "Continuous Delivery for your profile picture" appraoch, I took an
 <p style="margin-top: -10px; margin-bottom: 0px"><small style="margin-left: 35px;">2018</small></p>
 
 Again, almost no one noticed, with only [one tweet](https://twitter.com/lehrjulian/status/1077881037164814336) mentioning it.
+
+So here are the last 6 years in profile pictures - I plan on continuing this strategy and take a new photo every second year:
+
+<img src="/assets/posts/profilePictures/ProfilePictureDiff.jpg" />
