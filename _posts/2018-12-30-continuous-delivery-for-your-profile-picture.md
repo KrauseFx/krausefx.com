@@ -41,7 +41,7 @@ It even went that far, that [Peter Steinberger](https://twitter.com/steipete) co
 
 Using this approach, you can keep the recognition value, while making sure your current profile picture reflects on how you currently look like.
 
-Following the "Continuous Delivery for your profile picture" appraoch, I took another one this year.
+Following the "Continuous Delivery for your profile picture" approach, I took another one this year.
 
   <img src="/assets/posts/profilePictures/FelixKrause2018.jpg" width="100" alt="Felix Krause in 2018" />
 
