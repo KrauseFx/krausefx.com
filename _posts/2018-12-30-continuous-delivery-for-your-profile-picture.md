@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Continuous Delivery for your profile picture"
+title: "How I silently changed my profile picture every other year"
 categories: []
 tags:
 - profile
