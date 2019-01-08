@@ -54,7 +54,7 @@ One of the main motivators of starting my nomad life was to save money. Today I 
 - Stayed with my family in Austria for a total of 2 months
 - Stayed at "home" in NYC/SF in Airbnbs for a total of **231 nights** paying a total of **$26,130** (63% of the nights of the year)
 
-As mentioned in my [previous nomad post](/blog/going-nomad), the average rent in Airbnb can be assumed to be about $3,000 for a studio apartment. Including utilities, furniture and other expenses related to the apartment, you can easily pay a total of about **$40,000** per year if you want your own apartment.
+As mentioned in my [previous nomad post](/blog/going-nomad), the average rent in Airbnb can be assumed to be about $3,000 for a studio apartment. Including utilities, furniture and other expenses related to the apartment, you can easily pay a total of about **$40,000** per year if you want [your own apartment in Lower Manhattan](https://www.rentcafe.com/average-rent-market-trends/us/ny/manhattan/).
 
 Meaning I saved about **$14,000** by going nomad, while having far less responsibilities, as well as get to see new places and neighborhoods each month.
 
