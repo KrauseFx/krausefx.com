@@ -18,6 +18,8 @@ meta: {}
 </div>
 
 <div id="rightCol">
+  <p>On vacation right now, after having <a href="/blog/ending-my-fastlane-chapter">ended my fastlane chapter</a>.</p>
+
   <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier.</p>
 
   <p>Just the last year, fastlane has saved over 15,000,000 developer hours and is used by tens of thousands of companies around the world.</p>
@@ -26,7 +28,7 @@ meta: {}
 
   <p><b>fastlane</b></p>
 
-  <p>I work on <a href="http://fastlane.tools" target="_blank">fastlane</a> at Google and previously Twitter in San Francisco.</p>
+  <p>I worked on <a href="http://fastlane.tools" target="_blank">fastlane</a> at Google and previously Twitter in San Francisco.</p>
 
   <p><b>Privacy research</b></p>
 
@@ -40,14 +42,14 @@ meta: {}
 
   <p><b>Speaking</b></p>
 
-  <p>I spoke at various conferences around the world, most recently Tokyo, Melbourne, Budapest, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below. Check out my 
+  <p>I spoke at various conferences around the world, most recently Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below. Check out my 
   <a href="https://github.com/krausefx/speaking" target="_blank">speaking schedule</a>.</p>
 
-  <p>To find my current location, as well as more information about my current activities, check out <a href="https://whereisfelix.today" target="_blank">WhereIsFelix.today</a></p>
+  <p>To find my current location, as well as other info, check out <a href="https://whereisfelix.today" target="_blank">WhereIsFelix.today</a>, a fun side project that I use to experiment with new technologies.</p>
 
   <p><b>Previous Work</b></p>
 
-  <p>I've been working in many startups, like <a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a> and <a href="https://www.bikemap.net/" target="_blank">Bikemap</a>.</p>
+  <p>I've worked at various startups, like <a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a> and <a href="https://www.bikemap.net/" target="_blank">Bikemap</a>.</p>
 </div>
 
 <hr style="margin-top: 25px" />
@@ -160,7 +162,7 @@ meta: {}
     #leftCol {
         width: 40%; 
         float: left;
-        height: 740px;
+        height: 780px;
       }
     }
   }
