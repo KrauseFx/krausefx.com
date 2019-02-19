@@ -258,7 +258,7 @@ body, html{
       margin-right: 20px;
       padding-left: 10px;
       text-decoration: none;
-      color: $header-inactive-color;
+      color: $header-inactive-color !important;
 
       &:visited {
         color: $header-inactive-color !important;
