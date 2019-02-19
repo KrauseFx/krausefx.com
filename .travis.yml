@@ -4,6 +4,8 @@ cache:
 rvm:
 - 2.4.0
 before_install:
+- gem update --system # to get bundler 2.0 (via https://docs.travis-ci.com/user/languages/ruby/)
+- gem install bundler
 - bundle install
 script:
 - "./deploy.sh"
