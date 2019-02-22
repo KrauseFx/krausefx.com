@@ -20,9 +20,9 @@ meta: {}
 <div id="rightCol">
   <p>On vacation right now, after having <a href="/blog/ending-my-fastlane-chapter">ended my fastlane chapter</a>.</p>
 
-  <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier.</p>
+  <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>.</p>
 
-  <p>Just the last year, fastlane has saved over 15,000,000 developer hours and is used by tens of thousands of companies around the world.</p>
+  <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 15,000,000 developer hours and is used by tens of thousands of companies around the world.</p>
 
   <p>I move to a new place <a href="/blog/going-nomad">every month</a>.</p>
 
@@ -49,7 +49,7 @@ meta: {}
 
   <p><b>Previous Work</b></p>
 
-  <p>I've worked at various startups, like <a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a> and <a href="https://www.bikemap.net/" target="_blank">Bikemap</a>.</p>
+  <p><a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a>, <a href="https://www.bikemap.net/" target="_blank">Bikemap</a> and more</p>
 </div>
 
 <hr style="margin-top: 25px" />
@@ -162,7 +162,7 @@ meta: {}
     #leftCol {
         width: 40%; 
         float: left;
-        height: 780px;
+        height: 820px;
       }
     }
   }
