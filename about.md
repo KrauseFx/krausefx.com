@@ -52,9 +52,16 @@ meta: {}
   <p><a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a>, <a href="https://www.bikemap.net/" target="_blank">Bikemap</a> and more</p>
 </div>
 
-<hr style="margin-top: 25px" />
+<hr style="margin-top: 35px" />
 
-<div class="felixkrauseSpeaking">
+<h2>Personal Photos</h2>
+<div class="imageCarousel" id="personalCarousel">
+</div>
+
+<hr />
+
+<h2>Speaking</h2>
+<div class="imageCarousel">
   <a href="/assets/speaking/FelixKrause1.jpg" target="_blank">
     <img src="/assets/speaking/FelixKrause1.jpg" alt="Felix Krause (KrauseFx) speaking at conference at Facebook Mobile at Scale in Tel Aviv, Israel" />
   </a>
@@ -74,6 +81,35 @@ meta: {}
     <img src="/assets/speaking/FelixKrause6.jpg" alt="Felix Krause (KrauseFx) speaking at conference at trySwift in New York" />
   </a>
 </div>
+
+<script type="text/javascript">
+  var url = "https://whereisfelixtoday-backend.now.sh/api.json";
+
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() { 
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+        var content = JSON.parse(xmlHttp.responseText)
+        var photos = content["recentPhotos"]
+        var personalCarousel = document.getElementById("personalCarousel")
+        for (let photoIndex in photos) {
+          console.log(photos[photoIndex])
+          let currentPhoto = photos[photoIndex]
+
+          var linkNode = document.createElement("a");
+          linkNode["href"] = currentPhoto["link"]
+          linkNode["target"] = "_blank"
+          var imageNode = document.createElement("img")
+          imageNode["src"] = currentPhoto["url"]
+          imageNode["alt"] = currentPhoto["text"]
+
+          linkNode.appendChild(imageNode)
+          personalCarousel.appendChild(linkNode)
+        }
+      }
+  }
+  xmlHttp.open("GET", url, true); // true = asynchronous 
+  xmlHttp.send(null);
+</script>
 
 <hr />
 
@@ -96,7 +132,7 @@ meta: {}
 </p>
 
 <style type="text/css">
-  .felixkrauseSpeaking {
+  .imageCarousel {
     margin-top: 30px;
     height: 310px;
     width: 100%;
@@ -105,11 +141,15 @@ meta: {}
     white-space: nowrap;
   }
 
-  .felixkrauseSpeaking > a > img {
+  .imageCarousel > a > img {
     height: 300px;
     width: auto;
     max-width: none; /* to override page wide attribute */
     display: inline-block;
+  }
+  #personalCarousel > a > img {
+    /* I didn't spend the time investigating why this is necessary */
+    margin-right: 5px;
   }
   #contactform {
     padding-top: 30px;
@@ -151,10 +191,10 @@ meta: {}
     text-align: center;
   }
   @media screen and (max-width: 800px) {
-    .felixkrauseSpeaking {
+    .imageCarousel {
       height: 190px;
     }
-    .felixkrauseSpeaking > a > img {
+    .imageCarousel > a > img {
       height: 180px;
     }
   }
