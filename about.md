@@ -92,7 +92,6 @@ meta: {}
         var photos = content["recentPhotos"]
         var personalCarousel = document.getElementById("personalCarousel")
         for (let photoIndex in photos) {
-          console.log(photos[photoIndex])
           let currentPhoto = photos[photoIndex]
 
           var linkNode = document.createElement("a");
@@ -104,6 +103,10 @@ meta: {}
 
           linkNode.appendChild(imageNode)
           personalCarousel.appendChild(linkNode)
+
+          if (photoIndex > 6) {
+            break; // We don't want to load all the images
+          }
         }
       }
   }
