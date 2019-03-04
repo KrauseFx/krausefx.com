@@ -97,14 +97,14 @@ meta: {}
           var linkNode = document.createElement("a");
           linkNode["href"] = currentPhoto["link"]
           linkNode["target"] = "_blank"
-          var imageNode = document.createElement("img")
-          imageNode["src"] = currentPhoto["url"]
+          var imageNode = document.createElement("span")
+          imageNode["style"] = "background-image: url(" + currentPhoto["url"] + ")"
           imageNode["alt"] = currentPhoto["text"]
 
           linkNode.appendChild(imageNode)
           personalCarousel.appendChild(linkNode)
 
-          if (photoIndex > 6) {
+          if (photoIndex > 7) {
             break; // We don't want to load all the images
           }
         }
@@ -150,9 +150,15 @@ meta: {}
     max-width: none; /* to override page wide attribute */
     display: inline-block;
   }
-  #personalCarousel > a > img {
+  #personalCarousel > a > span {
     /* I didn't spend the time investigating why this is necessary */
     margin-right: 5px;
+    height: 300px;
+    display: inline-block;
+    width: 300px; /* IG pictures should always be square */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
   #contactform {
     padding-top: 30px;
@@ -199,6 +205,10 @@ meta: {}
     }
     .imageCarousel > a > img {
       height: 180px;
+    }
+    #personalCarousel > a > span {
+      height: 180px;
+      width: 180px;
     }
   }
   @media screen and (min-width: 800px) {
