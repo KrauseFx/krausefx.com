@@ -15,7 +15,7 @@ meta: {}
 
 For most people, using the official Twitter client works fine. It's optimized to show you new content you might be interested in, makes it easy to follow new users, and shows content that might be most relevant to you first. If you have an engineering mindset, chances are you want to be in control of what you see in your timeline.
 
-I use Twitter to stay up to date with certain people. I want to hear about new projects or new content they published, new blog posts, thoughts of them, etc. I'm not interested in hearing political opinions, sport scores, etc, which I already have Facebook for. If I follow someone, I'll read every single tweet from them. For the last 5 years, I didn't miss a tweet in my timeline, so I have to be very careful about who to follow, and what content to see. So I set out to customize Twitter to archive that goal, and to only see about 50-75 tweets per day.
+I use Twitter to stay up to date with certain people. I want to hear about new projects or new content they published, new blog posts, thoughts of them, etc. I'm not interested in hearing political opinions, sport scores, etc, which I already have Facebook for. If I follow someone, I'll read every single tweet from them. For the last 5 years, I didn't miss a tweet in my timeline, so I have to be very careful about who to follow, and what content to see. So I set out to customize Twitter to achieve that goal, and to only see about 50-75 tweets per day.
 
 
 ## Solution
