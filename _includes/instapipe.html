@@ -246,10 +246,18 @@
 }
 
 #storyViewer > #storyContent {
-  height: 910px;
   width: 512px;
+  max-width: 80%; /* for mobile devices */
   margin-top: 30px;
   display: inline-block;
+
+  /* 
+    To get the right aspect ratio, while still having a dynamic content size
+    https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css
+    IG content: 910px height to 512px width = ~178%
+    So the `padding-bottom` sets the height of the content
+  */
+  padding-bottom: 178%;
 }
 
 #storyViewer > #storyContent > .storyButton {
@@ -276,25 +284,24 @@
 }
 
 #storyViewer > #storyContent > #storyPhotoViewer {
-  height: 100%;
   width: 100%;
+  padding-bottom: 178%; /* see comment in #storyContent */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 #storyViewer > #storyContent > #storyVideoViewer {
-  height: 100%;
+  padding-bottom: 178%; /* see comment in #storyContent */
   width: 100%;
 }
 
 #storyViewer > #storyContent > #storyProgressBar {
-  width: calc(512px - 20px); /* 512 from #storyContent */
-  margin-left: 10px;
-  margin-right: 10px;
+  width: calc(100% + 4px);
+  margin-left: -2px;
   height: 3px;
   margin-top: 10px;
-  position: absolute;
+  margin-bottom: 10px;
 }
 
 #storyViewer > #storyContent > #storyProgressBar > .storyProgressBarItemBg {
