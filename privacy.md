@@ -219,6 +219,12 @@ Third-party SDKs can often easily be **modified** while you download them! Using
 
 ## [Read the full blog post](/blog/trusting-sdks)
 
+<div class="press">
+  <a href="https://thenextweb.com/security/2018/02/15/want-hack-million-iphones-target-sdks-finds-security-researcher/">
+    <img src="/assets/privacy/TheNextWeb.png">
+  </a>
+</div>
+
 ----
 
 ## [follow.user](/blog/follow-user)
