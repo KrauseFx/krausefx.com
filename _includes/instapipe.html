@@ -94,6 +94,11 @@
 
     currentIndex = 0
     renderCurrentStory()
+
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() {}
+    xmlHttp.open("GET", host + "didOpenStories", true); // true = asynchronous 
+    xmlHttp.send(null);
   }
 
   function renderCurrentStory() {
