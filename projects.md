@@ -27,8 +27,9 @@ All the major projects I've worked on in the last few years. Unless otherwise no
   </div>
 {% endfor %}
 
+<br />
 
----
+For more details check out my [about page](/about).
 
 <style type="text/css">
   .fx-project {
