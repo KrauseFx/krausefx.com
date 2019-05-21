@@ -47,9 +47,8 @@ meta: {}
 
   <p>To find my current location, as well as other info, check out <a href="https://whereisfelix.today" target="_blank">WhereIsFelix.today</a>, a fun side project that I use to experiment with new technologies.</p>
 
-  <p><b>Previous Work</b></p>
-
-  <p><a href="http://producthunt.com" target="_blank">Product Hunt</a>, <a href="http://mindnode.com" target="_blank">MindNode</a>, <a href="https://www.wunderlist.com" target="_blank">Wunderlist</a>, <a href="https://www.bikemap.net/" target="_blank">Bikemap</a> and more</p>
+  <p><b>Previous work and projects</b></p>
+  <p>Product Hunt, MindNode, Wunderlist, Bikemap amongst others, open <a href="/projects">Projects</a> for more details.</p>
 </div>
 
 <hr style="margin-top: 35px" />
