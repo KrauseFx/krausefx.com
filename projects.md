@@ -67,6 +67,7 @@ For more details check out my [about page](/about).
     border: 1px solid #d1d5da;
     border-right: 0;
     border-bottom: 0;
+    max-width: 80%;
     
     padding: 5px;
     padding-left: 15px;
