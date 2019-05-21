@@ -38,7 +38,7 @@ For more details check out my [about page](/about).
     margin-right: 10px;
     padding: 20px;
     width: calc(50% - 40px - 20px);
-    height: 112px;
+    height: 130px;
     display: inline-block;
     border-radius: 3px;
     vertical-align: top;
