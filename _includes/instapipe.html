@@ -1,10 +1,11 @@
 
-<div id="story-available"></div>
-<img 
-  src="https://graph.facebook.com/100000723486971/picture?type=large"
-  id="storyProfilePicture"
-  onclick="showStories()"
-/>
+<div id="story-available">
+  <img 
+    src="https://graph.facebook.com/100000723486971/picture?type=large"
+    id="storyProfilePicture"
+    onclick="showStories()"
+  />
+</div>
 
 <div id="storyViewer">
   <div id="storyContent">
@@ -57,17 +58,13 @@ function preloadStoriesIndex() {
       if (storiesContent.length == 0) {
         // Default it's shown, as it looks nicer
         // and I post stories most days :joy:
-        document.getElementById("story-available").style.opacity = 0.0
+        document.getElementById("story-available").className += "story-not-available"
       } else {
         // preload the first story if it's a picture
         if (!storiesContent[0]["is_video"]) {
           document.getElementById("fakeContentToPreloadImages").src = storiesContent[0]["signed_url"]
         }
       }
-
-      // Copy the profile picture URL to the story header, to only have to define it once
-      let profileImageURL = document.getElementById("storyProfilePicture").src
-      document.getElementById("storyHeaderProfilePicture").src = profileImageURL;
     }
   };
 
@@ -79,6 +76,12 @@ function showStories() {
   if (storiesContent == null || storiesContent.length == 0) {
     return;
   }
+
+  // Copy the profile picture URL to the story header, to only have to define it once
+  // we only do that once everything is loaded, as depending on the website
+  // the image node might not be acccessible yet
+  let profileImageURL = document.getElementById("storyProfilePicture").src
+  document.getElementById("storyHeaderProfilePicture").src = profileImageURL;
 
   storiesToShow = []
   progressBars = []
@@ -247,8 +250,8 @@ preloadStoriesIndex();
   width: 128px;
   height: 128px;
   border-radius: 70px;
-  margin-top: -139px;
   margin-left: 3px;
+  margin-top: 3px;
   cursor: pointer;
   border: 4px solid white;
 }
@@ -257,8 +260,13 @@ preloadStoriesIndex();
   background-image: linear-gradient(rgb(186, 62, 138), #fba051);
   height: 142px;
   width: 142px;
-  z-index: -10px;
+  z-index: -10;
   border-radius: 70px;
+  margin-bottom: 15px;
+}
+
+#story-available.story-not-available {
+  background-image: none !important;
 }
 
 #storyViewer {
@@ -273,6 +281,7 @@ preloadStoriesIndex();
   display: none;
 
   font-family: 'Helvetica Neue', sans-serif;
+  font-weight: normal;
 }
 
 #storyViewer p {
