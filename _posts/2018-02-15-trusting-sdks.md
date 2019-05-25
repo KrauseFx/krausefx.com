@@ -12,6 +12,8 @@ published: true
 meta: {}
 ---
 
+{% include video-box.html url="https://www.youtube.com/watch?v=BXePggcWpuE" %}
+
 Third-party SDKs can often easily be **modified** while you download them! Using a simple [person-in-the-middle attack](https://wikipedia.org/wiki/Man_in_the_middle_attack), anyone in the same network can insert malicious code into the library, and with that into your application, as a result running in your user's pockets.
 
 **31%** of the most popular closed-source iOS SDKs are vulnerable to this attack, as well as a total of **623 libraries** on CocoaPods. As part of this research I notified the affected parties, and submitted patches to CocoaPods to warn developers and SDK providers.
@@ -320,3 +322,5 @@ Many people asked for a list of affected SDKs. Instead of publishing a static li
 Special thanks to [Manu Wallner](https://twitter.com/acrooow) for doing the voice recordings for the video.
 
 Special thanks to my friends for providing feedback on this post: [Jasdev Singh](https://twitter.com/jasdev), [Dave Schukin](https://twitter.com/schukin), [Manu Wallner](https://twitter.com/acrooow), [Dominik Weber](https://twitter.com/domysee), [Gilad](https://twitter.com/giladronat), [Nicolas Haunold](http://haunold.me/) and Neel Rao.
+
+{% include video-box.html url="https://www.youtube.com/watch?v=BXePggcWpuE" %}
