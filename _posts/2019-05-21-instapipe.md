@@ -3,7 +3,8 @@ layout: post
 title: "instapipe.net - Distribute your Instagram stories"
 categories: []
 tags:
-- ios
+- open-source
+- instagram
 status: publish
 type: post
 published: true
