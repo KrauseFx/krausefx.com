@@ -12,6 +12,8 @@ published: true
 meta: {}
 ---
 
+**Update 2019-06-04** Looks like Apple has fixed this issue with macOS Catalina
+
 ## Facts
 
 Any Mac app, sandboxed or not sandboxed can:
@@ -66,6 +68,8 @@ NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithCGImage:screensh
 ```
 
 In my experiments, I piped the generated image over to a [OCR library](https://en.wikipedia.org/wiki/Optical_character_recognition) and was able to get all text that was rendered on the user's machine.
+
+**Update 2019-06-04** Looks like Apple has fixed this issue with macOS Catalina
 
 ## Similar projects I've worked on 
 

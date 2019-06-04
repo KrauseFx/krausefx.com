@@ -12,6 +12,8 @@ published: true
 meta: {}
 ---
 
+**Update 2019-06-04** Looks like Apple has [fixed this issue with iOS 13](https://github.com/w3c/deviceorientation/issues/57#issuecomment-498417027)
+
 Modern web browsers give the user more control over what data they're sharing with websites, for example location services and access to the camera.
 
 However I recently noticed a gap of how websites can determine the activity of the user based on the acceleration and gyro sensor built into modern smartphones, including the iPhone and Android phones.
@@ -46,6 +48,8 @@ and probably more, including guesses if the user is actively using their phone a
 </h3>
 
 <br />
+
+**Update 2019-06-04** Looks like Apple has [fixed this issue with iOS 13](https://github.com/w3c/deviceorientation/issues/57#issuecomment-498417027)
 
 ## Similar projects I've worked on 
 
