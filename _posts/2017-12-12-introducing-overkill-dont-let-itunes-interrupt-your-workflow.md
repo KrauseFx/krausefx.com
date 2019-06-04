@@ -11,6 +11,8 @@ published: true
 meta: {}
 ---
 
+**Update 2019-06-04** Looks like Apple has fixed this issue by deprecating iTunes
+
 Exactly one year after the initial launch of Overkill as a shell script, after being [#1 on ProductHunt](https://www.producthunt.com/posts/overkill), I'm extremely excited to announce that **Overkill is now a native Mac app**.
 
 Did iTunes ever launch without you opening it? Use Overkill to instantly kill the iTunes process once it opened itself, so your workflow isn't interrupted.
@@ -83,3 +85,4 @@ Additionally, as most of the project I work on, Overkill is 100% open source und
   </a>
 </h3>
 
+**Update 2019-06-04** Looks like Apple has fixed this issue by deprecating iTunes
