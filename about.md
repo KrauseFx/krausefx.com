@@ -77,6 +77,9 @@ meta: {}
   <a href="/assets/speaking/FelixKrause6.jpg" target="_blank">
     <img src="/assets/speaking/FelixKrause6.jpg" alt="Felix Krause (KrauseFx) speaking at conference at trySwift in New York" />
   </a>
+  <a href="/assets/speaking/FelixKrause7.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause7.jpg" alt="Felix Krause (KrauseFx) speaking at conference at trySwift in New York" />
+  </a>
 </div>
 
 <script type="text/javascript">
