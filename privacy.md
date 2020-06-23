@@ -70,9 +70,6 @@ How can you protect yourself? Press the home button and open the iCloud settings
   <a href="https://www.wired.com/story/apple-id-password-phishing/">
     <img src="/assets/privacy/Wired.png">
   </a>
-  <a href="http://www.dailymail.co.uk/sciencetech/article-5020769/iPhone-apps-silently-turn-camera.html">
-    <img src="/assets/privacy/DailyMail.jpg">
-  </a>
   <a href="https://www.theregister.co.uk/2017/10/10/apple_ios_password_prompts_phishing/">
     <img src="/assets/privacy/TheRegister.jpg">
   </a>
@@ -111,6 +108,9 @@ All without indicating that your phone is recording you and your surrounding, no
   </a>
   <a href="http://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">
     <img src="/assets/privacy/Telegraph.png">
+  </a>
+  <a href="http://www.dailymail.co.uk/sciencetech/article-5020769/iPhone-apps-silently-turn-camera.html">
+    <img src="/assets/privacy/DailyMail.jpg">
   </a>
   <a href="https://thenextweb.com/apple/2017/10/26/iphone-camera-permissions-google-ios/">
     <img src="/assets/privacy/TheNextWeb.png">
