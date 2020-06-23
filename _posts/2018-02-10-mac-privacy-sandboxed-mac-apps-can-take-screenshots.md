@@ -12,7 +12,7 @@ published: true
 meta: {}
 ---
 
-**Update 2019-06-04** Looks like Apple has fixed this issue with macOS Catalina
+**Update 2019-06-04** Apple has fixed this issue with macOS Catalina
 
 ## Facts
 
