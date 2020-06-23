@@ -15,6 +15,8 @@ published: true
 meta: {}
 ---
 
+**Update 2020-06-22** [Apple has fixed this issue with iOS 14](https://twitter.com/KrauseFx/status/1275174778391924736)
+
 Does your iOS app have access to the user's image library? Do you want to know your user's movements over the last several years, including what cities they've visited, which iPhones they've owned and how they travel? Do you want all of that data in less a second? Then this project is for you!
   
       

@@ -14,6 +14,8 @@ published: true
 meta: {}
 ---
 
+**Update 2020-06-22** [Apple has fixed this issue with iOS 14](https://twitter.com/KrauseFx/status/1275128155561484288)
+
 # Facts
 
 Once you grant an app access to your camera, it can
