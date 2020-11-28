@@ -14,19 +14,19 @@ meta: {}
 <div id="leftCol">
   <img src="/assets/FelixKrauseSpeakingCut.jpg" width="290" style="margin-bottom: 10px" />
   <br />
-  <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="http://fastlane.tools" target="_blank">fastlane</a></small></p>
+  <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="https://fastlane.tools" target="_blank">fastlane</a></small></p>
 </div>
 
 <div id="rightCol">
   <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>.</p>
 
-  <p>I'm the founder of <a href="http://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 15,000,000 developer hours and is used by tens of thousands of companies around the world. <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30 under 30</a></p>
+  <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 15,000,000 developer hours and is used by tens of thousands of companies around the world. <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30 under 30</a></p>
 
   <p>I move to a new place <a href="/blog/going-nomad">every month</a> and don't have an apartment.</p>
 
   <p><b>fastlane</b></p>
 
-  <p>I worked on <a href="http://fastlane.tools" target="_blank">fastlane</a> at Google and previously Twitter in San Francisco.</p>
+  <p>I worked on <a href="https://fastlane.tools" target="_blank">fastlane</a> at Google and previously Twitter in San Francisco.</p>
 
   <p><b>Privacy research</b></p>
 
@@ -34,7 +34,7 @@ meta: {}
 
   <p><b>Open Source</b></p>
 
-  <p>Additionally to <a href="http://fastlane.tools" target="_blank">fastlane</a>, I'm involved in other open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a>.</p>
+  <p>Additionally to <a href="https://fastlane.tools" target="_blank">fastlane</a>, I'm involved in other open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a>.</p>
 
   <p>I'm the founder of <a href="https://ios-factor.com" target="_blank">iOS-factor.com</a>, an open source best-practices guide on how to build high-quality iOS apps.</p>
 

@@ -18,7 +18,7 @@ produce lets you create new apps on iTunes Connect and the Apple Developer Porta
 [deliver](https://github.com/KrauseFx/deliver). 
 
 This is the sixth module of the 
-[fastlane](http://fastlane.tools) toolchain. It integrates nicely with 
+[fastlane](https://fastlane.tools) toolchain. It integrates nicely with 
 [deliver](https://github.com/KrauseFx/deliver) and allows you to setup new apps without manually interacting with the Apple Portal.
 
 <h3 style="text-align: center; font-size: 40px;">

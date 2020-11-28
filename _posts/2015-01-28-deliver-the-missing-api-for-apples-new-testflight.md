@@ -34,7 +34,7 @@ deliver will fetch all information it needs (e.g. bundle identifier, build numbe
 deliver.](https://github.com/KrauseFx/deliver)
 
 If you want a more advanced setup, including a fully working Continuous Deployment solution, which takes screenshots, updates provisioning profiles and creates your push certificate for you, checkout 
-[fastlane](http://fastlane.tools).
+[fastlane](https://fastlane.tools).
 
 <h3 style="text-align: center; font-size: 40px;">
   <a href="https://github.com/KrauseFx/deliver" target="_blank" style="text-decoration: underline;">
