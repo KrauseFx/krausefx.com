@@ -1,4 +1,4 @@
----
+Phuoc Nguyen
 layout: post
 title: Creating perfect App Store Screenshots of your iOS App
 categories: []
