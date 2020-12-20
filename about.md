@@ -51,11 +51,11 @@ meta: {}
 
 <hr style="margin-top: 35px" />
 
-<h2>Personal Photos</h2>
+<!-- <h2>Personal Photos</h2>
 <div class="imageCarousel" id="personalCarousel">
 </div>
 
-<hr />
+<hr /> -->
 
 <h2>Speaking</h2>
 <div class="imageCarousel">
@@ -82,7 +82,7 @@ meta: {}
   </a>
 </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   var url = "https://where-is-felix-today-backend.herokuapp.com/api.json";
 
   var xmlHttp = new XMLHttpRequest();
@@ -112,7 +112,7 @@ meta: {}
   }
   xmlHttp.open("GET", url, true); // true = asynchronous 
   xmlHttp.send(null);
-</script>
+</script> -->
 
 <hr />
 
