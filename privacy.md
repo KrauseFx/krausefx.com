@@ -227,6 +227,16 @@ Third-party SDKs can often easily be **modified** while you download them! Using
 
 ----
 
+## [Detect when an iOS user hits the share button on your website](blog/ios-privacy-safari-share-button)
+
+Mobile Safari notifies the server as soon as the user hits the Share button, telling the website operator that this content will likely be shared somewhere else.
+
+<img src="/assets/posts/safari-share-button.png" width="300" />
+
+## [Read the full blog post](/blog/ios-privacy-safari-share-button)
+
+----
+
 ## [follow.user](/blog/follow-user)
 
 Custom in-app browsers in iOS apps have full access to the web content, including any JavaScript variables, the full HTML DOM and more. This allows apps to steal the user's sessions, passwords, keys and more. 
