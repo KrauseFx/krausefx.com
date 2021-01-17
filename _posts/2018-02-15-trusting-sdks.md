@@ -14,6 +14,8 @@ meta: {}
 
 {% include video-box.html url="https://www.youtube.com/watch?v=BXePggcWpuE" %}
 
+**Update 2020:** [Google Chrome has fixed this issue](https://blog.chromium.org/2020/02/protecting-users-from-insecure.html)
+
 Third-party SDKs can often easily be **modified** while you download them! Using a simple [person-in-the-middle attack](https://wikipedia.org/wiki/Man_in_the_middle_attack), anyone in the same network can insert malicious code into the library, and with that into your application, as a result running in your user's pockets.
 
 **31%** of the most popular closed-source iOS SDKs are vulnerable to this attack, as well as a total of **623 libraries** on CocoaPods. As part of this research I notified the affected parties, and submitted patches to CocoaPods to warn developers and SDK providers.
@@ -167,7 +169,7 @@ Looking at the next SDK, we have a HTTPS encrypted docs page, looking at the scr
 
 ![](/assets/posts/trusting-sdks/image_8.png)
 
-Turns out, the HTTPS based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome ([794830](https://bugs.chromium.org/p/chromium/issues/detail?id=794830)) and Safari ([rdar://36039748](https://openradar.appspot.com/radar?id=5000976083714048)) to warn the user of unencrypted file downloads on HTTPS sites.
+Turns out, the HTTPS based website links to an unencrypted HTTP file, and web browsers don’t warn users in those cases ([some browsers already show a warning if JS/CSS files are downloaded via HTTP](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)). It’s almost impossible for the user to detect that something is going on here, except if they were to actually manually compare the hashes provided. As part of this project, I filed a security report for both Google Chrome ([794830](https://bugs.chromium.org/p/chromium/issues/detail?id=794830)) and Safari ([rdar://36039748](https://openradar.appspot.com/radar?id=5000976083714048)) to warn the user of unencrypted file downloads on HTTPS sites. ([This has been resolved by Google Chrome](https://blog.chromium.org/2020/02/protecting-users-from-insecure.html))
 
 ### [AWS SDK](https://aws.amazon.com/mobile/sdk/)
 
