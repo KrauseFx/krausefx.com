@@ -9,3 +9,7 @@ group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
 end
 
+group :development do
+  gem "webrick"
+end
+
