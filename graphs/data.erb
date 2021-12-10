@@ -1,0 +1,78 @@
+---
+layout: page
+title: Data
+categories: []
+tags: []
+status: publish
+type: page
+published: true
+meta: {}
+---
+
+<h1>My whole life in a single database</h1>
+
+As part of the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet) I've started back in 2019, I started collecting all kinds of metrics about my life.
+Every single day for the last 2.5 years I've tracked over 100 different data points of my life.
+
+I haven't yet had the time to analyze all the outcomes, but felt like I already have some very interesting graphs I'd like to share here:
+
+Currently, I have <b>335,000 data points</b>, with the biggest data sources being
+
+- Foursquare Swarm: 125,000
+- RescueTime: 120,000
+- Manually entered: 63,000
+- Manually entered time ranges: 10,000
+- Weather API: 16,000
+- Apple Health: 1,000
+
+<div id="graphs-container">
+  <% all_data.each do |entry| %>
+    <div class="graphs-entry">
+      <h3><%= entry["title"] %></h3>
+      <p class="graph-description">
+        <%= entry["description"] %>
+      </p>
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        <%= entry["source"].join(", ") %>
+      </span>
+
+      <% img_url = "graphs/screens/#{entry["id"]}.png" %>
+      <a href="<%= img_url %>" target="_blank">
+        <img src="<%= img_url %>" alt="<%= entry["title"] %>" />
+      </a>
+
+      
+    </div>
+  <% end %>
+</div>
+
+<style type="text/css">
+  #graphs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .graphs-entry {
+    width: 400px;
+    margin: 10px;
+    border: 2px solid #e4e7ef;
+    border-radius: 9px;
+    padding: 20px;
+  }
+  .graphs-entry > h3 {
+    font-size: 140%;
+  }
+  .graph-description {
+    color: #555;
+  }
+  .graph-sources-header {
+    color: #555;
+    font-weight: bold;
+  }
+  .graph-sources {
+    color: #777; 
+  }
+</style>

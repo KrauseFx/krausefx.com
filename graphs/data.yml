@@ -1,0 +1,25 @@
+- id: "swarm-places-categories"
+  title: "Categories of places visited"
+  source: 
+  - "Swarm"
+  description: "Each Swarm check-in comes with a place-category associated. This graph shows the number of check-ins per category."
+  instructions: "Details here on how to create a screenshot"
+- id: "swarm-airport-checkins"
+  title: "Airport Visits"
+  source: 
+  - "Swarm"
+  description: "Visualization of when I visited an airport. This clearly shows the effect of COVID starting March 2020"
+  instructions: "Details here on how to create a screenshot"
+- id: "mood"
+  title: "Mood"
+  source: 
+  - "Manual"
+  description: "How I felt on average, grouped by month. Filled out the question four times a day"
+  instructions: "Details here on how to create a screenshot"
+- id: "graphs"
+  title: "Lockdown days per year"
+  source: 
+  - "Manual"
+  description: "Number of days I spent in a full lockdown. Those days all happened in Austria, however I escaped the lockdowns a few times by spending time in the US"
+  instructions: "Details here on how to create a screenshot"
+
