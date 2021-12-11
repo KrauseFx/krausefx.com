@@ -210,6 +210,12 @@ meta: {}
       height: 180px;
       width: 180px;
     }
+    #leftCol > img { 
+      width: 40%;
+    }
+    #leftCol > p {
+      display: none;
+    }
   }
   @media screen and (min-width: 800px) {
     #leftCol {
