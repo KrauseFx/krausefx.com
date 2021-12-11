@@ -44,7 +44,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <img src="graphs/screens/swarm-places-categories.png" alt="Categories of places visited" />
       </a>
 
-      
+      <span class="graph-date">Last updated on 2021-12-11</span>
     </div>
   
     <div class="graphs-entry">
@@ -64,7 +64,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <img src="graphs/screens/swarm-airport-checkins.png" alt="Airport Visits" />
       </a>
 
-      
+      <span class="graph-date">Last updated on 2021-12-11</span>
     </div>
   
     <div class="graphs-entry">
@@ -84,7 +84,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <img src="graphs/screens/mood.png" alt="Mood" />
       </a>
 
-      
+      <span class="graph-date">Last updated on 2021-12-11</span>
     </div>
   
     <div class="graphs-entry">
@@ -104,7 +104,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <img src="graphs/screens/graphs.png" alt="Lockdown days per year" />
       </a>
 
-      
+      <span class="graph-date">Last updated on 2021-12-11</span>
     </div>
   
 </div>
@@ -134,5 +134,11 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
   }
   .graph-sources {
     color: #777; 
+  }
+  .graph-date {
+    float: right;
+    color: #777;
+    margin-top: 10px;
+    font-size: 75%;
   }
 </style>

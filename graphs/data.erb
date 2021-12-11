@@ -44,7 +44,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <img src="<%= img_url %>" alt="<%= entry["title"] %>" />
       </a>
 
-      
+      <span class="graph-date">Last updated on <%= File.mtime(img_url).strftime("%Y-%m-%d") %></span>
     </div>
   <% end %>
 </div>
@@ -74,5 +74,11 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
   }
   .graph-sources {
     color: #777; 
+  }
+  .graph-date {
+    float: right;
+    color: #777;
+    margin-top: 10px;
+    font-size: 75%;
   }
 </style>
