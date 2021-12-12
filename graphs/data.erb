@@ -27,11 +27,21 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
 
 <div id="graphs-container">
   <% all_data.each do |entry| %>
+    <% img_url = "graphs/screens/#{entry["id"]}.png" %>
+    <% raise "Screenshot '#{img_url}' doesn't exist" unless File.exist?(img_url) %>
+
     <div class="graphs-entry">
       <h3><%= entry["title"] %></h3>
       <p class="graph-description">
         <%= entry["description"] %>
       </p>
+
+      <ul>
+        <% entry["takeaways"].each do |takeaway| %>
+          <li><%= takeaway%></li>
+        <% end %>
+      </ul>
+
       <span class="graph-sources">
         <span class="graph-sources-header">
           Sources: 
@@ -39,12 +49,11 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <%= entry["source"].join(", ") %>
       </span>
 
-      <% img_url = "graphs/screens/#{entry["id"]}.png" %>
-      <a href="<%= img_url %>" target="_blank">
+      <a href="<%= img_url %>" target="_blank" class="image-link">
         <img src="<%= img_url %>" alt="<%= entry["title"] %>" />
       </a>
 
-      <span class="graph-date">Last updated on <%= File.mtime(img_url).strftime("%Y-%m-%d") %></span>
+      <span class="graph-date"><%= entry["years"] %> years of data - Last updated on <%= File.mtime(img_url).strftime("%Y-%m-%d") %></span>
     </div>
   <% end %>
 </div>
@@ -62,6 +71,9 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
     border-radius: 9px;
     padding: 20px;
   }
+  .graphs-entry > ul > li {
+    color: #555;
+  }
   .graphs-entry > h3 {
     font-size: 140%;
   }
@@ -73,12 +85,16 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
     font-weight: bold;
   }
   .graph-sources {
-    color: #777; 
+    color: #777;
   }
   .graph-date {
     float: right;
     color: #777;
     margin-top: 10px;
     font-size: 75%;
+    margin-bottom: -10px;
+  }
+  .image-link > img {
+    padding-top: 10px;
   }
 </style>

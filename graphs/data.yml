@@ -1,25 +1,48 @@
-- id: "swarm-places-categories"
-  title: "Categories of places visited"
+- id: "jetlovers-stats"
+  title: "Flying Stats - General"
   source: 
+  - "JetLovers"
   - "Swarm"
-  description: "Each Swarm check-in comes with a place-category associated. This graph shows the number of check-ins per category."
-  instructions: "Details here on how to create a screenshot"
-- id: "swarm-airport-checkins"
-  title: "Airport Visits"
+  years: 7
+  description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers."
+  takeaways:
+  - This clearly shows the impact of COVID starting 2020
+  - Sunday has been my "commute" day, flying between San Francisco, New York City and Vienna
+  instructions: "Log into https://www.jetlovers.com/"
+- id: "jetlovers-top"
+  title: "Flying Stats - Top"
   source: 
+  - "JetLovers"
   - "Swarm"
-  description: "Visualization of when I visited an airport. This clearly shows the effect of COVID starting March 2020"
-  instructions: "Details here on how to create a screenshot"
-- id: "mood"
-  title: "Mood"
-  source: 
-  - "Manual"
-  description: "How I felt on average, grouped by month. Filled out the question four times a day"
-  instructions: "Details here on how to create a screenshot"
-- id: "graphs"
-  title: "Lockdown days per year"
-  source: 
-  - "Manual"
-  description: "Number of days I spent in a full lockdown. Those days all happened in Austria, however I escaped the lockdowns a few times by spending time in the US"
-  instructions: "Details here on how to create a screenshot"
+  years: 7
+  description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers."
+  takeaways:
+  - Frankfurt - Vienna was the flight connecting me with most US airports
+  - Germany is high up on the list due to layovers, even though I didn't spend time there
+  instructions: "Log into https://www.jetlovers.com/"
+
+# - id: "swarm-places-categories"
+#   title: "Categories of places visited"
+#   source: 
+#   - "Swarm"
+#   description: "Each Swarm check-in comes with a place-category associated. This graph shows the number of check-ins per category."
+#   instructions: "Details here on how to create a screenshot"
+# - id: "swarm-airport-checkins"
+#   title: "Airport Visits"
+#   source: 
+#   - "Swarm"
+#   description: "Visualization of when I visited an airport. This clearly shows the effect of COVID starting March 2020"
+#   instructions: "Details here on how to create a screenshot"
+# - id: "mood"
+#   title: "Mood"
+#   source: 
+#   - "Manual"
+#   description: "How I felt on average, grouped by month. Filled out the question four times a day"
+#   instructions: "Details here on how to create a screenshot"
+# - id: "graphs"
+#   title: "Lockdown days per year"
+#   source: 
+#   - "Manual"
+#   description: "Number of days I spent in a full lockdown. Those days all happened in Austria, however I escaped the lockdowns a few times by spending time in the US"
+#   instructions: "Details here on how to create a screenshot"
 
