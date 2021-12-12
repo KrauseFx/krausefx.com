@@ -27,84 +27,66 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
 
 <div id="graphs-container">
   
+    
+    
+
     <div class="graphs-entry">
-      <h3>Categories of places visited</h3>
+      <h3>Flying Stats - General</h3>
       <p class="graph-description">
-        Each Swarm check-in comes with a place-category associated. This graph shows the number of check-ins per category.
+        All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers.
       </p>
+
+      <ul>
+        
+          <li>This clearly shows the impact of COVID starting 2020</li>
+        
+          <li>Sunday has been my "commute" day, flying between San Francisco, New York City and Vienna</li>
+        
+      </ul>
+
       <span class="graph-sources">
         <span class="graph-sources-header">
           Sources: 
         </span>
-        Swarm
+        JetLovers, Swarm
       </span>
 
-      
-      <a href="graphs/screens/swarm-places-categories.png" target="_blank">
-        <img src="graphs/screens/swarm-places-categories.png" alt="Categories of places visited" />
+      <a href="graphs/screens/jetlovers-stats.png" target="_blank" class="image-link">
+        <img src="graphs/screens/jetlovers-stats.png" alt="Flying Stats - General" />
       </a>
 
-      <span class="graph-date">Last updated on 2021-12-11</span>
+      <span class="graph-date">7 years of data - Last updated on 2021-12-11</span>
     </div>
   
+    
+    
+
     <div class="graphs-entry">
-      <h3>Airport Visits</h3>
+      <h3>Flying Stats - Top</h3>
       <p class="graph-description">
-        Visualization of when I visited an airport. This clearly shows the effect of COVID starting March 2020
+        All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers.
       </p>
+
+      <ul>
+        
+          <li>Frankfurt - Vienna was the flight connecting me with most US airports</li>
+        
+          <li>Germany is high up on the list due to layovers, even though I didn't spend time there</li>
+        
+      </ul>
+
       <span class="graph-sources">
         <span class="graph-sources-header">
           Sources: 
         </span>
-        Swarm
+        JetLovers, Swarm
       </span>
 
-      
-      <a href="graphs/screens/swarm-airport-checkins.png" target="_blank">
-        <img src="graphs/screens/swarm-airport-checkins.png" alt="Airport Visits" />
+      <a href="graphs/screens/jetlovers-top.png" target="_blank" class="image-link">
+        <img src="graphs/screens/jetlovers-top.png" alt="Flying Stats - Top" />
       </a>
 
-      <span class="graph-date">Last updated on 2021-12-11</span>
-    </div>
-  
-    <div class="graphs-entry">
-      <h3>Mood</h3>
-      <p class="graph-description">
-        How I felt on average, grouped by month. Filled out the question four times a day
-      </p>
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manual
-      </span>
-
-      
-      <a href="graphs/screens/mood.png" target="_blank">
-        <img src="graphs/screens/mood.png" alt="Mood" />
-      </a>
-
-      <span class="graph-date">Last updated on 2021-12-11</span>
-    </div>
-  
-    <div class="graphs-entry">
-      <h3>Lockdown days per year</h3>
-      <p class="graph-description">
-        Number of days I spent in a full lockdown. Those days all happened in Austria, however I escaped the lockdowns a few times by spending time in the US
-      </p>
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manual
-      </span>
-
-      
-      <a href="graphs/screens/graphs.png" target="_blank">
-        <img src="graphs/screens/graphs.png" alt="Lockdown days per year" />
-      </a>
-
-      <span class="graph-date">Last updated on 2021-12-11</span>
+      <span class="graph-date">7 years of data - Last updated on 2021-12-11</span>
     </div>
   
 </div>
@@ -122,6 +104,9 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
     border-radius: 9px;
     padding: 20px;
   }
+  .graphs-entry > ul > li {
+    color: #555;
+  }
   .graphs-entry > h3 {
     font-size: 140%;
   }
@@ -133,12 +118,16 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
     font-weight: bold;
   }
   .graph-sources {
-    color: #777; 
+    color: #777;
   }
   .graph-date {
     float: right;
     color: #777;
     margin-top: 10px;
     font-size: 75%;
+    margin-bottom: -10px;
+  }
+  .image-link > img {
+    padding-top: 10px;
   }
 </style>
