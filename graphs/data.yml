@@ -9,6 +9,7 @@
   - This clearly shows the impact of COVID starting 2020
   - Sunday has been my "commute" day, flying between San Francisco, New York City and Vienna
   instructions: "Log into https://www.jetlovers.com/"
+  updated: "2021-12-12"
 - id: "jetlovers-top"
   title: "Flying Stats - Top"
   source: 
@@ -20,6 +21,28 @@
   - Frankfurt - Vienna was the flight connecting me with most US airports
   - Germany is high up on the list due to layovers, even though I didn't spend time there
   instructions: "Log into https://www.jetlovers.com/"
+  updated: "2021-12-12"
+- id: "swarm-cities-top"
+  title: "Top Cities (Checkins)"
+  source: "swarm"
+  years: 7
+  description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) at a given city, this is tracked as a single entry"
+  takeaways:
+  instructions: "pie_chart.html"
+  updated: "2021-12-12"
+- id: "swarm-cities-top-years"
+  title: "Top Cities over the years"
+  source: "swarm"
+  years: 7
+  description: "Each check-in at a given city is counted as a single entry, grouped by years"
+  takeaways:
+    - "2016 and 2017 I lived in San Francisco"
+    - "2018 and 2019 I lived in New York City"
+    - "2020 and 2021 I lived in Vienna"
+    - "The more time I spent out of my home country Austria, the more time I actually spent back home in Vienna"
+    - "2020 clearly shows the impact of COVID"
+  instructions: "pie_chart.html"
+  updated: "2021-12-12"
 
 # - id: "swarm-places-categories"
 #   title: "Categories of places visited"
