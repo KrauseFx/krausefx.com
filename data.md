@@ -55,7 +55,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <img src="graphs/screens/jetlovers-stats.png" alt="Flying Stats - General" />
       </a>
 
-      <span class="graph-date">7 years of data - Last updated on 2021-12-11</span>
+      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
   
     
@@ -86,7 +86,71 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <img src="graphs/screens/jetlovers-top.png" alt="Flying Stats - Top" />
       </a>
 
-      <span class="graph-date">7 years of data - Last updated on 2021-12-11</span>
+      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Top Cities (Checkins)</h3>
+      <p class="graph-description">
+        Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) at a given city, this is tracked as a single entry
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        swarm
+      </span>
+
+      <a href="graphs/screens/swarm-cities-top.png" target="_blank" class="image-link">
+        <img src="graphs/screens/swarm-cities-top.png" alt="Top Cities (Checkins)" />
+      </a>
+
+      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Top Cities over the years</h3>
+      <p class="graph-description">
+        Each check-in at a given city is counted as a single entry, grouped by years
+      </p>
+
+      <ul>
+        
+          <li>2016 and 2017 I lived in San Francisco</li>
+        
+          <li>2018 and 2019 I lived in New York City</li>
+        
+          <li>2020 and 2021 I lived in Vienna</li>
+        
+          <li>The more time I spent out of my home country Austria, the more time I actually spent back home in Vienna</li>
+        
+          <li>2020 clearly shows the impact of COVID</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        swarm
+      </span>
+
+      <a href="graphs/screens/swarm-cities-top-years.png" target="_blank" class="image-link">
+        <img src="graphs/screens/swarm-cities-top-years.png" alt="Top Cities over the years" />
+      </a>
+
+      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
   
 </div>

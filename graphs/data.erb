@@ -27,7 +27,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
 
 <div id="graphs-container">
   <% all_data.each do |entry| %>
-    <% img_url = "graphs/screens/#{entry["id"]}.png" %>
+    <% img_url = Dir["graphs/screens/#{entry["id"]}.png"].first %>
     <% raise "Screenshot '#{img_url}' doesn't exist" unless File.exist?(img_url) %>
 
     <div class="graphs-entry">
@@ -37,7 +37,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
       </p>
 
       <ul>
-        <% entry["takeaways"].each do |takeaway| %>
+        <% Array(entry["takeaways"]).each do |takeaway| %>
           <li><%= takeaway%></li>
         <% end %>
       </ul>
@@ -46,14 +46,14 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <span class="graph-sources-header">
           Sources: 
         </span>
-        <%= entry["source"].join(", ") %>
+        <%= Array(entry["source"]).join(", ") %>
       </span>
 
       <a href="<%= img_url %>" target="_blank" class="image-link">
         <img src="<%= img_url %>" alt="<%= entry["title"] %>" />
       </a>
 
-      <span class="graph-date"><%= entry["years"] %> years of data - Last updated on <%= File.mtime(img_url).strftime("%Y-%m-%d") %></span>
+      <span class="graph-date"><%= entry["years"] %> years of data - Last updated on <%= entry["updated"] %></span>
     </div>
   <% end %>
 </div>
