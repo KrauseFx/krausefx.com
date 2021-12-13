@@ -19,7 +19,7 @@ end
 # png crunch all the pngs
 Dir["graphs/screens/*.png"].each do |png|
   puts "Compressing #{png}..."
-  puts `pngquant #{png} --force --output #{png}`
+  puts `pngquant #{png} --force --output #{png} --skip-if-larger`
 end
 
 all_data = YAML.load_file("graphs/data.yml")
