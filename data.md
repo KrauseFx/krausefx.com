@@ -153,6 +153,35 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
   
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Top Categories of Checkins</h3>
+      <p class="graph-description">
+        Each check-in at a given category is tracked, and summed up over the last years
+      </p>
+
+      <ul>
+        
+          <li>In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        swarm
+      </span>
+
+      <a href="graphs/screens/swarm-categories-top.png" target="_blank" class="image-link">
+        <img src="graphs/screens/swarm-categories-top.png" alt="Top Categories of Checkins" />
+      </a>
+
+      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+    </div>
+  
 </div>
 
 <style type="text/css">

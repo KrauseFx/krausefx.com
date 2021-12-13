@@ -43,6 +43,15 @@
     - "2020 clearly shows the impact of COVID"
   instructions: "pie_chart.html"
   updated: "2021-12-12"
+- id: "swarm-categories-top"
+  title: "Top Categories of Checkins"
+  source: "swarm"
+  years: 7
+  description: "Each check-in at a given category is tracked, and summed up over the last years"
+  takeaways:
+    - "In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup"
+  instructions: "pie_chart.html"
+  updated: "2021-12-12"
 
 # - id: "swarm-places-categories"
 #   title: "Categories of places visited"
