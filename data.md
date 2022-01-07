@@ -106,7 +106,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <span class="graph-sources-header">
           Sources: 
         </span>
-        swarm
+        Swarm
       </span>
 
       <a href="graphs/screens/swarm-cities-top.png" target="_blank" class="image-link">
@@ -143,7 +143,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <span class="graph-sources-header">
           Sources: 
         </span>
-        swarm
+        Swarm
       </span>
 
       <a href="graphs/screens/swarm-cities-top-years.png" target="_blank" class="image-link">
@@ -172,7 +172,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         <span class="graph-sources-header">
           Sources: 
         </span>
-        swarm
+        Swarm
       </span>
 
       <a href="graphs/screens/swarm-categories-top.png" target="_blank" class="image-link">
@@ -180,6 +180,113 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
       </a>
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Maximal temperature each day of the year</h3>
+      <p class="graph-description">
+        Historic weather data based on the location I was at on that day based on my Swarm check-ins. Days with no data are rendered as white
+      </p>
+
+      <ul>
+        
+          <li>Summer 2019 I spent in New York City, while 2020 and 2021 I spent in Vienna. The graph shows the summer in NYC to reach higher temperatures</li>
+        
+          <li>Week 36 in 2021 I spent in Iceland, therefore significantly lower temperatures</li>
+        
+          <li>End of November in 2019 I spent in Buenos Aires, therefore way higher temperatures</li>
+        
+          <li>December 2019 I spent in Columbus, Ohio, being the coldest week of the year</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Visual Crossing historic weather data, Swarm
+      </span>
+
+      <a href="graphs/screens/weather-temperature-max.png" target="_blank" class="image-link">
+        <img src="graphs/screens/weather-temperature-max.png" alt="Maximal temperature each day of the year" />
+      </a>
+
+      <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Alcoholic Beverages per day</h3>
+      <p class="graph-description">
+        Alcohol drinks per day. Days with no data are rendered as white
+      </p>
+
+      <ul>
+        
+          <li>Unless there are social obligations, or there is a party, I usually drink 0 alcoholic drinks</li>
+        
+          <li>Friday and Saturday nights are clearly visible on those graphs</li>
+        
+          <li>2021 and summer/winter of 2019 also show the Wednesday night party in Vienna</li>
+        
+          <li>Q2 and Q4 2020 clearly show the COVID lockdowns, as well as Q2 2021</li>
+        
+          <li>Summer of 2021 all bars and dance clubs were open in Vienna</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <a href="graphs/screens/manual-alcohol-intake.png" target="_blank" class="image-link">
+        <img src="graphs/screens/manual-alcohol-intake.png" alt="Alcoholic Beverages per day" />
+      </a>
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Workouts in the gym</h3>
+      <p class="graph-description">
+        Each green square represents a strength-workout in the gym, I try my best to purchase day passes at gyms while traveling
+      </p>
+
+      <ul>
+        
+          <li>During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't track home-workouts</li>
+        
+          <li>In 2021 I tend to work out less often on Sunday, the day I visit my family's place</li>
+        
+          <li>In Q4 2021 I had a cold for a longer time</li>
+        
+          <li>I went from ~50 workouts per year in 2014/2015 to ~200 per year in 2018 - 2021</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <a href="graphs/screens/manual-gym-visits.png" target="_blank" class="image-link">
+        <img src="graphs/screens/manual-gym-visits.png" alt="Workouts in the gym" />
+      </a>
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
 </div>
