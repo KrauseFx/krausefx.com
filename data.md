@@ -51,9 +51,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         JetLovers, Swarm
       </span>
 
-      <a href="graphs/screens/jetlovers-stats.png" target="_blank" class="image-link">
-        <img src="graphs/screens/jetlovers-stats.png" alt="Flying Stats - General" />
-      </a>
+      <img src="graphs/screens/jetlovers-stats.png" class="image-link" alt="Flying Stats - General" onclick="enlargeImage('graphs/screens/jetlovers-stats.png', 'Flying Stats - General')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -82,9 +80,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         JetLovers, Swarm
       </span>
 
-      <a href="graphs/screens/jetlovers-top.png" target="_blank" class="image-link">
-        <img src="graphs/screens/jetlovers-top.png" alt="Flying Stats - Top" />
-      </a>
+      <img src="graphs/screens/jetlovers-top.png" class="image-link" alt="Flying Stats - Top" onclick="enlargeImage('graphs/screens/jetlovers-top.png', 'Flying Stats - Top')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -109,9 +105,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         Swarm
       </span>
 
-      <a href="graphs/screens/swarm-cities-top.png" target="_blank" class="image-link">
-        <img src="graphs/screens/swarm-cities-top.png" alt="Top Cities (Checkins)" />
-      </a>
+      <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Top Cities (Checkins)" onclick="enlargeImage('graphs/screens/swarm-cities-top.png', 'Top Cities (Checkins)')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -146,9 +140,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         Swarm
       </span>
 
-      <a href="graphs/screens/swarm-cities-top-years.png" target="_blank" class="image-link">
-        <img src="graphs/screens/swarm-cities-top-years.png" alt="Top Cities over the years" />
-      </a>
+      <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Top Cities over the years" onclick="enlargeImage('graphs/screens/swarm-cities-top-years.png', 'Top Cities over the years')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -175,9 +167,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         Swarm
       </span>
 
-      <a href="graphs/screens/swarm-categories-top.png" target="_blank" class="image-link">
-        <img src="graphs/screens/swarm-categories-top.png" alt="Top Categories of Checkins" />
-      </a>
+      <img src="graphs/screens/swarm-categories-top.png" class="image-link" alt="Top Categories of Checkins" onclick="enlargeImage('graphs/screens/swarm-categories-top.png', 'Top Categories of Checkins')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -210,9 +200,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         Visual Crossing historic weather data, Swarm
       </span>
 
-      <a href="graphs/screens/weather-temperature-max.png" target="_blank" class="image-link">
-        <img src="graphs/screens/weather-temperature-max.png" alt="Maximal temperature each day of the year" />
-      </a>
+      <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal temperature each day of the year" onclick="enlargeImage('graphs/screens/weather-temperature-max.png', 'Maximal temperature each day of the year')" />
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -239,9 +227,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         Visual Crossing historic weather data, Swarm
       </span>
 
-      <a href="graphs/screens/weather-conditions.png" target="_blank" class="image-link">
-        <img src="graphs/screens/weather-conditions.png" alt="Weather conditions per year" />
-      </a>
+      <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather conditions per year" onclick="enlargeImage('graphs/screens/weather-conditions.png', 'Weather conditions per year')" />
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -276,9 +262,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         Manually
       </span>
 
-      <a href="graphs/screens/manual-alcohol-intake.png" target="_blank" class="image-link">
-        <img src="graphs/screens/manual-alcohol-intake.png" alt="Alcoholic Beverages per day" />
-      </a>
+      <img src="graphs/screens/manual-alcohol-intake.png" class="image-link" alt="Alcoholic Beverages per day" onclick="enlargeImage('graphs/screens/manual-alcohol-intake.png', 'Alcoholic Beverages per day')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -311,9 +295,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         Manually
       </span>
 
-      <a href="graphs/screens/manual-gym-visits.png" target="_blank" class="image-link">
-        <img src="graphs/screens/manual-gym-visits.png" alt="Workouts in the gym" />
-      </a>
+      <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Workouts in the gym" onclick="enlargeImage('graphs/screens/manual-gym-visits.png', 'Workouts in the gym')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -338,20 +320,77 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         Manually
       </span>
 
-      <a href="graphs/screens/manual-living-style-years.png" target="_blank" class="image-link">
-        <img src="graphs/screens/manual-living-style-years.png" alt="Living Style" />
-      </a>
+      <img src="graphs/screens/manual-living-style-years.png" class="image-link" alt="Living Style" onclick="enlargeImage('graphs/screens/manual-living-style-years.png', 'Living Style')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
 </div>
 
+<div id="enlargedImageContainer" onclick="dismissImage()">
+  <a target="_blank" id="enlargedImageLink">
+    <img id="enlargedImage" />
+  </a>
+  <p id="enlargedImageTitle"></p>
+</div>
+
+<script type="text/javascript">
+  function enlargeImage(img, title) {
+    document.getElementById("enlargedImageContainer").style.display = "block";
+    document.getElementById("enlargedImage").src = img;
+    document.getElementById("enlargedImageLink").href = img;
+    document.getElementById("enlargedImageTitle").innerHTML = title;
+  }
+  function dismissImage() {
+    document.getElementById("enlargedImageContainer").style.display = "none";
+  }
+
+  window.addEventListener("keyup", function(e) {
+    if (e.keyCode == 27) { // ESC
+      dismissImage()
+      return true;
+    }
+  }, false);
+</script>
+
 <style type="text/css">
   #graphs-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  #enlargedImageContainer {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%%;
+    width: 100%%;
+    text-align: center;
+    padding-top: 40px;
+  }
+  #enlargedImage {
+    background-color: green;
+    object-fit: contain;
+    max-height: 800px;
+    max-width: 1200px;
+  }
+  @media (max-width: 1200px) {
+    #enlargedImage {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  #enlargedImageTitle {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
   }
   .graphs-entry {
     max-width: 470px;
@@ -383,7 +422,8 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
     font-size: 75%;
     margin-bottom: -10px;
   }
-  .image-link > img {
+  .image-link {
     padding-top: 10px;
+    cursor: pointer;
   }
 </style>
