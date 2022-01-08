@@ -28,7 +28,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
 <div id="graphs-container">
   <% all_data.each do |entry| %>
     <% img_url = Dir["graphs/screens/#{entry["id"]}.png"].first %>
-    <% raise "Screenshot '#{img_url}' doesn't exist" unless File.exist?(img_url) %>
+    <% raise "Screenshot '#{entry["id"]}' doesn't exist" if img_url.nil? %>
 
     <div class="graphs-entry">
       <h3><%= entry["title"] %></h3>

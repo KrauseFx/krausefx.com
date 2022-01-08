@@ -39,7 +39,7 @@
     - "2016 and 2017 I lived in San Francisco"
     - "2018 and 2019 I lived in New York City"
     - "2020 and 2021 I lived in Vienna"
-    - "The more time I spent out of my home country Austria, the more time I actually spent back home in Vienna"
+    - "The longer it's been since I moved away from Austria, the more time I actually spent back home in Austria for visits and vacations"
     - "2020 clearly shows the impact of COVID"
   instructions: "pie_chart.html"
   updated: "2021-12-12"
@@ -50,7 +50,7 @@
   description: "Each check-in at a given category is tracked, and summed up over the last years"
   takeaways:
     - "In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup"
-  instructions: "pie_chart.html"
+  instructions: "pie_chart.html, manually update the svg to replace any cities"
   updated: "2021-12-12"
 - id: "weather-temperature-max"
   title: "Maximal temperature each day of the year"
@@ -93,19 +93,15 @@
     - "I went from ~50 workouts per year in 2014/2015 to ~200 per year in 2018 - 2021"
   instructions: "github_style.html, gym key, added `.keep_if { |a| a[:value] == '1' }` to only render gym days for pre-2018 days"
   updated: "2022-01-01"
+- id: "manual-living-style-years"
+  title: "Living Style"
+  source: 
+  - "Manually"
+  years: 7
+  description: "From late 2017 to early 2020 I lived without a permanent home address, staying at various Airbnbs or taking over a few weeks of a lease from a friend"
+  instructions: "pie_chart.html livingStyle key"
+  updated: "2022-01-01"
 
-# - id: "swarm-places-categories"
-#   title: "Categories of places visited"
-#   source: 
-#   - "Swarm"
-#   description: "Each Swarm check-in comes with a place-category associated. This graph shows the number of check-ins per category."
-#   instructions: "Details here on how to create a screenshot"
-# - id: "swarm-airport-checkins"
-#   title: "Airport Visits"
-#   source: 
-#   - "Swarm"
-#   description: "Visualization of when I visited an airport. This clearly shows the effect of COVID starting March 2020"
-#   instructions: "Details here on how to create a screenshot"
 # - id: "mood"
 #   title: "Mood"
 #   source: 
