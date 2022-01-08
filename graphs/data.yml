@@ -66,6 +66,16 @@
     - "December 2019 I spent in Columbus, Ohio, being the coldest week of the year"
   instructions: "github_style.html, set maximal value to 30, screenshot all 3 years"
   updated: "2022-01-01"
+- id: "weather-conditions"
+  title: "Weather conditions per year"
+  source: 
+  - "Visual Crossing historic weather data"
+  - "Swarm"
+  years: 3
+  description: "Historic weather data based on the location I was at on that day based on my Swarm check-ins."
+  takeaways:
+    - "2019 I experienced more cloudy weather than the following years"
+  updated: "2022-01-01"
 - id: "manual-alcohol-intake"
   title: "Alcoholic Beverages per day"
   source: 
