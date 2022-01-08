@@ -133,7 +133,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
         
           <li>2020 and 2021 I lived in Vienna</li>
         
-          <li>The more time I spent out of my home country Austria, the more time I actually spent back home in Vienna</li>
+          <li>The longer it's been since I moved away from Austria, the more time I actually spent back home in Austria for visits and vacations</li>
         
           <li>2020 clearly shows the impact of COVID</li>
         
@@ -284,6 +284,33 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
 
       <a href="graphs/screens/manual-gym-visits.png" target="_blank" class="image-link">
         <img src="graphs/screens/manual-gym-visits.png" alt="Workouts in the gym" />
+      </a>
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Living Style</h3>
+      <p class="graph-description">
+        From late 2017 to early 2020 I lived without a permanent home address, staying at various Airbnbs or taking over a few weeks of a lease from a friend
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <a href="graphs/screens/manual-living-style-years.png" target="_blank" class="image-link">
+        <img src="graphs/screens/manual-living-style-years.png" alt="Living Style" />
       </a>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
