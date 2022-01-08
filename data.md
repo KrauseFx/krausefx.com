@@ -221,6 +221,35 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
     
 
     <div class="graphs-entry">
+      <h3>Weather conditions per year</h3>
+      <p class="graph-description">
+        Historic weather data based on the location I was at on that day based on my Swarm check-ins.
+      </p>
+
+      <ul>
+        
+          <li>2019 I experienced more cloudy weather than the following years</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Visual Crossing historic weather data, Swarm
+      </span>
+
+      <a href="graphs/screens/weather-conditions.png" target="_blank" class="image-link">
+        <img src="graphs/screens/weather-conditions.png" alt="Weather conditions per year" />
+      </a>
+
+      <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
       <h3>Alcoholic Beverages per day</h3>
       <p class="graph-description">
         Alcohol drinks per day. Days with no data are rendered as white
