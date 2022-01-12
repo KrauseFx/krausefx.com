@@ -377,7 +377,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
   #enlargedImage {
     background-color: green;
     object-fit: contain;
-    max-height: 800px;
+    max-height: calc(100% - 80px);
     max-width: 1200px;
   }
   @media (max-width: 1200px) {
