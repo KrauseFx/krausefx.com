@@ -111,17 +111,3 @@
   description: "From late 2017 to early 2020 I lived without a permanent home address, staying at various Airbnbs or taking over a few weeks of a lease from a friend"
   instructions: "pie_chart.html livingStyle key"
   updated: "2022-01-01"
-
-# - id: "mood"
-#   title: "Mood"
-#   source: 
-#   - "Manually"
-#   description: "How I felt on average, grouped by month. Filled out the question four times a day"
-#   instructions: "Details here on how to create a screenshot"
-# - id: "graphs"
-#   title: "Lockdown days per year"
-#   source: 
-#   - "Manually"
-#   description: "Number of days I spent in a full lockdown. Those days all happened in Austria, however I escaped the lockdowns a few times by spending time in the US"
-#   instructions: "Details here on how to create a screenshot"
-
