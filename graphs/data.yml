@@ -1,0 +1,113 @@
+- id: "jetlovers-stats"
+  title: "Flying Stats - General"
+  source: 
+  - "JetLovers"
+  - "Swarm"
+  years: 7
+  description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers."
+  takeaways:
+  - This clearly shows the impact of COVID starting 2020
+  - Sunday has been my "commute" day, flying between San Francisco, New York City and Vienna
+  instructions: "Log into https://www.jetlovers.com/"
+  updated: "2021-12-12"
+- id: "jetlovers-top"
+  title: "Flying Stats - Top"
+  source: 
+  - "JetLovers"
+  - "Swarm"
+  years: 7
+  description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers."
+  takeaways:
+  - Frankfurt - Vienna was the flight connecting me with most US airports
+  - Germany is high up on the list due to layovers, even though I didn't spend time there
+  instructions: "Log into https://www.jetlovers.com/"
+  updated: "2021-12-12"
+- id: "swarm-cities-top"
+  title: "Top Cities (Checkins)"
+  source: "Swarm"
+  years: 7
+  description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) at a given city, this is tracked as a single entry"
+  takeaways:
+  instructions: "pie_chart.html"
+  updated: "2021-12-12"
+- id: "swarm-cities-top-years"
+  title: "Top Cities over the years"
+  source: "Swarm"
+  years: 7
+  description: "Each check-in at a given city is counted as a single entry, grouped by years"
+  takeaways:
+    - "2016 and 2017 I lived in San Francisco"
+    - "2018 and 2019 I lived in New York City"
+    - "2020 and 2021 I lived in Vienna"
+    - "The longer it's been since I moved away from Austria, the more time I actually spent back home in Austria for visits and vacations"
+    - "2020 clearly shows the impact of COVID"
+  instructions: "pie_chart.html"
+  updated: "2021-12-12"
+- id: "swarm-categories-top"
+  title: "Top Categories of Checkins"
+  source: "Swarm"
+  years: 7
+  description: "Each check-in at a given category is tracked, and summed up over the last years"
+  takeaways:
+    - "In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup"
+  instructions: "pie_chart.html, manually update the svg to replace any cities"
+  updated: "2021-12-12"
+- id: "weather-temperature-max"
+  title: "Maximal temperature each day of the year"
+  source: 
+  - "Visual Crossing historic weather data"
+  - "Swarm"
+  years: 3
+  description: "Historic weather data based on the location I was at on that day based on my Swarm check-ins. Days with no data are rendered as white"
+  takeaways:
+    - "Summer 2019 I spent in New York City, while 2020 and 2021 I spent in Vienna. The graph shows the summer in NYC to reach higher temperatures"
+    - "Week 36 in 2021 I spent in Iceland, therefore significantly lower temperatures"
+    - "End of November in 2019 I spent in Buenos Aires, therefore way higher temperatures"
+    - "December 2019 I spent in Columbus, Ohio, being the coldest week of the year"
+  instructions: "github_style.html, set maximal value to 30, screenshot all 3 years"
+  updated: "2022-01-01"
+- id: "weather-conditions"
+  title: "Weather conditions per year"
+  source: 
+  - "Visual Crossing historic weather data"
+  - "Swarm"
+  years: 3
+  description: "Historic weather data based on the location I was at on that day based on my Swarm check-ins."
+  takeaways:
+    - "2019 I experienced more cloudy weather than the following years"
+  updated: "2022-01-01"
+- id: "manual-alcohol-intake"
+  title: "Alcoholic Beverages per day"
+  source: 
+  - "Manually"
+  years: 2.5
+  description: "Alcohol drinks per day. Days with no data are rendered as white"
+  takeaways:
+    - "Unless there are social obligations, or there is a party, I usually drink 0 alcoholic drinks"
+    - "Friday and Saturday nights are clearly visible on those graphs"
+    - "2021 and summer/winter of 2019 also show the Wednesday night party in Vienna"
+    - "Q2 and Q4 2020 clearly show the COVID lockdowns, as well as Q2 2021"
+    - "Summer of 2021 all bars and dance clubs were open in Vienna"
+  instructions: "github_style.html, alcoholIntake key"
+  updated: "2022-01-01"
+- id: "manual-gym-visits"
+  title: "Workouts in the gym"
+  source: 
+  - "Manually"
+  years: 7
+  description: "Each green square represents a strength-workout in the gym, I try my best to purchase day passes at gyms while traveling"
+  takeaways:
+    - "During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't track home-workouts"
+    - "In 2021 I tend to work out less often on Sunday, the day I visit my family's place"
+    - "In Q4 2021 I had a cold for a longer time"
+    - "I went from ~50 workouts per year in 2014/2015 to ~200 per year in 2018 - 2021"
+  instructions: "github_style.html, gym key, added `.keep_if { |a| a[:value] == '1' }` to only render gym days for pre-2018 days"
+  updated: "2022-01-01"
+- id: "manual-living-style-years"
+  title: "Living Style"
+  source: 
+  - "Manually"
+  years: 7
+  description: "From late 2017 to early 2020 I lived without a permanent home address, staying at various Airbnbs or taking over a few weeks of a lease from a friend"
+  instructions: "pie_chart.html livingStyle key"
+  updated: "2022-01-01"

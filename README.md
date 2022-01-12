@@ -6,3 +6,11 @@ To run the server locally:
 - `bundle install`
 - `bundle exec jekyll serve`
 - Open [http://127.0.0.1:4000](http://127.0.0.1:4000)
+
+## Update data & graphs
+
+Update the entries in `./data/data.yml`, and then run
+
+```
+bundle exec ruby graphs/update.rb
+```
