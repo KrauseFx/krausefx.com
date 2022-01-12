@@ -12,18 +12,37 @@ meta: {}
 <h1>My whole life in a single database</h1>
 
 As part of the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet) I've started back in 2019, I started collecting all kinds of metrics about my life.
-Every single day for the last 2.5 years I've tracked over 100 different data points of my life.
+Every single day for the last 2.5 years I've tracked over 100 different data types of my life.
 
-I haven't yet had the time to analyze all the outcomes, but felt like I already have some very interesting graphs I'd like to share here:
+I haven't yet had the time to analyze all the outcomes, but felt like I already have some very interesting graphs I'd like to share here.
 
-Currently, I have <b>335,000 data points</b>, with the biggest data sources being
+Currently, I have <b>~370,000 data points</b>, with the biggest data sources being:
 
-- Foursquare Swarm: 125,000
-- RescueTime: 120,000
-- Manually entered: 63,000
-- Manually entered time ranges: 10,000
-- Weather API: 16,000
-- Apple Health: 1,000
+<table>
+  <tr><th>Data Source</th><th>Number of data entries</th><th>Type of data</th></tr>
+  <tr><td>RescueTime</td><td>150,000</td><td>Daily computer usage</td></tr>
+  <tr><td>Foursquare Swarm</td><td>125,000</td><td>Location and POI data</td></tr>
+  <tr><td>Manually entered</td><td>63,000</td><td>Fitness, mood, socializing, productivity</td></tr>
+  <tr><td>Manually entered time ranges</td><td>10,000</td><td>Occupation, lockdown status, home setup</td></tr>
+  <tr><td>Weather API</td><td>16,000</td><td>Temperature, rain, sunlight, wind, air pressure</td></tr>
+  <tr><td>Apple Health</td><td>1,000</td><td>Steps data</td></tr>
+</table>
+
+This project has 3 components:
+
+<b>◦ Database</b>
+
+A timestamp-based key-value database of all data entries powered by Postgres. This allows me to add and remove questions on-the-fly.
+
+<img src="graphs/assets/fxlifesheet-database.png">
+
+<b>◦ Data Inputs</b>
+
+Multiple times a day, I manually answer questions [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) sends me via a Telegram bot. The answers' order is randomized.
+
+<b>◦ Data Visualizations</b>
+
+After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/).
 
 <div id="graphs-container">
   
@@ -358,6 +377,7 @@ Currently, I have <b>335,000 data points</b>, with the biggest data sources bein
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 30px;
   }
   #enlargedImageContainer {
     position: fixed;
