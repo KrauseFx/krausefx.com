@@ -11,5 +11,6 @@ end
 
 group :development do
   gem "webrick"
+  gem "pry"
 end
 
