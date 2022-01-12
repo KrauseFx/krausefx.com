@@ -38,7 +38,7 @@ A timestamp-based key-value database of all data entries powered by Postgres. Th
 
 <b>◦ Data Inputs</b>
 
-Multiple times a day, I manually answer questions [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) sends me via a Telegram bot. The answers' order is randomized.
+Multiple times a day, I manually answer questions [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) sends me via a Telegram bot.
 
 <b>◦ Data Visualizations</b>
 
