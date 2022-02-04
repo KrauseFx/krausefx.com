@@ -541,6 +541,7 @@ After having tried various tools available to visualize, I ended up writing my o
   }
   #currentLocationMap {
     width: 100%;
+    background-position: center !important;
     background-size: cover !important;
     height: 350px;
   }
