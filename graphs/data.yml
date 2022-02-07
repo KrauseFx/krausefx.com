@@ -186,3 +186,25 @@
   - 95% less likely to be a day in lockdown
   updated: "2022-01-01"
   instructions: "Normal group by"
+- id: "happy-mood-entries-buckets"
+  title: "Days where I tracked my mood to be very excited/happy"
+  years: 2.5
+  source:
+  - "Manually"
+  description: "On days where I tracked my mood to be very excited/happy, the following other factors were affected"
+  takeaways:
+  - Significantly more likely to be a day where I went out of my comfort zone
+  - Significantly more likely to have medidated that day
+  - 70% more likely to have taken a cold shower
+  - 60% more likely to have worked on interrelated technical challenges
+  - 60% more time spent reading or listening to audio books
+  - 50% more likely to have learned something new that day
+  - 50% more excited about what's ahead in the future
+  - 40% more likely to have hit the gym that day
+  - 30% more likely to have eaten veggies
+  - 25% warmer
+  - 20% more computer use
+  - 25% less alcoholic beverages
+  - 35% less likely to be a weekend
+  updated: "2022-01-01"
+  instructions: "Normal group by, mood > 4"
