@@ -48,7 +48,8 @@ meta: {}
     // Render today's metadata
     document.getElementById("current-weight").innerHTML = 
       (otherFxLifeData["weight"]["value"] * 0.453592).toFixed(1) + " kg / " +
-      (otherFxLifeData["weight"]["value"]).toFixed(1) + " lbs (" + daysAgo(new Date(otherFxLifeData["weight"]["time"])) + ")"
+      (otherFxLifeData["weight"]["value"]).toFixed(1) + " lbs"
+    document.getElementById("current-weight-time").innerHTML = "(" + daysAgo(new Date(otherFxLifeData["weight"]["time"])) + ")"
     document.getElementById("current-sleep-duration").innerHTML =
       "Slept " + otherFxLifeData["sleepDurationWithings"]["value"] + " hours tonight"
 
@@ -81,7 +82,7 @@ meta: {}
   <h3 id="isMovingContainer">Felix is currently heading to <b id="nextCityB"></b></h3>
   <h4 id="nextCityContainer">Leaving for <span id="nextCityText"></span> <span id="nextCityTime"></span></h4>
 
-  <p id="current-weight" />
+  <p><span id="current-weight" class="span-key"></span> <span id="current-weight-time" class="span-value"></span></p>
   <p id="current-sleep-duration" />
   <p><a href="https://whereisfelix.today">More real-time data</a></p>
 </div>
@@ -575,5 +576,9 @@ After having tried various tools available to visualize, I ended up writing my o
     margin-bottom: 25px;
     padding-bottom: 10px;
     margin-top: -33px;
+  }
+  #realTimeDataDiv > p > span.span-value {
+    color: #666;
+    font-size: 90%;
   }
 </style>
