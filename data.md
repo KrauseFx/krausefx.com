@@ -558,13 +558,13 @@ After having tried various tools available to visualize, I ended up writing my o
         
           <li>15% more likely to have bad/stressful dreams</li>
         
-          <li>12% colder day on average</li>
+          <li>12% colder weather on average</li>
         
           <li>20% less likely to hit the gym that day</li>
         
           <li>24% less energy</li>
         
-          <li>Overall, it's clear that days with a longer sleep duration tend to be more negative for me. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more, then usually because I'm not feeling too well, or even sick</li>
+          <li>Overall, it's clear that days with a longer sleep duration tend to be significantly worse days. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more, then usually because I'm not feeling too well, or even sick</li>
         
       </ul>
 
@@ -576,6 +576,57 @@ After having tried various tools available to visualize, I ended up writing my o
       </span>
 
       <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage('graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Days with more than 15,000 steps</h3>
+      <p class="graph-description">
+        On days where I walked more than 15,000 steps (I walked an average of 9200 steps a day the last 3 years)
+      </p>
+
+      <ul>
+        
+          <li>60% more time spent with friends in real-life</li>
+        
+          <li>50% warmer temperature that day</li>
+        
+          <li>40% more likely to socialize with friends before going to sleep</li>
+        
+          <li>35% more likely to be a weekend day</li>
+        
+          <li>20% less likely to take a nap that day</li>
+        
+          <li>30% less likely to correctly track my macros (food)</li>
+        
+          <li>30% less time spent in work calls/meetings</li>
+        
+          <li>30% less anxious</li>
+        
+          <li>40% less likely to meditate</li>
+        
+          <li>40% less time spent writing code</li>
+        
+          <li>40% less likely to be a rainy day</li>
+        
+          <li>50% less time spent watching TV</li>
+        
+          <li>95% less likely to be a day in lockdown</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Apple Health
+      </span>
+
+      <img src="graphs/screens/daily-steps-buckets.png" class="image-link" alt="Days with more than 15,000 steps" onclick="enlargeImage('graphs/screens/daily-steps-buckets.png', 'Days with more than 15,000 steps')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
