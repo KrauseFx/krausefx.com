@@ -631,6 +631,57 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Days where I tracked my mood to be very excited/happy</h3>
+      <p class="graph-description">
+        On days where I tracked my mood to be very excited/happy, the following other factors were affected
+      </p>
+
+      <ul>
+        
+          <li>Significantly more likely to be a day where I went out of my comfort zone</li>
+        
+          <li>Significantly more likely to have medidated that day</li>
+        
+          <li>70% more likely to have taken a cold shower</li>
+        
+          <li>60% more likely to have worked on interrelated technical challenges</li>
+        
+          <li>60% more time spent reading or listening to audio books</li>
+        
+          <li>50% more likely to have learned something new that day</li>
+        
+          <li>50% more excited about what's ahead in the future</li>
+        
+          <li>40% more likely to have hit the gym that day</li>
+        
+          <li>30% more likely to have eaten veggies</li>
+        
+          <li>25% warmer</li>
+        
+          <li>20% more computer use</li>
+        
+          <li>25% less alcoholic beverages</li>
+        
+          <li>35% less likely to be a weekend</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be very excited/happy" onclick="enlargeImage('graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be very excited/happy')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
 </div>
 
 <div id="enlargedImageContainer" onclick="dismissImage()">
