@@ -111,3 +111,37 @@
   description: "From late 2017 to early 2020 I lived without a permanent home address, staying at various Airbnbs or taking over a few weeks of a lease from a friend"
   instructions: "pie_chart.html livingStyle key"
   updated: "2022-01-01"
+- id: "weather-temperature-buckets"
+  title: "How does high temperature affect my life?"
+  source:
+  - "Visual Crossing historic weather data"
+  - "Manually"
+  years: 2.5
+  description: "On days with a maximum temperature of more than 26 Celsius (78.8 Fahrenheit), the following other factors were affected"
+  takeaways:
+  - "80% more likely to take a cold shower"
+  - "37% more likely to hit the gym"
+  - "26% more daily steps"
+  - "20% more alcoholic beverages"
+  - "15% more likely to go out in the evening"
+  - "13% less likely to take a nap"
+  - "20% less time in a code editor"
+  - "21% less likely to be sick"
+  - "Generally lower stress/anxiety levels"
+  - "100% less likely to be in a COVID related lockdown"
+  updated: "2022-01-01"
+  instructions: "frontend.html bucket by weatherTemperatureMax by > 25 degrees"
+- id: "healthy"
+  title: "How healthy was I over the years?"
+  source:
+  - "Manually"
+  years: 2.5
+  description: "Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy"
+  takeaways:
+  - During the COVID lockdowns I tend to stay healthier
+  - Usually during excessive traveling I get sick (cold/flu)
+  - Q4 2021 I had bronchitis, however didn't know about it at the time and didn't get proper treatment
+  - Overall I'm quite prone to getting sick (cold/flu)
+  updated: "2022-01-01"
+  instructions: "github_style.html, ['0', 'rgba(255, 0, 0, 0)'],['0.5', 'rgba(200, 0, 0, 0.7)'],['0.6', 'rgba(200, 200, 37, 0.7)'],['0.8', 'rgb(37, 200, 37)'],['1', 'rgb(37, 200, 37)'],"
+  

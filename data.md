@@ -457,6 +457,84 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
+    
+
+    <div class="graphs-entry">
+      <h3>How does high temperature affect my life?</h3>
+      <p class="graph-description">
+        On days with a maximum temperature of more than 26 Celsius (78.8 Fahrenheit), the following other factors were affected
+      </p>
+
+      <ul>
+        
+          <li>80% more likely to take a cold shower</li>
+        
+          <li>37% more likely to hit the gym</li>
+        
+          <li>26% more daily steps</li>
+        
+          <li>20% more alcoholic beverages</li>
+        
+          <li>15% more likely to go out in the evening</li>
+        
+          <li>13% less likely to take a nap</li>
+        
+          <li>20% less time in a code editor</li>
+        
+          <li>21% less likely to be sick</li>
+        
+          <li>Generally lower stress/anxiety levels</li>
+        
+          <li>100% less likely to be in a COVID related lockdown</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Visual Crossing historic weather data, Manually
+      </span>
+
+      <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does high temperature affect my life?" onclick="enlargeImage('graphs/screens/weather-temperature-buckets.png', 'How does high temperature affect my life?')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>How healthy did I feel?</h3>
+      <p class="graph-description">
+        Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy
+      </p>
+
+      <ul>
+        
+          <li>During the COVID lockdowns I tend to stay healthier</li>
+        
+          <li>Usually during excessive traveling I get sick (cold/flu)</li>
+        
+          <li>Q4 2021 I had bronchitis, however didn't know about it at the time and didn't get proper treatment</li>
+        
+          <li>Overall I'm quite prone to getting sick (cold/flu)</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy did I feel?" onclick="enlargeImage('graphs/screens/healthy.png', 'How healthy did I feel?')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
 </div>
 
 <div id="enlargedImageContainer" onclick="dismissImage()">
