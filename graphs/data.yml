@@ -208,3 +208,27 @@
   - 35% less likely to be a weekend
   updated: "2022-01-01"
   instructions: "Normal group by, mood > 4"
+- id: "alcoholic-beverages-buckets"
+  title: "Days with more than 4 alcoholic drinks"
+  years: 2.5
+  source:
+  - "Manually"
+  description: "On days where I had more than 4 alcoholic beverages, the following other factors were affected"
+  takeaways:
+  - 21x more likely to dance
+  - 80% more likely to take a nap
+  - 60% more time spent with friends
+  - 40% warmer
+  - 25% more steps
+  - 10% higher sleeping heart rate that night
+  updated: "2022-01-01"
+  instructions: "Normal group by, alcoholIntake > 3"
+- id: "weight-graph"
+  title: "Weight history"
+  years: 7
+  source:
+  - "Withings Scale"
+  description: "Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently."
+  updated: "2022-02-17"
+  instructions: "https://healthmate.withings.com/22289564/weight/graph"
+    

@@ -682,6 +682,68 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Days with more than 4 alcoholic drinks</h3>
+      <p class="graph-description">
+        On days where I had more than 4 alcoholic beverages, the following other factors were affected
+      </p>
+
+      <ul>
+        
+          <li>21x more likely to dance</li>
+        
+          <li>80% more likely to take a nap</li>
+        
+          <li>60% more time spent with friends</li>
+        
+          <li>40% warmer</li>
+        
+          <li>25% more steps</li>
+        
+          <li>10% higher sleeping heart rate that night</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 alcoholic drinks" onclick="enlargeImage('graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 alcoholic drinks')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Weight history</h3>
+      <p class="graph-description">
+        Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently.
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Withings Scale
+      </span>
+
+      <img src="graphs/screens/weight-graph.png" class="image-link" alt="Weight history" onclick="enlargeImage('graphs/screens/weight-graph.png', 'Weight history')" />
+
+      <span class="graph-date">7 years of data - Last updated on 2022-02-17</span>
+    </div>
+  
 </div>
 
 <div id="enlargedImageContainer" onclick="dismissImage()">
