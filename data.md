@@ -47,11 +47,27 @@ meta: {}
 
     // Render today's metadata
     document.getElementById("current-weight").innerHTML = 
-      (otherFxLifeData["weight"]["value"] * 0.453592).toFixed(1) + " kg / " +
+      "<span class='highlighted'>" + (otherFxLifeData["weight"]["value"] * 0.453592).toFixed(1) + " kg</span>/ " +
       (otherFxLifeData["weight"]["value"]).toFixed(1) + " lbs"
     document.getElementById("current-weight-time").innerHTML = "(" + daysAgo(new Date(otherFxLifeData["weight"]["time"])) + ")"
     document.getElementById("current-sleep-duration").innerHTML =
-      "Slept " + otherFxLifeData["sleepDurationWithings"]["value"] + " hours tonight"
+      "Slept <span class='highlighted'>" + otherFxLifeData["sleepDurationWithings"]["value"] + " hours</span>tonight"
+
+    // Render food data (if available)
+    if (data["todaysMacros"]["kcal"] > 0) {
+      document.getElementById("todaysMacros-kcal").innerHTML = data["todaysMacros"]["kcal"] + " kcal"
+      document.getElementById("total-kcal").innerHTML = otherFxLifeData["macrosCarbs"]["value"] * 4 + otherFxLifeData["macrosProtein"]["value"] * 4 + otherFxLifeData["macrosFat"]["value"] * 9
+
+      document.getElementById("todaysMacros-carbs").innerHTML = data.todaysMacros.carbs + "g carbs"
+      document.getElementById("todaysMacros-protein").innerHTML = data.todaysMacros.protein + "g protein"
+      document.getElementById("todaysMacros-fat").innerHTML = data.todaysMacros.fat + "g fat"
+
+      document.getElementById("macrosCarbs-value").innerHTML = data.otherFxLifeData["macrosCarbs"]["value"]
+      document.getElementById("macrosProtein-value").innerHTML = data.otherFxLifeData["macrosProtein"]["value"]
+      document.getElementById("macrosFat-value").innerHTML = data.otherFxLifeData["macrosFat"]["value"]
+    } else {
+      document.getElementById("food-data-container").style.display = "none"
+    }
 
     document.getElementById("realTimeDataDiv").style.display = "block"
   })
@@ -78,12 +94,31 @@ meta: {}
 <div id="mapsContainerCover"></div>
 
 <div id="realTimeDataDiv">
-  <h3 id="currentCityContainer">Felix is currently in <b id="currentCityB"></b></h3>
-  <h3 id="isMovingContainer">Felix is currently heading to <b id="nextCityB"></b></h3>
+  <h3 id="currentCityContainer">Felix is currently in <b id="currentCityB" class="highlighted"></b></h3>
+  <h3 id="isMovingContainer">Felix is currently heading to <b id="nextCityB" class="highlighted"></b></h3>
   <h4 id="nextCityContainer">Leaving for <span id="nextCityText"></span> <span id="nextCityTime"></span></h4>
 
   <p><span id="current-weight" class="span-key"></span> <span id="current-weight-time" class="span-value"></span></p>
   <p id="current-sleep-duration" />
+
+  <div id="food-container">
+    <h3>Felix ate today</h3>
+    <div class="food-overview">
+      <span>
+        <span class="highlighted" id="todaysMacros-kcal"></span> of <span id="total-kcal"></span> kcal
+      </span>
+        <span>
+        <span class="highlighted" id="todaysMacros-carbs"></span> of <span id="macrosCarbs-value"></span>g
+      </span>
+        <span>
+        <span class="highlighted" id="todaysMacros-protein"></span> of <span id="macrosProtein-value"></span>g
+      </span>
+        <span>
+        <span class="highlighted" id="todaysMacros-fat"></span> of <span id="macrosFat-value"></span>g
+      </span>
+    </div>
+  </div>
+
   <p><a href="https://whereisfelix.today">More real-time data</a></p>
 </div>
 
@@ -580,5 +615,17 @@ After having tried various tools available to visualize, I ended up writing my o
   #realTimeDataDiv > p > span.span-value {
     color: #666;
     font-size: 90%;
+  }
+  .highlighted {
+    font-weight: normal;
+    background-color: rgba(255, 255, 0, 0.35);
+    padding: 5px;
+    margin-left: -5px;
+  }
+  .food-overview > span {
+    margin: 0 30px;
+  }
+  #food-container {
+    margin-bottom: 20px;
   }
 </style>
