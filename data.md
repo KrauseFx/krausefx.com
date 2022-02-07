@@ -506,7 +506,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
 
     <div class="graphs-entry">
-      <h3>How healthy did I feel?</h3>
+      <h3>How healthy was I over the years?</h3>
       <p class="graph-description">
         Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy
       </p>
@@ -530,7 +530,52 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy did I feel?" onclick="enlargeImage('graphs/screens/healthy.png', 'How healthy did I feel?')" />
+      <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the years?" onclick="enlargeImage('graphs/screens/healthy.png', 'How healthy was I over the years?')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>How does longer sleep duration affect my day?</h3>
+      <p class="graph-description">
+        On days where I had a total sleep duration of more than 8.5 hours, the following other factors were affected
+      </p>
+
+      <ul>
+        
+          <li>65% more likely to have cold symptons</li>
+        
+          <li>60% more likely to have headache</li>
+        
+          <li>40% more social media usage</li>
+        
+          <li>30% more likely to be a rainy day</li>
+        
+          <li>20% more likely to be a weekend</li>
+        
+          <li>15% more likely to have bad/stressful dreams</li>
+        
+          <li>12% colder day on average</li>
+        
+          <li>20% less likely to hit the gym that day</li>
+        
+          <li>24% less energy</li>
+        
+          <li>Overall, it's clear that days with a longer sleep duration tend to be more negative for me. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more, then usually because I'm not feeling too well, or even sick</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Withings Scan Watch, Manually
+      </span>
+
+      <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage('graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>

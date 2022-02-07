@@ -144,4 +144,23 @@
   - Overall I'm quite prone to getting sick (cold/flu)
   updated: "2022-01-01"
   instructions: "github_style.html, ['0', 'rgba(255, 0, 0, 0)'],['0.5', 'rgba(200, 0, 0, 0.7)'],['0.6', 'rgba(200, 200, 37, 0.7)'],['0.8', 'rgb(37, 200, 37)'],['1', 'rgb(37, 200, 37)'],"
-  
+- id: "sleep-duration-buckets"
+  title: "How does longer sleep duration affect my day?"
+  years: 2.5
+  source:
+  - "Withings Scan Watch"
+  - "Manually"
+  description: "On days where I had a total sleep duration of more than 8.5 hours, the following other factors were affected"
+  takeaways:
+  - 65% more likely to have cold symptons
+  - 60% more likely to have headache
+  - 40% more social media usage
+  - 30% more likely to be a rainy day
+  - 20% more likely to be a weekend
+  - 15% more likely to have bad/stressful dreams
+  - 12% colder day on average
+  - 20% less likely to hit the gym that day
+  - 24% less energy
+  - Overall, it's clear that days with a longer sleep duration tend to be significantly worse days. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more, then usually because I'm not feeling too well, or even sick
+  updated: "2022-01-01"
+  instructions: "Normal group by"
