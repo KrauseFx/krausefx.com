@@ -158,9 +158,31 @@
   - 30% more likely to be a rainy day
   - 20% more likely to be a weekend
   - 15% more likely to have bad/stressful dreams
-  - 12% colder day on average
+  - 12% colder weather on average
   - 20% less likely to hit the gym that day
   - 24% less energy
   - Overall, it's clear that days with a longer sleep duration tend to be significantly worse days. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more, then usually because I'm not feeling too well, or even sick
+  updated: "2022-01-01"
+  instructions: "Normal group by"
+- id: "daily-steps-buckets"
+  title: "Days with more than 15,000 steps"
+  years: 2.5
+  source:
+  - "Apple Health"
+  description: "On days where I walked more than 15,000 steps (I walked an average of 9200 steps a day the last 3 years)"
+  takeaways:
+  - 60% more time spent with friends in real-life
+  - 50% warmer temperature that day
+  - 40% more likely to socialize with friends before going to sleep
+  - 35% more likely to be a weekend day
+  - 20% less likely to take a nap that day
+  - 30% less likely to correctly track my macros (food)
+  - 30% less time spent in work calls/meetings
+  - 30% less anxious
+  - 40% less likely to meditate
+  - 40% less time spent writing code
+  - 40% less likely to be a rainy day
+  - 50% less time spent watching TV
+  - 95% less likely to be a day in lockdown
   updated: "2022-01-01"
   instructions: "Normal group by"
