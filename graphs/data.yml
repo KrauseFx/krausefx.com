@@ -223,14 +223,30 @@
   - 10% higher sleeping heart rate that night
   updated: "2022-01-01"
   instructions: "Normal group by, alcoholIntake > 3"
-- id: "weight-graph"
-  title: "Weight history"
-  years: 7
+- id: "weight-graph-1"
+  title: "Weight history of 8 years"
+  years: 9
   source:
   - "Withings Scale"
   description: "Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently."
+  takeaways:
+  - Lowest recorded weight was 69kg/152lbs in 2014 (age 20)
+  - Highest recorded weight was 89.8kg/198lbs in 2021 (age 27)
+  - Meaning, on the same height of 193cm (6"4), I gained 20kg (44lbs) while staying under 12% body fat
   updated: "2022-02-17"
   instructions: "https://healthmate.withings.com/22289564/weight/graph"
+- id: "weight-graph-2"
+  title: "Bulk & Cut Phase visualized"
+  years: 1
+  source:
+  - "Withings Scale"
+  - "weightgrapher.com"
+  description: "I usually have slow bulk & cut phases, where I gain and lose weight at a controlled speed, combined with tracking my meals."
+  takeaways:
+  - I only track my weight if I didn't drink alcohol the night before, and after getting a full night's sleep, since otherwise the weight fluctuates a lot
+  - Generally, you can pretty much calculate your weight on a certain date, if you consistently track your meals, and correctly calculated your macros
+  updated: "2022-01-01"
+  instructions: "http://www.weightgrapher.com/graphs"
 - id: "air-quality"
   title: "Air Quality in various rooms"
   years: 1

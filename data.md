@@ -723,12 +723,18 @@ After having tried various tools available to visualize, I ended up writing my o
     
 
     <div class="graphs-entry">
-      <h3>Weight history</h3>
+      <h3>Weight history of 8 years</h3>
       <p class="graph-description">
         Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently.
       </p>
 
       <ul>
+        
+          <li>Lowest recorded weight was 69kg/152lbs in 2014 (age 20)</li>
+        
+          <li>Highest recorded weight was 89.8kg/198lbs in 2021 (age 27)</li>
+        
+          <li>Meaning, on the same height of 193cm (6"4), I gained 20kg (44lbs) while staying under 12% body fat</li>
         
       </ul>
 
@@ -739,9 +745,38 @@ After having tried various tools available to visualize, I ended up writing my o
         Withings Scale
       </span>
 
-      <img src="graphs/screens/weight-graph.png" class="image-link" alt="Weight history" onclick="enlargeImage('graphs/screens/weight-graph.png', 'Weight history')" />
+      <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight history of 8 years" onclick="enlargeImage('graphs/screens/weight-graph-1.png', 'Weight history of 8 years')" />
 
-      <span class="graph-date">7 years of data - Last updated on 2022-02-17</span>
+      <span class="graph-date">9 years of data - Last updated on 2022-02-17</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Bulk & Cut Phase visualized</h3>
+      <p class="graph-description">
+        I usually have slow bulk & cut phases, where I gain and lose weight at a controlled speed, combined with tracking my meals.
+      </p>
+
+      <ul>
+        
+          <li>I only track my weight if I didn't drink alcohol the night before, and after getting a full night's sleep, since otherwise the weight fluctuates a lot</li>
+        
+          <li>Generally, you can pretty much calculate your weight on a certain date, if you consistently track your meals, and correctly calculated your macros</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Withings Scale, weightgrapher.com
+      </span>
+
+      <img src="graphs/screens/weight-graph-2.png" class="image-link" alt="Bulk & Cut Phase visualized" onclick="enlargeImage('graphs/screens/weight-graph-2.png', 'Bulk & Cut Phase visualized')" />
+
+      <span class="graph-date">1 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
