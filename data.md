@@ -564,7 +564,7 @@ After having tried various tools available to visualize, I ended up writing my o
         
           <li>24% less energy</li>
         
-          <li>Overall, it's clear that days with a longer sleep duration tend to be significantly worse days. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more, then usually because I'm not feeling too well, or even sick</li>
+          <li>Overall, it's clear that days with a longer sleep duration tend to be significantly worse days. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more than usually because I'm not feeling too well, or even sick</li>
         
       </ul>
 
@@ -742,6 +742,43 @@ After having tried various tools available to visualize, I ended up writing my o
       <img src="graphs/screens/weight-graph.png" class="image-link" alt="Weight history" onclick="enlargeImage('graphs/screens/weight-graph.png', 'Weight history')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-02-17</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Air Quality in various rooms</h3>
+      <p class="graph-description">
+        I used the Awair Element at home in Vienna, in every room over multiple days
+      </p>
+
+      <ul>
+        
+          <li>Overall, the air quality in Vienna is excellent. Just opening the windows for a few minutes is enough to get a 100% air score</li>
+        
+          <li>The smaller the room, the more difficult it is to keep the CO2 levels low</li>
+        
+          <li>The only room where I'm still struggling to keep the CO2 levels low is my bedroom, which is small, and doesn't offer any ventilation. Keeping the doors open mostly solves the high CO2 levels, however comes with other downsides like more light</li>
+        
+          <li>Probably obvious for many, but I didn't realize ACs don't transport any air into the room, but just moves it around</li>
+        
+          <li>Opening the windows for a longer time in winter will cause low humidity and low temperatures, so it's often not a good option</li>
+        
+          <li>I didn't learn anything meaningful from the 'Chemicals' and 'PM2.5' graphs</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Awair
+      </span>
+
+      <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage('graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
+
+      <span class="graph-date">1 years of data - Last updated on 2022-01-01</span>
     </div>
   
 </div>
