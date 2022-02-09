@@ -74,6 +74,18 @@
   years: 7
   description: "Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered."
   updated: "2022-01-01"
+- id: "daily-steps"
+  title: "Average daily steps over time"
+  years: 8
+  source:
+  - "Apple Health"
+  description: "Measured through the iPhone's Health app, which stayed the same over the last 8 years, while my smart watches have changed over time"
+  takeaways:
+  - "I walk more than twice as much when I'm in New York City, compared to any other city"
+  - "In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books"
+  - "Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less"
+  - "San Francisco was always scary to walk"
+  updated: "2022-01-01"
 - id: "weather-conditions"
   title: "Weather conditions per year"
   source: 
