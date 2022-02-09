@@ -410,6 +410,36 @@ After having tried various tools available to visualize, I ended up writing my o
     
 
     <div class="graphs-entry">
+      <h3>Days in full lockdown</h3>
+      <p class="graph-description">
+        Number of days per year that I've spent in full lockdown, meaning closed restaurants, bars and non-essential stores.
+      </p>
+
+      <ul>
+        
+          <li>Parts of the Austrian lockdown I've spent already vaccinated in the US</li>
+        
+          <li>2021 I spent more days in a full lockdown than in 2020, even with vaccines available</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/lockdown-days.png" class="image-link" alt="Days in full lockdown" onclick="enlargeImage('graphs/screens/lockdown-days.png', 'Days in full lockdown')" />
+
+      <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry">
       <h3>Weather conditions per year</h3>
       <p class="graph-description">
         Historic weather data based on the location I was at on that day based on my Swarm check-ins.
