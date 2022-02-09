@@ -440,6 +440,42 @@ After having tried various tools available to visualize, I ended up writing my o
     
 
     <div class="graphs-entry">
+      <h3>Correlation between weight and resting heart rate</h3>
+      <p class="graph-description">
+        This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the Withings Scanwatch while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
+      </p>
+
+      <ul>
+        
+          <li>I started my lean bulk (controlled weight gain combined with 5 workouts a week) in August 2020</li>
+        
+          <li>The resting rate rate grew from 58bpm to 67bpm from August 2020 to March 2021 (~8 months) with a weight gain of 8.5kg (19lbs)</li>
+        
+          <li>The spike in resting heart rate in July, August 2020 was due to bars and nightclubs opening up again in Austria</li>
+        
+          <li>After a night of drinking, my sleeping heart rate is about 50% - 75% higher than after a night without any alcohol</li>
+        
+          <li>The spike in resting heart rate in October/November/December 2021 was due to having bronchitis and a cold/flu, not getting correct treatment early enough</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Withings Scanwatch, Withings Scale
+      </span>
+
+      <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation between weight and resting heart rate" onclick="enlargeImage('graphs/screens/weight-sleeping-hr.png', 'Correlation between weight and resting heart rate')" />
+
+      <span class="graph-date">1.5 years of data - Last updated on 2022-02-09</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry">
       <h3>Weather conditions per year</h3>
       <p class="graph-description">
         Historic weather data based on the location I was at on that day based on my Swarm check-ins.
