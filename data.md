@@ -161,6 +161,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Flying Stats - General</h3>
@@ -188,6 +189,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
   
+    
     
     
 
@@ -219,6 +221,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Top Cities (Checkins)</h3>
@@ -242,6 +245,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
   
+    
     
     
 
@@ -279,6 +283,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Top Categories of Checkins</h3>
@@ -304,6 +309,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
   
+    
     
     
 
@@ -341,6 +347,33 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
+
+    <div class="graphs-entry">
+      <h3>Location History</h3>
+      <p class="graph-description">
+        Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered.
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Swarm
+      </span>
+
+      <img src="graphs/screens/map-world-overview.jpg" class="image-link" alt="Location History" onclick="enlargeImage('graphs/screens/map-world-overview.jpg', 'Location History')" />
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
 
     <div class="graphs-entry">
       <h3>Weather conditions per year</h3>
@@ -366,6 +399,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
     
     
 
@@ -403,6 +437,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Workouts in the gym</h3>
@@ -436,6 +471,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Living Style</h3>
@@ -459,6 +495,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
     
     
 
@@ -506,6 +543,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>How healthy was I over the years?</h3>
@@ -537,6 +575,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
     
     
 
@@ -582,6 +621,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
     
     
 
@@ -635,6 +675,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Days where I tracked my mood to be very excited/happy</h3>
@@ -686,6 +727,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Days with more than 4 alcoholic drinks</h3>
@@ -723,6 +765,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Weight history of 8 years</h3>
@@ -752,6 +795,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">9 years of data - Last updated on 2022-02-17</span>
     </div>
   
+    
     
     
 
@@ -787,6 +831,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Bulk & Cut Phase visualized</h3>
@@ -814,6 +859,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">1 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
     
     
 
@@ -853,6 +899,7 @@ After having tried various tools available to visualize, I ended up writing my o
   
     
     
+    
 
     <div class="graphs-entry">
       <h3>Investment Distribution</h3>
@@ -884,6 +931,7 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">8 years of data - Last updated on 2022-02-09</span>
     </div>
   
+    
     
     
 

@@ -67,6 +67,13 @@
     - "December 2019 I spent in Columbus, Ohio, being the coldest week of the year"
   instructions: "github_style.html, set maximal value to 30, screenshot all 3 years"
   updated: "2022-01-01"
+- id: "map-world-overview"
+  title: Location History
+  source:
+  - Swarm
+  years: 7
+  description: "Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered."
+  updated: "2022-01-01"
 - id: "weather-conditions"
   title: "Weather conditions per year"
   source: 

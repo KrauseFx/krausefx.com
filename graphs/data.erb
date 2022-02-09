@@ -159,7 +159,8 @@ After having tried various tools available to visualize, I ended up writing my o
 
 <div id="graphs-container">
   <% all_data.each do |entry| %>
-    <% img_url = Dir["graphs/screens/#{entry["id"]}.png"].first %>
+    <% filter = "graphs/screens/#{entry["id"]}." %>
+    <% img_url = Dir["#{filter}png", "#{filter}jpg"].first %>
     <% raise "Screenshot '#{entry["id"]}' doesn't exist" if img_url.nil? %>
 
     <div class="graphs-entry">
