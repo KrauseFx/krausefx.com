@@ -163,7 +163,7 @@ After having tried various tools available to visualize, I ended up writing my o
     <% raise "Screenshot '#{entry["id"]}' doesn't exist" if img_url.nil? %>
 
     <div class="graphs-entry">
-      <h3><%= entry["title"] %></h3>
+      <h3><%= entry.fetch("title") %></h3>
       <p class="graph-description">
         <%= entry["description"] %>
       </p>
@@ -178,12 +178,12 @@ After having tried various tools available to visualize, I ended up writing my o
         <span class="graph-sources-header">
           Sources: 
         </span>
-        <%= Array(entry["source"]).join(", ") %>
+        <%= Array(entry.fetch("source")).join(", ") %>
       </span>
 
       <img src="<%= img_url %>" class="image-link" alt="<%= entry["title"] %>" onclick="enlargeImage('<%= img_url %>', '<%= entry["title"] %>')" />
 
-      <span class="graph-date"><%= entry["years"] %> years of data - Last updated on <%= entry["updated"] %></span>
+      <span class="graph-date"><%= entry.fetch("years") %> years of data - Last updated on <%= entry.fetch("updated") %></span>
     </div>
   <% end %>
 </div>
