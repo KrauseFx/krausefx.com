@@ -86,6 +86,16 @@
   - "Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less"
   - "San Francisco was always scary to walk"
   updated: "2022-01-01"
+- id: "lockdown-days"
+  title: "Days in full lockdown"
+  years: 3
+  source:
+  - "Manually"
+  description: "Number of days per year that I've spent in full lockdown, meaning closed restaurants, bars and non-essential stores."
+  takeaways:
+  - "Parts of the Austrian lockdown I've spent already vaccinated in the US"
+  - "2021 I spent more days in a full lockdown than in 2020, even with vaccines available"
+  updated: "2022-01-01"
 - id: "weather-conditions"
   title: "Weather conditions per year"
   source: 
