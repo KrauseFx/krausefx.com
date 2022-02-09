@@ -60,6 +60,7 @@
   years: 3
   description: "Historic weather data based on the location I was at on that day based on my Swarm check-ins. Days with no data are rendered as white"
   takeaways:
+    - "Days in Summer are warmer than days in Winter" 
     - "Summer 2019 I spent in New York City, while 2020 and 2021 I spent in Vienna. The graph shows the summer in NYC to reach higher temperatures"
     - "Week 36 in 2021 I spent in Iceland, therefore significantly lower temperatures"
     - "End of November in 2019 I spent in Buenos Aires, therefore way higher temperatures"
@@ -260,5 +261,32 @@
   - "Probably obvious for many, but I didn't realize ACs don't transport any air into the room, but just moves it around"
   - "Opening the windows for a longer time in winter will cause low humidity and low temperatures, so it's often not a good option"
   - "I didn't learn anything meaningful from the 'Chemicals' and 'PM2.5' graphs"
-  updated: "2022-01-01"
+  updated: "2022-02-09"
   instructions: "Screenshot of a night where I tracked the air quality"
+- id: "money-distribution"
+  title: "Investment Distribution"
+  description: "Every second week I track my current investments and cash positions. As part of this project, it tells me how to most efficiently re-balance my investments when they're off, while also minimizing the occuring fees"
+  takeaways:
+  - I have a burndown chart, which visualizes how my networth would grow/drop over time in various scenarios
+  - I have a graph that ensures I have the right target distribution of high, medium and low risk positions
+  - Whenever I take on a potential new project/role, I simulate the various outcome scenarios over the next few years
+  - For obvious reasons, I can't include more of the graphs and simulations I have available
+  updated: "2022-02-09"
+  source:
+  - Manually
+  instructions: "Finance Sheets, EFT Section"
+  years: 8
+- id: "money-flow"
+  title: Annual money flow
+  source:
+  - Chase Credit Card Year Summary
+  - sankeymatic.com
+  - Manually
+  years: 5
+  description: "Inspired by the Reddit commnunity /r/PFPorn, I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but taken from Reddit"
+  takeaways:
+  - Not owning an apartment, and living in Airbnbs as a nomad I actually spent less money. This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.
+  - Misc. subscriptions/expenses are adding up quickly
+  - Having an End-Of-Year summary from your credit card provider, and always using your card when possible, is a great way to get those numbers
+  - Creating this chart is still a lot of work, if you want to also consider getting reimbursed, or expenses you've covered for a group (e.g. booked a larger Airbnb)
+  updated: "2022-02-09"

@@ -315,6 +315,8 @@ After having tried various tools available to visualize, I ended up writing my o
 
       <ul>
         
+          <li>Days in Summer are warmer than days in Winter</li>
+        
           <li>Summer 2019 I spent in New York City, while 2020 and 2021 I spent in Vienna. The graph shows the summer in NYC to reach higher temperatures</li>
         
           <li>Week 36 in 2021 I spent in Iceland, therefore significantly lower temperatures</li>
@@ -813,7 +815,73 @@ After having tried various tools available to visualize, I ended up writing my o
 
       <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage('graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
 
-      <span class="graph-date">1 years of data - Last updated on 2022-01-01</span>
+      <span class="graph-date">1 years of data - Last updated on 2022-02-09</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Investment Distribution</h3>
+      <p class="graph-description">
+        Every second week I track my current investments and cash positions. As part of this project, it tells me how to most efficiently re-balance my investments when they're off, while also minimizing the occuring fees
+      </p>
+
+      <ul>
+        
+          <li>I have a burndown chart, which visualizes how my networth would grow/drop over time in various scenarios</li>
+        
+          <li>I have a graph that ensures I have the right target distribution of high, medium and low risk positions</li>
+        
+          <li>Whenever I take on a potential new project/role, I simulate the various outcome scenarios over the next few years</li>
+        
+          <li>For obvious reasons, I can't include more of the graphs and simulations I have available</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/money-distribution.png" class="image-link" alt="Investment Distribution" onclick="enlargeImage('graphs/screens/money-distribution.png', 'Investment Distribution')" />
+
+      <span class="graph-date">8 years of data - Last updated on 2022-02-09</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Annual money flow</h3>
+      <p class="graph-description">
+        Inspired by the Reddit commnunity /r/PFPorn, I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but taken from Reddit
+      </p>
+
+      <ul>
+        
+          <li>Not owning an apartment, and living in Airbnbs as a nomad I actually spent less money. This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
+        
+          <li>Misc. subscriptions/expenses are adding up quickly</li>
+        
+          <li>Having an End-Of-Year summary from your credit card provider, and always using your card when possible, is a great way to get those numbers</li>
+        
+          <li>Creating this chart is still a lot of work, if you want to also consider getting reimbursed, or expenses you've covered for a group (e.g. booked a larger Airbnb)</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Chase Credit Card Year Summary, sankeymatic.com, Manually
+      </span>
+
+      <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual money flow" onclick="enlargeImage('graphs/screens/money-flow.png', 'Annual money flow')" />
+
+      <span class="graph-date">5 years of data - Last updated on 2022-02-09</span>
     </div>
   
 </div>
