@@ -23,6 +23,15 @@ meta: {}
       return deltaDays + " days ago";
     }
   }
+  function daysOrHoursAgo(date) {
+    if (daysAgo(date) == "today") {
+      const hours = Math.floor((Date.now() - date.getTime()) / (1000 * 3600));
+      if (hours == 1) { return "1 hour ago"; }
+      else { return hours + " hours ago"; }
+    } else {
+      return daysAgo(date);
+    }
+  }
 
   httpGetAsync(url, function(data) {
     const otherFxLifeData = data["otherFxLifeData"]
@@ -51,7 +60,20 @@ meta: {}
       (otherFxLifeData["weight"]["value"]).toFixed(1) + " lbs"
     document.getElementById("current-weight-time").innerHTML = "(" + daysAgo(new Date(otherFxLifeData["weight"]["time"])) + ")"
     document.getElementById("current-sleep-duration").innerHTML =
-      "Slept <span class='highlighted'>" + otherFxLifeData["sleepDurationWithings"]["value"] + " hours</span>tonight"
+      "<span class='highlighted'>" + otherFxLifeData["sleepDurationWithings"]["value"] + " hours</span>tonight"
+    document.getElementById("last-workout").innerHTML = daysAgo(new Date(otherFxLifeData["gym"]["time"]))
+    document.getElementById("last-meditated").innerHTML = daysAgo(new Date(otherFxLifeData["meditated"]["time"]))
+
+    // Git Details
+    document.getElementById("git-time-ago").innerHTML = daysOrHoursAgo(new Date(data["lastCommitTimestamp"]))
+    document.getElementById("git-link").href = data["lastCommitLink"]
+    document.getElementById("git-link").innerHTML = data["lastCommitMessage"]
+    document.getElementById("git-repo-link").href = "https://github.com/" + data["lastCommitRepo"]
+    document.getElementById("git-repo-link").innerHTML = data["lastCommitRepo"]
+
+    // Mood
+    document.getElementById("current-feeling").innerHTML = data["currentMoodLevel"] + " " + data["currentMoodEmoji"]
+    document.getElementById("mood-hours-ago").innerHTML = "(" + data["currentMoodRelativeTime"] + ")"
 
     // Render food data (if available)
     if (data["todaysMacros"]["kcal"] > 0) {
@@ -97,9 +119,9 @@ meta: {}
   <h3 id="currentCityContainer">Felix is currently in <b id="currentCityB" class="highlighted"></b></h3>
   <h3 id="isMovingContainer">Felix is currently heading to <b id="nextCityB" class="highlighted"></b></h3>
   <h4 id="nextCityContainer">Leaving for <span id="nextCityText"></span> <span id="nextCityTime"></span></h4>
-
-  <p><span id="current-weight" class="span-key"></span> <span id="current-weight-time" class="span-value"></span></p>
-  <p id="current-sleep-duration" />
+  <hr />
+  <h3 id="feels-h">Felix feels <span class="highlighted" id="current-feeling"></span> <span id="mood-hours-ago" class="ago-subtle"></span></h3>
+  <hr />
 
   <div id="food-container">
     <h3>Felix ate today</h3>
@@ -117,9 +139,42 @@ meta: {}
         <span class="highlighted" id="todaysMacros-fat"></span> of <span id="macrosFat-value"></span>g
       </span>
     </div>
+    <hr />
   </div>
 
-  <p><a href="https://whereisfelix.today">More real-time data</a></p>
+  <div id="table-container">
+    <table id="real-time-table" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>Weight</td>
+        <td>
+          <span id="current-weight"></span>
+          <span id="current-weight-time" class="ago-subtle"></span>
+        </td>
+      </tr>
+      <tr>
+        <td>Slept</td>
+        <td id="current-sleep-duration"></td>
+      </tr>
+      <tr>
+        <td>Last workout</td>
+        <td><span class="highlighted" id="last-workout" /></td>
+      </tr>
+      <tr>
+        <td>Last meditated</td>
+        <td><span class="highlighted" id="last-meditated" /></td>
+      </tr>
+    </table>
+  </div>
+
+  <hr />
+  <p style="margin-top: -25px;" class="git-footnote">Last code commit <span id="git-time-ago" class="git-footnote" /></p>
+  <h3 id="git-header">
+    <a target="_blank" href="" id="git-link"></a>
+  </h3>
+  <p class="git-footnote">on GitHub repo <a target="_blank" href="" id="git-repo-link"></a></p>
+  <hr />
+
+  <p style='text-align: right'><a href="https://whereisfelix.today">More real-time data</a></p>
 </div>
 
 <h1>My whole life in a single database</h1>
@@ -342,10 +397,6 @@ After having tried various tools available to visualize, I ended up writing my o
     padding-bottom: 10px;
     margin-top: -33px;
   }
-  #realTimeDataDiv > p > span.span-value {
-    color: #666;
-    font-size: 90%;
-  }
   .highlighted {
     font-weight: normal;
     background-color: rgba(255, 255, 0, 0.35);
@@ -357,5 +408,54 @@ After having tried various tools available to visualize, I ended up writing my o
   }
   #food-container {
     margin-bottom: 20px;
+    margin-top: -20px;
+  }
+  #feels-h {
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(40, 40, 40, 0.3), rgba(0, 0, 0, 0));
+    margin-bottom: 35px;
+    background-color: transparent !important;
+  }
+  .ago-subtle {
+    color: #666;
+    font-size: 14px;
+  }
+  #real-time-table {
+    border: none;
+  }
+  #real-time-table > * > tr > td:first-child {
+    text-align: right;
+  }
+  #table-container { 
+    margin-top: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: left; 
+    width: 450px;
+  }
+  .git-footnote {
+    text-align: center;
+    margin-bottom: -6px;
+    margin-top: -10px;
+    color: #666;
+    font-size: 14px;
+  }
+  #git-repo-link {
+    text-decoration: none !important;
+  }
+  #git-header {
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  #git-header > a {
+    color: #333 !important;
+    font-weight: 400 !important;
+    font-size: 90%;
   }
 </style>
