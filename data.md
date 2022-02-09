@@ -756,6 +756,39 @@ After having tried various tools available to visualize, I ended up writing my o
     
 
     <div class="graphs-entry">
+      <h3>Food tracking - Macros</h3>
+      <p class="graph-description">
+        On weeks where I have a routine (not traveling), I track most my meals. Whenever I scale my food, I try to guess the weight before to become better at estimating portion sizes.
+      </p>
+
+      <ul>
+        
+          <li>Tracking macros precisely is the best way to lose/gain weight at a controlled and healthy speed</li>
+        
+          <li>When I first started tracking macros, additionally to already working out regularly, is when I saw by far the best results</li>
+        
+          <li>It takes a lot of energy to be consistent, but it's worth it, and it will make you feel good (e.g. feeling good about using a spoon to eat plain Nutella if you have the macros left)</li>
+        
+          <li>Gaining and losing weight is pretty much math, if you track your macros and weight, and you have almost full control over it</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        MyFitnessPal
+      </span>
+
+      <img src="graphs/screens/macros.png" class="image-link" alt="Food tracking - Macros" onclick="enlargeImage('graphs/screens/macros.png', 'Food tracking - Macros')" />
+
+      <span class="graph-date">4 years of data - Last updated on 2022-02-17</span>
+    </div>
+  
+    
+    
+
+    <div class="graphs-entry">
       <h3>Bulk & Cut Phase visualized</h3>
       <p class="graph-description">
         I usually have slow bulk & cut phases, where I gain and lose weight at a controlled speed, combined with tracking my meals.
