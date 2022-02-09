@@ -376,6 +376,40 @@ After having tried various tools available to visualize, I ended up writing my o
     
 
     <div class="graphs-entry">
+      <h3>Average daily steps over time</h3>
+      <p class="graph-description">
+        Measured through the iPhone's Health app, which stayed the same over the last 8 years, while my smart watches have changed over time
+      </p>
+
+      <ul>
+        
+          <li>I walk more than twice as much when I'm in New York City, compared to any other city</li>
+        
+          <li>In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books</li>
+        
+          <li>Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less</li>
+        
+          <li>San Francisco was always scary to walk</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Apple Health
+      </span>
+
+      <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average daily steps over time" onclick="enlargeImage('graphs/screens/daily-steps.png', 'Average daily steps over time')" />
+
+      <span class="graph-date">8 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry">
       <h3>Weather conditions per year</h3>
       <p class="graph-description">
         Historic weather data based on the location I was at on that day based on my Swarm check-ins.
