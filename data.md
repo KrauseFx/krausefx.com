@@ -88,7 +88,7 @@ meta: {}
       document.getElementById("macrosProtein-value").innerHTML = data.otherFxLifeData["macrosProtein"]["value"]
       document.getElementById("macrosFat-value").innerHTML = data.otherFxLifeData["macrosFat"]["value"]
     } else {
-      document.getElementById("food-data-container").style.display = "none"
+      document.getElementById("food-container").style.display = "none"
     }
 
     document.getElementById("realTimeDataDiv").style.display = "block"
