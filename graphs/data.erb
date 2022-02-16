@@ -175,7 +175,7 @@ meta: {}
   <p class="git-footnote">on GitHub repo <a target="_blank" href="" id="git-repo-link"></a></p>
   <hr />
 
-  <p style='text-align: right'><a href="https://whereisfelix.today">More real-time data</a></p>
+  <p style='text-align: center; margin-top: -10px;'><a href="https://whereisfelix.today">More real-time data on WhereIsFelix.today</a></p>
 </div>
 
 <h1>My whole life in a single database</h1>
