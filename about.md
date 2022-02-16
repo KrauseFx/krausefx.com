@@ -12,7 +12,7 @@ meta: {}
 <h1 style="text-align: center; margin-bottom: 40px; margin-top: -50px">About Felix Krause</h1>
 
 <div id="leftCol">
-  <img src="/assets/FelixKrauseSpeakingCut.jpg" width="290" style="margin-bottom: 10px" />
+  <img src="/assets/FelixKrauseProfilePicture.jpg" width="290" style="margin-bottom: 10px" />
   <br />
   <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="https://fastlane.tools" target="_blank">fastlane</a></small></p>
 </div>
@@ -20,9 +20,7 @@ meta: {}
 <div id="rightCol">
   <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>.</p>
 
-  <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 15,000,000 developer hours and is used by tens of thousands of companies around the world. <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30 under 30</a></p>
-
-  <p>I move to a new place <a href="/blog/going-nomad">every month</a> and don't have an apartment.</p>
+  <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 31,000,000 developer hours and is used by hundreds of thousands of companies around the world. My work got featured on various news platforms, like <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a> and <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30 under 30</a> (German).</p>
 
   <p><b>fastlane</b></p>
 
@@ -30,23 +28,26 @@ meta: {}
 
   <p><b>Privacy research</b></p>
 
-  <p>I've published various privacy related essays on the iOS permission system. As a result my posts reached #1 on HackerNews multiple times and got covered by major media outlets - <a href="/privacy">Read more about my privacy publications</a>.</p>
+  <p>I've published various privacy related essays on the iOS permission system. As a result my posts reached #1 on HackerNews multiple times and got covered by major media outlets. <a href="/privacy">Read more about my privacy publications</a>.</p>
 
   <p><b>Open Source</b></p>
 
-  <p>Additionally to <a href="https://fastlane.tools" target="_blank">fastlane</a>, I'm involved in other open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a>.</p>
+  <p>Additionally to <a href="https://fastlane.tools" target="_blank">fastlane</a>, I've been involved in other open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a> and <a href="https://instapipe.net">instapipe</a>.</p>
 
-  <p>I'm the founder of <a href="https://ios-factor.com" target="_blank">iOS-factor.com</a>, an open source best-practices guide on how to build high-quality iOS apps.</p>
+  <p>I'm the founder of <a href="https://ios-factor.com" target="_blank">iOS-factor.com</a>, an open source best-practices guide on how to build and ship high-quality iOS apps.</p>
 
   <p><b>Speaking</b></p>
 
-  <p>I spoke at various conferences around the world, most recently Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below. Check out my 
-  <a href="https://github.com/krausefx/speaking" target="_blank">speaking schedule</a>.</p>
+  <p>I spoke at various conferences around the world, most recently Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below. Check out my <a href="https://github.com/krausefx/speaking" target="_blank">speaking schedule</a>.</p>
 
-  <p>To find my current location, as well as other info, check out <a href="https://whereisfelix.today" target="_blank">WhereIsFelix.today</a>, a fun side project that I use to experiment with new technologies.</p>
+  <p>To see my current location, upcoming trips, and more, check out <a href="https://whereisfelix.today" target="_blank">WhereIsFelix.today</a>.</p>
 
   <p><b>Previous work and projects</b></p>
-  <p>Product Hunt, MindNode, Wunderlist, Bikemap amongst others, open <a href="/projects">Projects</a> for more details.</p>
+  <p>Product Hunt, MindNode, Wunderlist, Bikemap, xcode-install amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
+
+  <p>I moved to a new place <a href="/blog/going-nomad">every month</a> without having an apartment for 2.5 years</p>
+
+  <p>Every other year I take the exact same photo as my Twitter/GitHub profile picture, introducing <a href="/blog/continuous-delivery-for-your-profile-picture">Continuous Delivery for your profile picture</a>.</p>
 </div>
 
 <hr style="margin-top: 35px" />
@@ -221,7 +222,7 @@ meta: {}
     #leftCol {
         width: 40%; 
         float: left;
-        height: 820px;
+        height: 900px;
       }
     }
   }
