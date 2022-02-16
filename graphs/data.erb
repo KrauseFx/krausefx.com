@@ -27,6 +27,7 @@ meta: {}
     if (daysAgo(date) == "today") {
       const hours = Math.floor((Date.now() - date.getTime()) / (1000 * 3600));
       if (hours == 1) { return "1 hour ago"; }
+      else if (hours < 1) { return "less than an hour ago"; }
       else { return hours + " hours ago"; }
     } else {
       return daysAgo(date);
