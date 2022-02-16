@@ -168,7 +168,7 @@ meta: {}
   </div>
 
   <hr />
-  <p style="margin-top: -25px;" class="git-footnote">Last code commit <span id="git-time-ago" class="git-footnote" /></p>
+  <p style="margin-top: -25px;" class="git-footnote">Last code commit: <span id="git-time-ago" class="git-footnote" /></p>
   <h3 id="git-header">
     <a target="_blank" href="" id="git-link"></a>
   </h3>
