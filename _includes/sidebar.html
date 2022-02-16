@@ -1,46 +1,39 @@
 <div id="sidebar">
-  <h1 style="font-size: 21px;">Felix Krause</h1>
-  <p>Founder of <a href="https://fastlane.tools" target="_blank">fastlane.tools</a></p>
+    <h1 style="font-size: 21px;">Felix Krause</h1>
+    <p>Founder of <a href="https://fastlane.tools" target="_blank">fastlane.tools</a></p>
 
-  {% include instapipe.html %}
-  <div id="story-available">
-    <img 
-      src="/assets/FelixKrauseCropped.jpg"
-      id="storyProfilePicture"
-      onclick="showStories()"
-    />
-  </div>
+    {% include instapipe.html %}
 
-  <p><a href="/about">More about me</a></p>
+    <div id="story-available" class="story-not-available">
+        <img src="/assets/FelixKrauseCropped.jpg" id="storyProfilePicture" onclick="showStories()" />
+    </div>
 
-  <!-- Social links -->
-  <ul class="social-media-list" style="margin-top: 20px; margin-bottom: 30px;">
-    <li>
-      {% include icon-github.html username=site.github_username %}
-    </li>
-    <li>
-      {% include icon-twitter.html username=site.twitter_username %}
-    </li>
-    <li>
-      {% include icon-instagram.html %}
-    </li>
-    <li>
-      {% include icon-linkedin.html %}
-    </li>
-  </ul>
+    <p><a href="/about">More about me</a></p>
 
-  <hr />
+    <!-- Social links -->
+    <ul class="social-media-list" style="margin-top: 20px; margin-bottom: 30px;">
+        <li>
+            {% include icon-github.html username=site.github_username %}
+        </li>
+        <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+        </li>
+        <li>
+            {% include icon-instagram.html %}
+        </li>
+        <li>
+            {% include icon-linkedin.html %}
+        </li>
+    </ul>
 
-  <a href="https://whereisfelix.today" target="_blank">
+    <hr />
+
+    <a href="https://whereisfelix.today" target="_blank">
     ✈️ WhereIsFelix.today
   </a>
 
-  <hr />
+    <hr /> {% include newsletter.html %}
 
-  {% include newsletter.html %}
-
-  <hr />
-
-  {% twitter https://twitter.com/KrauseFx maxwidth=500 limit=5 %}
+    <hr /> {% twitter https://twitter.com/KrauseFx maxwidth=500 limit=5 %}
 
 </div>

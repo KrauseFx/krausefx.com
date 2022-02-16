@@ -110,7 +110,7 @@ meta: {}
   <div id="mapsMenuBannerCover"></div>
   <img id="currentLocationMap">
 </div>
-<div id="story-available">
+<div id="story-available" class="story-not-available">
   <img id="storyProfilePicture" src="assets/FelixKrauseCropped.jpg" onclick="showStories()" />
 </div>
 <div id="mapsContainerCover"></div>
