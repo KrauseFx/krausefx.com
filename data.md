@@ -1345,4 +1345,9 @@ After having tried various tools available to visualize, I ended up writing my o
       width: 115px;
     }
   }
+  @media screen and (max-width: 450px) {
+    #real-time-table {
+      max-width: 80%;
+    }
+  }
 </style>
