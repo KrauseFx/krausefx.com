@@ -356,3 +356,17 @@
   - "Over the last 7 years, I went from spending around 33% of my time with software development, to less than 10% (now that I'm not currently full-time employed)"
   - All other categories stayed pretty much on the same ratio over the last 7 years
   updated: "2022-01-01"
+  instructions: "https://app.flourish.studio/visualisation/8726152/edit? use Area chart (stacked %)"
+- id: "season-winter"
+  title: "How does Winter affect my life?"
+  source:
+  - "Manual"
+  years: 2.5
+  description: "Winter (being from 21st Dec to 20th March) has the following effects on my life:"
+  takeaways:
+  - "Online shopping time going up by 100%, most likely due to the last Winters having spent in lockdown"
+  - "Chances of having cold symptons goes up ~45%"
+  - "35% less likely to take a cold shower"
+  - "You can generate significantly less solar energy in Winter :joke:"
+  updated: "2022-01-01"
+  instructions: "Bucket by dateSeasonIsWinter"
