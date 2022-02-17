@@ -1121,6 +1121,38 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">5 years of data - Last updated on 2022-02-09</span>
     </div>
   
+    
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Rescue Time Computer Usage Categories</h3>
+      <p class="graph-description">
+        Using RescueTime, I tracked my exact computer usage, and the categories of activities in which I spend time with.
+      </p>
+
+      <ul>
+        
+          <li>Over the last 7 years, I went from spending around 10% of my time with communication & scheduling, to around 30%</li>
+        
+          <li>Over the last 7 years, I went from spending around 33% of my time with software development, to less than 10% (now that I'm not currently full-time employed)</li>
+        
+          <li>All other categories stayed pretty much on the same ratio over the last 7 years</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        RescueTime
+      </span>
+
+      <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="Rescue Time Computer Usage Categories" onclick="enlargeImage('graphs/screens/rescue-time-usage-categories.png', 'Rescue Time Computer Usage Categories')" />
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
 </div>
 
 <div id="enlargedImageContainer" onclick="dismissImage()">
