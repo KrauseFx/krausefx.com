@@ -1187,6 +1187,48 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
+    
+    
+
+    <div class="graphs-entry">
+      <h3>How does Summer affect my life?</h3>
+      <p class="graph-description">
+        Summer (being from 21st June to 23rd September) has the following effects on my life:
+      </p>
+
+      <ul>
+        
+          <li>Chances of taking a cold shower goes up by 100%</li>
+        
+          <li>I walk 33% more steps in Summer</li>
+        
+          <li>30% more likely to hit the gym</li>
+        
+          <li>23% more alcoholic beverages</li>
+        
+          <li>20% less time spent reading news & opinions (as per RescueTime classifications)</li>
+        
+          <li>40% less likely to be sick</li>
+        
+          <li>40% less time spent on Entertainment on my computer (as per RescueTime classifications)</li>
+        
+          <li>30% less likely to have bad dreams</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manual
+      </span>
+
+      <img src="graphs/screens/season-summer.png" class="image-link" alt="How does Summer affect my life?" onclick="enlargeImage('graphs/screens/season-summer.png', 'How does Summer affect my life?')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
 </div>
 
 <div id="enlargedImageContainer" onclick="dismissImage()">
