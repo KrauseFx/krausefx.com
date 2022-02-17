@@ -1153,6 +1153,40 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
+    
+    
+
+    <div class="graphs-entry">
+      <h3>How does Winter affect my life?</h3>
+      <p class="graph-description">
+        Winter (being from 21st Dec to 20th March) has the following effects on my life:
+      </p>
+
+      <ul>
+        
+          <li>Online shopping time going up by 100%, most likely due to the last Winters having spent in lockdown</li>
+        
+          <li>Chances of having cold symptons goes up ~45%</li>
+        
+          <li>35% less likely to take a cold shower</li>
+        
+          <li>You can generate significantly less solar energy in Winter :joke:</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manual
+      </span>
+
+      <img src="graphs/screens/season-winter.png" class="image-link" alt="How does Winter affect my life?" onclick="enlargeImage('graphs/screens/season-winter.png', 'How does Winter affect my life?')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
 </div>
 
 <div id="enlargedImageContainer" onclick="dismissImage()">
