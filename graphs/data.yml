@@ -370,3 +370,20 @@
   - "You can generate significantly less solar energy in Winter :joke:"
   updated: "2022-01-01"
   instructions: "Bucket by dateSeasonIsWinter"
+- id: "season-summer"
+  title: "How does Summer affect my life?"
+  source:
+  - "Manual"
+  years: 2.5
+  description: "Summer (being from 21st June to 23rd September) has the following effects on my life:"
+  takeaways:
+  - "Chances of taking a cold shower goes up by 100%"
+  - "I walk 33% more steps in Summer"
+  - "30% more likely to hit the gym"
+  - 23% more alcoholic beverages
+  - 20% less time spent reading news & opinions (as per RescueTime classifications)
+  - 40% less likely to be sick
+  - 40% less time spent on Entertainment on my computer (as per RescueTime classifications)
+  - 30% less likely to have bad dreams
+  updated: "2022-01-01"
+  instructions: "Bucket by dateSeasonIsSummer"
