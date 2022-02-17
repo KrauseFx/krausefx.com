@@ -345,3 +345,14 @@
   - Having an End-Of-Year summary from your credit card provider, and always using your card when possible, is a great way to get those numbers
   - Creating this chart is still a lot of work, if you want to also consider getting reimbursed, or expenses you've covered for a group (e.g. booked a larger Airbnb)
   updated: "2022-02-09"
+- id: "rescue-time-usage-categories"
+  title: "Rescue Time Computer Usage Categories"
+  source:
+  - "RescueTime"
+  years: 7
+  description: "Using RescueTime, I tracked my exact computer usage, and the categories of activities in which I spend time with."
+  takeaways:
+  - "Over the last 7 years, I went from spending around 10% of my time with communication & scheduling, to around 30%"
+  - "Over the last 7 years, I went from spending around 33% of my time with software development, to less than 10% (now that I'm not currently full-time employed)"
+  - All other categories stayed pretty much on the same ratio over the last 7 years
+  updated: "2022-01-01"
