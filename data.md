@@ -1229,6 +1229,44 @@ After having tried various tools available to visualize, I ended up writing my o
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
+    
+    
+
+    <div class="graphs-entry">
+      <h3>What are weekends like?</h3>
+      <p class="graph-description">
+        Weekends for me naturally involve less work time, more going out, and social interactions, as well as visiting family memebers outside the city
+      </p>
+
+      <ul>
+        
+          <li>150% more computer time spent on "Entertainment", which is mostly coming from occasionally playing Factorio or Age Of Empires with friends at LAN-Party gatherings</li>
+        
+          <li>74% more time spent watching TV</li>
+        
+          <li>60% more time spent with friends IRL</li>
+        
+          <li>55% more dancing, when going out</li>
+        
+          <li>25% less gym visits, mostly due to family gatherings and not being in the city</li>
+        
+          <li>45% less likely to properly track my macros/meals, mostly due to family gatherings and going out</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manual
+      </span>
+
+      <img src="graphs/screens/day-is-weekend.png" class="image-link" alt="What are weekends like?" onclick="enlargeImage('graphs/screens/day-is-weekend.png', 'What are weekends like?')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
 </div>
 
 <div id="enlargedImageContainer" onclick="dismissImage()">

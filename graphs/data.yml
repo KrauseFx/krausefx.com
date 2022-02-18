@@ -387,3 +387,18 @@
   - 30% less likely to have bad dreams
   updated: "2022-01-01"
   instructions: "Bucket by dateSeasonIsSummer"
+- id: "day-is-weekend"
+  title: "What are weekends like?"
+  source:
+  - "Manual"
+  years: 2.5
+  description: "Weekends for me naturally involve less work time, more going out, and social interactions, as well as visiting family memebers outside the city"
+  takeaways:
+  - 150% more computer time spent on "Entertainment", which is mostly coming from occasionally playing Factorio or Age Of Empires with friends at LAN-Party gatherings
+  - 74% more time spent watching TV
+  - 60% more time spent with friends IRL
+  - 55% more dancing, when going out
+  - 25% less gym visits, mostly due to family gatherings and not being in the city
+  - 45% less likely to properly track my macros/meals, mostly due to family gatherings and going out
+  updated: "2022-01-01"
+  instructions: "Bucket by dateIsWeekend"
