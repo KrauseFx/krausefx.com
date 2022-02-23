@@ -52,11 +52,11 @@ meta: {}
 
 <hr style="margin-top: 35px" />
 
-<!-- <h2>Personal Photos</h2>
+<h2>Personal Photos</h2>
 <div class="imageCarousel" id="personalCarousel">
 </div>
 
-<hr /> -->
+<hr />
 
 <h2>Speaking</h2>
 <div class="imageCarousel">
@@ -83,7 +83,7 @@ meta: {}
   </a>
 </div>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
   var url = "https://where-is-felix-today-backend.herokuapp.com/api.json";
 
   var xmlHttp = new XMLHttpRequest();
@@ -95,8 +95,13 @@ meta: {}
         for (let photoIndex in photos) {
           let currentPhoto = photos[photoIndex]
 
+          if (currentPhoto["url"].indexOf("20220218.jpg") > -1) {
+            // Since we have that photo right above
+            continue;
+          }
+
           var linkNode = document.createElement("a");
-          linkNode["href"] = currentPhoto["link"]
+          linkNode["href"] = currentPhoto["link"] || "https://instagram.com/krausefx"
           linkNode["target"] = "_blank"
           var imageNode = document.createElement("span")
           imageNode["style"] = "background-image: url(" + currentPhoto["url"] + ")"
@@ -105,7 +110,7 @@ meta: {}
           linkNode.appendChild(imageNode)
           personalCarousel.appendChild(linkNode)
 
-          if (photoIndex > 7) {
+          if (photoIndex > 8) {
             break; // We don't want to load all the images
           }
         }
@@ -113,7 +118,7 @@ meta: {}
   }
   xmlHttp.open("GET", url, true); // true = asynchronous 
   xmlHttp.send(null);
-</script> -->
+</script>
 
 <hr />
 
