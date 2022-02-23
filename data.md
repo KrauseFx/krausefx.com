@@ -64,6 +64,8 @@ meta: {}
       "<span class='highlighted'>" + otherFxLifeData["sleepDurationWithings"]["value"] + " hours</span>tonight"
     document.getElementById("last-workout").innerHTML = daysAgo(new Date(otherFxLifeData["gym"]["time"]))
     document.getElementById("last-meditated").innerHTML = daysAgo(new Date(otherFxLifeData["meditated"]["time"]))
+    document.getElementById("data-points").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString()
+    document.getElementById("data-entries-count").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString()
 
     // Git Details
     document.getElementById("git-time-ago").innerHTML = daysOrHoursAgo(new Date(data["lastCommitTimestamp"]))
@@ -164,6 +166,10 @@ meta: {}
         <td>Last meditated</td>
         <td><span class="highlighted" id="last-meditated" /></td>
       </tr>
+      <tr>
+        <td>Number of data entries</td>
+        <td><span class="highlighted" id="data-entries-count" /></td>
+      </tr>
     </table>
   </div>
 
@@ -185,7 +191,7 @@ Every single day for the last 2.5 years I've tracked over 100 different data typ
 
 I haven't yet had the time to analyze all the outcomes, but felt like I already have some very interesting graphs I'd like to share here.
 
-Currently, I have <b>~370,000 data points</b>, with the biggest data sources being:
+Currently, I have <b><span id="data-points">~380,000</span> data points</b>, with the biggest data sources being:
 
 <table>
   <tr><th>Data Source</th><th>Number of data entries</th><th>Type of data</th></tr>
