@@ -22,12 +22,24 @@
   - Germany is high up on the list due to layovers, even though I didn't spend time there
   instructions: "Log into https://www.jetlovers.com/"
   updated: "2021-12-12"
+- id: "life-in-weeks"
+  title: "My life in weeks"
+  source: "Manually"
+  years: 27.5
+  updated: "2022-02-24"
+  instructions: "Felix Life overview doc"
+  description: "Inspired by Your Life in Weeks by WaitButWhy, I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened."
+  takeaways:
+  - The first 14 years I didn't really get done much
+  - Taking a few weeks (or even months) off between jobs (if you have the possibility) is one of the best decisions I've made
+  - Yellow area indicates no active full-time employment
+  - Shades of blue indicate my full-time employments
+  - Shades of red is formal education
 - id: "swarm-cities-top"
   title: "Top Cities (Checkins)"
   source: "Swarm"
   years: 7
   description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) at a given city, this is tracked as a single entry"
-  takeaways:
   instructions: "pie_chart.html"
   updated: "2021-12-12"
 - id: "swarm-cities-top-years"
@@ -81,6 +93,7 @@
   years: 7
   description: "Every Swarm check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)"
   updated: "2022-01-01"
+  instructions: "https://maps.co/gis/ upgrade to paid plan, run `be ruby importers/swarm/swarm_coordinates_importer.rb`"
 - id: "map-combined"
   title: "Location History - Cities"
   source:
@@ -88,6 +101,7 @@
   years: 7
   description: "Every Swarm check-in over the last 7 years visualized, zoomed in"
   updated: "2022-01-01"
+  instructions: "https://maps.co/gis/ upgrade to paid plan, run `be ruby importers/swarm/swarm_coordinates_importer.rb`"
 - id: "mood-happy-days"
   title: "Happy Days"
   source:
