@@ -703,7 +703,7 @@ After having tried various tools available to visualize, I ended up writing my o
 
       <ul>
         
-          <li>80% more likely to take a cold shower</li>
+          <li>80% more likely to take a freezing cold shower</li>
         
           <li>37% more likely to hit the gym</li>
         
@@ -885,7 +885,7 @@ After having tried various tools available to visualize, I ended up writing my o
         
           <li>Significantly more likely to have medidated that day</li>
         
-          <li>70% more likely to have taken a cold shower</li>
+          <li>70% more likely to have taken a freezing cold shower</li>
         
           <li>60% more likely to have worked on interrelated technical challenges</li>
         
@@ -1209,7 +1209,7 @@ After having tried various tools available to visualize, I ended up writing my o
         
           <li>Chances of having cold symptons goes up ~45%</li>
         
-          <li>35% less likely to take a cold shower</li>
+          <li>35% less likely to take a freezing cold shower</li>
         
           <li>You can generate significantly less solar energy in Winter :joke:</li>
         
@@ -1239,7 +1239,7 @@ After having tried various tools available to visualize, I ended up writing my o
 
       <ul>
         
-          <li>Chances of taking a cold shower goes up by 100%</li>
+          <li>Chances of taking a freezing cold shower goes up by 100%</li>
         
           <li>I walk 33% more steps in Summer</li>
         
