@@ -596,6 +596,40 @@ After having tried various tools available to visualize, I ended up writing my o
     
 
     <div class="graphs-entry">
+      <h3>Number of Swarm checkins over time</h3>
+      <p class="graph-description">
+        Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every POI I visit
+      </p>
+
+      <ul>
+        
+          <li>Q3 2015 I moved to San Francisco, however I couldn't check-in yet, since my move was a secret until the official announced at the Twitter Flight conference</li>
+        
+          <li>Q2 2020 clearly shows the impact of COVID with Q3 already being open in Austria</li>
+        
+          <li>Q3 2021 the vaccine was already widely available and I was able to travel/visit more again</li>
+        
+          <li>My time in New York was the most active when it comes to check-ins. When I'm in NYC, I tend to eat/drink out more, and grab to-go food, which I do way less in Vienna</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Swarm
+      </span>
+
+      <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm checkins over time" onclick="enlargeImage('graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm checkins over time')" />
+
+      <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry">
       <h3>Days in full lockdown</h3>
       <p class="graph-description">
         Number of days per year that I've spent in full lockdown, meaning closed restaurants, bars and non-essential stores.
