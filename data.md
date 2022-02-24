@@ -67,6 +67,7 @@ meta: {}
     document.getElementById("data-points").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString()
     document.getElementById("data-entries-count").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString()
 
+
     // Git Details
     document.getElementById("git-time-ago").innerHTML = daysOrHoursAgo(new Date(data["lastCommitTimestamp"]))
     document.getElementById("git-link").href = data["lastCommitLink"]
@@ -91,6 +92,7 @@ meta: {}
       document.getElementById("macrosCarbs-value").innerHTML = data.otherFxLifeData["macrosCarbs"]["value"]
       document.getElementById("macrosProtein-value").innerHTML = data.otherFxLifeData["macrosProtein"]["value"]
       document.getElementById("macrosFat-value").innerHTML = data.otherFxLifeData["macrosFat"]["value"]
+
 
       document.getElementById("todaysMacros-kcal-bar-inner").style.width = Math.min(100, Math.round((data["todaysMacros"]["kcal"] / totalKcal) * 100)) + "%"
       document.getElementById("todaysMacros-protein-bar-inner").style.width = Math.min(100, Math.round((data.todaysMacros.protein / data.otherFxLifeData["macrosProtein"]["value"]) * 100)) + "%"
@@ -1286,6 +1288,8 @@ After having tried various tools available to visualize, I ended up writing my o
           <li>60% more time spent with friends IRL</li>
         
           <li>55% more dancing, when going out</li>
+        
+          <li>45% more likely to have a headache, due to drinking alcohol the night before</li>
         
           <li>25% less gym visits, mostly due to family gatherings and not being in the city</li>
         
