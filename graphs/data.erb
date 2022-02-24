@@ -112,6 +112,24 @@ meta: {}
       if (data["todaysMacros"]["kcal"] > totalKcal) {
         document.getElementById("todaysMacros-kcal-bar-inner").style.background = "red";
       }
+
+      // Render the food list
+      let foodEntriesTable = document.getElementById("foodEntriesTable")
+      for (let i = 0; i < data.todaysFoodItems.length; i++) {
+        let foodItem = data.todaysFoodItems[i]
+        let row = document.createElement("tr")
+        row.className = i >= 3 ? "hidden-food" : ""
+        row.style.display = i >= 3 ? "none" : ""
+        const amount = foodItem.amount.split("/")[0] // Sometimes mfp has weird slashes, with the units ending up too long
+        row.innerHTML = "<td>" + foodItem.name + "</td><td>" + amount + "</td>"
+        foodEntriesTable.appendChild(row)
+      }
+      if (data.todaysFoodItems.length > 3) {
+        let row = document.createElement("tr")
+        row.className = "show-more-food"
+        row.innerHTML = "<td colspan='2'><a href='#' onclick='toggleFood()' id='show-all-food-a'>Show all food entries</a></td>"
+        foodEntriesTable.appendChild(row)
+      }
     } else {
       document.getElementById("food-container").style.display = "none"
     }
@@ -128,6 +146,15 @@ meta: {}
     }
     xmlHttp.open("GET", url, true);
     xmlHttp.send(null);
+  }
+  function toggleFood() {
+    // Iterate over all `hidden-food` rows and toggle their display
+    let rows = document.getElementsByClassName("hidden-food")
+    for (let i = 0; i < rows.length; i++) {
+      rows[i].style.display = rows[i].style.display == "none" ? "table-row" : "none"
+    }
+    const a = document.getElementById("show-all-food-a")
+    a.innerHTML = a.innerHTML == "Show all food entries" ? "Hide food entries" : "Show all food entries"
   }
 </script>
 
@@ -175,6 +202,11 @@ meta: {}
           <div class="macro-bar-inner" id="todaysMacros-fat-bar-inner"></div>
         </span>
       </div>
+    </div>
+
+    <div id="foodEntries">
+      <table id="foodEntriesTable" cellspacing="0" cellpadding="0">
+      </table>
     </div>
   </div>
   <hr />
@@ -539,5 +571,43 @@ After having tried various tools available to visualize, I ended up writing my o
     background-color: rgba(0, 220, 0, 1);
     height: 8px;
     border-radius: 5px;
+  }
+    #foodEntries {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  #foodEntriesTable {
+    border: none;
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+  }
+  #foodEntriesTable > tr {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 90%;
+    line-height: 1.35;
+  }
+  #foodEntriesTable > tr > td {
+    color: #669;
+    padding: 9px 30px 0;
+    border: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #foodEntriesTable > tr > td:first-child {
+    max-width: 270px;
+  }
+  #foodEntriesTable > tr > td:last-child {
+    max-width: 80px;
+    width: 80px;
+  }
+  .hidden-food {
+    display: none;
+  }
+  #show-all-food-a {
+    font-weight: bold;
+    text-decoration: none;
   }
 </style>
