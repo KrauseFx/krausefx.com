@@ -163,7 +163,7 @@
   years: 2.5
   description: "On days with a maximum temperature of more than 26 Celsius (78.8 Fahrenheit), the following other factors were affected"
   takeaways:
-  - "80% more likely to take a cold shower"
+  - "80% more likely to take a freezing cold shower"
   - "37% more likely to hit the gym"
   - "26% more daily steps"
   - "20% more alcoholic beverages"
@@ -239,7 +239,7 @@
   takeaways:
   - Significantly more likely to be a day where I went out of my comfort zone
   - Significantly more likely to have medidated that day
-  - 70% more likely to have taken a cold shower
+  - 70% more likely to have taken a freezing cold shower
   - 60% more likely to have worked on interrelated technical challenges
   - 60% more time spent reading or listening to audio books
   - 50% more likely to have learned something new that day
@@ -366,7 +366,7 @@
   takeaways:
   - "Online shopping time going up by 100%, most likely due to the last Winters having spent in lockdown"
   - "Chances of having cold symptons goes up ~45%"
-  - "35% less likely to take a cold shower"
+  - "35% less likely to take a freezing cold shower"
   - "You can generate significantly less solar energy in Winter :joke:"
   updated: "2022-01-01"
   instructions: "Bucket by dateSeasonIsWinter"
@@ -377,7 +377,7 @@
   years: 2.5
   description: "Summer (being from 21st June to 23rd September) has the following effects on my life:"
   takeaways:
-  - "Chances of taking a cold shower goes up by 100%"
+  - "Chances of taking a freezing cold shower goes up by 100%"
   - "I walk 33% more steps in Summer"
   - "30% more likely to hit the gym"
   - 23% more alcoholic beverages
