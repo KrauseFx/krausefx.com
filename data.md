@@ -472,6 +472,58 @@ After having tried various tools available to visualize, I ended up writing my o
     
 
     <div class="graphs-entry">
+      <h3>Location History</h3>
+      <p class="graph-description">
+        Every Swarm check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Swarm
+      </span>
+
+      <img src="graphs/screens/map-world-trip.jpg" class="image-link" alt="Location History" onclick="enlargeImage('graphs/screens/map-world-trip.jpg', 'Location History')" />
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Location History - Cities</h3>
+      <p class="graph-description">
+        Every Swarm check-in over the last 7 years visualized, zoomed into various countries
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Swarm
+      </span>
+
+      <img src="graphs/screens/map-combined.jpg" class="image-link" alt="Location History - Cities" onclick="enlargeImage('graphs/screens/map-combined.jpg', 'Location History - Cities')" />
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry">
       <h3>Average daily steps over time</h3>
       <p class="graph-description">
         Measured through the iPhone's Health app, which stayed the same over the last 8 years, while my smart watches have changed over time
