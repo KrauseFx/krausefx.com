@@ -74,6 +74,20 @@
   years: 7
   description: "Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered."
   updated: "2022-01-01"
+- id: "map-world-trip"
+  title: "Location History"
+  source:
+  - Swarm
+  years: 7
+  description: "Every Swarm check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)"
+  updated: "2022-01-01"
+- id: "map-combined"
+  title: "Location History - Cities"
+  source:
+  - Swarm
+  years: 7
+  description: "Every Swarm check-in over the last 7 years visualized, zoomed in"
+  updated: "2022-01-01"
 - id: "daily-steps"
   title: "Average daily steps over time"
   years: 8
