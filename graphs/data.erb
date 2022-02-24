@@ -82,7 +82,8 @@ meta: {}
     // Render food data (if available)
     if (data["todaysMacros"]["kcal"] > 0) {
       document.getElementById("todaysMacros-kcal").innerHTML = data["todaysMacros"]["kcal"] + " kcal"
-      document.getElementById("total-kcal").innerHTML = otherFxLifeData["macrosCarbs"]["value"] * 4 + otherFxLifeData["macrosProtein"]["value"] * 4 + otherFxLifeData["macrosFat"]["value"] * 9
+      const totalKcal = otherFxLifeData["macrosCarbs"]["value"] * 4 + otherFxLifeData["macrosProtein"]["value"] * 4 + otherFxLifeData["macrosFat"]["value"] * 9;
+      document.getElementById("total-kcal").innerHTML = totalKcal
 
       document.getElementById("todaysMacros-carbs").innerHTML = data.todaysMacros.carbs + "g carbs"
       document.getElementById("todaysMacros-protein").innerHTML = data.todaysMacros.protein + "g protein"
@@ -91,6 +92,26 @@ meta: {}
       document.getElementById("macrosCarbs-value").innerHTML = data.otherFxLifeData["macrosCarbs"]["value"]
       document.getElementById("macrosProtein-value").innerHTML = data.otherFxLifeData["macrosProtein"]["value"]
       document.getElementById("macrosFat-value").innerHTML = data.otherFxLifeData["macrosFat"]["value"]
+
+
+      document.getElementById("todaysMacros-kcal-bar-inner").style.width = Math.min(100, Math.round((data["todaysMacros"]["kcal"] / totalKcal) * 100)) + "%"
+      document.getElementById("todaysMacros-protein-bar-inner").style.width = Math.min(100, Math.round((data.todaysMacros.protein / data.otherFxLifeData["macrosProtein"]["value"]) * 100)) + "%"
+      document.getElementById("todaysMacros-carbs-bar-inner").style.width = Math.min(100, Math.round((data.todaysMacros.carbs / data.otherFxLifeData["macrosCarbs"]["value"]) * 100)) + "%"
+      document.getElementById("todaysMacros-fat-bar-inner").style.width = Math.min(100, Math.round((data.todaysMacros.fat / data.otherFxLifeData["macrosFat"]["value"]) * 100)) + "%"
+
+      // Turn the bars red when too high
+      if (data.todaysMacros.protein > data.otherFxLifeData["macrosProtein"]["value"]) {
+        document.getElementById("todaysMacros-protein-bar-inner").style.background = "red";
+      }
+      if (data.todaysMacros.carbs > data.otherFxLifeData["macrosCarbs"]["value"]) {
+        document.getElementById("todaysMacros-carbs-bar-inner").style.background = "red";
+      }
+      if (data.todaysMacros.fat > data.otherFxLifeData["macrosFat"]["value"]) {
+        document.getElementById("todaysMacros-fat-bar-inner").style.background = "red";
+      }
+      if (data["todaysMacros"]["kcal"] > totalKcal) {
+        document.getElementById("todaysMacros-kcal-bar-inner").style.background = "red";
+      }
     } else {
       document.getElementById("food-container").style.display = "none"
     }
@@ -130,21 +151,33 @@ meta: {}
   <div id="food-container">
     <h3>Felix ate today</h3>
     <div class="food-overview">
-      <span>
+      <div>
         <span class="highlighted" id="todaysMacros-kcal"></span> of <span id="total-kcal"></span> kcal
-      </span>
-        <span>
+        <span class="macro-bar-outer">
+          <div class="macro-bar-inner" id="todaysMacros-kcal-bar-inner"></div>
+        </span>
+      </div>
+      <div>
         <span class="highlighted" id="todaysMacros-carbs"></span> of <span id="macrosCarbs-value"></span>g
-      </span>
-        <span>
+        <span class="macro-bar-outer">
+          <div class="macro-bar-inner" id="todaysMacros-carbs-bar-inner"></div>
+        </span>
+      </div>
+      <div>
         <span class="highlighted" id="todaysMacros-protein"></span> of <span id="macrosProtein-value"></span>g
-      </span>
-        <span>
+        <span class="macro-bar-outer">
+          <div class="macro-bar-inner" id="todaysMacros-protein-bar-inner"></div>
+        </span>
+      </div>
+      <div>
         <span class="highlighted" id="todaysMacros-fat"></span> of <span id="macrosFat-value"></span>g
-      </span>
+        <span class="macro-bar-outer">
+          <div class="macro-bar-inner" id="todaysMacros-fat-bar-inner"></div>
+        </span>
+      </div>
     </div>
-    <hr />
   </div>
+  <hr />
 
   <div id="table-container">
     <table id="real-time-table" cellspacing="0" cellpadding="0">
@@ -415,7 +448,7 @@ After having tried various tools available to visualize, I ended up writing my o
     margin: 0 30px;
   }
   #food-container {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: -20px;
   }
   #feels-h {
@@ -478,5 +511,36 @@ After having tried various tools available to visualize, I ended up writing my o
     #real-time-table {
       max-width: 80%;
     }
+  }
+  .food-overview {
+    line-height: 60px;
+  }
+  .food-overview > div {
+    margin: 0 30px;
+    display: inline;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .macro-bar-outer {
+    width: 110px;
+    background-color: rgba(205, 205, 205, 0.5);
+    height: 8px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .macro-bar-inner {
+    width: 0px;
+    background-color: rgba(0, 220, 0, 1);
+    height: 8px;
+    border-radius: 5px;
   }
 </style>
