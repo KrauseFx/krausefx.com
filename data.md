@@ -147,7 +147,6 @@ meta: {}
     xmlHttp.open("GET", url, true);
     xmlHttp.send(null);
   }
-
   function toggleFood() {
     // Iterate over all `hidden-food` rows and toggle their display
     let rows = document.getElementsByClassName("hidden-food")
@@ -209,7 +208,6 @@ meta: {}
       <table id="foodEntriesTable" cellspacing="0" cellpadding="0">
       </table>
     </div>
-
   </div>
   <hr />
 
@@ -347,6 +345,42 @@ After having tried various tools available to visualize, I ended up writing my o
       <img src="graphs/screens/jetlovers-top.png" class="image-link" alt="Flying Stats - Top" onclick="enlargeImage('graphs/screens/jetlovers-top.png', 'Flying Stats - Top')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry">
+      <h3>My life in weeks</h3>
+      <p class="graph-description">
+        Inspired by Your Life in Weeks by WaitButWhy, I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened.
+      </p>
+
+      <ul>
+        
+          <li>The first 14 years I didn't really get done much</li>
+        
+          <li>Taking a few weeks (or even months) off between jobs (if you have the possibility) is one of the best decisions I've made</li>
+        
+          <li>Yellow area indicates no active full-time employment</li>
+        
+          <li>Shades of blue indicate my full-time employments</li>
+        
+          <li>Shades of red is formal education</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/life-in-weeks.png" class="image-link" alt="My life in weeks" onclick="enlargeImage('graphs/screens/life-in-weeks.png', 'My life in weeks')" />
+
+      <span class="graph-date">27.5 years of data - Last updated on 2022-02-24</span>
     </div>
   
     
