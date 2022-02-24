@@ -500,7 +500,7 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry">
       <h3>Location History - Cities</h3>
       <p class="graph-description">
-        Every Swarm check-in over the last 7 years visualized, zoomed into various countries
+        Every Swarm check-in over the last 7 years visualized, zoomed in
       </p>
 
       <ul>
@@ -517,6 +517,44 @@ After having tried various tools available to visualize, I ended up writing my o
       <img src="graphs/screens/map-combined.jpg" class="image-link" alt="Location History - Cities" onclick="enlargeImage('graphs/screens/map-combined.jpg', 'Location History - Cities')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry">
+      <h3>Happy Days</h3>
+      <p class="graph-description">
+        Bucketing all days, by the days at which I was above average happy (excited, pumped). On days where I was happy:
+      </p>
+
+      <ul>
+        
+          <li>50% more likely to have pushed my comfort zone</li>
+        
+          <li>45% more likely to have medidated that day</li>
+        
+          <li>40% more likely to feel good about the current direction in life, and working towards it</li>
+        
+          <li>15% warmer than the average</li>
+        
+          <li>15% less time on social media</li>
+        
+          <li>30% less time spent watching TV</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/mood-happy-days.png" class="image-link" alt="Happy Days" onclick="enlargeImage('graphs/screens/mood-happy-days.png', 'Happy Days')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
