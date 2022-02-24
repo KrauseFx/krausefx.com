@@ -114,6 +114,18 @@
   - "Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less"
   - "San Francisco was always scary to walk"
   updated: "2022-01-01"
+- id: "swarm-number-of-checkins"
+  title: "Number of Swarm checkins over time"
+  years: 10
+  source:
+  - "Swarm"
+  description: "Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every POI I visit"
+  takeaways:
+  - "Q3 2015 I moved to San Francisco, however I couldn't check-in yet, since my move was a secret until the official announced at the Twitter Flight conference"
+  - "Q2 2020 clearly shows the impact of COVID with Q3 already being open in Austria"
+  - "Q3 2021 the vaccine was already widely available and I was able to travel/visit more again"
+  - "My time in New York was the most active when it comes to check-ins. When I'm in NYC, I tend to eat/drink out more, and grab to-go food, which I do way less in Vienna"
+  updated: "2022-01-01"
 - id: "lockdown-days"
   title: "Days in full lockdown"
   years: 3
