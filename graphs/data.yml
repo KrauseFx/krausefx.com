@@ -88,6 +88,20 @@
   years: 7
   description: "Every Swarm check-in over the last 7 years visualized, zoomed in"
   updated: "2022-01-01"
+- id: "mood-happy-days"
+  title: "Happy Days"
+  source:
+  - "Manually"
+  years: 2.5
+  updated: "2022-01-01"
+  description: "Bucketing all days, by the days at which I was above average happy (excited, pumped). On days where I was happy:"
+  takeaways:
+  - 50% more likely to have pushed my comfort zone
+  - 45% more likely to have medidated that day
+  - 40% more likely to feel good about the current direction in life, and working towards it
+  - 15% warmer than the average
+  - 15% less time on social media
+  - 30% less time spent watching TV
 - id: "daily-steps"
   title: "Average daily steps over time"
   years: 8
