@@ -208,8 +208,8 @@ meta: {}
       <table id="foodEntriesTable" cellspacing="0" cellpadding="0">
       </table>
     </div>
+    <hr />
   </div>
-  <hr />
 
   <div id="table-container">
     <table id="real-time-table" cellspacing="0" cellpadding="0">
