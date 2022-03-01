@@ -4,7 +4,7 @@
   - "JetLovers"
   - "Swarm"
   years: 7
-  description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers."
+  description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by [JetLovers](https://www.jetlovers.com/)."
   takeaways:
   - This clearly shows the impact of COVID starting 2020
   - Sunday has been my "commute" day, flying between San Francisco, New York City and Vienna
@@ -16,7 +16,7 @@
   - "JetLovers"
   - "Swarm"
   years: 7
-  description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers."
+  description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by [JetLovers](https://www.jetlovers.com/)."
   takeaways:
   - Frankfurt - Vienna was the flight connecting me with most US airports
   - Germany is high up on the list due to layovers, even though I didn't spend time there
@@ -156,7 +156,7 @@
   - Withings Scanwatch
   - Withings Scale
   updated: "2022-02-09"
-  description: "This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the Withings Scanwatch while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better."
+  description: "This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the [Withings Scanwatch](https://www.withings.com/us/en/scanwatch) while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better."
   takeaways:
   - "I started my lean bulk (controlled weight gain combined with 5 workouts a week) in August 2020"
   - "The resting rate rate grew from 58bpm to 67bpm from August 2020 to March 2021 (~8 months) with a weight gain of 8.5kg (19lbs)"
@@ -206,7 +206,7 @@
   source: 
   - "Manually"
   years: 7
-  description: "From late 2017 to early 2020 I lived without a permanent home address, staying at various Airbnbs or taking over a few weeks of a lease from a friend"
+  description: "From late 2017 to early 2020 I lived without a permanent home address as a [digital nomad](/blog/one-year-nomad), staying at various Airbnbs or taking over a few weeks of a lease from a friend"
   instructions: "pie_chart.html livingStyle key"
   updated: "2022-01-01"
 - id: "weather-temperature-buckets"
@@ -362,7 +362,7 @@
   years: 1
   source:
   - "Awair"
-  description: "I used the Awair Element at home in Vienna, in every room over multiple days"
+  description: "I used the [Awair Element](https://www.getawair.com/products/element) at home in Vienna, in every room over multiple days"
   takeaways:
   - "Overall, the air quality in Vienna is excellent. Just opening the windows for a few minutes is enough to get a 100% air score"
   - "The smaller the room, the more difficult it is to keep the CO2 levels low"

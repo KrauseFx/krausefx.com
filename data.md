@@ -285,6 +285,8 @@ Multiple times a day, I manually answer questions [FxLifeSheet](https://github.c
 
 After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/).
 
+
+
 <div id="graphs-container">
   
     
@@ -294,7 +296,7 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry">
       <h3>Flying Stats - General</h3>
       <p class="graph-description">
-        All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers.
+        All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by <a href='https://www.jetlovers.com/' target='_blank'>JetLovers</a>.
       </p>
 
       <ul>
@@ -324,7 +326,7 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry">
       <h3>Flying Stats - Top</h3>
       <p class="graph-description">
-        All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by JetLovers.
+        All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by <a href='https://www.jetlovers.com/' target='_blank'>JetLovers</a>.
       </p>
 
       <ul>
@@ -730,7 +732,7 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry">
       <h3>Correlation between weight and resting heart rate</h3>
       <p class="graph-description">
-        This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the Withings Scanwatch while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
+        This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the <a href='https://www.withings.com/us/en/scanwatch' target='_blank'>Withings Scanwatch</a> while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
       </p>
 
       <ul>
@@ -864,7 +866,7 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry">
       <h3>Living Style</h3>
       <p class="graph-description">
-        From late 2017 to early 2020 I lived without a permanent home address, staying at various Airbnbs or taking over a few weeks of a lease from a friend
+        From late 2017 to early 2020 I lived without a permanent home address as a <a href='/blog/one-year-nomad' target='_blank'>digital nomad</a>, staying at various Airbnbs or taking over a few weeks of a lease from a friend
       </p>
 
       <ul>
@@ -1254,7 +1256,7 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry">
       <h3>Air Quality in various rooms</h3>
       <p class="graph-description">
-        I used the Awair Element at home in Vienna, in every room over multiple days
+        I used the <a href='https://www.getawair.com/products/element' target='_blank'>Awair Element</a> at home in Vienna, in every room over multiple days
       </p>
 
       <ul>
@@ -1326,12 +1328,12 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry">
       <h3>Annual money flow</h3>
       <p class="graph-description">
-        Inspired by the Reddit commnunity /r/PFPorn, I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but taken from Reddit
+        Inspired by the Reddit commnunity <a href='https://old.reddit.com/r/PFPorn' target='_blank'>/r/PFPorn</a>, I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but just an example I created.
       </p>
 
       <ul>
         
-          <li>Not owning an apartment, and living in Airbnbs as a nomad I actually spent less money. This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
+          <li>Not owning an apartment, and [living in Airbnbs as a nomad](/blog/one-year-nomad) I actually spent less money. This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
         
           <li>Misc. subscriptions/expenses are adding up quickly</li>
         
