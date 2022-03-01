@@ -299,7 +299,7 @@ end
     <% img_url = Dir["#{filter}png", "#{filter}jpg"].first %>
     <% raise "Screenshot '#{entry["id"]}' doesn't exist" if img_url.nil? %>
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-<%= entry["id"] %>">
       <h3><%= entry.fetch("title") %></h3>
       <p class="graph-description">
         <%= convert_markdown_to_html_links(entry["description"]) %>
@@ -318,7 +318,7 @@ end
         <%= Array(entry.fetch("source")).join(", ") %>
       </span>
 
-      <img src="<%= img_url %>" class="image-link" alt="<%= entry["title"] %>" onclick="enlargeImage('<%= img_url %>', '<%= entry["title"] %>')" />
+      <img src="<%= img_url %>" class="image-link" alt="<%= entry["title"] %>" onclick="enlargeImage(this, '<%= img_url %>', '<%= entry["title"] %>')" />
 
       <span class="graph-date"><%= entry.fetch("years") %> years of data - Last updated on <%= entry.fetch("updated") %></span>
     </div>
@@ -333,12 +333,35 @@ end
 </div>
 
 <script type="text/javascript">
-  function enlargeImage(img, title) {
+  let lastNode = null;
+  function enlargeImage(node, img, title) {
+    // Check if it's already been the selected one
+    if (lastNode == node.parentElement) {
+      showFullScreen(img, title);
+      return;
+    }
+
+    if (lastNode) {
+      lastNode.classList.remove("graph-entry-selected");
+    }
+    node.parentElement.classList.add("graph-entry-selected");
+    node.parentElement.scrollIntoView();
+
+    // If we have a small screen, we also want to immediately use full-screen mode
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (width < 800) {
+      showFullScreen(img, title);
+    }
+
+    lastNode = node.parentElement;
+  }
+  function showFullScreen(img, title) {
     document.getElementById("enlargedImageContainer").style.display = "block";
     document.getElementById("enlargedImage").src = img;
     document.getElementById("enlargedImageLink").href = img;
     document.getElementById("enlargedImageTitle").innerHTML = title;
   }
+
   function dismissImage() {
     document.getElementById("enlargedImageContainer").style.display = "none";
   }
@@ -390,6 +413,7 @@ end
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
+    line-height: 1.2;
   }
   .graphs-entry {
     max-width: 470px;
@@ -619,5 +643,9 @@ end
     font-weight: bold;
     text-decoration: none;
     cursor: pointer !important;
+  }
+  .graph-entry-selected {
+    max-width: 100%;
+    border: 3px solid #00BFFF;
   }
 </style>

@@ -293,7 +293,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-jetlovers-stats">
       <h3>Flying Stats - General</h3>
       <p class="graph-description">
         All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by <a href='https://www.jetlovers.com/' target='_blank'>JetLovers</a>.
@@ -314,7 +314,7 @@ After having tried various tools available to visualize, I ended up writing my o
         JetLovers, Swarm
       </span>
 
-      <img src="graphs/screens/jetlovers-stats.png" class="image-link" alt="Flying Stats - General" onclick="enlargeImage('graphs/screens/jetlovers-stats.png', 'Flying Stats - General')" />
+      <img src="graphs/screens/jetlovers-stats.png" class="image-link" alt="Flying Stats - General" onclick="enlargeImage(this, 'graphs/screens/jetlovers-stats.png', 'Flying Stats - General')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -323,7 +323,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-jetlovers-top">
       <h3>Flying Stats - Top</h3>
       <p class="graph-description">
         All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by <a href='https://www.jetlovers.com/' target='_blank'>JetLovers</a>.
@@ -344,7 +344,7 @@ After having tried various tools available to visualize, I ended up writing my o
         JetLovers, Swarm
       </span>
 
-      <img src="graphs/screens/jetlovers-top.png" class="image-link" alt="Flying Stats - Top" onclick="enlargeImage('graphs/screens/jetlovers-top.png', 'Flying Stats - Top')" />
+      <img src="graphs/screens/jetlovers-top.png" class="image-link" alt="Flying Stats - Top" onclick="enlargeImage(this, 'graphs/screens/jetlovers-top.png', 'Flying Stats - Top')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -353,7 +353,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-life-in-weeks">
       <h3>My life in weeks</h3>
       <p class="graph-description">
         Inspired by Your Life in Weeks by WaitButWhy, I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened.
@@ -380,7 +380,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/life-in-weeks.png" class="image-link" alt="My life in weeks" onclick="enlargeImage('graphs/screens/life-in-weeks.png', 'My life in weeks')" />
+      <img src="graphs/screens/life-in-weeks.png" class="image-link" alt="My life in weeks" onclick="enlargeImage(this, 'graphs/screens/life-in-weeks.png', 'My life in weeks')" />
 
       <span class="graph-date">27.5 years of data - Last updated on 2022-02-24</span>
     </div>
@@ -389,7 +389,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-swarm-cities-top">
       <h3>Top Cities (Checkins)</h3>
       <p class="graph-description">
         Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) at a given city, this is tracked as a single entry
@@ -406,7 +406,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Top Cities (Checkins)" onclick="enlargeImage('graphs/screens/swarm-cities-top.png', 'Top Cities (Checkins)')" />
+      <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Top Cities (Checkins)" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top.png', 'Top Cities (Checkins)')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -415,7 +415,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-swarm-cities-top-years">
       <h3>Top Cities over the years</h3>
       <p class="graph-description">
         Each check-in at a given city is counted as a single entry, grouped by years
@@ -442,7 +442,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Top Cities over the years" onclick="enlargeImage('graphs/screens/swarm-cities-top-years.png', 'Top Cities over the years')" />
+      <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Top Cities over the years" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top-years.png', 'Top Cities over the years')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -451,7 +451,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-swarm-categories-top">
       <h3>Top Categories of Checkins</h3>
       <p class="graph-description">
         Each check-in at a given category is tracked, and summed up over the last years
@@ -470,7 +470,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-categories-top.png" class="image-link" alt="Top Categories of Checkins" onclick="enlargeImage('graphs/screens/swarm-categories-top.png', 'Top Categories of Checkins')" />
+      <img src="graphs/screens/swarm-categories-top.png" class="image-link" alt="Top Categories of Checkins" onclick="enlargeImage(this, 'graphs/screens/swarm-categories-top.png', 'Top Categories of Checkins')" />
 
       <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
     </div>
@@ -479,7 +479,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-weather-temperature-max">
       <h3>Maximal temperature each day of the year</h3>
       <p class="graph-description">
         Historic weather data based on the location I was at on that day based on my Swarm check-ins. Days with no data are rendered as white
@@ -506,7 +506,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Visual Crossing historic weather data, Swarm
       </span>
 
-      <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal temperature each day of the year" onclick="enlargeImage('graphs/screens/weather-temperature-max.png', 'Maximal temperature each day of the year')" />
+      <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal temperature each day of the year" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-max.png', 'Maximal temperature each day of the year')" />
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -515,7 +515,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-map-world-overview">
       <h3>Location History</h3>
       <p class="graph-description">
         Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered.
@@ -532,7 +532,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Swarm
       </span>
 
-      <img src="graphs/screens/map-world-overview.jpg" class="image-link" alt="Location History" onclick="enlargeImage('graphs/screens/map-world-overview.jpg', 'Location History')" />
+      <img src="graphs/screens/map-world-overview.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-overview.jpg', 'Location History')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -541,7 +541,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-map-world-trip">
       <h3>Location History</h3>
       <p class="graph-description">
         Every Swarm check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)
@@ -558,7 +558,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Swarm
       </span>
 
-      <img src="graphs/screens/map-world-trip.jpg" class="image-link" alt="Location History" onclick="enlargeImage('graphs/screens/map-world-trip.jpg', 'Location History')" />
+      <img src="graphs/screens/map-world-trip.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-trip.jpg', 'Location History')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -567,7 +567,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-map-combined">
       <h3>Location History - Cities</h3>
       <p class="graph-description">
         Every Swarm check-in over the last 7 years visualized, zoomed in
@@ -584,7 +584,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Swarm
       </span>
 
-      <img src="graphs/screens/map-combined.jpg" class="image-link" alt="Location History - Cities" onclick="enlargeImage('graphs/screens/map-combined.jpg', 'Location History - Cities')" />
+      <img src="graphs/screens/map-combined.jpg" class="image-link" alt="Location History - Cities" onclick="enlargeImage(this, 'graphs/screens/map-combined.jpg', 'Location History - Cities')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -593,7 +593,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-mood-happy-days">
       <h3>Happy Days</h3>
       <p class="graph-description">
         Bucketing all days, by the days at which I was above average happy (excited, pumped). On days where I was happy:
@@ -622,7 +622,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/mood-happy-days.png" class="image-link" alt="Happy Days" onclick="enlargeImage('graphs/screens/mood-happy-days.png', 'Happy Days')" />
+      <img src="graphs/screens/mood-happy-days.png" class="image-link" alt="Happy Days" onclick="enlargeImage(this, 'graphs/screens/mood-happy-days.png', 'Happy Days')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -631,7 +631,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-daily-steps">
       <h3>Average daily steps over time</h3>
       <p class="graph-description">
         Measured through the iPhone's Health app, which stayed the same over the last 8 years, while my smart watches have changed over time
@@ -656,7 +656,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Apple Health
       </span>
 
-      <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average daily steps over time" onclick="enlargeImage('graphs/screens/daily-steps.png', 'Average daily steps over time')" />
+      <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average daily steps over time" onclick="enlargeImage(this, 'graphs/screens/daily-steps.png', 'Average daily steps over time')" />
 
       <span class="graph-date">8 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -665,7 +665,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-swarm-number-of-checkins">
       <h3>Number of Swarm checkins over time</h3>
       <p class="graph-description">
         Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every POI I visit
@@ -690,7 +690,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm checkins over time" onclick="enlargeImage('graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm checkins over time')" />
+      <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm checkins over time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm checkins over time')" />
 
       <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -699,7 +699,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-lockdown-days">
       <h3>Days in full lockdown</h3>
       <p class="graph-description">
         Number of days per year that I've spent in full lockdown, meaning closed restaurants, bars and non-essential stores.
@@ -720,7 +720,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/lockdown-days.png" class="image-link" alt="Days in full lockdown" onclick="enlargeImage('graphs/screens/lockdown-days.png', 'Days in full lockdown')" />
+      <img src="graphs/screens/lockdown-days.png" class="image-link" alt="Days in full lockdown" onclick="enlargeImage(this, 'graphs/screens/lockdown-days.png', 'Days in full lockdown')" />
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -729,7 +729,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-weight-sleeping-hr">
       <h3>Correlation between weight and resting heart rate</h3>
       <p class="graph-description">
         This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the <a href='https://www.withings.com/us/en/scanwatch' target='_blank'>Withings Scanwatch</a> while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
@@ -756,7 +756,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Withings Scanwatch, Withings Scale
       </span>
 
-      <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation between weight and resting heart rate" onclick="enlargeImage('graphs/screens/weight-sleeping-hr.png', 'Correlation between weight and resting heart rate')" />
+      <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation between weight and resting heart rate" onclick="enlargeImage(this, 'graphs/screens/weight-sleeping-hr.png', 'Correlation between weight and resting heart rate')" />
 
       <span class="graph-date">1.5 years of data - Last updated on 2022-02-09</span>
     </div>
@@ -765,7 +765,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-weather-conditions">
       <h3>Weather conditions per year</h3>
       <p class="graph-description">
         Historic weather data based on the location I was at on that day based on my Swarm check-ins.
@@ -784,7 +784,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Visual Crossing historic weather data, Swarm
       </span>
 
-      <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather conditions per year" onclick="enlargeImage('graphs/screens/weather-conditions.png', 'Weather conditions per year')" />
+      <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather conditions per year" onclick="enlargeImage(this, 'graphs/screens/weather-conditions.png', 'Weather conditions per year')" />
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -793,7 +793,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-manual-alcohol-intake">
       <h3>Alcoholic Beverages per day</h3>
       <p class="graph-description">
         Alcohol drinks per day. Days with no data are rendered as white
@@ -820,7 +820,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/manual-alcohol-intake.png" class="image-link" alt="Alcoholic Beverages per day" onclick="enlargeImage('graphs/screens/manual-alcohol-intake.png', 'Alcoholic Beverages per day')" />
+      <img src="graphs/screens/manual-alcohol-intake.png" class="image-link" alt="Alcoholic Beverages per day" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake.png', 'Alcoholic Beverages per day')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -829,7 +829,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-manual-gym-visits">
       <h3>Workouts in the gym</h3>
       <p class="graph-description">
         Each green square represents a strength-workout in the gym, I try my best to purchase day passes at gyms while traveling
@@ -854,7 +854,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Workouts in the gym" onclick="enlargeImage('graphs/screens/manual-gym-visits.png', 'Workouts in the gym')" />
+      <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Workouts in the gym" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits.png', 'Workouts in the gym')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -863,7 +863,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-manual-living-style-years">
       <h3>Living Style</h3>
       <p class="graph-description">
         From late 2017 to early 2020 I lived without a permanent home address as a <a href='/blog/one-year-nomad' target='_blank'>digital nomad</a>, staying at various Airbnbs or taking over a few weeks of a lease from a friend
@@ -880,7 +880,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/manual-living-style-years.png" class="image-link" alt="Living Style" onclick="enlargeImage('graphs/screens/manual-living-style-years.png', 'Living Style')" />
+      <img src="graphs/screens/manual-living-style-years.png" class="image-link" alt="Living Style" onclick="enlargeImage(this, 'graphs/screens/manual-living-style-years.png', 'Living Style')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -889,7 +889,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-weather-temperature-buckets">
       <h3>How does high temperature affect my life?</h3>
       <p class="graph-description">
         On days with a maximum temperature of more than 26 Celsius (78.8 Fahrenheit), the following other factors were affected
@@ -926,7 +926,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Visual Crossing historic weather data, Manually
       </span>
 
-      <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does high temperature affect my life?" onclick="enlargeImage('graphs/screens/weather-temperature-buckets.png', 'How does high temperature affect my life?')" />
+      <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does high temperature affect my life?" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-buckets.png', 'How does high temperature affect my life?')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -935,7 +935,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-healthy">
       <h3>How healthy was I over the years?</h3>
       <p class="graph-description">
         Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy
@@ -960,7 +960,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the years?" onclick="enlargeImage('graphs/screens/healthy.png', 'How healthy was I over the years?')" />
+      <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the years?" onclick="enlargeImage(this, 'graphs/screens/healthy.png', 'How healthy was I over the years?')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -969,7 +969,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-sleep-duration-buckets">
       <h3>How does longer sleep duration affect my day?</h3>
       <p class="graph-description">
         On days where I had a total sleep duration of more than 8.5 hours, the following other factors were affected
@@ -1006,7 +1006,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Withings Scan Watch, Manually
       </span>
 
-      <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage('graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
+      <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage(this, 'graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1015,7 +1015,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-daily-steps-buckets">
       <h3>Days with more than 15,000 steps</h3>
       <p class="graph-description">
         On days where I walked more than 15,000 steps (I walked an average of 9200 steps a day the last 3 years)
@@ -1058,7 +1058,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Apple Health
       </span>
 
-      <img src="graphs/screens/daily-steps-buckets.png" class="image-link" alt="Days with more than 15,000 steps" onclick="enlargeImage('graphs/screens/daily-steps-buckets.png', 'Days with more than 15,000 steps')" />
+      <img src="graphs/screens/daily-steps-buckets.png" class="image-link" alt="Days with more than 15,000 steps" onclick="enlargeImage(this, 'graphs/screens/daily-steps-buckets.png', 'Days with more than 15,000 steps')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1067,7 +1067,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-happy-mood-entries-buckets">
       <h3>Days where I tracked my mood to be very excited/happy</h3>
       <p class="graph-description">
         On days where I tracked my mood to be very excited/happy, the following other factors were affected
@@ -1110,7 +1110,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be very excited/happy" onclick="enlargeImage('graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be very excited/happy')" />
+      <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be very excited/happy" onclick="enlargeImage(this, 'graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be very excited/happy')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1119,7 +1119,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-alcoholic-beverages-buckets">
       <h3>Days with more than 4 alcoholic drinks</h3>
       <p class="graph-description">
         On days where I had more than 4 alcoholic beverages, the following other factors were affected
@@ -1148,7 +1148,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 alcoholic drinks" onclick="enlargeImage('graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 alcoholic drinks')" />
+      <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 alcoholic drinks" onclick="enlargeImage(this, 'graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 alcoholic drinks')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1157,7 +1157,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-weight-graph-1">
       <h3>Weight history of 8 years</h3>
       <p class="graph-description">
         Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently.
@@ -1180,7 +1180,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Withings Scale
       </span>
 
-      <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight history of 8 years" onclick="enlargeImage('graphs/screens/weight-graph-1.png', 'Weight history of 8 years')" />
+      <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight history of 8 years" onclick="enlargeImage(this, 'graphs/screens/weight-graph-1.png', 'Weight history of 8 years')" />
 
       <span class="graph-date">9 years of data - Last updated on 2022-02-17</span>
     </div>
@@ -1189,7 +1189,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-macros">
       <h3>Food tracking - Macros</h3>
       <p class="graph-description">
         On weeks where I have a routine (not traveling), I track most my meals. Whenever I scale my food, I try to guess the weight before to become better at estimating portion sizes.
@@ -1214,7 +1214,7 @@ After having tried various tools available to visualize, I ended up writing my o
         MyFitnessPal
       </span>
 
-      <img src="graphs/screens/macros.png" class="image-link" alt="Food tracking - Macros" onclick="enlargeImage('graphs/screens/macros.png', 'Food tracking - Macros')" />
+      <img src="graphs/screens/macros.png" class="image-link" alt="Food tracking - Macros" onclick="enlargeImage(this, 'graphs/screens/macros.png', 'Food tracking - Macros')" />
 
       <span class="graph-date">4 years of data - Last updated on 2022-02-17</span>
     </div>
@@ -1223,7 +1223,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-weight-graph-2">
       <h3>Bulk & Cut Phase visualized</h3>
       <p class="graph-description">
         I usually have slow bulk & cut phases, where I gain and lose weight at a controlled speed, combined with tracking my meals.
@@ -1244,7 +1244,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Withings Scale, weightgrapher.com
       </span>
 
-      <img src="graphs/screens/weight-graph-2.png" class="image-link" alt="Bulk & Cut Phase visualized" onclick="enlargeImage('graphs/screens/weight-graph-2.png', 'Bulk & Cut Phase visualized')" />
+      <img src="graphs/screens/weight-graph-2.png" class="image-link" alt="Bulk & Cut Phase visualized" onclick="enlargeImage(this, 'graphs/screens/weight-graph-2.png', 'Bulk & Cut Phase visualized')" />
 
       <span class="graph-date">1 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1253,7 +1253,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-air-quality">
       <h3>Air Quality in various rooms</h3>
       <p class="graph-description">
         I used the <a href='https://www.getawair.com/products/element' target='_blank'>Awair Element</a> at home in Vienna, in every room over multiple days
@@ -1282,7 +1282,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Awair
       </span>
 
-      <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage('graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
+      <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage(this, 'graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
 
       <span class="graph-date">1 years of data - Last updated on 2022-02-09</span>
     </div>
@@ -1291,7 +1291,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-money-distribution">
       <h3>Investment Distribution</h3>
       <p class="graph-description">
         Every second week I track my current investments and cash positions. As part of this project, it tells me how to most efficiently re-balance my investments when they're off, while also minimizing the occuring fees
@@ -1316,7 +1316,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manually
       </span>
 
-      <img src="graphs/screens/money-distribution.png" class="image-link" alt="Investment Distribution" onclick="enlargeImage('graphs/screens/money-distribution.png', 'Investment Distribution')" />
+      <img src="graphs/screens/money-distribution.png" class="image-link" alt="Investment Distribution" onclick="enlargeImage(this, 'graphs/screens/money-distribution.png', 'Investment Distribution')" />
 
       <span class="graph-date">8 years of data - Last updated on 2022-02-09</span>
     </div>
@@ -1325,7 +1325,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-money-flow">
       <h3>Annual money flow</h3>
       <p class="graph-description">
         Inspired by the Reddit commnunity <a href='https://old.reddit.com/r/PFPorn' target='_blank'>/r/PFPorn</a>, I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but just an example I created.
@@ -1350,7 +1350,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Chase Credit Card Year Summary, sankeymatic.com, Manually
       </span>
 
-      <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual money flow" onclick="enlargeImage('graphs/screens/money-flow.png', 'Annual money flow')" />
+      <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual money flow" onclick="enlargeImage(this, 'graphs/screens/money-flow.png', 'Annual money flow')" />
 
       <span class="graph-date">5 years of data - Last updated on 2022-02-09</span>
     </div>
@@ -1359,7 +1359,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-rescue-time-usage-categories">
       <h3>Rescue Time Computer Usage Categories</h3>
       <p class="graph-description">
         Using RescueTime, I tracked my exact computer usage, and the categories of activities in which I spend time with.
@@ -1382,7 +1382,7 @@ After having tried various tools available to visualize, I ended up writing my o
         RescueTime
       </span>
 
-      <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="Rescue Time Computer Usage Categories" onclick="enlargeImage('graphs/screens/rescue-time-usage-categories.png', 'Rescue Time Computer Usage Categories')" />
+      <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="Rescue Time Computer Usage Categories" onclick="enlargeImage(this, 'graphs/screens/rescue-time-usage-categories.png', 'Rescue Time Computer Usage Categories')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1391,7 +1391,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-season-winter">
       <h3>How does Winter affect my life?</h3>
       <p class="graph-description">
         Winter (being from 21st Dec to 20th March) has the following effects on my life:
@@ -1416,7 +1416,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manual
       </span>
 
-      <img src="graphs/screens/season-winter.png" class="image-link" alt="How does Winter affect my life?" onclick="enlargeImage('graphs/screens/season-winter.png', 'How does Winter affect my life?')" />
+      <img src="graphs/screens/season-winter.png" class="image-link" alt="How does Winter affect my life?" onclick="enlargeImage(this, 'graphs/screens/season-winter.png', 'How does Winter affect my life?')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1425,7 +1425,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-season-summer">
       <h3>How does Summer affect my life?</h3>
       <p class="graph-description">
         Summer (being from 21st June to 23rd September) has the following effects on my life:
@@ -1458,7 +1458,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manual
       </span>
 
-      <img src="graphs/screens/season-summer.png" class="image-link" alt="How does Summer affect my life?" onclick="enlargeImage('graphs/screens/season-summer.png', 'How does Summer affect my life?')" />
+      <img src="graphs/screens/season-summer.png" class="image-link" alt="How does Summer affect my life?" onclick="enlargeImage(this, 'graphs/screens/season-summer.png', 'How does Summer affect my life?')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1467,7 +1467,7 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
-    <div class="graphs-entry">
+    <div class="graphs-entry" id="graphs-entry-day-is-weekend">
       <h3>What are weekends like?</h3>
       <p class="graph-description">
         Weekends for me naturally involve less work time, more going out, and social interactions, as well as visiting family memebers outside the city
@@ -1498,7 +1498,7 @@ After having tried various tools available to visualize, I ended up writing my o
         Manual
       </span>
 
-      <img src="graphs/screens/day-is-weekend.png" class="image-link" alt="What are weekends like?" onclick="enlargeImage('graphs/screens/day-is-weekend.png', 'What are weekends like?')" />
+      <img src="graphs/screens/day-is-weekend.png" class="image-link" alt="What are weekends like?" onclick="enlargeImage(this, 'graphs/screens/day-is-weekend.png', 'What are weekends like?')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1513,12 +1513,35 @@ After having tried various tools available to visualize, I ended up writing my o
 </div>
 
 <script type="text/javascript">
-  function enlargeImage(img, title) {
+  let lastNode = null;
+  function enlargeImage(node, img, title) {
+    // Check if it's already been the selected one
+    if (lastNode == node.parentElement) {
+      showFullScreen(img, title);
+      return;
+    }
+
+    if (lastNode) {
+      lastNode.classList.remove("graph-entry-selected");
+    }
+    node.parentElement.classList.add("graph-entry-selected");
+    node.parentElement.scrollIntoView();
+
+    // If we have a small screen, we also want to immediately use full-screen mode
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (width < 800) {
+      showFullScreen(img, title);
+    }
+
+    lastNode = node.parentElement;
+  }
+  function showFullScreen(img, title) {
     document.getElementById("enlargedImageContainer").style.display = "block";
     document.getElementById("enlargedImage").src = img;
     document.getElementById("enlargedImageLink").href = img;
     document.getElementById("enlargedImageTitle").innerHTML = title;
   }
+
   function dismissImage() {
     document.getElementById("enlargedImageContainer").style.display = "none";
   }
@@ -1570,6 +1593,7 @@ After having tried various tools available to visualize, I ended up writing my o
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
+    line-height: 1.2;
   }
   .graphs-entry {
     max-width: 470px;
@@ -1799,5 +1823,9 @@ After having tried various tools available to visualize, I ended up writing my o
     font-weight: bold;
     text-decoration: none;
     cursor: pointer !important;
+  }
+  .graph-entry-selected {
+    max-width: 100%;
+    border: 3px solid #00BFFF;
   }
 </style>
