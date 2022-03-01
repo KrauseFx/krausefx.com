@@ -127,7 +127,7 @@ meta: {}
       if (data.todaysFoodItems.length > 3) {
         let row = document.createElement("tr")
         row.className = "show-more-food"
-        row.innerHTML = "<td colspan='2'><a href='#' onclick='toggleFood()' id='show-all-food-a'>Show all food entries</a></td>"
+        row.innerHTML = "<td colspan='2'><a onclick='toggleFood()' id='show-all-food-a'>Show all food entries</a></td>"
         foodEntriesTable.appendChild(row)
       }
     } else {
