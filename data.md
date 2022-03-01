@@ -1766,6 +1766,7 @@ After having tried various tools available to visualize, I ended up writing my o
   #foodEntriesTable {
     border: none;
     width: 430px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
@@ -1777,7 +1778,7 @@ After having tried various tools available to visualize, I ended up writing my o
   }
   #foodEntriesTable > tr > td {
     color: #669;
-    padding: 9px 30px 0;
+    padding: 9px 0 0;
     border: none;
     text-overflow: ellipsis;
     overflow: hidden;
