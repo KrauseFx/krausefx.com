@@ -1513,8 +1513,28 @@ After having tried various tools available to visualize, I ended up writing my o
 </div>
 
 <script type="text/javascript">
+  // Subscribe to mouse wheel
+  const imageLinks = document.getElementsByClassName("image-link")
+  for (let i = 0; i < imageLinks.length; i++) {
+
+    imageLinks[i].addEventListener("mousedown", function(event) {
+      console.log(event.button)
+      if (event.button === 1) { // 1 = center mouse button
+        event.preventDefault()
+        window.open(this.getAttribute("src"), '_blank');
+      }
+    })
+  }  
+
   let lastNode = null;
+
   function enlargeImage(node, img, title) {
+    // Check if this is a center mouse click (Control or Meta Key)
+    if (event.ctrlKey || event.metaKey) {
+      window.open(img, '_blank');
+      return;
+    }
+
     // Check if it's already been the selected one
     if (lastNode == node.parentElement) {
       showFullScreen(img, title);
