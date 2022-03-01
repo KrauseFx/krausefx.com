@@ -285,6 +285,14 @@ Multiple times a day, I manually answer questions [FxLifeSheet](https://github.c
 
 After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/).
 
+<%
+def convert_markdown_to_html_links(string)
+  string.gsub(/\[([^\]]+)\]\(([^\)]+)\)/) do |match|
+    "<a href='#{$2}' target='_blank'>#{$1}</a>"
+  end
+end
+%>
+
 <div id="graphs-container">
   <% all_data.each do |entry| %>
     <% filter = "graphs/screens/#{entry["id"]}." %>
@@ -294,7 +302,7 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry">
       <h3><%= entry.fetch("title") %></h3>
       <p class="graph-description">
-        <%= entry["description"] %>
+        <%= convert_markdown_to_html_links(entry["description"]) %>
       </p>
 
       <ul>
