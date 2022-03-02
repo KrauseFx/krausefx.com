@@ -188,6 +188,17 @@
     - "Summer of 2021 all bars and dance clubs were open in Vienna"
   instructions: "github_style.html, alcoholIntake key"
   updated: "2022-01-01"
+- id: "manual-alcohol-intake-months"
+  title: "Alcoholic Beverages per month"
+  source: 
+  - "Manually"
+  years: 2.5
+  description: "Each bar represents a month, the graph shows the number of alcoholic beverages on a given day, with '5' being 5 or more drinks. "
+  takeaways:
+    - On May 2019, the 0 bar is rendered to be 55%, meaning on 55% days of that month I didn't drink any alcohol
+    - August 2021 Austrian night life was fully open up again, with most COVID restrictions being lifted
+  instructions: "github_style.html, alcoholIntake key"
+  updated: "2022-01-01"
 - id: "manual-gym-visits"
   title: "Workouts in the gym"
   source: 
