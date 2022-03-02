@@ -36,7 +36,6 @@ meta: {}
 
   httpGetAsync(url, function(data) {
     const otherFxLifeData = data["otherFxLifeData"]
-    console.log(data)
 
     // Render map
     document.getElementById("currentLocationMap").style.background = "url('" + data["mapsUrl"] + "') no-repeat"
@@ -1542,7 +1541,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     
 
     <div class="graphs-entry" id="graphs-entry-rescue-time-usage-categories">
-      <h3>Rescue Time Computer Usage Categories</h3>
+      <h3>RescueTime Computer Usage Categories</h3>
       <p class="graph-description">
         Using RescueTime, I tracked my exact computer usage, and the categories of activities in which I spend time with.
       </p>
@@ -1564,7 +1563,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         RescueTime
       </span>
 
-      <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="Rescue Time Computer Usage Categories" onclick="enlargeImage(this, 'graphs/screens/rescue-time-usage-categories.png', 'Rescue Time Computer Usage Categories')" />
+      <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="RescueTime Computer Usage Categories" onclick="enlargeImage(this, 'graphs/screens/rescue-time-usage-categories.png', 'RescueTime Computer Usage Categories')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1718,7 +1717,6 @@ After having tried various tools available to visualize, I ended up writing my o
   const imageLinks = document.getElementsByClassName("image-link")
   for (let i = 0; i < imageLinks.length; i++) {
     imageLinks[i].addEventListener("mousedown", function(event) {
-      console.log(event.button)
       if (event.button === 1) { // 1 = center mouse button
         event.preventDefault()
         window.open(this.getAttribute("src"), '_blank');
