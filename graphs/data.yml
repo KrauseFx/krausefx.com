@@ -472,7 +472,7 @@
   - Creating this chart is still a lot of work, if you want to also consider getting reimbursed, or expenses you've covered for a group (e.g. booked a larger Airbnb)
   updated: "2022-02-09"
 - id: "rescue-time-usage-categories"
-  title: "Rescue Time Computer Usage Categories"
+  title: "RescueTime Computer Usage Categories"
   source:
   - "RescueTime"
   years: 7
