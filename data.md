@@ -1245,6 +1245,40 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
+    <div class="graphs-entry" id="graphs-entry-socializing">
+      <h3>Happy with my social life?</h3>
+      <p class="graph-description">
+        Each day I answer the question "Do you feel like you need to socialize more?" with the answers ranging from "No" (5 = light green) to "Not enough socializing" (0 = dark green)
+      </p>
+
+      <ul>
+        
+          <li>Since I'm an Introvert, I tend to feel like I socialize too much, rather than too little</li>
+        
+          <li>Early COVID lockdown March 2020 was still good, however as the lockdown continued I felt more isolated</li>
+        
+          <li>End of July 2020 Austria opened up most social venues again, bringing this graph back to a great state again</li>
+        
+          <li>December 2019 I was working remotely from Buenos Aires, however got a pretty bad cold. Being sick in a remote city wasn't the best feeling</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/socializing.png" class="image-link" alt="Happy with my social life?" onclick="enlargeImage(this, 'graphs/screens/socializing.png', 'Happy with my social life?')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
     <div class="graphs-entry" id="graphs-entry-countries">
       <h3>Days spent in each country</h3>
       <p class="graph-description">
