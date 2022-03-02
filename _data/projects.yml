@@ -99,7 +99,7 @@
   subtitle: "⛳️ A completely automated way to create iOS and Android apps for sport clubs, including a CMS for customers to manage their apps"
   metadata: "Founder"
 - title: "[deprecated] Themoji"
-  url: "https://themoji.me/"
+  url: "https://themoji.github.io/themoji.me/"
   subtitle: "🍔 A simple iOS app to view emojis full-screen to communicate with locals while traveling"
   metadata: "Open Source"
 - title: "[deprecated] notes-exporter"
