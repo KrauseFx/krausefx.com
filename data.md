@@ -1713,7 +1713,6 @@ After having tried various tools available to visualize, I ended up writing my o
   const imageLinks = document.getElementsByClassName("image-link")
   for (let i = 0; i < imageLinks.length; i++) {
     imageLinks[i].addEventListener("mousedown", function(event) {
-      console.log(event.button)
       if (event.button === 1) { // 1 = center mouse button
         event.preventDefault()
         window.open(this.getAttribute("src"), '_blank');
@@ -2105,11 +2104,11 @@ After having tried various tools available to visualize, I ended up writing my o
     border: 3px solid #00BFFF;
   }
   .arrow-button {
-    right: 30px;
     position: absolute;
     height: 40px;
     top: calc(50% - 10px);
     cursor: pointer;
+    top: -100px;
   }
   #arrow-right-button {
     content: url('/graphs/assets/source_icons_arrow-right-circled.svg');
