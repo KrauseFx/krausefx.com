@@ -829,6 +829,36 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
+    <div class="graphs-entry" id="graphs-entry-manual-alcohol-intake-months">
+      <h3>Alcoholic Beverages per month</h3>
+      <p class="graph-description">
+        Each bar represents a month, the graph shows the number of alcoholic beverages on a given day, with '5' being 5 or more drinks. 
+      </p>
+
+      <ul>
+        
+          <li>On May 2019, the 0 bar is rendered to be 55%, meaning on 55% days of that month I didn't drink any alcohol</li>
+        
+          <li>August 2021 Austrian night life was fully open up again, with most COVID restrictions being lifted</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/manual-alcohol-intake-months.png" class="image-link" alt="Alcoholic Beverages per month" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake-months.png', 'Alcoholic Beverages per month')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
     <div class="graphs-entry" id="graphs-entry-manual-gym-visits">
       <h3>Workouts in the gym</h3>
       <p class="graph-description">
@@ -1143,6 +1173,72 @@ After having tried various tools available to visualize, I ended up writing my o
       <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be very excited/happy" onclick="enlargeImage(this, 'graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be very excited/happy')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-mood-graph-months">
+      <h3>Mood over the years</h3>
+      <p class="graph-description">
+        I track my mood 4 times a day. This graph groups the entries by month, and shows the % of entries for each value (0 - 5) with 5 being very excited, and 0 being worried. I designed the ranges so that 0 or 5 are not entered as much. 0 is rendered as dark green at the top, whereas 5 is rendered as light green at the bottom.
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/mood-graph-months.png" class="image-link" alt="Mood over the years" onclick="enlargeImage(this, 'graphs/screens/mood-graph-months.png', 'Mood over the years')" />
+
+      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-fitness-bulk">
+      <h3>Fitness Bulk & Cut season</h3>
+      <p class="graph-description">
+        I'm following a pretty regular bodybuilding routine, a 3-day workout split, and a normal bulk & cut seasons
+      </p>
+
+      <ul>
+        
+          <li>During times where fitness isn't high up on my priority list, I usually switch to maintainance</li>
+        
+          <li>During a cut, I have a slight kcal deficit of about 300kcal, to not negatively impact the rest of my life</li>
+        
+          <li>During the bulk, I aim to gain about 300g of body weight per week</li>
+        
+          <li>During a cut, I tend to track my meals more precisely than during a bulk or while maintaining</li>
+        
+          <li>Purple = Cut</li>
+        
+          <li>Brown = Bulk</li>
+        
+          <li>Blue = Maintainance</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/fitness-bulk.png" class="image-link" alt="Fitness Bulk & Cut season" onclick="enlargeImage(this, 'graphs/screens/fitness-bulk.png', 'Fitness Bulk & Cut season')" />
+
+      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
     </div>
   
     

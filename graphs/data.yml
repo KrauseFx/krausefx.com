@@ -336,6 +336,23 @@
   description: "I track my mood 4 times a day. This graph groups the entries by month, and shows the % of entries for each value (0 - 5) with 5 being very excited, and 0 being worried. I designed the ranges so that 0 or 5 are not entered as much. 0 is rendered as dark green at the top, whereas 5 is rendered as light green at the bottom."
   updated: "2022-01-01"
   instructions: "/pie_chart -> mood"
+- id: "fitness-bulk"
+  title: "Fitness Bulk & Cut season"
+  years: 4
+  source:
+  - "Manually"
+  description: "I'm following a pretty regular bodybuilding routine, a 3-day workout split, and a normal bulk & cut seasons"
+  takeaways:
+  - During times where fitness isn't high up on my priority list, I usually switch to maintainance
+  - During a cut, I have a slight kcal deficit of about 300kcal, to not negatively impact the rest of my life
+  - During the bulk, I aim to gain about 300g of body weight per week
+  - During a cut, I tend to track my meals more precisely than during a bulk or while maintaining
+  - Purple = Cut
+  - Brown = Bulk
+  - Blue = Maintainance
+  updated: "2022-01-01"
+  instructions: "/pie_chart -> mood"
+
 - id: "alcoholic-beverages-buckets"
   title: "Days with more than 4 alcoholic drinks"
   years: 2.5
