@@ -36,7 +36,6 @@ meta: {}
 
   httpGetAsync(url, function(data) {
     const otherFxLifeData = data["otherFxLifeData"]
-    console.log(data)
 
     // Render map
     document.getElementById("currentLocationMap").style.background = "url('" + data["mapsUrl"] + "') no-repeat"
@@ -67,6 +66,13 @@ meta: {}
     document.getElementById("data-points").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString()
     document.getElementById("data-entries-count").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString()
 
+    // Overview of data sources
+    document.getElementById("h-rescuetime").innerHTML = otherFxLifeData["rescue_time"]["value"].toLocaleString()
+    document.getElementById("h-swarm").innerHTML = otherFxLifeData["swarm"]["value"].toLocaleString()
+    document.getElementById("h-manually").innerHTML = otherFxLifeData["manuallyEntered"]["value"].toLocaleString()
+    document.getElementById("h-timeranges").innerHTML = otherFxLifeData["timeRanges"]["value"].toLocaleString()
+    document.getElementById("h-weather").innerHTML = otherFxLifeData["weather"]["value"].toLocaleString()
+    document.getElementById("h-health").innerHTML = otherFxLifeData["dailySteps"]["value"].toLocaleString()
 
     // Git Details
     document.getElementById("git-time-ago").innerHTML = daysOrHoursAgo(new Date(data["lastCommitTimestamp"]))
@@ -245,47 +251,24 @@ meta: {}
     <a target="_blank" href="" id="git-link"></a>
   </h3>
   <p class="git-footnote">on GitHub repo <a target="_blank" href="" id="git-repo-link"></a></p>
-  <hr />
-
-  <p style='text-align: center; margin-top: -10px;'><a href="https://whereisfelix.today">More real-time data on WhereIsFelix.today</a></p>
 </div>
 
 <h1>My whole life in a single database</h1>
 
-As part of the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet) I've started back in 2019, I started collecting all kinds of metrics about my life.
-Every single day for the last 2.5 years I've tracked over 100 different data types of my life.
+As part of the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet) I've created back in 2019, I started collecting all kinds of metrics about my life.
+Every single day for the last 2.5 years I've tracked over 100 different data types, ranging from fitness, nutrition, to social life, computer usage and weather.
 
-I haven't yet had the time to analyze all the outcomes, but felt like I already have some very interesting graphs I'd like to share here.
-
-Currently, I have <b><span id="data-points">~380,000</span> data points</b>, with the biggest data sources being:
+Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> data points</b>, with the biggest data sources being:
 
 <table>
   <tr><th>Data Source</th><th>Number of data entries</th><th>Type of data</th></tr>
-  <tr><td>RescueTime</td><td>150,000</td><td>Daily computer usage</td></tr>
-  <tr><td>Foursquare Swarm</td><td>125,000</td><td>Location and POI data</td></tr>
-  <tr><td>Manually entered</td><td>63,000</td><td>Fitness, mood, socializing, productivity</td></tr>
-  <tr><td>Manually entered time ranges</td><td>10,000</td><td>Occupation, lockdown status, home setup</td></tr>
-  <tr><td>Weather API</td><td>16,000</td><td>Temperature, rain, sunlight, wind, air pressure</td></tr>
-  <tr><td>Apple Health</td><td>1,000</td><td>Steps data</td></tr>
+  <tr><td>RescueTime</td><td><span class="highlighted" id="h-rescuetime">149,466</span></td><td>Daily computer usage (which website, which apps)</td></tr>
+  <tr><td>Foursquare Swarm</td><td><span class="highlighted" id="h-swarm">126,285</span></td><td>Location and POI data, places I've visited</td></tr>
+  <tr><td>Manually entered</td><td><span class="highlighted" id="h-manually">67,031</span></td><td>Data about fitness, mood, social life, nutrition, energy levels, ...</td></tr>
+  <tr><td>Manually entered time ranges</td><td><span class="highlighted" id="h-timeranges">19,273</span></td><td>Occupation, lockdown status, living setup</td></tr>
+  <tr><td>Weather API</td><td><span class="highlighted" id="h-weather">15,442</span></td><td>Temperature, rain, sunlight, wind, air pressure</td></tr>
+  <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
-
-This project has 3 components:
-
-<b>◦ Database</b>
-
-A timestamp-based key-value database of all data entries powered by Postgres. This allows me to add and remove questions on-the-fly.
-
-<img src="graphs/assets/fxlifesheet-database.png">
-
-<b>◦ Data Inputs</b>
-
-Multiple times a day, I manually answer questions [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) sends me via a Telegram bot.
-
-<b>◦ Data Visualizations</b>
-
-After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/).
-
-
 
 <div id="graphs-container">
   
@@ -1698,6 +1681,24 @@ After having tried various tools available to visualize, I ended up writing my o
     </div>
   
 </div>
+
+
+<h3>More Information</h3>
+
+This project has 3 components:
+
+<b>◦ Database</b>
+
+A timestamp-based key-value database of all data entries powered by Postgres. This allows me to add and remove questions on-the-fly.
+
+<b>◦ Data Inputs</b>
+
+Multiple times a day, I manually answer questions [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) sends me via a Telegram bot.
+
+<b>◦ Data Visualizations</b>
+
+After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/).
+
 
 <div id="enlargedImageContainer" onclick="dismissImage()">
   <a target="_blank" id="enlargedImageLink">
