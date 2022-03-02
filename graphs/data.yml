@@ -351,8 +351,18 @@
   - Brown = Bulk
   - Blue = Maintainance
   updated: "2022-01-01"
-  instructions: "/pie_chart -> mood"
-
+  instructions: "/pie_chart -> dietPhase"
+- id: "countries"
+  title: "Days spent in each country"
+  years: 4
+  source:
+  - "Manually"
+  description: "Percentage of days spent in each country over the last 4 years"
+  takeaways:
+  - International travel has slowed down significantly since COVID started
+  - Traveling without a stop home for more than 3 weeks gets exhausting for me, I prefer doing more shorter travels instead
+  updated: "2022-01-01"
+  instructions: "/pie_chart -> locationInfoCountry"
 - id: "alcoholic-beverages-buckets"
   title: "Days with more than 4 alcoholic drinks"
   years: 2.5

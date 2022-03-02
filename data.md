@@ -1245,6 +1245,36 @@ After having tried various tools available to visualize, I ended up writing my o
     
     
 
+    <div class="graphs-entry" id="graphs-entry-countries">
+      <h3>Days spent in each country</h3>
+      <p class="graph-description">
+        Percentage of days spent in each country over the last 4 years
+      </p>
+
+      <ul>
+        
+          <li>International travel has slowed down significantly since COVID started</li>
+        
+          <li>Traveling without a stop home for more than 3 weeks gets exhausting for me, I prefer doing more shorter travels instead</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/countries.png" class="image-link" alt="Days spent in each country" onclick="enlargeImage(this, 'graphs/screens/countries.png', 'Days spent in each country')" />
+
+      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
     <div class="graphs-entry" id="graphs-entry-alcoholic-beverages-buckets">
       <h3>Days with more than 4 alcoholic drinks</h3>
       <p class="graph-description">
