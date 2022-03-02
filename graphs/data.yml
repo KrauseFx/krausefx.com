@@ -123,6 +123,7 @@
   - "Apple Health"
   description: "Measured through the iPhone's Health app, which stayed the same over the last 8 years, while my smart watches have changed over time"
   takeaways:
+  - I walked a total of 22,830,860 steps within the last 8 years
   - "I walk more than twice as much when I'm in New York City, compared to any other city"
   - "In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books"
   - "Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less"
@@ -360,7 +361,7 @@
   description: "Each day I answer the question \"Do you feel like you need to socialize more?\" with the answers ranging from \"No\" (5 = light green) to \"Feeling isolated\" (0 = dark green)"
   takeaways:
   - Since I'm an Introvert, I tend to feel like I socialize too much, rather than too little
-  - Early COVID lockdown March 2020 was still good, however as the lockdown continued I felt more isolated
+  - Early COVID lockdown March 2020 was still good, however as the lockdown continued I started feeling more isolated, also partly because I was single, and had just moved to Vienna
   - End of July 2020 Austria opened up most social venues again, bringing this graph back to a great state again
   - December 2019 I was working remotely from Buenos Aires, however got a pretty bad cold. Being sick in a remote city wasn't the best feeling
   - Over the last 2.5 years I actually never felt isolated, therefore there is no entry for the value '0'

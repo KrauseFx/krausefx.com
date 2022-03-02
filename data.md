@@ -639,6 +639,8 @@ After having tried various tools available to visualize, I ended up writing my o
 
       <ul>
         
+          <li>I walked a total of 22,830,860 steps within the last 8 years</li>
+        
           <li>I walk more than twice as much when I'm in New York City, compared to any other city</li>
         
           <li>In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books</li>
@@ -1248,18 +1250,20 @@ After having tried various tools available to visualize, I ended up writing my o
     <div class="graphs-entry" id="graphs-entry-socializing">
       <h3>Happy with my social life?</h3>
       <p class="graph-description">
-        Each day I answer the question "Do you feel like you need to socialize more?" with the answers ranging from "No" (5 = light green) to "Not enough socializing" (0 = dark green)
+        Each day I answer the question "Do you feel like you need to socialize more?" with the answers ranging from "No" (5 = light green) to "Feeling isolated" (0 = dark green)
       </p>
 
       <ul>
         
           <li>Since I'm an Introvert, I tend to feel like I socialize too much, rather than too little</li>
         
-          <li>Early COVID lockdown March 2020 was still good, however as the lockdown continued I felt more isolated</li>
+          <li>Early COVID lockdown March 2020 was still good, however as the lockdown continued I started feeling more isolated, also partly because I was single, and had just moved to Vienna</li>
         
           <li>End of July 2020 Austria opened up most social venues again, bringing this graph back to a great state again</li>
         
           <li>December 2019 I was working remotely from Buenos Aires, however got a pretty bad cold. Being sick in a remote city wasn't the best feeling</li>
+        
+          <li>Over the last 2.5 years I actually never felt isolated, therefore there is no entry for the value '0'</li>
         
       </ul>
 
@@ -1785,6 +1789,7 @@ After having tried various tools available to visualize, I ended up writing my o
       }
       return true;
     }
+
   }, false);
 </script>
 
