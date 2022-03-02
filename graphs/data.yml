@@ -352,6 +352,20 @@
   - Blue = Maintainance
   updated: "2022-01-01"
   instructions: "/pie_chart -> dietPhase"
+- id: "socializing"
+  title: "Happy with my social life?"
+  years: 2.5
+  source:
+  - "Manually"
+  description: "Each day I answer the question \"Do you feel like you need to socialize more?\" with the answers ranging from \"No\" (5 = light green) to \"Feeling isolated\" (0 = dark green)"
+  takeaways:
+  - Since I'm an Introvert, I tend to feel like I socialize too much, rather than too little
+  - Early COVID lockdown March 2020 was still good, however as the lockdown continued I felt more isolated
+  - End of July 2020 Austria opened up most social venues again, bringing this graph back to a great state again
+  - December 2019 I was working remotely from Buenos Aires, however got a pretty bad cold. Being sick in a remote city wasn't the best feeling
+  - Over the last 2.5 years I actually never felt isolated, therefore there is no entry for the value '0'
+  updated: "2022-01-01"
+  instructions: "/pie_chart -> socializing"
 - id: "countries"
   title: "Days spent in each country"
   years: 4
