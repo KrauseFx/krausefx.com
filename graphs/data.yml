@@ -195,11 +195,22 @@
   years: 7
   description: "Each green square represents a strength-workout in the gym, I try my best to purchase day passes at gyms while traveling"
   takeaways:
-    - "During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't track home-workouts"
+    - "During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits"
     - "In 2021 I tend to work out less often on Sunday, the day I visit my family's place"
     - "In Q4 2021 I had a cold for a longer time"
     - "I went from ~50 workouts per year in 2014/2015 to ~200 per year in 2018 - 2021"
   instructions: "github_style.html, gym key, added `.keep_if { |a| a[:value] == '1' }` to only render gym days for pre-2018 days"
+  updated: "2022-01-01"
+- id: "manual-gym-visits-grouped"
+  title: "Workouts in the gym by month"
+  source: 
+  - "Manually"
+  years: 2.5
+  description: "Percantage of days I went to the gym"
+  takeaways:
+  - "During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits"
+  - "Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to travels, and being ill"
+  instructions: "pie_chart.html, gym key"
   updated: "2022-01-01"
 - id: "manual-living-style-years"
   title: "Living Style"
