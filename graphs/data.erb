@@ -36,7 +36,6 @@ meta: {}
 
   httpGetAsync(url, function(data) {
     const otherFxLifeData = data["otherFxLifeData"]
-    console.log(data)
 
     // Render map
     document.getElementById("currentLocationMap").style.background = "url('" + data["mapsUrl"] + "') no-repeat"
@@ -271,6 +270,8 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
 
+Currently I have <span class="highlighted"><%= all_data.count %></span> graphs published here. They are snapshots taken on a given day for privacy reasons, and are non-interactive to prevent any accidental data leaks.
+
 <%
 def convert_markdown_to_html_links(string)
   string.gsub(/\[([^\]]+)\]\(([^\)]+)\)/) do |match|
@@ -342,7 +343,6 @@ After having tried various tools available to visualize, I ended up writing my o
   const imageLinks = document.getElementsByClassName("image-link")
   for (let i = 0; i < imageLinks.length; i++) {
     imageLinks[i].addEventListener("mousedown", function(event) {
-      console.log(event.button)
       if (event.button === 1) { // 1 = center mouse button
         event.preventDefault()
         window.open(this.getAttribute("src"), '_blank');
