@@ -1758,7 +1758,7 @@ After having tried various tools available to visualize, I ended up writing my o
     // Attach the arrows to be next to the `graph-entry-selected`
     const arrowLeft = document.getElementById("arrow-left-button");
     const arrowRight = document.getElementById("arrow-right-button");
-    const topPx = (node.offsetTop + 200 - arrowRight.offsetHeight / 2) + "px";
+    const topPx = (node.offsetTop + 250 - arrowRight.offsetHeight / 2) + "px";
 
     arrowLeft.style.left = (node.offsetLeft - arrowLeft.offsetWidth - 10) + "px";
     arrowLeft.style.top = topPx;
@@ -2116,5 +2116,13 @@ After having tried various tools available to visualize, I ended up writing my o
   }
   #arrow-left-button {
     content: url('/graphs/assets/source_icons_arrow-left-circled.svg');
+  }
+  @media screen and (max-width: 800px) {
+    #arrow-right-button {
+      display: none;
+    }
+    #arrow-left-button {
+      display: none;
+    }
   }
 </style>
