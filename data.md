@@ -36,6 +36,7 @@ meta: {}
 
   httpGetAsync(url, function(data) {
     const otherFxLifeData = data["otherFxLifeData"]
+    console.log(data)
 
     // Render map
     document.getElementById("currentLocationMap").style.background = "url('" + data["mapsUrl"] + "') no-repeat"
@@ -269,6 +270,10 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   <tr><td>Weather API</td><td><span class="highlighted" id="h-weather">15,442</span></td><td>Temperature, rain, sunlight, wind, air pressure</td></tr>
   <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
+
+Currently I have <span class="highlighted">41</span> graphs published here. They are snapshots taken on a given day for privacy reasons, and are non-interactive to prevent any accidental data leaks.
+
+
 
 <div id="graphs-container">
   
@@ -1682,7 +1687,6 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   
 </div>
 
-
 <h3>More Information</h3>
 
 This project has 3 components:
@@ -1699,13 +1703,13 @@ Multiple times a day, I manually answer questions [FxLifeSheet](https://github.c
 
 After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/).
 
-
 <div id="enlargedImageContainer" onclick="dismissImage()">
   <a target="_blank" id="enlargedImageLink">
     <img id="enlargedImage" />
   </a>
   <p id="enlargedImageTitle"></p>
 </div>
+
 <div id="arrow-left-button" class="arrow-button"></div>
 <div id="arrow-right-button" class="arrow-button"></div>
 
@@ -1714,6 +1718,7 @@ After having tried various tools available to visualize, I ended up writing my o
   const imageLinks = document.getElementsByClassName("image-link")
   for (let i = 0; i < imageLinks.length; i++) {
     imageLinks[i].addEventListener("mousedown", function(event) {
+      console.log(event.button)
       if (event.button === 1) { // 1 = center mouse button
         event.preventDefault()
         window.open(this.getAttribute("src"), '_blank');
