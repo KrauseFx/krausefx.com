@@ -1705,12 +1705,13 @@ After having tried various tools available to visualize, I ended up writing my o
   </a>
   <p id="enlargedImageTitle"></p>
 </div>
+<div id="arrow-left-button" class="arrow-button"></div>
+<div id="arrow-right-button" class="arrow-button"></div>
 
 <script type="text/javascript">
   // Subscribe to mouse wheel
   const imageLinks = document.getElementsByClassName("image-link")
   for (let i = 0; i < imageLinks.length; i++) {
-
     imageLinks[i].addEventListener("mousedown", function(event) {
       console.log(event.button)
       if (event.button === 1) { // 1 = center mouse button
@@ -1718,7 +1719,7 @@ After having tried various tools available to visualize, I ended up writing my o
         window.open(this.getAttribute("src"), '_blank');
       }
     })
-  }  
+  }
 
   let lastNode = null;
 
@@ -1739,6 +1740,9 @@ After having tried various tools available to visualize, I ended up writing my o
       lastNode.classList.remove("graph-entry-selected");
     }
     node.parentElement.classList.add("graph-entry-selected");
+
+    alignArrowKeys(node.parentElement);
+
     node.parentElement.scrollIntoView();
 
     // If we have a small screen, we also want to immediately use full-screen mode
@@ -1749,6 +1753,20 @@ After having tried various tools available to visualize, I ended up writing my o
 
     lastNode = node.parentElement;
   }
+
+  function alignArrowKeys(node) {
+    // Attach the arrows to be next to the `graph-entry-selected`
+    const arrowLeft = document.getElementById("arrow-left-button");
+    const arrowRight = document.getElementById("arrow-right-button");
+    const topPx = (node.offsetTop + 200 - arrowRight.offsetHeight / 2) + "px";
+
+    arrowLeft.style.left = (node.offsetLeft - arrowLeft.offsetWidth - 10) + "px";
+    arrowLeft.style.top = topPx;
+
+    arrowRight.style.left = (node.offsetLeft + node.offsetWidth - arrowRight.offsetWidth + 50) + "px";
+    arrowRight.style.top = topPx;
+  }
+
   function showFullScreen(img, title) {
     document.getElementById("enlargedImageContainer").style.display = "block";
     document.getElementById("enlargedImage").src = img;
@@ -1760,6 +1778,42 @@ After having tried various tools available to visualize, I ended up writing my o
     document.getElementById("enlargedImageContainer").style.display = "none";
   }
 
+  function nextGraph() {
+    if (lastNode) {
+      lastNode.classList.remove("graph-entry-selected");
+      lastNode = lastNode.nextElementSibling;
+      lastNode.classList.add("graph-entry-selected");
+
+      alignArrowKeys(lastNode)
+      lastNode.scrollIntoView();        
+      clearSelection();
+      return false;
+    }
+    return true;
+  }
+  function previousGraph() {
+    if (lastNode) {
+      lastNode.classList.remove("graph-entry-selected");
+      lastNode = lastNode.previousElementSibling;
+      lastNode.classList.add("graph-entry-selected");
+
+      alignArrowKeys(lastNode)
+      lastNode.scrollIntoView();        
+      clearSelection();
+      return false;
+    }
+    return true;
+  }
+
+  function clearSelection() {
+    // As sometimes the arrows get selected
+    if (window.getSelection) {window.getSelection().removeAllRanges();}
+    else if (document.selection) {document.selection.empty();}
+  }
+
+  document.getElementById("arrow-left-button").addEventListener("click", previousGraph);
+  document.getElementById("arrow-right-button").addEventListener("click", nextGraph);
+
   window.addEventListener("keyup", function(e) {
     if (e.keyCode == 27) { // ESC
       dismissImage()
@@ -1768,28 +1822,11 @@ After having tried various tools available to visualize, I ended up writing my o
 
     // Use arrow keys
     if (e.keyCode == 37 || e.keyCode == 38) { // Left and up
-      if (lastNode) {
-        lastNode.classList.remove("graph-entry-selected");
-        lastNode = lastNode.previousElementSibling;
-        lastNode.classList.add("graph-entry-selected");
-
-        lastNode.scrollIntoView();        
-        return false;
-      }
-      return true;
+      return previousGraph();
     }
     if (e.keyCode == 39 || e.keyCode == 40) { // Right and down
-      if (lastNode) {
-        lastNode.classList.remove("graph-entry-selected");
-        lastNode = lastNode.nextElementSibling;
-        lastNode.classList.add("graph-entry-selected");
-
-        lastNode.scrollIntoView();        
-        return false;
-      }
-      return true;
+      return nextGraph();
     }
-
   }, false);
 </script>
 
@@ -2066,5 +2103,18 @@ After having tried various tools available to visualize, I ended up writing my o
   .graph-entry-selected {
     max-width: 100%;
     border: 3px solid #00BFFF;
+  }
+  .arrow-button {
+    right: 30px;
+    position: absolute;
+    height: 40px;
+    top: calc(50% - 10px);
+    cursor: pointer;
+  }
+  #arrow-right-button {
+    content: url('/graphs/assets/source_icons_arrow-right-circled.svg');
+  }
+  #arrow-left-button {
+    content: url('/graphs/assets/source_icons_arrow-left-circled.svg');
   }
 </style>
