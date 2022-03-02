@@ -837,7 +837,7 @@ After having tried various tools available to visualize, I ended up writing my o
 
       <ul>
         
-          <li>During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't track home-workouts</li>
+          <li>During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits</li>
         
           <li>In 2021 I tend to work out less often on Sunday, the day I visit my family's place</li>
         
@@ -857,6 +857,36 @@ After having tried various tools available to visualize, I ended up writing my o
       <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Workouts in the gym" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits.png', 'Workouts in the gym')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-manual-gym-visits-grouped">
+      <h3>Workouts in the gym by month</h3>
+      <p class="graph-description">
+        Percantage of days I went to the gym
+      </p>
+
+      <ul>
+        
+          <li>During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits</li>
+        
+          <li>Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to travels, and being ill</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <img src="graphs/screens/manual-gym-visits-grouped.png" class="image-link" alt="Workouts in the gym by month" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits-grouped.png', 'Workouts in the gym by month')" />
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
