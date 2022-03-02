@@ -328,6 +328,14 @@
   - 35% less likely to be a weekend
   updated: "2022-01-01"
   instructions: "Normal group by, mood > 4"
+- id: "mood-graph-months"
+  title: "Mood over the years"
+  years: 4
+  source:
+  - "Manually"
+  description: "I track my mood 4 times a day. This graph groups the entries by month, and shows the % of entries for each value (0 - 5) with 5 being very excited, and 0 being worried. I designed the ranges so that 0 or 5 are not entered as much. 0 is rendered as dark green at the top, whereas 5 is rendered as light green at the bottom."
+  updated: "2022-01-01"
+  instructions: "/pie_chart -> mood"
 - id: "alcoholic-beverages-buckets"
   title: "Days with more than 4 alcoholic drinks"
   years: 2.5
