@@ -1761,6 +1761,30 @@ After having tried various tools available to visualize, I ended up writing my o
       dismissImage()
       return true;
     }
+
+    // Use arrow keys
+    if (e.keyCode == 37 || e.keyCode == 38) { // Left and up
+      if (lastNode) {
+        lastNode.classList.remove("graph-entry-selected");
+        lastNode = lastNode.previousElementSibling;
+        lastNode.classList.add("graph-entry-selected");
+
+        lastNode.scrollIntoView();        
+        return false;
+      }
+      return true;
+    }
+    if (e.keyCode == 39 || e.keyCode == 40) { // Right and down
+      if (lastNode) {
+        lastNode.classList.remove("graph-entry-selected");
+        lastNode = lastNode.nextElementSibling;
+        lastNode.classList.add("graph-entry-selected");
+
+        lastNode.scrollIntoView();        
+        return false;
+      }
+      return true;
+    }
   }, false);
 </script>
 
