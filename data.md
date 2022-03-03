@@ -288,6 +288,12 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
 
       <ul>
         
+          <li>Before 2018 the only data used was <a href='https://rescuetime.com' target='_blank'>RescueTime</a> and <a href='https://swarmapp.com' target='_blank'>Swarm</a> location data</li>
+        
+          <li>Once I started the <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet project</a>, I manually tracked around 75 data entries every day, ranging from mood, sleep, to fitness inputs</li>
+        
+          <li>I was able to retrospectively fetch the historic weather data based on my location on a given day</li>
+        
       </ul>
 
       <span class="graph-sources">
@@ -647,7 +653,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-map-world-trip">
       <h3>Location History</h3>
       <p class="graph-description">
-        Every Swarm check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)
+        Every <a href='https://swarmapp.com' target='_blank'>Swarm</a> check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)
       </p>
 
       <ul>
@@ -675,7 +681,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-map-combined">
       <h3>Location History - Cities</h3>
       <p class="graph-description">
-        Every Swarm check-in over the last 7 years visualized, zoomed in
+        Every <a href='https://swarmapp.com' target='_blank'>Swarm</a> check-in over the last 7 years visualized, zoomed in
       </p>
 
       <ul>
@@ -703,7 +709,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-swarm-cities-top">
       <h3>Most visited POIs, grouped by city</h3>
       <p class="graph-description">
-        Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) on Foursquare Swarm at a given city, this is tracked as a single entry.
+        Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) on <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a> at a given city, this is tracked as a single entry.
       </p>
 
       <ul>
@@ -801,7 +807,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-number-of-checkins">
-      <h3>Number of Swarm checkins over time</h3>
+      <h3>Number of [Swarm](https://swarmapp.com) checkins over time</h3>
       <p class="graph-description">
         Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest I visit.
       </p>
@@ -826,7 +832,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm checkins over time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm checkins over time')" />
+        <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of [Swarm](https://swarmapp.com) checkins over time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of [Swarm](https://swarmapp.com) checkins over time')" />
       </div>
 
       <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
@@ -839,7 +845,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-map-world-overview">
       <h3>Location History</h3>
       <p class="graph-description">
-        Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered.
+        Every <a href='https://swarmapp.com' target='_blank'>Swarm</a> check-in visualized on a map. Only areas where I've had multiple check-ins are rendered.
       </p>
 
       <ul>

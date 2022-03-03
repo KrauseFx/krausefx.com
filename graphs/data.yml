@@ -3,6 +3,9 @@
   years: 10
   description: "Visualized the number of data entries in [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) over the last 10 years, and where the data came from."
   takeaways:
+  - Before 2018 the only data used was [RescueTime](https://rescuetime.com) and [Swarm](https://swarmapp.com) location data
+  - Once I started the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet), I manually tracked around 75 data entries every day, ranging from mood, sleep, to fitness inputs
+  - I was able to retrospectively fetch the historic weather data based on my location on a given day
   updated: "2022-01-01"
   instructions: "    
     SELECT 
@@ -151,7 +154,7 @@
   source:
   - Swarm
   years: 7
-  description: "Every Swarm check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)"
+  description: "Every [Swarm](https://swarmapp.com) check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)"
   updated: "2022-01-01"
   instructions: "https://maps.co/gis/ upgrade to paid plan, run `be ruby importers/swarm/swarm_coordinates_importer.rb`"
 - id: "map-combined"
@@ -159,14 +162,14 @@
   source:
   - Swarm
   years: 7
-  description: "Every Swarm check-in over the last 7 years visualized, zoomed in"
+  description: "Every [Swarm](https://swarmapp.com) check-in over the last 7 years visualized, zoomed in"
   updated: "2022-01-01"
   instructions: "https://maps.co/gis/ upgrade to paid plan, run `be ruby importers/swarm/swarm_coordinates_importer.rb`"
 - id: "swarm-cities-top"
   title: "Most visited POIs, grouped by city"
   source: "Swarm"
   years: 7
-  description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) on Foursquare Swarm at a given city, this is tracked as a single entry."
+  description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) on [Foursquare Swarm](https://swarmapp.com) at a given city, this is tracked as a single entry."
   instructions: "pie_chart.html"
   updated: "2022-01-01"
 - id: "swarm-cities-top-years"
@@ -194,7 +197,7 @@
   instructions: "pie_chart.html, manually update the svg to replace any cities"
   updated: "2022-01-01"
 - id: "swarm-number-of-checkins"
-  title: "Number of Swarm checkins over time"
+  title: "Number of [Swarm](https://swarmapp.com) checkins over time"
   years: 10
   source:
   - "Swarm"
@@ -210,7 +213,7 @@
   source:
   - Swarm
   years: 7
-  description: "Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered."
+  description: "Every [Swarm](https://swarmapp.com) check-in visualized on a map. Only areas where I've had multiple check-ins are rendered."
   updated: "2022-01-01"
 - id: "lockdown-days"
   title: "Days in full lockdown"
