@@ -297,7 +297,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         
       </span>
 
-      <img src="graphs/screens/number-of-entries.png" class="image-link" alt="Number of data entries over time" onclick="enlargeImage(this, 'graphs/screens/number-of-entries.png', 'Number of data entries over time')" />
+      <div class="image-container">
+        <img src="graphs/screens/number-of-entries.png" class="image-link" alt="Number of data entries over time" onclick="enlargeImage(this, 'graphs/screens/number-of-entries.png', 'Number of data entries over time')" />
+      </div>
 
       <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -327,7 +329,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         JetLovers, Swarm
       </span>
 
-      <img src="graphs/screens/jetlovers-stats.png" class="image-link" alt="Flying Stats - General" onclick="enlargeImage(this, 'graphs/screens/jetlovers-stats.png', 'Flying Stats - General')" />
+      <div class="image-container">
+        <img src="graphs/screens/jetlovers-stats.png" class="image-link" alt="Flying Stats - General" onclick="enlargeImage(this, 'graphs/screens/jetlovers-stats.png', 'Flying Stats - General')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -357,7 +361,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         JetLovers, Swarm
       </span>
 
-      <img src="graphs/screens/jetlovers-top.png" class="image-link" alt="Flying Stats - Top" onclick="enlargeImage(this, 'graphs/screens/jetlovers-top.png', 'Flying Stats - Top')" />
+      <div class="image-container">
+        <img src="graphs/screens/jetlovers-top.png" class="image-link" alt="Flying Stats - Top" onclick="enlargeImage(this, 'graphs/screens/jetlovers-top.png', 'Flying Stats - Top')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -393,7 +399,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/life-in-weeks.png" class="image-link" alt="My life in weeks" onclick="enlargeImage(this, 'graphs/screens/life-in-weeks.png', 'My life in weeks')" />
+      <div class="image-container">
+        <img src="graphs/screens/life-in-weeks.png" class="image-link" alt="My life in weeks" onclick="enlargeImage(this, 'graphs/screens/life-in-weeks.png', 'My life in weeks')" />
+      </div>
 
       <span class="graph-date">27.5 years of data - Last updated on 2022-02-24</span>
     </div>
@@ -419,7 +427,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Most visited POIs, grouped by city" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top.png', 'Most visited POIs, grouped by city')" />
+      <div class="image-container">
+        <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Most visited POIs, grouped by city" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top.png', 'Most visited POIs, grouped by city')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -455,7 +465,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Number of check-ins grouped by city" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top-years.png', 'Number of check-ins grouped by city')" />
+      <div class="image-container">
+        <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Number of check-ins grouped by city" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top-years.png', 'Number of check-ins grouped by city')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -487,7 +499,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-categories-top.png" class="image-link" alt="Top Categories of Checkins" onclick="enlargeImage(this, 'graphs/screens/swarm-categories-top.png', 'Top Categories of Checkins')" />
+      <div class="image-container">
+        <img src="graphs/screens/swarm-categories-top.png" class="image-link" alt="Top Categories of Checkins" onclick="enlargeImage(this, 'graphs/screens/swarm-categories-top.png', 'Top Categories of Checkins')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -523,7 +537,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Visual Crossing historic weather data, Swarm
       </span>
 
-      <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal temperature each day of the year" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-max.png', 'Maximal temperature each day of the year')" />
+      <div class="image-container">
+        <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal temperature each day of the year" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-max.png', 'Maximal temperature each day of the year')" />
+      </div>
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -549,7 +565,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/map-world-overview.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-overview.jpg', 'Location History')" />
+      <div class="image-container">
+        <img src="graphs/screens/map-world-overview.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-overview.jpg', 'Location History')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -575,7 +593,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/map-world-trip.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-trip.jpg', 'Location History')" />
+      <div class="image-container">
+        <img src="graphs/screens/map-world-trip.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-trip.jpg', 'Location History')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -601,7 +621,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/map-combined.jpg" class="image-link" alt="Location History - Cities" onclick="enlargeImage(this, 'graphs/screens/map-combined.jpg', 'Location History - Cities')" />
+      <div class="image-container">
+        <img src="graphs/screens/map-combined.jpg" class="image-link" alt="Location History - Cities" onclick="enlargeImage(this, 'graphs/screens/map-combined.jpg', 'Location History - Cities')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -639,7 +661,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/mood-happy-days.png" class="image-link" alt="Happy Days" onclick="enlargeImage(this, 'graphs/screens/mood-happy-days.png', 'Happy Days')" />
+      <div class="image-container">
+        <img src="graphs/screens/mood-happy-days.png" class="image-link" alt="Happy Days" onclick="enlargeImage(this, 'graphs/screens/mood-happy-days.png', 'Happy Days')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -675,7 +699,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Apple Health
       </span>
 
-      <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average daily steps over time" onclick="enlargeImage(this, 'graphs/screens/daily-steps.png', 'Average daily steps over time')" />
+      <div class="image-container">
+        <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average daily steps over time" onclick="enlargeImage(this, 'graphs/screens/daily-steps.png', 'Average daily steps over time')" />
+      </div>
 
       <span class="graph-date">8 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -709,7 +735,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm checkins over time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm checkins over time')" />
+      <div class="image-container">
+        <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm checkins over time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm checkins over time')" />
+      </div>
 
       <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -739,7 +767,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/lockdown-days.png" class="image-link" alt="Days in full lockdown" onclick="enlargeImage(this, 'graphs/screens/lockdown-days.png', 'Days in full lockdown')" />
+      <div class="image-container">
+        <img src="graphs/screens/lockdown-days.png" class="image-link" alt="Days in full lockdown" onclick="enlargeImage(this, 'graphs/screens/lockdown-days.png', 'Days in full lockdown')" />
+      </div>
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -775,7 +805,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Withings Scanwatch, Withings Scale
       </span>
 
-      <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation between weight and resting heart rate" onclick="enlargeImage(this, 'graphs/screens/weight-sleeping-hr.png', 'Correlation between weight and resting heart rate')" />
+      <div class="image-container">
+        <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation between weight and resting heart rate" onclick="enlargeImage(this, 'graphs/screens/weight-sleeping-hr.png', 'Correlation between weight and resting heart rate')" />
+      </div>
 
       <span class="graph-date">1.5 years of data - Last updated on 2022-02-09</span>
     </div>
@@ -803,7 +835,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Visual Crossing historic weather data, Swarm
       </span>
 
-      <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather conditions per year" onclick="enlargeImage(this, 'graphs/screens/weather-conditions.png', 'Weather conditions per year')" />
+      <div class="image-container">
+        <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather conditions per year" onclick="enlargeImage(this, 'graphs/screens/weather-conditions.png', 'Weather conditions per year')" />
+      </div>
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -839,7 +873,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/manual-alcohol-intake.png" class="image-link" alt="Alcoholic Beverages per day" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake.png', 'Alcoholic Beverages per day')" />
+      <div class="image-container">
+        <img src="graphs/screens/manual-alcohol-intake.png" class="image-link" alt="Alcoholic Beverages per day" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake.png', 'Alcoholic Beverages per day')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -869,7 +905,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/manual-alcohol-intake-months.png" class="image-link" alt="Alcoholic Beverages per month" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake-months.png', 'Alcoholic Beverages per month')" />
+      <div class="image-container">
+        <img src="graphs/screens/manual-alcohol-intake-months.png" class="image-link" alt="Alcoholic Beverages per month" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake-months.png', 'Alcoholic Beverages per month')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -903,7 +941,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Gym workouts" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits.png', 'Gym workouts')" />
+      <div class="image-container">
+        <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Gym workouts" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits.png', 'Gym workouts')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -933,7 +973,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/manual-gym-visits-grouped.png" class="image-link" alt="Gym workouts grouped by month" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits-grouped.png', 'Gym workouts grouped by month')" />
+      <div class="image-container">
+        <img src="graphs/screens/manual-gym-visits-grouped.png" class="image-link" alt="Gym workouts grouped by month" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits-grouped.png', 'Gym workouts grouped by month')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -959,7 +1001,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/manual-living-style-years.png" class="image-link" alt="Living Style" onclick="enlargeImage(this, 'graphs/screens/manual-living-style-years.png', 'Living Style')" />
+      <div class="image-container">
+        <img src="graphs/screens/manual-living-style-years.png" class="image-link" alt="Living Style" onclick="enlargeImage(this, 'graphs/screens/manual-living-style-years.png', 'Living Style')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1005,7 +1049,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Visual Crossing historic weather data, Manually
       </span>
 
-      <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does high temperature affect my life?" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-buckets.png', 'How does high temperature affect my life?')" />
+      <div class="image-container">
+        <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does high temperature affect my life?" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-buckets.png', 'How does high temperature affect my life?')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1039,7 +1085,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the years?" onclick="enlargeImage(this, 'graphs/screens/healthy.png', 'How healthy was I over the years?')" />
+      <div class="image-container">
+        <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the years?" onclick="enlargeImage(this, 'graphs/screens/healthy.png', 'How healthy was I over the years?')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1085,7 +1133,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Withings Scan Watch, Manually
       </span>
 
-      <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage(this, 'graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
+      <div class="image-container">
+        <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage(this, 'graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1137,7 +1187,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Apple Health
       </span>
 
-      <img src="graphs/screens/daily-steps-buckets.png" class="image-link" alt="Days with more than 15,000 steps" onclick="enlargeImage(this, 'graphs/screens/daily-steps-buckets.png', 'Days with more than 15,000 steps')" />
+      <div class="image-container">
+        <img src="graphs/screens/daily-steps-buckets.png" class="image-link" alt="Days with more than 15,000 steps" onclick="enlargeImage(this, 'graphs/screens/daily-steps-buckets.png', 'Days with more than 15,000 steps')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1189,7 +1241,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be very excited/happy" onclick="enlargeImage(this, 'graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be very excited/happy')" />
+      <div class="image-container">
+        <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be very excited/happy" onclick="enlargeImage(this, 'graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be very excited/happy')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1215,7 +1269,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/mood-graph-months.png" class="image-link" alt="Mood over the years" onclick="enlargeImage(this, 'graphs/screens/mood-graph-months.png', 'Mood over the years')" />
+      <div class="image-container">
+        <img src="graphs/screens/mood-graph-months.png" class="image-link" alt="Mood over the years" onclick="enlargeImage(this, 'graphs/screens/mood-graph-months.png', 'Mood over the years')" />
+      </div>
 
       <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1255,7 +1311,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/fitness-bulk.png" class="image-link" alt="Fitness Bulk & Cut season" onclick="enlargeImage(this, 'graphs/screens/fitness-bulk.png', 'Fitness Bulk & Cut season')" />
+      <div class="image-container">
+        <img src="graphs/screens/fitness-bulk.png" class="image-link" alt="Fitness Bulk & Cut season" onclick="enlargeImage(this, 'graphs/screens/fitness-bulk.png', 'Fitness Bulk & Cut season')" />
+      </div>
 
       <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1291,7 +1349,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/socializing.png" class="image-link" alt="Happy with my social life?" onclick="enlargeImage(this, 'graphs/screens/socializing.png', 'Happy with my social life?')" />
+      <div class="image-container">
+        <img src="graphs/screens/socializing.png" class="image-link" alt="Happy with my social life?" onclick="enlargeImage(this, 'graphs/screens/socializing.png', 'Happy with my social life?')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1321,7 +1381,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/countries.png" class="image-link" alt="Days spent in each country" onclick="enlargeImage(this, 'graphs/screens/countries.png', 'Days spent in each country')" />
+      <div class="image-container">
+        <img src="graphs/screens/countries.png" class="image-link" alt="Days spent in each country" onclick="enlargeImage(this, 'graphs/screens/countries.png', 'Days spent in each country')" />
+      </div>
 
       <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1359,7 +1421,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 alcoholic drinks" onclick="enlargeImage(this, 'graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 alcoholic drinks')" />
+      <div class="image-container">
+        <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 alcoholic drinks" onclick="enlargeImage(this, 'graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 alcoholic drinks')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1391,7 +1455,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Withings Scale
       </span>
 
-      <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight history of 8 years" onclick="enlargeImage(this, 'graphs/screens/weight-graph-1.png', 'Weight history of 8 years')" />
+      <div class="image-container">
+        <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight history of 8 years" onclick="enlargeImage(this, 'graphs/screens/weight-graph-1.png', 'Weight history of 8 years')" />
+      </div>
 
       <span class="graph-date">9 years of data - Last updated on 2022-02-17</span>
     </div>
@@ -1425,7 +1491,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         MyFitnessPal
       </span>
 
-      <img src="graphs/screens/macros.png" class="image-link" alt="Food tracking - Macros" onclick="enlargeImage(this, 'graphs/screens/macros.png', 'Food tracking - Macros')" />
+      <div class="image-container">
+        <img src="graphs/screens/macros.png" class="image-link" alt="Food tracking - Macros" onclick="enlargeImage(this, 'graphs/screens/macros.png', 'Food tracking - Macros')" />
+      </div>
 
       <span class="graph-date">4 years of data - Last updated on 2022-02-17</span>
     </div>
@@ -1455,7 +1523,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Withings Scale, weightgrapher.com
       </span>
 
-      <img src="graphs/screens/weight-graph-2.png" class="image-link" alt="Bulk & Cut Phase visualized" onclick="enlargeImage(this, 'graphs/screens/weight-graph-2.png', 'Bulk & Cut Phase visualized')" />
+      <div class="image-container">
+        <img src="graphs/screens/weight-graph-2.png" class="image-link" alt="Bulk & Cut Phase visualized" onclick="enlargeImage(this, 'graphs/screens/weight-graph-2.png', 'Bulk & Cut Phase visualized')" />
+      </div>
 
       <span class="graph-date">1 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1493,7 +1563,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Awair
       </span>
 
-      <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage(this, 'graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
+      <div class="image-container">
+        <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage(this, 'graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
+      </div>
 
       <span class="graph-date">1 years of data - Last updated on 2022-02-09</span>
     </div>
@@ -1527,7 +1599,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/money-distribution.png" class="image-link" alt="Investment Distribution" onclick="enlargeImage(this, 'graphs/screens/money-distribution.png', 'Investment Distribution')" />
+      <div class="image-container">
+        <img src="graphs/screens/money-distribution.png" class="image-link" alt="Investment Distribution" onclick="enlargeImage(this, 'graphs/screens/money-distribution.png', 'Investment Distribution')" />
+      </div>
 
       <span class="graph-date">8 years of data - Last updated on 2022-02-09</span>
     </div>
@@ -1561,7 +1635,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Chase Credit Card Year Summary, sankeymatic.com, Manually
       </span>
 
-      <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual money flow" onclick="enlargeImage(this, 'graphs/screens/money-flow.png', 'Annual money flow')" />
+      <div class="image-container">
+        <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual money flow" onclick="enlargeImage(this, 'graphs/screens/money-flow.png', 'Annual money flow')" />
+      </div>
 
       <span class="graph-date">5 years of data - Last updated on 2022-02-09</span>
     </div>
@@ -1593,7 +1669,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         RescueTime
       </span>
 
-      <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="RescueTime Computer Usage Categories" onclick="enlargeImage(this, 'graphs/screens/rescue-time-usage-categories.png', 'RescueTime Computer Usage Categories')" />
+      <div class="image-container">
+        <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="RescueTime Computer Usage Categories" onclick="enlargeImage(this, 'graphs/screens/rescue-time-usage-categories.png', 'RescueTime Computer Usage Categories')" />
+      </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1627,7 +1705,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manual
       </span>
 
-      <img src="graphs/screens/season-winter.png" class="image-link" alt="How does Winter affect my life?" onclick="enlargeImage(this, 'graphs/screens/season-winter.png', 'How does Winter affect my life?')" />
+      <div class="image-container">
+        <img src="graphs/screens/season-winter.png" class="image-link" alt="How does Winter affect my life?" onclick="enlargeImage(this, 'graphs/screens/season-winter.png', 'How does Winter affect my life?')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1669,7 +1749,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manual
       </span>
 
-      <img src="graphs/screens/season-summer.png" class="image-link" alt="How does Summer affect my life?" onclick="enlargeImage(this, 'graphs/screens/season-summer.png', 'How does Summer affect my life?')" />
+      <div class="image-container">
+        <img src="graphs/screens/season-summer.png" class="image-link" alt="How does Summer affect my life?" onclick="enlargeImage(this, 'graphs/screens/season-summer.png', 'How does Summer affect my life?')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1709,7 +1791,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manual
       </span>
 
-      <img src="graphs/screens/day-is-weekend.png" class="image-link" alt="What are weekends like?" onclick="enlargeImage(this, 'graphs/screens/day-is-weekend.png', 'What are weekends like?')" />
+      <div class="image-container">
+        <img src="graphs/screens/day-is-weekend.png" class="image-link" alt="What are weekends like?" onclick="enlargeImage(this, 'graphs/screens/day-is-weekend.png', 'What are weekends like?')" />
+      </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1776,7 +1860,7 @@ After having tried various tools available to visualize, I ended up writing my o
     }
 
     // Check if it's already been the selected one
-    if (lastNode == node.parentElement) {
+    if (lastNode == node.parentElement.parentElement) {
       showFullScreen(img, title);
       return;
     }
@@ -1784,11 +1868,11 @@ After having tried various tools available to visualize, I ended up writing my o
     if (lastNode) {
       lastNode.classList.remove("graph-entry-selected");
     }
-    node.parentElement.classList.add("graph-entry-selected");
+    node.parentElement.parentElement.classList.add("graph-entry-selected");
 
-    alignArrowKeys(node.parentElement);
+    alignArrowKeys(node.parentElement.parentElement);
 
-    node.parentElement.scrollIntoView();
+    node.parentElement.parentElement.scrollIntoView();
 
     // If we have a small screen, we also want to immediately use full-screen mode
     var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -1796,7 +1880,7 @@ After having tried various tools available to visualize, I ended up writing my o
       showFullScreen(img, title);
     }
 
-    lastNode = node.parentElement;
+    lastNode = node.parentElement.parentElement;
   }
 
   function alignArrowKeys(node) {
@@ -1946,9 +2030,14 @@ After having tried various tools available to visualize, I ended up writing my o
     font-size: 75%;
     margin-bottom: -10px;
   }
+  .image-container {
+    width: 100%;
+    text-align: center;
+  }
   .image-link {
     padding-top: 10px;
     cursor: pointer;
+    max-height: 900px;
   }
 
   /* Real-Time Dashboard UI */

@@ -309,7 +309,9 @@ end
         <%= Array(entry["source"]).join(", ") %>
       </span>
 
-      <img src="<%= img_url %>" class="image-link" alt="<%= entry["title"] %>" onclick="enlargeImage(this, '<%= img_url %>', '<%= entry["title"] %>')" />
+      <div class="image-container">
+        <img src="<%= img_url %>" class="image-link" alt="<%= entry["title"] %>" onclick="enlargeImage(this, '<%= img_url %>', '<%= entry["title"] %>')" />
+      </div>
 
       <span class="graph-date"><%= entry.fetch("years") %> years of data - Last updated on <%= entry.fetch("updated") %></span>
     </div>
@@ -376,7 +378,7 @@ After having tried various tools available to visualize, I ended up writing my o
     }
 
     // Check if it's already been the selected one
-    if (lastNode == node.parentElement) {
+    if (lastNode == node.parentElement.parentElement) {
       showFullScreen(img, title);
       return;
     }
@@ -384,11 +386,11 @@ After having tried various tools available to visualize, I ended up writing my o
     if (lastNode) {
       lastNode.classList.remove("graph-entry-selected");
     }
-    node.parentElement.classList.add("graph-entry-selected");
+    node.parentElement.parentElement.classList.add("graph-entry-selected");
 
-    alignArrowKeys(node.parentElement);
+    alignArrowKeys(node.parentElement.parentElement);
 
-    node.parentElement.scrollIntoView();
+    node.parentElement.parentElement.scrollIntoView();
 
     // If we have a small screen, we also want to immediately use full-screen mode
     var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -396,7 +398,7 @@ After having tried various tools available to visualize, I ended up writing my o
       showFullScreen(img, title);
     }
 
-    lastNode = node.parentElement;
+    lastNode = node.parentElement.parentElement;
   }
 
   function alignArrowKeys(node) {
@@ -546,9 +548,14 @@ After having tried various tools available to visualize, I ended up writing my o
     font-size: 75%;
     margin-bottom: -10px;
   }
+  .image-container {
+    width: 100%;
+    text-align: center;
+  }
   .image-link {
     padding-top: 10px;
     cursor: pointer;
+    max-height: 900px;
   }
 
   /* Real-Time Dashboard UI */
