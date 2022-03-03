@@ -8,18 +8,20 @@ require "erb"
 raise "missing rsvg-convert" unless `which rsvg-convert`.start_with?("/opt")
 raise "missing pngquant" unless `which pngquant`.start_with?("/opt")
 
-Dir["graphs/screens/*.svg"].each do |svg|
-  puts "Converting #{svg} to png"
-  file_height = File.read(svg).match(/height="(\d+)"/)[1].to_i
+unless ENV["SKIP"]
+  Dir["graphs/screens/*.svg"].each do |svg|
+    puts "Converting #{svg} to png"
+    file_height = File.read(svg).match(/height="(\d+)"/)[1].to_i
 
-  # file_height times 2, to get proper retina support
-  puts `rsvg-convert -h #{file_height * 2} '#{svg}' > '#{svg.gsub(".svg", ".png")}'`
-end
+    # file_height times 2, to get proper retina support
+    puts `rsvg-convert -h #{file_height * 2} '#{svg}' > '#{svg.gsub(".svg", ".png")}'`
+  end
 
-# png crunch all the pngs
-Dir["graphs/screens/*.png"].each do |png|
-  puts "Compressing #{png}..."
-  puts `pngquant #{png} --force --output #{png} --skip-if-larger`
+  # png crunch all the pngs
+  Dir["graphs/screens/*.png"].each do |png|
+    puts "Compressing #{png}..."
+    puts `pngquant #{png} --force --output #{png} --skip-if-larger`
+  end
 end
 
 all_data = YAML.load_file("graphs/data.yml")
