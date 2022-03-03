@@ -270,7 +270,7 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
 
-Currently I have <span class="highlighted">42</span> graphs published here. They are snapshots taken on a given day for privacy reasons, and are non-interactive to prevent any accidental data leaks.
+Currently I have <span class="highlighted">41</span> graphs published here. They are snapshots taken on a given day for privacy reasons, and are non-interactive to prevent any accidental data leaks.
 
 
 
@@ -308,25 +308,33 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
     
 
-    <div class="graphs-entry" id="graphs-entry-mood-happy-days">
-      <h3>Happy Days</h3>
+    <div class="graphs-entry" id="graphs-entry-happy-mood-entries-buckets">
+      <h3>Days where I tracked my mood to be happy & excited</h3>
       <p class="graph-description">
-        Bucketing all days, by the days at which I was above average happy (excited, pumped). On days where I was happy:
+        On days where I tracked my mood to be happy & excited, the following other factors of my life were affected
       </p>
 
       <ul>
         
-          <li>50% more likely to have pushed my comfort zone</li>
+          <li>50% more likely to be a day where I went out of my comfort zone</li>
         
-          <li>45% more likely to have medidated that day</li>
+          <li>44% more likely to have medidated that day</li>
         
-          <li>40% more likely to feel good about the current direction in life, and working towards it</li>
+          <li>33% more excited about what's ahead in the future</li>
         
-          <li>15% warmer than the average</li>
+          <li>31% more likely to drink alcohol that day (partys, good friends and such)</li>
         
-          <li>15% less time on social media</li>
+          <li>28% more time spent reading or listening to audio books</li>
         
-          <li>30% less time spent watching TV</li>
+          <li>26% more likely to have worked on interrelated technical challenges</li>
+        
+          <li>26% warmer temperature that day</li>
+        
+          <li>20% more likely to have learned something new that day</li>
+        
+          <li>14% more likely to have eaten veggies</li>
+        
+          <li>45% less time spent in video & audio calls that day</li>
         
       </ul>
 
@@ -338,7 +346,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/mood-happy-days.png" class="image-link" alt="Happy Days" onclick="enlargeImage(this, 'graphs/screens/mood-happy-days.png', 'Happy Days')" />
+        <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be happy & excited" onclick="enlargeImage(this, 'graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be happy & excited')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1364,9 +1372,9 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         
           <li>Since I'm an Introvert, I tend to feel like I socialize too much, rather than too little</li>
         
-          <li>Early COVID lockdown March 2020 was still good, however as the lockdown continued I started feeling more isolated, also partly because I was single, and had just moved to Vienna</li>
+          <li><span class='highlighted'>Early COVID lockdown March 2020 was still good, however as the lockdown continued I started feeling more isolated</span>, also partly because I was single, and had just moved to Vienna</li>
         
-          <li>End of July 2020 Austria opened up most social venues again, bringing this graph back to a great state again</li>
+          <li>End of July 2020 Austria opened up most social venues again, bringing this graph back to an ideal level again</li>
         
           <li>December 2019 I was working remotely from Buenos Aires, however got a pretty bad cold. Being sick in a remote city wasn't the best feeling</li>
         
@@ -1383,60 +1391,6 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
 
       <div class="image-container">
         <img src="graphs/screens/socializing.png" class="image-link" alt="Happy with my social life?" onclick="enlargeImage(this, 'graphs/screens/socializing.png', 'Happy with my social life?')" />
-      </div>
-
-      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-happy-mood-entries-buckets">
-      <h3>Days where I tracked my mood to be very excited/happy</h3>
-      <p class="graph-description">
-        On days where I tracked my mood to be very excited/happy, the following other factors were affected
-      </p>
-
-      <ul>
-        
-          <li>Significantly more likely to be a day where I went out of my comfort zone</li>
-        
-          <li>Significantly more likely to have medidated that day</li>
-        
-          <li>70% more likely to have taken a freezing cold shower</li>
-        
-          <li>60% more likely to have worked on interrelated technical challenges</li>
-        
-          <li>60% more time spent reading or listening to audio books</li>
-        
-          <li>50% more likely to have learned something new that day</li>
-        
-          <li>50% more excited about what's ahead in the future</li>
-        
-          <li>40% more likely to have hit the gym that day</li>
-        
-          <li>30% more likely to have eaten veggies</li>
-        
-          <li>25% warmer</li>
-        
-          <li>20% more computer use</li>
-        
-          <li>25% less alcoholic beverages</li>
-        
-          <li>35% less likely to be a weekend</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be very excited/happy" onclick="enlargeImage(this, 'graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be very excited/happy')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>

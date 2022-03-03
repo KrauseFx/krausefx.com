@@ -23,20 +23,25 @@
 
     and go to
     https://app.flourish.studio/visualisation/8862831/edit?"
-- id: "mood-happy-days"
-  title: "Happy Days"
+- id: "happy-mood-entries-buckets"
+  title: "Days where I tracked my mood to be happy & excited"
+  years: 2.5
   source:
   - "Manually"
-  years: 2.5
-  updated: "2022-01-01"
-  description: "Bucketing all days, by the days at which I was above average happy (excited, pumped). On days where I was happy:"
+  description: "On days where I tracked my mood to be happy & excited, the following other factors of my life were affected"
   takeaways:
-  - 50% more likely to have pushed my comfort zone
-  - 45% more likely to have medidated that day
-  - 40% more likely to feel good about the current direction in life, and working towards it
-  - 15% warmer than the average
-  - 15% less time on social media
-  - 30% less time spent watching TV
+  - 50% more likely to be a day where I went out of my comfort zone
+  - 44% more likely to have medidated that day
+  - 33% more excited about what's ahead in the future
+  - 31% more likely to drink alcohol that day (partys, good friends and such)
+  - 28% more time spent reading or listening to audio books
+  - 26% more likely to have worked on interrelated technical challenges
+  - 26% warmer temperature that day
+  - 20% more likely to have learned something new that day
+  - 14% more likely to have eaten veggies
+  - 45% less time spent in video & audio calls that day
+  updated: "2022-01-01"
+  instructions: "Normal group by, mood > 4"
 - id: "jetlovers-stats"
   title: "Flying Stats - General"
   source: 
@@ -399,43 +404,12 @@
   description: "Each day I answer the question \"Do you feel like you need to socialize more?\" with the answers ranging from \"No\" (5 = light green) to \"Feeling isolated\" (0 = dark green)"
   takeaways:
   - Since I'm an Introvert, I tend to feel like I socialize too much, rather than too little
-  - Early COVID lockdown March 2020 was still good, however as the lockdown continued I started feeling more isolated, also partly because I was single, and had just moved to Vienna
-  - End of July 2020 Austria opened up most social venues again, bringing this graph back to a great state again
+  - "**Early COVID lockdown March 2020 was still good, however as the lockdown continued I started feeling more isolated**, also partly because I was single, and had just moved to Vienna"
+  - End of July 2020 Austria opened up most social venues again, bringing this graph back to an ideal level again
   - December 2019 I was working remotely from Buenos Aires, however got a pretty bad cold. Being sick in a remote city wasn't the best feeling
   - Over the last 2.5 years I actually never felt isolated, therefore there is no entry for the value '0'
   updated: "2022-01-01"
   instructions: "/pie_chart -> socializing"
-- id: "happy-mood-entries-buckets"
-  title: "Days where I tracked my mood to be very excited/happy"
-  years: 2.5
-  source:
-  - "Manually"
-  description: "On days where I tracked my mood to be very excited/happy, the following other factors were affected"
-  takeaways:
-  - Significantly more likely to be a day where I went out of my comfort zone
-  - Significantly more likely to have medidated that day
-  - 70% more likely to have taken a freezing cold shower
-  - 60% more likely to have worked on interrelated technical challenges
-  - 60% more time spent reading or listening to audio books
-  - 50% more likely to have learned something new that day
-  - 50% more excited about what's ahead in the future
-  - 40% more likely to have hit the gym that day
-  - 30% more likely to have eaten veggies
-  - 25% warmer
-  - 20% more computer use
-  - 25% less alcoholic beverages
-  - 35% less likely to be a weekend
-  updated: "2022-01-01"
-  instructions: "Normal group by, mood > 4"
-
-
-
-
-
-
-
-
-
 - id: "season-winter"
   title: "How does Winter affect my life?"
   source:
@@ -444,7 +418,7 @@
   description: "Winter (being from 21st Dec to 20th March) has the following effects on my life:"
   takeaways:
   - "Online shopping time going up by 100%, most likely due to the last Winters having spent in lockdown"
-  - "Chances of having cold symptons goes up ~45%"
+  - "**Chances of having cold symptons goes up ~45%**"
   - "35% less likely to take a freezing cold shower"
   - "Unsurprisingly, I'm exposed to less solar energy in Winter, make sure to get enough Vitamin D"
   updated: "2022-01-01"
@@ -461,7 +435,7 @@
   - "30% more likely to hit the gym"
   - 23% more alcoholic beverages (there were no lockdowns in Summer, also )
   - 20% less time spent reading news & opinions (as per [RescueTime](https://rescuetime.com) classifications)
-  - 40% less likely to be sick
+  - "**40% less likely to be sick**"
   - 40% less time spent on Entertainment on my computer (as per [RescueTime](https://rescuetime.com) classifications)
   - 30% less likely to have bad dreams
   updated: "2022-01-01"
