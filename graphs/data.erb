@@ -346,7 +346,7 @@ Additionally I can fill-out date ranges with specific values, for example lockdo
 
 After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/). You can find the full source code on [KrauseFx/FxLifeSheet - visual_playground](https://github.com/KrauseFx/FxLifeSheet/tree/master/visual_playground).
 
-<div id="enlargedImageContainer">
+<div id="enlargedImageContainer" style="display: none">
   <div id="enlargedImageContainerBackground"></div>
   <a target="_blank" id="enlargedImageLink">
     <img id="enlargedImage" />
@@ -469,6 +469,11 @@ After having tried various tools available to visualize, I ended up writing my o
 
   window.addEventListener("keyup", function(e) {
     if (e.keyCode == 27) { // ESC
+      if (document.getElementsByClassName("graph-entry-selected").length > 0 && document.getElementById("enlargedImageContainer").style.display == "none") {
+        clearSelection();
+        lastNode.classList.remove("graph-entry-selected");
+        lastNode = null;
+      }
       dismissImage();
       return true;
     }
@@ -501,7 +506,6 @@ After having tried various tools available to visualize, I ended up writing my o
   }
   #enlargedImageContainer {
     position: fixed;
-    display: none;
     z-index: 100;
     top: 0;
     cursor: pointer;
