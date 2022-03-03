@@ -283,7 +283,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-number-of-entries">
       <h3>Number of data entries over time</h3>
       <p class="graph-description">
-        Visualized the number of data entries in <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet</a> over the last 10 years
+        Visualized the number of data entries in <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet</a> over the last 10 years, and where the data came from.
       </p>
 
       <ul>
@@ -302,6 +302,46 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
       </div>
 
       <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-mood-happy-days">
+      <h3>Happy Days</h3>
+      <p class="graph-description">
+        Bucketing all days, by the days at which I was above average happy (excited, pumped). On days where I was happy:
+      </p>
+
+      <ul>
+        
+          <li>50% more likely to have pushed my comfort zone</li>
+        
+          <li>45% more likely to have medidated that day</li>
+        
+          <li>40% more likely to feel good about the current direction in life, and working towards it</li>
+        
+          <li>15% warmer than the average</li>
+        
+          <li>15% less time on social media</li>
+        
+          <li>30% less time spent watching TV</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/mood-happy-days.png" class="image-link" alt="Happy Days" onclick="enlargeImage(this, 'graphs/screens/mood-happy-days.png', 'Happy Days')" />
+      </div>
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
@@ -410,6 +450,248 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
     
 
+    <div class="graphs-entry" id="graphs-entry-daily-steps">
+      <h3>Average daily steps over time</h3>
+      <p class="graph-description">
+        Average daily steps measured through the iPhone's Apple Health app, which stayed the same over the last 8 years. Measurements done via my smart watches wouldn't be accurate, as I have changed them over the years.
+      </p>
+
+      <ul>
+        
+          <li>I walked a total of <span class='highlighted'>22,830,860</span> steps over last 8 years</li>
+        
+          <li>I walk more than twice as much when I'm in New York City, compared to any other city</li>
+        
+          <li>In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books</li>
+        
+          <li>Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less</li>
+        
+          <li>San Francisco was always scary to walk</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Apple Health
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average daily steps over time" onclick="enlargeImage(this, 'graphs/screens/daily-steps.png', 'Average daily steps over time')" />
+      </div>
+
+      <span class="graph-date">8 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-weight-sleeping-hr">
+      <h3>Correlation: weight and resting heart rate</h3>
+      <p class="graph-description">
+        This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the <a href='https://www.withings.com/us/en/scanwatch' target='_blank'>Withings Scanwatch</a> while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
+      </p>
+
+      <ul>
+        
+          <li>I started my lean bulk (controlled weight gain combined with 5 workouts a week) in August 2020</li>
+        
+          <li>The resting rate rate grew from 58bpm to 67bpm from August 2020 to March 2021 (~8 months) with a weight gain of 8.5kg (19lbs)</li>
+        
+          <li>The spike in resting heart rate in July, August 2020 was due to bars and nightclubs opening up again in Austria</li>
+        
+          <li>After a night of drinking, my resting/sleeping heart rate can be about 50% - 75% higher than after a night without any alcohol</li>
+        
+          <li>The spike in resting heart rate in Oct/Nov/Dec 2021 was due to having bronchitis and a cold/flu, not getting correct treatment early enough</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Withings Scanwatch, Withings Scale
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation: weight and resting heart rate" onclick="enlargeImage(this, 'graphs/screens/weight-sleeping-hr.png', 'Correlation: weight and resting heart rate')" />
+      </div>
+
+      <span class="graph-date">1.5 years of data - Last updated on 2022-02-09</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-healthy">
+      <h3>How healthy was I over the years?</h3>
+      <p class="graph-description">
+        Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy
+      </p>
+
+      <ul>
+        
+          <li>During the COVID lockdowns I tend to stay healthier. No going out and heavy drinking, so I have better sleep, less close contact with others, and less alcohol consumptions</li>
+        
+          <li>Usually during excessive traveling I get sick (cold/flu)</li>
+        
+          <li>Q4 2021 I had bronchitis, however didn't know about it at the time and didn't get proper treatment</li>
+        
+          <li>Overall I'm quite prone to getting sick (cold/flu)</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the years?" onclick="enlargeImage(this, 'graphs/screens/healthy.png', 'How healthy was I over the years?')" />
+      </div>
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-alcoholic-beverages-buckets">
+      <h3>Days with more than 4 alcoholic drinks</h3>
+      <p class="graph-description">
+        On days where I had more than 4 alcoholic beverages (meaning I was partying), the following other factors were affected
+      </p>
+
+      <ul>
+        
+          <li>21x more likely to dance</li>
+        
+          <li>80% more likely to take a nap the day of, or the day after</li>
+        
+          <li>60% more time spent with friends</li>
+        
+          <li>40% warmer temperatures. There weren't many opportunities for parties in Winter due to lockdowns in the last 2 years. Also, people are more motivated to go out when it's nice outside.</li>
+        
+          <li>25% more steps</li>
+        
+          <li>10% higher resting/sleeping heart rate that night (body processing the alcohol)</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 alcoholic drinks" onclick="enlargeImage(this, 'graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 alcoholic drinks')" />
+      </div>
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-mood-graph-months">
+      <h3>Mood over the years</h3>
+      <p class="graph-description">
+        My <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet bot</a> asks me 4 times a day how I'm feeling at the moment.
+      </p>
+
+      <ul>
+        
+          <li>This graph groups the entries by month, and shows the % of entries for each value (0 - 5) with 5 being very excited, and 0 being worried.</li>
+        
+          <li>I designed the ranges so that 0 or 5 are not entered as much. 0 is rendered as dark green at the top, whereas 5 is rendered as light green at the bottom.</li>
+        
+          <li>For privacy reasons I won't get into some of the details on why certain months were worse than others.</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/mood-graph-months.png" class="image-link" alt="Mood over the years" onclick="enlargeImage(this, 'graphs/screens/mood-graph-months.png', 'Mood over the years')" />
+      </div>
+
+      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-map-world-trip">
+      <h3>Location History</h3>
+      <p class="graph-description">
+        Every Swarm check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Swarm
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/map-world-trip.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-trip.jpg', 'Location History')" />
+      </div>
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-map-combined">
+      <h3>Location History - Cities</h3>
+      <p class="graph-description">
+        Every Swarm check-in over the last 7 years visualized, zoomed in
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Swarm
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/map-combined.jpg" class="image-link" alt="Location History - Cities" onclick="enlargeImage(this, 'graphs/screens/map-combined.jpg', 'Location History - Cities')" />
+      </div>
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
     <div class="graphs-entry" id="graphs-entry-swarm-cities-top">
       <h3>Most visited POIs, grouped by city</h3>
       <p class="graph-description">
@@ -510,206 +792,6 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
     
 
-    <div class="graphs-entry" id="graphs-entry-weather-temperature-max">
-      <h3>Maximal temperature each day of the year</h3>
-      <p class="graph-description">
-        Historic weather data based on the location I was at on that day based on my Swarm check-ins. Days with no data are rendered as white
-      </p>
-
-      <ul>
-        
-          <li>Days in Summer are warmer than days in Winter</li>
-        
-          <li>Summer 2019 I spent in New York City, while 2020 and 2021 I spent in Vienna. The graph shows the summer in NYC to reach higher temperatures</li>
-        
-          <li>Week 36 in 2021 I spent in Iceland, therefore significantly lower temperatures</li>
-        
-          <li>End of November in 2019 I spent in Buenos Aires, therefore way higher temperatures</li>
-        
-          <li>December 2019 I spent in Columbus, Ohio, being the coldest week of the year</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Visual Crossing historic weather data, Swarm
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal temperature each day of the year" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-max.png', 'Maximal temperature each day of the year')" />
-      </div>
-
-      <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-map-world-overview">
-      <h3>Location History</h3>
-      <p class="graph-description">
-        Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered.
-      </p>
-
-      <ul>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Swarm
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/map-world-overview.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-overview.jpg', 'Location History')" />
-      </div>
-
-      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-map-world-trip">
-      <h3>Location History</h3>
-      <p class="graph-description">
-        Every Swarm check-in over the last 7 years visualized on a map, including the actual trip (flight, drive, etc.)
-      </p>
-
-      <ul>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Swarm
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/map-world-trip.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-trip.jpg', 'Location History')" />
-      </div>
-
-      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-map-combined">
-      <h3>Location History - Cities</h3>
-      <p class="graph-description">
-        Every Swarm check-in over the last 7 years visualized, zoomed in
-      </p>
-
-      <ul>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Swarm
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/map-combined.jpg" class="image-link" alt="Location History - Cities" onclick="enlargeImage(this, 'graphs/screens/map-combined.jpg', 'Location History - Cities')" />
-      </div>
-
-      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-mood-happy-days">
-      <h3>Happy Days</h3>
-      <p class="graph-description">
-        Bucketing all days, by the days at which I was above average happy (excited, pumped). On days where I was happy:
-      </p>
-
-      <ul>
-        
-          <li>50% more likely to have pushed my comfort zone</li>
-        
-          <li>45% more likely to have medidated that day</li>
-        
-          <li>40% more likely to feel good about the current direction in life, and working towards it</li>
-        
-          <li>15% warmer than the average</li>
-        
-          <li>15% less time on social media</li>
-        
-          <li>30% less time spent watching TV</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/mood-happy-days.png" class="image-link" alt="Happy Days" onclick="enlargeImage(this, 'graphs/screens/mood-happy-days.png', 'Happy Days')" />
-      </div>
-
-      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-daily-steps">
-      <h3>Average daily steps over time</h3>
-      <p class="graph-description">
-        Average daily steps measured through the iPhone's Apple Health app, which stayed the same over the last 8 years. Measurements done via my smart watches wouldn't be accurate, as I have changed them over the years.
-      </p>
-
-      <ul>
-        
-          <li>I walked a total of 22,830,860 steps over last 8 years</li>
-        
-          <li>I walk more than twice as much when I'm in New York City, compared to any other city</li>
-        
-          <li>In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books</li>
-        
-          <li>Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less</li>
-        
-          <li>San Francisco was always scary to walk</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Apple Health
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average daily steps over time" onclick="enlargeImage(this, 'graphs/screens/daily-steps.png', 'Average daily steps over time')" />
-      </div>
-
-      <span class="graph-date">8 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
     <div class="graphs-entry" id="graphs-entry-swarm-number-of-checkins">
       <h3>Number of Swarm checkins over time</h3>
       <p class="graph-description">
@@ -746,6 +828,34 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
     
 
+    <div class="graphs-entry" id="graphs-entry-map-world-overview">
+      <h3>Location History</h3>
+      <p class="graph-description">
+        Every Swarm check-in visualized on a map. Only areas where I've had multiple check-ins are rendered.
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Swarm
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/map-world-overview.jpg" class="image-link" alt="Location History" onclick="enlargeImage(this, 'graphs/screens/map-world-overview.jpg', 'Location History')" />
+      </div>
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
     <div class="graphs-entry" id="graphs-entry-lockdown-days">
       <h3>Days in full lockdown</h3>
       <p class="graph-description">
@@ -769,74 +879,6 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
 
       <div class="image-container">
         <img src="graphs/screens/lockdown-days.png" class="image-link" alt="Days in full lockdown" onclick="enlargeImage(this, 'graphs/screens/lockdown-days.png', 'Days in full lockdown')" />
-      </div>
-
-      <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-weight-sleeping-hr">
-      <h3>Correlation between weight and resting heart rate</h3>
-      <p class="graph-description">
-        This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the <a href='https://www.withings.com/us/en/scanwatch' target='_blank'>Withings Scanwatch</a> while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
-      </p>
-
-      <ul>
-        
-          <li>I started my lean bulk (controlled weight gain combined with 5 workouts a week) in August 2020</li>
-        
-          <li>The resting rate rate grew from 58bpm to 67bpm from August 2020 to March 2021 (~8 months) with a weight gain of 8.5kg (19lbs)</li>
-        
-          <li>The spike in resting heart rate in July, August 2020 was due to bars and nightclubs opening up again in Austria</li>
-        
-          <li>After a night of drinking, my resting/sleeping heart rate can be about 50% - 75% higher than after a night without any alcohol</li>
-        
-          <li>The spike in resting heart rate in October/November/December 2021 was due to having bronchitis and a cold/flu, not getting correct treatment early enough</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Withings Scanwatch, Withings Scale
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation between weight and resting heart rate" onclick="enlargeImage(this, 'graphs/screens/weight-sleeping-hr.png', 'Correlation between weight and resting heart rate')" />
-      </div>
-
-      <span class="graph-date">1.5 years of data - Last updated on 2022-02-09</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-weather-conditions">
-      <h3>Weather conditions per year</h3>
-      <p class="graph-description">
-        Historic weather data based on the location I was at on that day based on my Swarm check-ins.
-      </p>
-
-      <ul>
-        
-          <li>2019 I experienced more cloudy weather than the following years</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Visual Crossing historic weather data, Swarm
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather conditions per year" onclick="enlargeImage(this, 'graphs/screens/weather-conditions.png', 'Weather conditions per year')" />
       </div>
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
@@ -952,6 +994,42 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
     
 
+    <div class="graphs-entry" id="graphs-entry-macros">
+      <h3>Food tracking - Macros</h3>
+      <p class="graph-description">
+        On weeks where I have a routine (not traveling), I track most my meals. Whenever I scale my food, I try to guess the weight before to become better at estimating portion sizes.
+      </p>
+
+      <ul>
+        
+          <li>Tracking macros precisely is the best way to lose/gain weight at a controlled and healthy speed</li>
+        
+          <li>When I first started tracking macros, additionally to already working out regularly, is when I saw by far the best results</li>
+        
+          <li>It takes a lot of energy to be consistent, but it's worth it, and it will make you feel good (e.g. feeling good about using a spoon to eat plain Nutella if you have the macros left)</li>
+        
+          <li>Gaining and losing weight is pretty much math, if you track your macros and weight, and you have almost full control over it</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        MyFitnessPal
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/macros.png" class="image-link" alt="Food tracking - Macros" onclick="enlargeImage(this, 'graphs/screens/macros.png', 'Food tracking - Macros')" />
+      </div>
+
+      <span class="graph-date">4 years of data - Last updated on 2022-02-17</span>
+    </div>
+  
+    
+    
+    
+
     <div class="graphs-entry" id="graphs-entry-manual-gym-visits-grouped">
       <h3>Gym workouts grouped by month</h3>
       <p class="graph-description">
@@ -984,13 +1062,27 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
     
 
-    <div class="graphs-entry" id="graphs-entry-manual-living-style-years">
-      <h3>Living Style</h3>
+    <div class="graphs-entry" id="graphs-entry-fitness-bulk">
+      <h3>Fitness Bulk & Cut season</h3>
       <p class="graph-description">
-        From late 2017 to early 2020 I lived without a permanent home address as a <a href='/blog/one-year-nomad' target='_blank'>digital nomad</a>, staying at various Airbnbs or taking over a few weeks of a lease from a friend
+        I'm following a pretty regular bodybuilding routine, a 3-day workout split, and a normal bulk & cut seasons
       </p>
 
       <ul>
+        
+          <li>During times where fitness isn't high up on my priority list, I usually switch to maintainance</li>
+        
+          <li>During a cut, I have a slight kcal deficit of about 300kcal, to not negatively impact the rest of my life</li>
+        
+          <li>During the bulk, I aim to gain about 300g of body weight per week</li>
+        
+          <li>During a cut, I tend to track my meals more precisely than during a bulk or while maintaining</li>
+        
+          <li>Purple = Cut</li>
+        
+          <li>Brown = Bulk</li>
+        
+          <li>Blue = Maintainance</li>
         
       </ul>
 
@@ -1002,43 +1094,29 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/manual-living-style-years.png" class="image-link" alt="Living Style" onclick="enlargeImage(this, 'graphs/screens/manual-living-style-years.png', 'Living Style')" />
+        <img src="graphs/screens/fitness-bulk.png" class="image-link" alt="Fitness Bulk & Cut season" onclick="enlargeImage(this, 'graphs/screens/fitness-bulk.png', 'Fitness Bulk & Cut season')" />
       </div>
 
-      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
     
     
 
-    <div class="graphs-entry" id="graphs-entry-weather-temperature-buckets">
-      <h3>How does high temperature affect my life?</h3>
+    <div class="graphs-entry" id="graphs-entry-weight-graph-1">
+      <h3>Weight history of 8 years</h3>
       <p class="graph-description">
-        On days with a maximum temperature of more than 26 Celsius (78.8 Fahrenheit), the following other factors were affected
+        Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently.
       </p>
 
       <ul>
         
-          <li>80% more likely to take a freezing cold shower</li>
+          <li>Lowest recorded weight was 69kg/152lbs in 2014 (age 20)</li>
         
-          <li>37% more likely to hit the gym</li>
+          <li>Highest recorded weight was 89.8kg/198lbs in 2021 (age 27)</li>
         
-          <li>26% more daily steps</li>
-        
-          <li>20% more alcoholic beverages</li>
-        
-          <li>15% more likely to go out in the evening</li>
-        
-          <li>13% less likely to take a nap</li>
-        
-          <li>20% less time in a code editor</li>
-        
-          <li>21% less likely to be sick</li>
-        
-          <li>Generally lower stress/anxiety levels</li>
-        
-          <li>100% less likely to be in a COVID related lockdown</li>
+          <li>I gained 20kg (44lbs) while staying under 12% body fat on 193cm (6"4)</li>
         
       </ul>
 
@@ -1046,35 +1124,31 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         <span class="graph-sources-header">
           Sources: 
         </span>
-        Visual Crossing historic weather data, Manually
+        Withings Scale
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does high temperature affect my life?" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-buckets.png', 'How does high temperature affect my life?')" />
+        <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight history of 8 years" onclick="enlargeImage(this, 'graphs/screens/weight-graph-1.png', 'Weight history of 8 years')" />
       </div>
 
-      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+      <span class="graph-date">9 years of data - Last updated on 2022-02-17</span>
     </div>
   
     
     
     
 
-    <div class="graphs-entry" id="graphs-entry-healthy">
-      <h3>How healthy was I over the years?</h3>
+    <div class="graphs-entry" id="graphs-entry-weight-graph-2">
+      <h3>Bulk & Cut Phase visualized</h3>
       <p class="graph-description">
-        Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy
+        I usually have slow bulk & cut phases, where I gain and lose weight at a controlled speed, combined with tracking my meals.
       </p>
 
       <ul>
         
-          <li>During the COVID lockdowns I tend to stay healthier. No going out and heavy drinking, so I have better sleep, less close contact with others, and less alcohol consumptions</li>
+          <li>I only track my weight if I didn't drink alcohol the night before, and after getting a full night's sleep, since otherwise the weight fluctuates a lot</li>
         
-          <li>Usually during excessive traveling I get sick (cold/flu)</li>
-        
-          <li>Q4 2021 I had bronchitis, however didn't know about it at the time and didn't get proper treatment</li>
-        
-          <li>Overall I'm quite prone to getting sick (cold/flu)</li>
+          <li>Generally, you can pretty much calculate your weight on a certain date, if you consistently track your meals, and correctly calculated your macros</li>
         
       </ul>
 
@@ -1082,62 +1156,14 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         <span class="graph-sources-header">
           Sources: 
         </span>
-        Manually
+        Withings Scale, weightgrapher.com
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the years?" onclick="enlargeImage(this, 'graphs/screens/healthy.png', 'How healthy was I over the years?')" />
+        <img src="graphs/screens/weight-graph-2.png" class="image-link" alt="Bulk & Cut Phase visualized" onclick="enlargeImage(this, 'graphs/screens/weight-graph-2.png', 'Bulk & Cut Phase visualized')" />
       </div>
 
-      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-sleep-duration-buckets">
-      <h3>How does longer sleep duration affect my day?</h3>
-      <p class="graph-description">
-        On days where I had a total sleep duration of more than 8.5 hours, the following other factors were affected
-      </p>
-
-      <ul>
-        
-          <li>65% more likely to have cold symptons</li>
-        
-          <li>60% more likely to have headache</li>
-        
-          <li>40% more social media usage</li>
-        
-          <li>30% more likely to be a rainy day</li>
-        
-          <li>20% more likely to be a weekend</li>
-        
-          <li>15% more likely to have bad/stressful dreams</li>
-        
-          <li>12% colder weather on average</li>
-        
-          <li>20% less likely to hit the gym that day</li>
-        
-          <li>24% less energy</li>
-        
-          <li>Overall, it's clear that days with a longer sleep duration tend to be significantly worse days. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more than usually because I'm not feeling too well, or even sick</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Withings Scan Watch, Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage(this, 'graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
-      </div>
-
-      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+      <span class="graph-date">1 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
@@ -1198,6 +1224,174 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
     
 
+    <div class="graphs-entry" id="graphs-entry-sleep-duration-buckets">
+      <h3>How does longer sleep duration affect my day?</h3>
+      <p class="graph-description">
+        On days where I had a total sleep duration of more than 8.5 hours, the following other factors were affected
+      </p>
+
+      <ul>
+        
+          <li>65% more likely to have cold symptons</li>
+        
+          <li>60% more likely to have headache</li>
+        
+          <li>40% more social media usage</li>
+        
+          <li>30% more likely to be a rainy day</li>
+        
+          <li>20% more likely to be a weekend</li>
+        
+          <li>15% more likely to have bad/stressful dreams</li>
+        
+          <li>12% colder weather on average</li>
+        
+          <li>20% less likely to hit the gym that day</li>
+        
+          <li>24% less energy</li>
+        
+          <li>Overall, it's clear that <span class='highlighted'>days with a longer sleep duration tend to be significantly worse days</span>. This is most likely due to the fact that I try to sleep a maximum of 8 hours, and if I actually sleep more than usually because I'm not feeling too well, or even sick</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Withings Scan Watch, Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage(this, 'graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
+      </div>
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-air-quality">
+      <h3>Air Quality in various rooms</h3>
+      <p class="graph-description">
+        I used the <a href='https://www.getawair.com/products/element' target='_blank'>Awair Element</a> at home in Vienna, in every room over multiple days
+      </p>
+
+      <ul>
+        
+          <li>Overall, the air quality in Vienna is excellent. Just opening the windows for a few minutes is enough to get a 100% air score</li>
+        
+          <li>The smaller the room, the more difficult it is to keep the CO2 levels low</li>
+        
+          <li>The only room where I'm still struggling to keep the CO2 levels low is my bedroom, which is small, and doesn't offer any ventilation. Keeping the doors open mostly solves the high CO2 levels, however comes with other downsides like more light</li>
+        
+          <li>Probably obvious for many, but <span class='highlighted'>I didn't realize ACs don't transport any air into the room, but just moves it around</span></li>
+        
+          <li>Opening the windows for a longer time in winter will cause low humidity and low temperatures, so it's often not a good option</li>
+        
+          <li>I didn't learn anything from the Chemicals and PM2.5 graphs</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Awair
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage(this, 'graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
+      </div>
+
+      <span class="graph-date">1 years of data - Last updated on 2022-02-09</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-rescue-time-usage-categories">
+      <h3>RescueTime Computer Usage Categories</h3>
+      <p class="graph-description">
+        Using <a href='https://rescuetime.com' target='_blank'>RescueTime</a>, I tracked my exact computer usage, and the categories of activities in which I spend time with.
+      </p>
+
+      <ul>
+        
+          <li>Over the last 7 years, I went from spending around 10% of my time with communication & scheduling, to around 30%</li>
+        
+          <li>Over the last 7 years, I went from spending around 33% of my time with software development, to less than 10% (now that I'm not currently full-time employed)</li>
+        
+          <li>All other categories stayed pretty much on the same ratio over the last 7 years</li>
+        
+          <li>Total amount spent on my computer went down significantly after having left my job late 2021</li>
+        
+          <li>Tracking productivity levels automatically is difficult to get right, as it's hard to classify certain activities.</li>
+        
+          <li>Day to day I'm using <a href='https://timingapp.com/' target='_blank'>Timing App</a> which has a significantly nicer user experience, however I just had many additional years of data on RescueTime</li>
+        
+          <li><span class='highlighted'>I highly recommend every professional to track their computer usage.</span> It's surprising to see how many hours a day you actually get on your computer, and how much of it is considered productive. <a href='https://timingapp.com/' target='_blank'>Timing App</a> shows the amount of hours of the day on the Mac's status bar, and it's been extremely useful</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        RescueTime
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="RescueTime Computer Usage Categories" onclick="enlargeImage(this, 'graphs/screens/rescue-time-usage-categories.png', 'RescueTime Computer Usage Categories')" />
+      </div>
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-socializing">
+      <h3>Happy with my social life?</h3>
+      <p class="graph-description">
+        Each day I answer the question "Do you feel like you need to socialize more?" with the answers ranging from "No" (5 = light green) to "Feeling isolated" (0 = dark green)
+      </p>
+
+      <ul>
+        
+          <li>Since I'm an Introvert, I tend to feel like I socialize too much, rather than too little</li>
+        
+          <li>Early COVID lockdown March 2020 was still good, however as the lockdown continued I started feeling more isolated, also partly because I was single, and had just moved to Vienna</li>
+        
+          <li>End of July 2020 Austria opened up most social venues again, bringing this graph back to a great state again</li>
+        
+          <li>December 2019 I was working remotely from Buenos Aires, however got a pretty bad cold. Being sick in a remote city wasn't the best feeling</li>
+        
+          <li>Over the last 2.5 years I actually never felt isolated, therefore there is no entry for the value '0'</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/socializing.png" class="image-link" alt="Happy with my social life?" onclick="enlargeImage(this, 'graphs/screens/socializing.png', 'Happy with my social life?')" />
+      </div>
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
     <div class="graphs-entry" id="graphs-entry-happy-mood-entries-buckets">
       <h3>Days where I tracked my mood to be very excited/happy</h3>
       <p class="graph-description">
@@ -1246,434 +1440,6 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-mood-graph-months">
-      <h3>Mood over the years</h3>
-      <p class="graph-description">
-        I track my mood 4 times a day. This graph groups the entries by month, and shows the % of entries for each value (0 - 5) with 5 being very excited, and 0 being worried. I designed the ranges so that 0 or 5 are not entered as much. 0 is rendered as dark green at the top, whereas 5 is rendered as light green at the bottom.
-      </p>
-
-      <ul>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/mood-graph-months.png" class="image-link" alt="Mood over the years" onclick="enlargeImage(this, 'graphs/screens/mood-graph-months.png', 'Mood over the years')" />
-      </div>
-
-      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-fitness-bulk">
-      <h3>Fitness Bulk & Cut season</h3>
-      <p class="graph-description">
-        I'm following a pretty regular bodybuilding routine, a 3-day workout split, and a normal bulk & cut seasons
-      </p>
-
-      <ul>
-        
-          <li>During times where fitness isn't high up on my priority list, I usually switch to maintainance</li>
-        
-          <li>During a cut, I have a slight kcal deficit of about 300kcal, to not negatively impact the rest of my life</li>
-        
-          <li>During the bulk, I aim to gain about 300g of body weight per week</li>
-        
-          <li>During a cut, I tend to track my meals more precisely than during a bulk or while maintaining</li>
-        
-          <li>Purple = Cut</li>
-        
-          <li>Brown = Bulk</li>
-        
-          <li>Blue = Maintainance</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/fitness-bulk.png" class="image-link" alt="Fitness Bulk & Cut season" onclick="enlargeImage(this, 'graphs/screens/fitness-bulk.png', 'Fitness Bulk & Cut season')" />
-      </div>
-
-      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-socializing">
-      <h3>Happy with my social life?</h3>
-      <p class="graph-description">
-        Each day I answer the question "Do you feel like you need to socialize more?" with the answers ranging from "No" (5 = light green) to "Feeling isolated" (0 = dark green)
-      </p>
-
-      <ul>
-        
-          <li>Since I'm an Introvert, I tend to feel like I socialize too much, rather than too little</li>
-        
-          <li>Early COVID lockdown March 2020 was still good, however as the lockdown continued I started feeling more isolated, also partly because I was single, and had just moved to Vienna</li>
-        
-          <li>End of July 2020 Austria opened up most social venues again, bringing this graph back to a great state again</li>
-        
-          <li>December 2019 I was working remotely from Buenos Aires, however got a pretty bad cold. Being sick in a remote city wasn't the best feeling</li>
-        
-          <li>Over the last 2.5 years I actually never felt isolated, therefore there is no entry for the value '0'</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/socializing.png" class="image-link" alt="Happy with my social life?" onclick="enlargeImage(this, 'graphs/screens/socializing.png', 'Happy with my social life?')" />
-      </div>
-
-      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-countries">
-      <h3>Days spent in each country</h3>
-      <p class="graph-description">
-        Percentage of days spent in each country over the last 4 years
-      </p>
-
-      <ul>
-        
-          <li>International travel has slowed down significantly since COVID started</li>
-        
-          <li>Traveling without a stop home for more than 3 weeks gets exhausting for me, I prefer doing more shorter travels instead</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/countries.png" class="image-link" alt="Days spent in each country" onclick="enlargeImage(this, 'graphs/screens/countries.png', 'Days spent in each country')" />
-      </div>
-
-      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-alcoholic-beverages-buckets">
-      <h3>Days with more than 4 alcoholic drinks</h3>
-      <p class="graph-description">
-        On days where I had more than 4 alcoholic beverages (meaning I was partying), the following other factors were affected
-      </p>
-
-      <ul>
-        
-          <li>21x more likely to dance</li>
-        
-          <li>80% more likely to take a nap the day of, or the day after</li>
-        
-          <li>60% more time spent with friends</li>
-        
-          <li>40% warmer temperatures. There weren't many opportunities for parties in Winter due to lockdowns in the last 2 years. Also, people are more motivated to go out when it's nice outside.</li>
-        
-          <li>25% more steps</li>
-        
-          <li>10% higher resting/sleeping heart rate that night (body processing the alcohol)</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 alcoholic drinks" onclick="enlargeImage(this, 'graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 alcoholic drinks')" />
-      </div>
-
-      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-weight-graph-1">
-      <h3>Weight history of 8 years</h3>
-      <p class="graph-description">
-        Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently.
-      </p>
-
-      <ul>
-        
-          <li>Lowest recorded weight was 69kg/152lbs in 2014 (age 20)</li>
-        
-          <li>Highest recorded weight was 89.8kg/198lbs in 2021 (age 27)</li>
-        
-          <li>I gained 20kg (44lbs) while staying under 12% body fat on 193cm (6"4)</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Withings Scale
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight history of 8 years" onclick="enlargeImage(this, 'graphs/screens/weight-graph-1.png', 'Weight history of 8 years')" />
-      </div>
-
-      <span class="graph-date">9 years of data - Last updated on 2022-02-17</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-macros">
-      <h3>Food tracking - Macros</h3>
-      <p class="graph-description">
-        On weeks where I have a routine (not traveling), I track most my meals. Whenever I scale my food, I try to guess the weight before to become better at estimating portion sizes.
-      </p>
-
-      <ul>
-        
-          <li>Tracking macros precisely is the best way to lose/gain weight at a controlled and healthy speed</li>
-        
-          <li>When I first started tracking macros, additionally to already working out regularly, is when I saw by far the best results</li>
-        
-          <li>It takes a lot of energy to be consistent, but it's worth it, and it will make you feel good (e.g. feeling good about using a spoon to eat plain Nutella if you have the macros left)</li>
-        
-          <li>Gaining and losing weight is pretty much math, if you track your macros and weight, and you have almost full control over it</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        MyFitnessPal
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/macros.png" class="image-link" alt="Food tracking - Macros" onclick="enlargeImage(this, 'graphs/screens/macros.png', 'Food tracking - Macros')" />
-      </div>
-
-      <span class="graph-date">4 years of data - Last updated on 2022-02-17</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-weight-graph-2">
-      <h3>Bulk & Cut Phase visualized</h3>
-      <p class="graph-description">
-        I usually have slow bulk & cut phases, where I gain and lose weight at a controlled speed, combined with tracking my meals.
-      </p>
-
-      <ul>
-        
-          <li>I only track my weight if I didn't drink alcohol the night before, and after getting a full night's sleep, since otherwise the weight fluctuates a lot</li>
-        
-          <li>Generally, you can pretty much calculate your weight on a certain date, if you consistently track your meals, and correctly calculated your macros</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Withings Scale, weightgrapher.com
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/weight-graph-2.png" class="image-link" alt="Bulk & Cut Phase visualized" onclick="enlargeImage(this, 'graphs/screens/weight-graph-2.png', 'Bulk & Cut Phase visualized')" />
-      </div>
-
-      <span class="graph-date">1 years of data - Last updated on 2022-01-01</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-air-quality">
-      <h3>Air Quality in various rooms</h3>
-      <p class="graph-description">
-        I used the <a href='https://www.getawair.com/products/element' target='_blank'>Awair Element</a> at home in Vienna, in every room over multiple days
-      </p>
-
-      <ul>
-        
-          <li>Overall, the air quality in Vienna is excellent. Just opening the windows for a few minutes is enough to get a 100% air score</li>
-        
-          <li>The smaller the room, the more difficult it is to keep the CO2 levels low</li>
-        
-          <li>The only room where I'm still struggling to keep the CO2 levels low is my bedroom, which is small, and doesn't offer any ventilation. Keeping the doors open mostly solves the high CO2 levels, however comes with other downsides like more light</li>
-        
-          <li>Probably obvious for many, but <span class='highlighted'>I didn't realize ACs don't transport any air into the room, but just moves it around</span></li>
-        
-          <li>Opening the windows for a longer time in winter will cause low humidity and low temperatures, so it's often not a good option</li>
-        
-          <li>I didn't learn anything meaningful from the 'Chemicals' and 'PM2.5' graphs</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Awair
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage(this, 'graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
-      </div>
-
-      <span class="graph-date">1 years of data - Last updated on 2022-02-09</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-money-distribution">
-      <h3>Investment Distribution</h3>
-      <p class="graph-description">
-        Every second week I track my current investments and cash positions. As part of this project, it tells me how to most efficiently re-balance my investments when they're off, while also minimizing the occuring fees
-      </p>
-
-      <ul>
-        
-          <li>I have a burndown chart, which visualizes how my networth would grow/drop over time in various scenarios</li>
-        
-          <li>I have a graph that ensures I have the right target distribution of high, medium and low risk positions</li>
-        
-          <li>Whenever I take on a potential new project/role, I simulate the various outcome scenarios over the next few years</li>
-        
-          <li>For obvious reasons, I can't include more of the graphs and simulations I have available</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/money-distribution.png" class="image-link" alt="Investment Distribution" onclick="enlargeImage(this, 'graphs/screens/money-distribution.png', 'Investment Distribution')" />
-      </div>
-
-      <span class="graph-date">8 years of data - Last updated on 2022-02-09</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-money-flow">
-      <h3>Annual money flow</h3>
-      <p class="graph-description">
-        Inspired by the Reddit commnunity <a href='https://old.reddit.com/r/PFPorn' target='_blank'>/r/PFPorn</a>, I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but just an example I created.
-      </p>
-
-      <ul>
-        
-          <li><span class='highlighted'>Not owning an apartment, and <a href='/blog/one-year-nomad' target='_blank'>living in Airbnbs as a nomad</a> I actually spent less money.</span> This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
-        
-          <li>Misc. subscriptions/expenses are adding up quickly</li>
-        
-          <li>Having an End-Of-Year summary from your credit card provider, and always using your card when possible, is a great way to get those numbers</li>
-        
-          <li>Creating this chart is still a lot of work, if you want to also consider getting reimbursed, or expenses you've covered for a group (e.g. booked a larger Airbnb)</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        Chase Credit Card Year Summary, sankeymatic.com, Manually
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual money flow" onclick="enlargeImage(this, 'graphs/screens/money-flow.png', 'Annual money flow')" />
-      </div>
-
-      <span class="graph-date">5 years of data - Last updated on 2022-02-09</span>
-    </div>
-  
-    
-    
-    
-
-    <div class="graphs-entry" id="graphs-entry-rescue-time-usage-categories">
-      <h3>RescueTime Computer Usage Categories</h3>
-      <p class="graph-description">
-        Using <a href='https://rescuetime.com' target='_blank'>RescueTime</a>, I tracked my exact computer usage, and the categories of activities in which I spend time with.
-      </p>
-
-      <ul>
-        
-          <li>Over the last 7 years, I went from spending around 10% of my time with communication & scheduling, to around 30%</li>
-        
-          <li>Over the last 7 years, I went from spending around 33% of my time with software development, to less than 10% (now that I'm not currently full-time employed)</li>
-        
-          <li>All other categories stayed pretty much on the same ratio over the last 7 years</li>
-        
-      </ul>
-
-      <span class="graph-sources">
-        <span class="graph-sources-header">
-          Sources: 
-        </span>
-        RescueTime
-      </span>
-
-      <div class="image-container">
-        <img src="graphs/screens/rescue-time-usage-categories.png" class="image-link" alt="RescueTime Computer Usage Categories" onclick="enlargeImage(this, 'graphs/screens/rescue-time-usage-categories.png', 'RescueTime Computer Usage Categories')" />
-      </div>
-
-      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
@@ -1760,6 +1526,114 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
     
 
+    <div class="graphs-entry" id="graphs-entry-countries">
+      <h3>Days spent in each country</h3>
+      <p class="graph-description">
+        Percentage of days spent in each country over the last 4 years
+      </p>
+
+      <ul>
+        
+          <li>International travel has slowed down significantly since COVID started</li>
+        
+          <li>Traveling without a stop home for more than 3 weeks gets exhausting for me, I prefer doing more shorter travels instead</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/countries.png" class="image-link" alt="Days spent in each country" onclick="enlargeImage(this, 'graphs/screens/countries.png', 'Days spent in each country')" />
+      </div>
+
+      <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-manual-living-style-years">
+      <h3>Living Style</h3>
+      <p class="graph-description">
+        From late 2017 to early 2020 I lived without a permanent home address as a <a href='/blog/one-year-nomad' target='_blank'>digital nomad</a>, staying at various Airbnbs or taking over a few weeks of a lease from a friend
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/manual-living-style-years.png" class="image-link" alt="Living Style" onclick="enlargeImage(this, 'graphs/screens/manual-living-style-years.png', 'Living Style')" />
+      </div>
+
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-weather-temperature-buckets">
+      <h3>How does high temperature affect my life?</h3>
+      <p class="graph-description">
+        On days with a maximum temperature of more than 26 Celsius (78.8 Fahrenheit), the following other factors were affected
+      </p>
+
+      <ul>
+        
+          <li>80% more likely to take a freezing cold shower</li>
+        
+          <li>37% more likely to hit the gym</li>
+        
+          <li>26% more daily steps</li>
+        
+          <li>20% more alcoholic beverages</li>
+        
+          <li>15% more likely to go out in the evening</li>
+        
+          <li>13% less likely to take a nap</li>
+        
+          <li>20% less time in a code editor</li>
+        
+          <li>21% less likely to be sick</li>
+        
+          <li>Generally lower stress/anxiety levels</li>
+        
+          <li>100% less likely to be in a COVID related lockdown</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Visual Crossing historic weather data, Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does high temperature affect my life?" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-buckets.png', 'How does high temperature affect my life?')" />
+      </div>
+
+      <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
     <div class="graphs-entry" id="graphs-entry-day-is-weekend">
       <h3>What are weekends like?</h3>
       <p class="graph-description">
@@ -1798,9 +1672,149 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
   
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-weather-temperature-max">
+      <h3>Maximal temperature each day of the year</h3>
+      <p class="graph-description">
+        Historic weather data based on the location I was at on that day based on my Swarm check-ins. Days with no data are rendered as white
+      </p>
+
+      <ul>
+        
+          <li>Turns out, days in Summer are warmer than days in Winter</li>
+        
+          <li>Summer 2019 I spent in New York City, while 2020 and 2021 I spent in Vienna. The graph shows the summer in NYC to reach higher temperatures</li>
+        
+          <li>Week 36 in 2021 I spent in Iceland, therefore significantly lower temperatures</li>
+        
+          <li>End of November in 2019 I spent in Buenos Aires, therefore way higher temperatures</li>
+        
+          <li>December 2019 I spent in Columbus, Ohio, being the coldest week of the year</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Visual Crossing historic weather data, Swarm
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal temperature each day of the year" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-max.png', 'Maximal temperature each day of the year')" />
+      </div>
+
+      <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-weather-conditions">
+      <h3>Weather conditions per year</h3>
+      <p class="graph-description">
+        Historic weather data based on the location I was at on that day based on my Swarm check-ins.
+      </p>
+
+      <ul>
+        
+          <li>2019 I experienced more cloudy weather than the following years</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Visual Crossing historic weather data, Swarm
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather conditions per year" onclick="enlargeImage(this, 'graphs/screens/weather-conditions.png', 'Weather conditions per year')" />
+      </div>
+
+      <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-money-distribution">
+      <h3>Investment Distribution</h3>
+      <p class="graph-description">
+        Every second week I track my current investments and cash positions. As part of this project, it tells me how to most efficiently re-balance my investments when they're off, while also minimizing the occuring fees
+      </p>
+
+      <ul>
+        
+          <li>I have a burndown chart, which visualizes how my networth would grow/drop over time in various scenarios</li>
+        
+          <li>I have a graph that ensures I have the right target distribution of high, medium and low risk positions</li>
+        
+          <li>Whenever I take on a potential new project/role, I simulate the various outcome scenarios over the next few years</li>
+        
+          <li>For obvious reasons, I can't include more of the graphs and simulations I have available</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/money-distribution.png" class="image-link" alt="Investment Distribution" onclick="enlargeImage(this, 'graphs/screens/money-distribution.png', 'Investment Distribution')" />
+      </div>
+
+      <span class="graph-date">8 years of data - Last updated on 2022-02-09</span>
+    </div>
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-money-flow">
+      <h3>Annual money flow</h3>
+      <p class="graph-description">
+        Inspired by the Reddit commnunity <a href='https://old.reddit.com/r/PFPorn' target='_blank'>/r/PFPorn</a>, I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but just an example I created.
+      </p>
+
+      <ul>
+        
+          <li><span class='highlighted'>Not owning an apartment, and <a href='/blog/one-year-nomad' target='_blank'>living in Airbnbs as a nomad</a> I actually spent less money.</span> This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
+        
+          <li>Misc. subscriptions/expenses are adding up quickly</li>
+        
+          <li>Having an End-Of-Year summary from your credit card provider, and always using your card when possible, is a great way to get those numbers</li>
+        
+          <li>Creating this chart is still a lot of work, if you want to also consider getting reimbursed, or expenses you've covered for a group (e.g. booked a larger Airbnb)</li>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        Chase Credit Card Year Summary, sankeymatic.com, Manually
+      </span>
+
+      <div class="image-container">
+        <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual money flow" onclick="enlargeImage(this, 'graphs/screens/money-flow.png', 'Annual money flow')" />
+      </div>
+
+      <span class="graph-date">5 years of data - Last updated on 2022-02-09</span>
+    </div>
+  
 </div>
 
-<h3>More Information</h3>
+<h3 style="margin-top: 15px;">More Information</h3>
 
 This project has 3 separate components:
 
@@ -1828,7 +1842,7 @@ Additionally I can fill-out date ranges with specific values, for example lockdo
 
 After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/). You can find the full source code on [KrauseFx/FxLifeSheet - visual_playground](https://github.com/KrauseFx/FxLifeSheet/tree/master/visual_playground).
 
-<div id="enlargedImageContainer">
+<div id="enlargedImageContainer" style="display: none">
   <div id="enlargedImageContainerBackground"></div>
   <a target="_blank" id="enlargedImageLink">
     <img id="enlargedImage" />
@@ -1951,6 +1965,11 @@ After having tried various tools available to visualize, I ended up writing my o
 
   window.addEventListener("keyup", function(e) {
     if (e.keyCode == 27) { // ESC
+      if (document.getElementsByClassName("graph-entry-selected").length > 0 && document.getElementById("enlargedImageContainer").style.display == "none") {
+        clearSelection();
+        lastNode.classList.remove("graph-entry-selected");
+        lastNode = null;
+      }
       dismissImage();
       return true;
     }
@@ -1983,7 +2002,6 @@ After having tried various tools available to visualize, I ended up writing my o
   }
   #enlargedImageContainer {
     position: fixed;
-    display: none;
     z-index: 100;
     top: 0;
     cursor: pointer;
