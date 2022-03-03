@@ -369,7 +369,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-life-in-weeks">
       <h3>My life in weeks</h3>
       <p class="graph-description">
-        Inspired by Your Life in Weeks by WaitButWhy, I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened.
+        Inspired by <a href='https://waitbutwhy.com/2014/05/life-weeks.html' target='_blank'>Your Life in Weeks by WaitButWhy</a>, I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened.
       </p>
 
       <ul>
@@ -651,12 +651,12 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-daily-steps">
       <h3>Average daily steps over time</h3>
       <p class="graph-description">
-        Measured through the iPhone's Health app, which stayed the same over the last 8 years, while my smart watches have changed over time
+        Average daily steps measured through the iPhone's Apple Health app, which stayed the same over the last 8 years. Measurements done via my smart watches wouldn't be accurate, as I have changed them over the years.
       </p>
 
       <ul>
         
-          <li>I walked a total of 22,830,860 steps within the last 8 years</li>
+          <li>I walked a total of 22,830,860 steps over last 8 years</li>
         
           <li>I walk more than twice as much when I'm in New York City, compared to any other city</li>
         
@@ -687,7 +687,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-swarm-number-of-checkins">
       <h3>Number of Swarm checkins over time</h3>
       <p class="graph-description">
-        Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every POI I visit
+        Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest I visit.
       </p>
 
       <ul>
@@ -721,14 +721,14 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-lockdown-days">
       <h3>Days in full lockdown</h3>
       <p class="graph-description">
-        Number of days per year that I've spent in full lockdown, meaning closed restaurants, bars and non-essential stores.
+        Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores are closed.
       </p>
 
       <ul>
         
-          <li>Parts of the Austrian lockdown I've spent already vaccinated in the US</li>
+          <li>I escaped parts of the Austrian lockdown by spending time in the US when I was already vaccinated</li>
         
-          <li>2021 I spent more days in a full lockdown than in 2020, even with vaccines available</li>
+          <li>Surprisingly 2021 I spent more days in a full lockdown than in 2020, even with vaccines available</li>
         
       </ul>
 
@@ -762,7 +762,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         
           <li>The spike in resting heart rate in July, August 2020 was due to bars and nightclubs opening up again in Austria</li>
         
-          <li>After a night of drinking, my sleeping heart rate is about 50% - 75% higher than after a night without any alcohol</li>
+          <li>After a night of drinking, my resting/sleeping heart rate can be about 50% - 75% higher than after a night without any alcohol</li>
         
           <li>The spike in resting heart rate in October/November/December 2021 was due to having bronchitis and a cold/flu, not getting correct treatment early enough</li>
         
@@ -879,7 +879,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
 
     <div class="graphs-entry" id="graphs-entry-manual-gym-visits">
-      <h3>Workouts in the gym</h3>
+      <h3>Gym workouts</h3>
       <p class="graph-description">
         Each green square represents a strength-workout in the gym, I try my best to purchase day passes at gyms while traveling
       </p>
@@ -903,7 +903,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Workouts in the gym" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits.png', 'Workouts in the gym')" />
+      <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Gym workouts" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits.png', 'Gym workouts')" />
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -913,7 +913,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     
 
     <div class="graphs-entry" id="graphs-entry-manual-gym-visits-grouped">
-      <h3>Workouts in the gym by month</h3>
+      <h3>Gym workouts grouped by month</h3>
       <p class="graph-description">
         Percantage of days I went to the gym
       </p>
@@ -922,7 +922,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         
           <li>During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits</li>
         
-          <li>Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to travels, and being ill</li>
+          <li>Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to travels, and when sick</li>
         
       </ul>
 
@@ -933,7 +933,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         Manually
       </span>
 
-      <img src="graphs/screens/manual-gym-visits-grouped.png" class="image-link" alt="Workouts in the gym by month" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits-grouped.png', 'Workouts in the gym by month')" />
+      <img src="graphs/screens/manual-gym-visits-grouped.png" class="image-link" alt="Gym workouts grouped by month" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits-grouped.png', 'Gym workouts grouped by month')" />
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
     </div>
@@ -1022,7 +1022,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
 
       <ul>
         
-          <li>During the COVID lockdowns I tend to stay healthier</li>
+          <li>During the COVID lockdowns I tend to stay healthier. No going out and heavy drinking, so I have better sleep, less close contact with others, and less alcohol consumptions</li>
         
           <li>Usually during excessive traveling I get sick (cold/flu)</li>
         
@@ -1333,22 +1333,22 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-alcoholic-beverages-buckets">
       <h3>Days with more than 4 alcoholic drinks</h3>
       <p class="graph-description">
-        On days where I had more than 4 alcoholic beverages, the following other factors were affected
+        On days where I had more than 4 alcoholic beverages (meaning I was partying), the following other factors were affected
       </p>
 
       <ul>
         
           <li>21x more likely to dance</li>
         
-          <li>80% more likely to take a nap</li>
+          <li>80% more likely to take a nap the day of, or the day after</li>
         
           <li>60% more time spent with friends</li>
         
-          <li>40% warmer</li>
+          <li>40% warmer temperatures. There weren't many opportunities for parties in Winter due to lockdowns in the last 2 years. Also, people are more motivated to go out when it's nice outside.</li>
         
           <li>25% more steps</li>
         
-          <li>10% higher sleeping heart rate that night</li>
+          <li>10% higher resting/sleeping heart rate that night (body processing the alcohol)</li>
         
       </ul>
 
@@ -1380,7 +1380,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         
           <li>Highest recorded weight was 89.8kg/198lbs in 2021 (age 27)</li>
         
-          <li>Meaning, on the same height of 193cm (6"4), I gained 20kg (44lbs) while staying under 12% body fat</li>
+          <li>I gained 20kg (44lbs) while staying under 12% body fat on 193cm (6"4)</li>
         
       </ul>
 
@@ -1544,7 +1544,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
 
       <ul>
         
-          <li>Not owning an apartment, and [living in Airbnbs as a nomad](/blog/one-year-nomad) I actually spent less money. This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
+          <li>Not owning an apartment, and <a href='/blog/one-year-nomad' target='_blank'>living in Airbnbs as a nomad</a> I actually spent less money. This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
         
           <li>Misc. subscriptions/expenses are adding up quickly</li>
         
@@ -1573,7 +1573,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-rescue-time-usage-categories">
       <h3>RescueTime Computer Usage Categories</h3>
       <p class="graph-description">
-        Using RescueTime, I tracked my exact computer usage, and the categories of activities in which I spend time with.
+        Using <a href='https://rescuetime.com' target='_blank'>RescueTime</a>, I tracked my exact computer usage, and the categories of activities in which I spend time with.
       </p>
 
       <ul>
@@ -1616,7 +1616,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         
           <li>35% less likely to take a freezing cold shower</li>
         
-          <li>You can generate significantly less solar energy in Winter :joke:</li>
+          <li>Unsurprisingly, I'm exposed to less solar energy in Winter, make sure to get enough Vitamin D</li>
         
       </ul>
 
@@ -1650,13 +1650,13 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         
           <li>30% more likely to hit the gym</li>
         
-          <li>23% more alcoholic beverages</li>
+          <li>23% more alcoholic beverages (there were no lockdowns in Summer, also )</li>
         
-          <li>20% less time spent reading news & opinions (as per RescueTime classifications)</li>
+          <li>20% less time spent reading news & opinions (as per <a href='https://rescuetime.com' target='_blank'>RescueTime</a> classifications)</li>
         
           <li>40% less likely to be sick</li>
         
-          <li>40% less time spent on Entertainment on my computer (as per RescueTime classifications)</li>
+          <li>40% less time spent on Entertainment on my computer (as per <a href='https://rescuetime.com' target='_blank'>RescueTime</a> classifications)</li>
         
           <li>30% less likely to have bad dreams</li>
         
@@ -1686,7 +1686,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
 
       <ul>
         
-          <li>150% more computer time spent on "Entertainment", which is mostly coming from occasionally playing Factorio or Age Of Empires with friends at LAN-Party gatherings</li>
+          <li>150% more computer time spent on "Entertainment", which is mostly coming from occasionally playing <a href='https://www.factorio.com/' target='_blank'>Factorio</a> or Age Of Empires with friends at LAN-Party gatherings</li>
         
           <li>74% more time spent watching TV</li>
         
