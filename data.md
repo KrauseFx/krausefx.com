@@ -1873,6 +1873,7 @@ After having tried various tools available to visualize, I ended up writing my o
     alignArrowKeys(node.parentElement.parentElement);
 
     node.parentElement.parentElement.scrollIntoView();
+    window.scrollBy({ top: -15 });
 
     // If we have a small screen, we also want to immediately use full-screen mode
     var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -1915,6 +1916,7 @@ After having tried various tools available to visualize, I ended up writing my o
 
       alignArrowKeys(lastNode)
       lastNode.scrollIntoView();        
+      window.scrollBy({ top: -15 });
       clearSelection();
       return false;
     }
@@ -1928,6 +1930,7 @@ After having tried various tools available to visualize, I ended up writing my o
 
       alignArrowKeys(lastNode)
       lastNode.scrollIntoView();        
+      window.scrollBy({ top: -15 });
       clearSelection();
       return false;
     }
