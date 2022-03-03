@@ -9,7 +9,7 @@
   - This clearly shows the impact of COVID starting 2020
   - Sunday has been my "commute" day, flying between San Francisco, New York City and Vienna
   instructions: "Log into https://www.jetlovers.com/"
-  updated: "2021-12-12"
+  updated: "2022-01-01"
 - id: "jetlovers-top"
   title: "Flying Stats - Top"
   source: 
@@ -21,7 +21,7 @@
   - Frankfurt - Vienna was the flight connecting me with most US airports
   - Germany is high up on the list due to layovers, even though I didn't spend time there
   instructions: "Log into https://www.jetlovers.com/"
-  updated: "2021-12-12"
+  updated: "2022-01-01"
 - id: "life-in-weeks"
   title: "My life in weeks"
   source: "Manually"
@@ -41,7 +41,7 @@
   years: 7
   description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) at a given city, this is tracked as a single entry"
   instructions: "pie_chart.html"
-  updated: "2021-12-12"
+  updated: "2022-01-01"
 - id: "swarm-cities-top-years"
   title: "Top Cities over the years"
   source: "Swarm"
@@ -54,7 +54,7 @@
     - "The longer it's been since I moved away from Austria, the more time I actually spent back home in Austria for visits and vacations"
     - "2020 clearly shows the impact of COVID"
   instructions: "pie_chart.html"
-  updated: "2021-12-12"
+  updated: "2022-01-01"
 - id: "swarm-categories-top"
   title: "Top Categories of Checkins"
   source: "Swarm"
@@ -63,7 +63,7 @@
   takeaways:
     - "In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup"
   instructions: "pie_chart.html, manually update the svg to replace any cities"
-  updated: "2021-12-12"
+  updated: "2022-01-01"
 - id: "weather-temperature-max"
   title: "Maximal temperature each day of the year"
   source: 
@@ -482,7 +482,7 @@
   - "Over the last 7 years, I went from spending around 33% of my time with software development, to less than 10% (now that I'm not currently full-time employed)"
   - All other categories stayed pretty much on the same ratio over the last 7 years
   updated: "2022-01-01"
-  instructions: "https://app.flourish.studio/visualisation/8726152/edit? use Area chart (stacked %)"
+  instructions: "https://app.flourish.studio/visualisation/8726152/edit? use Area chart (stacked %), login with Google"
 - id: "season-winter"
   title: "How does Winter affect my life?"
   source:
