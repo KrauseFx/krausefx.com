@@ -1410,7 +1410,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>Online shopping time going up by 100%, most likely due to the last Winters having spent in lockdown</li>
         
-          <li>Chances of having cold symptons goes up ~45%</li>
+          <li><span class='highlighted'>Chances of having cold symptons goes up ~45%</span></li>
         
           <li>35% less likely to take a freezing cold shower</li>
         
@@ -1454,7 +1454,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>20% less time spent reading news & opinions (as per <a href='https://rescuetime.com' target='_blank'>RescueTime</a> classifications)</li>
         
-          <li>40% less likely to be sick</li>
+          <li><span class='highlighted'>40% less likely to be sick</span></li>
         
           <li>40% less time spent on Entertainment on my computer (as per <a href='https://rescuetime.com' target='_blank'>RescueTime</a> classifications)</li>
         
