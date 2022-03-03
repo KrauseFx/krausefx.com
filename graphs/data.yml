@@ -59,7 +59,7 @@
   years: 27.5
   updated: "2022-02-24"
   instructions: "Felix Life overview doc"
-  description: "Inspired by Your Life in Weeks by WaitButWhy, I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened."
+  description: "Inspired by [Your Life in Weeks by WaitButWhy](https://waitbutwhy.com/2014/05/life-weeks.html), I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened."
   takeaways:
   - The first 14 years I didn't really get done much
   - Taking a few weeks (or even months) off between jobs (if you have the possibility) is one of the best decisions I've made
@@ -154,9 +154,9 @@
   years: 8
   source:
   - "Apple Health"
-  description: "Measured through the iPhone's Health app, which stayed the same over the last 8 years, while my smart watches have changed over time"
+  description: "Average daily steps measured through the iPhone's Apple Health app, which stayed the same over the last 8 years. Measurements done via my smart watches wouldn't be accurate, as I have changed them over the years."
   takeaways:
-  - I walked a total of 22,830,860 steps within the last 8 years
+  - I walked a total of 22,830,860 steps over last 8 years
   - "I walk more than twice as much when I'm in New York City, compared to any other city"
   - "In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books"
   - "Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less"
@@ -167,7 +167,7 @@
   years: 10
   source:
   - "Swarm"
-  description: "Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every POI I visit"
+  description: "Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest I visit."
   takeaways:
   - "Q3 2015 I moved to San Francisco, however I couldn't check-in yet, since my move was a secret until the official announced at the Twitter Flight conference"
   - "Q2 2020 clearly shows the impact of COVID with Q3 already being open in Austria"
@@ -179,10 +179,10 @@
   years: 3
   source:
   - "Manually"
-  description: "Number of days per year that I've spent in full lockdown, meaning closed restaurants, bars and non-essential stores."
+  description: "Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores are closed."
   takeaways:
-  - "Parts of the Austrian lockdown I've spent already vaccinated in the US"
-  - "2021 I spent more days in a full lockdown than in 2020, even with vaccines available"
+  - "I escaped parts of the Austrian lockdown by spending time in the US when I was already vaccinated"
+  - "Surprisingly 2021 I spent more days in a full lockdown than in 2020, even with vaccines available"
   updated: "2022-01-01"
 - id: "weight-sleeping-hr"
   title: "Correlation between weight and resting heart rate"
@@ -195,7 +195,7 @@
   - "I started my lean bulk (controlled weight gain combined with 5 workouts a week) in August 2020"
   - "The resting rate rate grew from 58bpm to 67bpm from August 2020 to March 2021 (~8 months) with a weight gain of 8.5kg (19lbs)"
   - "The spike in resting heart rate in July, August 2020 was due to bars and nightclubs opening up again in Austria"
-  - "After a night of drinking, my sleeping heart rate is about 50% - 75% higher than after a night without any alcohol"
+  - "After a night of drinking, my resting/sleeping heart rate can be about 50% - 75% higher than after a night without any alcohol"
   - "The spike in resting heart rate in October/November/December 2021 was due to having bronchitis and a cold/flu, not getting correct treatment early enough"
   years: 1.5
 - id: "weather-conditions"
@@ -234,7 +234,7 @@
   instructions: "github_style.html, alcoholIntake key"
   updated: "2022-01-01"
 - id: "manual-gym-visits"
-  title: "Workouts in the gym"
+  title: "Gym workouts"
   source: 
   - "Manually"
   years: 7
@@ -247,14 +247,14 @@
   instructions: "github_style.html, gym key, added `.keep_if { |a| a[:value] == '1' }` to only render gym days for pre-2018 days"
   updated: "2022-01-01"
 - id: "manual-gym-visits-grouped"
-  title: "Workouts in the gym by month"
+  title: "Gym workouts grouped by month"
   source: 
   - "Manually"
   years: 2.5
   description: "Percantage of days I went to the gym"
   takeaways:
   - "During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits"
-  - "Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to travels, and being ill"
+  - "Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to travels, and when sick"
   instructions: "pie_chart.html, gym key"
   updated: "2022-01-01"
 - id: "manual-living-style-years"
@@ -292,7 +292,7 @@
   years: 2.5
   description: "Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy"
   takeaways:
-  - During the COVID lockdowns I tend to stay healthier
+  - During the COVID lockdowns I tend to stay healthier. No going out and heavy drinking, so I have better sleep, less close contact with others, and less alcohol consumptions
   - Usually during excessive traveling I get sick (cold/flu)
   - Q4 2021 I had bronchitis, however didn't know about it at the time and didn't get proper treatment
   - Overall I'm quite prone to getting sick (cold/flu)
@@ -416,14 +416,14 @@
   years: 2.5
   source:
   - "Manually"
-  description: "On days where I had more than 4 alcoholic beverages, the following other factors were affected"
+  description: "On days where I had more than 4 alcoholic beverages (meaning I was partying), the following other factors were affected"
   takeaways:
   - 21x more likely to dance
-  - 80% more likely to take a nap
+  - 80% more likely to take a nap the day of, or the day after
   - 60% more time spent with friends
-  - 40% warmer
+  - 40% warmer temperatures. There weren't many opportunities for parties in Winter due to lockdowns in the last 2 years. Also, people are more motivated to go out when it's nice outside.
   - 25% more steps
-  - 10% higher sleeping heart rate that night
+  - 10% higher resting/sleeping heart rate that night (body processing the alcohol)
   updated: "2022-01-01"
   instructions: "Normal group by, alcoholIntake > 3"
 - id: "weight-graph-1"
@@ -435,7 +435,7 @@
   takeaways:
   - Lowest recorded weight was 69kg/152lbs in 2014 (age 20)
   - Highest recorded weight was 89.8kg/198lbs in 2021 (age 27)
-  - Meaning, on the same height of 193cm (6"4), I gained 20kg (44lbs) while staying under 12% body fat
+  - I gained 20kg (44lbs) while staying under 12% body fat on 193cm (6"4)
   updated: "2022-02-17"
   instructions: "https://healthmate.withings.com/22289564/weight/graph"
 - id: "macros"
@@ -509,7 +509,7 @@
   source:
   - "RescueTime"
   years: 7
-  description: "Using RescueTime, I tracked my exact computer usage, and the categories of activities in which I spend time with."
+  description: "Using [RescueTime](https://rescuetime.com), I tracked my exact computer usage, and the categories of activities in which I spend time with."
   takeaways:
   - "Over the last 7 years, I went from spending around 10% of my time with communication & scheduling, to around 30%"
   - "Over the last 7 years, I went from spending around 33% of my time with software development, to less than 10% (now that I'm not currently full-time employed)"
@@ -526,7 +526,7 @@
   - "Online shopping time going up by 100%, most likely due to the last Winters having spent in lockdown"
   - "Chances of having cold symptons goes up ~45%"
   - "35% less likely to take a freezing cold shower"
-  - "You can generate significantly less solar energy in Winter :joke:"
+  - "Unsurprisingly, I'm exposed to less solar energy in Winter, make sure to get enough Vitamin D"
   updated: "2022-01-01"
   instructions: "Bucket by dateSeasonIsWinter"
 - id: "season-summer"
@@ -539,10 +539,10 @@
   - "Chances of taking a freezing cold shower goes up by 100%"
   - "I walk 33% more steps in Summer"
   - "30% more likely to hit the gym"
-  - 23% more alcoholic beverages
-  - 20% less time spent reading news & opinions (as per RescueTime classifications)
+  - 23% more alcoholic beverages (there were no lockdowns in Summer, also )
+  - 20% less time spent reading news & opinions (as per [RescueTime](https://rescuetime.com) classifications)
   - 40% less likely to be sick
-  - 40% less time spent on Entertainment on my computer (as per RescueTime classifications)
+  - 40% less time spent on Entertainment on my computer (as per [RescueTime](https://rescuetime.com) classifications)
   - 30% less likely to have bad dreams
   updated: "2022-01-01"
   instructions: "Bucket by dateSeasonIsSummer"
@@ -553,7 +553,7 @@
   years: 2.5
   description: "Weekends for me naturally involve less work time, more going out, and social interactions, as well as visiting family memebers outside the city"
   takeaways:
-  - 150% more computer time spent on "Entertainment", which is mostly coming from occasionally playing Factorio or Age Of Empires with friends at LAN-Party gatherings
+  - 150% more computer time spent on "Entertainment", which is mostly coming from occasionally playing [Factorio](https://www.factorio.com/) or Age Of Empires with friends at LAN-Party gatherings
   - 74% more time spent watching TV
   - 60% more time spent with friends IRL
   - 55% more dancing, when going out
