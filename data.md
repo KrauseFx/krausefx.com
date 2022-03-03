@@ -1718,19 +1718,31 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
 
 <h3>More Information</h3>
 
-This project has 3 components:
+This project has 3 separate components:
 
 <b>◦ Database</b>
 
 A timestamp-based key-value database of all data entries powered by Postgres. This allows me to add and remove questions on-the-fly.
 
+<img src="/graphs/assets/fxlifesheet-database.png" />
+
+Each row has a `timestamp`, `key` and `value`. 
+
+- The `timestamp` is the time for which the data was recorded for. This might differ from `imported_at` which contains the timestamp on when this entry was created. Additionally I have a few extra columns like `yearmonth` (e.g. 202010), which makes it easier and faster for some queries and graphs.
+- The `key` describes **what** is being recorded (e.g. `"weight"`, `"locationLat"`, `"mood"`). This can be any string, and I can add and remove keys easily on the fly in the [FxLifeSheet configuration file](https://github.com/KrauseFx/FxLifeSheet/blob/master/lifesheet.json) without having to modify the database.
+- The `value` is the actual value being recorded. This can be any number, string, boolean, etc. 
+
 <b>◦ Data Inputs</b>
 
-Multiple times a day, I manually answer questions [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) sends me via a Telegram bot.
+<img src="/graphs/assets/fxlifesheet-questions.png" style="height: 480px; float: right; margin-left: 10px; margin-top: -70px;" />
+
+Multiple times a day, I manually answer questions [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) sends me via a Telegram bot, which range from fitness-related questions (e.g. nutrition, exercise, sleep, etc.) to questions about my life (e.g. how I'm feeling, how much time I spend on social media, etc.).
+
+Additionally I can fill-out date ranges with specific values, for example lockdown periods, and bulking/cutting fitness seasons.
 
 <b>◦ Data Visualizations</b>
 
-After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/).
+After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/). You can find the full source code on [KrauseFx/FxLifeSheet - visual_playground](https://github.com/KrauseFx/FxLifeSheet/tree/master/visual_playground).
 
 <div id="enlargedImageContainer" onclick="dismissImage()">
   <a target="_blank" id="enlargedImageLink">
