@@ -270,11 +270,37 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
 
-Currently I have <span class="highlighted">41</span> graphs published here. They are snapshots taken on a given day for privacy reasons, and are non-interactive to prevent any accidental data leaks.
+Currently I have <span class="highlighted">42</span> graphs published here. They are snapshots taken on a given day for privacy reasons, and are non-interactive to prevent any accidental data leaks.
 
 
 
 <div id="graphs-container">
+  
+    
+    
+    
+
+    <div class="graphs-entry" id="graphs-entry-number-of-entries">
+      <h3>Number of data entries over time</h3>
+      <p class="graph-description">
+        Visualized the number of data entries in <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet</a> over the last 10 years
+      </p>
+
+      <ul>
+        
+      </ul>
+
+      <span class="graph-sources">
+        <span class="graph-sources-header">
+          Sources: 
+        </span>
+        RescueTime, Swarm, Weather, Apple Health, Manually
+      </span>
+
+      <img src="graphs/screens/number-of-entries.png" class="image-link" alt="Number of data entries over time" onclick="enlargeImage(this, 'graphs/screens/number-of-entries.png', 'Number of data entries over time')" />
+
+      <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
+    </div>
   
     
     
@@ -303,7 +329,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
 
       <img src="graphs/screens/jetlovers-stats.png" class="image-link" alt="Flying Stats - General" onclick="enlargeImage(this, 'graphs/screens/jetlovers-stats.png', 'Flying Stats - General')" />
 
-      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
@@ -333,7 +359,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
 
       <img src="graphs/screens/jetlovers-top.png" class="image-link" alt="Flying Stats - Top" onclick="enlargeImage(this, 'graphs/screens/jetlovers-top.png', 'Flying Stats - Top')" />
 
-      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
@@ -377,9 +403,9 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-cities-top">
-      <h3>Top Cities (Checkins)</h3>
+      <h3>Most visited POIs, grouped by city</h3>
       <p class="graph-description">
-        Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) at a given city, this is tracked as a single entry
+        Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) on Foursquare Swarm at a given city, this is tracked as a single entry.
       </p>
 
       <ul>
@@ -393,9 +419,9 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Top Cities (Checkins)" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top.png', 'Top Cities (Checkins)')" />
+      <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Most visited POIs, grouped by city" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top.png', 'Most visited POIs, grouped by city')" />
 
-      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
@@ -403,7 +429,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-cities-top-years">
-      <h3>Top Cities over the years</h3>
+      <h3>Number of check-ins grouped by city</h3>
       <p class="graph-description">
         Each check-in at a given city is counted as a single entry, grouped by years
       </p>
@@ -429,9 +455,9 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         Swarm
       </span>
 
-      <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Top Cities over the years" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top-years.png', 'Top Cities over the years')" />
+      <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Number of check-ins grouped by city" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top-years.png', 'Number of check-ins grouped by city')" />
 
-      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
     
@@ -448,6 +474,10 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup</li>
         
+          <li>Airports being the #4 most visited category was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport checkins</li>
+        
+          <li>Earlier in my life I didn't always check-into 'commute' places like public transit and super markets</li>
+        
       </ul>
 
       <span class="graph-sources">
@@ -459,7 +489,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
 
       <img src="graphs/screens/swarm-categories-top.png" class="image-link" alt="Top Categories of Checkins" onclick="enlargeImage(this, 'graphs/screens/swarm-categories-top.png', 'Top Categories of Checkins')" />
 
-      <span class="graph-date">7 years of data - Last updated on 2021-12-12</span>
+      <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
     </div>
   
     

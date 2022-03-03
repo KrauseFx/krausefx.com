@@ -1,3 +1,34 @@
+- id: "number-of-entries"
+  title: "Number of data entries over time"
+  years: 10
+  description: "Visualized the number of data entries in [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) over the last 10 years"
+  takeaways:
+  updated: "2022-01-01"
+  source:
+  - RescueTime
+  - Swarm
+  - Weather
+  - Apple Health
+  - Manually
+  instructions: "    
+    SELECT 
+      matcheddate, 
+      (SELECT COUNT(*) FROM raw_data rd2 WHERE rd.matcheddate >= rd2.matcheddate AND key LIKE 'rescue_time%') AS rescuetime,
+        (SELECT COUNT(*) FROM raw_data rd2 WHERE rd.matcheddate >= rd2.matcheddate AND key LIKE 'swarm%') AS swarm,
+        (SELECT COUNT(*) FROM raw_data rd2 WHERE rd.matcheddate >= rd2.matcheddate AND key LIKE 'weather%') AS weather,
+        (SELECT COUNT(*) FROM raw_data rd2 WHERE rd.matcheddate >= rd2.matcheddate AND key LIKE 'dailySteps%') AS apple_health,
+        (SELECT COUNT(*) FROM raw_data rd2 WHERE rd.matcheddate >= rd2.matcheddate) AS total
+    FROM raw_data rd
+    WHERE rd.matcheddate < '2022-01-01'
+    GROUP BY matcheddate
+    ORDER BY matcheddate
+
+    The above query will take a long time
+    Import to Google Sheet
+    Add column before `total` and add formula to calculate total minus all the other columns
+
+    and go to
+    https://app.flourish.studio/visualisation/8862831/edit?"
 - id: "jetlovers-stats"
   title: "Flying Stats - General"
   source: 
@@ -36,14 +67,14 @@
   - Shades of blue indicate my full-time employments
   - Shades of red is formal education
 - id: "swarm-cities-top"
-  title: "Top Cities (Checkins)"
+  title: "Most visited POIs, grouped by city"
   source: "Swarm"
   years: 7
-  description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) at a given city, this is tracked as a single entry"
+  description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) on Foursquare Swarm at a given city, this is tracked as a single entry."
   instructions: "pie_chart.html"
   updated: "2022-01-01"
 - id: "swarm-cities-top-years"
-  title: "Top Cities over the years"
+  title: "Number of check-ins grouped by city"
   source: "Swarm"
   years: 7
   description: "Each check-in at a given city is counted as a single entry, grouped by years"
@@ -62,6 +93,8 @@
   description: "Each check-in at a given category is tracked, and summed up over the last years"
   takeaways:
     - "In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup"
+    - "Airports being the #4 most visited category was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport checkins"
+    - "Earlier in my life I didn't always check-into 'commute' places like public transit and super markets"
   instructions: "pie_chart.html, manually update the svg to replace any cities"
   updated: "2022-01-01"
 - id: "weather-temperature-max"
