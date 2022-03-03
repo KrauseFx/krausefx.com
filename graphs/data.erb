@@ -266,7 +266,7 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   <tr><td>Foursquare Swarm</td><td><span class="highlighted" id="h-swarm">126,285</span></td><td>Location and POI data, places I've visited</td></tr>
   <tr><td>Manually entered</td><td><span class="highlighted" id="h-manually">67,031</span></td><td>Data about fitness, mood, social life, nutrition, energy levels, ...</td></tr>
   <tr><td>Manually entered time ranges</td><td><span class="highlighted" id="h-timeranges">19,273</span></td><td>Occupation, lockdown status, living setup</td></tr>
-  <tr><td>Weather API</td><td><span class="highlighted" id="h-weather">15,442</span></td><td>Temperature, rain, sunlight, wind, air pressure</td></tr>
+  <tr><td>Weather API</td><td><span class="highlighted" id="h-weather">15,442</span></td><td>Temperature, rain, sunlight, wind</td></tr>
   <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
 
@@ -274,9 +274,13 @@ Currently I have <span class="highlighted"><%= all_data.count %></span> graphs p
 
 <%
 def convert_markdown_to_html_links(string)
-  string.gsub(/\[([^\]]+)\]\(([^\)]+)\)/) do |match|
+  highlight_bold(string).gsub(/\[([^\]]+)\]\(([^\)]+)\)/) do |match|
     "<a href='#{$2}' target='_blank'>#{$1}</a>"
   end
+end
+def highlight_bold(string)
+  # Convert all **bold** to <span class='highlighted'>bold</span>
+  string.gsub(/\*\*(.*?)\*\*/) { "<span class='highlighted'>#{$1}</span>" }
 end
 %>
 
@@ -302,7 +306,7 @@ end
         <span class="graph-sources-header">
           Sources: 
         </span>
-        <%= Array(entry.fetch("source")).join(", ") %>
+        <%= Array(entry["source"]).join(", ") %>
       </span>
 
       <img src="<%= img_url %>" class="image-link" alt="<%= entry["title"] %>" onclick="enlargeImage(this, '<%= img_url %>', '<%= entry["title"] %>')" />
