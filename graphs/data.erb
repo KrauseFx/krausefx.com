@@ -294,7 +294,7 @@ end
 
       <ul>
         <% Array(entry["takeaways"]).each do |takeaway| %>
-          <li><%= takeaway%></li>
+          <li><%= convert_markdown_to_html_links(takeaway) %></li>
         <% end %>
       </ul>
 
