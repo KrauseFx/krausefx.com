@@ -1828,7 +1828,8 @@ Additionally I can fill-out date ranges with specific values, for example lockdo
 
 After having tried various tools available to visualize, I ended up writing my own data analysis layer using Ruby, JavaScript together with [Plotly](https://plotly.com/javascript/). You can find the full source code on [KrauseFx/FxLifeSheet - visual_playground](https://github.com/KrauseFx/FxLifeSheet/tree/master/visual_playground).
 
-<div id="enlargedImageContainer" onclick="dismissImage()">
+<div id="enlargedImageContainer">
+  <div id="enlargedImageContainerBackground"></div>
   <a target="_blank" id="enlargedImageLink">
     <img id="enlargedImage" />
   </a>
@@ -1945,10 +1946,12 @@ After having tried various tools available to visualize, I ended up writing my o
 
   document.getElementById("arrow-left-button").addEventListener("click", previousGraph);
   document.getElementById("arrow-right-button").addEventListener("click", nextGraph);
+  document.getElementById("enlargedImageContainerBackground").addEventListener("touchstart", dismissImage); // so that mobile devices don't scroll 
+  document.getElementById("enlargedImageContainerBackground").addEventListener("click", dismissImage); // desktop browsers
 
   window.addEventListener("keyup", function(e) {
     if (e.keyCode == 27) { // ESC
-      dismissImage()
+      dismissImage();
       return true;
     }
 
@@ -1969,6 +1972,15 @@ After having tried various tools available to visualize, I ended up writing my o
     justify-content: space-around;
     margin-top: 30px;
   }
+  #enlargedImageContainerBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -100;
+  }
   #enlargedImageContainer {
     position: fixed;
     display: none;
@@ -1978,7 +1990,6 @@ After having tried various tools available to visualize, I ended up writing my o
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
     height: 100%%;
     width: 100%%;
     text-align: center;
