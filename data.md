@@ -255,8 +255,8 @@ meta: {}
 
 <h1>My whole life in a single database</h1>
 
-As part of the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet) I've created back in 2019, I started collecting all kinds of metrics about my life.
-Every single day for the last 2.5 years I've tracked over 100 different data types, ranging from fitness, nutrition, to social life, computer usage and weather.
+As part of the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet), I created back in 2019, I started collecting all kinds of metrics about my life.
+Every single day for the last 2.5 years I tracked over 100 different data types - ranging from fitness & nutrition to social life, computer usage and weather.
 
 Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> data points</b>, with the biggest data sources being:
 
@@ -270,7 +270,7 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
 
-Currently I have <span class="highlighted">41</span> graphs published here. They are snapshots taken on a given day for privacy reasons, and are non-interactive to prevent any accidental data leaks.
+I selected <span class="highlighted">41</span> graphs to show publicly on this page. For privacy reasons, and to prevent any any accidental data leaks, the graphs below are snapshots taken on a given day.
 
 
 
@@ -283,12 +283,12 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-number-of-entries">
       <h3>Number of data entries over time</h3>
       <p class="graph-description">
-        Visualized the number of data entries in <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet</a> over the last 10 years, and where the data came from.
+        Visualization of the number of data entries in <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet</a> over the last 10 years, and where the data came from.
       </p>
 
       <ul>
         
-          <li>Before 2018 the only data used was <a href='https://rescuetime.com' target='_blank'>RescueTime</a> and <a href='https://swarmapp.com' target='_blank'>Swarm</a> location data</li>
+          <li>Before 2018, the only data used was <a href='https://rescuetime.com' target='_blank'>RescueTime</a> and <a href='https://swarmapp.com' target='_blank'>Swarm</a> location data</li>
         
           <li>Once I started the <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet project</a>, I manually tracked around 75 data entries every day, ranging from mood, sleep, to fitness inputs</li>
         
@@ -317,14 +317,14 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-happy-mood-entries-buckets">
       <h3>Days where I tracked my mood to be happy & excited</h3>
       <p class="graph-description">
-        On days where I tracked my mood to be happy & excited, the following other factors of my life were affected
+        On days where I tracked my mood to be "happy" & "excited", the following other factors of my life were affected
       </p>
 
       <ul>
         
-          <li>50% more likely to be a day where I went out of my comfort zone</li>
+          <li>50% more likely to have pushed my comfort zone</li>
         
-          <li>44% more likely to have medidated that day</li>
+          <li>44% more likely to have meditated that day</li>
         
           <li>33% more excited about what's ahead in the future</li>
         
@@ -370,7 +370,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
 
       <ul>
         
-          <li>This clearly shows the impact of COVID starting 2020</li>
+          <li>The stats clearly show the impact of COVID starting 2020</li>
         
           <li>Sunday has been my "commute" day, flying between San Francisco, New York City and Vienna</li>
         
@@ -404,7 +404,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>Frankfurt - Vienna was the flight connecting me with most US airports</li>
         
-          <li>Germany is high up on the list due to layovers, even though I didn't spend time there</li>
+          <li>Germany is high up on the list due to layovers, even though I didn't spend actually much time there</li>
         
       </ul>
 
@@ -434,9 +434,9 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
 
       <ul>
         
-          <li>The first 14 years I didn't really get done much</li>
+          <li>The first 14 years I didn't really get much done</li>
         
-          <li>Taking a few weeks (or even months) off between jobs (if you have the possibility) is one of the best decisions I've made</li>
+          <li>I can highly recommend taking a few weeks (or even months) off between jobs (if you have the possibility)</li>
         
           <li>Yellow area indicates no active full-time employment</li>
         
@@ -467,18 +467,18 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-daily-steps">
       <h3>Average daily steps over time</h3>
       <p class="graph-description">
-        Average daily steps measured through the iPhone's Apple Health app, which stayed the same over the last 8 years. Measurements done via my smart watches wouldn't be accurate, as I have changed them over the years.
+        Average daily steps measured through the iPhone's Apple Health app. I decided against using SmartWatch data for steps, as SmartWatches have changed over the last 8 years.
       </p>
 
       <ul>
         
           <li>I walked a total of <span class='highlighted'>22,830,860</span> steps over last 8 years</li>
         
-          <li>I walk more than twice as much when I'm in New York City, compared to any other city</li>
+          <li>I walk more than twice as much when I'm in New York, compared to any other city</li>
         
           <li>In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books</li>
         
-          <li>Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less</li>
+          <li>Although Vienna is very walkable, the excellent public transit system with subway trains coming every 3-5 minutes, has caused me to walk less</li>
         
           <li>San Francisco was always scary to walk</li>
         
@@ -505,18 +505,18 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-weight-sleeping-hr">
       <h3>Correlation: weight and resting heart rate</h3>
       <p class="graph-description">
-        This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the <a href='https://www.withings.com/us/en/scanwatch' target='_blank'>Withings Scanwatch</a> while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
+        This graph clearly shows the correlation between my body weight and my sleeping/resting heart rate. The resting heart rate is measured by the <a href='https://www.withings.com/us/en/scanwatch' target='_blank'>Withings Scanwatch</a> while sleeping, and indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
       </p>
 
       <ul>
         
           <li>I started my lean bulk (controlled weight gain combined with 5 workouts a week) in August 2020</li>
         
-          <li>The resting rate rate grew from 58bpm to 67bpm from August 2020 to March 2021 (~8 months) with a weight gain of 8.5kg (19lbs)</li>
+          <li>My resting heart rate went from 58bpm to 67bpm from August 2020 (<span class='highlighted'>+9bpm</span>) to March 2021 with a weight gain of <span class='highlighted'>+8.5kg</span> (+19lbs)</li>
         
-          <li>The spike in resting heart rate in July, August 2020 was due to bars and nightclubs opening up again in Austria</li>
+          <li>The spike in resting heart rate in July & August 2021 was due to bars and nightclubs opening up again in Austria</li>
         
-          <li>After a night of drinking, my resting/sleeping heart rate can be about 50% - 75% higher than after a night without any alcohol</li>
+          <li>After a night of drinking, my resting/sleeping heart rate was about 50% higher than after a night without any alcohol</li>
         
           <li>The spike in resting heart rate in Oct/Nov/Dec 2021 was due to having bronchitis and a cold/flu, not getting correct treatment early enough</li>
         
@@ -543,16 +543,16 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-healthy">
       <h3>How healthy was I over the years?</h3>
       <p class="graph-description">
-        Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy
+        Every day I answered the question on how healthy I felt. In the graph, the yellow color indicates that I felt a little under the weather, not sick per se. Red means I was sick and had to stay home. Green means I felt energized and healthy.
       </p>
 
       <ul>
         
-          <li>During the COVID lockdowns I tend to stay healthier. No going out and heavy drinking, so I have better sleep, less close contact with others, and less alcohol consumptions</li>
+          <li>During the COVID lockdowns I tended to stay healthier. This may be due to not going out, no heavy drinking, less close contact with others, etc. which resulted in me having better sleep.</li>
         
           <li>Usually during excessive traveling I get sick (cold/flu)</li>
         
-          <li>Q4 2021 I had bronchitis, however didn't know about it at the time and didn't get proper treatment</li>
+          <li>Q4 2021 I had bronchitis, however, I didn't know about it at the time and didn't get proper treatment</li>
         
           <li>Overall I'm quite prone to getting sick (cold/flu)</li>
         
@@ -593,8 +593,6 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
           <li>40% warmer temperatures. There weren't many opportunities for parties in Winter due to lockdowns in the last 2 years. Also, people are more motivated to go out when it's nice outside.</li>
         
           <li>25% more steps</li>
-        
-          <li>10% higher resting/sleeping heart rate that night (body processing the alcohol)</li>
         
       </ul>
 
@@ -709,7 +707,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-swarm-cities-top">
       <h3>Most visited POIs, grouped by city</h3>
       <p class="graph-description">
-        Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) on <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a> at a given city, this is tracked as a single entry.
+        Each time I checked into a place (e.g. Coffee, Restaurant, Airport, Gym) on <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a> at a given city, this is tracked as a single entry.
       </p>
 
       <ul>
@@ -782,9 +780,9 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup</li>
         
-          <li>Airports being the #4 most visited category was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport checkins</li>
+          <li><span class='highlighted'>Airports being the #4 most visited category</span> was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport checkins</li>
         
-          <li>Earlier in my life I didn't always check-into 'commute' places like public transit and super markets</li>
+          <li>Earlier in my life, I didn't always check into 'commute' places like public transit and super markets</li>
         
       </ul>
 
@@ -807,14 +805,14 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-number-of-checkins">
-      <h3>Number of [Swarm](https://swarmapp.com) checkins over time</h3>
+      <h3>Number of <a href='https://swarmapp.com' target='_blank'>Swarm</a> checkins over time</h3>
       <p class="graph-description">
-        Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest I visit.
+        Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit.
       </p>
 
       <ul>
         
-          <li>Q3 2015 I moved to San Francisco, however I couldn't check-in yet, since my move was a secret until the official announced at the Twitter Flight conference</li>
+          <li>Q3 2015 I moved to San Francisco, however I couldn't use Swarm yet, since my move was a secret until the official announced at the Twitter Flight conference</li>
         
           <li>Q2 2020 clearly shows the impact of COVID with Q3 already being open in Austria</li>
         
@@ -873,7 +871,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-lockdown-days">
       <h3>Days in full lockdown</h3>
       <p class="graph-description">
-        Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores are closed.
+        Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores were closed.
       </p>
 
       <ul>
@@ -905,7 +903,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-manual-alcohol-intake">
       <h3>Alcoholic Beverages per day</h3>
       <p class="graph-description">
-        Alcohol drinks per day. Days with no data are rendered as white
+        Alcoholic drinks per day. Days with no data are rendered as white
       </p>
 
       <ul>
@@ -948,9 +946,9 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
 
       <ul>
         
-          <li>On May 2019, the 0 bar is rendered to be 55%, meaning on 55% days of that month I didn't drink any alcohol</li>
+          <li>In May 2019, the 0 bar is rendered to be 55%, meaning on 55% days of that month I didn't drink any alcohol</li>
         
-          <li>August 2021 Austrian night life was fully open up again, with most COVID restrictions being lifted</li>
+          <li>July 2021 Austrian night life was fully open up again, with most COVID restrictions being lifted</li>
         
       </ul>
 
@@ -982,11 +980,11 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits</li>
         
-          <li>In 2021 I tend to work out less often on Sunday, the day I visit my family's place</li>
+          <li>In 2021 I tended to work out less often on Sunday, the day I visit my family's place</li>
         
           <li>In Q4 2021 I had a cold for a longer time</li>
         
-          <li>I went from ~50 workouts per year in 2014/2015 to ~200 per year in 2018 - 2021</li>
+          <li>I went from <span class='highlighted'>~50 workouts per year</span> in 2014/2015 to <span class='highlighted'>~200 per year</span> in 2018 - 2021</li>
         
       </ul>
 
@@ -1018,11 +1016,11 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>Tracking macros precisely is the best way to lose/gain weight at a controlled and healthy speed</li>
         
-          <li>When I first started tracking macros, additionally to already working out regularly, is when I saw by far the best results</li>
+          <li>When I first started tracking macros, additionally to already working out regularly, is when I started seeing the best results</li>
         
           <li>It takes a lot of energy to be consistent, but it's worth it, and it will make you feel good (e.g. feeling good about using a spoon to eat plain Nutella if you have the macros left)</li>
         
-          <li>Gaining and losing weight is pretty much math, if you track your macros and weight, and you have almost full control over it</li>
+          <li>Gaining and losing weight is pretty much math, if you track your macros and body weight</li>
         
       </ul>
 
@@ -1054,7 +1052,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits</li>
         
-          <li>Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to travels, and when sick</li>
+          <li>Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to traveling, and occasional colds</li>
         
       </ul>
 
@@ -1126,9 +1124,9 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
 
       <ul>
         
-          <li>Lowest recorded weight was 69kg/152lbs in 2014 (age 20)</li>
+          <li>Lowest recorded weight was <span class='highlighted'>69kg</span>/152lbs in 2014 (age 20)</li>
         
-          <li>Highest recorded weight was 89.8kg/198lbs in 2021 (age 27)</li>
+          <li>Highest recorded weight was <span class='highlighted'>89.8kg</span>/198lbs in 2021 (age 27)</li>
         
           <li>I gained 20kg (44lbs) while staying under 12% body fat on 193cm (6"4)</li>
         
@@ -1416,7 +1414,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
         
           <li>Online shopping time going up by 100%, most likely due to the last Winters having spent in lockdown</li>
         
-          <li><span class='highlighted'>Chances of having cold symptons goes up ~45%</span></li>
+          <li><span class='highlighted'>Chances of having cold symptons goes up 45%</span></li>
         
           <li>35% less likely to take a freezing cold shower</li>
         
@@ -1597,7 +1595,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-day-is-weekend">
       <h3>What are weekends like?</h3>
       <p class="graph-description">
-        Weekends for me naturally involve less work time, more going out, and social interactions, as well as visiting family memebers outside the city
+        Weekends for me naturally involve less working time, more going out, and social interactions, as well as visiting family memebers outside the city
       </p>
 
       <ul>
@@ -1707,7 +1705,7 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-money-distribution">
       <h3>Investment Distribution</h3>
       <p class="graph-description">
-        Every second week I track my current investments and cash positions. As part of this project, it tells me how to most efficiently re-balance my investments when they're off, while also minimizing the occuring fees
+        Every second week I track my current investments and cash positions. It shows me how to most efficiently re-balance my investments in case they're off track, while also minimizing the occuring trading fees.
       </p>
 
       <ul>
@@ -1743,18 +1741,18 @@ Currently I have <span class="highlighted">41</span> graphs published here. They
     <div class="graphs-entry" id="graphs-entry-money-flow">
       <h3>Annual money flow</h3>
       <p class="graph-description">
-        Inspired by the Reddit commnunity <a href='https://old.reddit.com/r/PFPorn' target='_blank'>/r/PFPorn</a>, I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but just an example I created.
+        Inspired by a <a href='https://old.reddit.com/r/PFPorn' target='_blank'>Reddit finance commnunity</a>, I had been creating annual money flow charts to clearly see how much money I earned, where I spent how much, and how much I saved. The chart below isn't mine (for privacy reasons), but just an example I created.
       </p>
 
       <ul>
         
-          <li><span class='highlighted'>Not owning an apartment, and <a href='/blog/one-year-nomad' target='_blank'>living in Airbnbs as a nomad</a> I actually spent less money.</span> This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
+          <li><span class='highlighted'>Not owning an apartment, and <a href='/blog/one-year-nomad' target='_blank'>living in Airbnbs as a nomad</a> I actually spent less money.</span> This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases. Additionaly I didn't have to pay any rent whenever I traveled for my job, or during conferences.</li>
         
           <li>Misc. subscriptions/expenses are adding up quickly</li>
         
           <li>Having an End-Of-Year summary from your credit card provider, and always using your card when possible, is a great way to get those numbers</li>
         
-          <li>Creating this chart is still a lot of work, if you want to also consider getting reimbursed, or expenses you've covered for a group (e.g. booked a larger Airbnb)</li>
+          <li>Creating this chart is still a lot of work, as you have to keep in mind that some expenses are not solely yours, but you might have covered for a group (e.g. booked a larger Airbnb), or got reimbursed</li>
         
       </ul>
 

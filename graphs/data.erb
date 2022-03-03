@@ -255,8 +255,8 @@ meta: {}
 
 <h1>My whole life in a single database</h1>
 
-As part of the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet) I've created back in 2019, I started collecting all kinds of metrics about my life.
-Every single day for the last 2.5 years I've tracked over 100 different data types, ranging from fitness, nutrition, to social life, computer usage and weather.
+As part of the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet), I created back in 2019, I started collecting all kinds of metrics about my life.
+Every single day for the last 2.5 years I tracked over 100 different data types - ranging from fitness & nutrition to social life, computer usage and weather.
 
 Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> data points</b>, with the biggest data sources being:
 
@@ -270,7 +270,7 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
 
-Currently I have <span class="highlighted"><%= all_data.count %></span> graphs published here. They are snapshots taken on a given day for privacy reasons, and are non-interactive to prevent any accidental data leaks.
+I selected <span class="highlighted"><%= all_data.count %></span> graphs to show publicly on this page. For privacy reasons, and to prevent any any accidental data leaks, the graphs below are snapshots taken on a given day.
 
 <%
 def convert_markdown_to_html_links(string)
@@ -291,7 +291,7 @@ end
     <% raise "Screenshot '#{entry["id"]}' doesn't exist" if img_url.nil? %>
 
     <div class="graphs-entry" id="graphs-entry-<%= entry["id"] %>">
-      <h3><%= entry.fetch("title") %></h3>
+      <h3><%= convert_markdown_to_html_links(entry.fetch("title")) %></h3>
       <p class="graph-description">
         <%= convert_markdown_to_html_links(entry["description"]) %>
       </p>
