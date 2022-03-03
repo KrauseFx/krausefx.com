@@ -1,9 +1,9 @@
 - id: "number-of-entries"
   title: "Number of data entries over time"
   years: 10
-  description: "Visualized the number of data entries in [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) over the last 10 years, and where the data came from."
+  description: "Visualization of the number of data entries in [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) over the last 10 years, and where the data came from."
   takeaways:
-  - Before 2018 the only data used was [RescueTime](https://rescuetime.com) and [Swarm](https://swarmapp.com) location data
+  - Before 2018, the only data used was [RescueTime](https://rescuetime.com) and [Swarm](https://swarmapp.com) location data
   - Once I started the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet), I manually tracked around 75 data entries every day, ranging from mood, sleep, to fitness inputs
   - I was able to retrospectively fetch the historic weather data based on my location on a given day
   updated: "2022-01-01"
@@ -31,10 +31,10 @@
   years: 2.5
   source:
   - "Manually"
-  description: "On days where I tracked my mood to be happy & excited, the following other factors of my life were affected"
+  description: "On days where I tracked my mood to be \"happy\" & \"excited\", the following other factors of my life were affected"
   takeaways:
-  - 50% more likely to be a day where I went out of my comfort zone
-  - 44% more likely to have medidated that day
+  - 50% more likely to have pushed my comfort zone
+  - 44% more likely to have meditated that day
   - 33% more excited about what's ahead in the future
   - 31% more likely to drink alcohol that day (partys, good friends and such)
   - 28% more time spent reading or listening to audio books
@@ -53,7 +53,7 @@
   years: 7
   description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by [JetLovers](https://www.jetlovers.com/)."
   takeaways:
-  - This clearly shows the impact of COVID starting 2020
+  - The stats clearly show the impact of COVID starting 2020
   - Sunday has been my "commute" day, flying between San Francisco, New York City and Vienna
   instructions: "Log into https://www.jetlovers.com/"
   updated: "2022-01-01"
@@ -66,7 +66,7 @@
   description: "All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by [JetLovers](https://www.jetlovers.com/)."
   takeaways:
   - Frankfurt - Vienna was the flight connecting me with most US airports
-  - Germany is high up on the list due to layovers, even though I didn't spend time there
+  - Germany is high up on the list due to layovers, even though I didn't spend actually much time there
   instructions: "Log into https://www.jetlovers.com/"
   updated: "2022-01-01"
 - id: "life-in-weeks"
@@ -77,8 +77,8 @@
   instructions: "Felix Life overview doc"
   description: "Inspired by [Your Life in Weeks by WaitButWhy](https://waitbutwhy.com/2014/05/life-weeks.html), I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened."
   takeaways:
-  - The first 14 years I didn't really get done much
-  - Taking a few weeks (or even months) off between jobs (if you have the possibility) is one of the best decisions I've made
+  - The first 14 years I didn't really get much done
+  - I can highly recommend taking a few weeks (or even months) off between jobs (if you have the possibility)
   - Yellow area indicates no active full-time employment
   - Shades of blue indicate my full-time employments
   - Shades of red is formal education
@@ -87,12 +87,12 @@
   years: 8
   source:
   - "Apple Health"
-  description: "Average daily steps measured through the iPhone's Apple Health app, which stayed the same over the last 8 years. Measurements done via my smart watches wouldn't be accurate, as I have changed them over the years."
+  description: "Average daily steps measured through the iPhone's Apple Health app. I decided against using SmartWatch data for steps, as SmartWatches have changed over the last 8 years."
   takeaways:
   - I walked a total of **22,830,860** steps over last 8 years
-  - "I walk more than twice as much when I'm in New York City, compared to any other city"
+  - "I walk more than twice as much when I'm in New York, compared to any other city"
   - "In NYC I had the general rule of thumb to walk instead of taking public transit whenever it's less than 40 minutes. I used that time to call friends & family, or listen to audio books"
-  - "Vienna is very walkable, however also has excellent public transit with subway trains coming every 3-5 minutes causing me to walk less"
+  - "Although Vienna is very walkable, the excellent public transit system with subway trains coming every 3-5 minutes, has caused me to walk less"
   - "San Francisco was always scary to walk"
   updated: "2022-01-01"
 - id: "weight-sleeping-hr"
@@ -101,12 +101,12 @@
   - Withings Scanwatch
   - Withings Scale
   updated: "2022-02-09"
-  description: "This graph clearly shows the correlation between my body weight, and my sleeping/resting heart rate. The resting heart rate is measured by the [Withings Scanwatch](https://www.withings.com/us/en/scanwatch) while sleeping, and basically indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better."
+  description: "This graph clearly shows the correlation between my body weight and my sleeping/resting heart rate. The resting heart rate is measured by the [Withings Scanwatch](https://www.withings.com/us/en/scanwatch) while sleeping, and indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better."
   takeaways:
   - "I started my lean bulk (controlled weight gain combined with 5 workouts a week) in August 2020"
-  - "The resting rate rate grew from 58bpm to 67bpm from August 2020 to March 2021 (~8 months) with a weight gain of 8.5kg (19lbs)"
-  - "The spike in resting heart rate in July, August 2020 was due to bars and nightclubs opening up again in Austria"
-  - "After a night of drinking, my resting/sleeping heart rate can be about 50% - 75% higher than after a night without any alcohol"
+  - "My resting heart rate went from 58bpm to 67bpm from August 2020 (**+9bpm**) to March 2021 with a weight gain of **+8.5kg** (+19lbs)"
+  - "The spike in resting heart rate in July & August 2021 was due to bars and nightclubs opening up again in Austria"
+  - "After a night of drinking, my resting/sleeping heart rate was about 50% higher than after a night without any alcohol"
   - "The spike in resting heart rate in Oct/Nov/Dec 2021 was due to having bronchitis and a cold/flu, not getting correct treatment early enough"
   years: 1.5
 - id: "healthy"
@@ -114,11 +114,11 @@
   source:
   - "Manually"
   years: 2.5
-  description: "Every day I answered the question on how healthy I feel, whereas the yellow color indicates that I felt a little under the weather, not sick per-se. Red means I was sick and had to stay home. Green means I felt energized and healthy"
+  description: "Every day I answered the question on how healthy I felt. In the graph, the yellow color indicates that I felt a little under the weather, not sick per se. Red means I was sick and had to stay home. Green means I felt energized and healthy."
   takeaways:
-  - During the COVID lockdowns I tend to stay healthier. No going out and heavy drinking, so I have better sleep, less close contact with others, and less alcohol consumptions
+  - During the COVID lockdowns I tended to stay healthier. This may be due to not going out, no heavy drinking, less close contact with others, etc. which resulted in me having better sleep.
   - Usually during excessive traveling I get sick (cold/flu)
-  - Q4 2021 I had bronchitis, however didn't know about it at the time and didn't get proper treatment
+  - Q4 2021 I had bronchitis, however, I didn't know about it at the time and didn't get proper treatment
   - Overall I'm quite prone to getting sick (cold/flu)
   updated: "2022-01-01"
   instructions: "github_style.html, ['0', 'rgba(255, 0, 0, 0)'],['0.5', 'rgba(200, 0, 0, 0.7)'],['0.6', 'rgba(200, 200, 37, 0.7)'],['0.8', 'rgb(37, 200, 37)'],['1', 'rgb(37, 200, 37)'],"
@@ -134,7 +134,6 @@
   - 60% more time spent with friends
   - 40% warmer temperatures. There weren't many opportunities for parties in Winter due to lockdowns in the last 2 years. Also, people are more motivated to go out when it's nice outside.
   - 25% more steps
-  - 10% higher resting/sleeping heart rate that night (body processing the alcohol)
   updated: "2022-01-01"
   instructions: "Normal group by, alcoholIntake > 3"
 - id: "mood-graph-months"
@@ -169,7 +168,7 @@
   title: "Most visited POIs, grouped by city"
   source: "Swarm"
   years: 7
-  description: "Each time I checked-into a place (e.g. Coffee, Restaurant, Airport, Gym) on [Foursquare Swarm](https://swarmapp.com) at a given city, this is tracked as a single entry."
+  description: "Each time I checked into a place (e.g. Coffee, Restaurant, Airport, Gym) on [Foursquare Swarm](https://swarmapp.com) at a given city, this is tracked as a single entry."
   instructions: "pie_chart.html"
   updated: "2022-01-01"
 - id: "swarm-cities-top-years"
@@ -192,8 +191,8 @@
   description: "Each check-in at a given category is tracked, and summed up over the last years"
   takeaways:
     - "In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup"
-    - "Airports being the #4 most visited category was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport checkins"
-    - "Earlier in my life I didn't always check-into 'commute' places like public transit and super markets"
+    - "**Airports being the #4 most visited category** was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport checkins"
+    - "Earlier in my life, I didn't always check into 'commute' places like public transit and super markets"
   instructions: "pie_chart.html, manually update the svg to replace any cities"
   updated: "2022-01-01"
 - id: "swarm-number-of-checkins"
@@ -201,9 +200,9 @@
   years: 10
   source:
   - "Swarm"
-  description: "Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest I visit."
+  description: "Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit."
   takeaways:
-  - "Q3 2015 I moved to San Francisco, however I couldn't check-in yet, since my move was a secret until the official announced at the Twitter Flight conference"
+  - "Q3 2015 I moved to San Francisco, however I couldn't use Swarm yet, since my move was a secret until the official announced at the Twitter Flight conference"
   - "Q2 2020 clearly shows the impact of COVID with Q3 already being open in Austria"
   - "Q3 2021 the vaccine was already widely available and I was able to travel/visit more again"
   - "My time in New York was the most active when it comes to check-ins. When I'm in NYC, I tend to eat/drink out more, and grab to-go food, which I do way less in Vienna"
@@ -220,7 +219,7 @@
   years: 3
   source:
   - "Manually"
-  description: "Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores are closed."
+  description: "Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores were closed."
   takeaways:
   - "I escaped parts of the Austrian lockdown by spending time in the US when I was already vaccinated"
   - "Surprisingly 2021 I spent more days in a full lockdown than in 2020, even with vaccines available"
@@ -230,7 +229,7 @@
   source: 
   - "Manually"
   years: 2.5
-  description: "Alcohol drinks per day. Days with no data are rendered as white"
+  description: "Alcoholic drinks per day. Days with no data are rendered as white"
   takeaways:
     - "Unless there are social obligations, or there is a party, I usually drink 0 alcoholic drinks"
     - "Friday and Saturday nights are clearly visible on those graphs"
@@ -246,8 +245,8 @@
   years: 2.5
   description: "Each bar represents a month, the graph shows the number of alcoholic beverages on a given day, with '5' being 5 or more drinks. "
   takeaways:
-    - On May 2019, the 0 bar is rendered to be 55%, meaning on 55% days of that month I didn't drink any alcohol
-    - August 2021 Austrian night life was fully open up again, with most COVID restrictions being lifted
+    - In May 2019, the 0 bar is rendered to be 55%, meaning on 55% days of that month I didn't drink any alcohol
+    - July 2021 Austrian night life was fully open up again, with most COVID restrictions being lifted
   instructions: "github_style.html, alcoholIntake key"
   updated: "2022-01-01"
 - id: "manual-gym-visits"
@@ -258,9 +257,9 @@
   description: "Each green square represents a strength-workout in the gym, I try my best to purchase day passes at gyms while traveling"
   takeaways:
     - "During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits"
-    - "In 2021 I tend to work out less often on Sunday, the day I visit my family's place"
+    - "In 2021 I tended to work out less often on Sunday, the day I visit my family's place"
     - "In Q4 2021 I had a cold for a longer time"
-    - "I went from ~50 workouts per year in 2014/2015 to ~200 per year in 2018 - 2021"
+    - "I went from **~50 workouts per year** in 2014/2015 to **~200 per year** in 2018 - 2021"
   instructions: "github_style.html, gym key, added `.keep_if { |a| a[:value] == '1' }` to only render gym days for pre-2018 days"
   updated: "2022-01-01"
 - id: "macros"
@@ -271,9 +270,9 @@
   description: "On weeks where I have a routine (not traveling), I track most my meals. Whenever I scale my food, I try to guess the weight before to become better at estimating portion sizes."
   takeaways:
   - Tracking macros precisely is the best way to lose/gain weight at a controlled and healthy speed
-  - When I first started tracking macros, additionally to already working out regularly, is when I saw by far the best results
+  - When I first started tracking macros, additionally to already working out regularly, is when I started seeing the best results
   - It takes a lot of energy to be consistent, but it's worth it, and it will make you feel good (e.g. feeling good about using a spoon to eat plain Nutella if you have the macros left)
-  - Gaining and losing weight is pretty much math, if you track your macros and weight, and you have almost full control over it
+  - Gaining and losing weight is pretty much math, if you track your macros and body weight
   updated: "2022-02-17"
 - id: "manual-gym-visits-grouped"
   title: "Gym workouts grouped by month"
@@ -283,7 +282,7 @@
   description: "Percantage of days I went to the gym"
   takeaways:
   - "During the first lockdown in Q2 2020 I didn't have access to a gym, and didn't count home-workouts as gym visits"
-  - "Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to travels, and when sick"
+  - "Generally I hit the gym 5 days a week when I'm at home, but as shown on this graph it ends up being less, mostly due to traveling, and occasional colds"
   instructions: "pie_chart.html, gym key"
   updated: "2022-01-01"
 - id: "fitness-bulk"
@@ -309,8 +308,8 @@
   - "Withings Scale"
   description: "Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently."
   takeaways:
-  - Lowest recorded weight was 69kg/152lbs in 2014 (age 20)
-  - Highest recorded weight was 89.8kg/198lbs in 2021 (age 27)
+  - Lowest recorded weight was **69kg**/152lbs in 2014 (age 20)
+  - Highest recorded weight was **89.8kg**/198lbs in 2021 (age 27)
   - I gained 20kg (44lbs) while staying under 12% body fat on 193cm (6"4)
   updated: "2022-02-17"
   instructions: "https://healthmate.withings.com/22289564/weight/graph"
@@ -421,7 +420,7 @@
   description: "Winter (being from 21st Dec to 20th March) has the following effects on my life:"
   takeaways:
   - "Online shopping time going up by 100%, most likely due to the last Winters having spent in lockdown"
-  - "**Chances of having cold symptons goes up ~45%**"
+  - "**Chances of having cold symptons goes up 45%**"
   - "35% less likely to take a freezing cold shower"
   - "Unsurprisingly, I'm exposed to less solar energy in Winter, make sure to get enough Vitamin D"
   updated: "2022-01-01"
@@ -488,7 +487,7 @@
   source:
   - "Manual"
   years: 2.5
-  description: "Weekends for me naturally involve less work time, more going out, and social interactions, as well as visiting family memebers outside the city"
+  description: "Weekends for me naturally involve less working time, more going out, and social interactions, as well as visiting family memebers outside the city"
   takeaways:
   - 150% more computer time spent on "Entertainment", which is mostly coming from occasionally playing [Factorio](https://www.factorio.com/) or Age Of Empires with friends at LAN-Party gatherings
   - 74% more time spent watching TV
@@ -526,7 +525,7 @@
   updated: "2022-01-01"
 - id: "money-distribution"
   title: "Investment Distribution"
-  description: "Every second week I track my current investments and cash positions. As part of this project, it tells me how to most efficiently re-balance my investments when they're off, while also minimizing the occuring fees"
+  description: "Every second week I track my current investments and cash positions. It shows me how to most efficiently re-balance my investments in case they're off track, while also minimizing the occuring trading fees."
   takeaways:
   - I have a burndown chart, which visualizes how my networth would grow/drop over time in various scenarios
   - I have a graph that ensures I have the right target distribution of high, medium and low risk positions
@@ -544,10 +543,10 @@
   - sankeymatic.com
   - Manually
   years: 5
-  description: "Inspired by the Reddit commnunity [/r/PFPorn](https://old.reddit.com/r/PFPorn), I create an annual money flow chart to clearly see how much money I earn, where I'm spending it, and how much I'm saving. The chart below isn't mine (for privacy reasons), but just an example I created."
+  description: "Inspired by a [Reddit finance commnunity](https://old.reddit.com/r/PFPorn), I had been creating annual money flow charts to clearly see how much money I earned, where I spent how much, and how much I saved. The chart below isn't mine (for privacy reasons), but just an example I created."
   takeaways:
-  - "**Not owning an apartment, and [living in Airbnbs as a nomad](/blog/one-year-nomad) I actually spent less money.** This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases."
+  - "**Not owning an apartment, and [living in Airbnbs as a nomad](/blog/one-year-nomad) I actually spent less money.** This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases. Additionaly I didn't have to pay any rent whenever I traveled for my job, or during conferences."
   - Misc. subscriptions/expenses are adding up quickly
   - Having an End-Of-Year summary from your credit card provider, and always using your card when possible, is a great way to get those numbers
-  - Creating this chart is still a lot of work, if you want to also consider getting reimbursed, or expenses you've covered for a group (e.g. booked a larger Airbnb)
+  - Creating this chart is still a lot of work, as you have to keep in mind that some expenses are not solely yours, but you might have covered for a group (e.g. booked a larger Airbnb), or got reimbursed
   updated: "2022-02-09"
