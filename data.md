@@ -266,7 +266,7 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
   <tr><td>Foursquare Swarm</td><td><span class="highlighted" id="h-swarm">126,285</span></td><td>Location and POI data, places I've visited</td></tr>
   <tr><td>Manually entered</td><td><span class="highlighted" id="h-manually">67,031</span></td><td>Data about fitness, mood, social life, nutrition, energy levels, ...</td></tr>
   <tr><td>Manually entered time ranges</td><td><span class="highlighted" id="h-timeranges">19,273</span></td><td>Occupation, lockdown status, living setup</td></tr>
-  <tr><td>Weather API</td><td><span class="highlighted" id="h-weather">15,442</span></td><td>Temperature, rain, sunlight, wind, air pressure</td></tr>
+  <tr><td>Weather API</td><td><span class="highlighted" id="h-weather">15,442</span></td><td>Temperature, rain, sunlight, wind</td></tr>
   <tr><td>Apple Health</td><td><span class="highlighted" id="h-health">3,048</span></td><td>Steps data</td></tr>
 </table>
 
@@ -294,7 +294,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         <span class="graph-sources-header">
           Sources: 
         </span>
-        RescueTime, Swarm, Weather, Apple Health, Manually
+        
       </span>
 
       <img src="graphs/screens/number-of-entries.png" class="image-link" alt="Number of data entries over time" onclick="enlargeImage(this, 'graphs/screens/number-of-entries.png', 'Number of data entries over time')" />
@@ -1478,7 +1478,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
         
           <li>The only room where I'm still struggling to keep the CO2 levels low is my bedroom, which is small, and doesn't offer any ventilation. Keeping the doors open mostly solves the high CO2 levels, however comes with other downsides like more light</li>
         
-          <li>Probably obvious for many, but I didn't realize ACs don't transport any air into the room, but just moves it around</li>
+          <li>Probably obvious for many, but <span class='highlighted'>I didn't realize ACs don't transport any air into the room, but just moves it around</span></li>
         
           <li>Opening the windows for a longer time in winter will cause low humidity and low temperatures, so it's often not a good option</li>
         
@@ -1544,7 +1544,7 @@ Currently I have <span class="highlighted">42</span> graphs published here. They
 
       <ul>
         
-          <li>Not owning an apartment, and <a href='/blog/one-year-nomad' target='_blank'>living in Airbnbs as a nomad</a> I actually spent less money. This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
+          <li><span class='highlighted'>Not owning an apartment, and <a href='/blog/one-year-nomad' target='_blank'>living in Airbnbs as a nomad</a> I actually spent less money.</span> This was due to not having to buy any furniture, appliances, etc. but also because the number of items I could by for myself was limited, as everything was limited to be able to fit into 2 suitcases.</li>
         
           <li>Misc. subscriptions/expenses are adding up quickly</li>
         
