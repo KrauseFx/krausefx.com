@@ -1,5 +1,5 @@
 - id: "number-of-entries"
-  title: "Number of data entries over time"
+  title: "Number of Data Entries over Time"
   years: 10
   description: "Visualization of the number of data entries in [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) over the last 10 years, and where the data came from."
   takeaways:
@@ -27,7 +27,7 @@
     and go to
     https://app.flourish.studio/visualisation/8862831/edit?"
 - id: "happy-mood-entries-buckets"
-  title: "Days where I tracked my mood to be happy & excited"
+  title: "Days tracked my Mood to be Happy & Excited"
   years: 2.5
   source:
   - "Manually"
@@ -70,7 +70,7 @@
   instructions: "Log into https://www.jetlovers.com/"
   updated: "2022-01-01"
 - id: "life-in-weeks"
-  title: "My life in weeks"
+  title: "My Life in Weeks"
   source: "Manually"
   years: 27.5
   updated: "2022-02-24"
@@ -83,7 +83,7 @@
   - Shades of blue indicate my full-time employments
   - Shades of red is formal education
 - id: "daily-steps"
-  title: "Average daily steps over time"
+  title: "Average Daily Steps over Time"
   years: 8
   source:
   - "Apple Health"
@@ -96,7 +96,7 @@
   - "San Francisco was always scary to walk"
   updated: "2022-01-01"
 - id: "weight-sleeping-hr"
-  title: "Correlation: weight and resting heart rate"
+  title: "Correlation: Weight and Resting Heart Rate"
   source:
   - Withings Scanwatch
   - Withings Scale
@@ -110,7 +110,7 @@
   - "The spike in resting heart rate in Oct/Nov/Dec 2021 was due to having bronchitis and a cold/flu, not getting correct treatment early enough"
   years: 1.5
 - id: "healthy"
-  title: "How healthy was I over the years?"
+  title: "How healthy was I over the Years?"
   source:
   - "Manually"
   years: 2.5
@@ -123,7 +123,7 @@
   updated: "2022-01-01"
   instructions: "github_style.html, ['0', 'rgba(255, 0, 0, 0)'],['0.5', 'rgba(200, 0, 0, 0.7)'],['0.6', 'rgba(200, 200, 37, 0.7)'],['0.8', 'rgb(37, 200, 37)'],['1', 'rgb(37, 200, 37)'],"
 - id: "alcoholic-beverages-buckets"
-  title: "Days with more than 4 alcoholic drinks"
+  title: "Days with more than 4 Alcoholic Drinks"
   years: 2.5
   source:
   - "Manually"
@@ -137,7 +137,7 @@
   updated: "2022-01-01"
   instructions: "Normal group by, alcoholIntake > 3"
 - id: "mood-graph-months"
-  title: "Mood over the years"
+  title: "Mood over the Years"
   years: 4
   source:
   - "Manually"
@@ -165,14 +165,14 @@
   updated: "2022-01-01"
   instructions: "https://maps.co/gis/ upgrade to paid plan, run `be ruby importers/swarm/swarm_coordinates_importer.rb`"
 - id: "swarm-cities-top"
-  title: "Most visited POIs, grouped by city"
+  title: "Most visited POIs, grouped by City"
   source: "Swarm"
   years: 7
   description: "Each time I checked into a place (e.g. Coffee, Restaurant, Airport, Gym) on [Foursquare Swarm](https://swarmapp.com) at a given city, this is tracked as a single entry."
   instructions: "pie_chart.html"
   updated: "2022-01-01"
 - id: "swarm-cities-top-years"
-  title: "Number of check-ins grouped by city"
+  title: "Number of Check-Ins grouped by City"
   source: "Swarm"
   years: 7
   description: "Each check-in at a given city is counted as a single entry, grouped by years"
@@ -185,22 +185,22 @@
   instructions: "pie_chart.html"
   updated: "2022-01-01"
 - id: "swarm-categories-top"
-  title: "Top Categories of Checkins"
+  title: "Top Categories of Check-Ins"
   source: "Swarm"
   years: 7
   description: "Each check-in at a given category is tracked, and summed up over the last years"
   takeaways:
     - "In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup"
-    - "**Airports being the #4 most visited category** was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport checkins"
+    - "**Airports being the #4 most visited category** was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport check-ins"
     - "Earlier in my life, I didn't always check into 'commute' places like public transit and super markets"
   instructions: "pie_chart.html, manually update the svg to replace any cities"
   updated: "2022-01-01"
 - id: "swarm-number-of-checkins"
-  title: "Number of Swarm checkins over time"
+  title: "Number of Swarm Check-Ins over Time"
   years: 10
   source:
   - "Swarm"
-  description: "Number of [Foursquare Swarm](https://swarmapp.com) checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit."
+  description: "Number of [Foursquare Swarm](https://swarmapp.com) check-ins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit."
   takeaways:
   - "Q3 2015 I moved to San Francisco, however I couldn't use Swarm yet, since my move was a secret until the official announced at the Twitter Flight conference"
   - "Q2 2020 clearly shows the impact of COVID with Q3 already being open in Austria"
@@ -215,7 +215,7 @@
   description: "Every [Swarm](https://swarmapp.com) check-in visualized on a map. Only areas where I've had multiple check-ins are rendered."
   updated: "2022-01-01"
 - id: "lockdown-days"
-  title: "Days in full lockdown"
+  title: "Days in Full Lockdown"
   years: 3
   source:
   - "Manually"
@@ -225,7 +225,7 @@
   - "Surprisingly 2021 I spent more days in a full lockdown than in 2020, even with vaccines available"
   updated: "2022-01-01"
 - id: "manual-alcohol-intake"
-  title: "Alcoholic Beverages per day"
+  title: "Alcoholic Beverages per Day"
   source: 
   - "Manually"
   years: 2.5
@@ -239,7 +239,7 @@
   instructions: "github_style.html, alcoholIntake key"
   updated: "2022-01-01"
 - id: "manual-alcohol-intake-months"
-  title: "Alcoholic Beverages per month"
+  title: "Alcoholic Beverages per Month"
   source: 
   - "Manually"
   years: 2.5
@@ -250,7 +250,7 @@
   instructions: "github_style.html, alcoholIntake key"
   updated: "2022-01-01"
 - id: "manual-gym-visits"
-  title: "Gym workouts"
+  title: "Gym Workouts"
   source: 
   - "Manually"
   years: 7
@@ -263,7 +263,7 @@
   instructions: "github_style.html, gym key, added `.keep_if { |a| a[:value] == '1' }` to only render gym days for pre-2018 days"
   updated: "2022-01-01"
 - id: "macros"
-  title: "Food tracking - Macros"
+  title: "Food Tracking - Macros"
   years: 4
   source:
   - "MyFitnessPal"
@@ -275,7 +275,7 @@
   - Gaining and losing weight is pretty much math, if you track your macros and body weight
   updated: "2022-02-17"
 - id: "manual-gym-visits-grouped"
-  title: "Gym workouts grouped by month"
+  title: "Gym Workouts grouped by Month"
   source: 
   - "Manually"
   years: 2.5
@@ -286,7 +286,7 @@
   instructions: "pie_chart.html, gym key"
   updated: "2022-01-01"
 - id: "fitness-bulk"
-  title: "Fitness Bulk & Cut season"
+  title: "Fitness Bulk & Cut Season"
   years: 4
   source:
   - "Manually"
@@ -302,7 +302,7 @@
   updated: "2022-01-01"
   instructions: "/pie_chart -> dietPhase"
 - id: "weight-graph-1"
-  title: "Weight history of 8 years"
+  title: "Weight History of 8 Years"
   years: 9
   source:
   - "Withings Scale"
@@ -326,7 +326,7 @@
   updated: "2022-01-01"
   instructions: "http://www.weightgrapher.com/graphs"
 - id: "daily-steps-buckets"
-  title: "Days with more than 15,000 steps"
+  title: "Days with more than 15,000 Steps"
   years: 2.5
   source:
   - "Apple Health"
@@ -348,7 +348,7 @@
   updated: "2022-01-01"
   instructions: "Normal group by"
 - id: "sleep-duration-buckets"
-  title: "How does longer sleep duration affect my day?"
+  title: "How does longer Sleep Duration affect my Day?"
   years: 2.5
   source:
   - "Withings Scan Watch"
@@ -368,7 +368,7 @@
   updated: "2022-01-01"
   instructions: "Normal group by"
 - id: "air-quality"
-  title: "Air Quality in various rooms"
+  title: "Air Quality in various Rooms"
   years: 1
   source:
   - "Awair"
@@ -399,7 +399,7 @@
   updated: "2022-01-01"
   instructions: "https://app.flourish.studio/visualisation/8726152/edit? use Area chart (stacked %), login with Google"
 - id: "socializing"
-  title: "Happy with my social life?"
+  title: "Happy with my Social Life?"
   years: 2.5
   source:
   - "Manually"
@@ -413,7 +413,7 @@
   updated: "2022-01-01"
   instructions: "/pie_chart -> socializing"
 - id: "season-winter"
-  title: "How does Winter affect my life?"
+  title: "How does Winter affect my Life?"
   source:
   - "Manual"
   years: 2.5
@@ -426,7 +426,7 @@
   updated: "2022-01-01"
   instructions: "Bucket by dateSeasonIsWinter"
 - id: "season-summer"
-  title: "How does Summer affect my life?"
+  title: "How does Summer affect my Life?"
   source:
   - "Manual"
   years: 2.5
@@ -443,7 +443,7 @@
   updated: "2022-01-01"
   instructions: "Bucket by dateSeasonIsSummer"
 - id: "countries"
-  title: "Days spent in each country"
+  title: "Days spent in each Country"
   years: 4
   source:
   - "Manually"
@@ -463,7 +463,7 @@
   instructions: "pie_chart.html livingStyle key"
   updated: "2022-01-01"
 - id: "weather-temperature-buckets"
-  title: "How does high temperature affect my life?"
+  title: "How does High Temperature affect my Life?"
   source:
   - "Visual Crossing historic weather data"
   - "Manually"
@@ -483,7 +483,7 @@
   updated: "2022-01-01"
   instructions: "frontend.html bucket by weatherTemperatureMax by > 25 degrees"
 - id: "day-is-weekend"
-  title: "What are weekends like?"
+  title: "What are Weekends like?"
   source:
   - "Manual"
   years: 2.5
@@ -499,7 +499,7 @@
   updated: "2022-01-01"
   instructions: "Bucket by dateIsWeekend"
 - id: "weather-temperature-max"
-  title: "Maximal temperature each day of the year"
+  title: "Maximal Temperature each Day of the Year"
   source: 
   - "Visual Crossing historic weather data"
   - "Swarm"
@@ -514,7 +514,7 @@
   instructions: "github_style.html, set maximal value to 30, screenshot all 3 years"
   updated: "2022-01-01"
 - id: "weather-conditions"
-  title: "Weather conditions per year"
+  title: "Weather Conditions per Year"
   source: 
   - "Visual Crossing historic weather data"
   - "Swarm"
@@ -537,7 +537,7 @@
   instructions: "Finance Sheets, EFT Section"
   years: 8
 - id: "money-flow"
-  title: Annual money flow
+  title: Annual Money Flow
   source:
   - Chase Credit Card Year Summary
   - sankeymatic.com

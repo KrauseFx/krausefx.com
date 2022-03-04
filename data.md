@@ -281,7 +281,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-number-of-entries">
-      <h3>Number of data entries over time</h3>
+      <h3>Number of Data Entries over Time</h3>
       <p class="graph-description">
         Visualization of the number of data entries in <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet</a> over the last 10 years, and where the data came from.
       </p>
@@ -304,7 +304,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/number-of-entries.png" class="image-link" alt="Number of data entries over time" onclick="enlargeImage(this, 'graphs/screens/number-of-entries.png', 'Number of data entries over time')" />
+        <img src="graphs/screens/number-of-entries.png" class="image-link" alt="Number of Data Entries over Time" onclick="enlargeImage(this, 'graphs/screens/number-of-entries.png', 'Number of Data Entries over Time')" />
       </div>
 
       <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
@@ -315,7 +315,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-happy-mood-entries-buckets">
-      <h3>Days where I tracked my mood to be happy & excited</h3>
+      <h3>Days tracked my Mood to be Happy & Excited</h3>
       <p class="graph-description">
         On days where I tracked my mood to be "happy" & "excited", the following other factors of my life were affected
       </p>
@@ -352,7 +352,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days where I tracked my mood to be happy & excited" onclick="enlargeImage(this, 'graphs/screens/happy-mood-entries-buckets.png', 'Days where I tracked my mood to be happy & excited')" />
+        <img src="graphs/screens/happy-mood-entries-buckets.png" class="image-link" alt="Days tracked my Mood to be Happy & Excited" onclick="enlargeImage(this, 'graphs/screens/happy-mood-entries-buckets.png', 'Days tracked my Mood to be Happy & Excited')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -427,7 +427,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-life-in-weeks">
-      <h3>My life in weeks</h3>
+      <h3>My Life in Weeks</h3>
       <p class="graph-description">
         Inspired by <a href='https://waitbutwhy.com/2014/05/life-weeks.html' target='_blank'>Your Life in Weeks by WaitButWhy</a>, I use Google Sheets to visualize every week of my life, with little notes on what city/country I was at, and other life events that have happened.
       </p>
@@ -454,7 +454,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/life-in-weeks.png" class="image-link" alt="My life in weeks" onclick="enlargeImage(this, 'graphs/screens/life-in-weeks.png', 'My life in weeks')" />
+        <img src="graphs/screens/life-in-weeks.png" class="image-link" alt="My Life in Weeks" onclick="enlargeImage(this, 'graphs/screens/life-in-weeks.png', 'My Life in Weeks')" />
       </div>
 
       <span class="graph-date">27.5 years of data - Last updated on 2022-02-24</span>
@@ -465,7 +465,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-daily-steps">
-      <h3>Average daily steps over time</h3>
+      <h3>Average Daily Steps over Time</h3>
       <p class="graph-description">
         Average daily steps measured through the iPhone's Apple Health app. I decided against using SmartWatch data for steps, as SmartWatches have changed over the last 8 years.
       </p>
@@ -492,7 +492,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average daily steps over time" onclick="enlargeImage(this, 'graphs/screens/daily-steps.png', 'Average daily steps over time')" />
+        <img src="graphs/screens/daily-steps.png" class="image-link" alt="Average Daily Steps over Time" onclick="enlargeImage(this, 'graphs/screens/daily-steps.png', 'Average Daily Steps over Time')" />
       </div>
 
       <span class="graph-date">8 years of data - Last updated on 2022-01-01</span>
@@ -503,7 +503,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-weight-sleeping-hr">
-      <h3>Correlation: weight and resting heart rate</h3>
+      <h3>Correlation: Weight and Resting Heart Rate</h3>
       <p class="graph-description">
         This graph clearly shows the correlation between my body weight and my sleeping/resting heart rate. The resting heart rate is measured by the <a href='https://www.withings.com/us/en/scanwatch' target='_blank'>Withings Scanwatch</a> while sleeping, and indicates how hard your heart has to work while not being active. Generally the lower the resting heart rate, the better.
       </p>
@@ -530,7 +530,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation: weight and resting heart rate" onclick="enlargeImage(this, 'graphs/screens/weight-sleeping-hr.png', 'Correlation: weight and resting heart rate')" />
+        <img src="graphs/screens/weight-sleeping-hr.png" class="image-link" alt="Correlation: Weight and Resting Heart Rate" onclick="enlargeImage(this, 'graphs/screens/weight-sleeping-hr.png', 'Correlation: Weight and Resting Heart Rate')" />
       </div>
 
       <span class="graph-date">1.5 years of data - Last updated on 2022-02-09</span>
@@ -541,7 +541,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-healthy">
-      <h3>How healthy was I over the years?</h3>
+      <h3>How healthy was I over the Years?</h3>
       <p class="graph-description">
         Every day I answered the question on how healthy I felt. In the graph, the yellow color indicates that I felt a little under the weather, not sick per se. Red means I was sick and had to stay home. Green means I felt energized and healthy.
       </p>
@@ -566,7 +566,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the years?" onclick="enlargeImage(this, 'graphs/screens/healthy.png', 'How healthy was I over the years?')" />
+        <img src="graphs/screens/healthy.png" class="image-link" alt="How healthy was I over the Years?" onclick="enlargeImage(this, 'graphs/screens/healthy.png', 'How healthy was I over the Years?')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -577,7 +577,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-alcoholic-beverages-buckets">
-      <h3>Days with more than 4 alcoholic drinks</h3>
+      <h3>Days with more than 4 Alcoholic Drinks</h3>
       <p class="graph-description">
         On days where I had more than 4 alcoholic beverages (meaning I was partying), the following other factors were affected
       </p>
@@ -604,7 +604,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 alcoholic drinks" onclick="enlargeImage(this, 'graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 alcoholic drinks')" />
+        <img src="graphs/screens/alcoholic-beverages-buckets.png" class="image-link" alt="Days with more than 4 Alcoholic Drinks" onclick="enlargeImage(this, 'graphs/screens/alcoholic-beverages-buckets.png', 'Days with more than 4 Alcoholic Drinks')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -615,7 +615,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-mood-graph-months">
-      <h3>Mood over the years</h3>
+      <h3>Mood over the Years</h3>
       <p class="graph-description">
         My <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet bot</a> asks me 4 times a day how I'm feeling at the moment.
       </p>
@@ -638,7 +638,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/mood-graph-months.png" class="image-link" alt="Mood over the years" onclick="enlargeImage(this, 'graphs/screens/mood-graph-months.png', 'Mood over the years')" />
+        <img src="graphs/screens/mood-graph-months.png" class="image-link" alt="Mood over the Years" onclick="enlargeImage(this, 'graphs/screens/mood-graph-months.png', 'Mood over the Years')" />
       </div>
 
       <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
@@ -705,7 +705,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-cities-top">
-      <h3>Most visited POIs, grouped by city</h3>
+      <h3>Most visited POIs, grouped by City</h3>
       <p class="graph-description">
         Each time I checked into a place (e.g. Coffee, Restaurant, Airport, Gym) on <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a> at a given city, this is tracked as a single entry.
       </p>
@@ -722,7 +722,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Most visited POIs, grouped by city" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top.png', 'Most visited POIs, grouped by city')" />
+        <img src="graphs/screens/swarm-cities-top.png" class="image-link" alt="Most visited POIs, grouped by City" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top.png', 'Most visited POIs, grouped by City')" />
       </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
@@ -733,7 +733,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-cities-top-years">
-      <h3>Number of check-ins grouped by city</h3>
+      <h3>Number of Check-Ins grouped by City</h3>
       <p class="graph-description">
         Each check-in at a given city is counted as a single entry, grouped by years
       </p>
@@ -760,7 +760,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Number of check-ins grouped by city" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top-years.png', 'Number of check-ins grouped by city')" />
+        <img src="graphs/screens/swarm-cities-top-years.png" class="image-link" alt="Number of Check-Ins grouped by City" onclick="enlargeImage(this, 'graphs/screens/swarm-cities-top-years.png', 'Number of Check-Ins grouped by City')" />
       </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
@@ -771,7 +771,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-categories-top">
-      <h3>Top Categories of Checkins</h3>
+      <h3>Top Categories of Check-Ins</h3>
       <p class="graph-description">
         Each check-in at a given category is tracked, and summed up over the last years
       </p>
@@ -780,7 +780,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
         
           <li>In 2020 and 2021, check-ins at Offices went down to zero due to COVID, and a distributed work setup</li>
         
-          <li><span class='highlighted'>Airports being the #4 most visited category</span> was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport checkins</li>
+          <li><span class='highlighted'>Airports being the #4 most visited category</span> was a surprise, but is accurate. A total of 403 airport check-ins, whereas a flight with a layover would count as 3 airport check-ins</li>
         
           <li>Earlier in my life, I didn't always check into 'commute' places like public transit and super markets</li>
         
@@ -794,7 +794,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/swarm-categories-top.png" class="image-link" alt="Top Categories of Checkins" onclick="enlargeImage(this, 'graphs/screens/swarm-categories-top.png', 'Top Categories of Checkins')" />
+        <img src="graphs/screens/swarm-categories-top.png" class="image-link" alt="Top Categories of Check-Ins" onclick="enlargeImage(this, 'graphs/screens/swarm-categories-top.png', 'Top Categories of Check-Ins')" />
       </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
@@ -805,9 +805,9 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-number-of-checkins">
-      <h3>Number of Swarm checkins over time</h3>
+      <h3>Number of Swarm Check-Ins over Time</h3>
       <p class="graph-description">
-        Number of <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a> checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit.
+        Number of <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a> check-ins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit.
       </p>
 
       <ul>
@@ -830,7 +830,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm checkins over time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm checkins over time')" />
+        <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm Check-Ins over Time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm Check-Ins over Time')" />
       </div>
 
       <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>
@@ -869,7 +869,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-lockdown-days">
-      <h3>Days in full lockdown</h3>
+      <h3>Days in Full Lockdown</h3>
       <p class="graph-description">
         Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores were closed. On the graph below, "1" (blue) is a day where I was in full lockdown
       </p>
@@ -890,7 +890,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/lockdown-days.png" class="image-link" alt="Days in full lockdown" onclick="enlargeImage(this, 'graphs/screens/lockdown-days.png', 'Days in full lockdown')" />
+        <img src="graphs/screens/lockdown-days.png" class="image-link" alt="Days in Full Lockdown" onclick="enlargeImage(this, 'graphs/screens/lockdown-days.png', 'Days in Full Lockdown')" />
       </div>
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
@@ -901,7 +901,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-manual-alcohol-intake">
-      <h3>Alcoholic Beverages per day</h3>
+      <h3>Alcoholic Beverages per Day</h3>
       <p class="graph-description">
         Alcoholic drinks per day. Days with no data are rendered as white
       </p>
@@ -928,7 +928,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/manual-alcohol-intake.png" class="image-link" alt="Alcoholic Beverages per day" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake.png', 'Alcoholic Beverages per day')" />
+        <img src="graphs/screens/manual-alcohol-intake.png" class="image-link" alt="Alcoholic Beverages per Day" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake.png', 'Alcoholic Beverages per Day')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -939,7 +939,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-manual-alcohol-intake-months">
-      <h3>Alcoholic Beverages per month</h3>
+      <h3>Alcoholic Beverages per Month</h3>
       <p class="graph-description">
         Each bar represents a month, the graph shows the number of alcoholic beverages on a given day, with '5' being 5 or more drinks. 
       </p>
@@ -960,7 +960,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/manual-alcohol-intake-months.png" class="image-link" alt="Alcoholic Beverages per month" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake-months.png', 'Alcoholic Beverages per month')" />
+        <img src="graphs/screens/manual-alcohol-intake-months.png" class="image-link" alt="Alcoholic Beverages per Month" onclick="enlargeImage(this, 'graphs/screens/manual-alcohol-intake-months.png', 'Alcoholic Beverages per Month')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -971,7 +971,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-manual-gym-visits">
-      <h3>Gym workouts</h3>
+      <h3>Gym Workouts</h3>
       <p class="graph-description">
         Each green square represents a strength-workout in the gym, I try my best to purchase day passes at gyms while traveling
       </p>
@@ -996,7 +996,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Gym workouts" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits.png', 'Gym workouts')" />
+        <img src="graphs/screens/manual-gym-visits.png" class="image-link" alt="Gym Workouts" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits.png', 'Gym Workouts')" />
       </div>
 
       <span class="graph-date">7 years of data - Last updated on 2022-01-01</span>
@@ -1007,7 +1007,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-macros">
-      <h3>Food tracking - Macros</h3>
+      <h3>Food Tracking - Macros</h3>
       <p class="graph-description">
         On weeks where I have a routine (not traveling), I track most my meals. Whenever I scale my food, I try to guess the weight before to become better at estimating portion sizes.
       </p>
@@ -1032,7 +1032,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/macros.png" class="image-link" alt="Food tracking - Macros" onclick="enlargeImage(this, 'graphs/screens/macros.png', 'Food tracking - Macros')" />
+        <img src="graphs/screens/macros.png" class="image-link" alt="Food Tracking - Macros" onclick="enlargeImage(this, 'graphs/screens/macros.png', 'Food Tracking - Macros')" />
       </div>
 
       <span class="graph-date">4 years of data - Last updated on 2022-02-17</span>
@@ -1043,7 +1043,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-manual-gym-visits-grouped">
-      <h3>Gym workouts grouped by month</h3>
+      <h3>Gym Workouts grouped by Month</h3>
       <p class="graph-description">
         Percantage of days I went to the gym
       </p>
@@ -1064,7 +1064,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/manual-gym-visits-grouped.png" class="image-link" alt="Gym workouts grouped by month" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits-grouped.png', 'Gym workouts grouped by month')" />
+        <img src="graphs/screens/manual-gym-visits-grouped.png" class="image-link" alt="Gym Workouts grouped by Month" onclick="enlargeImage(this, 'graphs/screens/manual-gym-visits-grouped.png', 'Gym Workouts grouped by Month')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1075,7 +1075,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-fitness-bulk">
-      <h3>Fitness Bulk & Cut season</h3>
+      <h3>Fitness Bulk & Cut Season</h3>
       <p class="graph-description">
         I'm following a pretty regular bodybuilding routine, a 3-day workout split, and a normal bulk & cut seasons
       </p>
@@ -1106,7 +1106,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/fitness-bulk.png" class="image-link" alt="Fitness Bulk & Cut season" onclick="enlargeImage(this, 'graphs/screens/fitness-bulk.png', 'Fitness Bulk & Cut season')" />
+        <img src="graphs/screens/fitness-bulk.png" class="image-link" alt="Fitness Bulk & Cut Season" onclick="enlargeImage(this, 'graphs/screens/fitness-bulk.png', 'Fitness Bulk & Cut Season')" />
       </div>
 
       <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
@@ -1117,7 +1117,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-weight-graph-1">
-      <h3>Weight history of 8 years</h3>
+      <h3>Weight History of 8 Years</h3>
       <p class="graph-description">
         Historic weight, clearly showing the various bulks and cuts I've made over the years. Only the last 5 years are rendered in this graph, with the last 3 years having tracked my weight way more frequently.
       </p>
@@ -1140,7 +1140,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight history of 8 years" onclick="enlargeImage(this, 'graphs/screens/weight-graph-1.png', 'Weight history of 8 years')" />
+        <img src="graphs/screens/weight-graph-1.png" class="image-link" alt="Weight History of 8 Years" onclick="enlargeImage(this, 'graphs/screens/weight-graph-1.png', 'Weight History of 8 Years')" />
       </div>
 
       <span class="graph-date">9 years of data - Last updated on 2022-02-17</span>
@@ -1183,7 +1183,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-daily-steps-buckets">
-      <h3>Days with more than 15,000 steps</h3>
+      <h3>Days with more than 15,000 Steps</h3>
       <p class="graph-description">
         On days where I walked more than 15,000 steps (I walked an average of 9200 steps a day the last 3 years)
       </p>
@@ -1226,7 +1226,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/daily-steps-buckets.png" class="image-link" alt="Days with more than 15,000 steps" onclick="enlargeImage(this, 'graphs/screens/daily-steps-buckets.png', 'Days with more than 15,000 steps')" />
+        <img src="graphs/screens/daily-steps-buckets.png" class="image-link" alt="Days with more than 15,000 Steps" onclick="enlargeImage(this, 'graphs/screens/daily-steps-buckets.png', 'Days with more than 15,000 Steps')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1237,7 +1237,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-sleep-duration-buckets">
-      <h3>How does longer sleep duration affect my day?</h3>
+      <h3>How does longer Sleep Duration affect my Day?</h3>
       <p class="graph-description">
         On days where I had a total sleep duration of more than 8.5 hours, the following other factors were affected
       </p>
@@ -1274,7 +1274,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer sleep duration affect my day?" onclick="enlargeImage(this, 'graphs/screens/sleep-duration-buckets.png', 'How does longer sleep duration affect my day?')" />
+        <img src="graphs/screens/sleep-duration-buckets.png" class="image-link" alt="How does longer Sleep Duration affect my Day?" onclick="enlargeImage(this, 'graphs/screens/sleep-duration-buckets.png', 'How does longer Sleep Duration affect my Day?')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1285,7 +1285,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-air-quality">
-      <h3>Air Quality in various rooms</h3>
+      <h3>Air Quality in various Rooms</h3>
       <p class="graph-description">
         I used the <a href='https://www.getawair.com/products/element' target='_blank'>Awair Element</a> at home in Vienna, in every room over multiple days
       </p>
@@ -1314,7 +1314,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various rooms" onclick="enlargeImage(this, 'graphs/screens/air-quality.png', 'Air Quality in various rooms')" />
+        <img src="graphs/screens/air-quality.png" class="image-link" alt="Air Quality in various Rooms" onclick="enlargeImage(this, 'graphs/screens/air-quality.png', 'Air Quality in various Rooms')" />
       </div>
 
       <span class="graph-date">1 years of data - Last updated on 2022-02-09</span>
@@ -1367,7 +1367,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-socializing">
-      <h3>Happy with my social life?</h3>
+      <h3>Happy with my Social Life?</h3>
       <p class="graph-description">
         Each day I answer the question "Do you feel like you need to socialize more?" with the answers ranging from "No" (5 = light green) to "Feeling isolated" (0 = dark green)
       </p>
@@ -1394,7 +1394,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/socializing.png" class="image-link" alt="Happy with my social life?" onclick="enlargeImage(this, 'graphs/screens/socializing.png', 'Happy with my social life?')" />
+        <img src="graphs/screens/socializing.png" class="image-link" alt="Happy with my Social Life?" onclick="enlargeImage(this, 'graphs/screens/socializing.png', 'Happy with my Social Life?')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1405,7 +1405,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-season-winter">
-      <h3>How does Winter affect my life?</h3>
+      <h3>How does Winter affect my Life?</h3>
       <p class="graph-description">
         Winter (being from 21st Dec to 20th March) has the following effects on my life:
       </p>
@@ -1430,7 +1430,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/season-winter.png" class="image-link" alt="How does Winter affect my life?" onclick="enlargeImage(this, 'graphs/screens/season-winter.png', 'How does Winter affect my life?')" />
+        <img src="graphs/screens/season-winter.png" class="image-link" alt="How does Winter affect my Life?" onclick="enlargeImage(this, 'graphs/screens/season-winter.png', 'How does Winter affect my Life?')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1441,7 +1441,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-season-summer">
-      <h3>How does Summer affect my life?</h3>
+      <h3>How does Summer affect my Life?</h3>
       <p class="graph-description">
         Summer (being from 21st June to 23rd September) has the following effects on my life:
       </p>
@@ -1474,7 +1474,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/season-summer.png" class="image-link" alt="How does Summer affect my life?" onclick="enlargeImage(this, 'graphs/screens/season-summer.png', 'How does Summer affect my life?')" />
+        <img src="graphs/screens/season-summer.png" class="image-link" alt="How does Summer affect my Life?" onclick="enlargeImage(this, 'graphs/screens/season-summer.png', 'How does Summer affect my Life?')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1485,7 +1485,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-countries">
-      <h3>Days spent in each country</h3>
+      <h3>Days spent in each Country</h3>
       <p class="graph-description">
         Percentage of days spent in each country over the last 4 years
       </p>
@@ -1506,7 +1506,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/countries.png" class="image-link" alt="Days spent in each country" onclick="enlargeImage(this, 'graphs/screens/countries.png', 'Days spent in each country')" />
+        <img src="graphs/screens/countries.png" class="image-link" alt="Days spent in each Country" onclick="enlargeImage(this, 'graphs/screens/countries.png', 'Days spent in each Country')" />
       </div>
 
       <span class="graph-date">4 years of data - Last updated on 2022-01-01</span>
@@ -1545,7 +1545,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-weather-temperature-buckets">
-      <h3>How does high temperature affect my life?</h3>
+      <h3>How does High Temperature affect my Life?</h3>
       <p class="graph-description">
         On days with a maximum temperature of more than 26 Celsius (78.8 Fahrenheit), the following other factors were affected
       </p>
@@ -1582,7 +1582,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does high temperature affect my life?" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-buckets.png', 'How does high temperature affect my life?')" />
+        <img src="graphs/screens/weather-temperature-buckets.png" class="image-link" alt="How does High Temperature affect my Life?" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-buckets.png', 'How does High Temperature affect my Life?')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1593,7 +1593,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-day-is-weekend">
-      <h3>What are weekends like?</h3>
+      <h3>What are Weekends like?</h3>
       <p class="graph-description">
         Weekends for me naturally involve less working time, more going out, and social interactions, as well as visiting family memebers outside the city
       </p>
@@ -1624,7 +1624,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/day-is-weekend.png" class="image-link" alt="What are weekends like?" onclick="enlargeImage(this, 'graphs/screens/day-is-weekend.png', 'What are weekends like?')" />
+        <img src="graphs/screens/day-is-weekend.png" class="image-link" alt="What are Weekends like?" onclick="enlargeImage(this, 'graphs/screens/day-is-weekend.png', 'What are Weekends like?')" />
       </div>
 
       <span class="graph-date">2.5 years of data - Last updated on 2022-01-01</span>
@@ -1635,7 +1635,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-weather-temperature-max">
-      <h3>Maximal temperature each day of the year</h3>
+      <h3>Maximal Temperature each Day of the Year</h3>
       <p class="graph-description">
         Historic weather data based on the location I was at on that day based on my Swarm check-ins. Days with no data are rendered as white
       </p>
@@ -1662,7 +1662,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal temperature each day of the year" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-max.png', 'Maximal temperature each day of the year')" />
+        <img src="graphs/screens/weather-temperature-max.png" class="image-link" alt="Maximal Temperature each Day of the Year" onclick="enlargeImage(this, 'graphs/screens/weather-temperature-max.png', 'Maximal Temperature each Day of the Year')" />
       </div>
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
@@ -1673,7 +1673,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-weather-conditions">
-      <h3>Weather conditions per year</h3>
+      <h3>Weather Conditions per Year</h3>
       <p class="graph-description">
         Historic weather data based on the location I was at on that day based on my Swarm check-ins.
       </p>
@@ -1692,7 +1692,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather conditions per year" onclick="enlargeImage(this, 'graphs/screens/weather-conditions.png', 'Weather conditions per year')" />
+        <img src="graphs/screens/weather-conditions.png" class="image-link" alt="Weather Conditions per Year" onclick="enlargeImage(this, 'graphs/screens/weather-conditions.png', 'Weather Conditions per Year')" />
       </div>
 
       <span class="graph-date">3 years of data - Last updated on 2022-01-01</span>
@@ -1739,7 +1739,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-money-flow">
-      <h3>Annual money flow</h3>
+      <h3>Annual Money Flow</h3>
       <p class="graph-description">
         Inspired by a <a href='https://old.reddit.com/r/PFPorn' target='_blank'>Reddit finance commnunity</a>, I had been creating annual money flow charts to clearly see how much money I earned, where I spent how much, and how much I saved. The chart below isn't mine (for privacy reasons), but just an example I created.
       </p>
@@ -1764,7 +1764,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual money flow" onclick="enlargeImage(this, 'graphs/screens/money-flow.png', 'Annual money flow')" />
+        <img src="graphs/screens/money-flow.png" class="image-link" alt="Annual Money Flow" onclick="enlargeImage(this, 'graphs/screens/money-flow.png', 'Annual Money Flow')" />
       </div>
 
       <span class="graph-date">5 years of data - Last updated on 2022-02-09</span>
