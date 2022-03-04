@@ -1870,16 +1870,22 @@ After having tried various tools available to visualize, I ended up writing my o
   }
 
   function alignArrowKeys(node) {
-    // Attach the arrows to be next to the `graph-entry-selected`
     const arrowLeft = document.getElementById("arrow-left-button");
     const arrowRight = document.getElementById("arrow-right-button");
-    const topPx = (node.offsetTop + 250 - arrowRight.offsetHeight / 2) + "px";
+    if (node) {
+      // Attach the arrows to be next to the `graph-entry-selected`
+      const topPx = (node.offsetTop + 250 - arrowRight.offsetHeight / 2) + "px";
 
-    arrowLeft.style.left = (node.offsetLeft - arrowLeft.offsetWidth - 10) + "px";
-    arrowLeft.style.top = topPx;
+      arrowLeft.style.left = (node.offsetLeft - arrowLeft.offsetWidth - 10) + "px";
+      arrowLeft.style.top = topPx;
 
-    arrowRight.style.left = (node.offsetLeft + node.offsetWidth - arrowRight.offsetWidth + 50) + "px";
-    arrowRight.style.top = topPx;
+      arrowRight.style.left = (node.offsetLeft + node.offsetWidth - arrowRight.offsetWidth + 50) + "px";
+      arrowRight.style.top = topPx;
+    } else {
+      // This was the first or last graph, hide the arrow keys
+      arrowLeft.style.left = "-100px";
+      arrowRight.style.left = "-100px";
+    }
   }
 
   function showFullScreen(img, title) {
@@ -1897,12 +1903,15 @@ After having tried various tools available to visualize, I ended up writing my o
     if (lastNode) {
       lastNode.classList.remove("graph-entry-selected");
       lastNode = lastNode.nextElementSibling;
-      lastNode.classList.add("graph-entry-selected");
 
-      alignArrowKeys(lastNode)
-      lastNode.scrollIntoView();        
-      window.scrollBy({ top: -15 });
-      clearSelection();
+      if (lastNode) {
+        lastNode.classList.add("graph-entry-selected");
+
+        alignArrowKeys(lastNode)
+        lastNode.scrollIntoView();        
+        window.scrollBy({ top: -15 });
+        clearSelection();
+      } else { alignArrowKeys(lastNode); }
       return false;
     }
     return true;
@@ -1911,12 +1920,14 @@ After having tried various tools available to visualize, I ended up writing my o
     if (lastNode) {
       lastNode.classList.remove("graph-entry-selected");
       lastNode = lastNode.previousElementSibling;
-      lastNode.classList.add("graph-entry-selected");
+      if (lastNode) {
+        lastNode.classList.add("graph-entry-selected");
 
-      alignArrowKeys(lastNode)
-      lastNode.scrollIntoView();        
-      window.scrollBy({ top: -15 });
-      clearSelection();
+        alignArrowKeys(lastNode)
+        lastNode.scrollIntoView();        
+        window.scrollBy({ top: -15 });
+        clearSelection();
+      } else { alignArrowKeys(lastNode); }
       return false;
     }
     return true;
@@ -1941,6 +1952,7 @@ After having tried various tools available to visualize, I ended up writing my o
         lastNode = null;
       }
       dismissImage();
+      alignArrowKeys();
       return true;
     }
 
