@@ -142,7 +142,7 @@ meta: {}
     }
 
     document.getElementById("realTimeDataDiv").style.display = "block"
-    
+
     while (document.getElementsByClassName("blurred").length > 0) {
       document.getElementsByClassName("blurred")[0].classList.remove("blurred")
     }
@@ -2201,11 +2201,6 @@ After having tried various tools available to visualize, I ended up writing my o
     height: 8px;
     border-radius: 5px;
   }
-  #foodEntries {
-    margin-top: 30px;
-    width: 100%;
-    text-align: center;
-  }
   #foodEntriesTable {
     border: none;
     width: 430px;
@@ -2213,6 +2208,11 @@ After having tried various tools available to visualize, I ended up writing my o
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
+  }
+  #foodEntries {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
   }
   #foodEntriesTable tr {
     background-color: rgba(255, 255, 255, 0.9) !important;
