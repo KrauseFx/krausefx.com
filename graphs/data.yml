@@ -219,7 +219,7 @@
   years: 3
   source:
   - "Manually"
-  description: "Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores were closed."
+  description: "Number of days per year that I've spent in full lockdown, meaning restaurants, bars and non-essential stores were closed. On the graph below, \"1\" (blue) is a day where I was in full lockdown"
   takeaways:
   - "I escaped parts of the Austrian lockdown by spending time in the US when I was already vaccinated"
   - "Surprisingly 2021 I spent more days in a full lockdown than in 2020, even with vaccines available"
