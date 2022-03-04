@@ -262,8 +262,8 @@ Currently, I have <b><span id="data-points" class="highlighed">~380,000</span> d
 
 <table>
   <tr><th>Data Source</th><th>Number of data entries</th><th>Type of data</th></tr>
-  <tr><td>RescueTime</td><td><span class="highlighted" id="h-rescuetime">149,466</span></td><td>Daily computer usage (which website, which apps)</td></tr>
-  <tr><td>Foursquare Swarm</td><td><span class="highlighted" id="h-swarm">126,285</span></td><td>Location and POI data, places I've visited</td></tr>
+  <tr><td><a href="https://rescuetime.com" target="_blank">RescueTime</a></td><td><span class="highlighted" id="h-rescuetime">149,466</span></td><td>Daily computer usage (which website, which apps)</td></tr>
+  <tr><td><a href="https://swarmapp.com" target="_blank">Foursquare Swarm</a></td><td><span class="highlighted" id="h-swarm">126,285</span></td><td>Location and POI data, places I've visited</td></tr>
   <tr><td>Manually entered</td><td><span class="highlighted" id="h-manually">67,031</span></td><td>Data about fitness, mood, social life, nutrition, energy levels, ...</td></tr>
   <tr><td>Manually entered time ranges</td><td><span class="highlighted" id="h-timeranges">19,273</span></td><td>Occupation, lockdown status, living setup</td></tr>
   <tr><td>Weather API</td><td><span class="highlighted" id="h-weather">15,442</span></td><td>Temperature, rain, sunlight, wind</td></tr>
@@ -288,7 +288,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
 
       <ul>
         
-          <li>Before 2018, the only data used was <a href='https://rescuetime.com' target='_blank'>RescueTime</a> and <a href='https://swarmapp.com' target='_blank'>Swarm</a> location data</li>
+          <li>Before 2018, the only data used was <a href='https://rescuetime.com' target='_blank'>RescueTime</a> and <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a> location data</li>
         
           <li>Once I started the <a href='https://github.com/KrauseFx/FxLifeSheet' target='_blank'>FxLifeSheet project</a>, I manually tracked around 75 data entries every day, ranging from mood, sleep, to fitness inputs</li>
         
@@ -805,9 +805,9 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     
 
     <div class="graphs-entry" id="graphs-entry-swarm-number-of-checkins">
-      <h3>Number of <a href='https://swarmapp.com' target='_blank'>Swarm</a> checkins over time</h3>
+      <h3>Number of Swarm checkins over time</h3>
       <p class="graph-description">
-        Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit.
+        Number of <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a> checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit.
       </p>
 
       <ul>
@@ -830,7 +830,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
       </span>
 
       <div class="image-container">
-        <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of [Swarm](https://swarmapp.com) checkins over time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of [Swarm](https://swarmapp.com) checkins over time')" />
+        <img src="graphs/screens/swarm-number-of-checkins.png" class="image-link" alt="Number of Swarm checkins over time" onclick="enlargeImage(this, 'graphs/screens/swarm-number-of-checkins.png', 'Number of Swarm checkins over time')" />
       </div>
 
       <span class="graph-date">10 years of data - Last updated on 2022-01-01</span>

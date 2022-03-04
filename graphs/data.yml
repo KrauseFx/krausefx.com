@@ -3,7 +3,7 @@
   years: 10
   description: "Visualization of the number of data entries in [FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet) over the last 10 years, and where the data came from."
   takeaways:
-  - Before 2018, the only data used was [RescueTime](https://rescuetime.com) and [Swarm](https://swarmapp.com) location data
+  - Before 2018, the only data used was [RescueTime](https://rescuetime.com) and [Foursquare Swarm](https://swarmapp.com) location data
   - Once I started the [FxLifeSheet project](https://github.com/KrauseFx/FxLifeSheet), I manually tracked around 75 data entries every day, ranging from mood, sleep, to fitness inputs
   - I was able to retrospectively fetch the historic weather data based on my location on a given day
   updated: "2022-01-01"
@@ -196,11 +196,11 @@
   instructions: "pie_chart.html, manually update the svg to replace any cities"
   updated: "2022-01-01"
 - id: "swarm-number-of-checkins"
-  title: "Number of [Swarm](https://swarmapp.com) checkins over time"
+  title: "Number of Swarm checkins over time"
   years: 10
   source:
   - "Swarm"
-  description: "Number of Swarm checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit."
+  description: "Number of [Foursquare Swarm](https://swarmapp.com) checkins on each quarter over the last 10 years. I didn't use Foursquare Swarm as seriously before 2015. Once I moved to San Francisco in Q3 2015 I started my habit of checking into every point of interest (POI) I visit."
   takeaways:
   - "Q3 2015 I moved to San Francisco, however I couldn't use Swarm yet, since my move was a secret until the official announced at the Twitter Flight conference"
   - "Q2 2020 clearly shows the impact of COVID with Q3 already being open in Austria"
