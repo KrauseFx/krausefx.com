@@ -121,6 +121,7 @@ meta: {}
 
       // Render the food list
       let foodEntriesTable = document.getElementById("foodEntriesTable")
+      foodEntriesTable.innerHTML = ""
       for (let i = 0; i < data.todaysFoodItems.length; i++) {
         let foodItem = data.todaysFoodItems[i]
         let row = document.createElement("tr")
@@ -141,6 +142,10 @@ meta: {}
     }
 
     document.getElementById("realTimeDataDiv").style.display = "block"
+    
+    while (document.getElementsByClassName("blurred").length > 0) {
+      document.getElementsByClassName("blurred")[0].classList.remove("blurred")
+    }
   })
 
   function httpGetAsync(url, callback) {
@@ -174,44 +179,51 @@ meta: {}
 <div id="mapsContainerCover"></div>
 
 <div id="realTimeDataDiv">
-  <h3 id="currentCityContainer">Felix is currently in <b id="currentCityB" class="highlighted"></b></h3>
-  <h3 id="isMovingContainer">Felix is currently heading to <b id="nextCityB" class="highlighted"></b></h3>
-  <h4 id="nextCityContainer">Leaving for <span id="nextCityText"></span> <span id="nextCityTime"></span></h4>
+  <h3 id="currentCityContainer">Felix is currently in <b id="currentCityB" class="highlighted blurred">Vienna, AT</b></h3>
+  <h3 id="isMovingContainer" style="display: none">Felix is currently heading to <b id="nextCityB" class="highlighted"></b></h3>
+  <h4 id="nextCityContainer" style="display: none">Leaving for <span id="nextCityText"></span> <span id="nextCityTime"></span></h4>
   <hr />
-  <h3 id="feels-h">Felix feels <span class="highlighted" id="current-feeling"></span> <span id="mood-hours-ago" class="ago-subtle"></span></h3>
+  <h3 id="feels-h">
+    Felix feels <span class="highlighted blurred" id="current-feeling">happy, excited 😃</span>
+    <span id="mood-hours-ago" class="ago-subtle blurred">(3 hours ago)</span>
+  </h3>
   <hr />
 
   <div id="food-container">
     <h3>Felix ate today</h3>
-    <div class="food-overview">
+    <div class="food-overview blurred">
       <div>
-        <span class="highlighted" id="todaysMacros-kcal"></span> of <span id="total-kcal"></span> kcal
+        <span class="highlighted" id="todaysMacros-kcal">54kcal</span> of <span id="total-kcal">2920 </span>
         <span class="macro-bar-outer">
           <div class="macro-bar-inner" id="todaysMacros-kcal-bar-inner"></div>
         </span>
       </div>
       <div>
-        <span class="highlighted" id="todaysMacros-carbs"></span> of <span id="macrosCarbs-value"></span>g
+        <span class="highlighted" id="todaysMacros-carbs">54g carbs</span> of <span id="macrosCarbs-value">350</span>g
         <span class="macro-bar-outer">
           <div class="macro-bar-inner" id="todaysMacros-carbs-bar-inner"></div>
         </span>
       </div>
       <div>
-        <span class="highlighted" id="todaysMacros-protein"></span> of <span id="macrosProtein-value"></span>g
+        <span class="highlighted" id="todaysMacros-protein">24g protein</span> of <span id="macrosProtein-value">200</span>g
         <span class="macro-bar-outer">
           <div class="macro-bar-inner" id="todaysMacros-protein-bar-inner"></div>
         </span>
       </div>
       <div>
-        <span class="highlighted" id="todaysMacros-fat"></span> of <span id="macrosFat-value"></span>g
+        <span class="highlighted" id="todaysMacros-fat">16g fat</span> of <span id="macrosFat-value">80</span>g
         <span class="macro-bar-outer">
           <div class="macro-bar-inner" id="todaysMacros-fat-bar-inner"></div>
         </span>
       </div>
     </div>
 
-    <div id="foodEntries">
+    <div id="foodEntries" class="blurred">
       <table id="foodEntriesTable" cellspacing="0" cellpadding="0">
+        <tr><td>Club Mate</td><td>500 ml</td></tr>
+        <tr><td>Chicken Breast</td><td>500c</td></tr>
+        <tr><td>Rice</td><td>200g</td></tr>
+        <tr class="show-more-food"><td colspan='2'><a onclick='' id='show-all-food-a'>Show all food entries</a></td></tr>
       </table>
     </div>
     <hr />
@@ -222,35 +234,35 @@ meta: {}
       <tr>
         <td>Weight</td>
         <td>
-          <span id="current-weight"></span>
-          <span id="current-weight-time" class="ago-subtle"></span>
+          <span id="current-weight" class="blurred"><span class="highlighted">81.8kg</span> / 180.4lbs</span>
+          <span id="current-weight-time" class="ago-subtle blurred">today</span>
         </td>
       </tr>
       <tr>
         <td>Slept</td>
-        <td id="current-sleep-duration"></td>
+        <td id="current-sleep-duration" class="blurred"><span class="highlighted">9 hours</span> tonight</td>
       </tr>
       <tr>
         <td>Last workout</td>
-        <td><span class="highlighted" id="last-workout" /></td>
+        <td><span class="highlighted blurred" id="last-workout">2 days ago</span></td>
       </tr>
       <tr>
         <td>Last meditated</td>
-        <td><span class="highlighted" id="last-meditated" /></td>
+        <td><span class="highlighted blurred" id="last-meditated">yesterday</span></td>
       </tr>
       <tr>
         <td>Number of data entries</td>
-        <td><span class="highlighted" id="data-entries-count" /></td>
+        <td><span class="highlighted blurred" id="data-entries-count">380,000</span></td>
       </tr>
     </table>
   </div>
 
   <hr />
-  <p style="margin-top: -25px;" class="git-footnote">Last code commit: <span id="git-time-ago" class="git-footnote" /></p>
+  <p style="margin-top: -25px;" class="git-footnote">Last code commit: <span id="git-time-ago" class="blurred git-footnote">an hour ago</span></p>
   <h3 id="git-header">
-    <a target="_blank" href="" id="git-link"></a>
+    <a target="_blank" href="" id="git-link" class="blurred">Improve design of graph</a>
   </h3>
-  <p class="git-footnote">on GitHub repo <a target="_blank" href="" id="git-repo-link"></a></p>
+  <p class="git-footnote">on GitHub repo <a target="_blank" href="" id="git-repo-link" class="blurred">KrauseFx/krausefx.com</a></p>
 </div>
 
 <h1>My whole life in a single database</h1>
@@ -2053,6 +2065,9 @@ After having tried various tools available to visualize, I ended up writing my o
     background-position: center !important;
     background-size: cover !important;
     height: 350px;
+
+    /* Show loading map by default while loading */
+    background: url("/graphs/assets/loading-map.jpg") no-repeat;
   }
   #mapsContainerCover {
     height: 320px;
@@ -2076,11 +2091,13 @@ After having tried various tools available to visualize, I ended up writing my o
   #realTimeDataDiv {
     width: 100%;
     text-align: center;
-    display: none;
     border-bottom: 2px solid #e4e7ef;
     margin-bottom: 25px;
     padding-bottom: 10px;
     margin-top: -33px;
+  }
+  .blurred {
+    filter: blur(5px);
   }
   .highlighted {
     font-weight: normal;
@@ -2197,22 +2214,22 @@ After having tried various tools available to visualize, I ended up writing my o
     margin-right: auto;
     white-space: nowrap;
   }
-  #foodEntriesTable > tr {
+  #foodEntriesTable tr {
     background-color: rgba(255, 255, 255, 0.9) !important;
     font-size: 90%;
     line-height: 1.35;
   }
-  #foodEntriesTable > tr > td {
+  #foodEntriesTable tr > td {
     color: #669;
     padding: 9px 0 0;
     border: none;
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  #foodEntriesTable > tr > td:first-child {
+  #foodEntriesTable tr > td:first-child {
     max-width: 270px;
   }
-  #foodEntriesTable > tr > td:last-child {
+  #foodEntriesTable tr > td:last-child {
     max-width: 80px;
     width: 80px;
   }
