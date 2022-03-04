@@ -479,10 +479,10 @@ After having tried various tools available to visualize, I ended up writing my o
     }
 
     // Use arrow keys
-    if (e.keyCode == 37 || e.keyCode == 38) { // Left and up
+    if (e.keyCode == 37) { // Left key
       return previousGraph();
     }
-    if (e.keyCode == 39 || e.keyCode == 40) { // Right and down
+    if (e.keyCode == 39) { // Right key
       return nextGraph();
     }
   }, false);
