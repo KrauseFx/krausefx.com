@@ -365,7 +365,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     <div class="graphs-entry" id="graphs-entry-jetlovers-stats">
       <h3>Flying Stats - General</h3>
       <p class="graph-description">
-        All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by <a href='https://www.jetlovers.com/' target='_blank'>JetLovers</a>.
+        All flights taken within the last 7 years, tracked using <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a>, analyzed by <a href='https://www.jetlovers.com/' target='_blank'>JetLovers</a>.
       </p>
 
       <ul>
@@ -397,7 +397,7 @@ I selected <span class="highlighted">41</span> graphs to show publicly on this p
     <div class="graphs-entry" id="graphs-entry-jetlovers-top">
       <h3>Flying Stats - Top</h3>
       <p class="graph-description">
-        All flights taken within the last 7 years, tracked using Foursquare Swarm, analyzed by <a href='https://www.jetlovers.com/' target='_blank'>JetLovers</a>.
+        All flights taken within the last 7 years, tracked using <a href='https://swarmapp.com' target='_blank'>Foursquare Swarm</a>, analyzed by <a href='https://www.jetlovers.com/' target='_blank'>JetLovers</a>.
       </p>
 
       <ul>
@@ -1933,10 +1933,10 @@ After having tried various tools available to visualize, I ended up writing my o
     }
 
     // Use arrow keys
-    if (e.keyCode == 37 || e.keyCode == 38) { // Left and up
+    if (e.keyCode == 37) { // Left key
       return previousGraph();
     }
-    if (e.keyCode == 39 || e.keyCode == 40) { // Right and down
+    if (e.keyCode == 39) { // Right key
       return nextGraph();
     }
   }, false);
