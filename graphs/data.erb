@@ -60,11 +60,14 @@ meta: {}
       (otherFxLifeData["weight"]["value"]).toFixed(1) + " lbs"
     document.getElementById("current-weight-time").innerHTML = "(" + daysAgo(new Date(otherFxLifeData["weight"]["time"])) + ")"
     document.getElementById("current-sleep-duration").innerHTML =
-      "<span class='highlighted'>" + otherFxLifeData["sleepDurationWithings"]["value"] + " hours</span>tonight"
+      "<span class='highlighted'>" + otherFxLifeData["sleepDurationWithings"]["value"] + " hours</span> <span class=\"ago-subtle\">(tonight)</span>"
     document.getElementById("last-workout").innerHTML = daysAgo(new Date(otherFxLifeData["gym"]["time"]))
     document.getElementById("last-meditated").innerHTML = daysAgo(new Date(otherFxLifeData["meditated"]["time"]))
     document.getElementById("data-points").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString()
-    document.getElementById("data-entries-count").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString()
+    document.getElementById("data-entries-count").innerHTML = otherFxLifeData["totalAmountOfEntries"]["value"].toLocaleString() + " Data Entries"
+    document.getElementById("total-computer-time").innerHTML = otherFxLifeData["totalComputerUsageHours"]["value"].toLocaleString() + " hours"
+    document.getElementById("inbox-count").innerHTML = otherFxLifeData["emailsInbox"]["value"].toLocaleString() + " Emails"
+    document.getElementById("trello-count").innerHTML = data["numberOfTodoItems"].toLocaleString() + " Tasks"
 
     // Overview of data sources
     document.getElementById("h-rescuetime").innerHTML = otherFxLifeData["rescue_time"]["value"].toLocaleString()
@@ -239,30 +242,51 @@ meta: {}
         </td>
       </tr>
       <tr>
-        <td>Slept</td>
-        <td id="current-sleep-duration" class="blurred"><span class="highlighted">9 hours</span> tonight</td>
+        <td>Height</td>
+        <td>
+          <span class="blurred"><span class="highlighted">1.93m</span> (6'4")</span>
+        </td>
       </tr>
       <tr>
-        <td>Last workout</td>
+        <td>Slept</td>
+        <td id="current-sleep-duration" class="blurred"><span class="highlighted">9 hours</span> <span class="ago-subtle">(tonight)</span></td>
+      </tr>
+      <tr>
+        <td>Last Workout</td>
         <td><span class="highlighted blurred" id="last-workout">2 days ago</span></td>
       </tr>
       <tr>
-        <td>Last meditated</td>
+        <td>Computer Time</td>
+        <td>
+          <span class="highlighted blurred" id="total-computer-time">12,677 hours</span>
+          <span class="ago-subtle blurred">(since 2013)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Last Meditated</td>
         <td><span class="highlighted blurred" id="last-meditated">yesterday</span></td>
       </tr>
       <tr>
-        <td>Number of data entries</td>
-        <td><span class="highlighted blurred" id="data-entries-count">380,000</span></td>
+        <td>Inbox</td>
+        <td><span class="highlighted blurred" id="inbox-count">40</span></td>
+      </tr>
+      <tr>
+        <td>Personal Todo Items</td>
+        <td><span class="highlighted blurred" id="trello-count">173 Tasks</span></td>
+      </tr>
+      <tr>
+        <td>Database size</td>
+        <td><span class="highlighted blurred" id="data-entries-count">380,000 Data Entries</span></td>
       </tr>
     </table>
   </div>
 
   <hr />
-  <p style="margin-top: -25px;" class="git-footnote">Last code commit: <span id="git-time-ago" class="blurred git-footnote">an hour ago</span></p>
+  <p style="margin-top: -25px;" class="git-footnote" style="margin-bottom: -10px; margin-top: -20px;">Last code commit: <span id="git-time-ago" class="blurred git-footnote">an hour ago</span></p>
   <h3 id="git-header">
     <a target="_blank" href="" id="git-link" class="blurred">Improve design of graph</a>
   </h3>
-  <p class="git-footnote">on GitHub repo <a target="_blank" href="" id="git-repo-link" class="blurred">KrauseFx/krausefx.com</a></p>
+  <p class="git-footnote" style="margin-bottom: 0px; margin-top: -10px;">on GitHub repo <a target="_blank" href="" id="git-repo-link" class="blurred">KrauseFx/krausefx.com</a></p>
   <hr />
 </div>
 
@@ -704,8 +728,6 @@ After having tried various tools available to visualize, I ended up writing my o
   }
   .git-footnote {
     text-align: center;
-    margin-bottom: 0px;
-    margin-top: -10px;
     color: #666;
     font-size: 14px;
   }
