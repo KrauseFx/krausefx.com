@@ -4,4 +4,3 @@ _site
 .DS_STORE
 .tweet-cache
 /.jekyll-cache
-graphs/screens/*.svg
