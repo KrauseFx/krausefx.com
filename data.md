@@ -72,10 +72,16 @@ meta: {}
     // Overview of data sources
     document.getElementById("h-rescuetime").innerHTML = otherFxLifeData["rescue_time"]["value"].toLocaleString()
     document.getElementById("h-swarm").innerHTML = otherFxLifeData["swarm"]["value"].toLocaleString()
-    document.getElementById("h-manually").innerHTML = otherFxLifeData["manuallyEntered"]["value"].toLocaleString()
     document.getElementById("h-timeranges").innerHTML = otherFxLifeData["timeRanges"]["value"].toLocaleString()
     document.getElementById("h-weather").innerHTML = otherFxLifeData["weather"]["value"].toLocaleString()
     document.getElementById("h-health").innerHTML = otherFxLifeData["dailySteps"]["value"].toLocaleString()
+
+    document.getElementById("h-manually").innerHTML = (otherFxLifeData["totalAmountOfEntries"]["value"] - 
+          otherFxLifeData["rescue_time"]["value"] -
+          otherFxLifeData["swarm"]["value"] - 
+          otherFxLifeData["timeRanges"]["value"] - 
+          otherFxLifeData["weather"]["value"] - 
+          otherFxLifeData["dailySteps"]["value"]).toLocaleString();
 
     // Git Details
     document.getElementById("git-time-ago").innerHTML = daysOrHoursAgo(new Date(data["lastCommitTimestamp"]))
