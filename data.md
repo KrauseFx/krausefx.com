@@ -49,9 +49,28 @@ meta: {}
       document.getElementById("nextCityB").innerHTML = data["currentCityText"]
     }
     if (data["nextCityText"]) {
-      document.getElementById("nextCityB").innerHTML = data["nextCityText"]
-    } else {
-      document.getElementById("nextCityContainer").style.display = "none"
+      document.getElementById("nextCityText").innerHTML = data["nextCityText"]
+      document.getElementById("nextCityTime").innerHTML = data["nextCityDate"]
+      document.getElementById("nextCityContainer").style.display = "block"
+    }
+
+    if (data["nextStays"].length > 0) {
+      document.getElementById("next-cities-table").style.display = "block"
+      // Iterate over all the next stays, and append a new tr to the table
+      for (let i = 0; i < data["nextStays"].length; i++) {
+        const stay = data["nextStays"][i]
+        const tr = document.createElement("tr")
+        const td = document.createElement("td")
+        td.innerHTML = stay["name"]
+        tr.appendChild(td)
+        const td2 = document.createElement("td")
+        td2.innerHTML = new Date(stay["fromDate"]).toLocaleDateString("en-US", {day: 'numeric', month: 'short'})
+        tr.appendChild(td2)
+        const td3 = document.createElement("td")
+        td3.innerHTML = new Date(stay["toDate"]).toLocaleDateString("en-US", {day: 'numeric', month: 'short'})
+        tr.appendChild(td3)
+        document.getElementById("next-cities-table").appendChild(tr)
+      }
     }
 
     // Render today's metadata
@@ -188,9 +207,20 @@ meta: {}
 <div id="mapsContainerCover"></div>
 
 <div id="realTimeDataDiv">
-  <h3 id="currentCityContainer">Felix is currently in <b id="currentCityB" class="highlighted blurred">Vienna, AT</b></h3>
+  <h2 id="currentCityContainer">Felix is currently in <b id="currentCityB" class="highlighted blurred">Vienna, AT</b></h2>
   <h3 id="isMovingContainer" style="display: none">Felix is currently heading to <b id="nextCityB" class="highlighted"></b></h3>
   <h4 id="nextCityContainer" style="display: none">Leaving for <span id="nextCityText"></span> <span id="nextCityTime"></span></h4>
+
+  <table id="next-cities-table" cellspacing="0" cellpadding="0">
+    <thead>
+        <tr>
+            <th>Upcoming trips</th>
+            <th>From</th>
+            <th>To</th>
+        </tr>
+    </thead>
+  </table>
+
   <hr />
   <h3 id="feels-h">
     Felix feels <span class="highlighted blurred" id="current-feeling">happy, excited 😃</span>
@@ -2312,5 +2342,31 @@ After having tried various tools available to visualize, I ended up writing my o
     #arrow-left-button {
       display: none;
     }
+  }
+  #nextCityContainer {
+    margin-top: -10px;
+  }
+  #next-cities-table {
+    margin-left: auto;
+    max-width: 450px;
+    margin-right: auto;
+    border: none;
+    margin-bottom: 0px;
+  }
+  #next-cities-table > * > tr > th {
+    color: #039;
+    border-bottom: 1px solid #6678b1;
+    padding: 10px 8px;
+    border-top: 0;
+    border-right: 0;
+    text-align: center;
+    border-left: 0;
+    font-size: 14px;
+    background-color: transparent;
+  }
+  #next-cities-table > tr > td {
+    color: #669;
+    border: none;
+    padding: 9px 30px 10px;
   }
 </style>
