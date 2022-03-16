@@ -115,15 +115,15 @@ I've been spending a lot of time working on reaching my fitness goals in the yea
 - I usually stock up the fridge with a few essentials, being frozen chicken breast, frozen veggies, black beans, oatmeal and some diet sodas.
 - Having a routine, and your own place with your own kitchen would make reaching fitness goals easier
 
-## whereisfelix.today
+## howisFelix.today
 
-A joke project I started back in February 2018: [whereisfelix.today](https://whereisfelix.today)
+A joke project I started back in February 2018: [howisFelix.today](https://howisFelix.today)
 
 As people in SF/NYC travel around a lot, it's often difficult to schedule time to meet. Most conversations start with "Hey, when are you back in New York?". I decided to buy this domain for fun, and have my travel schedule up there.
 
 The reactions from people when I send them this link are great. I now even have a shortcut on my Mac to type the domain for me.
 
-<a href="https://whereisfelix.today">
+<a href="https://howisFelix.today">
   <img src="/assets/posts/nomad/whereisfelix1.png" width="400px" style="margin-right: -20px; margin-left: -20px;" />
   <img src="/assets/posts/nomad/whereisfelix2.png" width="400px" style="margin-right: -40px; margin-left: -20px;" />
 </a>
@@ -132,7 +132,7 @@ It's a real-time dashboard of which city I'm currently in, as well as my upcomin
 
 I used this project as an excuse to learn some things I haven't used yet: TypeScript, node.js, Angular, and immutable deployments on [Zeit](https://zeit.co).
 
-The website itself is also [open source on GitHub](https://github.com/krausefx/whereisfelix.today).
+The website itself is also [open source on GitHub](https://github.com/krausefx/howisFelix.today).
 
 ## Downsides
 

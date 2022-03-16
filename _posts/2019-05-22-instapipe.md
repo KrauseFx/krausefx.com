@@ -26,13 +26,13 @@ A simple web service that automatically downloads and publishes your stories on 
 
 ### Embed into websites
 
-<a href="https://whereisfelix.today">
+<a href="https://howisFelix.today">
   <img src="/assets/posts/instapipe/whereisfelixScreenshot.jpg" />
 </a>
 
 Showing what you're up to on the websites you operate is an easy way to make your online presence more personal.
 
-- [On whereisfelix.today](https://whereisfelix.today)
+- [On howisFelix.today?](https://howisFelix.today)
 - [Integrated into krausefx.com](https://krausefx.com) (desktop only)
 - [Plain live demo](https://krausefx.github.io/instapipe/web/index.html)
 
