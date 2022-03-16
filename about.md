@@ -40,7 +40,7 @@ meta: {}
 
   <p>I spoke at various conferences around the world, most recently Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below. Check out my <a href="https://github.com/krausefx/speaking" target="_blank">speaking schedule</a>.</p>
 
-  <p>To see my current location, upcoming trips, and more, check out <a href="https://whereisfelix.today" target="_blank">WhereIsFelix.today</a>.</p>
+  <p>To see my current location, upcoming trips, and more, check out <a href="https://howisFelix.today" target="_blank">howisFelix.today</a>.</p>
 
   <p><b>Previous work and projects</b></p>
   <p>Product Hunt, MindNode, Wunderlist, Bikemap, xcode-install amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
