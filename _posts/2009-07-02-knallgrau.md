@@ -16,4 +16,4 @@ meta:
 
 My first intern ship was at 
 [Knallgrau](http://knallgrau.at/), where I was working on their time tracking system. We used the programming language 
-[Helma](http://helma.org/) (serverside Javascript)
+[Helma](https://github.com/helma-org/helma) (serverside Javascript)
