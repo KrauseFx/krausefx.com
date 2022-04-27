@@ -6,7 +6,7 @@ tags:
 - quantified-self
 status: publish
 type: post
-published: false
+published: true
 meta: {}
 ---
 
@@ -28,7 +28,7 @@ Back in 2019, I started collecting all kinds of [metrics about my life](https://
 
 Since the start of this project, I collected a total of <b><span id="data-points">more than 380,000</span> data points</b>.
 
-Naturally after I started collecting this data, I wanted to visualize what I was learning, so I created this page. Initially, the domain [`whereisFelix.today`](https://howisFelix.today) (now renamed to [`howisFelix.today`](https://howisFelix.today)) started as a joke to respond to friends asking when I'd be back in NYC or San Francisco. Rather than send them my schedule, I'd point them to this domain. However, now it's more than my location: it's all of me.
+Naturally after I started collecting this data, I wanted to visualize what I was learning, so I created [howisFelix.today](https://howisfelix.today). Initially, the domain [`whereisFelix.today`](https://howisFelix.today) (now renamed to [`howisFelix.today`](https://howisFelix.today)) started as a joke to respond to friends asking when I'd be back in NYC or San Francisco. Rather than send them my schedule, I'd point them to this domain. However, now it's more than my location: it's all of me.
 
 **Rules I setup for the project**
 
@@ -38,11 +38,11 @@ Naturally after I started collecting this data, I wanted to visualize what I was
 - Works well for frequent flyers with mixed time zones
 - 100% [fully open source](https://github.com/KrauseFx/FxLifeSheet), MIT licensed and self-hosted
 
-I selected 42 graphs to show publicly on [howisFelix.today](https://howisfelix.today).
+I selected 42 graphs to show publicly on [howisFelix.today](https://howisfelix.today)
 
 <div style="text-align: center; margin-bottom: 20px;">
   <img src="/assets/posts/howisfelix/Desktop-3.png" style="" />
 </div>
 
-Open [howisFelix.today](https://howisfelix.today) to see all graphs and data I've created with this project, as well as details about how you can use this project for yourself.
+Check out [howisFelix.today](https://howisfelix.today) to see all graphs and data I've created with this project, as well as details about how you can use this project for yourself.
 
