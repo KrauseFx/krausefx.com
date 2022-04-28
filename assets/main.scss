@@ -75,6 +75,12 @@ $no-sidebar: "800px";
     display: inline;
   }
 }
+@media screen and (max-width: $no-sidebar) {
+  #how-is-felix-overview {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
 
 .pagination {
   text-align: center;

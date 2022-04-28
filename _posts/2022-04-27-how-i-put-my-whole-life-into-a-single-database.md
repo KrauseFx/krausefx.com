@@ -22,7 +22,7 @@ Back in 2019, I started collecting all kinds of [metrics about my life](https://
 
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="/assets/posts/howisfelix/iPad-1.png" style="max-width: 550px" />
+  <img src="https://krausefx.com/assets/posts/howisfelix/iPad-1.png" style="max-width: 550px" />
 </div>
 
 
@@ -41,8 +41,17 @@ Naturally after I started collecting this data, I wanted to visualize what I was
 I selected 42 graphs to show publicly on [howisFelix.today](https://howisfelix.today)
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="/assets/posts/howisfelix/Desktop-3.png" style="" />
+  <a href="https://howisfelix.today">
+    <img src="/assets/posts/howisfelix/Overview-Portrait-1-compressed.png" id="how-is-felix-overview" />
+  </a>
 </div>
 
 Check out [howisFelix.today](https://howisfelix.today) to see all graphs and data I've created with this project, as well as details about how you can use this project for yourself. You can check out the full source code on [KrauseFx/FxLifeSheet](https://github.com/KrauseFx/FxLifeSheet).
 
+<style type="text/css">
+  #how-is-felix-overview {
+    max-width: calc(100% + 340px);
+    width: 1200px;
+  }
+  /* More css in main.scss */
+</style>
