@@ -22,7 +22,9 @@ Back in 2019, I started collecting all kinds of [metrics about my life](https://
 
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="https://krausefx.com/assets/posts/howisfelix/iPad-1.png" style="max-width: 550px" />
+  <a href="https://howisfelix.today">
+    <img src="https://krausefx.com/assets/posts/howisfelix/iPad-1.png" style="max-width: 550px" />
+  </a>
 </div>
 
 
