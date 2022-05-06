@@ -9,16 +9,16 @@ published: true
 meta: {}
 ---
 
-<h1 style="text-align: center; margin-bottom: 40px; margin-top: -50px">About Felix Krause</h1>
+<h1 style="text-align: center; margin-bottom: 30px; margin-top: -60px">About</h1>
 
 <div id="leftCol">
-  <img src="/assets/FelixKrauseProfilePicture.jpg" width="290" style="margin-bottom: 10px" />
+  <img src="/assets/FelixKrauseProfilePicture.jpg" width="290" style="margin-bottom: 10px; margin-top: 5px;" />
   <br />
   <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="https://fastlane.tools" target="_blank">fastlane</a></small></p>
 </div>
 
 <div id="rightCol">
-  <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>.</p>
+  <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>, as well as <a href="https://howisFelix.today">howisFelix.today</a></p>
 
   <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 31,000,000 developer hours and is used by hundreds of thousands of companies around the world. My work got featured on various news platforms, like <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a> and <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30 under 30</a> (German).</p>
 
@@ -43,7 +43,7 @@ meta: {}
   <p>To see my current location, upcoming trips, and more, check out <a href="https://howisFelix.today" target="_blank">howisFelix.today</a>.</p>
 
   <p><b>Previous work and projects</b></p>
-  <p>Product Hunt, MindNode, Wunderlist, Bikemap, xcode-install amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
+  <p>Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
 
   <p>I moved to a new place <a href="/blog/going-nomad">every month</a> without having an apartment for 2.5 years</p>
 
