@@ -38,7 +38,7 @@ meta: {}
 
   <p><b>Speaking</b></p>
 
-  <p>I spoke at various conferences around the world, most recently Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below. Check out my <a href="https://github.com/krausefx/speaking" target="_blank">speaking schedule</a>.</p>
+  <p>I spoke at various conferences around the world, most recently Madrid, Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below.
 
   <p>To see my current location, upcoming trips, and more, check out <a href="https://howisFelix.today" target="_blank">howisFelix.today</a>.</p>
 
