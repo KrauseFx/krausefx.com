@@ -33,6 +33,7 @@ Both the iOS Instagram and Facebook app render all third party links within thei
   - Safari already [blocks third party cookies by default](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/)
 - Google Chrome is [soon phasing out third party cookies](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html)
 - Firefox just announced [Total Cookie Protection](https://blog.mozilla.org/en/products/firefox/firefox-rolls-out-total-cookie-protection-by-default-to-all-users-worldwide/) by default to 
+- Some ISPs [used to inject their own tracking/ad code into all websites](https://www.infoworld.com/article/2925839/code-injection-new-low-isps.html), however they could only do it for unencrypted pages. With the [rise of HTTPs by default](https://transparencyreport.google.com/https/overview), this isn't an option any more. However, the approach the Instagram & Facebook app use here works for any website, no matter if encrypted or not.
 
 Meta is actively working around the App Tracking Transparency permission system, that was designed to prevent this exact type of data collection.
 
@@ -65,7 +66,7 @@ To summarize the risks and disadvantages of having in-app browsers:
 - **Stealing of user credentials, physical addresses**, API keys, etc.
 - **Ads & Referrals:** The host app can inject advertisements into the website, or replace the ads API key to steal revenue from the host app, or replace all URLs to include your referral code ([this happened before](https://twitter.com/cryptonator1337/status/1269201480105578496))
 - **Security:** Browsers spent years optimising the security UX of the web, like showing the HTTPs encryption status, warning the user about sketchy or unencrypted websites, and more
-- Injecting additional JavaScript code onto a third party website can cause issues and glitches
+- Injecting additional JavaScript code onto a third party website can cause issues and glitches, potentially breaking the website
 - The user’s browser extensions & content blockers aren’t available
 - Deep linking doesn’t work well in most cases
 - Often no easy way to share a link via other platforms (e.g. via Email, AirDrop, etc.)
