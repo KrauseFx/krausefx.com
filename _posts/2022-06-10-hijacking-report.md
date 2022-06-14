@@ -63,18 +63,18 @@ Most social networks, including Instagram and Facebook, offer a decent mobile-we
 
 ### How to protect yourself as a website provider?
 
-Until Facebook resolves this issue (if ever), you can quite easily trick the Instagram and Facebook app to believe the Meta Pixel is already installed. Just add the following to your HTML code
+Until Facebook resolves this issue (if ever), you can quite easily trick the Instagram and Facebook app to believe the Meta Pixel is already installed. Just add the following to your HTML code:
 
-```html
+```
 <span id="iab-pcm-sdk"></span>
 <span id="iab-autofill-sdk"></span>
 ```
 
-This will still have the Facebook and Instagram iOS app run JavaScript to verify the two SDKs are setup, but won’t import, nor run, any other external JS code.
+This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected.
 
 ### Meta Pixel
 
-TODO: intro sentence
+The external JavaScript file the Instagram app injects ([connect.facebook.net/en_US/pcm.js](https://connect.facebook.net/en_US/pcm.js)) is the <i>Meta Pixel</i>, as well as some code to build a bridge to communicate with the host app.
 
 > The Meta Pixel is a snippet of JavaScript code that **allows you to track visitor activity on your website**. It works by loading a small library of functions which you can use whenever a site visitor takes an action that you want to track [...]
 >
@@ -83,13 +83,13 @@ TODO: intro sentence
 > - Button Click Data – Includes any buttons clicked by site visitors, the labels of those buttons and any pages visited as a result of the button clicks.
 > - Form Field Names – Includes website field names like email, address, quantity, etc., for when you purchase a product or service. We don't capture field values unless you include them as part of Advanced Matching or optional values.
 
-via [developers.facebook.com/docs/meta-pixel](https://developers.facebook.com/docs/meta-pixel) <small>(June 2022)</small>
+&ndash; [developers.facebook.com/docs/meta-pixel](https://developers.facebook.com/docs/meta-pixel) <small>(June 2022)</small>
 
 ## How it works
 
 To my knowledge, there is no good way to monitor any JavaScript commands that get executed by the host iOS app ([let me know if you know of a better way](https://krausefx.com/about)).
 
-So I created a new, plain HTML file, with some JavaScript code to override some of the `document.` methods:
+I created a new, plain HTML file, with some JS code to override some of the `document.` methods:
 
 ```javascript
 document.getElementById = function(a, b) {
@@ -98,7 +98,7 @@ document.getElementById = function(a, b) {
 }
 ```
 
-Hosting that HTML file, sending the URL as an Instagram DM, and opening it inside the in-app browser, yielded the following:
+Opening that HTML file from the iOS Instagram app yielded the following:
 
 <div style="text-align: center">
   <img src="/assets/posts/hijacking.report/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" />
