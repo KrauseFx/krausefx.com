@@ -61,7 +61,7 @@ Overall the goal of this project wasn’t to get a precise list of data that is 
 
 To summarize the risks and disadvantages of having in-app browsers:
 
-- **Privacy & Analytics:** The host app can track literally everything happening on the website, every tap, input, scroll, as well as data shown like purchases
+- **Privacy & Analytics:** The host app can track literally everything happening on the website, every tap, input, scrolling behaviour, which content gets copy & pasted, as well as data shown like purchases
 - **Stealing of user credentials, physical addresses**, API keys, etc.
 - **Ads & Referrals:** The host app can inject advertisements into the website, or replace the ads API key to steal revenue from the host app, or replace all URLs to include your referral code ([this happened before](https://twitter.com/cryptonator1337/status/1269201480105578496))
 - **Security:** Browsers spent years optimising the security UX of the web, like showing the HTTPs encryption status, warning the user about sketchy or unencrypted websites, and more
@@ -99,6 +99,8 @@ Until Facebook resolves this issue (if ever), you can quite easily trick the Ins
 
 This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected.
 
+It's easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn't find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I'd [love to know](https://twitter.com/KrauseFx).
+
 ### Meta Pixel
 
 The external JavaScript file the Instagram app injects ([connect.facebook.net/en_US/pcm.js](https://connect.facebook.net/en_US/pcm.js)) is the <i>Meta Pixel</i>, as well as some code to build a bridge to communicate with the host app.
@@ -112,20 +114,22 @@ The external JavaScript file the Instagram app injects ([connect.facebook.net/en
 
 &ndash; [developers.facebook.com/docs/meta-pixel](https://developers.facebook.com/docs/meta-pixel) <small>(June 2022)</small>
 
+I highlighted `"The Meta Pixel allows you to track visitor activity on your website"`, as this is where the problem lies: It's perfectly okay for a website provider to decide to implement the Meta pixel to track visitor activity. However in this case, the website provider **did not** consent to having the Facebook Pixel installed. On top of that, the website provider doesn't even have a way to opt-out.
+
 ## How it works
 
-To my knowledge, there is no good way to monitor any JavaScript commands that get executed by the host iOS app ([let me know if you know of a better way](https://krausefx.com/about)).
+To my knowledge, there is no good way to monitor any JavaScript commands that get executed by the host iOS app ([would love to hear if there is a better way](https://twitter.com/KrauseFx)).
 
 I created a new, plain HTML file, with some JS code to override some of the `document.` methods:
 
 ```javascript
 document.getElementById = function(a, b) {
-    resultsList.innerHTML += "<li>document.getElementById(\"" + a + "\")</li>"
+    appendCommand('document.getElementById("' + a + '")')
     return originalGetElementById.apply(this, arguments);
 }
 ```
 
-Full source code is available on [GitHub](https://github.com/KrauseFx/hijacking.report/blob/master/index.html).
+Full source code is available on [GitHub](https://github.com/KrauseFx/hijacking.report).
 
 Opening that HTML file from the iOS Instagram app yielded the following:
 
@@ -197,15 +201,30 @@ At the moment of writing, there is no App Review Rule to prohibit companies from
 
 &ndash; [Apple SFSafariViewController docs](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) <small>(June 2022)</small>
 
-**A few immediate steps to take:**
+**Introducing `App-Bound Domains`**
 
-Update the App Review Rules to require the use of `SFSafariViewController` when displaying any third party websites.
-- The only exception should be browser apps
+[App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) is an excellent new `WebKit` feature to make it possible for developers to offer a safer in-app browsing experience when using `WKWebView`. As an app developer, you can define which domains your app can access, and all web requests will be restricted to those domains. To disable the protection, a user would have to explicitly disable it in the iOS settings app.
+
+App-Bound Domains went live with iOS 14 (~1.5 years ago), however to this day, it's only an opt-in option for developers, meaning the vast majority of iOS apps don't make use of this feature.
+
+> If the developers of SocialApp **want a better user privacy experience** they have two paths forward:
+> - Use `SafariViewController` instead of `WKWebView` for in-app browsing. `SafariViewController` protects user data from SocialApp by loading pages outside of SocialApp’s process space. SocialApp can guarantee it is giving its users the best available user privacy experience while using SafariViewController.
+> - Opt-in to App-Bound Domains. The additional `WKWebView` restrictions from App-Bound Domains ensure that SocialApp is not able to track users using the APIs outlined above.
+
+I highlighted the `"want a better user privacy experience"` part, as this is the missing piece: App-Bound Domains should be a requirement for all iOS apps, since the social media apps are the ones injecting the tracking code.
+
+**A few immediate steps for Apple to take:**
+
+Update the App Review Rules to require the use of `SFSafariViewController` or [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) when displaying any third party websites.
+
+- There should be only a few exception (like browser apps) that have an extra permission screen
 - First-party websites/content can still be displayed using the `WKWebView` class, as they are often used for UI elements, or the app actually modifying their first party content (e.g. auto-dismissing of their own cookie banners)
+
+I've also submitted a radar ([rdar://38109139](https://openradar.appspot.com/radar?id=4963695432040448)) to Apple 4 years ago.
 
 ### For Meta
 
-Do what WhatsApp is already doing: Using Safari or `SFSafariViewController` for all third party websites.
+Do what Meta is already doing with WhatsApp: Using Safari or `SFSafariViewController` for all third party websites.
 
 ## Hijacking.report website
 
