@@ -32,6 +32,7 @@ Both the iOS Instagram and Facebook app render all third party links within thei
   - As of iOS 14.5 [App Tracking Transparency puts the user in control](https://support.apple.com/en-us/HT212025). It requires apps to get the user’s permission before tracking their data across apps or websites owned by other companies.
   - Safari already [blocks third party cookies by default](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/)
 - Google Chrome is [soon phasing out third party cookies](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html)
+- Firefox just announced [Total Cookie Protection](https://blog.mozilla.org/en/products/firefox/firefox-rolls-out-total-cookie-protection-by-default-to-all-users-worldwide/) by default to 
 
 Meta is actively working around the App Tracking Transparency permission system, that was designed to prevent this exact type of data collection.
 
@@ -43,7 +44,30 @@ Meta is actively working around the App Tracking Transparency permission system,
 
 &ndash; [Daring Fireball](https://daringfireball.net/linked/2022/02/03/facebook-apple-browser-carve-out) & [MacWorld](https://www.macworld.com/article/611551/facebook-app-tracking-transparency-iphone-quarterly-results.html)
 
-With 1 Billion active Instagram users, the amount of data <i>Meta</i> can collect by injecting tracking SDKs into every third party website opened from the Instagram app is a potentially staggering amount.
+With 1 Billion active Instagram users, the amount of data <i>Meta</i> can collect by injecting tracking SDKs into every third party website opened from the Instagram app is a potentially staggering amount. 
+With web browsers and iOS adding more and more privacy controls into the user's hands, it becomes clear why Meta would be interested in being able to monitor web traffic on external websites.
+
+### Disclaimer
+
+I don't have proof over the precise data Instagram is sending back home. The Instagram app is well protected against human-in-the-middle attacks, and only by modifying the Android binary, running it in a simulator, I was able to inspect some of its web traffic.
+
+<img src="/assets/posts/hijacking.report/proxyman-android.png" />
+
+Even then, most of the actual data had another layer of encryption/compression. It is clear that the development team really doesn't want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
+
+<img src="/assets/posts/hijacking.report/proxyman-android-details-3.png" />
+
+Overall the goal of this project wasn't to get a precise list of data that is actually sent back, but to highlight the privacy & security issues that are possible due to the use of in-app browsers, as well as showing that companies are exploiting this loophole already.
+
+To summarize the risks and disadvantages of having in-app browsers:
+
+- **Privacy & Analytics:** The host app can track literally everything happening on the website, every tap, input, scroll, as well as data shown like purchases
+- **Stealing of user credentials, physical addresses**, API keys, etc.
+- **Ads & Referrals:** The host app can inject advertisements into the website, or replace the ads API key to steal revenue from the host app, or replace all URLs to include your referral code ([this happened before](https://twitter.com/cryptonator1337/status/1269201480105578496))
+- **Security:** Browsers spent years optimising the security UX of the web, like showing the HTTPs encryption status, warning the user about sketchy or unencrypted websites, and more
+- The user's browser extensions & content blockers aren't available
+- Deep linking doesn't work well in most cases
+- Often no easy way to share a link via other platforms (e.g. via Email, AirDrop, etc.)
 
 ----
 
@@ -98,6 +122,8 @@ document.getElementById = function(a, b) {
 }
 ```
 
+Full source code is available on [GitHub](https://github.com/KrauseFx/hijacking.report/blob/master/index.html).
+
 Opening that HTML file from the iOS Instagram app yielded the following:
 
 <div style="text-align: center">
@@ -135,7 +161,7 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
   </tr>
 </table>
 
-WhatsApp is opening iOS Safari by default.
+WhatsApp is opening iOS Safari by default, therefore no issues.
 
 ## Technical Details
 
