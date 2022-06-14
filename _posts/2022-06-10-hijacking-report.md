@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'iOS Privacy: How Instagram and Facebook inject JavaScript into third party websites'
+title: 'iOS Privacy: Instagram and Facebook inject code into third party websites'
 categories: []
 tags:
 - ios
@@ -9,6 +9,7 @@ tags:
 - instagram
 - meta
 - facebook
+- sniffing
 status: publish
 type: post
 published: true
@@ -21,13 +22,9 @@ Both the iOS Instagram and Facebook app render all third party links within thei
 
 ### What does Meta do?
 
-<div style="text-align: center; margin-bottom: 15px;">
-  <img src="/assets/posts/hijacking.report/flow-chart.png" style="max-width: 450px;" />
-</div>
-
-1. Links to external websites are rendered inside the Instagram app, instead of using the built-in Safari or the Apple recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller)
-2. This allows Instagram to monitor everything happening on external websites, without the consent from the user, nor the website provider.
-3. The Instagram app injects the <a href="https://developers.facebook.com/docs/meta-pixel">Meta Tracking Pixel</a> into any third party website which allows Instagram to monitor all user interactions with the external website, like every button/link tapped and any form inputs.
+- Links to external websites are rendered inside the Instagram app, instead of using the built-in Safari or the Apple recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller)
+- This allows Instagram to monitor everything happening on external websites, without the consent from the user, nor the website provider.
+- The Instagram app injects the <a href="https://developers.facebook.com/docs/meta-pixel">Meta Tracking Pixel</a> into any third party website which allows Instagram to monitor all user interactions with the external website, like every button/link tapped and any form inputs.
 
 ### Why is this a big deal?
 
@@ -62,11 +59,11 @@ Most in-app browsers will have a way to open the currently rendered website in S
 
 #### Use the web version
 
-Most social networks, including Instagram and Facebook, offer a decent mobile-web version, offering a similar feature set. In the case of Instagram, you can use https://instagram.com without issues in iOS Safari.
+Most social networks, including Instagram and Facebook, offer a decent mobile-web version, offering a similar feature set. In the case of Instagram, you can use `https://instagram.com` without issues in iOS Safari.
 
 ### How to protect yourself as a website provider?
 
-Until Facebook publishes an official solution (if ever), you can quite easily trick the Instagram and Facebook app to believe the Meta Pixel is already installed. Just add the following to your HTML code
+Until Facebook resolves this issue (if ever), you can quite easily trick the Instagram and Facebook app to believe the Meta Pixel is already installed. Just add the following to your HTML code
 
 ```html
 <span id="iab-pcm-sdk"></span>
@@ -115,7 +112,7 @@ Comparing this to what happens when using a normal browser, or in this case, Tel
 
 As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn’t cause any of those JavaScript events.
 
-## Technical Details
+## Testing various Meta's apps
 
 <table class="hijacking-report-screenshot-table">
   <tr>
@@ -138,7 +135,13 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
   </tr>
 </table>
 
-Looking at what Meta's apps do:
+WhatsApp is opening iOS Safari by default.
+
+## Technical Details
+
+<div style="text-align: center; margin-bottom: 15px;">
+  <img src="/assets/posts/hijacking.report/flow-chart.png" style="max-width: 450px;" />
+</div>
 
 - They check if there is an element with the ID `iab-pcm-sdk`: surprisingly I found very little information about this online. Basically it seems to be a [cross-platform tracking SDK provided by IAB Tech Lab](https://iabtechlab.com/wp-content/uploads/2021/04/Authenticated-UID-APAC-v2.0-Deck.pdf), however I don’t know anything about the relationship between Meta and [IAB Tech Lab](https://iabtechlab.com/).
 - If no element with the ID `iab-pcm-sdk` was found, the Meta's apps create a new `script` element, sets its source to [`https://connect.facebook.net/en_US/pcm.js`](https://connect.facebook.net/en_US/pcm.js), which is the source code for the Meta tracking pixel
