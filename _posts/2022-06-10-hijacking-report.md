@@ -49,7 +49,7 @@ With web browsers and iOS adding more and more privacy controls into the user's 
 
 ### Disclaimer
 
-I don't have proof over the precise data Instagram is sending back home. The Instagram app is well protected against human-in-the-middle attacks, and only by modifying the Android binary, running it in a simulator, I was able to inspect some of its web traffic.
+I don't have proof over the precise data Instagram is sending back home. The Instagram app is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator, I was able to inspect some of its web traffic.
 
 <img src="/assets/posts/hijacking.report/proxyman-android.png" />
 
@@ -57,7 +57,7 @@ Even then, most of the actual data had another layer of encryption/compression. 
 
 <img src="/assets/posts/hijacking.report/proxyman-android-details-3.png" />
 
-Overall the goal of this project wasn't to get a precise list of data that is actually sent back, but to highlight the privacy & security issues that are possible due to the use of in-app browsers, as well as showing that companies are exploiting this loophole already.
+Overall the goal of this project wasn't to get a precise list of data that is sent back, but to highlight the privacy & security issues that are possible due to the use of in-app browsers, as well as showing that companies are exploiting this loophole already.
 
 To summarize the risks and disadvantages of having in-app browsers:
 
@@ -65,9 +65,12 @@ To summarize the risks and disadvantages of having in-app browsers:
 - **Stealing of user credentials, physical addresses**, API keys, etc.
 - **Ads & Referrals:** The host app can inject advertisements into the website, or replace the ads API key to steal revenue from the host app, or replace all URLs to include your referral code ([this happened before](https://twitter.com/cryptonator1337/status/1269201480105578496))
 - **Security:** Browsers spent years optimising the security UX of the web, like showing the HTTPs encryption status, warning the user about sketchy or unencrypted websites, and more
+- Injecting additional JavaScript code onto a third party website can cause issues and glitches
 - The user's browser extensions & content blockers aren't available
 - Deep linking doesn't work well in most cases
 - Often no easy way to share a link via other platforms (e.g. via Email, AirDrop, etc.)
+
+Instagram's in-app browser supports auto-fill for your address, as well as payment information. There is no reason for this to exist in the first place, with all of this already built into the operating system, or the web browser itself.
 
 ----
 
@@ -177,6 +180,12 @@ WhatsApp is opening iOS Safari by default, therefore no issues.
 ## Proposals
 
 ### For Apple
+
+Apple is doing an excellent job building their platform with the user's privacy in mind. One of the 4 privacy principals
+
+> **User Transparency and Control:** Making sure that users know what data is shared and how it is used, and that they can exercise control over it.
+
+&ndash; [Apple Privacy PDF](https://www.apple.com/privacy/docs/A_Day_in_the_Life_of_Your_Data.pdf) <small>(April 2021)</small>
 
 At the moment of writing, there is no App Review Rule to prohibit companies from building their own in-app browser to watch the user browsing the web, read all inputs, and inject additional ads and tracking to third party websites. However Apple is clearly recommending that we use `SFSafariViewController`.
 
