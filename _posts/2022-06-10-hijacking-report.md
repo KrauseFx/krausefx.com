@@ -79,17 +79,14 @@ This will still have the Facebook and Instagram iOS app run JavaScript to verify
 
 TODO: intro sentence
 
-> The Meta Pixel is a snippet of JavaScript code that allows you to track visitor activity on your website. It works by loading a small library of functions which you can use whenever a site visitor takes an action (called an event) that you want to track (called a conversion). Tracked conversions appear in the Ads Manager where they can be used to measure the effectiveness of your ads, to define custom audiences for ad targeting, for dynamic ads campaigns, and to analyze that effectiveness of your website's conversion funnels.
-> 
+> The Meta Pixel is a snippet of JavaScript code that **allows you to track visitor activity on your website**. It works by loading a small library of functions which you can use whenever a site visitor takes an action that you want to track [...]
+>
 > The Meta Pixel can collect the following data:
-> 
-> - Http Headers – Anything present in HTTP headers. HTTP Headers are a standard web protocol sent between any browser request and any server on the internet. HTTP > Headers include IP addresses, information about the web browser, page location, document, referrer and person using the website.
-> - Pixel-specific Data – Includes Pixel ID and the Facebook Cookie.
+> - [...]
 > - Button Click Data – Includes any buttons clicked by site visitors, the labels of those buttons and any pages visited as a result of the button clicks.
-> - Optional Values – Developers and marketers can optionally choose to send additional information about the visit through Custom Data events. Example custom data > events are conversion value, page type and more.
-> - Form Field Names – Includes website field names like email, address, quantity, etc., for when you purchase a product or service. We don't capture field values > unless you include them as part of Advanced Matching or optional values.
+> - Form Field Names – Includes website field names like email, address, quantity, etc., for when you purchase a product or service. We don't capture field values unless you include them as part of Advanced Matching or optional values.
 
-via https://developers.facebook.com/docs/meta-pixel 2022-06-08
+via [developers.facebook.com/docs/meta-pixel](https://developers.facebook.com/docs/meta-pixel) <small>(June 2022)</small>
 
 ## How it works
 
@@ -110,13 +107,13 @@ Hosting that HTML file, sending the URL as an Instagram DM, and opening it insid
   <img src="/assets/posts/hijacking.report/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" />
 </div>
 
-Whoah, okay, and just to be sure this doesn’t happen when using a normal browser, or in this case, Telegram, which uses the recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller):
+Comparing this to what happens when using a normal browser, or in this case, Telegram, which uses the recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller):
 
 <div style="text-align: center">
   <img src="/assets/posts/hijacking.report/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" />
 </div>
 
-As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn’t cause any of those JavaScript events, indicating that Instagram is doing something sketchy here.
+As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn’t cause any of those JavaScript events.
 
 ## Technical Details
 
@@ -143,7 +140,7 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 
 Looking at what Meta's apps do:
 
-- They check if there is an element with the ID `iab-pcm-sdk`: surprisingly I found quite little information about this online. Basically it seems to be a [cross-platform tracking SDK provided by IAB Tech Lab](https://iabtechlab.com/wp-content/uploads/2021/04/Authenticated-UID-APAC-v2.0-Deck.pdf), however I don’t know anything about the relationship between Meta and [IAB Tech Lab](https://iabtechlab.com/).
+- They check if there is an element with the ID `iab-pcm-sdk`: surprisingly I found very little information about this online. Basically it seems to be a [cross-platform tracking SDK provided by IAB Tech Lab](https://iabtechlab.com/wp-content/uploads/2021/04/Authenticated-UID-APAC-v2.0-Deck.pdf), however I don’t know anything about the relationship between Meta and [IAB Tech Lab](https://iabtechlab.com/).
 - If no element with the ID `iab-pcm-sdk` was found, the Meta's apps create a new `script` element, sets its source to [`https://connect.facebook.net/en_US/pcm.js`](https://connect.facebook.net/en_US/pcm.js), which is the source code for the Meta tracking pixel
 - It then finds the first `script` element on your website, and inserts Meta’s JS script right before yours, **injecting the Meta Pixel onto your website**
 - Meta's apps also query for `iframes` on your website, however I couldn't find any indication of what they're doing with it
@@ -171,6 +168,14 @@ Update the App Review Rules to require the use of `SFSafariViewController` when 
 ### For Meta
 
 Do what WhatsApp is already doing: Using Safari or `SFSafariViewController` for all third party websites.
+
+## Hijacking.report website
+
+As part of this research project, I want to share the tools I built to help everyone do the same.
+
+Introducing <a href="https://hijacking.report">hijacking.report</a>, a simple standalone website that prints out a list of all the JavaScript commands that get executed by the host iOS app.
+
+To use <a href="https://hijacking.report">hijacking.report</a>, you'll have to open the link from within the app you want to test. If it's a social media app, it's easiest to just post the link and open it immediately after. If it's a messenger app, send the link to yourself or a friend and open it from there.
 
 <style type="text/css">
   .hijacking-report-screenshot-table {
