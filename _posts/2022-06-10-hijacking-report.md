@@ -52,11 +52,11 @@ With web browsers and iOS adding more and more privacy controls into the user’
 
 I don’t have proof over the precise data Instagram is sending back home. The Instagram app is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator, I was able to inspect some of its web traffic.
 
-<img src="/assets/posts/hijacking.report/proxyman-android.png" />
+<a href="/assets/posts/hijacking.report/proxyman-android.png" target="_blank"><img src="/assets/posts/hijacking.report/proxyman-android.png" /></a>
 
 Even then, most of the actual data had another layer of encryption/compression. It is clear that the development team really doesn’t want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
 
-<img src="/assets/posts/hijacking.report/proxyman-android-details-3.png" />
+<a href="/assets/posts/hijacking.report/proxyman-android-details-3.png" target="_blank"><img src="/assets/posts/hijacking.report/proxyman-android-details-3.png" /></a>
 
 Overall the goal of this project wasn’t to get a precise list of data that is sent back, but to highlight the privacy & security issues that are possible due to the use of in-app browsers, as well as showing that companies are exploiting this loophole already.
 
@@ -78,7 +78,7 @@ Instagram’s in-app browser supports auto-fill for your address, as well as pay
 ### How to protect yourself as a user?
 
 <div style="float: right">
-  <img src="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" />
+  <a href="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" /></a>
 </div>
 
 #### Escape the in-app-webview
@@ -135,13 +135,13 @@ Full source code is available on [GitHub](https://github.com/KrauseFx/hijacking.
 Opening that HTML file from the iOS Instagram app yielded the following:
 
 <div style="text-align: center">
-  <img src="/assets/posts/hijacking.report/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" />
+  <a href="/assets/posts/hijacking.report/instagram_framed_cut.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
 </div>
 
 Comparing this to what happens when using a normal browser, or in this case, Telegram, which uses the recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller):
 
 <div style="text-align: center">
-  <img src="/assets/posts/hijacking.report/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" />
+  <a href="/assets/posts/hijacking.report/SFSafariViewController_framed_cut.png" target="_blank"><img src="/assets/posts/hijacking.report/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
 </div>
 
 As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn’t cause any of those JavaScript events.
@@ -150,22 +150,22 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 
 <table class="hijacking-report-screenshot-table">
   <tr>
-    <th>Instagram</th>
-    <th>Messenger</th>
+    <th>Instagram iOS</th>
+    <th>Messenger iOS</th>
   </tr>
   <tr>
-    <td><img src="/assets/posts/hijacking.report/instagram_framed.png"></td>
-    <td><img src="/assets/posts/hijacking.report/messenger_framed.png"></td>
+    <td><a href="/assets/posts/hijacking.report/instagram_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_framed.png"></a></td>
+    <td><a href="/assets/posts/hijacking.report/messenger_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/messenger_framed.png"></a></td>
   </tr>
 </table>
 <table class="hijacking-report-screenshot-table">
   <tr>
-    <th>Facebook</th>
+    <th>Facebook iOS</th>
     <th>Instagram Android</th>
   </tr>
   <tr>
-    <td><img src="/assets/posts/hijacking.report/facebook_framed.png"></td>
-    <td><img src="/assets/posts/hijacking.report/android.png"></td>
+    <td><a href="/assets/posts/hijacking.report/facebook_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/facebook_framed.png"></a></td>
+    <td><a href="/assets/posts/hijacking.report/android.png" target="_blank"><img src="/assets/posts/hijacking.report/android.png"></a></td>
   </tr>
 </table>
 
@@ -174,7 +174,7 @@ WhatsApp is opening iOS Safari by default, therefore no issues.
 ## Technical Details
 
 <div style="text-align: center; margin-bottom: 15px;">
-  <img src="/assets/posts/hijacking.report/flow-chart.png" style="max-width: 450px;" />
+  <a href="/assets/posts/hijacking.report/flow-chart.png" target="_blank"><img src="/assets/posts/hijacking.report/flow-chart.png" style="max-width: 450px;" /></a>
 </div>
 
 - They check if there is an element with the ID `iab-pcm-sdk`: surprisingly I found very little information about this online. Basically it seems to be a [cross-platform tracking SDK provided by IAB Tech Lab](https://iabtechlab.com/wp-content/uploads/2021/04/Authenticated-UID-APAC-v2.0-Deck.pdf), however I don’t know enough about the relationship between Meta and [IAB Tech Lab](https://iabtechlab.com/) (e.g. [this tweet](https://twitter.com/IABTechLab/status/1519414703239438336))
@@ -246,6 +246,6 @@ To use <a href="https://hijacking.report">hijacking.report</a>, you’ll have to
     text-align: center;
   }
   .hijacking-report-screenshot-table img {
-    max-height: 420px;
+    max-height: 460px;
   }
 </style>
