@@ -38,7 +38,7 @@ The iOS Instagram and Facebook app render all third party links within their app
   - Safari already [blocks third party cookies by default](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/)
 - Google Chrome is [soon phasing out third party cookies](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html)
 - Firefox just announced [Total Cookie Protection](https://blog.mozilla.org/en/products/firefox/firefox-rolls-out-total-cookie-protection-by-default-to-all-users-worldwide/) by default to prevent any cross-page tracking
-- Some ISPs [used to inject their own tracking/ad code into all websites](https://www.infoworld.com/article/2925839/code-injection-new-low-isps.html), however they could only do it for unencrypted pages. With the [rise of HTTPs by default](https://transparencyreport.google.com/https/overview), this isn't an option any more. However, the approach the Instagram & Facebook app use here works for any website, no matter if encrypted or not.
+- Some ISPs [used to inject their own tracking/ad code into all websites](https://www.infoworld.com/article/2925839/code-injection-new-low-isps.html), however they could only do it for unencrypted pages. With the [rise of HTTPs by default](https://transparencyreport.google.com/https/overview), this isn't an option any more. However, the approach the Instagram & Facebook app uses here works for any website, no matter if it's encrypted or not.
 
 Meta is purposely working around the App Tracking Transparency permission system, that was designed to prevent this exact type of data collection. After its introduction, Meta announced:
 
@@ -66,7 +66,7 @@ The external JavaScript file the Instagram app injects ([connect.facebook.net/en
 
 &ndash; [developers.facebook.com/docs/meta-pixel](https://developers.facebook.com/docs/meta-pixel) <small>(June 2022)</small>
 
-I highlighted `"The Meta Pixel allows you to track visitor activity on your website"`, as this is where the problem lies: It's perfectly okay for a website provider to decide to implement the Meta pixel to track visitor activity. However in this case, the website provider **did not** consent to having the Facebook Pixel installed. On top of that, the website provider doesn't even have a way to opt-out.
+I highlighted `"The Meta Pixel allows you to track visitor activity on your website"`, as this is where the problem lies: It’s perfectly okay for a website provider to decide to implement the Meta pixel to track visitor activity. However in this case, the website provider **did not** consent to having the Facebook Pixel installed. On top of that, the website provider doesn’t even have a way to opt-out.
 
 ### Disclaimer
 
@@ -145,7 +145,7 @@ Comparing this to what happens when using a normal browser, or in this case, Tel
   <a href="/assets/posts/hijacking.report/SFSafariViewController_framed_cut.png" target="_blank"><img src="/assets/posts/hijacking.report/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
 </div>
 
-As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn't run any JS code.
+As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn’t run any JS code.
 
 ## Technical Details
 
@@ -183,7 +183,7 @@ Until Facebook resolves this issue (if ever), you can quite easily trick the Ins
 
 This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected.
 
-It's easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn't find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I'd [love to know](https://twitter.com/KrauseFx).
+It’s easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn’t find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I’d [love to know](https://twitter.com/KrauseFx).
 
 ## Proposals
 
@@ -209,7 +209,7 @@ At the moment of writing, there is no AppStore Review Rule that prohibits compan
 
 [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) is an excellent new `WebKit` feature making it possible for developers to offer a safer in-app browsing experience when using `WKWebView`. As an app developer, you can define which domains your app can access, and all web requests will be restricted to them. To disable the protection, a user would have to explicitly disable it in the iOS settings app.
 
-App-Bound Domains went live with iOS 14 (~1.5 years ago), however it's only an opt-in option for developers, meaning the vast majority of iOS apps don't make use of this feature.
+App-Bound Domains went live with iOS 14 (~1.5 years ago), however it’s only an opt-in option for developers, meaning the vast majority of iOS apps don’t make use of this feature.
 
 > If the developers of SocialApp **want a better user privacy experience** they have two paths forward:
 > - Use `SafariViewController` instead of `WKWebView` for in-app browsing. `SafariViewController` protects user data from SocialApp by loading pages outside of SocialApp’s process space. SocialApp can guarantee it is giving its users the best available user privacy experience while using SafariViewController.
@@ -222,11 +222,11 @@ I highlighted the `"want a better user privacy experience"` part, as this is the
 Update the App Review Rules to require the use of `SFSafariViewController` or [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) when displaying any third party websites.
 
 - There should be only a few exception (e.g. browser apps), that require two extra steps:
-  - Request an extra entitlement to ensure it's a valid use-case
+  - Request an extra entitlement to ensure it’s a valid use-case
   - Have the user confirm the extra permission
 - First-party websites/content can still be displayed using the `WKWebView` class, as they are often used for UI elements, or the app actually modifying their first party content (e.g. auto-dismissing of their own cookie banners)
 
-I've also submitted a radar ([rdar://38109139](https://openradar.appspot.com/radar?id=4963695432040448)) to Apple as part of my [past blog post](https://krausefx.com/blog/follow-user).
+I’ve also submitted a radar ([rdar://38109139](https://openradar.appspot.com/radar?id=4963695432040448)) to Apple as part of my [past blog post](https://krausefx.com/blog/follow-user).
 
 ### For Meta
 
