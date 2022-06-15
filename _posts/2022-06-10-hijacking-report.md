@@ -165,7 +165,7 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
   </tr>
   <tr>
     <td><a href="/assets/posts/hijacking.report/facebook_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/facebook_framed.png"></a></td>
-    <td><a href="/assets/posts/hijacking.report/android.png" target="_blank"><img src="/assets/posts/hijacking.report/android.png"></a></td>
+    <td><a href="/assets/posts/hijacking.report/android_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/android_framed.png"></a></td>
   </tr>
 </table>
 
