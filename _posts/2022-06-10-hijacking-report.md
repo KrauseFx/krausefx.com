@@ -40,7 +40,7 @@ The iOS Instagram and Facebook app render all third party links within their app
 - Firefox just announced [Total Cookie Protection](https://blog.mozilla.org/en/products/firefox/firefox-rolls-out-total-cookie-protection-by-default-to-all-users-worldwide/) by default to prevent any cross-page tracking
 - Some ISPs [used to inject their own tracking/ad code into all websites](https://www.infoworld.com/article/2925839/code-injection-new-low-isps.html), however they could only do it for unencrypted pages. With the [rise of HTTPs by default](https://transparencyreport.google.com/https/overview), this isn't an option any more. However, the approach the Instagram & Facebook app uses here works for any website, no matter if it's encrypted or not.
 
-Meta is purposely working around the App Tracking Transparency permission system, that was designed to prevent this exact type of data collection. After its introduction, Meta announced:
+Meta is purposely working around the App Tracking Transparency permission system, which was designed to prevent this exact type of data collection. After its introduction, Meta announced:
 
 > Apple’s simple iPhone alert is **costing Facebook $10 billion a year**
 
@@ -74,18 +74,18 @@ I don’t have a list of precise data Instagram sends back home. I do have proof
 
 <a href="/assets/posts/hijacking.report/proxyman-android.png" target="_blank"><img src="/assets/posts/hijacking.report/proxyman-android.png" /></a>
 
-Even then, most of the actual data had another layer of encryption/compression. It is clear that the they really don’t want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
+Even then, most of the actual data had another layer of encryption/compression. It is clear that they really don’t want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
 
 <a href="/assets/posts/hijacking.report/proxyman-android-details-3.png" target="_blank"><img src="/assets/posts/hijacking.report/proxyman-android-details-3.png" /></a>
 
-Overall the goal of this project wasn’t to get a precise list of data that is sent back, but to highlight the privacy & security issues that are possible due to the use of in-app browsers, as well as to proof that companies are already exploiting this loophole.
+Overall the goal of this project wasn’t to get a precise list of data that is sent back, but to highlight the privacy & security issues that are possible due to the use of in-app browsers, as well as to prove that companies are already exploiting this loophole.
 
 To summarize the risks and disadvantages of having in-app browsers:
 
-- **Privacy & Analytics:** The host app can track literally everything happening on the website, every tap, input, scrolling behaviour, which content gets copy & pasted, as well as data shown like purchases
+- **Privacy & Analytics:** The host app can track literally everything happening on the website, every tap, input, scrolling behavior, which content gets copy & pasted, as well as data shown like purchases
 - **Stealing of user credentials, physical addresses**, API keys, etc.
 - **Ads & Referrals:** The host app can inject advertisements into the website, or replace the ads API key to steal revenue from the host app, or replace all URLs to include your referral code ([this happened before](https://twitter.com/cryptonator1337/status/1269201480105578496))
-- **Security:** Browsers spent years optimising the security UX of the web, like showing the HTTPs encryption status, warning the user about sketchy or unencrypted websites, and more
+- **Security:** Browsers spent years optimizing the security UX of the web, like showing the HTTPs encryption status, warning the user about sketchy or unencrypted websites, and more
 - Injecting additional JavaScript code onto a third party website can cause issues and glitches, potentially breaking the website
 - The user’s browser extensions & content blockers aren’t available
 - Deep linking doesn’t work well in most cases
@@ -189,7 +189,7 @@ It’s easy for an app to detect if the current browser is the Instagram/Faceboo
 
 ### For Apple
 
-Apple is doing a fantastic job building their platform with the user’s privacy in mind. One of the 4 privacy principals:
+Apple is doing a fantastic job building their platform with the user’s privacy in mind. One of the 4 privacy principles:
 
 > **User Transparency and Control:** Making sure that users know what data is shared and how it is used, and that they can exercise control over it.
 
