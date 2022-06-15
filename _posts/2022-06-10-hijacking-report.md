@@ -50,7 +50,7 @@ Meta is purposely working around the App Tracking Transparency permission system
 
 &ndash; [Daring Fireball](https://daringfireball.net/linked/2022/02/03/facebook-apple-browser-carve-out) & [MacWorld](https://www.macworld.com/article/611551/facebook-app-tracking-transparency-iphone-quarterly-results.html)
 
-With 1 Billion active Instagram users, the amount of data Meta can collect by injecting tracking SDKs into every third party website opened from the Instagram app is a potentially staggering amount. 
+With 1 Billion active Instagram users, the amount of data Meta can collect by injecting the <i>Meta Pixel</i> into every third party website opened from the Instagram app is a potentially staggering amount. 
 With web browsers and iOS adding more and more privacy controls into the user’s hands, it becomes clear why Meta would be interested in being able to monitor web traffic on external websites.
 
 ### Meta Pixel
@@ -93,34 +93,30 @@ To summarize the risks and disadvantages of having in-app browsers:
 
 Instagram’s in-app browser supports auto-fill for your address, as well as payment information. There is no reason for this to exist in the first place, with all of this already built into the operating system, or the web browser itself.
 
-----
+## Testing various Meta’s apps
 
-### How to protect yourself as a user?
+<table class="hijacking-report-screenshot-table">
+  <tr>
+    <th>Instagram iOS</th>
+    <th>Messenger iOS</th>
+  </tr>
+  <tr>
+    <td><a href="/assets/posts/hijacking.report/instagram_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_framed.png"></a></td>
+    <td><a href="/assets/posts/hijacking.report/messenger_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/messenger_framed.png"></a></td>
+  </tr>
+</table>
+<table class="hijacking-report-screenshot-table">
+  <tr>
+    <th>Facebook iOS</th>
+    <th>Instagram Android</th>
+  </tr>
+  <tr>
+    <td><a href="/assets/posts/hijacking.report/facebook_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/facebook_framed.png"></a></td>
+    <td><a href="/assets/posts/hijacking.report/android_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/android_framed.png"></a></td>
+  </tr>
+</table>
 
-<div style="float: right; margin-left: 20px;">
-  <a href="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" /></a>
-</div>
-
-#### Escape the in-app-webview
-
-Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land on that screen, just use that option to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice.
-
-#### Use the web version
-
-Most social networks, including Instagram and Facebook, offer a decent mobile-web version, offering a similar feature set. You can use `https://instagram.com` without issues in iOS Safari.
-
-### How to protect yourself as a website provider?
-
-Until Facebook resolves this issue (if ever), you can quite easily trick the Instagram and Facebook app to believe the Meta Pixel is already installed. Just add the following to your HTML code:
-
-```
-<span id="iab-pcm-sdk"></span>
-<span id="iab-autofill-sdk"></span>
-```
-
-This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected.
-
-It's easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn't find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I'd [love to know](https://twitter.com/KrauseFx).
+WhatsApp is opening iOS Safari by default, therefore no issues.
 
 ## How it works
 
@@ -151,31 +147,6 @@ Comparing this to what happens when using a normal browser, or in this case, Tel
 
 As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn't run any JS code.
 
-## Testing various Meta’s apps
-
-<table class="hijacking-report-screenshot-table">
-  <tr>
-    <th>Instagram iOS</th>
-    <th>Messenger iOS</th>
-  </tr>
-  <tr>
-    <td><a href="/assets/posts/hijacking.report/instagram_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_framed.png"></a></td>
-    <td><a href="/assets/posts/hijacking.report/messenger_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/messenger_framed.png"></a></td>
-  </tr>
-</table>
-<table class="hijacking-report-screenshot-table">
-  <tr>
-    <th>Facebook iOS</th>
-    <th>Instagram Android</th>
-  </tr>
-  <tr>
-    <td><a href="/assets/posts/hijacking.report/facebook_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/facebook_framed.png"></a></td>
-    <td><a href="/assets/posts/hijacking.report/android_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/android_framed.png"></a></td>
-  </tr>
-</table>
-
-WhatsApp is opening iOS Safari by default, therefore no issues.
-
 ## Technical Details
 
 <div style="text-align: center; margin-bottom: 15px;">
@@ -186,6 +157,33 @@ WhatsApp is opening iOS Safari by default, therefore no issues.
 - If no element with the ID `iab-pcm-sdk` was found, the Meta’s apps create a new `script` element, sets its source to [`https://connect.facebook.net/en_US/pcm.js`](https://connect.facebook.net/en_US/pcm.js), which is the source code for the Meta tracking pixel
 - It then finds the first `script` element on your website, and inserts Meta’s JS script right before yours, **injecting the Meta Pixel onto your website**
 - Meta’s apps also query for `iframes` on your website, however I couldn’t find any indication of what they’re doing with it
+
+### How to protect yourself as a user?
+
+<div style="float: right; margin-left: 20px;">
+  <a href="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" /></a>
+</div>
+
+#### Escape the in-app-webview
+
+Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land on that screen, just use that option to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice.
+
+#### Use the web version
+
+Most social networks, including Instagram and Facebook, offer a decent mobile-web version, offering a similar feature set. You can use `https://instagram.com` without issues in iOS Safari.
+
+### How to protect yourself as a website provider?
+
+Until Facebook resolves this issue (if ever), you can quite easily trick the Instagram and Facebook app to believe the Meta Pixel is already installed. Just add the following to your HTML code:
+
+```
+<span id="iab-pcm-sdk"></span>
+<span id="iab-autofill-sdk"></span>
+```
+
+This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected.
+
+It's easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn't find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I'd [love to know](https://twitter.com/KrauseFx).
 
 ## Proposals
 
