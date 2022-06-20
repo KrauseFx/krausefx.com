@@ -53,6 +53,7 @@ meta: {}
 
 <h2>Personal Photos</h2>
 <div class="imageCarousel" id="personalCarousel">
+</div>
 
 <hr />
 
