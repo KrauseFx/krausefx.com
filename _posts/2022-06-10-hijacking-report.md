@@ -181,6 +181,18 @@ Until Facebook resolves this issue (if ever), you can quite easily trick the Ins
 <span id="iab-autofill-sdk"></span>
 ```
 
+Additionally, to prevent Facebook from tracking the user selecting any text on your website, add the following JS code
+
+```js
+const originalEventListener = document.addEventListener
+document.addEventListener = function(a, b) {
+    if (b.toString().indexOf("messageHandlers.fb_getSelection") > -1) {
+        b = null;
+    }
+    return originalEventListener.apply(this, arguments);
+}
+```
+
 This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected.
 
 It’s easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn’t find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I’d [love to know](https://twitter.com/KrauseFx).
