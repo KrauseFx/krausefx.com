@@ -47,14 +47,12 @@ meta: {}
 
   <p>I moved to a new place <a href="/blog/going-nomad">every month</a> without having an apartment for 2.5 years</p>
 
-  <p>Every other year I take the exact same photo as my Twitter/GitHub profile picture, introducing <a href="/blog/continuous-delivery-for-your-profile-picture">Continuous Delivery for your profile picture</a>.</p>
-</div>
+  <p>Every other year I take the exact same photo as my Twitter/GitHub profile picture, introducing <a href="/blog/continuous-delivery-for-your-profile-picture">Continuous Delivery for your profile picture</a>.</p></div>
 
 <hr style="margin-top: 35px" />
 
 <h2>Personal Photos</h2>
 <div class="imageCarousel" id="personalCarousel">
-</div>
 
 <hr />
 
