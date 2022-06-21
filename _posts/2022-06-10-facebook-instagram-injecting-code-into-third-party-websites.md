@@ -29,7 +29,7 @@ The iOS Instagram and Facebook app render all third party links within their app
 
 - Links to external websites are rendered inside the Instagram app, instead of using the built-in Safari or the Apple recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller).
 - This enables Instagram to monitor everything happening on external websites, without the consent from the user, nor the website provider.
-- The Instagram app injects the <a href="https://developers.facebook.com/docs/meta-pixel">Meta Tracking Pixel</a> into every third party website to monitor all user interactions, like every button & link tapped, as well as any form inputs.
+- The Instagram app injects the <a href="https://developers.facebook.com/docs/meta-pixel">Meta Tracking Pixel</a> into every third party website to monitor all user interactions, like every button & link tapped, text selections, screenshots, as well as any form inputs.
 
 ### Why is this a big deal?
 
@@ -50,8 +50,8 @@ Meta is purposely working around the App Tracking Transparency permission system
 
 &ndash; [Daring Fireball](https://daringfireball.net/linked/2022/02/03/facebook-apple-browser-carve-out) & [MacWorld](https://www.macworld.com/article/611551/facebook-app-tracking-transparency-iphone-quarterly-results.html)
 
-With 1 Billion active Instagram users, the amount of data Meta can collect by injecting the <i>Meta Pixel</i> into every third party website opened from the Instagram app is a potentially staggering amount. 
-With web browsers and iOS adding more and more privacy controls into the user’s hands, it becomes clear why Meta would be interested in being able to monitor web traffic on external websites.
+With 1 Billion active Instagram users, the amount of data Meta can collect by injecting the <i>Meta Pixel</i> into every third party website opened from the Instagram & Facebook app is a potentially staggering amount. 
+With web browsers and iOS adding more and more privacy controls into the user’s hands, it becomes clear why Meta is interested in monitoring all web traffic of external websites.
 
 ### Meta Pixel
 
@@ -70,19 +70,19 @@ I highlighted `"The Meta Pixel allows you to track visitor activity on your webs
 
 ### Disclaimer
 
-I don’t have a list of precise data Instagram sends back home. I do have proof that the Instagram and Facebook app actively run JavaScript commands to inject additional JS SDKs without the user’s consent. If Meta is doing this, they could also inject any other JS code. The Instagram app itself is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator, I was able to inspect some of its web traffic.
-
-<a href="/assets/posts/injecting-code/proxyman-android.png" target="_blank"><img src="/assets/posts/injecting-code/proxyman-android.png" /></a>
-
-Even then, most of the actual data had another layer of encryption/compression. It is clear that they really don’t want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
+I don’t have a list of precise data Instagram sends back home. I do have proof that the Instagram and Facebook app actively run JavaScript commands to inject additional JS SDKs without the user’s consent, as well as tracking the user's text selections. If Meta is doing this, they could also inject any other JS code. The Instagram app itself is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator, I was able to inspect some of its web traffic.
 
 <a href="/assets/posts/injecting-code/proxyman-android-details-3.png" target="_blank"><img src="/assets/posts/injecting-code/proxyman-android-details-3.png" /></a>
 
-Overall the goal of this project wasn’t to get a precise list of data that is sent back, but to highlight the privacy & security issues that are possible due to the use of in-app browsers, as well as to prove that companies are already exploiting this loophole.
+Even then, most of the actual data had another layer of encryption/compression. It is clear that they really don’t want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
+
+---
+
+Overall the goal of this project wasn’t to get a precise list of data that is sent back, but to highlight the privacy & security issues that are caused by the use of in-app browsers, as well as to prove that companies like Meta are already exploiting this loophole.
 
 To summarize the risks and disadvantages of having in-app browsers:
 
-- **Privacy & Analytics:** The host app can track literally everything happening on the website, every tap, input, scrolling behavior, which content gets copy & pasted, as well as data shown like purchases
+- **Privacy & Analytics:** The host app can track literally everything happening on the website, every tap, input, scrolling behavior, which content gets copy & pasted, as well as data shown like online purchases
 - **Stealing of user credentials, physical addresses**, API keys, etc.
 - **Ads & Referrals:** The host app can inject advertisements into the website, or replace the ads API key to steal revenue from the host app, or replace all URLs to include your referral code ([this happened before](https://twitter.com/cryptonator1337/status/1269201480105578496))
 - **Security:** Browsers spent years optimizing the security UX of the web, like showing the HTTPs encryption status, warning the user about sketchy or unencrypted websites, and more
@@ -91,7 +91,7 @@ To summarize the risks and disadvantages of having in-app browsers:
 - Deep linking doesn’t work well in most cases
 - Often no easy way to share a link via other platforms (e.g. via Email, AirDrop, etc.)
 
-Instagram’s in-app browser supports auto-fill for your address, as well as payment information. There is no reason for this to exist in the first place, with all of this already built into the operating system, or the web browser itself.
+Instagram’s in-app browser supports auto-fill of your address and payment information. However there is no legit reason for this to exist in the first place, with all of this already built into the operating system, or the web browser itself.
 
 ## Testing various Meta’s apps
 
@@ -131,8 +131,6 @@ document.getElementById = function(a, b) {
 }
 ```
 
-Full source code is available on [GitHub](https://github.com/KrauseFx/hijacking.report).
-
 Opening that HTML file from the iOS Instagram app yielded the following:
 
 <div style="text-align: center">
@@ -153,9 +151,10 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
   <a href="/assets/posts/injecting-code/flow-chart.png" target="_blank"><img src="/assets/posts/injecting-code/flow-chart.png" style="max-width: 450px;" /></a>
 </div>
 
-- First, the Instagram app checks if there is an element with the ID `iab-pcm-sdk`: surprisingly I found very little information about this online. Basically it seems to be a [cross-platform tracking SDK provided by IAB Tech Lab](https://iabtechlab.com/wp-content/uploads/2021/04/Authenticated-UID-APAC-v2.0-Deck.pdf), however I don’t know enough about the relationship between Meta and [IAB Tech Lab](https://iabtechlab.com/) (e.g. [this tweet](https://twitter.com/IABTechLab/status/1519414703239438336))
+- Instagram adds a new event listener, to get details about every time the user selects any text on the website. This, in combination with listening to screenshots, gives Instagram full insight over what specific piece of information was selected & shared
+- The Instagram app checks if there is an element with the ID `iab-pcm-sdk`: surprisingly I found very little information about this online. Basically it seems to be a [cross-platform tracking SDK provided by IAB Tech Lab](https://iabtechlab.com/wp-content/uploads/2021/04/Authenticated-UID-APAC-v2.0-Deck.pdf), however I don’t know enough about the relationship between Meta and [IAB Tech Lab](https://iabtechlab.com/) (e.g. [this tweet](https://twitter.com/IABTechLab/status/1519414703239438336))
 - If no element with the ID `iab-pcm-sdk` was found, the Meta’s apps create a new `script` element, sets its source to [`https://connect.facebook.net/en_US/pcm.js`](https://connect.facebook.net/en_US/pcm.js), which is the source code for the Meta tracking pixel
-- It then finds the first `script` element on your website, and inserts Meta’s JS script right before yours, **injecting the Meta Pixel onto your website**
+- It then finds the first `script` element on your website to insert the Meta Pixel right before, **injecting the Meta Pixel onto your website**
 - Meta’s apps also query for `iframes` on your website, however I couldn’t find any indication of what they’re doing with it
 
 ### How to protect yourself as a user?
@@ -181,7 +180,7 @@ Until Facebook resolves this issue (if ever), you can quite easily trick the Ins
 <span id="iab-autofill-sdk"></span>
 ```
 
-Additionally, to prevent Facebook from tracking the user selecting any text on your website, add the following JS code
+Additionally, to prevent Facebook from tracking the user's text selections on your website:
 
 ```js
 const originalEventListener = document.addEventListener
@@ -193,7 +192,7 @@ document.addEventListener = function(a, b) {
 }
 ```
 
-This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected.
+This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected, as well as less data being tracked.
 
 It’s also easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn’t find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I’d [love to know](https://twitter.com/KrauseFx).
 
@@ -255,6 +254,6 @@ Do what Meta is already doing with WhatsApp: Using Safari or `SFSafariViewContro
     text-align: center;
   }
   .hijacking-report-screenshot-table img {
-    max-height: 460px;
+    max-height: 540px;
   }
 </style>
