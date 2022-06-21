@@ -187,7 +187,7 @@ Additionally, to prevent Facebook from tracking the user selecting any text on y
 const originalEventListener = document.addEventListener
 document.addEventListener = function(a, b) {
     if (b.toString().indexOf("messageHandlers.fb_getSelection") > -1) {
-        b = null;
+        return null;
     }
     return originalEventListener.apply(this, arguments);
 }
@@ -195,7 +195,7 @@ document.addEventListener = function(a, b) {
 
 This will not solve the actual problem of Meta running JavaScript code against your website, but at least no additional JS scripts will be injected.
 
-It’s easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn’t find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I’d [love to know](https://twitter.com/KrauseFx).
+It’s also easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn’t find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I’d [love to know](https://twitter.com/KrauseFx).
 
 ## Proposals
 
@@ -243,18 +243,6 @@ I’ve also submitted a radar ([rdar://38109139](https://openradar.appspot.com/r
 ### For Meta
 
 Do what Meta is already doing with WhatsApp: Using Safari or `SFSafariViewController` for all third party websites.
-
-## Hijacking.report website
-
-As part of this research project, I want to share the tools I built to help everyone do the same.
-
-Introducing <a href="https://hijacking.report">hijacking.report</a>, a simple standalone website that prints out a list of all the JavaScript commands detected that get executed by the host iOS app.
-
-To use <a href="https://hijacking.report">hijacking.report</a>, you’ll have to open the link from within the app you want to test. If it’s a social media app, it’s easiest to just post the link and open it immediately after. If it’s a messenger app, send the link to yourself or a friend and open it from there.
-
-Note that not all JavaScript commands will be tracked. It works by overriding various system functions. The full source code is [available on GitHub](https://github.com/KrauseFx/hijacking.report). If you have more experience with JS and know how to extend the script to better cover more functions, [let me know](https://twitter.com/KrauseFx).
-
-<img src="/assets/posts/injecting-code/desktop.png" />
 
 <style type="text/css">
   .hijacking-report-screenshot-table {
