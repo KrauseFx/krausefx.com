@@ -17,8 +17,8 @@ meta: {}
 ---
 
 <div style="float: right; margin-right: -60px; margin-left: 10px;">
-  <a href="/assets/posts/hijacking.report/instagram_framed.png" target="_blank">
-    <img src="/assets/posts/hijacking.report/instagram_framed.png" style="width: 250px">
+  <a href="/assets/posts/injecting-code/instagram_framed.png" target="_blank">
+    <img src="/assets/posts/injecting-code/instagram_framed.png" style="width: 250px">
   </a>
 </div>
 
@@ -72,11 +72,11 @@ I highlighted `"The Meta Pixel allows you to track visitor activity on your webs
 
 I don’t have a list of precise data Instagram sends back home. I do have proof that the Instagram and Facebook app actively run JavaScript commands to inject additional JS SDKs without the user’s consent. If Meta is doing this, they could also inject any other JS code. The Instagram app itself is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator, I was able to inspect some of its web traffic.
 
-<a href="/assets/posts/hijacking.report/proxyman-android.png" target="_blank"><img src="/assets/posts/hijacking.report/proxyman-android.png" /></a>
+<a href="/assets/posts/injecting-code/proxyman-android.png" target="_blank"><img src="/assets/posts/injecting-code/proxyman-android.png" /></a>
 
 Even then, most of the actual data had another layer of encryption/compression. It is clear that they really don’t want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
 
-<a href="/assets/posts/hijacking.report/proxyman-android-details-3.png" target="_blank"><img src="/assets/posts/hijacking.report/proxyman-android-details-3.png" /></a>
+<a href="/assets/posts/injecting-code/proxyman-android-details-3.png" target="_blank"><img src="/assets/posts/injecting-code/proxyman-android-details-3.png" /></a>
 
 Overall the goal of this project wasn’t to get a precise list of data that is sent back, but to highlight the privacy & security issues that are possible due to the use of in-app browsers, as well as to prove that companies are already exploiting this loophole.
 
@@ -101,8 +101,8 @@ Instagram’s in-app browser supports auto-fill for your address, as well as pay
     <th>Messenger iOS</th>
   </tr>
   <tr>
-    <td><a href="/assets/posts/hijacking.report/instagram_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_framed.png"></a></td>
-    <td><a href="/assets/posts/hijacking.report/messenger_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/messenger_framed.png"></a></td>
+    <td><a href="/assets/posts/injecting-code/instagram_framed.png" target="_blank"><img src="/assets/posts/injecting-code/instagram_framed.png"></a></td>
+    <td><a href="/assets/posts/injecting-code/messenger_framed.png" target="_blank"><img src="/assets/posts/injecting-code/messenger_framed.png"></a></td>
   </tr>
 </table>
 <table class="hijacking-report-screenshot-table">
@@ -111,8 +111,8 @@ Instagram’s in-app browser supports auto-fill for your address, as well as pay
     <th>Instagram Android</th>
   </tr>
   <tr>
-    <td><a href="/assets/posts/hijacking.report/facebook_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/facebook_framed.png"></a></td>
-    <td><a href="/assets/posts/hijacking.report/android_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/android_framed.png"></a></td>
+    <td><a href="/assets/posts/injecting-code/facebook_framed.png" target="_blank"><img src="/assets/posts/injecting-code/facebook_framed.png"></a></td>
+    <td><a href="/assets/posts/injecting-code/android_framed.png" target="_blank"><img src="/assets/posts/injecting-code/android_framed.png"></a></td>
   </tr>
 </table>
 
@@ -136,13 +136,13 @@ Full source code is available on [GitHub](https://github.com/KrauseFx/hijacking.
 Opening that HTML file from the iOS Instagram app yielded the following:
 
 <div style="text-align: center">
-  <a href="/assets/posts/hijacking.report/instagram_framed_cut.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
+  <a href="/assets/posts/injecting-code/instagram_framed_cut.png" target="_blank"><img src="/assets/posts/injecting-code/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
 </div>
 
 Comparing this to what happens when using a normal browser, or in this case, Telegram, which uses the recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller):
 
 <div style="text-align: center">
-  <a href="/assets/posts/hijacking.report/SFSafariViewController_framed_cut.png" target="_blank"><img src="/assets/posts/hijacking.report/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
+  <a href="/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" target="_blank"><img src="/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
 </div>
 
 As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn’t run any JS code.
@@ -150,7 +150,7 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 ## Technical Details
 
 <div style="text-align: center; margin-bottom: 15px;">
-  <a href="/assets/posts/hijacking.report/flow-chart.png" target="_blank"><img src="/assets/posts/hijacking.report/flow-chart.png" style="max-width: 450px;" /></a>
+  <a href="/assets/posts/injecting-code/flow-chart.png" target="_blank"><img src="/assets/posts/injecting-code/flow-chart.png" style="max-width: 450px;" /></a>
 </div>
 
 - First, the Instagram app checks if there is an element with the ID `iab-pcm-sdk`: surprisingly I found very little information about this online. Basically it seems to be a [cross-platform tracking SDK provided by IAB Tech Lab](https://iabtechlab.com/wp-content/uploads/2021/04/Authenticated-UID-APAC-v2.0-Deck.pdf), however I don’t know enough about the relationship between Meta and [IAB Tech Lab](https://iabtechlab.com/) (e.g. [this tweet](https://twitter.com/IABTechLab/status/1519414703239438336))
@@ -161,7 +161,7 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 ### How to protect yourself as a user?
 
 <div style="float: right; margin-left: 20px;">
-  <a href="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" target="_blank"><img src="/assets/posts/hijacking.report/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" /></a>
+  <a href="/assets/posts/injecting-code/instagram_open_in_safari_framed.png" target="_blank"><img src="/assets/posts/injecting-code/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" /></a>
 </div>
 
 #### Escape the in-app-webview
@@ -254,7 +254,7 @@ To use <a href="https://hijacking.report">hijacking.report</a>, you’ll have to
 
 Note that not all JavaScript commands will be tracked. It works by overriding various system functions. The full source code is [available on GitHub](https://github.com/KrauseFx/hijacking.report). If you have more experience with JS and know how to extend the script to better cover more functions, [let me know](https://twitter.com/KrauseFx).
 
-<img src="/assets/posts/hijacking.report/desktop.png" />
+<img src="/assets/posts/injecting-code/desktop.png" />
 
 <style type="text/css">
   .hijacking-report-screenshot-table {
