@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'iOS Privacy: Instagram and Facebook inject code into third party websites'
+title: 'iOS Privacy: Instagram and Facebook inject code into all third party websites'
 categories: []
 tags:
 - ios
@@ -230,7 +230,7 @@ I highlighted the `"want a better user privacy experience"` part, as this is the
 
 **A few immediate steps for Apple to take:**
 
-Update the App Review Rules to require the use of `SFSafariViewController` or [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) when displaying any third party websites.
+Update the App Review Rules to require the use of [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) or [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) when displaying any third party websites.
 
 - There should be only a few exception (e.g. browser apps), that require two extra steps:
   - Request an extra entitlement to ensure it’s a valid use-case
@@ -241,7 +241,7 @@ I’ve also submitted a radar ([rdar://38109139](https://openradar.appspot.com/r
 
 ### For Meta
 
-Do what Meta is already doing with WhatsApp: Using Safari or `SFSafariViewController` for all third party websites.
+Do what Meta is already doing with WhatsApp: Using Safari or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) for all third party websites.
 
 <style type="text/css">
   .hijacking-report-screenshot-table {
