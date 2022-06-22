@@ -53,6 +53,10 @@ Meta is purposely working around the App Tracking Transparency permission system
 With 1 Billion active Instagram users, the amount of data Meta can collect by injecting the Meta Pixel into every third party website opened from the Instagram & Facebook app is a potentially staggering amount. 
 With web browsers and iOS adding more and more privacy controls into the user’s hands, it becomes clear why Meta is interested in monitoring all web traffic of external websites.
 
+> Facebook bombarded its users with messages begging them to turn tracking back on. It threatened an antitrust suit against Apple. It got small businesses to defend user-tracking, claiming that when a giant corporation spies on billions of people, that’s a form of small business development.
+
+&ndash; [EFF - Facebook Says Apple is Too Powerful. They're Right.](https://www.eff.org/deeplinks/2022/06/facebook-says-apple-too-powerful-theyre-right)
+
 ### Meta Pixel
 
 The external JavaScript file the Instagram app injects ([connect.facebook.net/en_US/pcm.js](https://connect.facebook.net/en_US/pcm.js)) is the Meta Pixel, as well as some code to build a bridge to communicate with the host app.
@@ -66,7 +70,7 @@ The external JavaScript file the Instagram app injects ([connect.facebook.net/en
 
 &ndash; [developers.facebook.com/docs/meta-pixel](https://developers.facebook.com/docs/meta-pixel) <small>(June 2022)</small>
 
-I highlighted `"The Meta Pixel allows you to track visitor activity on your website"`, as this is where the problem lies: It’s perfectly okay for a website provider to decide to implement the Meta pixel to track visitor activity. However in this case, the website provider **did not** consent to having the Facebook Pixel installed. On top of that, the website provider doesn’t even have a way to opt-out.
+`"The Meta Pixel allows you to track visitor activity on your website"`: This is the problem: It’s perfectly okay for a website provider to decide to implement the Meta pixel to track visitor activity. However in this case, the website operator **did not** consent to having the Facebook Pixel installed. On top of that, the **website provider doesn’t even have a way to opt-out**.
 
 ### Disclaimer
 
