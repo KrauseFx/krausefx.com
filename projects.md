@@ -51,6 +51,12 @@ For more details check out my [about page](/about).
     }
   }
 
+  @media screen and (min-width: 800px) and (max-width: 1100px) {
+    .fx-project {
+      height: 180px;
+    }
+  }
+
   .fx-project > .title {
 
   }
