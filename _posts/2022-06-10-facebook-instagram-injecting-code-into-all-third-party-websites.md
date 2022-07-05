@@ -57,11 +57,14 @@ With web browsers and iOS adding more and more privacy controls into the user’
 
 &ndash; [EFF - Facebook Says Apple is Too Powerful. They're Right.](https://www.eff.org/deeplinks/2022/06/facebook-says-apple-too-powerful-theyre-right)
 
-### For non-tech readers
+## FAQs for non-tech readers
 
-- **Can Facebook/Instagram read everything I do online?** No! Meta is only able to read and watch your online activities when you open a link or ad from within their app.
-- **Does Facebook actually steal my passwords, address and credit card numbers?** No! I didn't prove the exact data Meta is tracking, but wanted to showcase the kind of data they *could* get without you knowing. As shown in the past, if it's possible for a company to get access to data for free, without asking the user for permission, [they eventually will track it](https://twitter.com/steipete/status/1025024813889478656?lang=en).
-- **How can I protect myself?** For full details scroll down to the end of the article, summary: Whenever you open a link from within one of Meta's apps, make sure to click the dots in the corner to open the page in Safari instead.
+- **Can Facebook/Instagram read everything I do online?** No! Meta is only able to read and watch your online activities when you open a link or ad from within their apps.
+- **Does Facebook actually steal my passwords, address and credit card numbers?** No! I didn't prove the exact data Meta is tracking, but wanted to showcase the kind of data they *could* get without you knowing. As shown in the past, if it's possible for a company to get access to data for free, without asking the user for permission, [they will track it](https://twitter.com/steipete/status/1025024813889478656?lang=en).
+- **How can I protect myself?** For full details scroll down to the end of the article. Summary: Whenever you open a link from within one of Meta's apps, make sure to click the dots in the corner to open the page in Safari instead.
+- **Is Meta doing this on purpose?** As an outsider, I don't know how the decisions were made internally. All I can say is that building your own in-app browser takes a non-trivial time to program and maintain, significantly more than just using the privacy and user-friendly alternative that's already been built into the iPhone for the past 7 years.
+
+---
 
 ### Meta Pixel
 
