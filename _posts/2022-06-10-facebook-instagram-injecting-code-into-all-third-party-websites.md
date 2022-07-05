@@ -16,7 +16,7 @@ published: true
 meta: {}
 ---
 
-<div style="float: right; margin-right: -60px; margin-left: 10px;">
+<div id="instagram-framed-top">
   <a href="/assets/posts/injecting-code/instagram_framed.png" target="_blank">
     <img src="/assets/posts/injecting-code/instagram_framed.png" style="width: 250px">
   </a>
@@ -161,7 +161,9 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 ## Technical Details
 
 <div style="text-align: center; margin-bottom: 15px;">
-  <a href="/assets/posts/injecting-code/flow-chart.png" target="_blank"><img src="/assets/posts/injecting-code/flow-chart.png" style="max-width: 450px;" /></a>
+  <a href="/assets/posts/injecting-code/flow-chart.png" target="_blank">
+    <img src="/assets/posts/injecting-code/flow-chart.png" id="inject-code-style" />
+  </a>
 </div>
 
 - Instagram adds a new event listener, to get details about every time the user selects any text on the website. This, in combination with listening to screenshots, gives Instagram full insight over what specific piece of information was selected & shared
@@ -268,5 +270,21 @@ Do what Meta is already doing with WhatsApp: Using Safari or [`SFSafariViewContr
   }
   .hijacking-report-screenshot-table img {
     max-height: 540px;
+  }
+  #instagram-framed-top { 
+    float: right;
+    margin-right: -60px;
+    margin-left: 10px;
+  }
+  #inject-code-style {
+    max-width: 450px;
+  }
+  @media screen and (max-width: 1000px) {
+    #instagram-framed-top {
+      display: none;
+    }
+    #inject-code-style {
+      max-width: 100%;
+    }
   }
 </style>
