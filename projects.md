@@ -48,6 +48,7 @@ For more details check out my [about page](/about).
   @media screen and (max-width: 800px) {
     .fx-project {
       width: calc(100% - 40px);
+      height: 180px;
     }
   }
 
