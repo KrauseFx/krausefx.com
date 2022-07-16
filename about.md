@@ -120,6 +120,8 @@ meta: {}
 </script>
 
 <hr />
+  
+  You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> and email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>, or use the form below
 
 <div style="width: 100%; float: left; margin-top: 20px; margin-bottom: 20px;">
   <form id="contactform" method="POST" action="https://formspree.io/contact@krausefx.com">
