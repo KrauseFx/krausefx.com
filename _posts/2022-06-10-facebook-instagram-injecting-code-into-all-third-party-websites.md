@@ -49,7 +49,7 @@ Meta is purposely working around the App Tracking Transparency permission system
 
 &ndash; [Daring Fireball](https://daringfireball.net/linked/2022/02/03/facebook-apple-browser-carve-out) & [MacWorld](https://www.macworld.com/article/611551/facebook-app-tracking-transparency-iphone-quarterly-results.html)
 
-With 1 Billion active Instagram users, the amount of data Meta can collect by injecting the Meta Pixel into every third party website opened from the Instagram & Facebook app is a staggering amount. 
+With 1 Billion active Instagram users, the amount of data Meta can collect by injecting Meta tracking code into every third party website opened from the Instagram & Facebook app is a staggering amount. 
 
 With web browsers and iOS adding more and more privacy controls into the user’s hands, it becomes clear why Meta is interested in monitoring all web traffic of external websites.
 
@@ -68,7 +68,7 @@ With web browsers and iOS adding more and more privacy controls into the user’
 
 ### Meta Pixel
 
-The external JavaScript file the Instagram app injects ([connect.facebook.net/en_US/pcm.js](https://connect.facebook.net/en_US/pcm.js)) is the Meta Pixel, as well as some code to build a bridge to communicate with the host app.
+The external JavaScript file the Instagram app injects ([connect.facebook.net/en_US/pcm.js](https://connect.facebook.net/en_US/pcm.js)) is the Meta Pixel, as well as some code to build a bridge to communicate with the host app. This is not just a pixel/image, but actual JavaScript code that gets executed:
 
 > The Meta Pixel is a snippet of JavaScript code that **allows you to track visitor activity on your website**. It works by loading a small library of functions which you can use whenever a site visitor takes an action that you want to track [...]
 >
