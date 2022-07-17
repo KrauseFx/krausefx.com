@@ -243,6 +243,8 @@ App-Bound Domains went live with iOS 14 (~1.5 years ago), however it’s only an
 
 I highlighted the `"want a better user privacy experience"` part, as this is the missing piece: App-Bound Domains should be a requirement for all iOS apps, since the social media apps are the ones injecting the tracking code.
 
+In July 2022 Apple introduced the [Lockdown Mode](https://www.apple.com/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/) to better protect people who are at high risk. Unfortunately the iOS Lockdown Mode doesn't change the way in-app web views work. I have filed a radar with Apple: [rdar://10735684](https://openradar.appspot.com/radar?id=5500665535135744)
+
 **A few immediate steps for Apple to take:**
 
 Update the App Review Rules to require the use of [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) or [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) when displaying any third party websites.
@@ -256,7 +258,7 @@ I’ve also submitted a radar ([rdar://38109139](https://openradar.appspot.com/r
 
 ### For Meta
 
-Do what Meta is already doing with WhatsApp: Using Safari or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) for all third party websites.
+Do what Meta is already doing with WhatsApp: Stop modifying third party websites, and use Safari or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) for all third party websites. It's what's best for the user, and the right thing to do.
 
 <style type="text/css">
   .hijacking-report-screenshot-table {
