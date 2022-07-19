@@ -243,7 +243,11 @@ App-Bound Domains went live with iOS 14 (~1.5 years ago), however it’s only an
 
 I highlighted the `"want a better user privacy experience"` part, as this is the missing piece: App-Bound Domains should be a requirement for all iOS apps, since the social media apps are the ones injecting the tracking code.
 
-In July 2022 Apple introduced the [Lockdown Mode](https://www.apple.com/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/) to better protect people who are at high risk. Unfortunately the iOS Lockdown Mode doesn't change the way in-app web views work. I have filed a radar with Apple: [rdar://10735684](https://openradar.appspot.com/radar?id=5500665535135744)
+In July 2022 Apple introduced the [Lockdown Mode](https://www.apple.com/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/) to better protect people who are at high risk. Unfortunately the iOS Lockdown Mode doesn't change the way in-app web views work. I have filed a radar with Apple: [rdar://10735684](https://openradar.appspot.com/radar?id=5500665535135744), for which Apple has responded with "This isn't what Lockdown Mode is for"
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="/assets/posts/injecting-code/apple-response.png" style="max-width: 500px; border: 1px solid #ccc;" />
+</div>
 
 **A few immediate steps for Apple to take:**
 
