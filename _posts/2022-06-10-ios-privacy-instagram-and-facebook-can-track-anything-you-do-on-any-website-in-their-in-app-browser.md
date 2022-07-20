@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'iOS Privacy: Instagram and Facebook inject code into all third party websites'
+title: 'iOS Privacy: Instagram and Facebook can track anything you do on any website in their in-app browser'
 categories: []
 tags:
 - ios
