@@ -27,7 +27,37 @@ All the major projects I've worked on in the last few years. Unless otherwise no
   </div>
 {% endfor %}
 
-<br />
+# Past Roles
+
+{% for project in site.data.roles %}
+  <div class="fx-project">
+    <div class="title">
+      <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+    </div>
+    <div class="subtitle">
+      {{ project.subtitle }}
+    </div>
+    <div class="metadata">
+      {{ project.metadata }}
+    </div>
+  </div>
+{% endfor %}
+
+# Deprecated Projects
+
+{% for project in site.data.deprecated %}
+  <div class="fx-project">
+    <div class="title">
+      <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+    </div>
+    <div class="subtitle">
+      {{ project.subtitle }}
+    </div>
+    <div class="metadata">
+      {{ project.metadata }}
+    </div>
+  </div>
+{% endfor %}
 
 For more details check out my [about page](/about).
 
