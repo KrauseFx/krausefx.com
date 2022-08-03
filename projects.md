@@ -27,7 +27,37 @@ All the major projects I've worked on in the last few years. Unless otherwise no
   </div>
 {% endfor %}
 
-<br />
+# Past Roles
+
+{% for project in site.data.roles %}
+  <div class="fx-project">
+    <div class="title">
+      <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+    </div>
+    <div class="subtitle">
+      {{ project.subtitle }}
+    </div>
+    <div class="metadata">
+      {{ project.metadata }}
+    </div>
+  </div>
+{% endfor %}
+
+# Deprecated Projects
+
+{% for project in site.data.deprecated %}
+  <div class="fx-project">
+    <div class="title">
+      <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+    </div>
+    <div class="subtitle">
+      {{ project.subtitle }}
+    </div>
+    <div class="metadata">
+      {{ project.metadata }}
+    </div>
+  </div>
+{% endfor %}
 
 For more details check out my [about page](/about).
 
@@ -45,14 +75,14 @@ For more details check out my [about page](/about).
     position: relative;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 700px) {
     .fx-project {
       width: calc(100% - 40px);
-      height: 180px;
+      height: 140px;
     }
   }
 
-  @media screen and (min-width: 800px) and (max-width: 1100px) {
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
     .fx-project {
       height: 180px;
     }
