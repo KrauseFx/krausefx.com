@@ -89,4 +89,3 @@ I'm still using Sparrow, the best mail client for the Mac. To store an email, I 
 
 So why do all this? I'm not a super organised person, but I try my best to do this right. After storing all this, I usually print it all and store it somewhere save. All this just because you never know what formats will be readable in 20 years and if you "lose" some files because you forgot to migrate some of those files. 
 
-## [Check out the full list of tweets](https://s3-eu-west-1.amazonaws.com/krausefx/twitter.html)
