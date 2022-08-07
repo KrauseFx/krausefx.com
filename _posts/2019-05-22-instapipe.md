@@ -53,19 +53,13 @@ Of course it also provides you with a JSON API, that can be used to integrate yo
 
 <img src="/assets/posts/instapipe/apiScreenshot.jpg" />
 
-[https://instapipe.herokuapp.com/stories.json?user_id=4409072](https://instapipe.herokuapp.com/stories.json?user_id=4409072)
-
-Make sure to manually copy & paste this in a new tab to avoid the cross-site scripting protection
-
 ### Telegram group
 
 Many of my friends don't want to check Instagram every day, but still want to stay up to date with what I'm up to. Since they all use Telegram already, I set up a channel that automatically shows the stories I post.
 
-<a href="https://t.me/joinchat/AAAAAFADGfZcXqQj3TK73A">
-  <img src="/assets/posts/instapipe/telegramScreenshot.jpg" />
-</a>
+<img src="/assets/posts/instapipe/telegramScreenshot.jpg" />
 
-A [Telegram group](https://t.me/joinchat/AAAAAFADGfZcXqQj3TK73A) containing all my latest stories. In particular nice to get an overview over all your most recent stories. Join it [here](https://t.me/joinchat/AAAAAFADGfZcXqQj3TK73A).
+A Telegram group containing all my latest stories. In particular nice to get an overview over all your most recent stories.
 
 ## How it works
 
@@ -82,7 +76,7 @@ Instapipe is a simple server, that periodically fetches your most recent Instagr
   - The location (if a location tag is attached)
     - Location Name (e.g. `Das Gym`)
     - `lat` and `lng` coordinates
-- Post the new story into a Telegram group ([check it out here](https://t.me/joinchat/AAAAAFADGfZcXqQj3TK73A))
+- Post the new story into a Telegram group
 
 <img src="/assets/posts/instapipe/databaseScreenshot.jpg" />
 
