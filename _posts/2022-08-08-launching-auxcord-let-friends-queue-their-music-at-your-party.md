@@ -13,7 +13,7 @@ published: true
 meta: {}
 ---
 
-<img src="/assets/posts/auxcord/auxcord-logo.png" style="max-width: 300px; border: 3px solid #333">
+<img src="https://krausefx.com/assets/posts/auxcord/auxcord-logo.png" style="max-width: 300px; border: 3px solid #333">
 
 <ul id="auxcord-list">
   <li>You host a party</li>
