@@ -268,7 +268,7 @@ I’ve also submitted a radar ([rdar://38109139](https://openradar.appspot.com/r
 
 Do what Meta is already doing with WhatsApp: Stop modifying third party websites, and use Safari or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) for all third party websites. It's what's best for the user, and the right thing to do.
 
-I've disclosed this issue with Meta through their [Bug Bounty Program](https://www.facebook.com/whitehat/profile/FelixKrause), where within a few hours they confirmed they were able to reproduce the "issue", however I haven't heard back anything else within the last 8 weeks, besides asking me to not disclose this issue publicly until they finished their review.
+I've disclosed this issue with Meta through their [Bug Bounty Program](https://www.facebook.com/whitehat/profile/FelixKrause), where within a few hours they confirmed they were able to reproduce the "issue", however I haven't heard back anything else within the last 9 weeks, besides asking me to wait longer until they have a full report. Since there hasn't been any responses on my follow-up questions, nor did they stop injecting tracking code into external websites, I've decided to go public with this information (after giving them a 2 weeks heads-up)
 
 <style type="text/css">
   .hijacking-report-screenshot-table {
