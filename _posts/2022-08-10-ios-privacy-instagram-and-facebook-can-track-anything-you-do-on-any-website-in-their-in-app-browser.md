@@ -32,7 +32,7 @@ The iOS Instagram and Facebook app render all third party links and ads within t
 
 - Links to external websites are rendered inside the Instagram app, instead of using the built-in Safari.
 - This allows Instagram to monitor everything happening on external websites, without the consent from the user, nor the website provider.
-- The Instagram app injects <a href="https://developers.facebook.com/docs/meta-pixel">their tracking code</a> into every third party website, including ads, enabling them monitor all user interactions, like every button & link tapped, text selections, screenshots, as well as any form inputs, like passwords, physical addresses and credit card numbers.
+- The Instagram app injects <a href="https://developers.facebook.com/docs/meta-pixel">their tracking code</a> into every website shown, including when clicking on ads, enabling them monitor all user interactions, like every button & link tapped, text selections, screenshots, as well as any form inputs, like passwords, physical addresses and credit card numbers.
 
 ### Why is this a big deal?
 
