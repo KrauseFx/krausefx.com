@@ -17,8 +17,8 @@ meta: {}
 ---
 
 <div id="instagram-framed-top">
-  <a href="/assets/posts/injecting-code/instagram_framed.png" target="_blank">
-    <img src="/assets/posts/injecting-code/instagram_framed.png" style="width: 250px">
+  <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank">
+    <img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" style="width: 250px">
   </a>
 </div>
 
@@ -89,7 +89,7 @@ The external JavaScript file the Instagram app injects ([connect.facebook.net/en
 
 I don’t have a list of precise data Instagram sends back home. I do have proof that the Instagram and Facebook app actively run JavaScript commands to inject an additional JS SDK without the user’s consent, as well as tracking the user's text selections. If Instagram is doing this already, they could also inject any other JS code. The Instagram app itself is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator, I was able to inspect some of its web traffic.
 
-<a href="/assets/posts/injecting-code/proxyman-android-details-3.png" target="_blank"><img src="/assets/posts/injecting-code/proxyman-android-details-3.png" /></a>
+<a href="https://krausefx.com/assets/posts/injecting-code/proxyman-android-details-3.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/proxyman-android-details-3.png" /></a>
 
 Even then, most of the actual data had another layer of encryption/compression. It is clear that they really don’t want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
 
@@ -118,8 +118,8 @@ Instagram’s in-app browser supports auto-fill of your address and payment info
     <th>Messenger iOS</th>
   </tr>
   <tr>
-    <td><a href="/assets/posts/injecting-code/instagram_framed.png" target="_blank"><img src="/assets/posts/injecting-code/instagram_framed.png"></a></td>
-    <td><a href="/assets/posts/injecting-code/messenger_framed.png" target="_blank"><img src="/assets/posts/injecting-code/messenger_framed.png"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/injecting-code/messenger_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/messenger_framed.png"></a></td>
   </tr>
 </table>
 <table class="hijacking-report-screenshot-table">
@@ -128,8 +128,8 @@ Instagram’s in-app browser supports auto-fill of your address and payment info
     <th>Instagram Android</th>
   </tr>
   <tr>
-    <td><a href="/assets/posts/injecting-code/facebook_framed.png" target="_blank"><img src="/assets/posts/injecting-code/facebook_framed.png"></a></td>
-    <td><a href="/assets/posts/injecting-code/android_framed.png" target="_blank"><img src="/assets/posts/injecting-code/android_framed.png"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/injecting-code/facebook_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/facebook_framed.png"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/injecting-code/android_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/android_framed.png"></a></td>
   </tr>
 </table>
 
@@ -151,13 +151,13 @@ document.getElementById = function(a, b) {
 Opening that HTML file from the iOS Instagram app yielded the following:
 
 <div style="text-align: center">
-  <a href="/assets/posts/injecting-code/instagram_framed_cut.png" target="_blank"><img src="/assets/posts/injecting-code/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
+  <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed_cut.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
 </div>
 
 Comparing this to what happens when using a normal browser, or in this case, Telegram, which uses the recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller):
 
 <div style="text-align: center">
-  <a href="/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" target="_blank"><img src="/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
+  <a href="https://krausefx.com/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
 </div>
 
 As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn’t run any JS code. [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) is a great way for app developers to show third party web content to the user, without them leaving your app, while still preserving the privacy and comfort for the user.
@@ -165,8 +165,8 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 ## Technical Details
 
 <div style="text-align: center; margin-bottom: 15px;">
-  <a href="/assets/posts/injecting-code/flow-chart.png" target="_blank">
-    <img src="/assets/posts/injecting-code/flow-chart.png" id="inject-code-style" />
+  <a href="https://krausefx.com/assets/posts/injecting-code/flow-chart.png" target="_blank">
+    <img src="https://krausefx.com/assets/posts/injecting-code/flow-chart.png" id="inject-code-style" />
   </a>
 </div>
 
@@ -179,7 +179,7 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 ### How to protect yourself as a user?
 
 <div style="float: right; margin-left: 20px;">
-  <a href="/assets/posts/injecting-code/instagram_open_in_safari_framed.png" target="_blank"><img src="/assets/posts/injecting-code/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" /></a>
+  <a href="https://krausefx.com/assets/posts/injecting-code/instagram_open_in_safari_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" /></a>
 </div>
 
 #### Escape the in-app-webview
@@ -250,7 +250,7 @@ I highlighted the `"want a better user privacy experience"` part, as this is the
 In July 2022 Apple introduced the [Lockdown Mode](https://www.apple.com/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/) to better protect people who are at high risk. Unfortunately the iOS Lockdown Mode doesn't change the way in-app web views work. I have filed a radar with Apple: [rdar://10735684](https://openradar.appspot.com/radar?id=5500665535135744), for which Apple has responded with "This isn't what Lockdown Mode is for"
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <img src="/assets/posts/injecting-code/apple-response.png" style="max-width: 500px; border: 1px solid #ccc;" />
+  <img src="https://krausefx.com/assets/posts/injecting-code/apple-response.png" style="max-width: 500px; border: 1px solid #ccc;" />
 </div>
 
 **A few immediate steps for Apple to take:**
