@@ -270,6 +270,8 @@ Do what Meta is already doing with WhatsApp: Stop modifying third party websites
 
 I've disclosed this issue with Meta through their [Bug Bounty Program](https://www.facebook.com/whitehat/profile/FelixKrause), where within a few hours they confirmed they were able to reproduce the "issue", however I haven't heard back anything else within the last 9 weeks, besides asking me to wait longer until they have a full report. Since there hasn't been any responses on my follow-up questions, nor did they stop injecting tracking code into external websites, I've decided to go public with this information (after giving them a 2 weeks heads-up)
 
+Check out my [other privacy and security related publications](/privacy).
+
 <style type="text/css">
   .hijacking-report-screenshot-table {
     width: 98%;
