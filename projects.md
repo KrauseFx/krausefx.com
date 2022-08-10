@@ -75,9 +75,15 @@ For more details check out my [about page](/about).
     position: relative;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 700px) {
     .fx-project {
       width: calc(100% - 40px);
+      height: 140px;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    .fx-project {
       height: 180px;
     }
   }
