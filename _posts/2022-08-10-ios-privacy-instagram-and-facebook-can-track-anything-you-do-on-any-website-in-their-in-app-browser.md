@@ -18,7 +18,34 @@ meta: {}
 
 <div id="instagram-framed-top">
   <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank">
-    <img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" style="width: 250px">
+    <img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" style="width: 250px" alt="An iPhone screenshot, showing a website, rendering what commands got executed by the Instagram app in their in-app browser: 
+      Detected JavaScript Events:
+        1.
+        document. addEventListener ('selectionchange'
+        2.
+        function ()
+        {
+        window.webkit.messageHandlers.fb getSelecti
+        onScriptMessageHandler.postMessage(getSelec
+        tedText)):
+        3. }
+        4.
+        document. getElementById('iab-pcm-sdk')
+        5.
+        document.createElement ('script')
+        6.
+        FakeScriptobj.src
+        'https://connect.facebook.net/en US/pcm.is'
+        7. document. getElementsByTagName ('script')
+        8.
+        TagObjectArr[0]
+        9.
+        TagObjectArr[x].parentNode
+        10.
+        TagobjectArr[x].parentNode.insertBefore
+        11.
+        document.getElementsByTagName('iframe')"
+     >
   </a>
 </div>
 
@@ -118,8 +145,34 @@ Instagram’s in-app browser supports auto-fill of your address and payment info
     <th>Messenger iOS</th>
   </tr>
   <tr>
-    <td><a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png"></a></td>
-    <td><a href="https://krausefx.com/assets/posts/injecting-code/messenger_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/messenger_framed.png"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" alt="An iPhone screenshot, showing a website, rendering what commands got executed by the Instagram app in their in-app browser: 
+      Detected JavaScript Events:
+        1.
+        document. addEventListener ('selectionchange'
+        2.
+        function ()
+        {
+        window.webkit.messageHandlers.fb getSelecti
+        onScriptMessageHandler.postMessage(getSelec
+        tedText)):
+        3. }
+        4.
+        document. getElementById('iab-pcm-sdk')
+        5.
+        document.createElement ('script')
+        6.
+        FakeScriptobj.src
+        'https://connect.facebook.net/en US/pcm.is'
+        7. document. getElementsByTagName ('script')
+        8.
+        TagObjectArr[0]
+        9.
+        TagObjectArr[x].parentNode
+        10.
+        TagobjectArr[x].parentNode.insertBefore
+        11.
+        document.getElementsByTagName('iframe')"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/injecting-code/messenger_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/messenger_framed.png" alt="The same code as the previous photo, however this time inside Facebook Messenger"></a></td>
   </tr>
 </table>
 <table class="hijacking-report-screenshot-table">
@@ -128,8 +181,8 @@ Instagram’s in-app browser supports auto-fill of your address and payment info
     <th>Instagram Android</th>
   </tr>
   <tr>
-    <td><a href="https://krausefx.com/assets/posts/injecting-code/facebook_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/facebook_framed.png"></a></td>
-    <td><a href="https://krausefx.com/assets/posts/injecting-code/android_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/android_framed.png"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/injecting-code/facebook_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/facebook_framed.png" alt="The same code as the previous photo, however this time inside the Facebook iOS app"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/injecting-code/android_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/android_framed.png" alt="The same code as the previous photo, however this time inside Android Instagram"></a></td>
   </tr>
 </table>
 
@@ -151,13 +204,13 @@ document.getElementById = function(a, b) {
 Opening that HTML file from the iOS Instagram app yielded the following:
 
 <div style="text-align: center">
-  <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed_cut.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
+  <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed_cut.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed_cut.png" alt="The same code as the previous screenshots" style="max-width: 310px; margin-bottom: 20px;" /></a>
 </div>
 
 Comparing this to what happens when using a normal browser, or in this case, Telegram, which uses the recommended [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller):
 
 <div style="text-align: center">
-  <a href="https://krausefx.com/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" /></a>
+  <a href="https://krausefx.com/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/SFSafariViewController_framed_cut.png" style="max-width: 310px; margin-bottom: 20px;" alt="SFSafariViewController rendering the same page, but this time no JavaScript events were tracked, and a green check mark is shown" /></a>
 </div>
 
 As you can see, a regular browser, or [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) doesn’t run any JS code. [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) is a great way for app developers to show third party web content to the user, without them leaving your app, while still preserving the privacy and comfort for the user.
@@ -166,7 +219,7 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 
 <div style="text-align: center; margin-bottom: 15px;">
   <a href="https://krausefx.com/assets/posts/injecting-code/flow-chart.png" target="_blank">
-    <img src="https://krausefx.com/assets/posts/injecting-code/flow-chart.png" id="inject-code-style" />
+    <img src="https://krausefx.com/assets/posts/injecting-code/flow-chart.png" id="inject-code-style" alt="A simple flowchart: starting with the use of the Instagram iOS app. For 3 paths (user taps a link in DMs, user taps a link in bio, user taps a link on an ad), the flow continues to 'Instagram renders external page inside app'. It then subscribes to text selections, and checks if an SDK named 'iab-pcm-sdk' is installed. If no, the Meta tracking pixel is installed. In all cases, the Instagram app queries for a list of iFrames." />
   </a>
 </div>
 
@@ -179,7 +232,7 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 ### How to protect yourself as a user?
 
 <div style="float: right; margin-left: 20px;">
-  <a href="https://krausefx.com/assets/posts/injecting-code/instagram_open_in_safari_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" /></a>
+  <a href="https://krausefx.com/assets/posts/injecting-code/instagram_open_in_safari_framed.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/instagram_open_in_safari_framed.png" style="max-height: 180px; margin-top: 20px;" alt="A screenshot of the Instagram iOS app when you click the 3 dots on the top right while viewing an external website, that allows people to open the page in their default browser" /></a>
 </div>
 
 #### Escape the in-app-webview
