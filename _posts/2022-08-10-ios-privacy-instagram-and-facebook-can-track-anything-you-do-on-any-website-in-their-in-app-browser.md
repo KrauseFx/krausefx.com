@@ -88,7 +88,7 @@ With web browsers and iOS adding more and more privacy controls into the user’
 
 &ndash; [EFF - Facebook Says Apple is Too Powerful. They're Right.](https://www.eff.org/deeplinks/2022/06/facebook-says-apple-too-powerful-theyre-right)
 
-**Note added on 2022-08-11:** Meta is most likely following the ATT rules (as added as a note at the bottom of the article). I listed the above to provide some context on why it'd be in Meta's interest to get additional data from external websites.
+**Note added on 2022-08-11:** Meta is most likely following the ATT (App Tracking Transparency) rules (as added as a note at the bottom of the article). I explained the above to provide some context on why getting data from third party websites/apps is a big deal. The message of this article is about how the iOS Instagram app actively injects and executes JavaScript code on third party websites, using their in-app browser. This article does not talk about the legal aspect of things (as I'm not a lawyer), but the technical implementation of what is happening, and what is possible on a technical level.
 
 ## FAQs for non-tech readers
 
