@@ -88,6 +88,8 @@ With web browsers and iOS adding more and more privacy controls into the user’
 
 &ndash; [EFF - Facebook Says Apple is Too Powerful. They're Right.](https://www.eff.org/deeplinks/2022/06/facebook-says-apple-too-powerful-theyre-right)
 
+**Note added on 2022-08-11:** Meta is most likely following the ATT rules (as added as a note at the bottom of the article). I listed the above to provide some context on why it'd be in Meta's interest to get additional data from external websites.
+
 ## FAQs for non-tech readers
 
 - **Can Instagram/Facebook read everything I do online?** No! Instagram is only able to read and watch your online activities when you open a link or ad from within their apps.
@@ -114,11 +116,7 @@ The external JavaScript file the Instagram app injects ([connect.facebook.net/en
 
 ### Disclaimer
 
-I don’t have a list of precise data Instagram sends back home. I do have proof that the Instagram and Facebook app actively run JavaScript commands to inject an additional JS SDK without the user’s consent, as well as tracking the user's text selections. If Instagram is doing this already, they could also inject any other JS code. The Instagram app itself is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator, I was able to inspect some of its web traffic.
-
-<a href="https://krausefx.com/assets/posts/injecting-code/proxyman-android-details-3.png" target="_blank"><img src="https://krausefx.com/assets/posts/injecting-code/proxyman-android-details-3.png" /></a>
-
-Even then, most of the actual data had another layer of encryption/compression. It is clear that they really don’t want you to investigate what kind of data is sent back to the API. I have decided not to spend more time on this.
+I don’t have a list of precise data Instagram sends back home. I do have proof that the Instagram and Facebook app actively run JavaScript commands to inject an additional JS SDK without the user’s consent, as well as tracking the user's text selections. If Instagram is doing this already, they could also inject any other JS code. The Instagram app itself is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator.
 
 ---
 
