@@ -59,18 +59,18 @@ The iOS Instagram and Facebook app render all third party links and ads within t
 
 - Links to external websites are rendered inside the Instagram app, instead of using the built-in Safari.
 - This allows Instagram to monitor everything happening on external websites, without the consent from the user, nor the website provider.
-- The Instagram app injects <a href="https://developers.facebook.com/docs/meta-pixel">their tracking code</a> into every website shown, including when clicking on ads, enabling them monitor all user interactions, like every button & link tapped, text selections, screenshots, as well as any form inputs, like passwords, addresses and credit card numbers.
+- The Instagram app injects <a href="https://connect.facebook.net/en_US/pcm.js">their JavaScript code</a> into every website shown, including when clicking on ads. Even though pcm.js doesn't do this, injecting custom scripts into third party websites allows them to monitor all user interactions, like every button & link tapped, text selections, screenshots, as well as any form inputs, like passwords, addresses and credit card numbers.
 
 ### Why is this a big deal?
 
-- Apple actively works against this kind of cross-host tracking:
+- Apple actively works against cross-host tracking:
   - As of iOS 14.5 [App Tracking Transparency puts the user in control](https://support.apple.com/en-us/HT212025): Apps need to get the user’s permission before tracking their data across apps owned by other companies.
   - Safari already [blocks third party cookies by default](https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/)
 - Google Chrome is [soon phasing out third party cookies](https://blog.chromium.org/2020/01/building-more-private-web-path-towards.html)
 - Firefox just announced [Total Cookie Protection](https://blog.mozilla.org/en/products/firefox/firefox-rolls-out-total-cookie-protection-by-default-to-all-users-worldwide/) by default to prevent any cross-page tracking
 - Some ISPs [used to inject their own tracking/ad code into all websites](https://www.infoworld.com/article/2925839/code-injection-new-low-isps.html), however they could only do it for unencrypted pages. With the [rise of HTTPs by default](https://transparencyreport.google.com/https/overview), this isn't an option any more. The approach the Instagram & Facebook app uses here works for any website, no matter if it's encrypted or not.
 
-Instagram is purposely working around the App Tracking Transparency permission system, which was designed to prevent this exact type of data collection. After its introduction, <i>Meta</i> announced:
+After the App Tracking Transparency was introduced, <i>Meta</i> announced:
 
 > Apple’s simple iPhone alert is **costing Facebook $10 billion a year**
 
@@ -88,39 +88,28 @@ With web browsers and iOS adding more and more privacy controls into the user’
 
 &ndash; [EFF - Facebook Says Apple is Too Powerful. They're Right.](https://www.eff.org/deeplinks/2022/06/facebook-says-apple-too-powerful-theyre-right)
 
-**Note added on 2022-08-11:** Meta is most likely following the ATT (App Tracking Transparency) rules (as added as a note at the bottom of the article). I explained the above to provide some context on why getting data from third party websites/apps is a big deal. The message of this article is about how the iOS Instagram app actively injects and executes JavaScript code on third party websites, using their in-app browser. This article does not talk about the legal aspect of things (as I'm not a lawyer), but the technical implementation of what is happening, and what is possible on a technical level.
+**Note added on 2022-08-11:** Meta is following the ATT (App Tracking Transparency) rules (as added as a note at the bottom of the article). I explained the above to provide some context on why getting data from third party websites/apps is a big deal. The message of this article is about how the iOS Instagram app actively injects and executes JavaScript code on third party websites, using their in-app browser. This article does not talk about the legal aspect of things, but the technical implementation of what is happening, and what is possible on a technical level.
 
 ## FAQs for non-tech readers
 
 - **Can Instagram/Facebook read everything I do online?** No! Instagram is only able to read and watch your online activities when you open a link or ad from within their apps.
-- **Does Facebook actually steal my passwords, address and credit card numbers?** No! I didn't prove the exact data Instagram is tracking, but wanted to showcase the kind of data they *could* get without you knowing. As shown in the past, if it's possible for a company to get access to data for free, without asking the user for permission, [they will track it](https://twitter.com/steipete/status/1025024813889478656?lang=en).
+- **Does Facebook actually steal my passwords, address and credit card numbers?** No! I didn't prove the exact data Instagram is tracking, but wanted to showcase the kind of data they *could* get without you knowing. As shown in the past, if it's possible for a company to get access to data legally and for free, without asking the user for permission, [they will track it](https://twitter.com/steipete/status/1025024813889478656?lang=en).
 - **How can I protect myself?** For full details [scroll down to the end of the article](#how-to-protect-yourself-as-a-user). Summary: Whenever you open a link from Instagram (or Facebook or Messenger), make sure to click the dots in the corner to open the page in Safari instead.
 - **Is Instagram doing this on purpose?** I can't say how the decisions were made internally. All I can say is that building your own in-app browser takes a non-trivial time to program and maintain, significantly more than just using the privacy and user-friendly alternative that's already been built into the iPhone for the past 7 years.
 
 ---
 
-### Meta Pixel
+### What gets injected?
 
-The external JavaScript file the Instagram app injects ([connect.facebook.net/en_US/pcm.js](https://connect.facebook.net/en_US/pcm.js)) is the Meta Pixel, as well as some code to build a bridge to communicate with the host app. This is not just a pixel/image, but actual JavaScript code that gets executed:
-
-> The Meta Pixel is a snippet of JavaScript code that **allows you to track visitor activity on your website**. It works by loading a small library of functions which you can use whenever a site visitor takes an action that you want to track [...]
->
-> The Meta Pixel can collect the following data:
-> - [...]
-> - Button Click Data – Includes any buttons clicked by site visitors, the labels of those buttons and any pages visited as a result of the button clicks.
-> - Form Field Names – Includes website field names like email, address, quantity, etc., for when you purchase a product or service. We don’t capture field values unless you include them as part of Advanced Matching or optional values.
-
-&ndash; [developers.facebook.com/docs/meta-pixel](https://developers.facebook.com/docs/meta-pixel) <small>(June 2022)</small>
-
-`"The Meta Pixel allows you to track visitor activity on your website"` - This is the problem: It’s perfectly okay for a website provider to decide to implement the Meta pixel to track visitor activity. However in this case, the website operator **did not** consent to having the Meta Pixel installed. On top of that, the **website provider doesn’t even have a way to opt-out**.
+The external JavaScript file the Instagram app injects is the ([connect.facebook.net/en_US/pcm.js](https://connect.facebook.net/en_US/pcm.js)) which is code to build a bridge to communicate with the host app. According to Meta's info provided to me in response to this publication, it helps aggregate events, i.e. online purchase, before those events are used for targeted advertising and measurement for the Facebook platform.
 
 ### Disclaimer
 
-I don’t have a list of precise data Instagram sends back home. I do have proof that the Instagram and Facebook app actively run JavaScript commands to inject an additional JS SDK without the user’s consent, as well as tracking the user's text selections. If Instagram is doing this already, they could also inject any other JS code. The Instagram app itself is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator.
+I don’t have a list of precise data Instagram sends back home. I do have proof that the Instagram and Facebook app actively run JavaScript commands to inject an additional JavaScript SDK without the user’s consent, as well as tracking the user's text selections. If Instagram is doing this already, they could also inject any other JavaScript code. The Instagram app itself is well protected against human-in-the-middle attacks, and only by modifying the Android binary to remove certificate pinning and running it in a simulator.
 
 ---
 
-Overall the goal of this project wasn’t to get a precise list of data that is sent back, but to highlight the privacy & security issues that are caused by the use of in-app browsers, as well as to **prove that apps like Instagram are already exploiting this loophole**.
+Overall the goal of this project wasn’t to get a list of data that is sent back, but to highlight the privacy & security issues that are caused by the use of in-app browsers, as well as to **prove that apps like Instagram are already exploiting this loophole**.
 
 To summarize the risks and disadvantages of having in-app browsers:
 
@@ -222,9 +211,9 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 </div>
 
 - Instagram adds a new event listener, to get details about every time the user selects any text on the website. This, in combination with listening to screenshots, gives Instagram full insight over what specific piece of information was selected & shared
-- The Instagram app checks if there is an element with the ID `iab-pcm-sdk`: <s>surprisingly I found very little information about this online. Basically it seems to be a [cross-platform tracking SDK provided by IAB Tech Lab](https://iabtechlab.com/wp-content/uploads/2021/04/Authenticated-UID-APAC-v2.0-Deck.pdf), however I don’t know enough about the relationship between Instagram and [IAB Tech Lab](https://iabtechlab.com/) (e.g. [this tweet](https://twitter.com/IABTechLab/status/1519414703239438336))</s> According to [this tweet](https://twitter.com/abx1n/status/1557796015364718593), the `iab` probably refers to "In App Browser" as is not related to the IAB Tech Lab.
-- If no element with the ID `iab-pcm-sdk` was found, Instagram creates a new `script` element, sets its source to [`https://connect.facebook.net/en_US/pcm.js`](https://connect.facebook.net/en_US/pcm.js), which is the source code for the Meta tracking pixel
-- It then finds the first `script` element on your website to insert the Meta Pixel right before, **injecting the Meta Pixel onto your website**
+- The Instagram app checks if there is an element with the ID `iab-pcm-sdk`: According to [this tweet](https://twitter.com/abx1n/status/1557796015364718593), the `iab` likely refers to "In App Browser".
+- If no element with the ID `iab-pcm-sdk` was found, Instagram creates a new `script` element, sets its source to [`https://connect.facebook.net/en_US/pcm.js`](https://connect.facebook.net/en_US/pcm.js)
+- It then finds the first `script` element on your website to insert the pcm JavaScript file right before
 - Instagram also queries for `iframes` on your website, however I couldn’t find any indication of what they’re doing with it
 
 ### How to protect yourself as a user?
@@ -264,7 +253,9 @@ document.addEventListener = function(a, b) {
 
 This will not solve the actual problem of Instagram running JavaScript code against your website, but at least no additional JS scripts will be injected, as well as less data being tracked.
 
-It’s also easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn’t find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I’d [love to know](https://twitter.com/KrauseFx).
+It’s also easy for an app to detect if the current browser is the Instagram/Facebook app by checking the user agent, however I couldn’t find a good way to pop out of the in-app browser automatically to open Safari instead. If you know a solution, I’d [love to know](https://twitter.com/KrauseFx). 
+
+**Update on 2022-08-11:** As response to this article, [Adrian published a post about this exact topic](https://www.holovaty.com/writing/framebust-native-apps/).
 
 ## Proposals
 
@@ -321,9 +312,18 @@ Do what Meta is already doing with WhatsApp: Stop modifying third party websites
 
 I've disclosed this issue with Meta through their [Bug Bounty Program](https://www.facebook.com/whitehat/profile/FelixKrause), where within a few hours they confirmed they were able to reproduce the "issue", however I haven't heard back anything else within the last 9 weeks, besides asking me to wait longer until they have a full report. Since there hasn't been any responses on my follow-up questions, nor did they stop injecting tracking code into external websites, I've decided to go public with this information (after giving them another 2 weeks heads-up)
 
-**Update 2022-08-11:** After the blog post went live, Meta sent a reply explaining that the system they built honours the user's ATT choice. However I am still waiting for a follow-up reply on why injecting additional JavaScript code into third party websites is needed to check if a Meta Pixel is setup, considering websites with a Meta Pixel setup wouldn't need additional JavaScript code to be executed. I will update the post once I have heard back. 
+### Update 2022-08-11 (information provided by Meta)
 
-In the mean-time, everything published in this post is correct: the Instagram app is executing and injecting JavaScript code into third party websites, rendered inside their in-app browser.
+After the publication went live, Meta has sent two emails clarifying what is happening on their end. I addressed their comments, the following has changed:
+
+- The script that gets injected isn't the [Meta Pixel](https://developers.facebook.com/docs/meta-pixel/), but it's the [pcm.js](https://connect.facebook.net/en_US/pcm.js) script, which, according to Meta, helps aggregate events, i.e. online purchase, before those events are used for targeted advertising and measurement for the Facebook platform
+- According to Meta, the script injected ([pcm.js](https://connect.facebook.net/en_US/pcm.js)) helps Meta respect the user's ATT opt out choice, which is only relevant if the rendered website has the Meta Pixel installed. However as far as my understanding goes, all of this wouldn't be necessary if Instagram were to open the phone's default browser, instead of building & using the custom in-app browser.
+
+I sent Meta a few follow-up questions - once I hear back, I'll update the post accordingly, and announce the changes on [Twitter](https://twitter.com/KrauseFx).
+
+In the mean-time, everything published in this post is correct: the Instagram app is executing and injecting JavaScript code into third party websites, rendered inside their in-app browser, which exposes a big risk for the user. Also, there is no way to opt-out of the custom in-app browser.
+
+As Meta was providing me with more context and details, I have updated the post to reflect this. You can find the full history of the post, and which parts got edited [over here](https://github.com/KrauseFx/krausefx.com/commits/master).
 
 Check out my [other privacy and security related publications](/privacy).
 
