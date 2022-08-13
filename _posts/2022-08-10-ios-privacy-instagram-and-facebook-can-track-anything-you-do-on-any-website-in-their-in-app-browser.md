@@ -16,6 +16,55 @@ published: true
 meta: {}
 ---
 
+<style type="text/css">
+  .press > a {
+    text-decoration: none;
+  }
+  .press > a > img {
+    max-height: 40px;
+    max-width: 110px;
+    margin: 10px;
+  }
+</style>
+
+<div class="press">
+  <a href="https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says">
+    <img src="/assets/privacy/TheGuardian.png">
+  </a>
+  <a href="https://news.ycombinator.com/item?id=32415470">
+    <img src="/assets/privacy/hackernews.ico">
+  </a>
+  <a href="https://www.theregister.com/2022/08/12/meta_ios_privacy/">
+    <img src="/assets/privacy/TheRegister.jpg">
+  </a>
+  <a href="https://finance.yahoo.com/news/meta-can-track-facebook-and-instagram-users-on-ios-with-its-in-app-browsers-071834703.html">
+    <img src="/assets/privacy/Yahoo.jpg">
+  </a>
+  <a href="https://www.macrumors.com/2022/08/10/instagram-tracking-users-in-app-browser/">
+    <img src="/assets/privacy/MacRumors.png">
+  </a>
+  <a href="https://www.heise.de/news/In-App-Browser-auf-dem-iPhone-Experte-sieht-Trackingpotenzial-durch-Meta-7217027.html">
+    <img src="/assets/privacy/heise.svg">
+  </a>  
+  <a href="https://9to5mac.com/2022/08/11/in-app-browsers/">
+    <img src="/assets/privacy/9to5.png">
+  </a>
+  <a href="https://www.engadget.com/meta-can-track-facebook-and-instagram-users-on-ios-with-its-in-app-browsers-071834703.html">
+    <img src="/assets/privacy/engadget.png">
+  </a>
+  <a href="https://www.cnbctv18.com/technology/instagram-can-track-a-users-web-activity-via-in-app-browser-claims-report-14448592.htm">
+    <img src="/assets/privacy/cnbc.png">
+  </a>
+  <a href="https://derstandard.at/2000064949062/Oesterreichischer-Entwickler-zeigt-wie-Foto-Apps-am-iPhone-schnueffeln">
+    <img src="/assets/privacy/derStandard.gif">
+  </a>
+  <a href="https://www.t-online.de/digital/internet-sicherheit/sicherheit/id_100038034/meta-konzern-kann-nutzeraktivitaeten-verfolgen.html">
+    <img src="/assets/privacy/t-online.png">
+  </a>
+</div>
+
+<hr style="margin-bottom:20px" />
+
 <div id="instagram-framed-top">
   <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank">
     <img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" style="width: 250px" alt="An iPhone screenshot, showing a website, rendering what commands got executed by the Instagram app in their in-app browser: 

@@ -10,6 +10,15 @@ $header-inactive-color: #9c9c9c;
 $no-sidebar: "800px";
 
 /* Added by Felix */
+.press > a {
+  text-decoration: none;
+}
+.press > a > img {
+  max-height: 50px;
+  max-width: 150px;
+  margin: 10px;
+}
+
 #sidebar {
   float: right;
   top: 75px;
