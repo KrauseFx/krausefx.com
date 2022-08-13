@@ -49,6 +49,9 @@ meta: {}
   <a href="https://9to5mac.com/2022/08/11/in-app-browsers/">
     <img src="/assets/privacy/9to5.png">
   </a>
+  <a href="https://www.t-online.de/digital/internet-sicherheit/sicherheit/id_100038034/meta-konzern-kann-nutzeraktivitaeten-verfolgen.html">
+    <img src="/assets/privacy/t-online.png">
+  </a>
   <a href="https://www.engadget.com/meta-can-track-facebook-and-instagram-users-on-ios-with-its-in-app-browsers-071834703.html">
     <img src="/assets/privacy/engadget.png">
   </a>
@@ -57,9 +60,6 @@ meta: {}
   </a>
   <a href="https://derstandard.at/2000064949062/Oesterreichischer-Entwickler-zeigt-wie-Foto-Apps-am-iPhone-schnueffeln">
     <img src="/assets/privacy/derStandard.gif">
-  </a>
-  <a href="https://www.t-online.de/digital/internet-sicherheit/sicherheit/id_100038034/meta-konzern-kann-nutzeraktivitaeten-verfolgen.html">
-    <img src="/assets/privacy/t-online.png">
   </a>
 </div>
 
