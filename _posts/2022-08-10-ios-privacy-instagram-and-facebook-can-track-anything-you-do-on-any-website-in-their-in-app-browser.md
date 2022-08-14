@@ -380,6 +380,25 @@ In the mean-time, everything published in this post is correct: the Instagram ap
 
 As Meta was providing me with more context and details, I have updated the post to reflect this. You can find the full history of the post, and which parts got edited [over here](https://github.com/KrauseFx/krausefx.com/commits/master).
 
+### Update 2022-08-14 (information provided by Meta)
+
+The main question I asked: If Meta built a whole system to inject JavaScript code (`pcm.js`) into third party websites to [respect people's App Tracking Transparency (ATT) choices](https://twitter.com/andymstone/status/1557825254675841025), why wouldn't Instagram just open all external links in the user's default browser? This would put the user in full control over their privacy settings, and wouldn't require any engineering effort on Meta's end.
+
+To that, the answer was:
+
+> As shared earlier, pcm.js is required to respect a user’s ATT decision. The script needs to be injected to authenticate the source and the integrity (i.e. if pixel traffic is valid) of the data being received. Authentication would include checking that, when data is received from the In App Browser through the WebView-iOS native bridge, it contains a valid nonce coming from the injected script. SFSafariViewController doesn’t support this. There are additional components within the In App Browser that provide security and user features that SFSafariViewController also doesn’t support.
+
+The above answer doesn't answer my question. Other apps, including Meta's own WhatsApp, can operate perfectly fine without using a custom in-app browser. 
+
+My ticket with Meta got marked as resolved `"given the items raised in your submission are intentional and not a privacy concern"`.
+
+My second question was about the tracking of the user's text selection, and according to Meta, this is some old code that isn't used anymore:
+
+> In older versions of iOS, this code was necessary to allow users to share selected text to their news feed. As newer versions of iOS have built-in functionality for text selection, this feature has been deprecated for some time and was already identified for removal as part of our standard code maintenance. 
+> There is no code in our In App Browser that shares text selection information from websites without the user taking action to share it themselves via a feature (like quote share).
+
+---
+
 Check out my [other privacy and security related publications](/privacy).
 
 <style type="text/css">
