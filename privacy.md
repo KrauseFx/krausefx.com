@@ -21,7 +21,72 @@ If you need any additional resources, or have any follow-up questions that are n
 
 ----
 
+<div id="instagram-framed-top">
+  <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank">
+    <img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" style="width: 250px" alt="An iPhone screenshot, showing a website, rendering what commands got executed by the Instagram app in their in-app browser" />
+  </a>
+</div>
+
+## [Instagram and Facebook can track anything you do on any website in their in-app browser](/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser)
+The iOS Instagram and Facebook app render all third party links and ads within their app using a custom in-app browser. This [causes various risks for the user](https://krausefx.com/blog/follow-user), with the host app being able to track every single interaction with external websites, from all form inputs like passwords and addresses, to every single tap.
+
+- Links to external websites are rendered inside the Instagram app, instead of using the built-in Safari.
+- This allows Instagram to monitor everything happening on external websites, without the consent from the user, nor the website provider.
+- The Instagram app injects <a href="https://connect.facebook.net/en_US/pcm.js">their JavaScript code</a> into every website shown, including when clicking on ads. Even though the injected script doesn't currently do this, running custom scripts on third party websites allows them to monitor all user interactions, like every button & link tapped, text selections, screenshots, as well as any form inputs, like passwords, addresses and credit card numbers.
+
+<br />
+
+## [Read the full blog post](/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
+
+<br />
+
+<div class="press">
+  <a href="https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says">
+    <img src="/assets/privacy/TheGuardian.png">
+  </a>
+  <a href="https://news.ycombinator.com/item?id=32415470">
+    <img src="/assets/privacy/hackernews.ico">
+  </a>
+  <a href="https://www.theregister.com/2022/08/12/meta_ios_privacy/">
+    <img src="/assets/privacy/TheRegister.jpg">
+  </a>
+  <a href="https://finance.yahoo.com/news/meta-can-track-facebook-and-instagram-users-on-ios-with-its-in-app-browsers-071834703.html">
+    <img src="/assets/privacy/Yahoo.jpg">
+  </a>
+  <a href="https://www.macrumors.com/2022/08/10/instagram-tracking-users-in-app-browser/">
+    <img src="/assets/privacy/MacRumors.png">
+  </a>
+  <a href="https://www.heise.de/news/In-App-Browser-auf-dem-iPhone-Experte-sieht-Trackingpotenzial-durch-Meta-7217027.html">
+    <img src="/assets/privacy/heise.svg">
+  </a>  
+  <a href="https://9to5mac.com/2022/08/11/in-app-browsers/">
+    <img src="/assets/privacy/9to5.png">
+  </a>
+  <a href="https://www.t-online.de/digital/internet-sicherheit/sicherheit/id_100038034/meta-konzern-kann-nutzeraktivitaeten-verfolgen.html">
+    <img src="/assets/privacy/t-online.png">
+  </a>
+  <a href="https://www.engadget.com/meta-can-track-facebook-and-instagram-users-on-ios-with-its-in-app-browsers-071834703.html">
+    <img src="/assets/privacy/engadget.png">
+  </a>
+  <a href="https://www.cnbctv18.com/technology/instagram-can-track-a-users-web-activity-via-in-app-browser-claims-report-14448592.htm">
+    <img src="/assets/privacy/cnbc.png">
+  </a>
+  <a href="https://derstandard.at/2000064949062/Oesterreichischer-Entwickler-zeigt-wie-Foto-Apps-am-iPhone-schnueffeln">
+    <img src="/assets/privacy/derStandard.gif">
+  </a>
+  <a href="https://abc3340.com/news/nation-world/meta-can-track-users-credit-card-internet-history-on-other-websites-research-claims-facebook-instagram-felix-krause-code-google-engineer">
+    <img src="/assets/privacy/abc-logo.png" style="opacity: 0.9">
+  </a>
+  <a href="https://wfxl.com/news/nation-world/meta-can-track-users-credit-card-internet-history-on-other-websites-research-claims-facebook-instagram-felix-krause-code-google-engineer">
+    <img src="/assets/privacy/FoxNews.png" style="opacity: 0.9">
+  </a>
+</div>
+
+----
+
 <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dc97a83e00bed1b42c0096_1507631710330__img.png_" width="400" align="right" />
+
+
 ## [steal.password](/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
 
 Do you want the user’s Apple ID password, to get access to their Apple account, or to try the same email/password combination on different web services? Just ask your users politely, they’ll probably just hand over their credentials, as they’re trained to do so 👌
@@ -265,12 +330,14 @@ As a result, any website you visit, can do a pretty precise guess on if you are:
 ## [Read the full blog post](/blog/ios-privacy-whats-the-user-doing)
 
 <style type="text/css">
-  .press > a {
-    text-decoration: none;
+  #instagram-framed-top { 
+    float: right;
+    margin-right: -60px;
+    margin-left: 10px;
   }
-  .press > a > img {
-    max-height: 70px;
-    max-width: 180px;
-    margin: 10px;
+  @media screen and (max-width: 1000px) {
+    #instagram-framed-top {
+      display: none;
+    }
   }
 </style>
