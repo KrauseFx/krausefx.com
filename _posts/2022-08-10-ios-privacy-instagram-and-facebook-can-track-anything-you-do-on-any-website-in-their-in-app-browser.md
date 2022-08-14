@@ -61,6 +61,12 @@ meta: {}
   <a href="https://derstandard.at/2000064949062/Oesterreichischer-Entwickler-zeigt-wie-Foto-Apps-am-iPhone-schnueffeln">
     <img src="/assets/privacy/derStandard.gif">
   </a>
+  <a href="https://abc3340.com/news/nation-world/meta-can-track-users-credit-card-internet-history-on-other-websites-research-claims-facebook-instagram-felix-krause-code-google-engineer">
+    <img src="/assets/privacy/abc-logo.png" style="opacity: 0.9">
+  </a>
+  <a href="https://wfxl.com/news/nation-world/meta-can-track-users-credit-card-internet-history-on-other-websites-research-claims-facebook-instagram-felix-krause-code-google-engineer">
+    <img src="/assets/privacy/FoxNews.png" style="opacity: 0.9">
+  </a>
 </div>
 
 <hr style="margin-bottom:20px" />
