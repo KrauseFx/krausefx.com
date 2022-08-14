@@ -199,7 +199,7 @@ Setting up an attack like this is surprisingly easy using publicly available too
 
 <img src="/assets/posts/trusting-sdks/image_10.jpg" width="420" />
 
-I decided not to publish the names of all the tools I used, nor the code I wrote. You might want to look into well-known tools like [sslstrip](https://moxie.org/software/sslstrip/), [mitmproxy](https://mitmproxy.org/) and [Wireshark](https://www.wireshark.org/)
+I decided not to publish the names of all the tools I used, nor the code I wrote. You might want to look into well-known tools like [sslstrip](https://github.com/moxie0/sslstrip), [mitmproxy](https://mitmproxy.org/) and [Wireshark](https://www.wireshark.org/)
 
 ### Running arbitrary code on the developer’s machine
 
