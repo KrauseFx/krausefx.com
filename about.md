@@ -85,7 +85,7 @@ meta: {}
 </div>
 
 <script type="text/javascript">
-  var url = "https://instapipe.net/api.json";
+  var url = "https://where-is-felix-today-backend.herokuapp.com/api.json";
 
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function() { 
