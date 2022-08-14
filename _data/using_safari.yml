@@ -28,3 +28,12 @@
 - name: "Spotify"
   technology: "Default Browser"
   last_updated: "2022-08-14"
+- name: "Venmo"
+  technology: "SFSafariViewController"
+  last_updated: "2022-08-14"
+  note: "They have their own in-app browser, however once it's a non venmo.com URL it switches to SFSafariViewController"
+- name: "Venmo"
+  technology: "Default Browser"
+  last_updated: "2022-08-14"
+  note: "They have their own in-app browser, however once it's a non venmo.com URL it switches to SFSafariViewController"
+  
