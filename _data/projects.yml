@@ -7,6 +7,10 @@
   subtitle: "📍 How I put my whole life into a single database - Collected over 100 data types, everything from fitness, sleep, productivity, work and more"
   metadata: "Hackernews - 500k visits - TEDx Talk - 100k TikTok"
   # https://www.tiktok.com/@indexventures/video/7106325568148344107
+- title: "Instagram can track anything you do on any website in their in-app browser"
+  url: "/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser"
+  subtitle: "🕵️‍♂️ Instagram injects custom JavaScript code into external websites on their in-app browser"
+  metadata: "#1 HN - 1M views - TheGuardian - CNBC - ABC"
 - title: "auxcord.org"
   url: "https://auxcord.org"
   subtitle: "🎵 Let friends queue their music at your party - no more handing over your phone, or guests stopping the music"
