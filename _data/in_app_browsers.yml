@@ -1,30 +1,43 @@
 - name: "Instagram"
   has_open_in_browser: true
-  injects_js: true
+  js_modify_content: true
   shows_url: true
+  runs_js: true
   screenshot: "instagram"
   last_updated: "2022-08-14"
 - name: "FB Messenger"
   has_open_in_browser: true
-  injects_js: true
+  js_modify_content: true
+  runs_js: true
   shows_url: false
   screenshot: "messenger"
   last_updated: "2022-08-14"
 - name: "Facebook"
   has_open_in_browser: true
-  injects_js: true
+  js_modify_content: true
   shows_url: false
+  runs_js: true
   screenshot: "facebook"
   last_updated: "2022-08-14"
 - name: "TikTok"
   has_open_in_browser: false
-  injects_js: true
+  js_modify_content: true
+  runs_js: true
   shows_url: false
   screenshot: "tiktok"
   last_updated: "2022-08-14"
 - name: "Snapchat"
   has_open_in_browser: true
-  injects_js: false
+  js_modify_content: false
+  runs_js: false
   shows_url: true
   screenshot: "snapchat"
+  last_updated: "2022-08-14"
+- name: "Amazon"
+  has_open_in_browser: true
+  runs_js: true
+  js_modify_content: false
+  shows_url: true
+  show_encryption_status: false
+  screenshot: "amazon"
   last_updated: "2022-08-14"
