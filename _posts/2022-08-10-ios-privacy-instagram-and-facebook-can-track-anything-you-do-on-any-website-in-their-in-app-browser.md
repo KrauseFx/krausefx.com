@@ -388,7 +388,7 @@ To that, the answer was:
 
 > As shared earlier, pcm.js is required to respect a user’s ATT decision. The script needs to be injected to authenticate the source and the integrity (i.e. if pixel traffic is valid) of the data being received. Authentication would include checking that, when data is received from the In App Browser through the WebView-iOS native bridge, it contains a valid nonce coming from the injected script. SFSafariViewController doesn’t support this. There are additional components within the In App Browser that provide security and user features that SFSafariViewController also doesn’t support.
 
-The above answer doesn't answer my question. Other apps, including Meta's own WhatsApp, can operate perfectly fine without using a custom in-app browser. 
+While that answer provides some context, I don't think it answers my question. Other apps, including Meta's own WhatsApp, can operate perfectly fine without using a custom in-app browser.
 
 My ticket with Meta got marked as resolved `"given the items raised in your submission are intentional and not a privacy concern"`.
 
