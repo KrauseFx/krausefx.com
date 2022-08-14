@@ -49,6 +49,8 @@ meta: {}
 
   <p>Every other year I take the exact same photo as my Twitter/GitHub profile picture, introducing <a href="/blog/continuous-delivery-for-your-profile-picture">Continuous Delivery for your profile picture</a>.</p>
 
+  <p>You can always reach me via Email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a> or <a href="https://twitter.com/KrauseFx">Twitter</a>.</p>
+
 <hr style="margin-top: 35px" />
 
 <h2>Personal Photos</h2>
