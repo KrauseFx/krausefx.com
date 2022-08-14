@@ -114,7 +114,7 @@ The iOS Instagram and Facebook app render all third party links and ads within t
 
 - Links to external websites are rendered inside the Instagram app, instead of using the built-in Safari.
 - This allows Instagram to monitor everything happening on external websites, without the consent from the user, nor the website provider.
-- The Instagram app injects <a href="https://connect.facebook.net/en_US/pcm.js">their JavaScript code</a> into every website shown, including when clicking on ads. Even though pcm.js doesn't do this, injecting custom scripts into third party websites allows them to monitor all user interactions, like every button & link tapped, text selections, screenshots, as well as any form inputs, like passwords, addresses and credit card numbers.
+- The Instagram app injects <a href="https://connect.facebook.net/en_US/pcm.js">their JavaScript code</a> into every website shown, including when clicking on ads. Even though the injected script doesn't currently do this, running custom scripts on third party websites allows them to monitor all user interactions, like every button & link tapped, text selections, screenshots, as well as any form inputs, like passwords, addresses and credit card numbers.
 
 ### Why is this a big deal?
 
@@ -414,13 +414,14 @@ Check out my [other privacy and security related publications](/privacy).
   .hijacking-report-screenshot-table img {
     max-height: 540px;
   }
+  #inject-code-style {
+    max-width: 450px;
+  }
   #instagram-framed-top { 
     float: right;
     margin-right: -60px;
     margin-left: 10px;
-  }
-  #inject-code-style {
-    max-width: 450px;
+    margin-bottom: 20px;
   }
   @media screen and (max-width: 1000px) {
     #instagram-framed-top {
