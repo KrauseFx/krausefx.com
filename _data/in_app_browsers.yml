@@ -1,38 +1,31 @@
-- name: "Instagram"
-  has_open_in_browser: true
-  js_modify_content: true
-  shows_url: true
-  runs_js: true
-  screenshot: "instagram"
-  last_updated: "2022-08-14"
-- name: "FB Messenger"
-  has_open_in_browser: true
-  js_modify_content: true
-  runs_js: true
-  shows_url: false
-  screenshot: "messenger"
-  last_updated: "2022-08-14"
-- name: "Facebook"
-  has_open_in_browser: true
-  js_modify_content: true
-  shows_url: false
-  runs_js: true
-  screenshot: "facebook"
-  last_updated: "2022-08-14"
 - name: "TikTok"
   has_open_in_browser: false
   js_modify_content: true
   runs_js: true
   shows_url: false
   screenshot: "tiktok"
-  last_updated: "2022-08-14"
-- name: "Snapchat"
+  last_updated: "2022-08-15"
+- name: "Instagram"
   has_open_in_browser: true
-  js_modify_content: false
-  runs_js: false
+  js_modify_content: true
   shows_url: true
-  screenshot: "snapchat"
-  last_updated: "2022-08-14"
+  runs_js: true
+  screenshot: "instagram"
+  last_updated: "2022-08-15"
+- name: "FB Messenger"
+  has_open_in_browser: true
+  js_modify_content: true
+  runs_js: true
+  shows_url: false
+  screenshot: "messenger"
+  last_updated: "2022-08-15"
+- name: "Facebook"
+  has_open_in_browser: true
+  js_modify_content: true
+  shows_url: false
+  runs_js: true
+  screenshot: "facebook"
+  last_updated: "2022-08-15"
 - name: "Amazon"
   has_open_in_browser: true
   runs_js: true
@@ -40,7 +33,14 @@
   shows_url: true
   show_encryption_status: false
   screenshot: "amazon"
-  last_updated: "2022-08-14"
+  last_updated: "2022-08-15"
+- name: "Snapchat"
+  has_open_in_browser: true
+  js_modify_content: false
+  runs_js: false
+  shows_url: true
+  screenshot: "snapchat"
+  last_updated: "2022-08-15"
 - name: "Robinhood"
   has_open_in_browser: true
   runs_js: false
@@ -48,4 +48,4 @@
   shows_url: true
   show_encryption_status: false
   screenshot: "robinhood"
-  last_updated: "2022-08-14"
+  last_updated: "2022-08-15"
