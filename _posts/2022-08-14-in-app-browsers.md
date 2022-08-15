@@ -27,16 +27,19 @@ Steps to use [hijacking.report](https://hijacking.report):
 1. Tap on the link inside the app to open it
 1. Read the report on the screen
 
-## iOS Apps that built their own In-App Browser
+## iOS Apps that have their own In-App Browser
+
+- **Option to open in default browser**: Does the app provide a button to open the currently shown link in the default browser?
+- **Modify page**: Does the app inject JavaScript code into third party websites to modify its content? This includes adding tracking code (like inputs, text selections, taps, etc.), injecting external JavaScript files, as well as creating new HTML elements.
+- **Fetch metadata**: Does the app run JavaScript code to fetch website metadata? This is a harmless thing to do.
 
 <table class="in-app-browser-overview">
   <tr style="height: 60px; line-height: 23px;">
     <th style="width: 150px">App</th>
-    <th>"Open in Browser" button</th>
-    <th>Shows URL</th>
-    <th>Runs JS for metadata</th>
-    <th>Injects JS</th>
-    <th>Last updated</th>
+    <th>Option to open in default browser</th>
+    <th>Modify page</th>
+    <th>Fetch metadata</th>
+    <th>Updated</th>
   </tr>
   {% for app in site.data.in_app_browsers %}
     <tr>
@@ -47,11 +50,19 @@ Steps to use [hijacking.report](https://hijacking.report):
         <td class="browser-red">⛔️</td>
       {% endif %}
 
-      {% if app.shows_url == true %}
-        <td class="browser-green">✅</td>
+      {% if app.js_modify_content == false %}
+        <td class="browser-green">
       {% else %}
-        <td class="browser-red">⛔️</td>
+        <td class="browser-red">
       {% endif %}
+        <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
+          {% if app.js_modify_content == true %}
+            <span class="injecting">Yes</span>
+          {% else %}
+            <span class="not-injecting">None</span>
+          {% endif %}
+        </a>
+      </td>
 
       {% if app.runs_js == false %}
         <td class="browser-green">
@@ -60,19 +71,6 @@ Steps to use [hijacking.report](https://hijacking.report):
       {% endif %}
         <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
           {% if app.runs_js == true %}
-            <span class="injecting">Yes</span>
-          {% else %}
-            <span class="not-injecting">None</span>
-          {% endif %}
-        </a>
-      </td>
-      {% if app.js_modify_content == false %}
-        <td class="browser-green">
-      {% else %}
-        <td class="browser-red">
-      {% endif %}
-        <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
-          {% if app.js_modify_content == true %}
             <span class="injecting">Yes</span>
           {% else %}
             <span class="not-injecting">None</span>
@@ -90,7 +88,7 @@ Steps to use [hijacking.report](https://hijacking.report):
   <tr>
     <th>App</th>
     <th>Technology</th>
-    <th>Last updated</th>
+    <th>Updated</th>
   </tr>
   {% for app in site.data.using_safari %}
     <tr>
