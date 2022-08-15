@@ -80,6 +80,9 @@ The iOS Instagram and Facebook app render all third party links and ads within t
   <a href="https://wfxl.com/news/nation-world/meta-can-track-users-credit-card-internet-history-on-other-websites-research-claims-facebook-instagram-felix-krause-code-google-engineer">
     <img src="/assets/privacy/FoxNews.png" style="opacity: 0.9">
   </a>
+  <a href="https://metro.co.uk/2022/08/15/instagram-and-facebook-stalk-you-on-sites-accessed-through-their-apps-17184243/">
+    <img src="/assets/privacy/metrocouk.jpg" />
+  </a>
 </div>
 
 ----
