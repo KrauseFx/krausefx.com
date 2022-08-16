@@ -19,7 +19,8 @@ meta: {}
 
 I was so surprised to see the article featured by major media outlets across the globe, like [TheGuardian](https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says) and [The Register](https://www.theregister.com/2022/08/12/meta_ios_privacy/), generated a [over a million impressions on Twitter](https://twitter.com/KrauseFx/status/1557412468368052225), and was ranked [#1 on HackerNews](https://news.ycombinator.com/item?id=32415470) for more than 12 hours. After reading through the replies and DMs, I saw a common question across the community:
 
-<div id="tiktokcontainer">
+<!-- The code below is duplicated, once for mobile, once for desktop -->
+<div class="tiktokcontainer" id="desktop">
   <a href="/assets/app_screenshots/tiktok_framed.png" target="_blank">
     <img 
       src="/assets/app_screenshots/tiktok_framed.png"
@@ -41,7 +42,20 @@ To try this this tool yourself:
 1. Tap on the link inside the app to open it
 1. Read the report on the screen
 
-I started to use this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. 
+<!-- The code below is duplicated, once for mobile, once for desktop -->
+<div class="tiktokcontainer" id="mobile">
+  <a href="/assets/app_screenshots/tiktok_framed.png" target="_blank">
+    <img 
+      src="/assets/app_screenshots/tiktok_framed.png"
+      id="tiktokscreenshot"
+      alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
+    />
+  </a>
+  <h4>TikTok's In-App Browser injecting code to observe all taps and keyboard inputs</h4>
+</div>
+
+
+I started using this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. 
 
 For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager, or a more advanced media management.
 
@@ -210,14 +224,39 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
     margin-bottom: -15px;  
     margin-top: -10px;
   }
-  #tiktokcontainer {
-    width: 310px;
+  .tiktokcontainer {
     text-align: center;
-    float: right;
-    margin-left: 30px;
-    margin-right: -40px; /* TODO: Check on mobile */
   }
-  #tiktokcontainer h4 {
-    font-size: 0.8em;
+  @media screen and (min-width: 1001px) {
+    #mobile.tiktokcontainer {
+      display: none;
+    }
+    .tiktokcontainer {
+      width: 310px;
+      float: right;
+      margin-left: 30px;
+      margin-right: -40px;
+    }
+    .tiktokcontainer h4 {
+    font-size: 0.9em;
+  }
+  }
+  @media screen and (max-width: 1000px) {
+    #desktop.tiktokcontainer {
+      display: none;
+    }
+    .tiktokcontainer {
+      width: 100%;
+      margin-right: 10px;
+      margin-left: 0px;
+      margin-top: 30px;
+    }
+    .tiktokcontainer img {
+      max-width: 310px;
+    }
+    .tiktokcontainer h4 {
+      font-size: 1em;
+      margin-bottom: 40px;
+    }
   }
 </style>
