@@ -27,10 +27,10 @@ I was so surprised to see the article featured by major media outlets across the
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
-  <h4>TikTok's In-App Browser monitoring all taps and keyboard inputs</h4>
+  <h4>TikTok's In-App Browser injecting code to observe all taps and keyboard inputs</h4>
 </div>
 
-**"What tools can I use to verify what apps are doing inside their webviews?"**
+**"How can I verify what apps do in their webviews?"**
 
 Introducing [InAppBrowser.com](https://InAppBrowser.com), a simple tool to list the JavaScript commands executed by the iOS app rendering the page.
 
@@ -45,10 +45,11 @@ I started to use this tool to analyze the most popular iOS apps that have their 
 
 For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager, or a more advanced media management.
 
-<br />
-<br />
-<br />
-<br />
+**Fully Open Source**
+
+[InAppBrowser.com](https://InAppBrowser.com) is designed for everybody to verify for themselves on what apps are doing inside their in-app browsers. I have decided to open source the code used for this analysis, you can check it out on [GitHub](https://github.com/KrauseFx/inAppBrowser.com).
+
+The goal is for the community to improve this script over time, adding detection of other ways in-app browsers might track the user.
 
 ## iOS Apps that have their own In-App Browser
 
@@ -198,12 +199,16 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
   }
   #tiktokscreenshot {
     margin-bottom: -15px;  
+    margin-top: -10px;
   }
   #tiktokcontainer {
     width: 310px;
     text-align: center;
     float: right;
-    margin-left: 25px;
-    margin-right: -60px; /* TODO: Check on mobile */
+    margin-left: 30px;
+    margin-right: -40px; /* TODO: Check on mobile */
+  }
+  #tiktokcontainer h4 {
+    font-size: 0.8em;
   }
 </style>
