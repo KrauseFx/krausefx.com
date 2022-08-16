@@ -15,7 +15,7 @@ published: true
 meta: {}
 ---
 
-[Last week I’ve published a report](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) on the risks of mobile apps using in-app browsers. Some apps, like Instagram and Facebook, inject JavaScript code into third party websites that cause potential security and privacy risks to the user. 
+[Last week I published a report](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) on the risks of mobile apps using in-app browsers. Some apps, like Instagram and Facebook, inject JavaScript code into third party websites that cause potential security and privacy risks to the user. 
 
 I was so surprised to see the article featured by major media outlets across the globe, like [TheGuardian](https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says) and [The Register](https://www.theregister.com/2022/08/12/meta_ios_privacy/), generated a [over a million impressions on Twitter](https://twitter.com/KrauseFx/status/1557412468368052225), and was ranked [#1 on HackerNews](https://news.ycombinator.com/item?id=32415470) for more than 12 hours. After reading through the replies and DMs, I saw a common question across the community:
 
@@ -121,7 +121,7 @@ The goal is for the community to improve this script over time, adding detection
 
 Click on the `Yes` or `None` on the above table to see a screenshot of the app. If any of the above apps were updated to address those concerns, please reach out to me ([privacy@krausefx.com](mailto:privacy@krausefx.com)), so I can update the table.
 
-**Important**: Just because an app injects JavaScript into external websites, doesn't mean they're doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how the data is being transfered or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
+**Important**: Just because an app injects JavaScript into external websites, doesn't mean they're doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how the data is being transferred or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
 
 ## iOS Apps that use Safari
 
@@ -169,7 +169,7 @@ TikTok doesn't offer a way to open the currently shown website in your default b
 
 **Companies using in-app browsers**
 
-If you’re at a company where you have an in-app browser use it only for your own pages and open all external links in the user's default browser. Additionally, provide a setting to let users choose a default browser over an in-app browser experience. Maybe the [previous](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) and this publication will help convince your managers to remove the in-app browser from your app.
+If you’re at a company where you have an in-app browser, use it only for your own pages and open all external links in the user's default browser. Additionally, provide a setting to let users choose a default browser over an in-app browser experience. Maybe the [previous](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) and this publication will help convince your managers to remove the in-app browser from your app.
 
 **Major tech companies**
 
