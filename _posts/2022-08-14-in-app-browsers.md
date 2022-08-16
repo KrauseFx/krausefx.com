@@ -89,6 +89,8 @@ I started to use this tool to analyze the most popular iOS apps that have their 
 
 Click on the `Yes` or `None` on the above table to see a screenshot of the app. If any of the above apps were updated to address those concerns, please reach out to me ([privacy@krausefx.com](mailto:privacy@krausefx.com)), so I can update the table.
 
+**Important**: Just because an app injects JavaScript into external websites, doesn't mean they're doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how the data is being transfered or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
+
 ## iOS Apps that use Safari
 
 The apps below follow Apple's recommendation of using Safari or SFSafariViewController for viewing external websites. More context on this in the [original article](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
