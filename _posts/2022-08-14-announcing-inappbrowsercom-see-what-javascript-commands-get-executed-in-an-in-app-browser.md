@@ -140,6 +140,15 @@ However, there are data privacy & integrity issues when you use in-app browsers 
 
 **As a user of an app**
 
+<div style="width: 250px; float: right; margin: 20px; margin-left: 30px; margin-bottom: 0px; margin-top: 0px; text-align: center;">
+  <img 
+    src="/assets/app_screenshots/video-preview.png" 
+    style="margin-bottom: 5px; border: 2px solid #333; cursor: pointer; "
+    onclick="window.open('https\:\/\/www.youtube.com/watch?v=i2SfbHpZDQI')"
+    alt="A link to the YouTube video showing the website in action inside the Instagram app" />
+  <b>Demo video of how to leave the Instagram In-App Browser</b>
+</div>
+
 Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land inside an in-app browser, use the `Open in Browser` feature to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. If the app makes it difficult to even do that, you can tap & hold a link on the website and then use the Copy feature, which can be a little tricky to get right.
 
 TikTok doesn't offer a way to open the currently shown website in your default browser.
