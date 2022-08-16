@@ -121,7 +121,7 @@ The goal is for the community to improve this script over time, adding detection
 
 Click on the `Yes` or `None` on the above table to see a screenshot of the app. If any of the above apps were updated to address those concerns, please reach out to me ([privacy@krausefx.com](mailto:privacy@krausefx.com)), so I can update the table.
 
-**Important**: Just because an app injects JavaScript into external websites, doesn't mean they're doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how the data is being transferred or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
+**Important**: Just because an app injects JavaScript into external websites, doesn't mean the app is doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how or if the data is being transferred or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
 
 ## iOS Apps that use Safari
 
