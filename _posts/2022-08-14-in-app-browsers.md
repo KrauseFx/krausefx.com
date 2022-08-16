@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'iOS Privacy: In App Browsers'
+title: 'iOS Privacy: Announcing InAppBrowser.com - see what JavaScript commands get executed in an in-app browser'
 categories: []
 tags:
 - ios
@@ -24,13 +24,13 @@ Introducing [InAppBrowser.com](https://InAppBrowser.com), a simple tool to list 
 To try this this tool yourself:
 
 1. Open an app you want to analyze
-1. Share the url [https://inappbrowser.com](https://inappbrowser.com) somewhere inside the app (e.g. - send a DM to a friend, or post to your feed)
+1. Share the url [https://inappbrowser.com](https://inappbrowser.com) somewhere inside the app (e.g. send a DM to a friend, or post to your feed)
 1. Tap on the link inside the app to open it
 1. Read the report on the screen
 
-<!-- TODO: insert video here -->
+### TODO: insert video here <--
 
-I started to use this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. For this analysis I have excluded all third party iOS browsers (Chrome, Brave, Firefox, etc.), as they often use JavaScript to offer some of their functionality, like a password manager, or more advanced media management.
+I started to use this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager, or a more advanced media management.
 
 ## iOS Apps that have their own In-App Browser
 
@@ -107,6 +107,7 @@ The apps below follow Apple's recommendation of using Safari or SFSafariViewCont
     </tr>
   {% endfor %}
 </table>
+
 
 ---
 

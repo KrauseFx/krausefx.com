@@ -38,4 +38,7 @@
 - name: "Microsoft Teams"
   technology: "Default Browser"
   last_updated: "2022-08-16"
+- name: "Microsoft Outlook"
+  technology: "Default Browser or Edge"
+  last_updated: "2022-08-16"
   
