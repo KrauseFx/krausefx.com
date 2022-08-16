@@ -24,7 +24,6 @@ I was so surprised to see the article featured by major media outlets across the
   <a href="/assets/app_screenshots/tiktok_framed.png" target="_blank">
     <img 
       src="/assets/app_screenshots/tiktok_framed.png"
-      id="tiktokscreenshot"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
@@ -47,13 +46,11 @@ To try this this tool yourself:
   <a href="/assets/app_screenshots/tiktok_framed.png" target="_blank">
     <img 
       src="/assets/app_screenshots/tiktok_framed.png"
-      id="tiktokscreenshot"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
   <h4>TikTok's In-App Browser injecting code to observe all taps and keyboard inputs</h4>
 </div>
-
 
 I started using this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. 
 
@@ -71,54 +68,56 @@ The goal is for the community to improve this script over time, adding detection
 - **Modify page**: Does the app inject JavaScript code into third party websites to modify its content? This includes adding tracking code (like inputs, text selections, taps, etc.), injecting external JavaScript files, as well as creating new HTML elements.
 - **Fetch metadata**: Does the app run JavaScript code to fetch website metadata? This is a harmless thing to do, and doesn't cause any real security or privacy risks.
 
-<table class="in-app-browser-overview">
-  <tr style="height: 60px; line-height: 23px;">
-    <th style="width: 110px">App</th>
-    <th title="Does the app provide a button to open the currently shown link in the default browser?">Option to open in default browser</th>
-    <th title="Does the app inject JavaScript code into third party websites to modify its content? This includes adding tracking code (like inputs, text selections, taps, etc.), injecting external JavaScript files, as well as creating new HTML elements.">Modify page</th>
-    <th title="Does the app run JavaScript code to fetch website metadata? This is a harmless thing to do, and doesn't cause any real security or privacy risks.">Fetch metadata</th>
-    <th>Updated</th>
-  </tr>
-  {% for app in site.data.in_app_browsers %}
-    <tr>
-      <td class="app-name">{{ app.name }}</td>
-      {% if app.has_open_in_browser == true %}
-        <td class="browser-green">✅</td>
-      {% else %}
-        <td class="browser-red">⛔️</td>
-      {% endif %}
-
-      {% if app.js_modify_content == false %}
-        <td class="browser-green">
-      {% else %}
-        <td class="browser-red">
-      {% endif %}
-        <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
-          {% if app.js_modify_content == true %}
-            <span class="injecting">Yes</span>
-          {% else %}
-            <span class="not-injecting">None</span>
-          {% endif %}
-        </a>
-      </td>
-
-      {% if app.runs_js == false %}
-        <td class="browser-green">
-      {% else %}
-        <td class="browser-red">
-      {% endif %}
-        <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
-          {% if app.runs_js == true %}
-            <span class="injecting">Yes</span>
-          {% else %}
-            <span class="not-injecting">None</span>
-          {% endif %}
-        </a>
-      </td>
-      <td class="last-updated">{{ app.last_updated }}</td>
+<div id="table-scroll-container">
+  <table class="in-app-browser-overview">
+    <tr style="height: 60px; line-height: 23px;">
+      <th>App</th>
+      <th title="Does the app provide a button to open the currently shown link in the default browser?">Option to open in default browser</th>
+      <th title="Does the app inject JavaScript code into third party websites to modify its content? This includes adding tracking code (like inputs, text selections, taps, etc.), injecting external JavaScript files, as well as creating new HTML elements.">Modify page</th>
+      <th title="Does the app run JavaScript code to fetch website metadata? This is a harmless thing to do, and doesn't cause any real security or privacy risks.">Fetch metadata</th>
+      <th>Updated</th>
     </tr>
-  {% endfor %}
-</table>
+    {% for app in site.data.in_app_browsers %}
+      <tr>
+        <td class="app-name">{{ app.name }}</td>
+        {% if app.has_open_in_browser == true %}
+          <td class="browser-green">✅</td>
+        {% else %}
+          <td class="browser-red">⛔️</td>
+        {% endif %}
+
+        {% if app.js_modify_content == false %}
+          <td class="browser-green">
+        {% else %}
+          <td class="browser-red">
+        {% endif %}
+          <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
+            {% if app.js_modify_content == true %}
+              <span class="injecting">Yes</span>
+            {% else %}
+              <span class="not-injecting">None</span>
+            {% endif %}
+          </a>
+        </td>
+
+        {% if app.runs_js == false %}
+          <td class="browser-green">
+        {% else %}
+          <td class="browser-red">
+        {% endif %}
+          <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
+            {% if app.runs_js == true %}
+              <span class="injecting">Yes</span>
+            {% else %}
+              <span class="not-injecting">None</span>
+            {% endif %}
+          </a>
+        </td>
+        <td class="last-updated">{{ app.last_updated }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
 
 Click on the `Yes` or `None` on the above table to see a screenshot of the app. If any of the above apps were updated to address those concerns, please reach out to me ([privacy@krausefx.com](mailto:privacy@krausefx.com)), so I can update the table.
 
@@ -128,20 +127,22 @@ Click on the `Yes` or `None` on the above table to see a screenshot of the app. 
 
 The apps below follow Apple's recommendation of using Safari or `SFSafariViewController` for viewing external websites. More context on `SFSafariViewController` in the [original article](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
 
-<table class="in-app-browser-overview safari-users">
-  <tr>
-    <th>App</th>
-    <th>Technology</th>
-    <th>Updated</th>
-  </tr>
-  {% for app in site.data.using_safari %}
+<div id="table-scroll-container">
+  <table class="in-app-browser-overview safari-users">
     <tr>
-      <td class="app-name">{{ app.name }}</td>
-      <td class="technology">{{ app.technology }}</td>
-      <td class="last-updated">{{ app.last_updated }}</td>
+      <th>App</th>
+      <th>Technology</th>
+      <th>Updated</th>
     </tr>
-  {% endfor %}
-</table>
+    {% for app in site.data.using_safari %}
+      <tr>
+        <td class="app-name-safari">{{ app.name }}</td>
+        <td class="technology">{{ app.technology }}</td>
+        <td class="last-updated">{{ app.last_updated }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
 
 
 ---
@@ -154,13 +155,12 @@ However, there are data privacy & integrity issues when you use in-app browsers 
 
 **As a user of an app**
 
-<div style="width: 250px; float: right; margin: 20px; margin-left: 30px; margin-bottom: 0px; margin-top: 0px; text-align: center;">
+<div id="youtube-button">
   <img 
     src="/assets/app_screenshots/video-preview.png" 
-    style="margin-bottom: 5px; border: 2px solid #333; cursor: pointer; "
     onclick="window.open('https\:\/\/www.youtube.com/watch?v=i2SfbHpZDQI')"
     alt="A link to the YouTube video showing the website in action inside the Instagram app" />
-  <b>Demo video of how to leave the Instagram In-App Browser</b>
+  <p><b>Demo video of how to leave the Instagram In-App Browser</b></p>
 </div>
 
 Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land inside an in-app browser, use the `Open in Browser` feature to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. If the app makes it difficult to even do that, you can tap & hold a link on the website and then use the Copy feature, which can be a little tricky to get right.
@@ -210,9 +210,15 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
   }
   .technology {
     color: #00a000;
+    min-width: 180px;
   }
   .in-app-browser-overview .app-name {
     text-align: left;
+    min-width: 110px;
+  }
+  .in-app-browser-overview .app-name-safari {
+    text-align: left;
+    min-width: 140px;
   }
   .browser-green {
     background-color: rgba(0, 255, 0, 0.2);
@@ -220,12 +226,12 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
   .browser-red {
     background-color: rgba(255, 0, 0, 0.2);
   }
-  #tiktokscreenshot {
-    margin-bottom: -15px;  
-    margin-top: -10px;
-  }
   .tiktokcontainer {
     text-align: center;
+  }
+  .tiktokcontainer a {
+    margin-bottom: -15px;  
+    margin-top: -10px;
   }
   @media screen and (min-width: 1001px) {
     #mobile.tiktokcontainer {
@@ -258,5 +264,43 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
       font-size: 1em;
       margin-bottom: 40px;
     }
+  }
+  @media screen and (max-width: 800px) {
+    .in-app-browser-overview {
+      width: 100%;
+    }
+    #youtube-button {
+      width: 100% !important;
+      float: none !important;
+      margin-left: 0px !important;
+    }
+    #youtube-button img {
+      margin-left: 0px !important;
+      width: calc(100% - 60px) !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    /* Really only used for mobile */
+    #table-scroll-container {
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      margin-right: -40px;
+      overflow-x: scroll;
+    }
+  }
+  #youtube-button {
+    width: 250px; 
+    float: right; 
+    margin: 20px; 
+    margin-left: 30px; 
+    margin-bottom: 0px; 
+    margin-top: 0px; 
+    text-align: center;
+  }
+  #youtube-button img {
+    margin-bottom: 5px;
+    border: 2px solid #333; 
+    cursor: pointer;
+    max-width: 220px;
   }
 </style>
