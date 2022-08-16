@@ -110,9 +110,9 @@ The apps below follow Apple's recommendation of using Safari or SFSafariViewCont
 
 ---
 
-As a reminder, just because an app is running JavaScript to collect metadata inside of an in-app browsing session does not mean it’s malicious or dangerous. There are many reasons to use an in-app browser, particularly when an app is accessing its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just to select their seats.
+As a reminder, just because an app is running JavaScript to collect metadata inside of an in-app browsing session does not mean it’s malicious or dangerous. There are many reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat.
 
-However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as using Instagram to click on links that take you to third party websites. More importantly, those apps rarely offer an option to use a default browser, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
+However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
 
 ## What's next?
 
