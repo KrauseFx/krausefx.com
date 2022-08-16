@@ -37,7 +37,7 @@ Introducing [InAppBrowser.com](https://InAppBrowser.com), a simple tool to list 
 To try this this tool yourself:
 
 1. Open an app you want to analyze
-1. Share the url [https://inappbrowser.com](https://inappbrowser.com) somewhere inside the app (e.g. send a DM to a friend, or post to your feed)
+1. Share the url [https://InAppBrowser.com](https://InAppBrowser.com) somewhere inside the app (e.g. send a DM to a friend, or post to your feed)
 1. Tap on the link inside the app to open it
 1. Read the report on the screen
 
@@ -111,7 +111,7 @@ Click on the `Yes` or `None` on the above table to see a screenshot of the app. 
 
 ## iOS Apps that use Safari
 
-The apps below follow Apple's recommendation of using Safari or SFSafariViewController for viewing external websites. More context on this in the [original article](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
+The apps below follow Apple's recommendation of using Safari or `SFSafariViewController` for viewing external websites. More context on `SFSafariViewController` in the [original article](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
 
 <table class="in-app-browser-overview safari-users">
   <tr>
@@ -131,19 +131,21 @@ The apps below follow Apple's recommendation of using Safari or SFSafariViewCont
 
 ---
 
-As a reminder, just because an app is running JavaScript to collect metadata inside of an in-app browsing session does not mean it’s malicious or dangerous. There are many reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat.
+As a reminder, just because an app is running JavaScript to collect metadata inside of an in-app browsing session does not mean it’s malicious or dangerous. There are many reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
 
 However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
 
-## What's next?
+## What can we do?
+
+**As a user of an app**
+
+Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land inside an in-app browser, use the `Open in Browser` feature to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. If the app makes it difficult to even do that, you can tap & hold a link on the website and then use the Copy feature, which can be a little tricky to get right.
+
+TikTok doesn't offer a way to open the currently shown website in your default browser.
 
 **Companies using in-app browsers**
 
-If you’re at a company where you have an in-app browser, only use it for your own website and open all external links in the default browser. Additionally, provide a setting to let users choose a default browser over an in-app browser experience.
-
-**App users**
-
-Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land on that screen, use that option to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. TikTok unfortunately doesn't offer a way to easily switch to your default browser.
+If you’re at a company where you have an in-app browser use it only for your own pages and open all external links in the user's default browser. Additionally, provide a setting to let users choose a default browser over an in-app browser experience. Maybe the [previous](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) and this publication will help convince your managers to remove the in-app browser from your app.
 
 **Major tech companies**
 
