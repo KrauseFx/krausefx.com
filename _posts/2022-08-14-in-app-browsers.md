@@ -7,6 +7,8 @@ tags:
 - privacy
 - hijacking
 - sniffing
+- apps
+- browser
 status: publish
 type: post
 published: true
@@ -16,6 +18,17 @@ meta: {}
 [Last week I’ve published a report](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) on the risks of mobile apps using in-app browsers. Some apps, like Instagram and Facebook, inject JavaScript code into third party websites that cause potential security and privacy risks to the user. 
 
 I was so surprised to see the article featured by major media outlets across the globe, like [TheGuardian](https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says) and [The Register](https://www.theregister.com/2022/08/12/meta_ios_privacy/), generated a [over a million impressions on Twitter](https://twitter.com/KrauseFx/status/1557412468368052225), and was ranked [#1 on HackerNews](https://news.ycombinator.com/item?id=32415470) for more than 12 hours. After reading through the replies and DMs, I saw a common question across the community:
+
+<div id="tiktokcontainer">
+  <a href="/assets/app_screenshots/tiktok_framed.png" target="_blank">
+    <img 
+      src="/assets/app_screenshots/tiktok_framed.png"
+      id="tiktokscreenshot"
+      alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
+    />
+  </a>
+  <h4>TikTok's In-App Browser monitoring all taps and keyboard inputs</h4>
+</div>
 
 **"What tools can I use to verify what apps are doing inside their webviews?"**
 
@@ -28,9 +41,14 @@ To try this this tool yourself:
 1. Tap on the link inside the app to open it
 1. Read the report on the screen
 
-### TODO: insert video here <--
+I started to use this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. 
 
-I started to use this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager, or a more advanced media management.
+For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager, or a more advanced media management.
+
+<br />
+<br />
+<br />
+<br />
 
 ## iOS Apps that have their own In-App Browser
 
@@ -175,5 +193,15 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
   }
   .browser-red {
     background-color: rgba(255, 0, 0, 0.2);
+  }
+  #tiktokscreenshot {
+    margin-bottom: -15px;  
+  }
+  #tiktokcontainer {
+    width: 310px;
+    text-align: center;
+    float: right;
+    margin-left: 25px;
+    margin-right: -60px; /* TODO: Check on mobile */
   }
 </style>
