@@ -117,21 +117,22 @@ However, there are data privacy & integrity issues when you use in-app browsers 
 
 ## What's next?
 
-**Companies using in-app browsers:**
+**Companies using in-app browsers**
 
 If you’re at a company where you have an in-app browser, only use it for your own website and open all external links in the default browser. Additionally, provide a setting to let users choose a default browser over an in-app browser experience.
 
-**Every day users**
+**App users**
 
-Users should be more careful when using in-app browsers, and instead choose to open links on their default browser. Secondarily, consumers should be more active in the conversation around privacy and data usage. More consumer feedback needs to be heard on how users think about their privacy, data, and product experiences. There’s a tradeoff between being the most private and data responsible, and creating magical software experiences we love, so understanding where that line is can help companies align to user values much faster.
+Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land on that screen, use that option to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. TikTok unfortunately doesn't offer a way to easily switch to your default browser.
 
 **Major tech companies**
 
-It’s important to call out how much movement there’s been in the privacy of data space, but it’s unclear how many of these changes have been motion vs. true progress for the industry and the customer. It’s clear that one size doesn’t fit all, and one company can’t set the standard for every business out there. There needs to be a much larger conversation where companies work together to define what standards should exist, and how it equally impacts everyone who operates within them. We can’t have a hierarchy when it comes to user privacy or user data, because ultimately it leads to worse user and product experiences.
+It’s important to call out how much movement there’s been in the privacy of data space, but it’s unclear how many of these changes have been motion vs. true progress for the industry and the user. 
 
-Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) seems to be an excellent new WebKit feature making it possible for developers to offer a safer in-app browsing experience when using WKWebView. As an app developer, you can define which domains your app can access, and all web requests will be restricted to them. To disable the protection, a user would have to explicitly disable it in the iOS settings app. However, at the time of writing, this system is not enabled by default.
+Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) seems to be an excellent new WebKit feature making it possible for developers to offer a safer in-app browsing experience when using `WKWebView`. As an app developer, you can define which domains your app can access (your own), and you won't be able to control third party pages any more. To disable the protection, a user would have to explicitly disable it in the iOS settings app. However, at the time of writing, this system is not yet enabled by default.
 
-### Non-Technical FAQ
+### FAQs for non-tech readers
+
 - **Can in-app browsers read everything I do online?** No! They are only able to read and watch your online activities when you open a link or ad from within their apps.
 - **Do the apps above actually steal my passwords, address and credit card numbers?** No! I wanted to showcase that bad actors could get access to this data with this approach. As shown in the past, if it’s possible for a company to get access to data legally and for free, without asking the user for permission, [they will track it](https://twitter.com/steipete/status/1025024813889478656).
 - **How can I protect myself?** Whenever you open a link from any app, see if the app offers a way to open the currently shown website in your default browser. During this analysis, every app besides TikTok offered a way to do this.
