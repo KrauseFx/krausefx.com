@@ -54,13 +54,13 @@ To try this this tool yourself:
 
 I started using this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. 
 
-For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager, or a more advanced media management.
+For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager.
+
+**Important Note:** This tool can't detect all JavaScript commands executed, as well as doesn't show any tracking the app might do using native code (like custom gesture recognisers). More details on this below.
 
 **Fully Open Source**
 
-[InAppBrowser.com](https://InAppBrowser.com) is designed for everybody to verify for themselves on what apps are doing inside their in-app browsers. I have decided to open source the code used for this analysis, you can check it out on [GitHub](https://github.com/KrauseFx/inAppBrowser.com).
-
-The goal is for the community to improve this script over time, adding detection of other ways in-app browsers might track the user.
+[InAppBrowser.com](https://InAppBrowser.com) is designed for everybody to verify for themselves on what apps are doing inside their in-app browsers. I have decided to open source the code used for this analysis, you can check it out on [GitHub](https://github.com/KrauseFx/inAppBrowser.com). This allows the community to update and improve this script over time.
 
 ## iOS Apps that have their own In-App Browser
 
@@ -119,9 +119,41 @@ The goal is for the community to improve this script over time, adding detection
   </table>
 </div>
 
-Click on the `Yes` or `None` on the above table to see a screenshot of the app. If any of the above apps were updated to address those concerns, please reach out to me ([privacy@krausefx.com](mailto:privacy@krausefx.com)), so I can update the table.
+Click on the `Yes` or `None` on the above table to see a screenshot of the app.
 
 **Important**: Just because an app injects JavaScript into external websites, doesn't mean the app is doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how or if the data is being transferred or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
+
+There are many valid reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
+
+However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
+
+### Apps can hide their JavaScript activities from this tool
+
+Since iOS 14.3 (December 2020), Apple introduced the support of running JavaScript code in the [context of a specified frame and content world](https://developer.apple.com/documentation/webkit/wkcontentworld). JavaScript commands executed using this approach can still fully access the third party website, but can't be detected by the website itself (in this case a tool like InAppBrowser.com).
+
+> Use a WKContentWorld object as a namespace to separate your app’s web environment from the environment of individual webpages or scripts you execute. Content worlds help prevent issues that occur when two scripts modify environment variables in conflicting ways. [...]
+> Changes you make to the DOM are visible to all script code, regardless of content world.
+
+&ndash; [Apple WKContentWorld Docs](https://developer.apple.com/documentation/webkit/wkcontentworld)
+
+This new system was initially built so that website operators can't interfere with JavaScript code of browser plugins. As a user, you can check the source code of any browser plugin, as you are in control over the browser itself. However with in-app browsers we don't have a reliable way to verify all the code that is executed.
+
+So if Meta or TikTok want to hide the JavaScript commands they execute on third party websites, all they'd need to do is to update their JavaScript runner:
+
+```swift
+// Currently used code by Meta & TikTok
+self.evaluateJavaScript(javascript)
+
+// Updated to use the new system
+self.evaluateJavaScript(javascript, in: nil, in: .defaultClient, completionHandler: { _ in })
+```
+
+For example, Firefox for iOS already [uses the new WKContentWorld system](https://github.com/mozilla-mobile/firefox-ios/blob/d613cb24d5dc717466f098e13625a3e0c5e4703e/Shared/Extensions/WKWebViewExtensions.swift#L19-L29). Due to the open source nature of Firefox and Google Chrome for iOS it's easy for us as a community verify nothing suspicious is happening.
+
+Especialy after the publicity of [last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser), as well as this one, tech companies who are still using custom in-app browsers will very quickly update to use the new JavaScript isolated world system, so their code becomes undetectable to us.
+
+Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content. As you can see on the list below, all apps that use `SFSafariViewController` or `Default Browser` are on the green side, and there is no way for apps to inject their tracking code onto websites. However, the apps listed in the first table **do** use a custom in-app browser, and even if you can see only green checkmarks, they might just use the `Isolated World JavaScript`, therefore I wasn't able to prove any JavaScript injections.
+
 
 ## iOS Apps that use Safari
 
@@ -144,12 +176,7 @@ The apps below follow Apple's recommendation of using Safari or `SFSafariViewCon
   </table>
 </div>
 
-
----
-
-As a reminder, just because an app is running JavaScript to collect metadata inside of an in-app browsing session does not mean it’s malicious or dangerous. There are many reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
-
-However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
+All the apps listed above have no way to inject any JavaScript commands onto external websites. Even the `Isolated World JavaScript` method described above won't work, as the `SFSafariViewController` and Safari itself run in a completely separate sandbox and process, with no direct access with the app itself.
 
 ## What can we do?
 
@@ -182,7 +209,8 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
 - **Can in-app browsers read everything I do online?** No! They are only able to read and watch your online activities when you open a link or ad from within their apps.
 - **Do the apps above actually steal my passwords, address and credit card numbers?** No! I wanted to showcase that bad actors could get access to this data with this approach. As shown in the past, if it’s possible for a company to get access to data legally and for free, without asking the user for permission, [they will track it](https://twitter.com/steipete/status/1025024813889478656).
 - **How can I protect myself?** Whenever you open a link from any app, see if the app offers a way to open the currently shown website in your default browser. During this analysis, every app besides TikTok offered a way to do this.
-- **Why are companies doing this on purpose?** Building your own in-app browser takes a non-trivial time to program and maintain, significantly more than just using the privacy and user-friendly alternative that’s already been built into the iPhone for the past 7 years. Most likely there is some motivation there for the company to track your activities on those websites.
+- **Are companies doing this on purpose?** Building your own in-app browser takes a non-trivial time to program and maintain, significantly more than just using the privacy and user-friendly alternative that’s already been built into the iPhone for the past 7 years. Most likely there is some motivation there for the company to track your activities on those websites.
+- **I opened InAppBrowser.com inside an app, and it doesn't show any commands. Am I safe?** No! First of all, the website only checks for one of many hundreds of attack vectors: JavaScript injection from the app itself. And even here, as of December 2020, app developers can completely hide the commands they execute, therefore offering no way for us to verify what is actually happening under the hood.
 
 
 <style type="text/css">
