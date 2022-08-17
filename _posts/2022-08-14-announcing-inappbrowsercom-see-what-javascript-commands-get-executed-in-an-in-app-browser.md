@@ -17,7 +17,7 @@ meta: {}
 
 [Last week I published a report](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) on the risks of mobile apps using in-app browsers. Some apps, like Instagram and Facebook, inject JavaScript code into third party websites that cause potential security and privacy risks to the user. 
 
-I was so surprised to see the article featured by major media outlets across the globe, like [TheGuardian](https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says) and [The Register](https://www.theregister.com/2022/08/12/meta_ios_privacy/), generated a [over a million impressions on Twitter](https://twitter.com/KrauseFx/status/1557412468368052225), and was ranked [#1 on HackerNews](https://news.ycombinator.com/item?id=32415470) for more than 12 hours. After reading through the replies and DMs, I saw a common question across the community:
+I was so happy to see the article featured by major media outlets across the globe, like [TheGuardian](https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says) and [The Register](https://www.theregister.com/2022/08/12/meta_ios_privacy/), generated a [over a million impressions on Twitter](https://twitter.com/KrauseFx/status/1557412468368052225), and was ranked [#1 on HackerNews](https://news.ycombinator.com/item?id=32415470) for more than 12 hours. After reading through the replies and DMs, I saw a common question across the community:
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer" id="desktop">
@@ -56,7 +56,7 @@ I started using this tool to analyze the most popular iOS apps that have their o
 
 For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager.
 
-**Important Note:** This tool can't detect all JavaScript commands executed, as well as doesn't show any tracking the app might do using native code (like custom gesture recognisers). More details on this below.
+***Important Note:*** This tool can't detect all JavaScript commands executed, as well as doesn't show any tracking the app might do using native code (like custom gesture recognisers). More details on this below.
 
 **Fully Open Source**
 
@@ -198,11 +198,17 @@ TikTok doesn't offer a way to open the currently shown website in your default b
 
 **Companies using in-app browsers**
 
-If you’re at a company where you have an in-app browser, use it only for your own pages and open all external links in the user's default browser. Additionally, provide a setting to let users choose a default browser over an in-app browser experience. Maybe the [previous](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) and this publication will help convince your managers to remove the in-app browser from your app.
+If you’re at a company where you have an in-app browser, use it only for your own pages and open all external links in the user's default browser. Additionally, provide a setting to let users choose a default browser over an in-app browser experience. Unfortunately, these types of changes rarely get prioritized over features that move metrics inside of tech organizations. However, it's so important for people to educate others on their team, and their managers, about the positive impact of making better security and privacy decisions for the user. These changes can be transparently marketed to users as an opportunity to build further trust.
 
 **Major tech companies**
 
 It’s important to call out how much movement there’s been in the privacy of data space, but it’s unclear how many of these changes have been motion vs. true progress for the industry and the user. 
+
+> "Many tech companies take heat for 'abusing their users' privacy', when in fact they try to do the right thing to balance out business priorities, great user experiences, and ensuring they are respecting privacy and user data. It's clear why companies were motivated to provide an in-app experience for external websites in the first place. 
+> 
+> With the latest technology, it's possible for tech companies to provide a smooth experience for the user, while respecting their privacy! It's possible for iOS or Android developers to move the privacy standards and responsibility to Apple & Google (e.g. stricter app reviews, more permission screens, etc.), however this is a much larger conversation where companies need to work together to define what standards should exist. We can't have one or two companies set the direction for the entire industry, since a solution needs to work for the large majority of companies. Otherwise, we're left in a world where companies are forced to get creative on finding ways to track additional user data from any source possible, or define their own standards of what's best for user privacy, ultimately hurting the consumer and the product experience."
+
+&ndash; [Hemal Shah](https://twitter.com/hemal)
 
 Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/) seems to be an excellent new WebKit feature making it possible for developers to offer a safer in-app browsing experience when using `WKWebView`. As an app developer, you can define which domains your app can access (your own), and you won't be able to control third party pages any more. To disable the protection, a user would have to explicitly disable it in the iOS settings app. However, at the time of writing, this system is not yet enabled by default.
 
