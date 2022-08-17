@@ -54,7 +54,7 @@ To try this this tool yourself:
 
 I started using this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found.
 
-For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager.
+For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they use JavaScript to offer some of their functionality, like a password manager. Apple requires all third party iOS browsers to use the Safari rendering engine `WebKit`.
 
 ***Important Note:*** This tool can't detect all JavaScript commands executed, as well as doesn't show any tracking the app might do using native code (like custom gesture recognisers). More details on this below.
 
