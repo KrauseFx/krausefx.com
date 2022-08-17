@@ -21,9 +21,9 @@ I was so happy to see the article featured by major media outlets across the glo
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer" id="desktop">
-  <a href="/assets/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank">
+  <a href="/assets/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
     <img 
-      src="/assets/inappbrowser/app_screenshots/tiktok_framed.png"
+      src="/assets/inappbrowser/app_screenshots/tiktok_top.png"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
@@ -43,9 +43,9 @@ To try this this tool yourself:
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer no-print" id="mobile">
-  <a href="/assets/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank">
+  <a href="/assets/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
     <img 
-      src="/assets/inappbrowser/app_screenshots/tiktok_framed.png"
+      src="/assets/inappbrowser/app_screenshots/tiktok_top.png"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
@@ -130,6 +130,25 @@ There are many valid reasons to use an in-app browser, particularly when an app 
 
 However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
 
+<table class="hijacking-second-table">
+  <tr>
+    <th width="50%">TikTok iOS</th>
+    <th width="50%">Instagram iOS</th>
+  </tr>
+  <tr>
+    <td><a href="/assets/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank"><img src="/assets/inappbrowser/app_screenshots/tiktok_framed.png" ></a></td>
+    <td><a href="/assets/inappbrowser/app_screenshots/instagram.png" target="_blank"><img src="/assets/inappbrowser/app_screenshots/instagram.png" alt="The same code as the previous photo, however this time inside Facebook Messenger"></a></td>
+  </tr>
+  <tr>
+    <td>
+      <p>TikTok for iOS subscribes to every keystroke (text inputs) happening on third party websites. Additionally it subscribes to every tap on any button, link or other component.</p>
+    </td>
+    <td>
+      <p>Instagram for iOS subscribes to every tap on any button, link or other component. Additionally Instagram subscribes to everytime the user focuses on a UI element.</p>
+    </td>
+  </tr>
+</table>
+
 ### Apps can hide their JavaScript activities from this tool
 
 Since iOS 14.3 (December 2020), Apple introduced the support of running JavaScript code in the [context of a specified frame and content world](https://developer.apple.com/documentation/webkit/wkcontentworld). JavaScript commands executed using this approach can still fully access the third party website, but can't be detected by the website itself (in this case a tool like InAppBrowser.com).
@@ -187,7 +206,7 @@ All the apps listed above have no way to inject any JavaScript commands onto ext
 
 <div id="youtube-button">
   <img 
-    src="/assets/app_screenshots/video-preview.png" 
+    src="/assets/inappbrowser/app_screenshots/video-preview.png" 
     onclick="window.open('https\:\/\/www.youtube.com/watch?v=i2SfbHpZDQI')"
     alt="A link to the YouTube video showing the website in action inside the Instagram app" />
   <p><b>Demo video of how to leave the Instagram In-App Browser</b></p>
@@ -207,7 +226,7 @@ It’s important to call out how much movement there’s been in the privacy of 
 
 > "Many tech companies take heat for 'abusing their users' privacy', when in fact they try to balance out business priorities, great user experiences, and ensuring they are respecting privacy and user data. It's clear why companies were motivated to provide an in-app experience for external websites in the first place.
 > 
-> With the latest technology, it's possible for tech companies to provide a smooth experience for the user, while respecting their privacy. It's possible for iOS or Android developers to move the privacy standards and responsibility to Apple & Google (e.g. stricter app reviews, more permission screens, etc.), however this is a much larger conversation where companies need to work together to define what standards should exist. We can't have one or two companies set the direction for the entire industry, since a solution needs to work for the large majority of companies. Otherwise, we're left in a world where companies are forced to get creative on finding ways to track additional user data from any source possible, or define their own standards of what's best for user privacy, ultimately hurting the consumer and the product experience."
+> With the latest technology, companies can start to provide a smooth experience for the user, while respecting their privacy. It's possible for iOS or Android developers to move the privacy standards and responsibility to Apple & Google (e.g. stricter app reviews, more permission screens, etc.), however this is a much larger conversation where companies need to work together to define what standards should exist. We can't have one or two companies set the direction for the entire industry, since a solution needs to work for the large majority of companies. Otherwise, we're left in a world where companies are forced to get creative on finding ways to track additional user data from any source possible, or define their own standards of what's best for user privacy, ultimately hurting the consumer and the product experience."
 
 &ndash; [Hemal Shah](https://twitter.com/hemal)
 
@@ -341,11 +360,23 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
     max-width: 220px;
   }
   @media print
-{    
-    .no-print, .no-print *
-    {
-        display: none !important;
-    }
-}
-
+  {    
+      .no-print, .no-print *
+      {
+          display: none !important;
+      }
+  }
+  .hijacking-second-table {
+    width: 98%;
+  }
+  .hijacking-second-table th {
+    text-align: center;
+  }
+  .hijacking-second-table td {
+    text-align: center;
+    padding: 5px;
+  }
+  .hijacking-second-table p {
+    margin-bottom: 0px;
+  }
 </style>
