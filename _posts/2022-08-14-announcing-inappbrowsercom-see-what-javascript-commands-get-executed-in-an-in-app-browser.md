@@ -42,7 +42,7 @@ To try this this tool yourself:
 1. Read the report on the screen
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
-<div class="tiktokcontainer" id="mobile">
+<div class="tiktokcontainer no-print" id="mobile">
   <a href="/assets/app_screenshots/tiktok_framed.png" target="_blank">
     <img 
       src="/assets/app_screenshots/tiktok_framed.png"
@@ -152,7 +152,7 @@ For example, Firefox for iOS already [uses the new WKContentWorld system](https:
 
 Especialy after the publicity of [last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser), as well as this one, tech companies who are still using custom in-app browsers will very quickly update to use the new JavaScript isolated world system, so their code becomes undetectable to us.
 
-Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content. As you can see on the list below, all apps that use `SFSafariViewController` or `Default Browser` are on the green side, and there is no way for apps to inject their tracking code onto websites. However, the apps listed in the first table **do** use a custom in-app browser, and even if you can see only green checkmarks, they might just use the `Isolated World JavaScript`, therefore I wasn't able to prove any JavaScript injections.
+Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content. As you can see on the list below, all apps that use `SFSafariViewController` or `Default Browser` are on the green side, and there is no way for apps to inject their tracking code onto websites. However, the apps listed in the first table **do** use a custom in-app browser, and even if they only have green checkmarks, they might just use the `Isolated World JavaScript`, therefore I wasn't able to prove any JavaScript injections.
 
 
 ## iOS Apps that use Safari
@@ -331,4 +331,12 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
     cursor: pointer;
     max-width: 220px;
   }
+  @media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
 </style>
