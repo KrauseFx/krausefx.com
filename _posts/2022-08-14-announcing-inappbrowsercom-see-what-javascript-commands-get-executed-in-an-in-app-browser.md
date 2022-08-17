@@ -21,9 +21,9 @@ I was so surprised to see the article featured by major media outlets across the
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer" id="desktop">
-  <a href="/assets/app_screenshots/tiktok_framed.png" target="_blank">
+  <a href="/assets/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank">
     <img 
-      src="/assets/app_screenshots/tiktok_framed.png"
+      src="/assets/inappbrowser/app_screenshots/tiktok_framed.png"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
@@ -43,16 +43,16 @@ To try this this tool yourself:
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer no-print" id="mobile">
-  <a href="/assets/app_screenshots/tiktok_framed.png" target="_blank">
+  <a href="/assets/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank">
     <img 
-      src="/assets/app_screenshots/tiktok_framed.png"
+      src="/assets/inappbrowser/app_screenshots/tiktok_framed.png"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
   <h4>TikTok's In-App Browser injecting code to observe all taps and keyboard inputs</h4>
 </div>
 
-I started using this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found. 
+I started using this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found.
 
 For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they often use JavaScript to offer some of their functionality, like a password manager.
 
@@ -75,6 +75,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
       <th title="Does the app provide a button to open the currently shown link in the default browser?">Option to open in default browser</th>
       <th title="Does the app inject JavaScript code into third party websites to modify its content? This includes adding tracking code (like inputs, text selections, taps, etc.), injecting external JavaScript files, as well as creating new HTML elements.">Modify page</th>
       <th title="Does the app run JavaScript code to fetch website metadata? This is a harmless thing to do, and doesn't cause any real security or privacy risks.">Fetch metadata</th>
+      <th>JS</th>
       <th>Updated</th>
     </tr>
     {% for app in site.data.in_app_browsers %}
@@ -91,7 +92,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
         {% else %}
           <td class="browser-red">
         {% endif %}
-          <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
+          <a target="_blank" href="/assets/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
             {% if app.js_modify_content == true %}
               <span class="injecting">Yes</span>
             {% else %}
@@ -105,7 +106,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
         {% else %}
           <td class="browser-red">
         {% endif %}
-          <a target="_blank" href="/assets/app_screenshots/{{ app.screenshot }}.png">
+          <a target="_blank" href="/assets/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
             {% if app.runs_js == true %}
               <span class="injecting">Yes</span>
             {% else %}
@@ -113,6 +114,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
             {% endif %}
           </a>
         </td>
+        <td><a target="_blank" href="/assets/inappbrowser/app_js/{{ app.screenshot }}.js">.js</a></td>
         <td class="last-updated">{{ app.last_updated }}</td>
       </tr>
     {% endfor %}
