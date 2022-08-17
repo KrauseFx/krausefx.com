@@ -67,6 +67,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
 - **Option to open in default browser**: Does the app provide a button to open the currently shown link in the default browser?
 - **Modify page**: Does the app inject JavaScript code into third party websites to modify its content? This includes adding tracking code (like inputs, text selections, taps, etc.), injecting external JavaScript files, as well as creating new HTML elements.
 - **Fetch metadata**: Does the app run JavaScript code to fetch website metadata? This is a harmless thing to do, and doesn't cause any real security or privacy risks.
+- **JS**: A link to the JavaScript code that I was able to detect. Disclaimer: There might be other code executed. The code might not be a 100% accurate representation of all JS commands.
 
 <div id="table-scroll-container">
   <table class="in-app-browser-overview">
@@ -204,9 +205,9 @@ If you’re at a company where you have an in-app browser, use it only for your 
 
 It’s important to call out how much movement there’s been in the privacy of data space, but it’s unclear how many of these changes have been motion vs. true progress for the industry and the user. 
 
-> "Many tech companies take heat for 'abusing their users' privacy', when in fact they try to do the right thing to balance out business priorities, great user experiences, and ensuring they are respecting privacy and user data. It's clear why companies were motivated to provide an in-app experience for external websites in the first place. 
+> "Many tech companies take heat for 'abusing their users' privacy', when in fact they try to balance out business priorities, great user experiences, and ensuring they are respecting privacy and user data. It's clear why companies were motivated to provide an in-app experience for external websites in the first place.
 > 
-> With the latest technology, it's possible for tech companies to provide a smooth experience for the user, while respecting their privacy! It's possible for iOS or Android developers to move the privacy standards and responsibility to Apple & Google (e.g. stricter app reviews, more permission screens, etc.), however this is a much larger conversation where companies need to work together to define what standards should exist. We can't have one or two companies set the direction for the entire industry, since a solution needs to work for the large majority of companies. Otherwise, we're left in a world where companies are forced to get creative on finding ways to track additional user data from any source possible, or define their own standards of what's best for user privacy, ultimately hurting the consumer and the product experience."
+> With the latest technology, it's possible for tech companies to provide a smooth experience for the user, while respecting their privacy. It's possible for iOS or Android developers to move the privacy standards and responsibility to Apple & Google (e.g. stricter app reviews, more permission screens, etc.), however this is a much larger conversation where companies need to work together to define what standards should exist. We can't have one or two companies set the direction for the entire industry, since a solution needs to work for the large majority of companies. Otherwise, we're left in a world where companies are forced to get creative on finding ways to track additional user data from any source possible, or define their own standards of what's best for user privacy, ultimately hurting the consumer and the product experience."
 
 &ndash; [Hemal Shah](https://twitter.com/hemal)
 
