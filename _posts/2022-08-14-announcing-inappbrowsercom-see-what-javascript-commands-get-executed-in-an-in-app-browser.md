@@ -130,41 +130,44 @@ Click on the `Yes` or `None` on the above table to see a screenshot of the app.
 
 **Important**: Just because an app injects JavaScript into external websites, doesn't mean the app is doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how or if the data is being transferred or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
 
-## New findings
+Even if some some of the apps above have green checkmarks, they might use the new Isolated World JavaScript, therefore I wasn’t able to prove any JavaScript injections. More details below.
 
-<table class="hijacking-second-table hijacking-table-mobile">
-  <tr><th>TikTok iOS</th></tr>
-  <tr class="img-row">
-    <td><a href="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" ></a></td>
-  </tr>
-  <tr><td>{% include tiktok.html %}</td></tr>
-</table>
-<table class="hijacking-second-table hijacking-table-mobile">
-  <tr><th>Instagram iOS</th></tr>
-  <tr class="img-row"><td><a href="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png"></a></td></tr>
-  <tr><td>{% include instagram.html %}</td></tr>
-</table>
+## TikTok monitoring all keyboard inputs and taps
 
-<table class="hijacking-second-table" id="hijacking-table-desktop">
-  <tr>
-    <th width="50%">TikTok iOS</th>
-    <th width="50%">Instagram iOS</th>
-  </tr>
-  <tr class="img-row">
-    <td><a href="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" ></a></td>
-    <td><a href="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png"></a></td>
-  </tr>
-  <tr>
-    <td>
-      {% include tiktok.html %}
-    </td>
-    <td>
-      {% include instagram.html %}
-    </td>
-  </tr>
-</table>
+<a href="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" target="_blank">
+  <img id="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" >
+</a>
 
-### Apps can hide their JavaScript activities from this tool
+When you open any link on the TikTok iOS app, it's opened inside their in-app browser. While you are interacting with the website, **TikTok subscribes to all keyboard inputs** (including passwords, credit card information, etc.) and every tap on the screen, like which buttons and links you click.
+
+- TikTok iOS subscribes to every keystroke (text inputs) happening on third party websites rendered inside the TikTok app. This can include passwords, credit card information and other sensitive user data. (`keypress` and `keydown`). We can't know what TikTok uses the subscription for, but from a technical perspective, **this is the equivalent of installing a keylogger** on third party websites.
+- TikTok iOS subscribes to every tap on any button, link, image or other component on external websites rendered inside the TikTok app.
+- TikTok iOS uses a JavaScript function to get details about the element the user clicked on, like an image (`document.elementFromPoint`)
+
+<a href="/assets/posts/inappbrowser/app_js/tiktok.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
+
+## Instagram does more than just inserting `pcm.js`
+
+<a href="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png" target="_blank">
+  <img id="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/instagram_cut.png" >
+</a>
+
+**New:** [Last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) talked about how Meta injects the [`pcm.js`](https://connect.facebook.net/en_US/pcm.js) script onto third party websites. [Meta claimed](https://twitter.com/KrauseFx/status/1558867249691123712) they only inject the script to respect the user's ATT choice, and additional "security and user features".
+
+> The code in question allows us to respect people's privacy choices by helping aggregate events (such as making a purchase online) from pixels already on websites, before those events are used for advertising or measurement purposes.
+
+&ndash; [via this tweet](https://twitter.com/andymstone/status/1557825414176940035)
+
+After improving the JavaScript detection, **I now found some additional commands Instagram executes:**
+
+- Instagram iOS subscribes to every tap on any button, link, image or other component on external websites rendered inside the Instagram app.
+- Instagram iOS subscribes to every time the user selects a UI element (like a text field) on third party websites rendered inside the Instagram app.
+
+<a href="/assets/posts/inappbrowser/app_js/instagram.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
+
+**Note on subscribing**: When I talk about "App subscribes to", I mean that the app subscribes to the JavaScript events of that type (e.g. all taps). There is no way to verify what happens with the data.
+
+## Apps can hide their JavaScript activities from this tool
 
 Since iOS 14.3 (December 2020), Apple introduced the support of running JavaScript code in the [context of a specified frame and content world](https://developer.apple.com/documentation/webkit/wkcontentworld). JavaScript commands executed using this approach can still fully access the third party website, but can't be detected by the website itself (in this case a tool like InAppBrowser.com).
 
@@ -423,6 +426,20 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
   @media screen and (min-width: 801px) {
     .hijacking-table-mobile {
       display: none;
+    }
+  }
+  .details-for-specific-app {
+    float: right; 
+    width: 300px;
+    margin-right: -110px;
+    margin-left: 25px;
+  }
+  @media screen and (max-width: 800px) {
+    .details-for-specific-app {
+      float: none !important;
+      width: 100% !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
     }
   }
 </style>
