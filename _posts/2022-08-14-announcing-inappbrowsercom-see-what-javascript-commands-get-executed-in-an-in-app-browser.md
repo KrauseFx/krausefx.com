@@ -21,9 +21,9 @@ I was so happy to see the article featured by major media outlets across the glo
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer" id="desktop">
-  <a href="/assets/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
+  <a href="/assets/posts/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
     <img 
-      src="/assets/inappbrowser/app_screenshots/tiktok_top.png"
+      src="/assets/posts/inappbrowser/app_screenshots/tiktok_top.png"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
@@ -43,9 +43,9 @@ To try this this tool yourself:
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer no-print" id="mobile">
-  <a href="/assets/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
+  <a href="/assets/posts/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
     <img 
-      src="/assets/inappbrowser/app_screenshots/tiktok_top.png"
+      src="/assets/posts/inappbrowser/app_screenshots/tiktok_top.png"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
@@ -181,9 +181,9 @@ self.evaluateJavaScript(javascript, in: nil, in: .defaultClient, completionHandl
 
 For example, Firefox for iOS already [uses the new WKContentWorld system](https://github.com/mozilla-mobile/firefox-ios/blob/d613cb24d5dc717466f098e13625a3e0c5e4703e/Shared/Extensions/WKWebViewExtensions.swift#L19-L29). Due to the open source nature of Firefox and Google Chrome for iOS it's easy for us as a community verify nothing suspicious is happening.
 
-Especialy after the publicity of [last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser), as well as this one, tech companies who are still using custom in-app browsers will very quickly update to use the new JavaScript isolated world system, so their code becomes undetectable to us.
+Especialy after the publicity of [last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser), as well as this one, tech companies who still use custom in-app browsers will very quickly update to use the new JavaScript isolated world system, so their code becomes undetectable to us.
 
-Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content. As you can see on the list below, all apps that use `SFSafariViewController` or `Default Browser` are on the green side, and there is no way for apps to inject their tracking code onto websites. However, the apps listed in the first table **do** use a custom in-app browser, and even if they only have green checkmarks, they might just use the `Isolated World JavaScript`, therefore I wasn't able to prove any JavaScript injections.
+Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content. As you can see on the list below, all apps that use `SFSafariViewController` or `Default Browser` are on the green side, and there is no way for apps to inject their tracking code onto websites. However, the apps listed in the first table **do** use a custom in-app browser, and even if some of them only have green checkmarks, they might just use the `Isolated World JavaScript`, therefore I wasn't able to prove any JavaScript injections.
 
 
 ## iOS Apps that use Safari
@@ -215,7 +215,7 @@ All the apps listed above have no way to inject any JavaScript commands onto ext
 
 <div id="youtube-button">
   <img 
-    src="/assets/inappbrowser/app_screenshots/video-preview.png" 
+    src="/assets/posts/inappbrowser/app_screenshots/video-preview.png" 
     onclick="window.open('https\:\/\/www.youtube.com/watch?v=i2SfbHpZDQI')"
     alt="A link to the YouTube video showing the website in action inside the Instagram app" />
   <p><b>Demo video of how to leave the Instagram In-App Browser</b></p>
