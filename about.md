@@ -15,6 +15,21 @@ meta: {}
   <img src="/assets/FelixKrauseProfilePicture.jpg" width="290" style="margin-bottom: 10px; margin-top: 5px;" />
   <br />
   <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="https://fastlane.tools" target="_blank">fastlane</a></small></p>
+  <!-- Social links -->
+  <ul id="about-social" class="social-media-list" style="margin-top: 10px; margin-bottom: 30px;">
+    <li>
+      {% include icon-github.html username=site.github_username %}
+    </li>
+    <li>
+      {% include icon-twitter.html username=site.twitter_username %}
+    </li>
+    <li>
+      {% include icon-instagram.html %}
+    </li>
+    <li>
+      {% include icon-linkedin.html %}
+    </li>
+  </ul>
 </div>
 
 <div id="rightCol">
@@ -144,6 +159,9 @@ meta: {}
 </p>
 
 <style type="text/css">
+  #about-social a {
+    text-decoration: none !important;
+  }
   .imageCarousel {
     margin-top: 30px;
     height: 310px;
