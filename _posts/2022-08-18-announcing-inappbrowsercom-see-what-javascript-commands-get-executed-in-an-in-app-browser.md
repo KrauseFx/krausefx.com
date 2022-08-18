@@ -21,9 +21,9 @@ I was so happy to see the article featured by major media outlets across the glo
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer" id="desktop">
-  <a href="/assets/posts/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
+  <a href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
     <img 
-      src="/assets/posts/inappbrowser/app_screenshots/tiktok_top.png"
+      src="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok_top.png"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
@@ -43,9 +43,9 @@ To try this this tool yourself:
 
 <!-- The code below is duplicated, once for mobile, once for desktop -->
 <div class="tiktokcontainer no-print" id="mobile">
-  <a href="/assets/posts/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
+  <a href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok_top.png" target="_blank">
     <img 
-      src="/assets/posts/inappbrowser/app_screenshots/tiktok_top.png"
+      src="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok_top.png"
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
@@ -93,7 +93,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
         {% else %}
           <td class="browser-red">
         {% endif %}
-          <a target="_blank" href="/assets/posts/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
+          <a target="_blank" href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
             {% if app.js_modify_content == true %}
               <span class="injecting">Yes</span>
             {% else %}
@@ -107,7 +107,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
         {% else %}
           <td class="browser-red">
         {% endif %}
-          <a target="_blank" href="/assets/posts/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
+          <a target="_blank" href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
             {% if app.runs_js == true %}
               <span class="injecting">Yes</span>
             {% else %}
@@ -117,7 +117,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
         </td>
         <td>
           {% if app.runs_js == true %}
-            <a target="_blank" href="/assets/posts/inappbrowser/app_js/{{ app.screenshot }}.js">.js</a>
+            <a target="_blank" href="https://krausefx.com/assets/posts/inappbrowser/app_js/{{ app.screenshot }}.js">.js</a>
           {% endif %}
         </td>
         <td class="last-updated">{{ app.last_updated }}</td>
@@ -134,8 +134,8 @@ Even if some of the apps above have green checkmarks, they might use the new `WK
 
 ## TikTok monitoring all keyboard inputs and taps
 
-<a href="/assets/posts/inappbrowser/app_screenshots/tiktok.png" target="_blank">
-  <img class="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" >
+<a href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok.png" target="_blank">
+  <img class="details-for-specific-app" src="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" >
 </a>
 
 When you open any link on the TikTok iOS app, it's opened inside their in-app browser. While you are interacting with the website, **TikTok subscribes to all keyboard inputs** (including passwords, credit card information, etc.) and every tap on the screen, like which buttons and links you click.
@@ -144,12 +144,12 @@ When you open any link on the TikTok iOS app, it's opened inside their in-app br
 - TikTok iOS subscribes to every tap on any button, link, image or other component on websites rendered inside the TikTok app.
 - TikTok iOS uses a JavaScript function to get details about the element the user clicked on, like an image (`document.elementFromPoint`)
 
-<a href="/assets/posts/inappbrowser/app_js/tiktok.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
+<a href="https://krausefx.com/assets/posts/inappbrowser/app_js/tiktok.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
 
 ## Instagram does more than just inserting `pcm.js`
 
-<a href="/assets/posts/inappbrowser/app_screenshots/instagram.png" target="_blank">
-  <img class="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/instagram_cut.png" >
+<a href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/instagram.png" target="_blank">
+  <img class="details-for-specific-app" src="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/instagram_cut.png" >
 </a>
 
 [Last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) talked about how Meta injects the [`pcm.js`](https://connect.facebook.net/en_US/pcm.js) script onto third party websites. [Meta claimed](https://twitter.com/KrauseFx/status/1558867249691123712) they only inject the script to respect the user's ATT choice, and additional "security and user features".
@@ -163,7 +163,7 @@ After improving the JavaScript detection, **I now found some additional commands
 - Instagram iOS subscribes to every tap on any button, link, image or other component on external websites rendered inside the Instagram app.
 - Instagram iOS subscribes to every time the user selects a UI element (like a text field) on third party websites rendered inside the Instagram app.
 
-<a href="/assets/posts/inappbrowser/app_js/instagram.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
+<a href="https://krausefx.com/assets/posts/inappbrowser/app_js/instagram.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
 
 **Note on subscribing**: When I talk about "*App subscribes to*", I mean that the app subscribes to the JavaScript events of that type (e.g. all taps). There is no way to verify what happens with the data.
 
@@ -229,7 +229,7 @@ All apps that use `SFSafariViewController` or `Default Browser` are on the safe 
 
 <div id="youtube-button">
   <img 
-    src="/assets/posts/inappbrowser/app_screenshots/video-preview.png" 
+    src="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/video-preview.png" 
     onclick="window.open('https\:\/\/www.youtube.com/watch?v=i2SfbHpZDQI')"
     alt="A link to the YouTube video showing the website in action inside the Instagram app" />
   <p><b>Demo video of how to escape the Instagram In-App Browser</b></p>
