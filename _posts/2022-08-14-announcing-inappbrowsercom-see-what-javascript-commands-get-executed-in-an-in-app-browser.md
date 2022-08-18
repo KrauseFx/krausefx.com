@@ -133,13 +133,13 @@ However, there are data privacy & integrity issues when you use in-app browsers 
 <table class="hijacking-second-table hijacking-table-mobile">
   <tr><th>TikTok iOS</th></tr>
   <tr class="img-row">
-    <td><a href="/assets/posts/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/tiktok_framed.png" ></a></td>
+    <td><a href="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" ></a></td>
   </tr>
   <tr><td>{% include tiktok.html %}</td></tr>
 </table>
 <table class="hijacking-second-table hijacking-table-mobile">
   <tr><th>Instagram iOS</th></tr>
-  <tr class="img-row"><td><a href="/assets/posts/inappbrowser/app_screenshots/instagram.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/instagram.png"></a></td></tr>
+  <tr class="img-row"><td><a href="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png"></a></td></tr>
   <tr><td>{% include instagram.html %}</td></tr>
 </table>
 
@@ -149,14 +149,12 @@ However, there are data privacy & integrity issues when you use in-app browsers 
     <th width="50%">Instagram iOS</th>
   </tr>
   <tr class="img-row">
-    <td><a href="/assets/posts/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/tiktok_framed.png" ></a></td>
-    <td><a href="/assets/posts/inappbrowser/app_screenshots/instagram.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/instagram.png"></a></td>
+    <td><a href="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" ></a></td>
+    <td><a href="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png"></a></td>
   </tr>
   <tr>
     <td>
-      <ul>
-        {% include tiktok.html %}
-      </ul>
+      {% include tiktok.html %}
     </td>
     <td>
       {% include instagram.html %}
@@ -315,8 +313,9 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
       margin-right: -40px;
     }
     .tiktokcontainer h4 {
-    font-size: 0.9em;
-  }
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
   }
   @media screen and (max-width: 1000px) {
     #desktop.tiktokcontainer {
