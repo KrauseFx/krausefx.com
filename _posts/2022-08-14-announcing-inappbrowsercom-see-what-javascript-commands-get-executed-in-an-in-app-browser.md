@@ -93,7 +93,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
         {% else %}
           <td class="browser-red">
         {% endif %}
-          <a target="_blank" href="/assets/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
+          <a target="_blank" href="/assets/posts/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
             {% if app.js_modify_content == true %}
               <span class="injecting">Yes</span>
             {% else %}
@@ -107,7 +107,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
         {% else %}
           <td class="browser-red">
         {% endif %}
-          <a target="_blank" href="/assets/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
+          <a target="_blank" href="/assets/posts/inappbrowser/app_screenshots/{{ app.screenshot }}.png">
             {% if app.runs_js == true %}
               <span class="injecting">Yes</span>
             {% else %}
@@ -115,7 +115,7 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
             {% endif %}
           </a>
         </td>
-        <td><a target="_blank" href="/assets/inappbrowser/app_js/{{ app.screenshot }}.js">.js</a></td>
+        <td><a target="_blank" href="/assets/posts/inappbrowser/app_js/{{ app.screenshot }}.js">.js</a></td>
         <td class="last-updated">{{ app.last_updated }}</td>
       </tr>
     {% endfor %}
@@ -130,30 +130,36 @@ There are many valid reasons to use an in-app browser, particularly when an app 
 
 However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
 
-<table class="hijacking-second-table">
+<table class="hijacking-second-table hijacking-table-mobile">
+  <tr><th>TikTok iOS</th></tr>
+  <tr class="img-row">
+    <td><a href="/assets/posts/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/tiktok_framed.png" ></a></td>
+  </tr>
+  <tr><td>{% include tiktok.html %}</td></tr>
+</table>
+<table class="hijacking-second-table hijacking-table-mobile">
+  <tr><th>Instagram iOS</th></tr>
+  <tr class="img-row"><td><a href="/assets/posts/inappbrowser/app_screenshots/instagram.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/instagram.png"></a></td></tr>
+  <tr><td>{% include instagram.html %}</td></tr>
+</table>
+
+<table class="hijacking-second-table" id="hijacking-table-desktop">
   <tr>
     <th width="50%">TikTok iOS</th>
     <th width="50%">Instagram iOS</th>
   </tr>
   <tr class="img-row">
-    <td><a href="/assets/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank"><img src="/assets/inappbrowser/app_screenshots/tiktok_framed.png" ></a></td>
-    <td><a href="/assets/inappbrowser/app_screenshots/instagram.png" target="_blank"><img src="/assets/inappbrowser/app_screenshots/instagram.png" alt="The same code as the previous photo, however this time inside Facebook Messenger"></a></td>
+    <td><a href="/assets/posts/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/tiktok_framed.png" ></a></td>
+    <td><a href="/assets/posts/inappbrowser/app_screenshots/instagram.png" target="_blank"><img src="/assets/posts/inappbrowser/app_screenshots/instagram.png"></a></td>
   </tr>
   <tr>
     <td>
       <ul>
-        <li>TikTok iOS subscribes to every keystroke (text inputs) happening on third party websites. This can include passwords, credit card information and other sensitive user data. (<code>keypress</code> and <code>keydown</code>). We can't know what TikTok uses the subscription for, but from a technical perspective, this could be a keylogger setup on third party sites.</li>
-        <li>TikTok iOS subscribes to every tap on any button, link, image or other component.</li>
-        <li>TikTok iOS uses a JavaScript function to get details about the element the user clicked on, like an image (<code>document.elementFromPoint</code>)</li>
+        {% include tiktok.html %}
       </ul>
     </td>
     <td>
-      <p><b>New: </b><a target="_blank" href="https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser">Last week's post</a> talked about the injection of the <code>pcm.js</code> script. <a href="https://twitter.com/KrauseFx/status/1558867249691123712">Meta claimed</a> they only inject the script to respect the user's ATT choice, and additional "security and user features".</p>
-      <p>As I improved the JavaScript detection script, I now found some additional commands Instagram runs:</p>
-      <ul>
-        <li>Instagram iOS subscribes to every tap on any button, link, image or other component.</li>
-        <li>Instagram iOS subscribes to every time the user focuses on a UI element (like a text field)</li>
-      </ul>
+      {% include instagram.html %}
     </td>
   </tr>
 </table>
@@ -376,7 +382,7 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
       }
   }
   .hijacking-second-table {
-    width: calc(100% + 200px);
+    width: calc(100% + 300px);
   }
   .hijacking-second-table th {
     text-align: center;
@@ -388,6 +394,7 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
   }
   .hijacking-second-table img {
     width: 90%;
+    max-width: 330px;
   }
   .hijacking-second-table p {
     margin-bottom: 0px;
@@ -398,5 +405,18 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
   }
   .hijacking-second-table .img-row td {
     text-align: center;
+  }
+  @media screen and (max-width: 800px) {
+    #hijacking-table-desktop {
+      display: none;
+    }
+    .hijacking-second-table {
+      width: 100% !important;
+    }
+  }
+  @media screen and (min-width: 801px) {
+    .hijacking-table-mobile {
+      display: none;
+    }
   }
 </style>
