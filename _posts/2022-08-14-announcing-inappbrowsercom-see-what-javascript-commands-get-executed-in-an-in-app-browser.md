@@ -115,7 +115,11 @@ For this analysis I have excluded all third party iOS browsers (Chrome, Brave, e
             {% endif %}
           </a>
         </td>
-        <td><a target="_blank" href="/assets/posts/inappbrowser/app_js/{{ app.screenshot }}.js">.js</a></td>
+        <td>
+          {% if app.runs_js == true %}
+            <a target="_blank" href="/assets/posts/inappbrowser/app_js/{{ app.screenshot }}.js">.js</a>
+          {% endif %}
+        </td>
         <td class="last-updated">{{ app.last_updated }}</td>
       </tr>
     {% endfor %}
