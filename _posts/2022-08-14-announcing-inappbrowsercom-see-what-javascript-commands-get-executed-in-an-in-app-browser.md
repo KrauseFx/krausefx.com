@@ -135,7 +135,7 @@ Even if some of the apps above have green checkmarks, they might use the new Iso
 ## TikTok monitoring all keyboard inputs and taps
 
 <a href="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" target="_blank">
-  <img id="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" >
+  <img class="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" >
 </a>
 
 When you open any link on the TikTok iOS app, it's opened inside their in-app browser. While you are interacting with the website, **TikTok subscribes to all keyboard inputs** (including passwords, credit card information, etc.) and every tap on the screen, like which buttons and links you click.
@@ -149,7 +149,7 @@ When you open any link on the TikTok iOS app, it's opened inside their in-app br
 ## Instagram does more than just inserting `pcm.js`
 
 <a href="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png" target="_blank">
-  <img id="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/instagram_cut.png" >
+  <img class="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/instagram_cut.png" >
 </a>
 
 **New:** [Last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) talked about how Meta injects the [`pcm.js`](https://connect.facebook.net/en_US/pcm.js) script onto third party websites. [Meta claimed](https://twitter.com/KrauseFx/status/1558867249691123712) they only inject the script to respect the user's ATT choice, and additional "security and user features".
@@ -434,10 +434,11 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
     margin-right: -110px;
     margin-left: 25px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 930px) {
     .details-for-specific-app {
       float: none !important;
       width: 100% !important;
+      max-width: 300px !important;
       margin-left: 0px !important;
       margin-right: 0px !important;
     }
