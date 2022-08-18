@@ -134,7 +134,7 @@ Even if some of the apps above have green checkmarks, they might use the new Iso
 
 ## TikTok monitoring all keyboard inputs and taps
 
-<a href="/assets/posts/inappbrowser/app_screenshots/tiktok_aligned.png" target="_blank">
+<a href="/assets/posts/inappbrowser/app_screenshots/tiktok.png" target="_blank">
   <img class="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" >
 </a>
 
@@ -148,7 +148,7 @@ When you open any link on the TikTok iOS app, it's opened inside their in-app br
 
 ## Instagram does more than just inserting `pcm.js`
 
-<a href="/assets/posts/inappbrowser/app_screenshots/instagram_aligned.png" target="_blank">
+<a href="/assets/posts/inappbrowser/app_screenshots/instagram.png" target="_blank">
   <img class="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/instagram_cut.png" >
 </a>
 
