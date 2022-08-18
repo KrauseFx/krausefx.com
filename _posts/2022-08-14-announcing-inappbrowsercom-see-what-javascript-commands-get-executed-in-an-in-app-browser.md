@@ -175,7 +175,7 @@ Since iOS 14.3 (December 2020), Apple introduced the support of running JavaScri
 
 This new system was initially built so that website operators can't interfere with JavaScript code of browser plugins, and to make fingerprinting more difficult. As a user, you can check the source code of any browser plugin, as you are in control over the browser itself. However with in-app browsers we don't have a reliable way to verify all the code that is executed.
 
-So if Meta or TikTok want to hide the JavaScript commands they execute on third party websites, all they'd need to do is to update their JavaScript runner:
+So when Meta or TikTok want to hide the JavaScript commands they execute on third party websites, all they'd need to do is to update their JavaScript runner:
 
 ```swift
 // Currently used code by Meta & TikTok
@@ -185,16 +185,17 @@ self.evaluateJavaScript(javascript)
 self.evaluateJavaScript(javascript, in: nil, in: .defaultClient, completionHandler: { _ in })
 ```
 
-For example, Firefox for iOS already [uses the new WKContentWorld system](https://github.com/mozilla-mobile/firefox-ios/blob/d613cb24d5dc717466f098e13625a3e0c5e4703e/Shared/Extensions/WKWebViewExtensions.swift#L19-L29). Due to the open source nature of Firefox and Google Chrome for iOS it's easy for us as a community verify nothing suspicious is happening.
+For example, Firefox for iOS already [uses the new WKContentWorld system](https://github.com/mozilla-mobile/firefox-ios/blob/d613cb24d5dc717466f098e13625a3e0c5e4703e/Shared/Extensions/WKWebViewExtensions.swift#L19-L29). Due to the open source nature of Firefox and Google Chrome for iOS it's easy for us as a community to verify nothing suspicious is happening.
 
-Especialy after the publicity of [last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser), as well as this one, tech companies who still use custom in-app browsers will very quickly update to use the new JavaScript isolated world system, so their code becomes undetectable to us.
+Especialy after the publicity of [last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser), as well as this one, tech companies that still use custom in-app browsers will very quickly update to use the new JavaScript isolated world system, so their code becomes undetectable to us.
 
-Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content. As you can see on the list below, all apps that use `SFSafariViewController` or `Default Browser` are on the green side, and there is no way for apps to inject their tracking code onto websites. However, the apps listed in the first table **do** use a custom in-app browser, and even if some of them only have green checkmarks, they might just use the `Isolated World JavaScript`, therefore I wasn't able to prove any JavaScript injections.
-
+Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content.
 
 ## iOS Apps that use Safari
 
 The apps below follow Apple's recommendation of using Safari or `SFSafariViewController` for viewing external websites. More context on `SFSafariViewController` in the [original article](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
+
+All apps that use `SFSafariViewController` or `Default Browser` are on the safe side, and there is no way for apps to inject any code onto websites, even with the new `WKContentWorld` system.
 
 <div id="table-scroll-container">
   <table class="in-app-browser-overview safari-users">
@@ -224,10 +225,10 @@ All the apps listed above have no way to inject any JavaScript commands onto ext
     src="/assets/posts/inappbrowser/app_screenshots/video-preview.png" 
     onclick="window.open('https\:\/\/www.youtube.com/watch?v=i2SfbHpZDQI')"
     alt="A link to the YouTube video showing the website in action inside the Instagram app" />
-  <p><b>Demo video of how to leave the Instagram In-App Browser</b></p>
+  <p><b>Demo video of how to escape the Instagram In-App Browser</b></p>
 </div>
 
-Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land inside an in-app browser, use the `Open in Browser` feature to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. If the app makes it difficult to even do that, you can tap & hold a link on the website and then use the Copy feature, which can be a little tricky to get right.
+Most in-app browsers have a way to open the currently shown website in Safari. As soon as you land inside an in-app browser, use the `Open in Browser` feature to switch to a safer browser. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. If the app makes it difficult to even do that, you can tap & hold a link on the website and then use the Copy feature, which can be a little tricky to get right.
 
 There are many valid reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
 
