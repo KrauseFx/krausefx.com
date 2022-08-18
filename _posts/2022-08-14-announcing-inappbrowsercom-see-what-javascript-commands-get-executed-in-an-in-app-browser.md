@@ -130,9 +130,7 @@ Click on the `Yes` or `None` on the above table to see a screenshot of the app.
 
 **Important**: Just because an app injects JavaScript into external websites, doesn't mean the app is doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how or if the data is being transferred or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
 
-There are many valid reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
-
-However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
+## New findings
 
 <table class="hijacking-second-table hijacking-table-mobile">
   <tr><th>TikTok iOS</th></tr>
@@ -231,7 +229,9 @@ All the apps listed above have no way to inject any JavaScript commands onto ext
 
 Most in-app browsers have a way to open the currently rendered website in Safari. As soon as you land inside an in-app browser, use the `Open in Browser` feature to escape it. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. If the app makes it difficult to even do that, you can tap & hold a link on the website and then use the Copy feature, which can be a little tricky to get right.
 
-TikTok doesn't offer a way to open the currently shown website in your default browser.
+There are many valid reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
+
+However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
 
 **Companies using in-app browsers**
 
