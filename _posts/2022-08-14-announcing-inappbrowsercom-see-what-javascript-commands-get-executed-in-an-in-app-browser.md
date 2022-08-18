@@ -130,7 +130,7 @@ Click on the `Yes` or `None` on the above table to see a screenshot of the app.
 
 **Important**: Just because an app injects JavaScript into external websites, doesn't mean the app is doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how or if the data is being transferred or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
 
-Even if some some of the apps above have green checkmarks, they might use the new Isolated World JavaScript, therefore I wasn’t able to prove any JavaScript injections. More details below.
+Even if some of the apps above have green checkmarks, they might use the new Isolated World JavaScript, therefore I wasn’t able to prove any JavaScript injections. More details below.
 
 ## TikTok monitoring all keyboard inputs and taps
 
@@ -190,7 +190,7 @@ self.evaluateJavaScript(javascript, in: nil, in: .defaultClient, completionHandl
 
 For example, Firefox for iOS already [uses the new WKContentWorld system](https://github.com/mozilla-mobile/firefox-ios/blob/d613cb24d5dc717466f098e13625a3e0c5e4703e/Shared/Extensions/WKWebViewExtensions.swift#L19-L29). Due to the open source nature of Firefox and Google Chrome for iOS it's easy for us as a community to verify nothing suspicious is happening.
 
-Especialy after the publicity of [last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser), as well as this one, tech companies that still use custom in-app browsers will very quickly update to use the new JavaScript isolated world system, so their code becomes undetectable to us.
+Especially after the publicity of [last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser), as well as this one, tech companies that still use custom in-app browsers will very quickly update to use the new JavaScript isolated world system, so their code becomes undetectable to us.
 
 Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content.
 
