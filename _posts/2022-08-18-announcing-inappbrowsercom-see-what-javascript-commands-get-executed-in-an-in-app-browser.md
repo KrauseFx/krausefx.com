@@ -54,7 +54,7 @@ To try this this tool yourself:
 
 I started using this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found.
 
-For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they use JavaScript to offer some of their functionality, like a password manager. Apple requires all third party iOS browsers to use the Safari rendering engine `WebKit`.
+For this analysis I have excluded all third party iOS browsers (Chrome, Brave, etc.), as they use JavaScript to offer some of their functionality, like a password manager. Apple requires all third party iOS browsers apps to use the Safari rendering engine `WebKit`.
 
 ***Important Note:*** This tool can't detect all JavaScript commands executed, as well as doesn't show any tracking the app might do using native code (like custom gesture recognisers). More details on this below.
 
@@ -130,7 +130,7 @@ Click on the `Yes` or `None` on the above table to see a screenshot of the app.
 
 **Important**: Just because an app injects JavaScript into external websites, doesn't mean the app is doing anything malicious. There is no way for us to know the full details on what kind of data each in-app browser collects, or how or if the data is being transferred or used. This publication is stating the JavaScript commands that get executed by each app, as well as describing what effect each of those commands might have. For more background on the risks of in-app browsers, check out [last week's publication](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
 
-Even if some of the apps above have green checkmarks, they might use the new Isolated World JavaScript, therefore I wasn’t able to prove any JavaScript injections. More details below.
+Even if some of the apps above have green checkmarks, they might use the new Isolated World JavaScript, which I'll describe below.
 
 ## TikTok monitoring all keyboard inputs and taps
 
@@ -141,7 +141,7 @@ Even if some of the apps above have green checkmarks, they might use the new Iso
 When you open any link on the TikTok iOS app, it's opened inside their in-app browser. While you are interacting with the website, **TikTok subscribes to all keyboard inputs** (including passwords, credit card information, etc.) and every tap on the screen, like which buttons and links you click.
 
 - TikTok iOS subscribes to every keystroke (text inputs) happening on third party websites rendered inside the TikTok app. This can include passwords, credit card information and other sensitive user data. (`keypress` and `keydown`). We can't know what TikTok uses the subscription for, but from a technical perspective, **this is the equivalent of installing a keylogger** on third party websites.
-- TikTok iOS subscribes to every tap on any button, link, image or other component on external websites rendered inside the TikTok app.
+- TikTok iOS subscribes to every tap on any button, link, image or other component on websites rendered inside the TikTok app.
 - TikTok iOS uses a JavaScript function to get details about the element the user clicked on, like an image (`document.elementFromPoint`)
 
 <a href="/assets/posts/inappbrowser/app_js/tiktok.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
@@ -152,7 +152,7 @@ When you open any link on the TikTok iOS app, it's opened inside their in-app br
   <img class="details-for-specific-app" src="/assets/posts/inappbrowser/app_screenshots/instagram_cut.png" >
 </a>
 
-**New:** [Last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) talked about how Meta injects the [`pcm.js`](https://connect.facebook.net/en_US/pcm.js) script onto third party websites. [Meta claimed](https://twitter.com/KrauseFx/status/1558867249691123712) they only inject the script to respect the user's ATT choice, and additional "security and user features".
+[Last week's post](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) talked about how Meta injects the [`pcm.js`](https://connect.facebook.net/en_US/pcm.js) script onto third party websites. [Meta claimed](https://twitter.com/KrauseFx/status/1558867249691123712) they only inject the script to respect the user's ATT choice, and additional "security and user features".
 
 > The code in question allows us to respect people's privacy choices by helping aggregate events (such as making a purchase online) from pixels already on websites, before those events are used for advertising or measurement purposes.
 
@@ -165,7 +165,7 @@ After improving the JavaScript detection, **I now found some additional commands
 
 <a href="/assets/posts/inappbrowser/app_js/instagram.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
 
-**Note on subscribing**: When I talk about "App subscribes to", I mean that the app subscribes to the JavaScript events of that type (e.g. all taps). There is no way to verify what happens with the data.
+**Note on subscribing**: When I talk about "*App subscribes to*", I mean that the app subscribes to the JavaScript events of that type (e.g. all taps). There is no way to verify what happens with the data.
 
 ## Apps can hide their JavaScript activities from this tool
 
@@ -194,6 +194,12 @@ Especially after the publicity of [last week's post](https://krausefx.com/blog/i
 
 Hence, **it becomes more important than ever to find a solution to end the use of custom in-app browsers** for showing third party content.
 
+### Valid use-cases for in-app webviews
+
+There are many valid reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
+
+However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is no button to open the currently shown page in the default browser.
+
 ## iOS Apps that use Safari
 
 The apps below follow Apple's recommendation of using Safari or `SFSafariViewController` for viewing external websites. More context on `SFSafariViewController` in the [original article](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser).
@@ -216,12 +222,6 @@ All apps that use `SFSafariViewController` or `Default Browser` are on the safe 
     {% endfor %}
   </table>
 </div>
-
-## Valid use-cases for in-app webviews
-
-There are many valid reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
-
-However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is no button to open the currently shown page in the default browser.
 
 ## What can we do?
 
