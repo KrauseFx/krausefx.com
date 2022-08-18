@@ -27,7 +27,7 @@ I was so happy to see the article featured by major media outlets across the glo
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
-  <h4>TikTok's In-App Browser injecting code to observe all taps and keyboard inputs</h4>
+  <h4>TikTok's In-App Browser injecting code to observe all taps and keyboard inputs, as well as password and credit card inputs</h4>
 </div>
 
 **"How can I verify what apps do in their webviews?"**
@@ -49,7 +49,7 @@ To try this this tool yourself:
       alt="An iPhone showing the inappbrowser.com website, rendered inside TikTok, showing how there is CSS code being added, added monitoring for all taps and all keyboard inputs, as well as getting the coordinates of elements the user taps"
     />
   </a>
-  <h4>TikTok's In-App Browser injecting code to observe all taps and keyboard inputs</h4>
+  <h4>TikTok's In-App Browser injecting code to observe all taps and keyboard inputs, as well as password and credit card inputs</h4>
 </div>
 
 I started using this tool to analyze the most popular iOS apps that have their own in-app browser. Below are the results I’ve found.
