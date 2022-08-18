@@ -135,16 +135,25 @@ However, there are data privacy & integrity issues when you use in-app browsers 
     <th width="50%">TikTok iOS</th>
     <th width="50%">Instagram iOS</th>
   </tr>
-  <tr>
+  <tr class="img-row">
     <td><a href="/assets/inappbrowser/app_screenshots/tiktok_framed.png" target="_blank"><img src="/assets/inappbrowser/app_screenshots/tiktok_framed.png" ></a></td>
     <td><a href="/assets/inappbrowser/app_screenshots/instagram.png" target="_blank"><img src="/assets/inappbrowser/app_screenshots/instagram.png" alt="The same code as the previous photo, however this time inside Facebook Messenger"></a></td>
   </tr>
   <tr>
     <td>
-      <p>TikTok for iOS subscribes to every keystroke (text inputs) happening on third party websites. Additionally it subscribes to every tap on any button, link or other component.</p>
+      <ul>
+        <li>TikTok iOS subscribes to every keystroke (text inputs) happening on third party websites. This can include passwords, credit card information and other sensitive user data. (<code>keypress</code> and <code>keydown</code>). We can't know what TikTok uses the subscription for, but from a technical perspective, this could be a keylogger setup on third party sites.</li>
+        <li>TikTok iOS subscribes to every tap on any button, link, image or other component.</li>
+        <li>TikTok iOS uses a JavaScript function to get details about the element the user clicked on, like an image (<code>document.elementFromPoint</code>)</li>
+      </ul>
     </td>
     <td>
-      <p>Instagram for iOS subscribes to every tap on any button, link or other component. Additionally Instagram subscribes to everytime the user focuses on a UI element.</p>
+      <p><b>New: </b><a target="_blank" href="https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser">Last week's post</a> talked about the injection of the <code>pcm.js</code> script. <a href="https://twitter.com/KrauseFx/status/1558867249691123712">Meta claimed</a> they only inject the script to respect the user's ATT choice, and additional "security and user features".</p>
+      <p>As I improved the JavaScript detection script, I now found some additional commands Instagram runs:</p>
+      <ul>
+        <li>Instagram iOS subscribes to every tap on any button, link, image or other component.</li>
+        <li>Instagram iOS subscribes to every time the user focuses on a UI element (like a text field)</li>
+      </ul>
     </td>
   </tr>
 </table>
@@ -158,7 +167,7 @@ Since iOS 14.3 (December 2020), Apple introduced the support of running JavaScri
 
 &ndash; [Apple WKContentWorld Docs](https://developer.apple.com/documentation/webkit/wkcontentworld)
 
-This new system was initially built so that website operators can't interfere with JavaScript code of browser plugins. As a user, you can check the source code of any browser plugin, as you are in control over the browser itself. However with in-app browsers we don't have a reliable way to verify all the code that is executed.
+This new system was initially built so that website operators can't interfere with JavaScript code of browser plugins, and to make fingerprinting more difficult. As a user, you can check the source code of any browser plugin, as you are in control over the browser itself. However with in-app browsers we don't have a reliable way to verify all the code that is executed.
 
 So if Meta or TikTok want to hide the JavaScript commands they execute on third party websites, all they'd need to do is to update their JavaScript runner:
 
@@ -367,16 +376,27 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
       }
   }
   .hijacking-second-table {
-    width: 98%;
+    width: calc(100% + 200px);
   }
   .hijacking-second-table th {
     text-align: center;
   }
   .hijacking-second-table td {
-    text-align: center;
-    padding: 5px;
+    text-align: left;
+    padding: 10px;
+    vertical-align: top;
+  }
+  .hijacking-second-table img {
+    width: 90%;
   }
   .hijacking-second-table p {
     margin-bottom: 0px;
+    margin-top: 5px;
+  }
+  .hijacking-second-table ul {
+    margin-top: 10px;
+  }
+  .hijacking-second-table .img-row td {
+    text-align: center;
   }
 </style>
