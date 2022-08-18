@@ -214,7 +214,11 @@ All apps that use `SFSafariViewController` or `Default Browser` are on the safe 
   </table>
 </div>
 
-All the apps listed above have no way to inject any JavaScript commands onto external websites. Even the `Isolated World JavaScript` method described above won't work, as the `SFSafariViewController` and Safari itself run in a completely separate sandbox and process, with no direct access with the app itself.
+## Valid use-cases for in-app webviews
+
+There are many valid reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
+
+However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is no button to open the currently shown page in the default browser.
 
 ## What can we do?
 
@@ -230,9 +234,7 @@ All the apps listed above have no way to inject any JavaScript commands onto ext
 
 Most in-app browsers have a way to open the currently shown website in Safari. As soon as you land inside an in-app browser, use the `Open in Browser` feature to switch to a safer browser. If that button isn’t available, you will have to copy & paste the URL to open the link in the browser of your choice. If the app makes it difficult to even do that, you can tap & hold a link on the website and then use the Copy feature, which can be a little tricky to get right.
 
-There are many valid reasons to use an in-app browser, particularly when an app accesses its own websites to complete specific transactions. For example, an airline app might not have the seat selection implemented natively for their whole airplane fleet. Instead they might choose to reuse the web-interface they already have. If they weren’t able to inject cookies or JavaScript commands inside their webview, the user would have to re-login while using the app, just so they can select their seat. Shoutout to Venmo, which uses their own in-app browser for all their internal websites (e.g. Terms of Service), but as soon as you tap on an external link, they automatically transition over to `SFSafariViewController`.
-
-However, there are data privacy & integrity issues when you use in-app browsers to visit non-first party websites, such as how Instagram and TikTok show all external websites inside their app. More importantly, those apps rarely offer an option to use a standard browser as default, instead of the in-app browser. And in some cases (like TikTok), there is not even a button to open the currently shown page in the default browser.
+TikTok doesn't have a button to open websites in the default browser.
 
 **Companies using in-app browsers**
 
