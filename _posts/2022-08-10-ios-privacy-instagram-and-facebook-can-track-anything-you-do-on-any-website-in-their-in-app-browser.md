@@ -70,6 +70,9 @@ meta: {}
   <a href="https://metro.co.uk/2022/08/15/instagram-and-facebook-stalk-you-on-sites-accessed-through-their-apps-17184243/">
     <img src="/assets/privacy/metrocouk.jpg" />
   </a>
+  <a href="https://lifehacker.com/dont-use-in-app-browsers-for-anything-important-1849401900">
+    <img src="/assets/privacy/lifehacker.png" />
+  </a>
 </div>
 
 <hr style="margin-bottom:20px" />
