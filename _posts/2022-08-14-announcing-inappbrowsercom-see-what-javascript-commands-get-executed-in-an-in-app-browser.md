@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'iOS Privacy: Announcing InAppBrowser.com - see what JavaScript commands get executed in an in-app browser'
+title: 'iOS Privacy: Announcing InAppBrowser.com - see what JavaScript commands get injected in an in-app browser'
 categories: []
 tags:
 - ios
