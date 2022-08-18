@@ -4,14 +4,14 @@
   runs_js: true
   shows_url: false
   screenshot: "tiktok"
-  last_updated: "2022-08-15"
+  last_updated: "2022-08-18"
 - name: "Instagram"
   has_open_in_browser: true
   js_modify_content: true
   shows_url: true
   runs_js: true
   screenshot: "instagram"
-  last_updated: "2022-08-15"
+  last_updated: "2022-08-18"
 - name: "FB Messenger"
   has_open_in_browser: true
   js_modify_content: true
@@ -40,7 +40,7 @@
   runs_js: false
   shows_url: true
   screenshot: "snapchat"
-  last_updated: "2022-08-15"
+  last_updated: "2022-08-17"
 - name: "Robinhood"
   has_open_in_browser: true
   runs_js: false
