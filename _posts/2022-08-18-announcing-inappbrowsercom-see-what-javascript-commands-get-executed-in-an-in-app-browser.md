@@ -15,6 +15,20 @@ published: true
 meta: {}
 ---
 
+<div class="press" style="margin-bottom: 10px;">
+  <a href="https://www.macrumors.com/2022/08/18/felix-krause-in-app-browser-javascript-tool//">
+    <img src="/assets/privacy/MacRumors.png">
+  </a>
+  <a href="https://news.ycombinator.com/item?id=32514793">
+    <img src="/assets/privacy/hackernews.ico">
+  </a>
+  <a href="https://www.forbes.com/sites/richardnieva/2022/08/18/tiktok-in-app-browser-research/">
+    <img src="/assets/privacy/forbes.png">
+  </a>
+</div>
+
+<!-- <hr style="margin-bottom:20px" /> -->
+
 [Last week I published a report](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) on the risks of mobile apps using in-app browsers. Some apps, like Instagram and Facebook, inject JavaScript code into third party websites that cause potential security and privacy risks to the user. 
 
 I was so happy to see the article featured by major media outlets across the globe, like [TheGuardian](https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says) and [The Register](https://www.theregister.com/2022/08/12/meta_ios_privacy/), generated a [over a million impressions on Twitter](https://twitter.com/KrauseFx/status/1557412468368052225), and was ranked [#1 on HackerNews](https://news.ycombinator.com/item?id=32415470) for more than 12 hours. After reading through the replies and DMs, I saw a common question across the community:
