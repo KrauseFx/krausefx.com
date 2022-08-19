@@ -15,6 +15,17 @@ published: true
 meta: {}
 ---
 
+<style type="text/css">
+  .press > a {
+    text-decoration: none;
+  }
+  .press > a > img {
+    max-height: 40px;
+    max-width: 110px;
+    margin: 10px;
+  }
+</style>
+
 <div class="press" style="margin-bottom: 10px;">
   <a href="https://www.macrumors.com/2022/08/18/felix-krause-in-app-browser-javascript-tool//">
     <img src="/assets/privacy/MacRumors.png">
