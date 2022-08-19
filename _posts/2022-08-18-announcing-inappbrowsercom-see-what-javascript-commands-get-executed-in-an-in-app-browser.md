@@ -36,6 +36,9 @@ meta: {}
   <a href="https://www.forbes.com/sites/richardnieva/2022/08/18/tiktok-in-app-browser-research/">
     <img src="/assets/privacy/forbes.png">
   </a>
+  <a href="https://9to5mac.com/2022/08/18/tool-shows-injected-javascript-in-app-browser/">
+    <img src="/assets/privacy/9to5.png">
+  </a>
 </div>
 
 <!-- <hr style="margin-bottom:20px" /> -->
