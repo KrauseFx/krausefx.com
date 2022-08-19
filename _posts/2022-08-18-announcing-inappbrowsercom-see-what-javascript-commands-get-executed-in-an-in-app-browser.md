@@ -35,7 +35,7 @@ meta: {}
   </a>
 </div>
 
-<!-- <hr style="margin-bottom:20px" /> -->
+<hr style="margin-bottom:20px" />
 
 [Last week I published a report](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) on the risks of mobile apps using in-app browsers. Some apps, like Instagram and Facebook, inject JavaScript code into third party websites that cause potential security and privacy risks to the user. 
 
@@ -167,6 +167,14 @@ When you open any link on the TikTok iOS app, it's opened inside their in-app br
 - TikTok iOS uses a JavaScript function to get details about the element the user clicked on, like an image (`document.elementFromPoint`)
 
 <a href="https://krausefx.com/assets/posts/inappbrowser/app_js/tiktok.js" target="_blank">Here</a> is a list of all JavaScript commands I was able to detect.
+
+**Update:** TikTok's statement, as reported per [Forbes.com](https://www.forbes.com/sites/richardnieva/2022/08/18/tiktok-in-app-browser-research/):
+
+> **The company confirmed those features exist** in the code, but said TikTok is not using them. 
+> 
+> "Like other platforms, we use an in-app browser to provide an optimal user experience, but the Javascript code in question is used only for debugging, troubleshooting and performance monitoring of that experience — like checking how quickly a page loads or whether it crashes,” spokesperson Maureen Shanahan said in a statement.
+
+The above statement confirms my findings. TikTok injects code into third party websites through their in-app browsers that behaves like a keylogger. However claims it's not being used.
 
 ## Instagram does more than just inserting `pcm.js`
 
