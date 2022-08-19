@@ -284,6 +284,8 @@ Most in-app browsers have a way to open the currently shown website in Safari. A
 
 TikTok doesn't have a button to open websites in the default browser.
 
+**Update:** According to some tweets, sometimes there is a way to open websites in the default browser.
+
 **Companies using in-app browsers**
 
 If you’re at a company where you have an in-app browser, use it only for your own pages and open all external links in the user's default browser. Additionally, provide a setting to let users choose a default browser over an in-app browser experience. Unfortunately, these types of changes rarely get prioritized over features that move metrics inside of tech organizations. However, it's so important for people to educate others on their team, and their managers, about the positive impact of making better security and privacy decisions for the user. These changes can be transparently marketed to users as an opportunity to build further trust.
