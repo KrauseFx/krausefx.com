@@ -16,18 +16,7 @@ published: true
 meta: {}
 ---
 
-<style type="text/css">
-  .press > a {
-    text-decoration: none;
-  }
-  .press > a > img {
-    max-height: 40px;
-    max-width: 110px;
-    margin: 10px;
-  }
-</style>
-
-<div class="press">
+<div class="article-press">
   <a href="https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says">
     <img src="/assets/privacy/TheGuardian.png">
   </a>

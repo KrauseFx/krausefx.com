@@ -18,6 +18,14 @@ $no-sidebar: "800px";
   max-width: 150px;
   margin: 10px;
 }
+.article-press > a {
+  text-decoration: none;
+}
+.article-press > a > img {
+  max-height: 40px;
+  max-width: 110px;
+  margin: 10px;
+}
 
 #sidebar {
   float: right;
