@@ -36,6 +36,9 @@ meta: {}
   <a href="https://techcrunch.com/2022/08/19/tiktok-fb-in-app-browser-tracking-analysis/">
     <img src="/assets/privacy/techcrunch.png" style="max-width: 145px;">
   </a>
+  <a href="https://news.yahoo.com/tiktoks-app-browser-could-keylogging-103620054.html">
+    <img src="/assets/privacy/Yahoo.jpg">
+  </a>
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
   </a>
