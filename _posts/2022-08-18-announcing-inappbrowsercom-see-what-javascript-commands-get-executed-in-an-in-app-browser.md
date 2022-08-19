@@ -33,6 +33,9 @@ meta: {}
   <a href="https://www.theverge.com/2022/8/19/23312725/in-app-browser-tracking-facebook-instagram-privacy-tool">
     <img src="/assets/privacy/verge.png">
   </a>
+  <a href="https://www.marketingbrew.com/stories/2022/08/18/tiktok-meta-can-see-user-behavior-on-in-app-browsers-according-to-research">
+    <img src="/assets/privacy/marketingbrew.png">
+  </a>
   <a href="https://techcrunch.com/2022/08/19/tiktok-fb-in-app-browser-tracking-analysis/">
     <img src="/assets/privacy/techcrunch.png" style="max-width: 145px;">
   </a>
