@@ -30,6 +30,9 @@ meta: {}
   <a href="https://9to5mac.com/2022/08/18/tool-shows-injected-javascript-in-app-browser/">
     <img src="/assets/privacy/9to5.png">
   </a>
+  <a href="https://www.theverge.com/2022/8/19/23312725/in-app-browser-tracking-facebook-instagram-privacy-tool">
+    <img src="/assets/privacy/verge.png">
+  </a>
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
   </a>
