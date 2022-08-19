@@ -39,6 +39,9 @@ meta: {}
   <a href="https://news.yahoo.com/tiktoks-app-browser-could-keylogging-103620054.html">
     <img src="/assets/privacy/Yahoo.jpg">
   </a>
+  <a href="https://mashable.com/article/tiktok-browser-monitoring">
+    <img src="/assets/privacy/mashable.png">
+  </a>
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
   </a>
