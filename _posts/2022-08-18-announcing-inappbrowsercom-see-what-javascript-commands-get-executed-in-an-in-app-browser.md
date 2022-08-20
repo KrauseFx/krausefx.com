@@ -18,11 +18,14 @@ meta: {}
 ---
 
 <div class="article-press" style="margin-bottom: 10px;">
-  <a href="https://www.macrumors.com/2022/08/18/felix-krause-in-app-browser-javascript-tool//">
-    <img src="/assets/privacy/MacRumors.png">
+  <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html?searchResultPosition=2">
+    <img src="/assets/privacy/nytimes.png" style="max-width: 200px">
   </a>
   <a href="https://news.ycombinator.com/item?id=32514793">
     <img src="/assets/privacy/hackernews.ico">
+  </a>
+  <a href="https://www.macrumors.com/2022/08/18/felix-krause-in-app-browser-javascript-tool/">
+    <img src="/assets/privacy/MacRumors.png">
   </a>
   <a href="https://www.forbes.com/sites/richardnieva/2022/08/18/tiktok-in-app-browser-research/">
     <img src="/assets/privacy/forbes.png">
@@ -45,6 +48,16 @@ meta: {}
   <a href="https://mashable.com/article/tiktok-browser-monitoring">
     <img src="/assets/privacy/mashable.png">
   </a>
+  <a href="https://nypost.com/2022/08/19/meta-and-tiktok-can-track-everything-you-type-on-in-app-browsers-researcher/">
+    <img src="/assets/privacy/nypost.png">
+  </a>
+  <a href="https://www.cnet.com/tech/services-and-software/tiktoks-in-app-browser-can-monitor-your-keystrokes-researcher-says/">
+    <img src="/assets/privacy/cnet.jpg">
+  </a>
+  <a href="https://www.businessinsider.com/apple-tiktok-track-sensitive-user-data-passwords-app-store-report-2022-8">
+    <img src="/assets/privacy/businessinsider.png">
+  </a>
+  
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
   </a>
