@@ -57,6 +57,9 @@ meta: {}
   <a href="https://www.businessinsider.com/apple-tiktok-track-sensitive-user-data-passwords-app-store-report-2022-8">
     <img src="/assets/privacy/businessinsider.png">
   </a>
+  <a href="https://www.abc.net.au/news/2022-08-22/tiktok-in-app-browser-can-monitor-keystrokes-researcher-finds/101356198">
+    <img src="/assets/privacy/abc-australia.png">
+  </a>
   
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
