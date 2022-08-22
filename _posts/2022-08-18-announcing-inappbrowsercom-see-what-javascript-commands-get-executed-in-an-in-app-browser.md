@@ -42,6 +42,9 @@ meta: {}
   <a href="https://techcrunch.com/2022/08/19/tiktok-fb-in-app-browser-tracking-analysis/">
     <img src="/assets/privacy/techcrunch.png" style="max-width: 145px;">
   </a>
+  <a href="https://twitter.com/TheLeadCNN/status/1560759658746347525">
+    <img src="/assets/privacy/cnn.png">
+  </a>
   <a href="https://news.yahoo.com/tiktoks-app-browser-could-keylogging-103620054.html">
     <img src="/assets/privacy/Yahoo.jpg">
   </a>
