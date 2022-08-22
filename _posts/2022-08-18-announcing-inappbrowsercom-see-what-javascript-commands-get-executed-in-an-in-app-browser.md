@@ -18,7 +18,7 @@ meta: {}
 ---
 
 <div class="article-press" style="margin-bottom: 10px;">
-  <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html?searchResultPosition=2">
+  <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">
     <img src="/assets/privacy/nytimes.png" style="max-width: 200px">
   </a>
   <a href="https://news.ycombinator.com/item?id=32514793">
@@ -60,7 +60,9 @@ meta: {}
   <a href="https://www.abc.net.au/news/2022-08-22/tiktok-in-app-browser-can-monitor-keystrokes-researcher-finds/101356198">
     <img src="/assets/privacy/abc-australia.png">
   </a>
-  
+  <a href="https://cn.nytimes.com/technology/20220822/tiktok-browser-tracking/">
+    <img src="/assets/privacy/nytimes-chinese.jpg">
+  </a>
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
   </a>
