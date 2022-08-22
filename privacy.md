@@ -22,12 +22,88 @@ If you need any additional resources, or have any follow-up questions that are n
 ----
 
 <div id="instagram-framed-top">
+  <a href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" target="_blank">
+    <img src="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" style="width: 250px" alt="An iPhone screenshot, showing a website, rendering what commands got executed by the Instagram app in their in-app browser" />
+  </a>
+</div>
+
+## [InAppBrowser.com - see what JavaScript commands get injected through an in-app browser](/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser)
+
+- Introducing [InAppBrowser.com](https://InAppBrowser.com), an open source website to see the JavaScript commands that get injected through in-app browsers
+- When opening a website from within the TikTok iOS app, they inject code that can observe every keyboard input (which may include credit card details, passwords or other sensitive information)
+- How Instagram for iOS also injects JavaScript code to observe all taps happening inside their in-app browser, like clicking on buttons, links or images.
+- How as of iOS 14.3, apps can easily hide their JavaScript activities from websites using WKContentWorld.
+
+<br />
+
+## [Read the full blog post](/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser)
+
+<br />
+
+<div class="press">
+  <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">
+    <img src="/assets/privacy/nytimes.png" style="max-width: 200px">
+  </a>
+  <a href="https://news.ycombinator.com/item?id=32514793">
+    <img src="/assets/privacy/hackernews.ico">
+  </a>
+  <a href="https://www.macrumors.com/2022/08/18/felix-krause-in-app-browser-javascript-tool/">
+    <img src="/assets/privacy/MacRumors.png">
+  </a>
+  <a href="https://www.forbes.com/sites/richardnieva/2022/08/18/tiktok-in-app-browser-research/">
+    <img src="/assets/privacy/forbes.png">
+  </a>
+  <a href="https://9to5mac.com/2022/08/18/tool-shows-injected-javascript-in-app-browser/">
+    <img src="/assets/privacy/9to5.png">
+  </a>
+  <a href="https://www.theverge.com/2022/8/19/23312725/in-app-browser-tracking-facebook-instagram-privacy-tool">
+    <img src="/assets/privacy/verge.png">
+  </a>
+  <a href="https://www.marketingbrew.com/stories/2022/08/18/tiktok-meta-can-see-user-behavior-on-in-app-browsers-according-to-research">
+    <img src="/assets/privacy/marketingbrew.png">
+  </a>
+  <a href="https://techcrunch.com/2022/08/19/tiktok-fb-in-app-browser-tracking-analysis/">
+    <img src="/assets/privacy/techcrunch.png" style="max-width: 145px;">
+  </a>
+  <a href="https://twitter.com/TheLeadCNN/status/1560759658746347525">
+    <img src="/assets/privacy/cnn.png">
+  </a>
+  <a href="https://news.yahoo.com/tiktoks-app-browser-could-keylogging-103620054.html">
+    <img src="/assets/privacy/Yahoo.jpg">
+  </a>
+  <a href="https://mashable.com/article/tiktok-browser-monitoring">
+    <img src="/assets/privacy/mashable.png">
+  </a>
+  <a href="https://nypost.com/2022/08/19/meta-and-tiktok-can-track-everything-you-type-on-in-app-browsers-researcher/">
+    <img src="/assets/privacy/nypost.png">
+  </a>
+  <a href="https://www.cnet.com/tech/services-and-software/tiktoks-in-app-browser-can-monitor-your-keystrokes-researcher-says/">
+    <img src="/assets/privacy/cnet.jpg">
+  </a>
+  <a href="https://www.businessinsider.com/apple-tiktok-track-sensitive-user-data-passwords-app-store-report-2022-8">
+    <img src="/assets/privacy/businessinsider.png">
+  </a>
+  <a href="https://www.abc.net.au/news/2022-08-22/tiktok-in-app-browser-can-monitor-keystrokes-researcher-finds/101356198">
+    <img src="/assets/privacy/abc-australia.png">
+  </a>
+  <a href="https://cn.nytimes.com/technology/20220822/tiktok-browser-tracking/">
+    <img src="/assets/privacy/nytimes-chinese.jpg">
+  </a>
+  <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
+    <img src="/assets/privacy/derstandard.gif">
+  </a>
+</div>
+
+<hr style="margin-bottom: 60px" />
+
+<div id="instagram-framed-top">
   <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank">
     <img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" style="width: 250px" alt="An iPhone screenshot, showing a website, rendering what commands got executed by the Instagram app in their in-app browser" />
   </a>
 </div>
 
 ## [Instagram and Facebook can track anything you do on any website in their in-app browser](/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser)
+
 The iOS Instagram and Facebook app render all third party links and ads within their app using a custom in-app browser. This [causes various risks for the user](https://krausefx.com/blog/follow-user), with the host app being able to track every single interaction with external websites, from all form inputs like passwords and addresses, to every single tap.
 
 - Links to external websites are rendered inside the Instagram app, instead of using the built-in Safari.
@@ -36,7 +112,7 @@ The iOS Instagram and Facebook app render all third party links and ads within t
 
 <br />
 
-## [Read the full blog post](/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
+## [Read the full blog post](/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser)
 
 <br />
 
@@ -88,7 +164,7 @@ The iOS Instagram and Facebook app render all third party links and ads within t
   </a>
 </div>
 
-----
+<hr style="margin-bottom: 60px" />
 
 <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dc97a83e00bed1b42c0096_1507631710330__img.png_" width="400" align="right" />
 
