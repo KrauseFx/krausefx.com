@@ -66,6 +66,12 @@ meta: {}
 
 <hr style="margin-bottom:20px" />
 
+**Update:** A week later, I've published a new post, looking into other apps including TikTok, where I also found an additional JavaScript event listener of Instagram which can monitor all taps on third party websites.
+
+**[Check it out here](/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser)**
+
+<hr />
+
 <div id="instagram-framed-top">
   <a href="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" target="_blank">
     <img src="https://krausefx.com/assets/posts/injecting-code/instagram_framed.png" style="width: 250px" alt="An iPhone screenshot, showing a website, rendering what commands got executed by the Instagram app in their in-app browser: 
