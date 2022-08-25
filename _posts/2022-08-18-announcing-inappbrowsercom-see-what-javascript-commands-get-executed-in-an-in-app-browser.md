@@ -72,6 +72,9 @@ meta: {}
   <a href="https://www.youtube.com/watch?v=iXbSiFWS_lo">
     <img src="/assets/privacy/cnbc.png">
   </a>
+  <a href="https://www.dailymail.co.uk/sciencetech/article-11140887/TikTok-track-users-taps-browse-sites-iOS-app-researcher-claims.html">
+    <img src="/assets/privacy/DailyMail.jpg">
+  </a>
   <a href="https://www.tagesschau.de/multimedia/video/ts24/puzzle/video-1077155.html">
     <img src="/assets/privacy/tagesschau.png">
   </a>
