@@ -69,6 +69,9 @@ meta: {}
   <a href="https://www.cbsnews.com/video/researcher-says-tiktoks-in-app-browser-monitoring-user-activity/#x">
     <img src="/assets/privacy/cbs.png">
   </a>
+  <a href="https://www.youtube.com/watch?v=iXbSiFWS_lo">
+    <img src="/assets/privacy/cnbc.png">
+  </a>
   <a href="https://www.tagesschau.de/multimedia/video/ts24/puzzle/video-1077155.html">
     <img src="/assets/privacy/tagesschau.png">
   </a>
