@@ -89,6 +89,15 @@ If you need any additional resources, or have any follow-up questions that are n
   <a href="https://cn.nytimes.com/technology/20220822/tiktok-browser-tracking/">
     <img src="/assets/privacy/nytimes-chinese.jpg">
   </a>
+  <a href="https://www.cbsnews.com/video/researcher-says-tiktoks-in-app-browser-monitoring-user-activity/#x">
+    <img src="/assets/privacy/cbs.png">
+  </a>
+  <a href="https://www.youtube.com/watch?v=iXbSiFWS_lo">
+    <img src="/assets/privacy/cnbc.png">
+  </a>
+  <a href="https://www.tagesschau.de/multimedia/video/ts24/puzzle/video-1077155.html">
+    <img src="/assets/privacy/tagesschau.png">
+  </a>
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
   </a>
