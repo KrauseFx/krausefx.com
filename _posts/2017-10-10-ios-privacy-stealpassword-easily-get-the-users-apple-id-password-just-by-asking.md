@@ -15,6 +15,47 @@ published: true
 meta: {}
 ---
 
+<div class="press">
+  <a href="https://daringfireball.net/linked/2017/10/10/ios-phishing">
+    <img src="/assets/privacy/DaringFireball.png">
+  </a>
+  <a href="https://lifehacker.com/how-to-stop-ios-apps-from-stealing-your-apple-id-passwo-1819978731">
+    <img src="/assets/privacy/Lifehacker.png">
+  </a>
+  <a href="https://9to5mac.com/2017/10/10/psa-apple-id-phishing-attempt/">
+    <img src="/assets/privacy/9to5.png">
+  </a>
+  <a href="https://www.macrumors.com/2017/10/10/apple-ios-phishing-attack-concept/">
+    <img src="/assets/privacy/MacRumors.png">
+  </a>
+  <a href="https://arstechnica.com/information-technology/2017/10/beware-of-sketchy-ios-popups-that-want-your-apple-id/">
+    <img src="/assets/privacy/ArsTechnica.png">
+  </a>
+  <a href="http://fortune.com/2017/10/10/apple-iphone-password-phishing-scam/?iid=sr-link2">
+    <img src="/assets/privacy/Fortune.jpg">
+  </a>
+  <a href="https://news.ycombinator.com/item?id=15441537">
+    <img src="/assets/privacy/hackernews.ico">
+  </a>
+  <a href="https://motherboard.vice.com/en_us/article/ne7gxz/ios-iphone-password-phishing-app-popups">
+    <img src="/assets/privacy/Motherboard.svg">
+  </a>
+  <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">
+    <img src="/assets/privacy/TheGuardian.png">
+  </a>
+  <a href="https://finance.yahoo.com/news/beware-apple-iphone-password-phishing-174756750.html">
+    <img src="/assets/privacy/Yahoo.jpg">
+  </a>
+  <a href="https://www.wired.com/story/apple-id-password-phishing/">
+    <img src="/assets/privacy/Wired.png">
+  </a>
+  <a href="https://www.theregister.co.uk/2017/10/10/apple_ios_password_prompts_phishing/">
+    <img src="/assets/privacy/TheRegister.jpg">
+  </a>
+</div>
+
+---
+
 Do you want the user's Apple ID password, to get access to their Apple account, or to try the same email/password combination on different web services? Just ask your users politely, they'll probably just hand over their credentials, as they're trained to do so 👌
   
       

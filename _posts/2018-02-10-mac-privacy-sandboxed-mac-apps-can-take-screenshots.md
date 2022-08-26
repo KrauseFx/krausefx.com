@@ -12,6 +12,23 @@ published: true
 meta: {}
 ---
 
+<div class="press">
+  <a href="https://news.ycombinator.com/item?id=16350277">
+    <img src="/assets/privacy/hackernews.ico">
+  </a>
+  <a href="https://www.heise.de/mac-and-i/meldung/Mac-Apps-koennen-heimlich-Bildschirminhalt-aufzeichnen-trotz-Sandbox-3965929.html">
+    <img src="/assets/privacy/heise.svg">
+  </a>
+  <a href="https://daringfireball.net/2018/02/non_native_apps_threat_to_mac">
+    <img src="/assets/privacy/DaringFireball.png">
+  </a>
+  <a href="https://lifehacker.com/how-mac-apps-can-spy-on-your-computer-1822928525">
+    <img src="/assets/privacy/Lifehacker.png">
+  </a>
+</div>
+
+---
+
 **Update 2019-06-04** Apple has fixed this issue with macOS Catalina
 
 ## Facts
