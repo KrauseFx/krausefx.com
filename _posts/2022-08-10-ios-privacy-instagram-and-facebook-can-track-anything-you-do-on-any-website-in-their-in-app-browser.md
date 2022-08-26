@@ -47,7 +47,7 @@ meta: {}
   <a href="https://www.cnbctv18.com/technology/instagram-can-track-a-users-web-activity-via-in-app-browser-claims-report-14448592.htm">
     <img src="/assets/privacy/cnbc.png">
   </a>
-  <a href="https://derstandard.at/2000064949062/Oesterreichischer-Entwickler-zeigt-wie-Foto-Apps-am-iPhone-schnueffeln">
+  <a href="https://www.derstandard.at/story/2000138185950/facebook-und-instagram-apps-koennten-alles-mitlesen-was-die-nutzer">
     <img src="/assets/privacy/derStandard.gif">
   </a>
   <a href="https://abc3340.com/news/nation-world/meta-can-track-users-credit-card-internet-history-on-other-websites-research-claims-facebook-instagram-felix-krause-code-google-engineer">
