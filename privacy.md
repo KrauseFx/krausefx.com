@@ -98,6 +98,9 @@ If you need any additional resources, or have any follow-up questions that are n
   <a href="https://www.dailymail.co.uk/sciencetech/article-11140887/TikTok-track-users-taps-browse-sites-iOS-app-researcher-claims.html">
     <img src="/assets/privacy/DailyMail.jpg">
   </a>
+  <a href="https://www.theguardian.com/technology/2022/aug/24/tiktok-can-track-users-every-tap-as-they-visit-other-sites-through-ios-app-new-research-shows">
+    <img src="/assets/privacy/TheGuardian.png">
+  </a>
   <a href="https://www.tagesschau.de/multimedia/video/ts24/puzzle/video-1077155.html">
     <img src="/assets/privacy/tagesschau.png">
   </a>
