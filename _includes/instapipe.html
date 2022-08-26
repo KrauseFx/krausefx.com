@@ -22,7 +22,7 @@
 </div>
 
 <script type='text/javascript'>
-    let host = "https://instapipe.net/"
+    let host = "https://instapipe.net"
     let userId = "17841401712160068"
 
     var storiesToShow = null;
@@ -36,7 +36,7 @@
     var currentIndex = -1;
 
     function preloadStoriesIndex() {
-        var url = host + "stories.json?user_id=" + userId;
+        var url = host + "/stories.json?user_id=" + userId;
 
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.onreadystatechange = function() {
