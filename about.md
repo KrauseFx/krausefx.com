@@ -100,7 +100,7 @@ meta: {}
 </div>
 
 <script type="text/javascript">
-  var url = "https://where-is-felix-today-backend.herokuapp.com/api.json";
+  var url = "https://backend.howisfelix.today/api.json";
 
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = function() { 
