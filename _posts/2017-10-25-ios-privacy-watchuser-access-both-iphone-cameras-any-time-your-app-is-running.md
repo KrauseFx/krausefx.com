@@ -14,6 +14,44 @@ published: true
 meta: {}
 ---
 
+<div class="press">
+  <a href="https://lifehacker.com/how-to-stop-ios-apps-from-secretly-spying-through-your-1819877630">
+    <img src="/assets/privacy/Lifehacker.png">
+  </a>
+  <a href="https://9to5mac.com/2017/10/26/ios-camera-permissions-abuse/">
+    <img src="/assets/privacy/9to5.png">
+  </a>
+  <a href="https://gizmodo.com/developer-shows-how-iphone-apps-can-theoretically-spy-o-1819874714">
+    <img src="/assets/privacy/Gizmodo.png">
+  </a>
+  <a href="http://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">
+    <img src="/assets/privacy/Telegraph.png">
+  </a>
+  <a href="http://www.dailymail.co.uk/sciencetech/article-5020769/iPhone-apps-silently-turn-camera.html">
+    <img src="/assets/privacy/DailyMail.jpg">
+  </a>
+  <a href="https://thenextweb.com/apple/2017/10/26/iphone-camera-permissions-google-ios/">
+    <img src="/assets/privacy/TheNextWeb.png">
+  </a>
+  <a href="https://www.macrumors.com/2017/10/26/developer-warns-iphone-camera/">
+    <img src="/assets/privacy/MacRumors.png">
+  </a>
+  <a href="https://motherboard.vice.com/en_us/article/mb3ezy/iphone-apps-camera-permission-pictures-videos-without-you-noticing">
+    <img src="/assets/privacy/Motherboard.svg">
+  </a>
+  <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">
+    <img src="/assets/privacy/Unilad.jpg">
+  </a>
+  <a href="https://www.theregister.co.uk/2017/10/25/ios_apps_camera_spying/">
+    <img src="/assets/privacy/TheRegister.jpg">
+  </a>
+  <a href="https://www.foxnews.com/tech/iphone-apps-with-access-to-your-camera-can-secretly-spy-on-you">
+    <img src="/assets/privacy/FoxNews.png">
+  </a>
+</div>
+
+---
+
 **Update 2020-06-22** [Apple has fixed this issue with iOS 14](https://twitter.com/KrauseFx/status/1275128155561484288)
 
 # Facts
