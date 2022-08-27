@@ -57,7 +57,7 @@ meta: {}
     <img src="/assets/privacy/FoxNews.png" style="opacity: 0.9">
   </a>
   <a href="https://metro.co.uk/2022/08/15/instagram-and-facebook-stalk-you-on-sites-accessed-through-their-apps-17184243/">
-    <img src="/assets/privacy/metrocouk.jpg" />
+    <img src="/assets/privacy/metrocouk.jpg" style="max-width: 75px">
   </a>
   <a href="https://lifehacker.com/dont-use-in-app-browsers-for-anything-important-1849401900">
     <img src="/assets/privacy/lifehacker.png" />
