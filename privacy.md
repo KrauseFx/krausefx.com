@@ -13,7 +13,7 @@ meta: {}
 
 I work on privacy research projects for the iOS platform in my free time. Those projects are in no way affiliated with my work or my employer.
 
-My privacy research posts and tweets had more than 10,000,000 impressions within just a few weeks. The goal is to raise awareness of what technology can do, and educate on how you, as a user, can protect yourself.
+My privacy research posts and tweets had more than 25,000,000 impressions. The goal is to raise awareness of what technology can do, and educate on how you, as a user, can protect yourself.
 
 If you write a story about any of those posts, make sure to read the original blog post linked, and feel free to use any of the images and videos provided on [krausefx.com](https://krausefx.com), as long as you reference the original blog post, including my name.
 
