@@ -95,6 +95,9 @@ If you need any additional resources, or have any follow-up questions that are n
   <a href="https://metro.co.uk/2022/08/24/tiktoks-ios-app-tracks-your-every-move-says-new-research-17236330/">
     <img src="/assets/privacy/metrocouk.jpg" style="max-width: 75px">
   </a>
+  <a href="https://www.theaustralian.com.au/the-oz/internet/calling-time-on-tiktok-in-australia/news-story/ebead44e899837e9bef06e17b98834ea">
+    <img src="/assets/privacy/theaustralian.jpg">
+  </a>
   <a href="https://internet2-0.com/whitepaper/tiktok-inapp-browsers/">
     <img src="/assets/privacy/internet20.jpg">
   </a>
