@@ -89,6 +89,15 @@ If you need any additional resources, or have any follow-up questions that are n
   <a href="https://cn.nytimes.com/technology/20220822/tiktok-browser-tracking/">
     <img src="/assets/privacy/nytimes-chinese.jpg">
   </a>
+  <a href="https://www.axios.com/2022/08/26/in-app-browsers-privacy-data">
+    <img src="/assets/privacy/axios.png" style="max-width: 75px">
+  </a>
+  <a href="https://metro.co.uk/2022/08/24/tiktoks-ios-app-tracks-your-every-move-says-new-research-17236330/">
+    <img src="/assets/privacy/metrocouk.jpg" style="max-width: 75px">
+  </a>
+  <a href="https://internet2-0.com/whitepaper/tiktok-inapp-browsers/">
+    <img src="/assets/privacy/internet20.jpg">
+  </a>
   <a href="https://www.cbsnews.com/video/researcher-says-tiktoks-in-app-browser-monitoring-user-activity/#x">
     <img src="/assets/privacy/cbs.png">
   </a>
