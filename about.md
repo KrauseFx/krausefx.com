@@ -109,19 +109,20 @@ meta: {}
         var photos = content["recentPhotos"]
         var personalCarousel = document.getElementById("personalCarousel")
         for (let photoIndex in photos) {
-          let currentPhoto = photos[photoIndex]
+          let currentEntry = photos[photoIndex]
+          let permalink = currentEntry["permalink"]
 
-          if (currentPhoto["url"].indexOf("20220218.jpg") > -1) {
-            // Since we have that photo right above
+          // Since we have that photo right above
+          if (currentEntry["ig_id"] == "2774359584489420424") {
             continue;
           }
 
           var linkNode = document.createElement("a");
-          linkNode["href"] = currentPhoto["link"] || "https://instagram.com/krausefx"
+          linkNode["href"] = permalink
           linkNode["target"] = "_blank"
           var imageNode = document.createElement("span")
-          imageNode["style"] = "background-image: url(" + currentPhoto["url"] + ")"
-          imageNode["alt"] = currentPhoto["text"]
+          imageNode["style"] = "background-image: url(" + currentEntry["thumbnail_url"] + ")"
+          imageNode.setAttribute("alt", currentEntry["caption"])
 
           linkNode.appendChild(imageNode)
           personalCarousel.appendChild(linkNode)
