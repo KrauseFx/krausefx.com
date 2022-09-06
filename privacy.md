@@ -192,6 +192,9 @@ The iOS Instagram and Facebook app render all third party links and ads within t
   <a href="https://lifehacker.com/dont-use-in-app-browsers-for-anything-important-1849401900">
     <img src="/assets/privacy/lifehacker.png" />
   </a>
+  <a href="https://www.thesun.co.uk/tech/19513404/facebook-instagram-stalking-off-app-tracking">
+    <img src="/assets/privacy/thesun.png" style="max-width: 65px" />
+  </a>
 </div>
 
 <hr style="margin-bottom: 60px" />
