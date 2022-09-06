@@ -116,6 +116,9 @@ If you need any additional resources, or have any follow-up questions that are n
   <a href="https://www.tagesschau.de/multimedia/video/ts24/puzzle/video-1077155.html">
     <img src="/assets/privacy/tagesschau.png">
   </a>
+  <a href="https://wien.orf.at/stories/3172263/">
+    <img src="/assets/privacy/orf.png" style="max-width: 50px">
+  </a>
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
   </a>
