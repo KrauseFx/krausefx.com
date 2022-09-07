@@ -30,7 +30,7 @@ Back in 2014 I took a photo at the local photo studio [Die Fotogräfin](http://w
 
 After a while, I didn't like the fact that the profile picture isn't updated at all, but also I wanted to follow Ryan's advice. The solution? 
 
-**Let's take the exact same picture again**, same t-shirt, same light, same background, and same pose:
+**Let's take the exact same photo again**, same shirt, same light, same background, and same pose:
 
   <img src="/assets/posts/profilePictures/FelixKrause2016.jpg" width="100" alt="Felix Krause in 2016" />
 <p style="margin-top: -10px; margin-bottom: 0px"><small style="margin-left: 35px;">2016</small></p>
@@ -49,6 +49,14 @@ Following the "Continuous Delivery for your profile picture" approach, I took an
 
 Again, almost no one noticed, with only [one tweet](https://twitter.com/lehrjulian/status/1077881037164814336) mentioning it.
 
-So here are the last 6 years in profile pictures - I plan on continuing this strategy and take a new photo every second year:
+### 2022
+
+It's 2022, with long hair thanks to COVID, updated my picture on 7th September 2022, let's see how many replies I'll get.
+
+<img src="/assets/posts/profilePictures/FelixKrause2022.jpg" width="100" alt="Felix Krause in 2022" />
+
+### End-Result
+
+So here are the last 7 years in profile pictures - I plan on continuing this strategy and take a new photo around every other year.
 
 <img src="/assets/posts/profilePictures/ProfilePictureDiff.jpg" />
