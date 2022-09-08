@@ -9,7 +9,7 @@ published: true
 meta: {}
 ---
 
-<h1 style="text-align: center; margin-bottom: 30px; margin-top: -60px">About</h1>
+<h1 id="about-header">About</h1>
 
 <div id="leftCol">
   <img src="/assets/FelixKrauseProfilePicture.jpg" width="290" style="margin-bottom: 10px; margin-top: 5px;" />
@@ -227,7 +227,16 @@ meta: {}
     width: 100%;
     text-align: center;
   }
+  #about-header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -60px
+  }
   @media screen and (max-width: 800px) {
+    #about-header {
+      margin-top: -20px;
+      margin-bottom: 10px;
+    }
     .imageCarousel {
       height: 190px;
     }
