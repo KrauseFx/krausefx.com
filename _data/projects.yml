@@ -6,7 +6,15 @@
   url: "https://howisFelix.today"
   subtitle: "📍 How I put my whole life into a single database - Collected over 100 data types, everything from fitness, sleep, productivity, work and more"
   metadata: "Hackernews - 500k visits - TEDx Talk - 100k TikTok"
-  # https://www.tiktok.com/@indexventures/video/7106325568148344107
+  # https://www.tiktok.com/@indexventures/video/710632556814834410
+- title: "iOS Privacy Research: TikTok Keystroke monitoring"
+  url: "/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser"
+  subtitle: "👀 TikTok's in-app browser injects tracking code that can monitor all keystrokes, including passwords, and all taps"
+  metadata: "NYTimes - 21M views - CBS - CNN - TechCrunch - Mashable"
+- title: "InAppBrowser.com"
+  url: "https://inappbrowser.com"
+  subtitle: "👮 An open source website to see what JavaScript commands get executed in an in-app browser"
+  metadata: "The Verge - 9to5 - LifeHacker - Forbes - HackerNews"
 - title: "Instagram can track anything you do on any website in their in-app browser"
   url: "/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser"
   subtitle: "🕵️‍♂️ Instagram injects custom JavaScript code into external websites on their in-app browser"
