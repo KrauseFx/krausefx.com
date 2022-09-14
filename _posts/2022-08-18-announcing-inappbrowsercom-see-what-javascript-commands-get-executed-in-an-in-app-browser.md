@@ -90,6 +90,9 @@ meta: {}
   <a href="https://www.theguardian.com/technology/2022/aug/24/tiktok-can-track-users-every-tap-as-they-visit-other-sites-through-ios-app-new-research-shows">
     <img src="/assets/privacy/TheGuardian.png">
   </a>
+  <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">
+    <img src="/assets/privacy/washingtonpost.png">
+  </a>
   <a href="https://www.tagesschau.de/multimedia/video/ts24/puzzle/video-1077155.html">
     <img src="/assets/privacy/tagesschau.png">
   </a>
