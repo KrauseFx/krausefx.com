@@ -35,7 +35,7 @@ meta: {}
 <div id="rightCol">
   <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>, as well as <a href="https://howisFelix.today">howisFelix.today</a></p>
 
-  <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 33,000,000 developer hours and is used by hundreds of thousands of companies around the world. My work got featured on various news platforms, like <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a> and <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30 under 30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832?lang=en">Forbes Cover</a> (DACH region).</p>
+  <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 33,000,000 developer hours and is used by hundreds of thousands of companies around the world. My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832?lang=en">Forbes Cover</a> (DACH region).</p>
 
   <p><b>fastlane</b></p>
 
@@ -43,7 +43,7 @@ meta: {}
 
   <p><b>Privacy research</b></p>
 
-  <p>I've published various privacy related essays on the iOS permission system. As a result my posts reached #1 on HackerNews multiple times and got covered by major media outlets. <a href="/privacy">Read more about my privacy publications</a>.</p>
+  <p>I'm an active security & privacy researcher, focused on the iOS platform that have caused major changes in iOS, like the camera indicator and new photos permission scopes. <a href="/privacy">Read more about my privacy publications here</a>.</p>
 
   <p><b>Open Source</b></p>
 
@@ -65,6 +65,8 @@ meta: {}
   <p>Every other year I take the exact same photo as my Twitter/GitHub profile picture, introducing <a href="/blog/continuous-delivery-for-your-profile-picture">Continuous Delivery for your profile picture</a>.</p>
 
   <p>You can always reach me via Email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a> or <a href="https://twitter.com/KrauseFx">Twitter</a>.</p>
+
+  <p>Check out <a href="/projects">my other projects & past employers</a>.</p>
 
 <hr style="margin-top: 35px" />
 
@@ -258,7 +260,7 @@ meta: {}
     #leftCol {
         width: 40%; 
         float: left;
-        height: 900px;
+        height: 940px;
       }
     }
   }

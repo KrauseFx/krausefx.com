@@ -275,6 +275,14 @@ As you can see, a regular browser, or [`SFSafariViewController`](https://develop
 - It then finds the first `script` element on your website to insert the pcm JavaScript file right before
 - Instagram also queries for `iframes` on your website, however I couldn’t find any indication of what they’re doing with it
 
+**Update:** A week later, I've published [a new post](/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser), looking into other apps including TikTok, where I also found an additional JavaScript event listener of Instagram, in particular:
+
+- Instagram iOS subscribes to every tap on any button, link, image or other component on external websites rendered inside the Instagram app.
+- Instagram iOS subscribes to every time the user selects a UI element (like a text field) on third 
+
+[Check out the full post here](/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser)
+
+
 ### How to protect yourself as a user?
 
 <div style="float: right; margin-left: 20px;">
