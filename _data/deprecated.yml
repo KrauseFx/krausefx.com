@@ -1,3 +1,7 @@
+- title: "[deprecated] xcode-install"
+  url: "https://github.com/xcpretty/xcode-install"
+  subtitle: "🔽 A command line tool to automatically install and update Xcode and its simulators"
+  metadata: "Open Source - 2,500 Stars - Maintainer"
 - title: "[deprecated] wwdc.family"
   url: "https://github.com/wwdc-family/app#readme"
   subtitle: "👨‍👩‍👧‍👧 An easy way to connect with fellow developers during WWDC"
