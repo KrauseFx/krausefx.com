@@ -14,14 +14,14 @@ One of the most common activities when using a computer is switching between app
 ### Using the dock
 
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367d8e0442629b01978961_1463188911815__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367d8e0442629b01978961_1463188911815__img.png)
 
 
 This approach requires the mouse and wastes either screen space, or has a slow animation when using auto-hide.
 
 ### Using CMD + Tab
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367cab60b5e913543c4168_1463188657155__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367cab60b5e913543c4168_1463188657155__img.png)
 
 
 This approach is keyboard based, however the order of the application is sorted by most recently used, which is only nice to quickly switch between 2 applications.
@@ -30,7 +30,7 @@ Additionally this technique doesn't allow you to launch a new application, but o
 
 ### Using Spotlight or [Alfred](https://www.alfredapp.com/)
  
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367cc060b5e913543c41ce_1463188674683__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367cc060b5e913543c41ce_1463188674683__img.png)
 
 Great to quickly launch any application, however it's not as fast as other approaches, as it requires you to type in multiple letters.
 
@@ -47,7 +47,7 @@ I use the excellent tool called [BetterTouchTool](https://folivora.ai/), which w
 
 Using [BetterTouchTool](https://folivora.ai/), it will either switch to a running application or launch it otherwise.
   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367d3f4d088e9a0cbf2fa3_1463188807771__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367d3f4d088e9a0cbf2fa3_1463188807771__img.png)
 
 Some tricks:
 

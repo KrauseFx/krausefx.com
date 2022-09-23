@@ -9,7 +9,7 @@ published: true
 meta: {}
 ---
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626c94ce4b0a834a4586fe4_1445382477643__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626c94ce4b0a834a4586fe4_1445382477643__img.png)
   
 
 
@@ -28,7 +28,7 @@ That’s why today, I'm happy to announce that fastlane is now part of
 And for the last two months, while I've been working from Twitter HQ in San Francisco, I was able to prepare a few big things:
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a0f0e4b03afa9e4d5c9d_1445372150075__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a0f0e4b03afa9e4d5c9d_1445372150075__img.png)
   
 
 
@@ -50,7 +50,7 @@ fastlane is the most popular Continuous Delivery solution for iOS apps. But I al
 As of today, you can use fastlane for both your iOS and Android projects.[Get started with fastlane for Android](https://github.com/KrauseFx/fastlane/blob/master/docs/Android.md)!
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a10ce4b0361a456a04bb_1445372174246__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a10ce4b0361a456a04bb_1445372174246__img.png)
   
 
 
@@ -61,7 +61,7 @@ Earlier this year Apple announced Xcode 7 with support for UI Tests. This techno
 [snapshot](https://github.com/krausefx/snapshot) to be even better: Instead of using UI Automation Javascript code, you can now write the screenshot code in Swift or Objective C allowing you to use the powerful debugging features built into Xcode. 
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a114e4b084f9eefdb281_1445372182626__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a114e4b084f9eefdb281_1445372182626__img.png)
   
 
  

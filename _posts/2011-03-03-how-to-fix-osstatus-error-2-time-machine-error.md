@@ -22,7 +22,7 @@ meta:
   _thumbnail_id: '7'
 ---
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cca5_1414699598669_Screen-shot-2011-03-03-at-16.18.52.png.52.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cca5_1414699598669_Screen-shot-2011-03-03-at-16.18.52.png.52.png)
   
 
 

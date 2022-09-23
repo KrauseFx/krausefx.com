@@ -29,7 +29,7 @@ Biggest disadvantage of this method: If you notice a spelling mistake in the scr
 Please click on the pictures to enlarge them for more details.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e726ce4b01c6273e8053f_1435398811173__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e726ce4b01c6273e8053f_1435398811173__img.png)
   
 <small>Notice how the size of the font of the first 3 screenshots (iPhone 4, iPhone 5, iPhone 6) are exactly the same. Only the last screenshot (iPhone 6 Plus) the text seems larger as it's a @3x display.</small>
 
@@ -41,12 +41,12 @@ This way, you only create 5 screenshots per language on only one device type an
 Below some example applications that use this technique. I only had to upload one screenshot and got the result shown below. (left: iPhone 4, right: iPhone 6 Plus)
 
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e7382e4b04a7d140e4a1d_1435399073648__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e7382e4b04a7d140e4a1d_1435399073648__img.png)
   
 <small>Do you see the difference between the font sizes in the screenshots? Carrier is easily readable on the iPhone 6 Plus and maybe the iPhone 6, but not on the other devices. Another problem with this service is the wrong device types: The iPhone 6 should not look the same as the other devices.</small>
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e71eee4b00c1a5668bd54_1435398684990__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e71eee4b00c1a5668bd54_1435398684990__img.png)
   
 <small>A different example which now uses the correct device frame for each screen size. Do you see how very small the font on the iPhone 4 is? All 4 frames use the exact same screenshot. On smaller devices this results in very small fonts which are difficult to read for the end-user. On larger devices the screenshot is scaled up, which causes blurry images and fonts.</small>
 
@@ -90,7 +90,7 @@ Checklist for really great screenshots:
 
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e7b92e4b093588c5c4c1a_1435401110595__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e7b92e4b093588c5c4c1a_1435401110595__img.png)
   
 
 
@@ -118,13 +118,13 @@ Okay, back to what you can actually do today :) Below are the results of nice sc
 
 <small>What's wrong with those screenshots? The time isn't 9:41.</small>
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e7637e4b0ddd6318e3617_1435399772443__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e7637e4b0ddd6318e3617_1435399772443__img.png)
   
 <small>On the iPhone 4, iPhone 5 and iPhone 6 the font size is exactly the same. The iPhone 6 Plus, again, has a @3x display which is why the text appears larger.</small>
 
 ### How does this look like for landscape screenshots?
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e77a6e4b0b3c98bba3c56_1435400117041__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e77a6e4b0b3c98bba3c56_1435400117041__img.png)
 
 
 Since the above screenshot collection looks a bit messy I decided to automatically resize the screenshots in the following examples. Instead of leaving all screenshots 1:1 they now appear properly aligned next to each other.
@@ -147,7 +147,7 @@ Special thanks to [Harald Eckmüller](https://dribbble.com/heckmueller) for desi
 
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce3b1e4b0dac8b9037fbd_1432150968317__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_555ce3b1e4b0dac8b9037fbd_1432150968317__img.png)
   
 <small>Generating this amount of screenshots takes hours, even when it is completely automated. The nice thing: You can do something else on your Mac while the screenshots are generated, as long as you don't need the simulator. Instead of working while the screenshots are generated, you can also take a nap or tweet about [fastlane](https://fastlane.tools).</small>
 

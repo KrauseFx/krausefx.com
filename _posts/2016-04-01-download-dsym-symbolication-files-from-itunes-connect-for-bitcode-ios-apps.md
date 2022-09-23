@@ -17,13 +17,13 @@ Due to the fact that recompiling happens on Apple's servers, third party crash r
 The current solution to solve this for Bitcode enabled apps is to manually download the dSYM files from Apple and upload them to your crash reporting service. Downloading the files can be done either using Xcode or iTunes Connect. 
   
        
-![Download dSYM symbolication files using the Xcode Organizer](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56fdbe9d746fb9c9ad4a91b8_1459469990425__img.png_)<small>Download dSYM symbolication files using the Xcode Organizer</small>
+![Download dSYM symbolication files using the Xcode Organizer](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56fdbe9d746fb9c9ad4a91b8_1459469990425__img.png)<small>Download dSYM symbolication files using the Xcode Organizer</small>
   
 
 
   
        
-![Download dSYM symbolication files from iTunes Connect](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56fdbea92eeb817849350e5b_1459470022763__img.png_)<small>Download dSYM symbolication files from iTunes Connect</small>
+![Download dSYM symbolication files from iTunes Connect](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56fdbea92eeb817849350e5b_1459470022763__img.png)<small>Download dSYM symbolication files from iTunes Connect</small>
   
 
 

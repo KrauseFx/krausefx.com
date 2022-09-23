@@ -59,10 +59,10 @@ meta: {}
 Do you want the user's Apple ID password, to get access to their Apple account, or to try the same email/password combination on different web services? Just ask your users politely, they'll probably just hand over their credentials, as they're trained to do so 👌
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dc97a83e00bed1b42c0096_1507631710330__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dc97a83e00bed1b42c0096_1507631710330__img.png)
 
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca223197aeaa9a5932f2e_1507631701259__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca223197aeaa9a5932f2e_1507631701259__img.png)
 
 ## Disclaimer
 
@@ -91,7 +91,7 @@ Even users who know a lot about technology have a hard time detecting that those
 Initially I thought, faking those alerts requires the app developer to know your email. Turns out, some of those auth popups don't include the email address, making it even easier for phishing apps to ask for the password.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca2accf81e0c47e1e7144_1507631811313__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca2accf81e0c47e1e7144_1507631811313__img.png)
 
 
 ## Proposal

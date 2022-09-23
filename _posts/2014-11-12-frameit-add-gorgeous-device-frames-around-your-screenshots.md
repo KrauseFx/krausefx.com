@@ -10,7 +10,7 @@ meta:
   _thumbnail_id: '84'
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5463aef3e4b0669ac27777c3_1415818998780__img.png_)](https://github.com/krausefx/frameit)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5463aef3e4b0669ac27777c3_1415818998780__img.png)](https://github.com/krausefx/frameit)
   
 
 

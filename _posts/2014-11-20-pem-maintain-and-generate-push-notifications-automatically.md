@@ -17,7 +17,7 @@ meta:
   _thumbnail_id: '87'
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5467c3bfe4b08b7029d3cccd_1416086464186__img.png_)](https://github.com/KrauseFx/PEM)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5467c3bfe4b08b7029d3cccd_1416086464186__img.png)](https://github.com/KrauseFx/PEM)
   
 
 

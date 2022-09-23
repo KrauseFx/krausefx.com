@@ -9,7 +9,7 @@ published: true
 meta: {}
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5664b78ae4b02b0e953d8de1_1449701730450__img.png_)](https://github.com/fastlane/match)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5664b78ae4b02b0e953d8de1_1449701730450__img.png)](https://github.com/fastlane/match)
   
 
 
@@ -22,7 +22,7 @@ Today, **together with the Fabric team, I’m thrilled to introduce match** — 
 When deploying an app to the App Store, a beta testing service or even installing it on your own device, most development teams have separate code signing identities for every member. This results in dozens of profiles including a lot of duplicates.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5668b46fe0327ca58fdb88e6_1449702513395__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5668b46fe0327ca58fdb88e6_1449702513395__img.png)
   
 
 

@@ -37,10 +37,10 @@ meta: {}
 Does your iOS app have access to the user's image library? Do you want to know your user's movements over the last several years, including what cities they've visited, which iPhones they've owned and how they travel? Do you want all of that data in less a second? Then this project is for you!
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db4461cf81e005db7a2062_1507542261614_Screenshot+2017-10-09+11.40.41.png.41.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db4461cf81e005db7a2062_1507542261614_Screenshot+2017-10-09+11.40.41.png.41.png)
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db44b8f09ca452b53663ab_1507542252323_Screenshot+2017-10-09+11.40.48.png.48.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db44b8f09ca452b53663ab_1507542252323_Screenshot+2017-10-09+11.40.48.png.48.png)
   
 To see all the above with **your** data, download the [DetectLocations app](https://itunes.apple.com/us/app/detectlocations/id1288532777?ls=1&mt=8) from the App Store.
 

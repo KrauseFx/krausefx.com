@@ -59,7 +59,7 @@ While some developer may enjoy doing passive activities, you usually want to ge
 That's why we have to follow our friends from the back-end team and start automating tedious processes. Instead of us, computer should do those tasks.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55afa160e4b073a2ed2814be_1437573474156__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55afa160e4b073a2ed2814be_1437573474156__img.png)
 
 As you can see, the users interested in beta testing your application accesses your Heroku application directly to enter their email address. The Heroku app will then use [spaceship](https://spaceship.airforce) to communicate with iTunes Connect directly without any interaction from a real person. Spaceship automatically registers the new testers, adds them to the application and sends out the TestFlight email. 
 

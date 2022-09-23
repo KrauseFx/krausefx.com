@@ -10,7 +10,7 @@ meta:
   _thumbnail_id: '113'
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54e70945e4b0866feef03d29_1424427334250__img.png_)](https://github.com/KrauseFx/cert)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54e70945e4b0866feef03d29_1424427334250__img.png)](https://github.com/KrauseFx/cert)
   
 cert will check if any of the available signing certificates is installed on your local machine.
 

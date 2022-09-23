@@ -10,7 +10,7 @@ meta:
   structured_content: '{"oembed":{},"overlay":true}'
 ---
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57057d4e1bbee0e5492038e5_1459977573799__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57057d4e1bbee0e5492038e5_1459977573799__img.png)
   
 
 
