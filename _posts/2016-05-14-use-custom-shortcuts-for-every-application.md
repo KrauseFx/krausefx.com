@@ -43,9 +43,9 @@ I'm not kidding, **I have a custom keyboard shortcut for every single applicatio
 
 This way I can **always** switch to any application just using one keyboard shortcut.
 
-I use the excellent tool called [BetterTouchTool]([https://www.boastr.net/](https://folivora.ai/)), which was originally built to use custom gestures for the trackpad and mouse, however I use it mostly for my shortcuts. 
+I use the excellent tool called [BetterTouchTool](https://folivora.ai/), which was originally built to use custom gestures for the trackpad and mouse, however I use it mostly for my shortcuts. 
 
-Using [BetterTouchTool]([https://www.boastr.net/](https://folivora.ai/)), it will either switch to a running application or launch it otherwise.
+Using [BetterTouchTool](https://folivora.ai/), it will either switch to a running application or launch it otherwise.
   
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_57367d3f4d088e9a0cbf2fa3_1463188807771__img.png_)
 
