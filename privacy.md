@@ -432,7 +432,7 @@ Custom in-app browsers in iOS apps have full access to the web content, includin
 
 Any website you're visiting instantly gets access to your smartphone's acceleration and gyro sensor values in real-time without asking the user for permission.
 
-<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db442dcf81e005db7a1f0b_1507542072340_photo.jpg_" width="450" />
+<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db442dcf81e005db7a1f0b_1507542072340_photo.jpg" width="450" />
 
 As a result, any website you visit, can do a pretty precise guess on if you are:
 
