@@ -12,7 +12,7 @@ meta:
   _thumbnail_id: '90'
 ---
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cc94_1414699593848_laptop-mtk.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cc94_1414699593848_laptop-mtk.png)
   
 
 

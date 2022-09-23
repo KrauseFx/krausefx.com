@@ -11,7 +11,7 @@ meta:
   _thumbnail_id: '110'
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54e9d9d9e4b08db9da875efc_1424611802110_codesFullSize.png_)](https://github.com/KrauseFx/codes)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54e9d9d9e4b08db9da875efc_1424611802110_codesFullSize.png)](https://github.com/KrauseFx/codes)
   
 
 

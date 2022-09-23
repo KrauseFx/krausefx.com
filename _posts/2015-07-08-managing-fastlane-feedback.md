@@ -30,7 +30,7 @@ I just didn't want to lose all this. That's why I collected the best tweets and 
 [deliver](https://github.com/KrauseFx/deliver). 
   
       
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6a86e4b0d1b573f541ed_1436183180617__img.png_)](https://s3-eu-west-1.amazonaws.com/krausefx/twitter.html)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6a86e4b0d1b573f541ed_1436183180617__img.png)](https://s3-eu-west-1.amazonaws.com/krausefx/twitter.html)
   
 
 
@@ -42,42 +42,42 @@ I just didn't want to lose all this. That's why I collected the best tweets and 
 
 Besides tweets, you probably want to remember all kinds of things: comments on Reddit, the number of visitors you had on launch day and smaller things like the number of git commits you had on that one day.
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b4ae4b049903899f0fe_1436183373322_All3.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b4ae4b049903899f0fe_1436183373322_All3.png)
   
 
   
    
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b2fe4b03cf942e3ade2_1436183344769_Screenshot+2015-07-05+18.37.10.png.10.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b2fe4b03cf942e3ade2_1436183344769_Screenshot+2015-07-05+18.37.10.png.10.png)
   
 
   
    
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b69e4b01a6af5949b07_1436183403508_143+Analytics.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b69e4b01a6af5949b07_1436183403508_143+Analytics.png)
   
 
   
    
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b6fe4b0eb5f8387e89a_1436183408242_destroyingJobsCensored.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b6fe4b0eb5f8387e89a_1436183408242_destroyingJobsCensored.png)
   
 
   
    
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b90e4b0f75fd2a21872_1436183440495_NiceFacebook.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b90e4b0f75fd2a21872_1436183440495_NiceFacebook.png)
   
 
   
    
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6dc9e4b0e6e634ccccd4_1436184011126_Screenshot+2014-11-01+15.45.41%282%29.png.41%282%29.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6dc9e4b0e6e634ccccd4_1436184011126_Screenshot+2014-11-01+15.45.41%282%29.png.41%282%29.png)
   
 
   
    
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6cf9e4b02c1d748548af_1436183804182_Screenshot+2015-06-25+16.49.12.png.12.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6cf9e4b02c1d748548af_1436183804182_Screenshot+2015-06-25+16.49.12.png.12.png)
   
 
   
    
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b34e4b04ab9f76823cd_1436183349663_Screenshot+2015-07-05+18.46.12.png.12.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_559a6b34e4b04ab9f76823cd_1436183349663_Screenshot+2015-07-05+18.46.12.png.12.png)
 
 ### Emails
 

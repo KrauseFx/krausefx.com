@@ -9,7 +9,7 @@ published: true
 meta: {}
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55ae95f0e4b0d98862c3c2d7_1437505028059__img.png_)](https://github.com/fastlane/pilot)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55ae95f0e4b0d98862c3c2d7_1437505028059__img.png)](https://github.com/fastlane/pilot)
 
 Using pilot, you can now manage your TestFlight builds and testers using the command line. 
 

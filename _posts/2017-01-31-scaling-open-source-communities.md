@@ -46,7 +46,7 @@ Examples:
 ## Scaling open source projects is hard
 
 <div style="width: 270px; float: right;">
-  <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900fabe3df281428d8cca5_1485836247300__img.png_" />
+  <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900fabe3df281428d8cca5_1485836247300__img.png" />
   <small>My time spent on GitHub compared to my text editor, with the growing popularity of fastlane, GitHub goes up more and more</small>
 </div>
 
@@ -70,7 +70,7 @@ How you handle feature requests is up to you, there are various ways projects ha
 There are very interesting conversations when you close feature requests:  
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900efa3a04116aa6e7b999_1485836029092__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58900efa3a04116aa6e7b999_1485836029092__img.png)
 
 
 #### Being in the public spotlight
@@ -116,13 +116,13 @@ For the maintainer it's an issue that has to be prioritized and it might not be 
 How you handle failures has a big impact on how easy it is for the user to resolve the issue. So many developer tools get that wrong ([Thoughts on iOS build tools](https://krausefx.com/blog/ios-tools)) and make it incredibly hard for people to use their software.
   
        
-![Before changing fastlane to highlight the actual error message and still showing the stack trace by default](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014e86b8f5ba2ed9c2751_1485837553599__img.png_)<small>Before changing fastlane to highlight the actual error message and still showing the stack trace by default</small>
+![Before changing fastlane to highlight the actual error message and still showing the stack trace by default](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014e86b8f5ba2ed9c2751_1485837553599__img.png)<small>Before changing fastlane to highlight the actual error message and still showing the stack trace by default</small>
   
-![After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014db6a496349b23a05f1_1485837535364__img.png_)<small>After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash</small>
+![After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589014db6a496349b23a05f1_1485837535364__img.png)<small>After the change: fastlane now color-highlights the actual error message, and hides the stack trace by default, unless it's a real crash</small>
 
 The left screenshot shows an early version of _fastlane_, compared to how _fastlane_ shows error messages today. Not only how you present the error message, but its content is really important: Make sure the message explains the error well enough and ideally even include instructions on how to fix it.
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58901058ff7c50a0160df707_1485836406181_Screenshot+2017-01-10+10.46.36.png.36.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58901058ff7c50a0160df707_1485836406181_Screenshot+2017-01-10+10.46.36.png.36.png)
 
 
 In fastlane we even link to StackOverflow replies and make sure to include all necessary information to debug an issue. In this example we show the certificate ID and team name.
@@ -133,7 +133,7 @@ In fastlane we even link to StackOverflow replies and make sure to include all n
 When you receive a cryptic error message, what’s the first thing you do? Usually you search on the GitHub repo page, or google for the message. You as a project maintainer should make it easy as possible for the user to do so. That’s why [@orta](https://github.com/orta/gh_inspector) started [gh_inspector](https://github.com/orta/gh_inspector), a Ruby gem to show related GitHub issues right in the user’s terminal. Whenever _fastlane_ runs into an unexpected situation, it will not only show similar GitHub issues, but also print out the GitHub search URL. The long-term plan is to also support StackOverflow questions (see [#13](https://github.com/orta/gh_inspector/issues/13))
   
        
-![Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010b0d1758e5ffee5719f_1485836468314__img.png_) <small>Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub</small>
+![Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010b0d1758e5ffee5719f_1485836468314__img.png) <small>Whenever fastlane runs into an unexpected error it automatically shows similar issues on GitHub</small>
   
 
 
@@ -147,19 +147,19 @@ Providing all information when submitting a bug report is hard, even as a softwa
 
 Using the fastlane-bot we ensure all required information is available, and if not, tell the user how to provide them.
   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010f1579fb3e4efb8de86_1485836537367__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589010f1579fb3e4efb8de86_1485836537367__img.png)
   
 
 
 With that, fastlane also supports the `fastlane env` command that prints out all relevant information:
   
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589011091b631bae058125db_1485836558502__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589011091b631bae058125db_1485836558502__img.png)
   
 
 The `fastlane env` command collects all relevant system information, like your Ruby environment, OpenSSL version and used fastlane plugins, ready to be posted on GitHub.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58901125bf629a5f22eba2da_1485836585201__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58901125bf629a5f22eba2da_1485836585201__img.png)
   
 
 
@@ -172,7 +172,7 @@ If you receive similar issues very often, you should step back and work on fixin
 In the case of fastlane, many issues are related to code signing (yeah), however there is no ultimate solution to fix all issues as of now ([codesigning.guide](https://codesigning.guide/) is the easiest one so far). We wrote an extensive guide on how to setup code signing and how to troubleshoot problems. As with most things, users don’t like reading manuals, unless you link them to the right spot, which is exactly what the `fastlane-bot` does in that case.
   
        
-![Many times just linking people to the right docs already helps](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890115eb8a79b243d8396cb_1485836642761__img.png_)<small>Many times just linking people to the right docs already helps</small>
+![Many times just linking people to the right docs already helps](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890115eb8a79b243d8396cb_1485836642761__img.png)<small>Many times just linking people to the right docs already helps</small>
   
 
 #### Stale issues
@@ -186,21 +186,21 @@ The key to handle support for large-scale open source projects is to keep issues
 Having a bot can ensure that issues are still relevant and reproducible. The `fastlane-bot` automatically asks if an issue is still relevant with the most recent fastlane release after just 2 months.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890119203596e99bbde85b4_1485836693702__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890119203596e99bbde85b4_1485836693702__img.png)
   
 
 
 If no participant of the issue replies to the bot within a month, the issue gets auto-closed, with a note that a new issue can be submitted to continue the discussion.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589012303a04116aa6e7e2fb_1485836852929__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589012303a04116aa6e7e2fb_1485836852929__img.png)
   
 
 
 About a month after closing the issue, the bot locks the conversation to repository admins only.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890123d1e5b6ccc19bdbe5e_1485836864236__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890123d1e5b6ccc19bdbe5e_1485836864236__img.png)
   
 
 
@@ -221,7 +221,7 @@ By telling users to submit a new issue, you properly go through the complete lif
 * Issue gets resolved or auto-closed due to inactivity
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890128ee58c62b50ea5bd89_1485836947308__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5890128ee58c62b50ea5bd89_1485836947308__img.png)
   
 
 #### Responding to pull requests
@@ -279,7 +279,7 @@ When scaling your project you have to say "No" to many new features and ideas. I
 Many Ruby-based open source projects, including fastlane, CocoaPods and Bundler, offer a DSL that allows developers to implement a very dynamic configuration. Instead of having static values like it is the case in JSON or yml files, you can execute code in a Fastfile, Podfile and Gemfile. This is extremely useful to fetch or generate values on demand, like accessing an internal server for the latest app description.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589012cf3e00beee625cda6b_1485837010186__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_589012cf3e00beee625cda6b_1485837010186__img.png)
   
 #### Allow local extensions
 

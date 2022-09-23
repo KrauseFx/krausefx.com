@@ -25,7 +25,7 @@ meta:
   _thumbnail_id: '68'
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5452a85ce4b04a8f685deb53_1414703198483_DeliverLogo.png_)](https://github.com/KrauseFx/deliver)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5452a85ce4b04a8f685deb53_1414703198483_DeliverLogo.png)](https://github.com/KrauseFx/deliver)
   
 
 

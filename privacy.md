@@ -202,7 +202,7 @@ The iOS Instagram and Facebook app render all third party links and ads within t
 
 <hr style="margin-bottom: 60px" />
 
-<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dc97a83e00bed1b42c0096_1507631710330__img.png_" width="400" align="right" />
+<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dc97a83e00bed1b42c0096_1507631710330__img.png" width="400" align="right" />
 
 
 ## [steal.password](/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
@@ -317,7 +317,7 @@ All without indicating that your phone is recording you and your surrounding, no
 
 ----
 
-<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db4461cf81e005db7a2062_1507542261614_Screenshot+2017-10-09+11.40.41.png.41.png_" width="500" align="right" />
+<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db4461cf81e005db7a2062_1507542261614_Screenshot+2017-10-09+11.40.41.png.41.png" width="500" align="right" />
 ## [detect.location](/blog/ios-privacy-detectlocation-an-easy-way-to-access-the-users-ios-location-data-without-actually-having-access)
 
 Once the user grants access to the image library (e.g. to upload a single photo as a profile picture), an iOS app can
