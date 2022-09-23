@@ -38,7 +38,7 @@ And for the last two months, while I've been working from Twitter HQ in San Fran
 In the last few weeks, I’ve been focusing a lot on quality. All fastlane tools now use [spaceship](https://github.com/fastlane/spaceship) to communicate with Apple. I’m very excited that all fastlane tools are now available as 1.0 releases, and I’m really looking forward to the things we’re building next.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a100e4b05fed1255d17b_1445372162952__img.jpg_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5626a100e4b05fed1255d17b_1445372162952__img.jpg)
   
 
 

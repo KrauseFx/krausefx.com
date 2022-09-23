@@ -104,7 +104,7 @@ Modern web browsers already do an excellent job protecting users from phishing a
 * Dialogs from apps could contain the app icon on the top right of the dialog, to indicate an app is asking you, and not the system. This approach is used by push notifications also, this way, an app can't just send push notifications as the iTunes app.
   
       
-<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca405c534a5f23644c180_1507632212491__img.jpg_" align="right" width="250" class="inline-img" />
+<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca405c534a5f23644c180_1507632212491__img.jpg" align="right" width="250" class="inline-img" />
 
 I've reported this as a radar, which you can dupe: [rdar://34885659](https://openradar.appspot.com/radar?id=4952345645416448) 👍
 
@@ -155,7 +155,7 @@ This area will become more and more relevant, with users being uninformed, and t
 
 iOS should very clearly distinguish between system UI and app UI elements, so that ideally it's even obvious for the average smartphone user that something seems off. This is a tricky problem to solve, and web browser are still tackling it, you still have websites that make popups look like macOS / iOS popups, so that many users think it's a system message.
   
-<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca2ebf14aa1f26de959f6_1507631870942__img.jpg_" align="right" width="250" class="inline-img" />
+<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59dca2ebf14aa1f26de959f6_1507631870942__img.jpg" align="right" width="250" class="inline-img" />
 
 ### But, but, but, why is the . symbol within the ", is this all fake?
 
