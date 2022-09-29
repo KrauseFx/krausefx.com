@@ -11,7 +11,7 @@ published: true
 meta: {}
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55ae969be4b08a2430a70104_1437505181370__img.png_)](https://github.com/fastlane/boarding)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55ae969be4b08a2430a70104_1437505181370__img.png)](https://github.com/fastlane/boarding)
   
 
 

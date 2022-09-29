@@ -9,7 +9,7 @@ published: true
 meta: {}
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56bcce6e7c65e4ae57770b0c_1455214200481__img.png_)](https://github.com/fastlane/screengrab)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56bcce6e7c65e4ae57770b0c_1455214200481__img.png)](https://github.com/fastlane/screengrab)
   
 
 

@@ -36,7 +36,7 @@ In its current setup, we ran into these problems:
 To solve a lot of these problems, our team decided to move all fastlane tools into one main repository. Each tool will be in a subfolder enabling you easy access to its source code.
   
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf5d407eaa0c7455e43cf_1456338400441_Screenshot+2016-02-24+12.21.45.png.45.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf5d407eaa0c7455e43cf_1456338400441_Screenshot+2016-02-24+12.21.45.png.45.png)
 
 I wanted to make this change as seamless and hassle-free as possible for everyone. With this migration, you can still use all tools directly, so your setup will continue to work as normal. 
 
@@ -69,7 +69,7 @@ To move all source code to the main repo and still preserve the history with all
 ### Copying the GitHub issues to the main repo
 
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf682b09f9568dea6ebd5_1456338570156__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf682b09f9568dea6ebd5_1456338570156__img.png)
   
 
 
@@ -96,7 +96,7 @@ We took this opportunity to also improve the way we handle issues as a team. Our
 Up until a few months ago, I was managing everything alone, resulting in my not responding to everyone in a timely matter. Thanks to Twitter & Fabric, the fastlane team has grown tremendously in the last few weeks, allowing us to offer world-class help for our thriving community. We want to treat support as a first class citizen and provide the best experience possible.
   
 
-![We’re just getting started: being part of Fabric means a passionate dedicated team to offer the best support & future experience for fastlane customers.](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf7131d07c013a8455aee_1456338728792__img.jpg_) We’re just getting started: being part of Fabric means a passionate dedicated team to offer the best support & future experience for fastlane customers. 
+![We’re just getting started: being part of Fabric means a passionate dedicated team to offer the best support & future experience for fastlane customers.](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf7131d07c013a8455aee_1456338728792__img.jpg) We’re just getting started: being part of Fabric means a passionate dedicated team to offer the best support & future experience for fastlane customers. 
   
 
 With that in mind, we have a lot of inactive issues and pull requests spanning the last year when I was still working on this project in my free-time. Out of the 829 open issues across all repos, 273 issues haven’t had any activity within the last 3 months. 
@@ -105,7 +105,7 @@ After the migration, we will be constantly looking at all issues to make sure th
 
 ## The Future
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf76f20c6473581b7985d_1456338809031__img.jpg_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_56cdf76f20c6473581b7985d_1456338809031__img.jpg)
 
 This is one of the most impactful changes to fastlane yet. While there’s a lot of information, it’s very important to the entire team to communicate what we are up to. This migration shows our commitment to innovation and creating the future of fastlane.
 

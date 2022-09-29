@@ -11,7 +11,7 @@ published: true
 meta: {}
 ---
 
-![Untitled](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45ccfb_1414699600092_Untitled.png_)
+![Untitled](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45ccfb_1414699600092_Untitled.png)
   
 
 
