@@ -21,7 +21,7 @@ Run Query button and wait for about 30 seconds, and you'll get a list of people
 [fastlane](https://fastlane.tools) repos most often in the year of 2017 (see screenshot below):
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_592b463d44024329b9559389_1496008271573__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_592b463d44024329b9559389_1496008271573__img.png)
   
 To run this query for your own GitHub organization, just replace the "
 fastlane/%" with your own GitHub org. You can also easily extend the query to show more columns (see the 
@@ -47,7 +47,7 @@ across a high number of different open source projects, mostly
 **Below you can see the last 5 years of open source code contributions:**
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_598682c8bebafb164ee70efb_1501987676418__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_598682c8bebafb164ee70efb_1501987676418__img.png)
 
 Over the last 3 years, on average I did the following 
 **every single week**

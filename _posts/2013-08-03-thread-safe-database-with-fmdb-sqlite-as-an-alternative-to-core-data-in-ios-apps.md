@@ -25,7 +25,7 @@ meta:
   _thumbnail_id: '79'
 ---
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2ee4b025a90f45ce4c_1414699607588_sqlite-logo.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2ee4b025a90f45ce4c_1414699607588_sqlite-logo.png)
   
 
 

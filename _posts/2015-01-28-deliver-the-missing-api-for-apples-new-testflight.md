@@ -10,7 +10,7 @@ meta:
   structured_content: '{"oembed":{},"overlay":true}'
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54c91bace4b0979721668270_1422465969254__img.png_)](https://github.com/krausefx/deliver#testflight)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54c91bace4b0979721668270_1422465969254__img.png)](https://github.com/krausefx/deliver#testflight)
   
 
 

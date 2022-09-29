@@ -10,7 +10,7 @@ published: true
 meta: {}
 ---
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_594bf0c5725e251920f62ee3_1498149086679__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_594bf0c5725e251920f62ee3_1498149086679__img.png)
   
 
 

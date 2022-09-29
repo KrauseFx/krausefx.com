@@ -13,7 +13,7 @@ published: true
 meta: {}
 ---
 
-<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55ab8f76e4b066c866a4ce12_1437306746701__img.jpg_" width="200" align="right" style="margin-left: 10px">
+<img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55ab8f76e4b066c866a4ce12_1437306746701__img.jpg" width="200" align="right" style="margin-left: 10px">
   
 As iOS developers we're still used to doing many manual tasks. It's an issue that exists because everything is still new. Just ask your back-end developer about the last time they manually deployed a new version directly to the production server. The answer should be: 
 Oh, I was still in high school back then. Why? Because there are many mechanisms before the actual release to avoid broken releases that don't pass the tests.
@@ -59,7 +59,7 @@ While some developer may enjoy doing passive activities, you usually want to ge
 That's why we have to follow our friends from the back-end team and start automating tedious processes. Instead of us, computer should do those tasks.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55afa160e4b073a2ed2814be_1437573474156__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55afa160e4b073a2ed2814be_1437573474156__img.png)
 
 As you can see, the users interested in beta testing your application accesses your Heroku application directly to enter their email address. The Heroku app will then use [spaceship](https://spaceship.airforce) to communicate with iTunes Connect directly without any interaction from a real person. Spaceship automatically registers the new testers, adds them to the application and sends out the TestFlight email. 
 

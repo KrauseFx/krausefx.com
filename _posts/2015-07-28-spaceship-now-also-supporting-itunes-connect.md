@@ -9,7 +9,7 @@ published: true
 meta: {}
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55b766a7e4b01425a08f495a_1438082728361__img.png_)](https://spaceship.airforce)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55b766a7e4b01425a08f495a_1438082728361__img.png)](https://spaceship.airforce)
   
 It's been about 6 weeks since the initial version of 
 [spaceship](https://spaceship.airforce) was released. As you may know, spaceship is the tool that's powering almost all of the other 

@@ -31,7 +31,7 @@ Code signing is one of the most crucial security components of the iOS ecosystem
 * You sign your app with your signature, it ensures that the app is from you.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58f03fa7d482e960c0f03cd9_1492139949018__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58f03fa7d482e960c0f03cd9_1492139949018__img.png)
   
 
 
@@ -46,7 +46,7 @@ Once someone has access to your Apple credentials, they can easily revoke all yo
 * When you create a new Certificate Signing Request you can select `Saved to disk`. This means, if someone has access to your Apple Developer Account, they can create as many new, valid certificates as they want, without having access to your email account.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58f03f4186e6c0436eebf811_1492139855970_Screenshot+2017-04-10+06.30.15.png.15.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_58f03f4186e6c0436eebf811_1492139855970_Screenshot+2017-04-10+06.30.15.png.15.png)
   
 
 

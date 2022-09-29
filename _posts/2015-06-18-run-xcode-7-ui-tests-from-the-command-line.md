@@ -25,7 +25,7 @@ UI Tests it's possible to properly debug issues using Xcode and use Swift or Obj
 First, you'll have to create a new target for the UI Tests:
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5582724de4b043e244cee6da_1434612307903__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5582724de4b043e244cee6da_1434612307903__img.png)
   
 
 
@@ -34,7 +34,7 @@ Test section, select the
 Cocoa Touch UI Testing Bundle:
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55827527e4b0472245d306c9_1434613037861__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55827527e4b0472245d306c9_1434613037861__img.png)
   
 
 
@@ -44,14 +44,14 @@ Project UI Tests folder. On the bottom you have an empty method called
 testExample. Focus the cursor there and click on the red record button on the bottom.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5582755ae4b0a5db48a7ae52_1434613085131__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5582755ae4b0a5db48a7ae52_1434613085131__img.png)
   
 
 
 This will launch your app. You can now tap around and interact with your application. When you're finished, click the red button again. 
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558275f7e4b0be63c47a3823_1434613247689__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558275f7e4b0be63c47a3823_1434613247689__img.png)
   
 
 
@@ -64,14 +64,14 @@ You could now already run the tests using the CLI without any further modificati
 New Scheme.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55827650e4b043e244cef13d_1434613331340__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55827650e4b043e244cef13d_1434613331340__img.png)
   
 
 
 Select the newly created UI Test target and confirm.
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558276a3e4b0f09e120af58f_1434613414825__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558276a3e4b0f09e120af58f_1434613414825__img.png)
   
 
 
@@ -161,7 +161,7 @@ xcodebuild -workspace App.xcworkspace \
 
   
       
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55828e88e4b0dd959fce10f8_1434619538440__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_55828e88e4b0dd959fce10f8_1434619538440__img.png)
   
 
 

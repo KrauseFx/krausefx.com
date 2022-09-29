@@ -113,27 +113,27 @@ For all the checks mentioned below, the source is on the [fastlane docs repo](ht
       
 ### Catch syntax errors in code samples
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c1e42994ca082108fc0d_1477951976150__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c1e42994ca082108fc0d_1477951976150__img.png)
 
 
 Nothing is more frustrating than copying a code sample and having to fix the syntax to make it work. Most users won't spend the time to look into how they can contribute to your docs to fix the error.
 
 ### Catch unavailable actions or methods
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c285197aea1a94bcc18f_1477952138871__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c285197aea1a94bcc18f_1477952138871__img.png)
 
 For fastlane most code samples call certain actions or integrations. Using tests we ensure that this action is available and correctly spelled.      
 
 ### Verify action parameters
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c33b893fc0c77e1ed440_1477952319091__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c33b893fc0c77e1ed440_1477952319091__img.png)
 
 Most fastlane actions allow passing of named parameters. We now automatically verify that all parameters are available to use.
 
 
 ### Verify parameter types
 
-![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c493b8a79b7befea0fdf_1477952663470__img.png_)
+![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5817c493b8a79b7befea0fdf_1477952663470__img.png)
 
 Every fastlane parameter has a type defined, which fastlane validates on run-time. It's easy to get a type wrong in the documentation, so we now validate those too.
  

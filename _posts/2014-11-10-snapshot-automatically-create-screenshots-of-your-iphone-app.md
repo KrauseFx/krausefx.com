@@ -16,7 +16,7 @@ meta:
   _thumbnail_id: '71'
 ---
 
-[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5461107ce4b00e059c1eb9b2_1415647357210__img.png_)](https://github.com/KrauseFx/snapshot)
+[![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_5461107ce4b00e059c1eb9b2_1415647357210__img.png)](https://github.com/KrauseFx/snapshot)
   
 
 

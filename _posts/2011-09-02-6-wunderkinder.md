@@ -31,7 +31,7 @@ U19 freestyle computing competition and was chosen from over 650 participants
 here.
   
       
-![tweet-weswegen-ich-zu-den-Wunderkindern-komme](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cc85_1414699596492_tweet-weswegen-ich-zu-den-Wunderkindern-komme.png_)
+![tweet-weswegen-ich-zu-den-Wunderkindern-komme](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a29e4b025a90f45cc85_1414699596492_tweet-weswegen-ich-zu-den-Wunderkindern-komme.png)
   
 
 
