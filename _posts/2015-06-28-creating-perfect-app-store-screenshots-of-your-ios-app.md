@@ -24,10 +24,7 @@ A quick overview over existing methods to generate screenshots:
 It comes without saying that this takes too much time, which also decreases the quality of the screenshots. Since it is not automated, the screenshots 
 will show slightly different content on the various devices and languages. Many companies end up creating screenshots only in one language and use it for all languages. While this might seem okay to us developers, there are many potential users out there, that cannot read the text on your app screenshots if they are not localised. Have you ever looked at a screenshots with content in a language you don't know? It won't convince you to download the app.
 
-Biggest disadvantage of this method: If you notice a spelling mistake in the screenshots, you release an update with a new design or you just want to show more up to date content, you'll have to create new screenshots for all languages and devices... manually.
-
-Please click on the pictures to enlarge them for more details.
-  
+Biggest disadvantage of this method: If you notice a spelling mistake in the screenshots, you release an update with a new design or you just want to show more up to date content, you'll have to create new screenshots for all languages and devices... manually.  
       
 ![](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_558e726ce4b01c6273e8053f_1435398811173__img.png)
   
