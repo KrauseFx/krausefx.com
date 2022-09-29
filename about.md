@@ -40,14 +40,14 @@ meta: {}
 
   <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers to make building and releasing apps easier. Just last year, fastlane has saved over 33,000,000 developer hours and is used by hundreds of thousands of companies around the world. fastlane got acquired by Twitter, and later Google.</p>
   
-  <p>My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832?lang=en">Forbes Cover</a> (DACH region).</p>
+  <p>My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832">Forbes Cover</a> (DACH region).</p>
 
   <p><b>Privacy research</b></p>
 
-  <p>I'm an active security & privacy researcher, focused on the iOS platform that have caused major changes in iOS, like the camera indicator and better photos permission. Most recently my privacy work on InAppBrowsers caused worldwide news coverage, all the way to hearings in US Congress (TODO: Spelling) and litigation lawsuits.
+  <p>I'm an active security & privacy researcher, focused on the iOS platform that have caused major changes in iOS, like the camera indicator and better photos permission. Most recently my privacy work on <a href="/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser">InAppBrowser.com</a> resulted in worldwide news coverage, all the way to hearings in US Congress and multiple litigation lawsuits.
   </p>
   
-  <p><a href="/privacy">Read more about my privacy publications here</a>.</p>
+  <p><a href="/privacy">Read more about my privacy publications here</a></p>
 
   <p><b>Open Source</b></p>
 
@@ -57,10 +57,10 @@ meta: {}
 
   <p><b>Speaking</b></p>
 
-  <p>I spoke at various conferences around the world, most recently Madrid, Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below.</p>
+  <p>I spoke at various conferences around the world, most recently Madrid, Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements <a href="mailto:contact@krausefx.com">get in touch with me</a>.</p>
 
-  <p><b>Previous work and projects</b></p>
-  <p>Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
+  <p><b>Past employers and other projects</b></p>
+  <p>Google, Twitter, Root Insurances, Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
 
   <p>I moved to a new place <a href="/blog/going-nomad">every month</a> without having an apartment for 2.5 years</p>
 
