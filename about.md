@@ -29,36 +29,38 @@ meta: {}
     <li>
       {% include icon-linkedin.html %}
     </li>
+    <li>
+      <a style="font-size: 90%" href="mailto:hi@krausefx.com">hi@krausefx.com</a>
+    </li>
   </ul>
 </div>
 
 <div id="rightCol">
   <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>, as well as <a href="https://howisFelix.today">howisFelix.today</a></p>
 
-  <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers focussed on making building and releasing apps easier. Just last year, fastlane has saved over 33,000,000 developer hours and is used by hundreds of thousands of companies around the world. My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832?lang=en">Forbes Cover</a> (DACH region).</p>
-
-  <p><b>fastlane</b></p>
-
-  <p>I worked on <a href="https://fastlane.tools" target="_blank">fastlane</a> at Google and previously Twitter in San Francisco.</p>
+  <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers to make building and releasing apps easier. Just last year, fastlane has saved over 33,000,000 developer hours and is used by hundreds of thousands of companies around the world. fastlane got acquired by Twitter, and later Google.</p>
+  
+  <p>My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832">Forbes Cover</a> (DACH region).</p>
 
   <p><b>Privacy research</b></p>
 
-  <p>I'm an active security & privacy researcher, focused on the iOS platform that have caused major changes in iOS, like the camera indicator and new photos permission scopes. <a href="/privacy">Read more about my privacy publications here</a>.</p>
+  <p>I'm an active security & privacy researcher, focused on the iOS platform that have caused major changes in iOS, like the camera indicator and better photos permission. Most recently my privacy work on <a href="/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser">InAppBrowser.com</a> resulted in worldwide news coverage, all the way to hearings in US Congress and multiple litigation lawsuits.
+  </p>
+  
+  <p><a href="/privacy">Read more about my privacy publications here</a></p>
 
   <p><b>Open Source</b></p>
 
-  <p>Additionally to <a href="https://fastlane.tools" target="_blank">fastlane</a>, I've been involved in other open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a> and <a href="https://instapipe.net">instapipe</a>.</p>
+  <p>Besides <a href="https://fastlane.tools" target="_blank">fastlane</a>, I'm involved in many open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a> & <a href="https://instapipe.net">instapipe</a>.</p>
 
   <p>I'm the founder of <a href="https://ios-factor.com" target="_blank">iOS-factor.com</a>, an open source best-practices guide on how to build and ship high-quality iOS apps.</p>
 
   <p><b>Speaking</b></p>
 
-  <p>I spoke at various conferences around the world, most recently Madrid, Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements get in touch with me using the form below.
+  <p>I spoke at various conferences around the world, most recently Madrid, Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements <a href="mailto:contact@krausefx.com">get in touch with me</a>.</p>
 
-  <p>To see my current location, upcoming trips, and more, check out <a href="https://howisFelix.today" target="_blank">howisFelix.today</a>.</p>
-
-  <p><b>Previous work and projects</b></p>
-  <p>Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
+  <p><b>Past employers and other projects</b></p>
+  <p>Google, Twitter, Root Insurances, Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
 
   <p>I moved to a new place <a href="/blog/going-nomad">every month</a> without having an apartment for 2.5 years</p>
 
@@ -67,6 +69,7 @@ meta: {}
   <p>You can always reach me via Email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a> or <a href="https://twitter.com/KrauseFx">Twitter</a>.</p>
 
   <p>Check out <a href="/projects">my other projects & past employers</a>.</p>
+</div>
 
 <hr style="margin-top: 35px" />
 
@@ -139,25 +142,33 @@ meta: {}
   xmlHttp.send(null);
 </script>
 
-<hr />
+---
   
-  You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> and email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>, or use the form below
+You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> and email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>, or use the form below.
 
-<div style="width: 100%; float: left; margin-top: 20px; margin-bottom: 20px;">
-  <form id="contactform" method="POST" action="https://formspree.io/contact@krausefx.com">
-    <p><b>Email Address</b></p>
-    <input type="email" name="_replyto" placeholder="Your email address">
+{% include contact_form.html %}
 
-    <p><b>Message</b></p>
-    <textarea placeholder="Your message" name="message"></textarea>
-    <input type="hidden" name="_subject" value="New message from krausefx.com" />
-    <br />
-    <input type="submit" value="Submit">
-  </form>
-</div>
+<br style="margin-top: 50px" />
 
-<hr />
-<p style="text-align: right; color: #999">
+<!-- Some weird glitch -->
+<span style="opacity: 0">.</span>
+
+
+## Thank you
+
+{% include thank_yous.md %}
+
+---
+
+You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> and email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>, or use the form below.
+
+---
+
+{% include contact_form.html %}
+
+---
+
+<p style="text-align: right; color: #bbb">
   WeAreDevelopers photos by Tamás Künsztler
 </p>
 
