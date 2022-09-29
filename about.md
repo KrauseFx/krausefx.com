@@ -148,7 +148,11 @@ You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> a
 
 {% include contact_form.html %}
 
----
+<br style="margin-top: 50px" />
+
+<!-- Some weird glitch -->
+<span style="opacity: 0">.</span>
+
 
 ## Thank you
 
