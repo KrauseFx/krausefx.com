@@ -125,6 +125,9 @@ If you need any additional resources, or have any follow-up questions that are n
   <a href="https://www.derstandard.at/story/2000138381426/geheimes-tracking-tiktok-kann-alle-tastatureingaben-im-in-app-browser">
     <img src="/assets/privacy/derstandard.gif">
   </a>
+  <a href="https://www.srf.ch/news/fehlender-datenschutz-passwort-oder-kreditkartennummer-tiktok-kann-alles-abfangen">
+    <img src="/assets/privacy/srf.png" style="max-width: 50px;">
+  </a>
 </div>
 
 <hr style="margin-bottom: 60px" />
