@@ -29,8 +29,11 @@ meta: {}
     <li>
       {% include icon-linkedin.html %}
     </li>
-    <li>
+    <li style="margin-top: 10px">
       <a style="font-size: 90%" href="mailto:hi@krausefx.com">hi@krausefx.com</a>
+    </li>
+    <li style="margin-top: 20px;">
+      <a style="font-size: 90%; color: #666 !important;" href="https://plausible.io/krausefx.com?period=30d" id="website-visitors"></a>
     </li>
   </ul>
 </div>
@@ -42,7 +45,7 @@ meta: {}
 
   <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers to make building and releasing apps easier. Just last year, fastlane has saved over 33,000,000 developer hours and is used by hundreds of thousands of companies around the world. fastlane got acquired by Twitter, and later Google.</p>
   
-  <p>My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832">Forbes Cover</a> (DACH region).</p>
+  <p>My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832">Forbes Cover</a> (DACH region) with more than 25M impressions.</p>
 
   <p><b>Privacy research</b></p>
 
@@ -113,6 +116,10 @@ meta: {}
   xmlHttp.onreadystatechange = function() { 
       if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
         var content = JSON.parse(xmlHttp.responseText)
+
+        const visitors = content["websiteVisitors"]["krausefx.com"]["6m"];
+        document.getElementById("website-visitors").innerHTML = Number(visitors).toLocaleString() + " unique visitors the last 6m";
+
         var photos = content["recentPhotos"]
         var personalCarousel = document.getElementById("personalCarousel")
         for (let photoIndex in photos) {
