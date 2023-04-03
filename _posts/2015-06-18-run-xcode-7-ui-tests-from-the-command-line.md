@@ -148,8 +148,7 @@ Test Suite 'All tests' passed at 2015-06-18 14:48:47.130.
 # Generating Screenshots
 
 
-No extra work needed, you get screenshots for free. By appending the 
-derivedDataPath option to your command, you tell Xcode where to store the test results including the generated screenshots.
+No extra work needed, you get screenshots for free. By appending the `derivedDataPath` option to your command, you tell Xcode where to store the test results including the generated screenshots.
 
 ```sh
 xcodebuild -workspace App.xcworkspace \
