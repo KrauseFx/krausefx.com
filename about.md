@@ -12,7 +12,7 @@ meta: {}
 <h1 id="about-header">About</h1>
 
 <div id="leftCol">
-  <img src="/assets/FelixKrauseProfilePicture.jpg" width="290" style="margin-bottom: 10px; margin-top: 5px;" />
+  <img src="/assets/speaking/FelixKrause1_cropped.jpg" width="290" style="margin-bottom: 10px; margin-top: 5px;" />
   <br />
   <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="https://fastlane.tools" target="_blank">fastlane</a></small></p>
   <!-- Social links -->
@@ -84,9 +84,6 @@ meta: {}
 
 <h2>Speaking</h2>
 <div class="imageCarousel">
-  <a href="/assets/speaking/FelixKrause1.jpg" target="_blank">
-    <img src="/assets/speaking/FelixKrause1.jpg" alt="Felix Krause (KrauseFx) speaking at conference at Facebook Mobile at Scale in Tel Aviv, Israel" />
-  </a>
   <a href="/assets/speaking/FelixKrause4.jpg" target="_blank">
     <img src="/assets/speaking/FelixKrause4.jpg" alt="Felix Krause (KrauseFx) speaking at conference at trySwift in New York" />
   </a>
@@ -104,6 +101,9 @@ meta: {}
   </a>
   <a href="/assets/speaking/FelixKrause7.jpg" target="_blank">
     <img src="/assets/speaking/FelixKrause7.jpg" alt="Felix Krause (KrauseFx) speaking at conference at trySwift in New York" />
+  </a>
+  <a href="/assets/speaking/FelixKrause1.jpg" target="_blank">
+    <img src="/assets/speaking/FelixKrause1.jpg" alt="Felix Krause (KrauseFx) speaking at conference at Facebook Mobile at Scale in Tel Aviv, Israel" />
   </a>
 </div>
 
