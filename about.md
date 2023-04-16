@@ -250,7 +250,8 @@ You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> a
   #about-header {
     text-align: center;
     margin-bottom: 30px;
-    margin-top: -60px
+    margin-top: -60px;
+    color: white;
   }
   @media screen and (max-width: 800px) {
     #about-header {
