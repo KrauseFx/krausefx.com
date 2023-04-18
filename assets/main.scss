@@ -118,14 +118,22 @@ a.forkButton {
   }
 }
 
+// hr {
+//   color: #bbb;
+//   background-color: #bbb;
+//   height: 1px;
+//   flex: 0 1 auto;
+//   margin: 1em 0;
+//   padding: 0;
+//   border: none;
+// }
+
 hr {
-  color: #bbb;
-  background-color: #bbb;
+  border: 0;
   height: 1px;
-  flex: 0 1 auto;
-  margin: 1em 0;
-  padding: 0;
-  border: none;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(40, 40, 40, 0.3), rgba(0, 0, 0, 0));
+  margin-bottom: 35px;
+  background-color: transparent !important;
 }
 
 .side-projects-note {
@@ -233,6 +241,43 @@ body, html{
   max-width: -webkit-calc(340px + #{$content-width} - (#{$spacing-unit} * 2)) !important;
   max-width:         calc(340px + #{$content-width} - (#{$spacing-unit} * 2)) !important;
 }
+
+// Contact Form start
+#contactform {
+  padding-top: 30px;
+}
+
+#contactform input[type="email"] {
+  width: calc(100% - 20px);
+  height: 30px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+#contactform textarea {
+  width: calc(100% - 30px);
+  height: 100px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  padding: 15px;
+  resize: vertical;
+}
+#contactform input[type="submit"] {
+  display: inline-block;
+  width: 127px;
+  height: 42px;
+  background-color: #272727;
+  color: white;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+// Contact Form end
 
 .post-title {
   a {

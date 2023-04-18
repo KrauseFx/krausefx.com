@@ -12,7 +12,7 @@ meta: {}
 <h1 id="about-header">About</h1>
 
 <div id="leftCol">
-  <img src="/assets/speaking/FelixKrause1_cropped.jpg" width="290" style="margin-bottom: 10px; margin-top: 5px;" />
+  <img src="/assets/speaking/FelixKrause4_cropped.jpg" width="530" style="margin-bottom: 10px; margin-top: 5px;" />
   <br />
   <p style="text-align: center;"><small style="">Felix Krause, creator of <a href="https://fastlane.tools" target="_blank">fastlane</a></small></p>
   <!-- Social links -->
@@ -45,6 +45,10 @@ meta: {}
   
   <p>My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832">Forbes Cover</a> (DACH region) with more than 25M impressions.</p>
 
+  <p><b>Contract Work</b></p>
+
+  <p>As of mid April 2023, I'm available for <a href="/work-with-me">Contract Work</a> again.</p>
+
   <p><b>Privacy research</b></p>
 
   <p>I'm an active security & privacy researcher, focused on the iOS platform that have caused major changes in iOS, like the camera indicator and better photos permission. Most recently my privacy work on <a href="/blog/announcing-inappbrowsercom-see-what-javascript-commands-get-executed-in-an-in-app-browser">InAppBrowser.com</a> resulted in worldwide news coverage, all the way to hearings in US Congress and multiple litigation lawsuits.
@@ -63,7 +67,7 @@ meta: {}
   <p>I spoke at various conferences around the world, most recently Madrid, Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements <a href="mailto:contact@krausefx.com">get in touch with me</a>.</p>
 
   <p><b>Past employers and other projects</b></p>
-  <p>Google, Twitter, Root Insurances, Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
+  <p>Google, Twitter, Root Insurances, Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a>, <a href="https://howisfelix.today">howisFelix.today</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
 
   <p>I moved to a new place <a href="/blog/going-nomad">every month</a> without having an apartment for 2.5 years</p>
 
@@ -208,39 +212,6 @@ You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> a
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  #contactform {
-    padding-top: 30px;
-  }
-
-  #contactform input[type="email"] {
-    width: calc(100% - 20px);
-    height: 30px;
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  #contactform textarea {
-    width: calc(100% - 30px);
-    height: 100px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    background-color: #fafafa;
-    padding: 15px;
-    resize: vertical;
-  }
-  #contactform input[type="submit"] {
-    display: inline-block;
-    width: 127px;
-    height: 42px;
-    background-color: #272727;
-    color: white;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 14px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
-  }
   #leftCol {
     margin-bottom: 40px;
     margin-right: 30px;
@@ -269,7 +240,8 @@ You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> a
       width: 180px;
     }
     #leftCol > img { 
-      width: 40%;
+      max-width: 300px;
+      width: 100%;
     }
     #leftCol > p {
       display: none;
@@ -278,8 +250,9 @@ You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> a
   @media screen and (min-width: 800px) {
     #leftCol {
         width: 40%; 
+        max-width: 350px;
         float: left;
-        height: 940px;
+        height: 980px;
       }
     }
   }
