@@ -9,7 +9,9 @@ published: true
 meta: {}
 ---
 
-<img src="/assets/speaking/FelixKrause1_cropped.jpg" id="felix-krause-speaking" />
+<div id="krause-wrapper">
+  <img src="/assets/speaking/FelixKrause1_cropped.jpg" id="felix-krause-speaking" />
+</div>
 
 ## _fastlane_ consulting
 
@@ -23,9 +25,7 @@ I get invited to speak about this topic at [dozens of conferences](https://githu
 
 Reach out to me at [felix@krausefx.com](mailto:felix@krausefx.com) to talk more, or use the contact fom below.
 
-
 {% include contact_form.html %}
-
 
 <style type="text/css">
   #felix-krause-speaking {
@@ -35,10 +35,13 @@ Reach out to me at [felix@krausefx.com](mailto:felix@krausefx.com) to talk more,
     margin-right: 25px;
     width: 300px;
   }
-  /* Hide the image on mobile */
   @media only screen and (max-width: 600px) {
     #felix-krause-speaking {
-      display: none;
+      float: none;
+      width: 40%;
+    }
+    #krause-wrapper {
+      text-align: center;
     }
   }
 </style>
