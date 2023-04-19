@@ -9,8 +9,6 @@ published: true
 meta: {}
 ---
 
-<h1 id="about-header">About</h1>
-
 <div id="leftCol">
   <img src="/assets/speaking/FelixKrause4_cropped.jpg" width="530" style="margin-bottom: 10px; margin-top: 5px;" />
   <br />
@@ -218,17 +216,7 @@ You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> a
     width: 100%;
     text-align: center;
   }
-  #about-header {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: -60px;
-    color: white;
-  }
   @media screen and (max-width: 800px) {
-    #about-header {
-      margin-top: -20px;
-      margin-bottom: 10px;
-    }
     .imageCarousel {
       height: 190px;
     }
