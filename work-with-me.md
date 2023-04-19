@@ -23,7 +23,7 @@ It's not just about knowing _fastlane_ inside out - it's about truly understandi
 
 I get invited to speak about this topic at [dozens of conferences](https://github.com/krausefx/speaking), like at the [Facebook Mobile@Scale Conference in Israel](https://www.facebook.com/watch/?v=2164710343846256) or [at the MCE Conference in Poland](https://www.youtube.com/watch?v=wOtANfkh2bI).
 
-Reach out to me at [felix@krausefx.com](mailto:felix@krausefx.com) to talk more, or use the contact fom below.
+Reach out to me at [felix@krausefx.com](mailto:felix@krausefx.com), or use the contact fom below - I will solve your CI problems!
 
 {% include contact_form.html %}
 
