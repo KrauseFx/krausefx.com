@@ -242,6 +242,10 @@ body, html{
   max-width:         calc(340px + #{$content-width} - (#{$spacing-unit} * 2)) !important;
 }
 
+#work-with-me {
+  text-align: center;
+}
+
 // Contact Form start
 #contactform {
   padding-top: 30px;
