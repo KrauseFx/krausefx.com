@@ -82,7 +82,7 @@ All processing happens on-device, the SDK doesn't require any additional app per
 
 ### Tech Details
 
-Context SDK leverages the latest Apple CoreML technology, and uses minimal CPU and battery power. 100% of the code is written in native Swift code, while some of the numberical calculations are done using Objective-C Arrays for even better performance.
+Context SDK leverages the latest Apple CoreML technology, and uses minimal CPU and battery power. 100% of the code is written in native Swift code, while some of the numerical calculations are done using Objective-C Arrays for even better performance.
 
 Context SDK is super easy to integrate, e.g. to check if now is a good time to upsell:
 
