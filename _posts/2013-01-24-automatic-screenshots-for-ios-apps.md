@@ -24,7 +24,7 @@ meta: {}
 <img src="/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2ae4b025a90f45cd18_1414699602733_Instruments.png" align="right" width="200">
 
 I guess all iOS app developers know this problem: You have to take (usually 5) screenshots of the app for all devices (iPhone 4, iPhone 5, iPad) in all supported languages for every update and every app. When I was working for 
-[6Wunderkinder](https://felix-krause-f13a.squarespace.com/blog/6-wunderkinder)  we pushed an update with 30 new languages for iPhone, iPad and the Mac. That means we had to take and upload 30 (languages) * (2 (iPhone) + 1 (iPad) + 1 (Mac)) = 
+[6Wunderkinder](https://krausefx.com/blog/6-wunderkinder)  we pushed an update with 30 new languages for iPhone, iPad and the Mac. That means we had to take and upload 30 (languages) * (2 (iPhone) + 1 (iPad) + 1 (Mac)) = 
 **120**
  screenshots.  
 
@@ -39,4 +39,4 @@ After some developers asked about the scripts I open sourced it on GitHub: 
 [https://github.com/toursprung/iOS-Screenshot-Automator](https://github.com/toursprung/iOS-Screenshot-Automator)
   
       
-[![Automatic taking screenshots iOS](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2ae4b025a90f45cd1b_1414699603206_ScreenshotToolImage.png)](http://static.squarespace.com/static/545299aae4b0e9514fe30c95/54529a29e4b025a90f45cc50/54529a2ae4b025a90f45cd1b/1359138373000/ScreenshotToolImage.png?format=original)
+[![Automatic taking screenshots iOS](https://krausefx.com/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2ae4b025a90f45cd1b_1414699603206_ScreenshotToolImage.png)](https://krausefx.com/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2ae4b025a90f45cd1b_1414699603206_ScreenshotToolImage.png)

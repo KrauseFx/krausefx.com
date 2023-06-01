@@ -18,6 +18,6 @@ meta: {}
 The U19 Freestyle Computing competition is organised by the Ars Electronica in Linz, Austria.
 
 * 2011 I took part with my 
-[Bikemap iPhone app](https://felix-krause-f13a.squarespace.com/blog/bikemap) and got one of the top 15 places.
+[Bikemap iPhone app](https://krausefx.com/blog/bikemap) and got one of the top 15 places.
 * 2012 I sent in my 
-[iPhone game iTanky](https://felix-krause-f13a.squarespace.com/blog/itanky) and landed in the top 15 places again. Both years there have been over 600 participants.
+[iPhone game iTanky](https://krausefx.com/blog/itanky) and landed in the top 15 places again. Both years there have been over 600 participants.
