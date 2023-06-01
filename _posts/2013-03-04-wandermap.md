@@ -16,9 +16,7 @@ published: true
 meta: {}
 ---
 
-[![Wandermap App Icon](/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2be4b025a90f45cd85_1414699601162_114x114%402x.png)](http://static.squarespace.com/static/545299aae4b0e9514fe30c95/54529a29e4b025a90f45cc50/54529a2be4b025a90f45cd85/1362426470000/114x114@2x.png?format=original)
-  
-
+[![Wandermap App Icon](https://krausefx.com/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2be4b025a90f45cd85_1414699601162_114x114%402x.png)](https://krausefx.com/squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_54529a2be4b025a90f45cd85_1414699601162_114x114%402x.png)
 
 Wandermap is a free iPhone app to find the best hiking routes around you. Download it from the AppStore for free: 
 [Download](https://itunes.apple.com/at/app/wandermap/id592800988?l=en&mt=8) There are many nice featured included like a synchronised route collection between devices and the web version and offline support.
