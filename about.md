@@ -43,9 +43,9 @@ meta: {}
   
   <p>My work got featured on almost all major news platforms, like <a href="https://www.nytimes.com/2022/08/19/technology/tiktok-browser-tracking.html">The New York Times</a>, <a href="https://www.washingtonpost.com/technology/2022/09/13/facebook-instagram-data-privacy/">Washington Post</a>, <a href="https://www.theguardian.com/technology/2017/oct/12/apple-id-iphone-password-demands-security-flaw-phishing-attack-fake-sign-in-request">The Guardian</a>, <a href="https://www.telegraph.co.uk/technology/2017/10/26/warning-iphone-apps-can-silently-turn-cameras-time/">The Telegraph</a>, <a href="https://www.unilad.co.uk/featured/creepy-apple-loophole-seriously-infringes-on-your-privacy/">Unilad</a>, <a href="https://www.forbes.at/artikel/30u30-2017-felix-krause.html" target="_blank">Forbes 30u30</a> (German), as well as being on the <a href="https://twitter.com/krausefx/status/737989912847224832">Forbes Cover</a> (DACH region) with more than 25M impressions.</p>
 
-  <p><b>Contract Work</b></p>
+  <!-- <p><b>Contract Work</b></p>
 
-  <p>As of mid April 2023, I'm available for <a href="/work-with-me">Contract Work</a> again.</p>
+  <p>As of mid April 2023, I'm available for <a href="/work-with-me">Contract Work</a> again.</p> -->
 
   <p><b>Privacy research</b></p>
 
