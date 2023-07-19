@@ -141,6 +141,8 @@ After the App Tracking Transparency was introduced, <i>Meta</i> announced:
 
 With 1 Billion active Instagram users, the amount of data Instagram can collect by injecting the tracking code into every third party website opened from the Instagram & Facebook app is a staggering amount. 
 
+<!--more-->
+
 With web browsers and iOS adding more and more privacy controls into the user’s hands, it becomes clear why Instagram is interested in monitoring all web traffic of external websites.
 
 > Facebook bombarded its users with messages begging them to turn tracking back on. It threatened an antitrust suit against Apple. It got small businesses to defend user-tracking, claiming that when a giant corporation spies on billions of people, that’s a form of small business development.

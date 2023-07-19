@@ -19,7 +19,18 @@ title: Home
       </header>
 
       <div class="post-content" itemprop="articleBody">
-        {{ page.content }}
+        {% if page.content contains '<!--more-->' %}
+          <div>
+              {{ page.content | split:'<!--more-->' | first }}
+          </div>
+          <input type="checkbox" class="read-more-state" id="{{ page.url }}"/>
+          <div class="read-more">
+              {{ page.content | split:'<!--more-->' | last }}
+          </div>
+          <label for="{{ page.url }}" class="read-more-trigger"></label>
+        {% else %}
+            {{ page.content }}
+        {% endif %}
 
         <!-- {% include side-projects.html %} -->
       </div>
