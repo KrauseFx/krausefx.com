@@ -56,6 +56,8 @@ Above you can see how various signals affects in-app upsell conversion rates. Fo
 - Users are 16% less likely to convert when they have audio playing
 - Users are 10% more likely to convert when they're sitting on a couch
 
+<!--more-->
+
 <img src="https://krausefx.com/assets/posts/context-sdk/devices-graph.png" />
 
 There is also a big difference in conversion rates depending on the iPhone model, but more importantly, which iOS version the user has installed. People who update their OS are more willing to spend money in your app.

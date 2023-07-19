@@ -245,6 +245,8 @@ When you open any link on the TikTok iOS app, it's opened inside their in-app br
 
 The above statement confirms my findings. TikTok injects code into third party websites through their in-app browsers that behaves like a keylogger. However claims it's not being used.
 
+<!--more-->
+
 ## Instagram does more than just inserting `pcm.js`
 
 <a href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/instagram.png" target="_blank">
