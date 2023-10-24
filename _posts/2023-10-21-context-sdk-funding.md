@@ -60,4 +60,4 @@ We're hiring a Data Scientist, check out our [careers page](https://contextsdk.c
 
 ### Full Press Release
 
-Read the full press release on [contextsdk.com](https://contextsdk.webflow.io/press)
+Read the full press release on [contextsdk.com](https://contextsdk.com/press)
