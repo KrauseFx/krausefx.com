@@ -25,12 +25,6 @@ After living in NYC for a year, I ended up doing the following: If I walk somewh
 
 A Telegram bot that manages the communication and revokes messages as soon as you're unavailable again. 
 
-<h3 style="text-align: center; font-size: 35px; border: none">
-  <a href="https://t.me/WalkWithFriendsBot" target="_blank" style="text-decoration: none;">
-    🔰 Start using the bot 🔰
-  </a>
-</h3>
-
 <table style="width: 90%">
   <tr>
     <td>
@@ -52,4 +46,4 @@ A Telegram bot that manages the communication and revokes messages as soon as yo
 - They have a solid bots API
 - Registration for new users is easy & fast
 
-### [More details on WalkWithFriends.net](https://walkwithfriends.net)
+### [More details on https://krausefx.github.io/walkwithfriends/]([https://walkwithfriends.net](https://krausefx.github.io/walkwithfriends/)https://krausefx.github.io/walkwithfriends/)
