@@ -420,6 +420,15 @@ code {
   font-size: 85%;
 }
 
+#storyProfilePicture {
+  width: 128px;
+  height: 128px;
+  border-radius: 70px;
+  margin-left: 3px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border: 4px solid white;
+}
 
 /* Syntax Highlighting */
 /* Taken from https://github.com/mojombo/tpw/blob/master/css/syntax.css */
