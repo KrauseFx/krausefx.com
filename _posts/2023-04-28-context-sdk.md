@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Context SDK - Introducing the most intelligent way to know how and when to monetize your user'
+title: 'ContextSDK - Introducing the most intelligent way to know how and when to monetize your user'
 categories: []
 tags:
 - ios
