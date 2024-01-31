@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Context SDK - Angel Round, Dieter Rappold joining as CEO, first large customers'
+title: 'ContextSDK - Angel Round, Dieter Rappold joining as CEO, first large customers'
 categories: []
 tags:
 - ios
