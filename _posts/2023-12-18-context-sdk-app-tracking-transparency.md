@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Context SDK - Optimize your ATT prompts'
+title: 'ContextSDK - Optimize your ATT prompts'
 categories: []
 tags:
 - ios
