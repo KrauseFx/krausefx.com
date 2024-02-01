@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   s.name             = 'ContextSDK'
   s.version          = '3.2.0'
   s.summary          = 'Introducing the most intelligent way to know when and how to monetize your user'
-  s.swift_version = '5.7'
+  s.swift_version    = '5.7'
   s.homepage         = 'https://contextsdk.com'
   s.author           = { 'KrauseFx' => 'felix@contextsdk.com' }
   s.ios.deployment_target = '14.0'
