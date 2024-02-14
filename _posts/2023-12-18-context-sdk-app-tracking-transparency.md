@@ -18,6 +18,7 @@ status: publish
 type: post
 published: true
 meta: {}
+image: /assets/posts/context-sdk/att-prompt-visual.png
 ---
 
 **Launching [AppTrackingTransparency.ai](https://apptrackingtransparency.ai)** - the first, of many hyper-focused ContextSDK products, helping you increase your app's revenue.

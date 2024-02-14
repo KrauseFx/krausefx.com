@@ -7,6 +7,7 @@ status: publish
 type: page
 published: true
 meta: {}
+image: /squarespace_images/static_545299aae4b0e9514fe30c95_54529a29e4b025a90f45cc50_59db4461cf81e005db7a2062_1507542261614_Screenshot+2017-10-09+11.40.41.png.41.png
 ---
 
 # Privacy research
