@@ -17,6 +17,7 @@ status: publish
 type: post
 published: true
 meta: {}
+image: /assets/posts/context-sdk/custom-sdk-visual.png
 ---
 
 <img src="/assets/posts/context-sdk/custom-sdk-visual.png">

@@ -29,9 +29,32 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-twitter-plugin
+  - jekyll-seo-tag
 permalink: /blog/:title
 paginate: 4
 paginate_path: "/blog/page:num/"
+
+# Jekyll SEO Tag
+author:
+  twitter: KrauseFx
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/cards/default.jpg
+tagline: "Personal website and blog of Felix Krause"
+twitter:
+  username: KrauseFx
+  card: summary
+social:
+  name: Felix Krause
+  links:
+    - https://twitter.com/KrauseFx
+    - https://www.linkedin.com/in/KrauseFx
+    - https://github.com/KrauseFx
+    - https://keybase.io/KrauseFx
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

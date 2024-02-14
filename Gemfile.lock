@@ -84,6 +84,7 @@ DEPENDENCIES
   jekyll (~> 4.1)
   jekyll-feed (~> 0.15)
   jekyll-paginate
+  jekyll-seo-tag
   jekyll-twitter-plugin
   minima (~> 2.5)
   pry
