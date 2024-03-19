@@ -75,7 +75,7 @@ meta: {}
   <a href="https://www.theaustralian.com.au/the-oz/internet/calling-time-on-tiktok-in-australia/news-story/ebead44e899837e9bef06e17b98834ea">
     <img src="/assets/privacy/theaustralian.jpg">
   </a>
-  <a href="https://internet2-0.com/whitepaper/tiktok-inapp-browsers/">
+  <a href="https://internet2-0.com/tiktok-in-app-browsers/">
     <img src="/assets/privacy/internet20.jpg">
   </a>
   <a href="https://www.cbsnews.com/video/researcher-says-tiktoks-in-app-browser-monitoring-user-activity/#x">
