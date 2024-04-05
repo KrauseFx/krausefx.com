@@ -80,12 +80,6 @@ meta: {}
 
 <hr style="margin-top: 35px" />
 
-<h2>Personal Photos</h2>
-<div class="imageCarousel" id="personalCarousel">
-</div>
-
-<hr />
-
 <h2>Speaking</h2>
 <div class="imageCarousel">
   <a href="/assets/speaking/FelixKrause4.jpg" target="_blank">
