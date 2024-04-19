@@ -22,7 +22,7 @@ In the world of mobile app development, understanding the user is key to creatin
 
 iOS apps are used in a multitude of circumstances, at home on the couch, during the commute, while out on a walk, or anywhere in-between. Context Insights offers a new approach to user analytics. By analyzing the real-world context of your user base, you can gain insights into how different situations influence app usage. This allows you to segment your users more meaningfully, according to the context in which they interact with your app, providing a deeper understanding of their behavior and preferences.
 
-<img src="/assets/posts/insights/ContextInsights-Screenshot.png">
+<a href="https://contextsdk.com/insights"><img src="/assets/posts/insights/ContextInsights-Screenshot.png"></a>
 
 ## Unparalleled Ease of Integration
 
@@ -60,5 +60,5 @@ Embark on a journey to deeply understand your users with Context Insights. By in
 
 We can't wait to see how you leverage Context Insights to make your app truly exceptional. Welcome to the future of iOS app development. 
 
-Get started here: [https://insights.contextsdk.com/register](https://insights.contextsdk.com/register)
+[Get started here](https://insights.contextsdk.com/register) or get more details on how it works on our [landing page](https://contextsdk.com/insights/).
 
