@@ -18,7 +18,7 @@ meta: {}
 image: /assets/posts/ios-ml/header-1.jpg
 ---
 
-<img src="/assets/posts/ios-ml/header-1.jpg">
+<img src="https://krausefx.com/assets/posts/ios-ml/header-1.jpg">
 
 **Note:** This is a cross-post of the original publication on [contextsdk.com](https://contextsdk.com/blog/how-to-train-your-first-machine-learning-model-and-run-it-inside-your-ios-app-via-coreml).
 
@@ -51,7 +51,7 @@ show certain prompts or messages in iOS apps.
 
 Let’s assume we have your data in the following format:
 
-<img src="/assets/posts/ios-ml/image2.png" />
+<img src="https://krausefx.com/assets/posts/ios-ml/image2.png" />
 
 - **Outcome** describes the result of the user interaction, in this
   case, if they purchased an optional premium upgrade
@@ -136,7 +136,7 @@ print(classification_report(Y_test, Y_pred, zero_division=1))
 The output of the above training will give you a classification report. In simplified words, it will tell you more of how accurate the trained
 model is.
 
-<img src="/assets/posts/ios-ml/image3.png" />
+<img src="https://krausefx.com/assets/posts/ios-ml/image3.png" />
 
 In the screenshot above, we’re only using test data as part of this blog
 series. If you’re interested in how to interpret and evaluate the
@@ -164,14 +164,14 @@ For now, we will simply drag & drop the CoreML file into our Xcode
 project. In a future blog post we will go into detail on how to deploy
 new ML models over-the-air.
 
-<img src="/assets/posts/ios-ml/image1.png" style="width: 300px" />
+<img src="https://krausefx.com/assets/posts/ios-ml/image1.png" style="width: 300px" />
 
 Once added to your project, you can inspect the inputs, labels, and
 other model information right within Xcode.
 
-<img src="/assets/posts/ios-ml/image5.png" />
+<img src="https://krausefx.com/assets/posts/ios-ml/image5.png" />
 
-<img src="/assets/posts/ios-ml/image4.png"/>
+<img src="https://krausefx.com/assets/posts/ios-ml/image4.png"/>
 
 ## Step 7: Executing your Machine Learning model on-device
 
