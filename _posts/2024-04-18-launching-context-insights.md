@@ -16,13 +16,13 @@ meta: {}
 image: /assets/posts/context-sdk/ContextInsights-Logo.jpg
 ---
 
+<a href="https://contextsdk.com/insights"><img src="/assets/posts/insights/ContextInsights-Screenshot.png"></a>
+
 In the world of mobile app development, understanding the user is key to creating experiences that resonate and retain. Today, we're thrilled to introduce [Context Insights](https://contextsdk.com/insights), a brand new analytics tool designed from the ground up for iOS developers. Context Insights is your gateway to understanding the real-world contexts in which your users engage with your app.
 
 ## A New Dimension of User Understanding
 
 iOS apps are used in a multitude of circumstances, at home on the couch, during the commute, while out on a walk, or anywhere in-between. Context Insights offers a new approach to user analytics. By analyzing the real-world context of your user base, you can gain insights into how different situations influence app usage. This allows you to segment your users more meaningfully, according to the context in which they interact with your app, providing a deeper understanding of their behavior and preferences.
-
-<a href="https://contextsdk.com/insights"><img src="/assets/posts/insights/ContextInsights-Screenshot.png"></a>
 
 ## Unparalleled Ease of Integration
 
