@@ -155,7 +155,7 @@ import coremltools
 
 coreml_model = coremltools.converters.sklearn.convert(classifier, input_features="input")
 coreml_model.short_description = "My first model"
-coreml_model.save("MyModel.mlmodel")
+coreml_model.save("MyFirstCustomModel.mlmodel")
 ```
 
 ### Step 6: Bundle the CoreML file with your app
@@ -182,11 +182,11 @@ mlmodel file, including the details about the inputs, and outputs.
 let batteryLevel = UIDevice.current.batteryLevel
 let batteryCharging = UIDevice.current.batteryState == .charging || UIDevice.current.batteryState == .full
 do {
-    let modelInput = MyModelInput(input: [
+    let modelInput = MyFirstCustomModelInput(input: [
        Double(batteryLevel),
        Double(batteryCharging ? 1.0 : 0.0)
     ])
-    let result = try MyModel(configuration: MLModelConfiguration()).prediction(input: modelInput)
+    let result = try MyFirstCustomModel(configuration: MLModelConfiguration()).prediction(input: modelInput)
     let classProbabilities = result.featureValue(for: "classProbability")?.dictionaryValue
     let upsellProbability = classProbabilities?["Purchased"]?.doubleValue ?? -1
 
