@@ -158,7 +158,7 @@ coreml_model.short_description = "My first model"
 coreml_model.save("MyFirstCustomModel.mlmodel")
 ```
 
-### Step 6: Bundle the CoreML file with your app
+## Step 6: Bundle the CoreML file with your app
 
 For now, we will simply drag & drop the CoreML file into our Xcode
 project. In a future blog post we will go into detail on how to deploy
@@ -210,7 +210,7 @@ of both worlds, while also supporting over-the-air updates, dynamic
 inputs based on new models, and how to properly handle errors, process
 the response, manage complex AB tests, safe rollouts, and more.
 
-### Conclusion
+## Conclusion
 
 In this guide we went from collecting the data to feed into your Machine
 Learning model, to training the model, to running it on-device to make
