@@ -37,7 +37,7 @@ meta: {}
 </div>
 
 <div id="rightCol">
-  <p>Founder of <a href="https://contextsdk.com" target="_blank">ContextSDK</a>, the most intelligent way to know when and how to monetize your user.</p>
+  <p>Co-Founder of <a href="https://contextsdk.com/insights" target="_blank">ContextSDK</a>, the best way to know when and how to monetize your user.</p>
 
   <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>, as well as <a href="https://howisFelix.today">howisFelix.today</a></p>
 
