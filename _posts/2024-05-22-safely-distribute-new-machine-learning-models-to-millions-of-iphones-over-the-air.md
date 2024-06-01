@@ -267,7 +267,6 @@ or the CoreML model downloaded most recently over-the-air
 internal func latestModel() -> MyFirstCustomModel? {
     let fileManagerContents = (try? fileManager.contentsOfDirectory(at: modelsFolder, includingPropertiesForKeys: nil)) ?? []
     
-    // Try to find the latest model file based on modification date
     if let latestFileURL = fileManagerContents.sorted(by: { $0.lastPathComponent > $1.lastPathComponent }).first,
         let otaModel = try? MyFirstCustomModel(contentsOf: latestFileURL) {
         return otaModel
