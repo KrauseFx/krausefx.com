@@ -233,4 +233,4 @@ topic, showcasing how you can deploy new CoreML files to Millions of iOS
 devices over-the-air within seconds, in a safe & cost-efficient manner,
 managing complicated AB tests, dynamic input parameters, and more.
 
-**Note:** This is a cross-post of the original publication on [contextsdk.com](https://contextsdk.com/blog/how-to-train-your-first-machine-learning-model-and-run-it-inside-your-ios-app-via-coreml).
+**Update:** Head over to the [second post of the ML series](/blog/safely-distribute-new-machine-learning-models-to-millions-of-iphones-over-the-air)
