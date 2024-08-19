@@ -355,5 +355,5 @@ Excited to share more on what we’ve learned when building ContextSDK to
 power hundreds of machine learning models distributed across more than
 25 Million devices.
 
-**Note:** This is a cross-post of the original publication on [contextsdk.com](https://contextsdk.com/blog/safely-distribute-new-machine-learning-models-to-millions-of-iphones-over-the-air).
+**Update:** Head over to the [third post of the ML series](/blog/how-to-automatically-manage-monitor-rollout-new-machine-learning-models-across-your-ios-app-user-base)
 
