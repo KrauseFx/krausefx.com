@@ -23,7 +23,7 @@ Over the last few months, a ton has happened with ContextSDK, a new developer to
 ---
 
 <div style="text-align: center; margin: 40px;">
-  <img src="https://krausefx.com/assets/posts/context-sdk/ContextSDKLogoWithText@2x.jpg" style="width: 250px;">
+  <img src="/assets/posts/context-sdk/ContextSDKLogoWithText.png" style="width: 250px;">
 </div>
 
 ### Angel Round
