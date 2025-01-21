@@ -106,6 +106,12 @@ meta: {}
 
 <hr style="margin-bottom:20px" />
 
+---
+
+**Please note** that this article is outdated (August 2022). Importantly, the article does not claim that any data logging or transmission is actively occurring. Instead, it highlights the potential technical capabilities of in-app browsers to inject JavaScript code, which could theoretically be used to monitor user interactions.
+
+---
+
 [Last week I published a report](https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser) on the risks of mobile apps using in-app browsers. Some apps, like Instagram and Facebook, inject JavaScript code into third party websites that cause potential security and privacy risks to the user. 
 
 I was so happy to see the article featured by major media outlets across the globe, like [TheGuardian](https://www.theguardian.com/technology/2022/aug/11/meta-injecting-code-into-websites-visited-by-its-users-to-track-them-research-says) and [The Register](https://www.theregister.com/2022/08/12/meta_ios_privacy/), generated a [over a million impressions on Twitter](https://twitter.com/KrauseFx/status/1557412468368052225), and was ranked [#1 on HackerNews](https://news.ycombinator.com/item?id=32415470) for more than 12 hours. After reading through the replies and DMs, I saw a common question across the community:
@@ -223,7 +229,13 @@ Click on the `Yes` or `None` on the above table to see a screenshot of the app.
 
 Even if some of the apps above have green checkmarks, they might use the new `WKContentWorld` isolated JavaScript, which I'll describe below.
 
-## TikTok monitoring all keyboard inputs and taps
+## TikTok
+
+---
+
+**Please note** that this article is outdated (August 2022). Importantly, the article does not claim that any data logging or transmission is actively occurring. Instead, it highlights the potential technical capabilities of in-app browsers to inject JavaScript code, which could theoretically be used to monitor user interactions.
+
+---
 
 <a href="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok.png" target="_blank">
   <img class="details-for-specific-app" src="https://krausefx.com/assets/posts/inappbrowser/app_screenshots/tiktok_cut.png" >
@@ -365,6 +377,12 @@ Technology-wise [App-Bound Domains](https://webkit.org/blog/10882/app-bound-doma
 - **How can I protect myself?** Whenever you open a link from any app, see if the app offers a way to open the currently shown website in your default browser. During this analysis, every app besides TikTok offered a way to do this.
 - **Are companies doing this on purpose?** Building your own in-app browser takes a non-trivial time to program and maintain, significantly more than just using the privacy and user-friendly alternative that’s already been built into the iPhone for the past 7 years. Most likely there is some motivation there for the company to track your activities on those websites.
 - **I opened InAppBrowser.com inside an app, and it doesn't show any commands. Am I safe?** No! First of all, the website only checks for one of many hundreds of attack vectors: JavaScript injection from the app itself. And even for those, as of December 2020, app developers can completely hide the JavaScript commands they execute, therefore there is no way for us to verify what is actually happening under the hood.
+
+---
+
+**Please note** that this article is outdated (August 2022). Importantly, the article does not claim that any data logging or transmission is actively occurring. Instead, it highlights the potential technical capabilities of in-app browsers to inject JavaScript code, which could theoretically be used to monitor user interactions.
+
+---
 
 <style type="text/css">
   .in-app-browser-overview td, tr { 
