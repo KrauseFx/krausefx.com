@@ -39,7 +39,7 @@ meta: {}
 <div id="rightCol">
   <p>Co-Founder of <a href="https://contextsdk.com/insights" target="_blank">ContextSDK</a>, the best way to know when and how to monetize your user.</p>
 
-  <p>Follow what I'm up to on <a href="https://twitter.com/krausefx">Twitter</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>, as well as <a href="https://howisFelix.today">howisFelix.today</a></p>
+  <p>Follow what I'm up to on <a href="https://bsky.app/profile/krausefx.bsky.social">Bluesky</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>, as well as <a href="https://howisFelix.today">howisFelix.today</a></p>
 
   <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers to make building and releasing apps easier. Just last year, fastlane has saved over 33,000,000 developer hours and is used by hundreds of thousands of companies around the world. fastlane got acquired by Twitter, and later Google.</p>
   
@@ -73,7 +73,7 @@ meta: {}
 
   <p>Every other year I take the exact same photo as my Twitter/GitHub profile picture, introducing <a href="/blog/continuous-delivery-for-your-profile-picture">Continuous Delivery for your profile picture</a>.</p>
 
-  <p>You can always reach me via Email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a> or <a href="https://twitter.com/KrauseFx">Twitter</a>.</p>
+  <p>You can always reach me via Email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>.</p>
 
   <p>Check out <a href="/projects">my other projects & past employers</a>.</p>
 </div>
@@ -149,7 +149,7 @@ meta: {}
 
 ---
   
-You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> and email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>, or use the form below.
+You can reach me easily via email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>, or use the form below.
 
 {% include contact_form.html %}
 
@@ -165,7 +165,7 @@ You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> a
 
 ---
 
-You can reach me easily via <a href="https://twitter.com/KrauseFx">Twitter</a> and email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>, or use the form below.
+You can reach me easily via email <a href="mailto:contact@krausefx.com">contact@krausefx.com</a>, or use the form below.
 
 ---
 

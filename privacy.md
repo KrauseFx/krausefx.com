@@ -18,7 +18,7 @@ My privacy research posts and tweets had more than 25,000,000 impressions. The g
 
 If you write a story about any of those posts, make sure to read the original blog post linked, and feel free to use any of the images and videos provided on [krausefx.com](https://krausefx.com), as long as you reference the original blog post, including my name.
 
-If you need any additional resources, or have any follow-up questions that are not covered by the blog post, feel free to reach out to me directly, either on [Twitter](https://twitter.com/KrauseFx) or via [email](/about).
+If you need any additional resources, or have any follow-up questions that are not covered by the blog post, feel free to reach out to me directly via [email](/about).
 
 ----
 
