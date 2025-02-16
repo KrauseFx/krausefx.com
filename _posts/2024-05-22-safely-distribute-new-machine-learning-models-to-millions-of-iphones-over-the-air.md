@@ -22,8 +22,6 @@ meta: {}
 image: /assets/posts/ios-ml/header-2.jpg
 ---
 
-<img src="https://krausefx.com/assets/posts/ios-ml/header-2.jpg">
-
 **Note:** This is a cross-post of the original publication on [contextsdk.com](https://contextsdk.com/blog/safely-distribute-new-machine-learning-models-to-millions-of-iphones-over-the-air).
 
 This is the second blog post covering various machine learning (ML)
