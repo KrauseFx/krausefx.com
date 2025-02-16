@@ -24,8 +24,6 @@ meta: {}
 image: /assets/posts/ios-ml/header-3.jpg
 ---
 
-<img src="https://krausefx.com/assets/posts/ios-ml/header-3.jpg">
-
 **Note:** This is a cross-post of the original publication on [contextsdk.com](https://contextsdk.com/blog/how-to-automatically-manage-monitor-rollout-new-machine-learning-models-across-your-ios-app-user-base).
 
 This is the third post of our machine learning (ML) for iOS apps series. Be sure to read [part 1](https://krausefx.com/blog/how-to-train-your-first-machine-learning-model-and-run-it-inside-your-ios-app-via-coreml) and [part 2](https://krausefx.com/blog/safely-distribute-new-machine-learning-models-to-millions-of-iphones-over-the-air) first. So far we've received incredible positive feedback. We always read about the latest advancements in the space of Machine Learning and Artificial Intelligence, but at the same time, we mostly use external APIs that abstract out the ML aspect, without us knowing what’s happening under the hood. This blog post series helps us fully understand the basic concepts of how a model comes to be, how it’s maintained and improved, and how to leverage it in real-life applications
