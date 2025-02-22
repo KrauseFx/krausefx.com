@@ -66,6 +66,8 @@ private struct SaveableCustomModelInfo: Codable {
 * **randomUpsellChance:** That’s the value we described above to help us prevent data blind spots. As we monitor our incoming data, we can remotely change this value to fit our current requirements  
 * **Other model metadata:** We use this to include more details on what exact type of data the model requires as inputs
 
+<!--more-->
+
 ### Model Inputs
 
 At ContextSDK, we generate and use more than 180 on-device signals to evaluate how good a moment is to show a certain type of content. With machine learning for this use-case, you don’t want a model to have 180 inputs, as training such a model would require enormous amounts of data, as the training classifier wouldn’t know which columns to start with. Without going into too much Data Science details, you’d want the ratio between columns (inputs) and rows (data entries) to meet certain requirements. 

@@ -98,6 +98,8 @@ latest model, here is an example response:
 The above example is a little simplified, and we’re using the model’s
 file name as our version to identify each model.
 
+<!--more-->
+
 You’ll also need to consider which app version is supported. In our
 case, a new ContextSDK version may implement additional signals that are
 used as part of our model. Therefore we provide the SDK version as part
