@@ -19,7 +19,6 @@ status: publish
 type: post
 published: true
 meta: {}
-image: /assets/posts/ios-ml/header-2.jpg
 ---
 
 **Note:** This is a cross-post of the original publication on [contextsdk.com](https://contextsdk.com/blog/safely-distribute-new-machine-learning-models-to-millions-of-iphones-over-the-air).

@@ -21,7 +21,6 @@ status: publish
 type: post
 published: true
 meta: {}
-image: /assets/posts/ios-ml/header-3.jpg
 ---
 
 **Note:** This is a cross-post of the original publication on [contextsdk.com](https://contextsdk.com/blog/how-to-automatically-manage-monitor-rollout-new-machine-learning-models-across-your-ios-app-user-base).
