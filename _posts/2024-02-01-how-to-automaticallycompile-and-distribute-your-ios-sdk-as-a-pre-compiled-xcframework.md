@@ -89,6 +89,8 @@ Editing a ContextSDK source file (e.g. `Context.swift`) will then immediately be
 
 The requirement for commercial SDKs is often that its source code isn’t accessible to its user. To do that, you need to pre-compile your SDK into an `.xcframework` static binary, which can then be used by your customers.
 
+<!--more-->
+
 Thanks to the excellent [cocoapods-pack](https://github.com/square/cocoapods-pack) project, started by [Dimitris](https://twitter.com/dnkoutso) by Square, it’s easily possible to compile your SDK for distribution to your customers. After installing the gem, you can use the following command:
 
 ```

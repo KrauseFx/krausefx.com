@@ -138,7 +138,9 @@ model is.
 
 In the screenshot above, we’re only using test data as part of this blog
 series. If you’re interested in how to interpret and evaluate the
-classification report, check [out this guide](https://medium.com/@chanakapinfo/classification-report-explained-precision-recall-accuracy-macro-average-and-weighted-average-8cd358ee2f8a)).
+classification report, check [out this guide](https://medium.com/@chanakapinfo/classification-report-explained-precision-recall-accuracy-macro-average-and-weighted-average-8cd358ee2f8a).
+
+<!--more-->
 
 ## Step 5: Export your model into a CoreML file
 
