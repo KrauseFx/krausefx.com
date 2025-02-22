@@ -15,7 +15,6 @@ status: publish
 type: post
 published: true
 meta: {}
-image: /assets/posts/ios-ml/header-1.jpg
 ---
 
 **Note:** This is a cross-post of the original publication on [contextsdk.com](https://contextsdk.com/blog/how-to-train-your-first-machine-learning-model-and-run-it-inside-your-ios-app-via-coreml).
