@@ -31,13 +31,13 @@ Each country has their own real estate platforms. In the US, the listing's metad
 
 In Austria, we mainly have willhaben.at, immowelt.at, immobilienscout24.at, all of which have no publicly available API.
 
-The first step was to setup email alerts on each platform, with our search criteria. Each day, we'd be getting an email with all the new listings
+The first step was to setup email alerts on each platform, with our search criteria. Each day, we got emails with all the new listings
 
 <img src="/assets/posts/immo/EmailNewsletter.png" alt="Email Newsletter of willhaben.at" width="400px" />
 
 <br />
 
-## The Problems
+## The problems
 
 Using the above approach we quickly got overwhelmed with keeping track of the listings, and finding the relevant information. Below are the main problems we encountered:
 
@@ -45,7 +45,7 @@ Using the above approach we quickly got overwhelmed with keeping track of the li
 
 Many listings were posted on as duplicates on multiple platforms, and we had to remember which ones we've already looked at. Once we investigated a listing, there was no good way to add notes.
 
-### Bla bla from real estate agents
+### Marketing fluff from real estate agents
 
 Most listings had a lot of unnecessary text, and it took a lot of time to find the relevant information. 
 
@@ -90,11 +90,11 @@ The reason for this is that the real estate agents want you to first sign a cont
 
 Since we currently live in Vienna, but are looking for a lot around 45mins away by car, it'd have been impossible to schedule a separate appointment for each lot. Even if we were to stack them together, it'd be a stressful hassle.
 
-Also, a good majority of the lots we wanted to visit were in villages we've never been to before. Hence, just visiting the village may already be enough to potentially already rule out the lot.
+Also, a good majority of the lots we wanted to visit were in villages we've never been to before. So just visiting the village may already be enough to potentially already rule out the lot.
 
 Often, as soon as you arrive at the lot, you'll immediately notice a major drawback—like a distant highway that's still audible, a large power line, a busy road, or a steep slope.
 
-Hence if you book an appointment with the real estate agent, you and the agent will have to spend the time driving there, just for you to immediately rule it out a few seconds into the visit. Also, the information you get from the agent is usually more limited when it comes to empty lots compared to houses or condos.
+Hence, if we booked an appointment with the real estate agent, we and the agent would have had to spend the time driving there, just for you to immediately rule it out a few seconds into the visit. Also, the information you get from the agent is usually more limited when it comes to empty lots compared to houses or condos.
 
 ## The solution
 
@@ -116,15 +116,15 @@ We quickly found [Airtable](https://airtable.com/) to check all the boxes (Map V
 
 <img src="/assets/posts/immo/AirtableOverview.png" alt="Airtable" />
 
-### A simple Telegram Bot
+### A simple Telegram bot
 
-Whenever we received new listings per email, we'd manually go through each one and do a first check on overall vibe, price and village location. Only if we were genuinely interested, we'd want to add it to our Airtable.
+Whenever we received new listings per email, we manually went through each one and do a first check on overall vibe, price and village location. Only if we were genuinely interested, we wanted to add it to our Airtable.
 
 So I wrote a simple Telegram bot to which we could send a link to a listing and it'd process it for us.
 
 ### A way to store a copy of the listings and its images
 
-The simplest and most straight-forward way to store a copy of the listings was to use a headless browser to store access the listing's description and its images. For that, I simply used the [ferrum](https://github.com/rubycdp/ferrum) Ruby gem, but any similar tech would work. First, we open the page and prepare the website for a screenshot:
+The simplest and most straightforward way to keep a copy of the listings was to use a headless browser to access the listing’s description and its images.. For that, I simply used the [ferrum](https://github.com/rubycdp/ferrum) Ruby gem, but any similar tech would work. First, we open the page and prepare the website for a screenshot:
 
 <!--more-->
 
@@ -144,7 +144,7 @@ elsif browser.current_url.include?("immobilienscout24.at")
 end
 ```
 
-Once the website is ready, we'd just take a screenshot of the full page, and save the HTML to have access to it later:
+Once the website is ready, we just took a screenshot of the full page, and save the HTML to have access to it later:
 
 ```ruby
 # Take a screenshot of the full page
@@ -171,7 +171,7 @@ end
 
 One of the main problems with the listings was the amount of irrelevant text, and being able to find the information you care about, like noise levels, building regulations, etc.
 
-Hence, we simply prepare a list of questions we'll ask AI to answer for us, based on the listing's description:
+Hence, we simply prepared a list of questions we'll ask AI to answer for us, based on the listing's description:
 
 ```ruby
 generic_context = "You are helping a customer search for a property. The customer has shown you a listing for a property they want to buy. You want to help them find the most important information about this property. For each bullet point, please use the specified JSON key. Please answer the following questions:"
@@ -231,13 +231,13 @@ Turns out, for around 80% for the listings I was able to find the exact address 
 
 **Using [geoland.at](https://www.geoland.at/)**
 
-Of course this is Austria specific, but I could imagine other countries will have similar systems in place. I noticed many listings had a map that looks like this:
+This is approach is Austria specific, but I could imagine other countries will have similar systems in place. I noticed many listings had a map that looks like this:
 
 <img src="/assets/posts/immo/map1.webp" width="400" />
 
 There are no street names, street numbers or river names. But you can see some numbers printed on each lot. Turns out, those are the "Grundstücksnummern" (lot numbers). The number tied together with the village name is unique, so you'll be able to find that area of the village within a minute.
 
-Now you still may not know which of the lots is the one that's available for sales, as usually it's not marked on the map. But by combining infos from the other photos, usually you can easily manually find the right one (also usually the one without a house on it), and then infer the address from that.
+Now you still may not know which of the lots is the one that's available for sales, as usually it's not marked on the map. But by combining information from the other photos, usually you can easily manually find the right one (also usually the one without a house on it), and then infer the address from that.
 
 **By analysing the angles of the roads and rivers**
 
@@ -251,7 +251,7 @@ The only orientation I had was the river. This village had a few rivers, but onl
 
 **Requesting the address from the real estate agent**
 
-As the last resort, we'd contact the real estate agent and ask for the address, which required us to sign a contract with them. 
+As the last resort, we contacted the real estate agent and ask for the address, which required us to sign a contract with them. 
 
 I want to emphasize: this system isn't about avoiding real estate agents, but optimizing our search efficiency (like getting critical details same-day, and not having to jump on a call). For any property that passed our vetting, we contacted the agent and went through the purchase process as usual.
 
@@ -259,13 +259,13 @@ I want to emphasize: this system isn't about avoiding real estate agents, but op
 
 Once the address was manually entered, the Ruby script would pick up that info, and calculate the commute times to a pre-defined list of places using the Google Maps API. This part of the code is mostly boilerplate to interact with the API, and parse its responses.
 
-For each destination we were interested in, we'd calculate the commute time by car, bike, public transit, and by foot. 
+For each destination we were interested in, we calculated the commute time by car, bike, public transit, and by foot. 
 
 One key aspect that I was able to solve was the "getting to the train station" part. In most cases, we want to be able to take public transit, but with Google Maps it's an "all or nothing", as in, you either use public transit for the whole route, or you don't.
 
 <img src="/assets/posts/immo/commute-time.png" />
 
-More realistically, we'd want to drive to the train station (either by bike or car), and then take the train from there. 
+More realistically, we wanted to drive to the train station (either by bike or car), and then take the train from there. 
 
 The code below shows a simple way I was able to achieve this. I'm well aware that this may not work for all the cases, but it worked well for all the 55 places I used it for.
 
@@ -290,17 +290,17 @@ end
 
 ### A way to visit the lots without an appointment
 
-Once we had a list of around 15 lots we were interested in, we'd plan a day to visit them all. Because we have the exact address, there was no need for an appointment.
+Once we had a list of around 15 lots we were interested in, we planned a day to visit them all. Because we have the exact address, there was no need for an appointment.
 
 To find the most efficient route I used the [RouteXL](https://www.routexl.com/). You can upload a list of addresses you need to visit, and define precise rules, and it will calculate the most (fuel & time) efficient route, which you can directly import to Google Maps for navigation.
 
 <img src="/assets/posts/immo/routexl.png" />
 
-While driving to the next stop, my fiancée would read the summary notes from the Airtable app, so we'd already know the price, description, size and other characteristics of the lot by the time we arrive.
+While driving to the next stop, my fiancée read the summary notes from the Airtable app, so we already knew the price, description, size and other characteristics of the lot by the time we arrive.
 
 This approach was a huge time saver for us. Around 75% of the lots we could immediately rule out as we arrived. Sometimes there was a loud road, a steep slope, a power line, a noisy factory nearby, or most importantly: it just didn't feel right. There were huge differences in \*vibes\* when you stand in front of a lot.
 
-Of course we always respected property boundaries - it was completely sufficient to stand in front of the lot, and walk around the area a bit to get a very clear picture.
+We always respected property boundaries - it was completely sufficient to stand in front of the lot, and walk around the area a bit to get a very clear picture.
 
 ## Conclusion
 
