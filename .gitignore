@@ -1,6 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
-.DS_STORE
+.DS_Store
 .tweet-cache
 /.jekyll-cache
