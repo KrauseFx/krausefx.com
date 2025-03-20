@@ -206,6 +206,10 @@ new_entry = MyEntry.create(create_hash)
 
 For the screenshots, you'll need some additionaly boilerplate code to first download, and then upload the images to a temporary S3 bucket, and then to Airtable using the Airtable API.
 
+Below you can see the beautifully structured data in Airtable (in German), already including the public transit times:
+
+<img src="/assets/posts/immo/AirtableEntry.png" height="500" alt="Airtable Entry" style="border: 1px solid #ccc; margin: 10px;" />
+
 ### A way to find the address
 
 The real estate agents usually actively blur any street names or other indicators if there is a map in the listing. There is likely no good automated way to do this. Since this project was aimed at only actually parsing the listings I was already interested in, I only had a total of 55 listings to manually find the address for. 
@@ -222,7 +226,7 @@ There are no street names, street numbers or river names. But you can see some n
 
 **Variant B: By analysing the angles of the roads and rivers**
 
-<img src="/assets/posts/immo/map2.jpeg" width="500" />
+<img src="/assets/posts/immo/map2.jpeg" width="350" />
 
 The above map was a tricky one: It's zoomed in so much that you can't really see any surroundings. Also, the real estate agent hides the lot numbers, and switched to a terrain view.
 
