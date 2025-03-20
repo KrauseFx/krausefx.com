@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How we used LLMs to help us find the perfect piece of land for our future home'
+title: 'How we used LLMs to help us find the perfect piece of land for our home'
 categories: []
 tags:
 - ai
@@ -27,13 +27,14 @@ My fiancée and I were on the lookout for a piece of land to build our future ho
 
 ## How we started the search
 
+<img align="right" src="/assets/posts/immo/EmailNewsletter.png" alt="Email Newsletter of willhaben.at" width="300px" />
+
 Each country has their own real estate platforms. In the US, the listing's metadata is usually public and well-structured, allowing for more advanced searches, and more transparency in general.
 
 In Austria, we mainly have willhaben.at, immowelt.at, immobilienscout24.at, all of which have no publicly available API.
 
 The first step was to setup email alerts on each platform, with our search criteria. Each day, we got emails with all the new listings
 
-<img src="/assets/posts/immo/EmailNewsletter.png" alt="Email Newsletter of willhaben.at" width="400px" />
 
 <br />
 
@@ -43,17 +44,17 @@ Using the above approach we quickly got overwhelmed with keeping track of the li
 
 ### Remembering which listings we've already seen
 
-Many listings were posted on as duplicates on multiple platforms, and we had to remember which ones we've already looked at. Once we investigated a listing, there was no good way to add notes.
+Many listings were posted on multiple platforms as duplicates, and we had to remember which ones we've already looked at. Once we investigated a listing, there was no good way to add notes.
 
 ### Marketing fluff from real estate agents
 
 Most listings had a lot of unnecessary text, and it took a lot of time to find the relevant information. 
 
-> Eine Kindheit wie im Bilderbuch. Am Wochenende aufs Radl schwingen und direkt von zu Hause die Natur entdecken, alte Donau, Lobau, Donauinsel, alles ums Eck. Blumig auch die Straßennamen: Zinienweg, Fuchsienweg, Palargonienweg, Oleanderweg, Azaleengasse, Ginsterweg und AGAVENWEG …. duftiger geht’s wohl nicht.
+> [DE] Eine Kindheit wie im Bilderbuch. Am Wochenende aufs Radl schwingen und direkt von zu Hause die Natur entdecken, alte Donau, Lobau, Donauinsel, alles ums Eck. Blumig auch die Straßennamen: Zinienweg, Fuchsienweg, Palargonienweg, Oleanderweg, Azaleengasse, Ginsterweg und AGAVENWEG …. duftiger geht’s wohl nicht.
 
 Which loosely translates to:
 
-> Experience a picture-perfect childhood! Imagine weekends spent effortlessly hopping on your bike to explore nature's wonders right from your doorstep. With the enchanting Old Danube just a stone's throw away, adventure is always within reach. Even the street names are a floral delight: Zinienweg, Fuchsienweg, Oleanderweg, Azaleengasse, Ginsterweg, and the exquisite AGAVENWEG... can you imagine a more fragrant and idyllic setting
+> [EN] Experience a picture-perfect childhood! Imagine weekends spent effortlessly hopping on your bike to explore nature's wonders right from your doorstep. With the enchanting Old Danube just a stone's throw away, adventure is always within reach. Even the street names are a floral delight: Zinienweg, Fuchsienweg, Oleanderweg, Azaleengasse, Ginsterweg, and the exquisite AGAVENWEG... can you imagine a more fragrant and idyllic setting
 
 Although the real estate agent's poetic flair is impressive, we're more interested in practical details such as building regulations, noise level and how steep the lot is.
 
@@ -61,10 +62,6 @@ Although the real estate agent's poetic flair is impressive, we're more interest
 
 In Austria, the listings usually show you the distances like this:
 
-> **Health**
-> - Doctor <1,500 m
-> - Pharmacy <2,500 m
-> 
 > **Children / Schools**
 > - Kindergarten <500 m
 > - School <1,500 m
@@ -73,12 +70,7 @@ In Austria, the listings usually show you the distances like this:
 > - Supermarket <1,000 m
 > - Bakery <2,500 m
 
-However I personally get very limited information from this. Instead, we have our own list of POIs that we care about, for example the distance to relatives and to our workplace. Also, just showing the air distance is not helpful, as it's really about the info on:
-
-- How long does it take to get there with a car?
-- How long does it take to get there with a bike? 
-- How long does it take to get there with public transit?
-- How long does it take to get there by foot?
+However I personally get very limited information from this. Instead, we have our own list of POIs that we care about, for example the distance to relatives and to our workplace. Also, just showing the air distance is not helpful, as it's really about how long it takes to get somewhere by car, bike, public transit, or by foot.
 
 ### Finding the address
 
@@ -88,13 +80,9 @@ The reason for this is that the real estate agents want you to first sign a cont
 
 ### Visiting the lots
 
-Since we currently live in Vienna, but are looking for a lot around 45mins away by car, it'd have been impossible to schedule a separate appointment for each lot. Even if we were to stack them together, it'd be a stressful hassle.
+Living in Vienna but searching for plots about 45 minutes away made scheduling viewings a challenge. Even if we clustered appointments, the process was still time-intensive and stressful. In many cases, just seeing the village was often enough to eliminate a lot: highway noise, noticeable power lines, or a steep slope could instantly rule it out. 
 
-Also, a good majority of the lots we wanted to visit were in villages we've never been to before. So just visiting the village may already be enough to potentially already rule out the lot.
-
-Often, as soon as you arrive at the lot, you'll immediately notice a major drawback—like a distant highway that's still audible, a large power line, a busy road, or a steep slope.
-
-Hence, if we booked an appointment with the real estate agent, we and the agent would have had to spend the time driving there, just for you to immediately rule it out a few seconds into the visit. Also, the information you get from the agent is usually more limited when it comes to empty lots compared to houses or condos.
+Additionally, real estate agents tend to have limited information on empty lots—especially compared to houses or condos—so arranging and driving to each appointment wasn’t efficient. We needed a way to explore and filter potential locations before committing to in-person visits.
 
 ## The solution
 
@@ -130,14 +118,11 @@ The simplest and most straightforward way to keep a copy of the listings was to 
 
 ```ruby
 browser = Ferrum::Browser.new
-
-# Open the listing
-browser.goto("https://immowelt.at/expose/123456789")
+browser.goto("https://immowelt.at/expose/123456789") # Open the listing
 
 # Prepare the website: Depending on the page, you might want to remove some elements to see the full content
 if browser.current_url.include?("immowelt.at")
   browser.execute("document.getElementById('usercentrics-root').remove()") rescue nil
-  browser.execute("document.getElementById('uc-overflow-style').remove()") rescue nil
   browser.execute("document.querySelectorAll('.link--read-more').forEach(function(el) { el.click() })") # Press all links with the class ".link--read-more", trigger via js as it doesn't work with the driver
 elsif browser.current_url.include?("immobilienscout24.at")
   browser.execute("document.querySelectorAll('button').forEach(function(el) { if (el.innerText.includes('Beschreibung lesen')) { el.click() } })")
@@ -223,13 +208,11 @@ For the screenshots, you'll need some additionaly boilerplate code to first down
 
 ### A way to find the address
 
-There is likely no good automated way to do this. Since this project was aimed at only actually parsing the listings I was already interested in, I only had a total of 55 listings to manually find the address for. 
-
-How do you find the address for a listing when you only have the village name and some photos? The real estate agents usually actively try to hide the details, so if there is a map in the listing, they'd blur out the street names or other indicators.
+The real estate agents usually actively blur any street names or other indicators if there is a map in the listing. There is likely no good automated way to do this. Since this project was aimed at only actually parsing the listings I was already interested in, I only had a total of 55 listings to manually find the address for. 
 
 Turns out, for around 80% for the listings I was able to find the exact address using one of the following approaches: 
 
-**Using [geoland.at](https://www.geoland.at/)**
+**Variant A: Using [geoland.at](https://www.geoland.at/)**
 
 This is approach is Austria specific, but I could imagine other countries will have similar systems in place. I noticed many listings had a map that looks like this:
 
@@ -237,21 +220,19 @@ This is approach is Austria specific, but I could imagine other countries will h
 
 There are no street names, street numbers or river names. But you can see some numbers printed on each lot. Turns out, those are the "Grundstücksnummern" (lot numbers). The number tied together with the village name is unique, so you'll be able to find that area of the village within a minute.
 
-Now you still may not know which of the lots is the one that's available for sales, as usually it's not marked on the map. But by combining information from the other photos, usually you can easily manually find the right one (also usually the one without a house on it), and then infer the address from that.
-
-**By analysing the angles of the roads and rivers**
+**Variant B: By analysing the angles of the roads and rivers**
 
 <img src="/assets/posts/immo/map2.jpeg" width="500" />
 
-The above map was a tricky one: It's zoomed in so much that you can't really see any surroundings. Also, the real estate agent hides the lot numbers, and switched from a traditional map view to a terrain view.
+The above map was a tricky one: It's zoomed in so much that you can't really see any surroundings. Also, the real estate agent hides the lot numbers, and switched to a terrain view.
 
 The only orientation I had was the river. This village had a few rivers, but only 2 of them went in roughly the direction shown. So I went through those rivers manually to see where the form of the river matches the map, together with the light green background in the center, and the gray outsides. After around 30mins, I was able to find the exact spot (left: listing, right: my map)
 
 <img src="/assets/posts/immo/map2-solved.jpeg" />
 
-**Requesting the address from the real estate agent**
+**Variant C: Requesting the address from the real estate agent**
 
-As the last resort, we contacted the real estate agent and ask for the address, which required us to sign a contract with them. 
+As the last resort, we contacted the real estate agent and ask for the address.
 
 I want to emphasize: this system isn't about avoiding real estate agents, but optimizing our search efficiency (like getting critical details same-day, and not having to jump on a call). For any property that passed our vetting, we contacted the agent and went through the purchase process as usual.
 
@@ -298,7 +279,7 @@ To find the most efficient route I used the [RouteXL](https://www.routexl.com/).
 
 While driving to the next stop, my fiancée read the summary notes from the Airtable app, so we already knew the price, description, size and other characteristics of the lot by the time we arrive.
 
-This approach was a huge time saver for us. Around 75% of the lots we could immediately rule out as we arrived. Sometimes there was a loud road, a steep slope, a power line, a noisy factory nearby, or most importantly: it just didn't feel right. There were huge differences in \*vibes\* when you stand in front of a lot.
+This approach was a huge time saver for us. Around 75% of the lots we could immediately rule out as we arrived. Sometimes there was a loud road, a steep slope, a power line, a noisy factory nearby, or most importantly: it just didn't feel right. There were huge differences in *vibes* when you stand in front of a lot.
 
 We always respected property boundaries - it was completely sufficient to stand in front of the lot, and walk around the area a bit to get a very clear picture.
 
