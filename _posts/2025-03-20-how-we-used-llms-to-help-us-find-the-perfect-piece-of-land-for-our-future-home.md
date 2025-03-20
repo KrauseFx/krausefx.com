@@ -27,7 +27,7 @@ My fiancée and I were on the lookout for a piece of land to build our future ho
 
 ## How we started the search
 
-<img align="right" src="/assets/posts/immo/EmailNewsletter.png" alt="Email Newsletter of willhaben.at" width="300px" />
+<img align="right" src="/assets/posts/immo/EmailNewsletter.png" alt="Email Newsletter of willhaben.at" width="400px" />
 
 Each country has their own real estate platforms. In the US, the listing's metadata is usually public and well-structured, allowing for more advanced searches, and more transparency in general.
 
