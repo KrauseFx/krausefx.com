@@ -106,8 +106,6 @@ meta: {}
 
 <hr style="margin-bottom:20px" />
 
----
-
 **Please note** that this article is outdated (August 2022). Importantly, the article does not claim that any data logging or transmission is actively occurring. Instead, it highlights the potential technical capabilities of in-app browsers to inject JavaScript code, which could theoretically be used to monitor user interactions.
 
 ---
