@@ -86,6 +86,11 @@ $no-sidebar: "800px";
   line-height: 20px;
 }
 
+.hand-crafted {
+  color: rgba(68, 68, 68, 0.7);
+  font-size: 13px;
+}
+
 /* Hide sidebar on mobile devices */
 @media screen and (min-width: $no-sidebar) {
   #sidebar {
