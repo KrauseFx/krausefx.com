@@ -58,7 +58,7 @@ meta: {}
 
   <p><b>Open Source</b></p>
 
-  <p>Besides <a href="https://fastlane.tools" target="_blank">fastlane</a>, I'm involved in many open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a> & <a href="https://instapipe.net">instapipe</a>.</p>
+  <p>Besides <a href="https://fastlane.tools" target="_blank">fastlane</a>, I'm involved in various open source projects, like <a href="https://github.com/danger/danger" target="_blank">danger</a>.</p>
 
   <p>I'm the founder of <a href="https://ios-factor.com" target="_blank">iOS-factor.com</a>, an open source best-practices guide on how to build and ship high-quality iOS apps.</p>
 
@@ -67,7 +67,7 @@ meta: {}
   <p>I spoke at various conferences around the world, most recently Madrid, Tel Aviv, Oslo, Tokyo, Melbourne, Bangalore, Vienna, Berlin and San Francisco. For speaking engagements <a href="mailto:contact@krausefx.com">get in touch with me</a>.</p>
 
   <p><b>Past employers and other projects</b></p>
-  <p>Google, Twitter, Root Insurances, Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a>, <a href="https://howisfelix.today">howisFelix.today</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
+  <p>Google, Twitter, Root Insurances, Product Hunt, MindNode, Wunderlist, Bikemap, <a href="https://github.com/xcpretty/xcode-install">xcode-install</a> amongst others. Check out the <a href="/projects">Projects overview</a> for more details.</p>
 
   <p>I moved to a new place <a href="/blog/going-nomad">every month</a> without having an apartment for 2.5 years</p>
 
