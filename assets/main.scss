@@ -567,3 +567,13 @@ display: grid;
 text-align: center;
 }
 
+/* Fix for social media icons - make Instagram match other icons */
+.icon--instagram > svg path {
+  fill: #828282 !important;
+}
+
+/* Ensure Twitter/Bluesky icon stays properly grey */
+.icon--twitter > svg path {
+  fill: #828282 !important;
+}
+
