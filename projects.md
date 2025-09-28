@@ -67,8 +67,9 @@ For more details check out my [about page](/about).
     margin-bottom: 16px;
     margin-right: 10px;
     padding: 20px;
+    padding-bottom: 30px;
     width: calc(50% - 40px - 20px);
-    height: 130px;
+    min-height: 130px;
     display: inline-block;
     border-radius: 3px;
     vertical-align: top;
@@ -78,13 +79,15 @@ For more details check out my [about page](/about).
   @media screen and (max-width: 700px) {
     .fx-project {
       width: calc(100% - 40px);
-      height: 140px;
+      min-height: 140px;
+      padding-bottom: 60px;
     }
   }
 
   @media screen and (min-width: 700px) and (max-width: 1100px) {
     .fx-project {
-      height: 180px;
+      min-height: 180px;
+      padding-bottom: 60px;
     }
   }
 
