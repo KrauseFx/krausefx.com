@@ -82,9 +82,6 @@ meta: {}
 
 <h2>Speaking</h2>
 <div class="imageCarousel">
-  <a href="/assets/speaking/FelixKrause4.jpg" target="_blank">
-    <img src="/assets/speaking/FelixKrause4.jpg" alt="Felix Krause (KrauseFx) speaking at conference at trySwift in New York" />
-  </a>
   <a href="/assets/speaking/FelixKrause2.jpg" target="_blank">
     <img src="/assets/speaking/FelixKrause2.jpg" alt="Felix Krause (KrauseFx) speaking at conference at Facebook Mobile at Scale in Tel Aviv, Israel" />
   </a>
