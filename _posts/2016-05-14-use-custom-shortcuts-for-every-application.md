@@ -11,6 +11,8 @@ meta: {}
 
 One of the most common activities when using a computer is switching between apps and their windows. Unfortunately macOS is optimised for casual computer users (Mission Control, using the mouse, etc.).
 
+> **2026 Update:** While this post originally described my setup using BetterTouchTool, I've since switched to [Raycast](https://www.raycast.com/) for managing my application shortcuts. See the [update at the bottom](#2026-update-using-raycast) for details on my current setup.
+
 ### Using the dock
 
       
@@ -56,3 +58,11 @@ Some tricks:
 * Ctrl + CMD + Arrow: Move window to next monitor
 
 For even faster switches, change the BTT trigger to use `"Trigger on Key Down"`.
+
+## 2026 Update: Using Raycast
+
+Nowadays I'm a heavy user of [Raycast](https://www.raycast.com/). I've migrated all my custom shortcuts to Raycast directly, which has the added benefit of helping me learn and remember the shortcuts better. Raycast shows the keyboard shortcut right inline with each command.
+
+![Raycast showing Activity Monitor with inline shortcut display](/assets/posts/custom-shortcuts/raycast-activity-monitor.png)
+
+I also recently added a shortcut for `Ctrl + Alt + Del` to open Activity Monitor - easy to use from very old muscle memory.
