@@ -45,7 +45,7 @@ defaults:
 tagline: "Personal website and blog of Felix Krause"
 twitter:
   username: KrauseFx
-  card: summary
+  card: summary_large_image
 social:
   name: Felix Krause
   links:
