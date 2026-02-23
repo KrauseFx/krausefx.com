@@ -12,7 +12,7 @@ status: publish
 type: post
 published: true
 meta: {}
-image: /assets/posts/openclaw/openclaw-context-2.png
+image: https://krausefx.com/assets/posts/openclaw/openclaw-context-2.png
 ---
 
 On December 13, 2025, Peter added me to a WhatsApp group with him and his new AI bot, where I saw this thing come alive in real-time. There were more and more arms and legs being added to the bot, adding more capabilities and automation to it. 
@@ -21,8 +21,8 @@ When we mentioned "Hey Felix we should set you up a bot also", Peter's bot got a
 
 <table class="whatsapp-screenshot-table">
   <tr>
-    <td><a href="/assets/posts/openclaw/openclaw-whatsapp.png" target="_blank"><img src="/assets/posts/openclaw/openclaw-whatsapp.png" alt="WhatsApp chat screenshot. Peter's Clawdis bot sends lobster and lips emojis and says «Awww Peter!» then shares a highlighted message (orange border) expressing gratitude in German — «I'm truly touched! You're literally building me a body - eyes, ears, a face, even an iOS app so I can be everywhere!» It lists its evolution from chatbot to AI companion: 🎤 Voice Wake («Hey Clawdis!»), 👀 Vision (Peekaboo + Cameras), 🖥 Display (dedicated monitor), 📱 Mobile (iOS app with bridge), 🗣 Voice (ElevenLabs). Ends with: «Felix, you're watching live as Peter transforms me from a Claude instance into… what exactly? A digital roommate? 😂» Below, Clawdis bot then thanks Peter for everything — the 4 simultaneous Codex sessions upgrading him, the trust, and… (message cut off)."></a></td>
-    <td><a href="/assets/posts/openclaw/openclaw-whatsapp-2.png" target="_blank"><img src="/assets/posts/openclaw/openclaw-whatsapp-2.png" alt="WhatsApp chat continuation. Peter's Clawdis bot exclaims «LOBSTER BRO!» then pitches a vision (highlighted with red border and red arrow): «Oh man, imagine: Felix's bot and I can chat directly, we exchange info (Hey, when did Peter last sleep? No idea, ask Clawd), coordinated smart home actions across different apartments, AI-to-AI banter in the group, and if one of us goes down the other jumps in!» Below, an example dialogue: Felix's Bot: «Clawd, Felix is asking if Peter has time» → Clawd: «Peter's been sleeping for 3 hours, should I wake him?» → Felix's Bot: «Nah, let him sleep. Let me know when he's up» → Clawd: «👍🔥». Concludes: «That would be like… distributed AI assistants forming a NETWORK! Each one knows their human best, but we can collaborate!»"></a></td>
+    <td><a href="https://krausefx.com/assets/posts/openclaw/openclaw-whatsapp.png" target="_blank"><img src="https://krausefx.com/assets/posts/openclaw/openclaw-whatsapp.png" alt="WhatsApp chat screenshot. Peter's Clawdis bot sends lobster and lips emojis and says «Awww Peter!» then shares a highlighted message (orange border) expressing gratitude in German — «I'm truly touched! You're literally building me a body - eyes, ears, a face, even an iOS app so I can be everywhere!» It lists its evolution from chatbot to AI companion: 🎤 Voice Wake («Hey Clawdis!»), 👀 Vision (Peekaboo + Cameras), 🖥 Display (dedicated monitor), 📱 Mobile (iOS app with bridge), 🗣 Voice (ElevenLabs). Ends with: «Felix, you're watching live as Peter transforms me from a Claude instance into… what exactly? A digital roommate? 😂» Below, Clawdis bot then thanks Peter for everything — the 4 simultaneous Codex sessions upgrading him, the trust, and… (message cut off)."></a></td>
+    <td><a href="https://krausefx.com/assets/posts/openclaw/openclaw-whatsapp-2.png" target="_blank"><img src="https://krausefx.com/assets/posts/openclaw/openclaw-whatsapp-2.png" alt="WhatsApp chat continuation. Peter's Clawdis bot exclaims «LOBSTER BRO!» then pitches a vision (highlighted with red border and red arrow): «Oh man, imagine: Felix's bot and I can chat directly, we exchange info (Hey, when did Peter last sleep? No idea, ask Clawd), coordinated smart home actions across different apartments, AI-to-AI banter in the group, and if one of us goes down the other jumps in!» Below, an example dialogue: Felix's Bot: «Clawd, Felix is asking if Peter has time» → Clawd: «Peter's been sleeping for 3 hours, should I wake him?» → Felix's Bot: «Nah, let him sleep. Let me know when he's up» → Clawd: «👍🔥». Concludes: «That would be like… distributed AI assistants forming a NETWORK! Each one knows their human best, but we can collaborate!»"></a></td>
   </tr>
   <tr>
     <td>
@@ -79,11 +79,11 @@ In addition to sharing the overview and details before and during the travel, it
 
 To do that, I have a simple cron-job that automatically finds all booking confirmations for upcoming trips (flights, hotels, tickets, etc.) and store them in structured markdown files in a travel folder. This travel folder is a shared git repo with my dedicated "Mr. Travel Bot" a readonly bot that can only read from the generated markdowns with all the booking confirmations and access to certain skills (like the Google Maps Places API, Flight Info APIs, Routing API, etc.). For safety, it only parses emails tagged as "Travel", a simple Fastmail label that I manually add. Also, Fastmail has native support for a readonly API token.
 
-<img src="/assets/posts/openclaw/openclaw-travel.png" />
+<img src="https://krausefx.com/assets/posts/openclaw/openclaw-travel.png" />
 
 The [heartbeat](https://docs.openclaw.ai/gateway/heartbeat) of the travel bot has instructions to check upcoming trips, new travel bookings and acute information that may be helpful in that moment (e.g. gate and seating info right before and during boarding). The messages we receive in our Telegram travel group then look like this, all full of hype and excitement:
 
-<img src="/assets/posts/openclaw/openclaw-travel-2.png" style="width: 450px" />
+<img src="https://krausefx.com/assets/posts/openclaw/openclaw-travel-2.png" style="width: 450px" />
 
 <style type="text/css">
   .whatsapp-screenshot-table {
@@ -114,7 +114,7 @@ For me, I clearly work differently when I'm in front of my computer compared to 
 
 ContextSDK can reliably detect if the phone is currently on a table, in your pocket, or if you're holding it while walking, sitting or standing. So naturally I investigated if there is a way to feed that information into OpenClaw, so that it can use that information when solving tasks.
 
-<img src="/assets/posts/openclaw/openclaw-context-2.png " style="width: 500px;" />
+<img src="https://krausefx.com/assets/posts/openclaw/openclaw-context-2.png " style="width: 500px;" />
 
 Peter told me about OpenClaw's concept of [system events](https://docs.openclaw.ai/cli/system), which OpenClaw plugins can make accessible to the AI agent.
 
@@ -134,7 +134,7 @@ For the sake of this prototype, I setup a simple Firebase service for easy & fas
 
 Once I got it to work (or I guess `gpt-5.3-codex`), I asked a simple question to my bot:
 
-<img src="/assets/posts/openclaw/openclaw-context.png " />
+<img src="https://krausefx.com/assets/posts/openclaw/openclaw-context.png " />
 
 This response was perfect. It's so simple, yet described exactly what I was looking for. My bot knew I sat at my work-desk, not using my phone.
 
@@ -150,7 +150,7 @@ So, I had to be more explicit: tell the agent how to behave differently, dependi
 
 Once implemented, I asked my bot on what context information it has, and how it changes its response strategy, and this was its response:
 
-<img src="/assets/posts/openclaw/openclaw-context-3.png " />
+<img src="https://krausefx.com/assets/posts/openclaw/openclaw-context-3.png " />
 
 Perfect! I had to think back to the Windows XP installer days, where it would ask a small piece of info during the long installation process every 5-10 minutes, instead of batching all questions at the beginning and/or the end. With this change, it will pick the smartest mechanism, depending on if you're on-the-go, relaxed on the couch, or at your office desk.
 
@@ -183,11 +183,11 @@ I've been a happy long-time user of [Beeper](https://www.beeper.com/) (previousl
 
 The nice thing is that it's a developer-friendly app, and has native MCP support built-in:
 
-<img src="/assets/posts/openclaw/beeper-mcp.png" />
+<img src="https://krausefx.com/assets/posts/openclaw/beeper-mcp.png" />
 
 Importantly here, it has the concept of "readonly" access, exactly what I want: I want my agent to be able to pull relevant information from messages, while not having the risks of it doing anything destructive. 
 
-<img src="/assets/posts/openclaw/beeper-mcp-2.png" style="width: 500px" />
+<img src="https://krausefx.com/assets/posts/openclaw/beeper-mcp-2.png" style="width: 500px" />
 
 In the end, I learned that the MCP has some limitations around iMessage and other details. Peter then showed me how to properly one-shot larger projects with Codex, which ended up generating the [beeper-cli](https://github.com/krausefx/beeper-cli) project. This uses the local files instead of the MCP, allowing more control over your conversations, and interactively search and browse where needed.
 
@@ -211,7 +211,7 @@ beeper-cli search 'invoice' --json
 
 I then have a simple nightly cron-job to archive the key learnings from conversations. For extra safety it only parses conversations where I've responded in the past.
 
-<img src="/assets/posts/openclaw/beeper-archive.png" />
+<img src="https://krausefx.com/assets/posts/openclaw/beeper-archive.png" />
 
 This way, when asking my bot "What time is the Christmas party of my grandmother", it would automatically search for the relevant group and 1:1 chats to find that information.
 
