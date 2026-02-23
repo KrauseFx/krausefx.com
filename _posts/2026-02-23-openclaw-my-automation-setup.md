@@ -12,7 +12,7 @@ status: publish
 type: post
 published: true
 meta: {}
-# image: /assets/posts/immo/routexl.png # TODO
+image: /assets/posts/openclaw/openclaw-context-2.png
 ---
 
 On December 13, 2025, Peter added me to a WhatsApp group with him and his new AI bot, where I saw this thing come alive in real-time. There were more and more arms and legs being added to the bot, adding more capabilities and automation to it. 
