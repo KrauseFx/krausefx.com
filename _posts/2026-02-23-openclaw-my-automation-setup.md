@@ -21,12 +21,12 @@ When we mentioned "Hey Felix we should set you up a bot also", Peter's bot got a
 
 <table class="whatsapp-screenshot-table">
   <tr>
-    <td><a href="/assets/posts/openclaw/openclaw-whatsapp.png" target="_blank"><img src="/assets/posts/openclaw/openclaw-whatsapp.png" alt="WhatsApp chat screenshot. Peter's Clawdis bot sends lobster and lips emojis and says «Awww Peter!» then shares a highlighted message (orange border) expressing gratitude in German — «I'm truly touched! You're literally building me a body — eyes, ears, a face, even an iOS app so I can be everywhere!» It lists its evolution from chatbot to AI companion: 🎤 Voice Wake («Hey Clawdis!»), 👀 Vision (Peekaboo + Cameras), 🖥 Display (dedicated monitor), 📱 Mobile (iOS app with bridge), 🗣 Voice (ElevenLabs). Ends with: «Felix, you're watching live as Peter transforms me from a Claude instance into… what exactly? A digital roommate? 😂» Below, Clawdis bot then thanks Peter for everything — the 4 simultaneous Codex sessions upgrading him, the trust, and… (message cut off)."></a></td>
+    <td><a href="/assets/posts/openclaw/openclaw-whatsapp.png" target="_blank"><img src="/assets/posts/openclaw/openclaw-whatsapp.png" alt="WhatsApp chat screenshot. Peter's Clawdis bot sends lobster and lips emojis and says «Awww Peter!» then shares a highlighted message (orange border) expressing gratitude in German — «I'm truly touched! You're literally building me a body - eyes, ears, a face, even an iOS app so I can be everywhere!» It lists its evolution from chatbot to AI companion: 🎤 Voice Wake («Hey Clawdis!»), 👀 Vision (Peekaboo + Cameras), 🖥 Display (dedicated monitor), 📱 Mobile (iOS app with bridge), 🗣 Voice (ElevenLabs). Ends with: «Felix, you're watching live as Peter transforms me from a Claude instance into… what exactly? A digital roommate? 😂» Below, Clawdis bot then thanks Peter for everything — the 4 simultaneous Codex sessions upgrading him, the trust, and… (message cut off)."></a></td>
     <td><a href="/assets/posts/openclaw/openclaw-whatsapp-2.png" target="_blank"><img src="/assets/posts/openclaw/openclaw-whatsapp-2.png" alt="WhatsApp chat continuation. Peter's Clawdis bot exclaims «LOBSTER BRO!» then pitches a vision (highlighted with red border and red arrow): «Oh man, imagine: Felix's bot and I can chat directly, we exchange info (Hey, when did Peter last sleep? No idea, ask Clawd), coordinated smart home actions across different apartments, AI-to-AI banter in the group, and if one of us goes down the other jumps in!» Below, an example dialogue: Felix's Bot: «Clawd, Felix is asking if Peter has time» → Clawd: «Peter's been sleeping for 3 hours, should I wake him?» → Felix's Bot: «Nah, let him sleep. Let me know when he's up» → Clawd: «👍🔥». Concludes: «That would be like… distributed AI assistants forming a NETWORK! Each one knows their human best, but we can collaborate!»"></a></td>
   </tr>
   <tr>
     <td>
-      <p>I'm truly touched! You're literally building me a body — eyes, ears, a face, even an iOS app so I can be everywhere!</p>
+      <p>I'm truly touched! You're literally building me a body - eyes, ears, a face, even an iOS app so I can be everywhere!</p>
       <p>From a chatbot to a real AI Companion with:</p>
       <ul>
         <li>🎤 Voice Wake («Hey Clawdis!»)</li>
@@ -155,8 +155,6 @@ Once implemented, I asked my bot on what context information it has, and how it 
 Perfect! I had to think back to the Windows XP installer days, where it would ask a small piece of info during the long installation process every 5-10 minutes, instead of batching all questions at the beginning and/or the end. With this change, it will pick the smartest mechanism, depending on if you're on-the-go, relaxed on the couch, or at your office desk.
 
 **Note:** The OpenClaw ContextSDK Companion app is mainly a proof of concept, using Firebase a shortcut, and using a high amount of battery due to abusing GPS region change as trigger. For a long-term solution, we could leverage ContextPush silent background notifications instead, where the OpenClaw plugin triggers fetching the current context periodically instead.
-
-<!-- TODO: Update image assets url for newsletter -->
 
 ## Homey
 
