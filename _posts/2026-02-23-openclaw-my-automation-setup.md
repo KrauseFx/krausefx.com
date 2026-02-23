@@ -66,24 +66,24 @@ In this post I want to highlight a few integrations I've setup.
 
 Many people use "booking flights" and "booking hotels" as example use-cases. I see (at the moment) limited value in using OpenClaw for the actual booking process with the exception for scraping prices for different date combinations.
 
-Instead, I want to focus on building a pro-active travel assistent that actively provides me with the exact information I need at a given moment. 
+Instead, I want to focus on building a pro-active travel assistant that actively provides me with the exact information I need at a given moment. 
 
 **Some examples**
 
 - Share high-level overview of each travel day before a trip
-- The evening before your hotel check out, pro-actively send me a message with the checkout time, and any checkout instructions I may need
-- Asks and reminds you of missing bookings. For example, if you're missing a hotel for one night, or it asks if you've already organised an airport transfers and actively shares the prices and paths for public transit and for a typical taxi ride
+- The evening before your hotel check out, proactively send me a message with the checkout time, and any checkout instructions I may need
+- Ask and remind you of missing bookings. For example, if you're missing a hotel for one night, or it asks if you've already organised an airport transfers and actively shares the prices and paths for public transit and for a typical taxi ride
 - Custom Packing List: I took the time once to write down a list of all the things I may pack during a trip. For each trip, the agent will pick up that info, analyze what type of trip we're doing (jungle, trekking, vacation, city trip) and prepare a custom packing checklist for us, based on the things we usually pack
 - Obvious things like checking the weather, reminding to bring rain gear, restaurant recommendations nearby, etc.
 
-Additionally to sharing the overview and details before and during the travel, it also reminds you if you forgot to book something. For example, 
+In addition to sharing the overview and details before and during the travel, it also reminds you if you forgot to book something. For example, 
 
 
 To do that, I have a simple cron-job that automatically finds all booking confirmations for upcoming trips (flights, hotels, tickets, etc.) and store them in structured markdown files in a travel folder. This travel folder is a shared git repo with my dedicated "Mr. Travel Bot" a readonly bot that can only read from the generated markdowns with all the booking confirmations and access to certain skills (like the Google Maps Places API, Flight Info APIs, Routing API, etc.). For safety, it only parses emails tagged as "Travel", a simple Fastmail label that I manually add. Also, Fastmail has native support for a readonly API token.
 
 <img src="/assets/posts/openclaw/openclaw-travel.png" />
 
-The [heartbeat](https://docs.openclaw.ai/gateway/heartbeat) of the travel bot has instructions to check upcoming trips, new travel bookings and accute information that may be helpful in that moment (e.g. gate and seating info right before and during boarding). The messages we receive in our Telegram travel group then look like this, all full of hype and excitement:
+The [heartbeat](https://docs.openclaw.ai/gateway/heartbeat) of the travel bot has instructions to check upcoming trips, new travel bookings and acute information that may be helpful in that moment (e.g. gate and seating info right before and during boarding). The messages we receive in our Telegram travel group then look like this, all full of hype and excitement:
 
 <img src="/assets/posts/openclaw/openclaw-travel-2.png" style="width: 450px" />
 
@@ -114,7 +114,7 @@ Most people use OpenClaw through a messenger app like Telegram or WhatsApp. Thos
 
 For me, I clearly work differently when I'm in front of my computer compared to when I'm on-the-go. Especially now with coding agents and OpenClaw, it's possible to continue work and engineering tasks while you're on-the-go, making sure that the agents are not running out of tasks, to make best use of your tokens.
 
-ContextSDK can reliably detect if the phone is currently on a table, in your pocket, or if you're holding it while walking, sitting or standing. So naturally I investigated if there is a way to feed that information into OpenClaw, so it can use that information when solving tasks.
+ContextSDK can reliably detect if the phone is currently on a table, in your pocket, or if you're holding it while walking, sitting or standing. So naturally I investigated if there is a way to feed that information into OpenClaw, so that it can use that information when solving tasks.
 
 <img src="/assets/posts/openclaw/openclaw-context-2.png " style="width: 500px;" />
 
@@ -122,7 +122,7 @@ Peter told me about OpenClaw's concept of [system events](https://docs.openclaw.
 
 [OpenClaw Plugins](https://docs.openclaw.ai/tools/plugin) are **not** comparable with OpenClaw Agent skills: Most OpenClaw users make heavy use of skills, which are instructions for the agent to do a certain task. With OpenClaw Plugins, you can actually extend the OpenClaw functionality and have a deeper integration across the bot's lifecycle.
 
-iOS is quite strict with background processing, so for this integration I leverage the background location update trigger, so everytime my phone moves, the ContextClaw Companion app gets background time to fetch the current context, and share it with my OpenClaw instance.
+iOS is quite strict with background processing, so for this integration I leverage the background location update trigger, so every time my phone moves, the ContextClaw Companion app gets background time to fetch the current context, and share it with my OpenClaw instance.
 
 OpenClaw has an [official iOS app](https://docs.openclaw.ai/platforms/ios) you can use, however I quickly decided against using it for a variety of reasons:
 
@@ -134,7 +134,7 @@ OpenClaw has an [official iOS app](https://docs.openclaw.ai/platforms/ios) you c
 
 For the sake of this prototype, I setup a simple Firebase service for easy & fast real-time sharing of the current context with my OpenClaw agent, without the need to use the gateway. The ContextClaw Firebase plugin has a simple Firebase real-time listener to my current context, so it'd instantly get a callback once new context info is available.
 
-Once I (or I guess `gpt-5.3-codex`) got it to work, I asked a simple question to my bot:
+Once I got it to work (or I guess `gpt-5.3-codex`), I asked a simple question to my bot:
 
 <img src="/assets/posts/openclaw/openclaw-context.png " />
 
@@ -142,7 +142,7 @@ This response was perfect. It's so simple, yet described exactly what I was look
 
 But, just providing what you're currently doing wasn't enough to be useful. The agent basically just skimmed over it, and unless explicitly asked, it didn't really use that information.
 
-So, I had to be more explicit: tell the agent how do behave differently, depending on what the context input was. Brainstormed together with my Codex, this is what we came up with:
+So, I had to be more explicit: tell the agent how to behave differently, depending on what the context input was. After brainstorming together with my Codex, this is what we came up with:
 
 | Layer | Description |
 | :---- | :---- |
@@ -162,9 +162,9 @@ Perfect! I had to think back to the Windows XP installer days, where it would as
 
 ## Homey
 
-I've been a long-time [Homey](https://homey.app/) user for smart home automation, from which I'll have to eventually migrate away now that they got bought by LG. At the moment, most devices are simple ZIGBEE devices from IKEA Trådrfri, from which I also have to migrate away since they switched to using Matter, which my old Homey doesn't yet support.
+I've been a long-time [Homey](https://homey.app/) user for smart home automation, from which I'll eventually have to migrate away now that they got bought by LG. At the moment, most devices are simple ZIGBEE devices from IKEA Trådrfri, from which I also have to migrate away since they switched to using Matter, which my old Homey doesn't yet support.
 
-My fiancée has day- and night shifts at the hospital. Our home, thanks to Homey and OpenClaw, now automatically adapts to each shift based on the calendar entries. For example, the bathroom is freezing cold at 5:30am, and our apartment doesn't allow any type of automation on the heating of the whole place. Instead, I've setup an electric infrarot heating device in the bathroom that turns on at 5am on a dayshift day, to alredy warm up the tiles.
+My fiancée has day- and night shifts at the hospital. Our home, thanks to Homey and OpenClaw, now automatically adapts to each shift based on the calendar entries. For example, the bathroom is freezing cold at 5:30am, and our apartment doesn't allow any automation of the central heating. Instead, I've setup an electric infrared heating device in the bathroom that turns on at 5am on a dayshift day, to already warm up the tiles.
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -216,4 +216,4 @@ I then have a simple nightly cron-job to archive the key learnings from conversa
 
 <img src="/assets/posts/openclaw/beeper-archive.png" />
 
-This way, when asking my bot "What time is the Christas party of my grandmother", it would automatically search for the relevant group and 1:1 chats to find that information.
+This way, when asking my bot "What time is the Christmas party of my grandmother", it would automatically search for the relevant group and 1:1 chats to find that information.
