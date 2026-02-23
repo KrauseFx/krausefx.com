@@ -58,9 +58,7 @@ When we mentioned "Hey Felix we should set you up a bot also", Peter's bot got a
 
 A few days later, Dec 19, we setup Clawdis on my main Mac (before I purchased a separate machine for it) and it all went up from there.
 
-Naturally over the coming weeks I've built various integrations (many of which are open source on my [GitHub](https://github.com/KrauseFx)) to automate many aspects of my life.
-
-In this post I want to highlight a few integrations I've setup.
+Naturally over the coming weeks I've built various integrations (many of which are open source on my [GitHub](https://github.com/KrauseFx)) to automate many aspects of my life. In this post I want to highlight a few integrations I've setup.
 
 ## Travel
 
@@ -108,7 +106,7 @@ The [heartbeat](https://docs.openclaw.ai/gateway/heartbeat) of the travel bot ha
 
 ## Context
 
-With [ContextSDK](https://contextsdk.com) we're working on enabling app developers to best leverage the smartphone's motion to improve their app experiences and monetisation. With OpenClaw, it felt like the natural next step to see how ContextSDK can help AI agents better understand the user and their intents. 
+With [ContextSDK](https://contextsdk.com) we're working on enabling app developers to leverage the smartphone's motion to improve their app experiences and monetisation. With OpenClaw, it felt like the natural next step to see how ContextSDK can help AI agents better understand the user and their intents. 
 
 Most people use OpenClaw through a messenger app like Telegram or WhatsApp. Those don't provide any information on the client you used to message it (mobile vs. desktop). 
 
@@ -179,6 +177,7 @@ My fiancée has day- and night shifts at the hospital. Our home, thanks to Homey
 └─────────────────────────────────────────────────┘
 ```
 
+Similarly, after a night-shift, it automatically turns on the ventilation for the bedroom to reduce CO2 exposure, while also making sure all shades and lights for the bedroom are set for asleep mode.
 
 ## Messages
 
@@ -217,3 +216,13 @@ I then have a simple nightly cron-job to archive the key learnings from conversa
 <img src="/assets/posts/openclaw/beeper-archive.png" />
 
 This way, when asking my bot "What time is the Christmas party of my grandmother", it would automatically search for the relevant group and 1:1 chats to find that information.
+
+---
+
+All in all, there are many quality of life improvements with the bot. I love that I can just drop off quick voice messages to the bot while on-the-go. A little side-note on what I noticed on why OpenClaw voice interactions are just so much better than any other agent: 
+
+- it leverages the really solid and robust Telegram voice messages (no more "oh no, we lost your 3-minute recording)
+- even if the bot has an issue parsing the voice message, the voice message isn't lost, you can just forward it to the bot again after fixing the transcription service
+- it doesn't interrupt you! Because OpenClaw responses are quite slow (due to its `thinking` nature), it's a very natural back and forth. I can take all the time I need to ramble for multiple minutes about what I want it to do or build, and it will listen carefully, without interrupting me. Also, no problem if I have to think for 15 seconds and just stay quiet during that time. 
+
+Other integrations I use are around leaving my parcels in front of my apartment door automatically ([post-at-cli](https://github.com/KrauseFx/post-at-cli)), my home-office standing desk reminding me to stand ([linak-controller](https://github.com/rhyst/linak-controller)), sending a daily HN Digest of the top 25 posts, updates on new releases of the TV shows I watch, manage and remind me of home chores (e.g. replacing filters) and a few more.
