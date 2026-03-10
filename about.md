@@ -39,7 +39,7 @@ meta: {}
 <div id="rightCol">
   <p>Co-Founder of <a href="https://contextsdk.com/insights" target="_blank">ContextSDK</a>, the best way to know when and how to monetize your user.</p>
 
-  <p>Follow what I'm up to on <a href="https://bsky.app/profile/krausefx.bsky.social">Bluesky</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>, as well as <a href="https://howisFelix.today">howisFelix.today</a></p>
+  <p>Follow what I'm up to on <a href="https://x.com/krausefx">X</a> and <a href="https://instagram.com/KrauseFx">Instagram</a>, as well as <a href="https://howisFelix.today">howisFelix.today</a></p>
 
   <p>I'm the founder of <a href="https://fastlane.tools" target="_blank">fastlane</a>, an open source tool for iOS and Android developers to make building and releasing apps easier. Just last year, fastlane has saved over 33,000,000 developer hours and is used by hundreds of thousands of companies around the world. fastlane got acquired by Twitter, and later Google.</p>
   
