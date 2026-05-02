@@ -241,4 +241,15 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+  &.compact-table {
+    th, td {
+      padding: 6px 10px;
+    }
+    th {
+      white-space: nowrap;
+    }
+    td:not(:first-child) {
+      text-align: center;
+    }
+  }
 }
